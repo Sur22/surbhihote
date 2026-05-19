@@ -22,7 +22,7 @@ function IndexPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
-        <div className="grid md:grid-cols-12 gap-10 items-end">
+        <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-7">
             <h1 className="display text-[clamp(1.5rem,4.5vw,4.25rem)]">
               Hi, I'm Surbhi — I design calm, useful products.
@@ -30,9 +30,17 @@ function IndexPage() {
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
               I help product teams turn complex problems into clean, intuitive experiences. My work spans SaaS platforms, enterprise tools, and consumer apps — always rooted in real user research and quiet, deliberate craft.
             </p>
+            <a
+              href="/resume.pdf"
+              download
+              className="mt-8 inline-flex items-center gap-2 text-sm border border-foreground/40 hover:border-foreground hover:bg-secondary px-4 py-2.5 transition-colors"
+            >
+              <Download size={14} />
+              Resume
+            </a>
           </div>
-          <div className="md:col-span-5 flex flex-col items-start md:items-end gap-6">
-            <div className="overflow-hidden rounded-sm w-full max-w-sm">
+          <div className="md:col-span-5">
+            <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
               <img
                 src={heroPortrait}
                 alt="Mira Vale"
@@ -41,14 +49,6 @@ function IndexPage() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <a
-              href="/resume.pdf"
-              download
-              className="inline-flex items-center gap-2 text-sm border border-foreground/40 hover:border-foreground hover:bg-secondary px-4 py-2.5 transition-colors"
-            >
-              <Download size={14} />
-              Download Resume
-            </a>
           </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ function IndexPage() {
               className="group block"
             >
               <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-                <div className={`md:col-span-7 ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
                   <div className="overflow-hidden rounded-sm bg-secondary">
                     <img
                       src={c.cover}
@@ -83,7 +83,7 @@ function IndexPage() {
                     />
                   </div>
                 </div>
-                <div className={`md:col-span-5 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
                   <div className="flex items-baseline gap-4 mb-4">
                     <span className="font-serif text-2xl text-accent">{c.index}</span>
                     <span className="eyebrow">{c.tags.join(" · ")}</span>
