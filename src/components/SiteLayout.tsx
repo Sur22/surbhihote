@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Linkedin, Mail } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
 const nav = [
@@ -11,14 +12,17 @@ const nav = [
 ] as const;
 
 function ThemeToggle() {
-  const { theme, toggle } = useTheme();
+  const { resolved, toggle } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   return (
     <button
       onClick={toggle}
       className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
     >
-      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+      {mounted && resolved === "dark" ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 }
