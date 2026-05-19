@@ -20,49 +20,88 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { src: g1, caption: "Wireframe explorations — Atlas, week 2", year: "2024", h: "tall" },
-  { src: g2, caption: "Typography study — Fjord wordmark trials", year: "2025", h: "tall" },
-  { src: g3, caption: "Solace hero — product photography R&D", year: "2024", h: "med" },
-  { src: g4, caption: "Brand moodboard — unannounced retail client", year: "2025", h: "tall" },
-  { src: g5, caption: "Dashboard exploration — internal tool", year: "2023", h: "med" },
-  { src: g6, caption: "Icon sketches — Atlas itinerary blocks", year: "2024", h: "tall" },
+  {
+    src: g2,
+    title: "Fjord — wordmark trials",
+    tags: ["Typography", "Branding", "2025"],
+    body: "Late-stage exploration of the Fjord wordmark — testing serif against geometric sans pairings, looking for a quiet, considered mark that holds up across scale and surface.",
+  },
+  {
+    src: g3,
+    title: "Solace — hero photography R&D",
+    tags: ["Art Direction", "Product", "2024"],
+    body: "Studio R&D for the Solace launch — exploring soft, diffused light and considered colour palettes to match the calm, deliberate tone of the product itself.",
+  },
+  {
+    src: g4,
+    title: "Unannounced retail — brand moodboard",
+    tags: ["Brand", "Moodboard", "2025"],
+    body: "An early-stage brand moodboard for a retail client. Material studies, archival typography, and a colour story built around warmth and restraint.",
+  },
+  {
+    src: g5,
+    title: "Internal tool — dashboard study",
+    tags: ["Product", "Dashboard", "2023"],
+    body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
+  },
+  {
+    src: g6,
+    title: "Atlas — itinerary icon sketches",
+    tags: ["Iconography", "Sketch", "2024"],
+    body: "Hand sketches for the Atlas itinerary blocks. A loose vocabulary of travel moments — meals, transit, rest — drawn small to keep them honest.",
+  },
 ] as const;
 
 function GalleryPage() {
   return (
     <SiteLayout>
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
-        <p className="eyebrow mb-8">Gallery</p>
-        <div className="grid md:grid-cols-12 gap-10 items-end">
-          <h1 className="md:col-span-8 display text-[clamp(2.5rem,7vw,6rem)]">
-            Sketches, off-cuts,<br />
-            <em className="not-italic font-serif italic text-accent">things that didn't ship.</em>
-          </h1>
-          <p className="md:col-span-4 text-foreground/75 leading-relaxed">
+      {/* Hero */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-10 md:pt-16 pb-16 md:pb-24">
+        <div className="overflow-hidden rounded-sm bg-secondary">
+          <img
+            src={g1}
+            alt="Gallery hero — studio archive"
+            className="w-full h-[40vh] md:h-[60vh] object-cover"
+          />
+        </div>
+        <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
+          <h1 className="md:col-span-7 display text-[clamp(2.5rem,7vw,6rem)]">Gallery</h1>
+          <p className="md:col-span-5 text-foreground/75 leading-relaxed">
             A loose archive from the studio — process work, explorations, and the occasional finished piece that never found a home in a case study.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
-          {items.map((it, i) => (
-            <figure key={i} className="mb-6 break-inside-avoid group">
-              <div className="overflow-hidden rounded-sm bg-secondary">
-                <img
-                  src={it.src}
-                  alt={it.caption}
-                  loading="lazy"
-                  className="w-full h-auto object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
-                />
+      {/* Full-size entries */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24 space-y-20 md:space-y-28">
+        {items.map((it, i) => (
+          <article key={i}>
+            <div className="overflow-hidden rounded-sm bg-secondary">
+              <img
+                src={it.src}
+                alt={it.title}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="mt-6 md:mt-8 grid md:grid-cols-12 gap-6 md:gap-10 items-start">
+              <div className="md:col-span-7 flex flex-wrap items-center gap-x-4 gap-y-3">
+                <h2 className="font-serif text-2xl md:text-3xl leading-tight">{it.title}</h2>
+                <div className="flex flex-wrap gap-2">
+                  {it.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="inline-flex items-center rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <figcaption className="mt-3 flex items-baseline justify-between gap-4 text-xs text-muted-foreground">
-                <span className="italic">{it.caption}</span>
-                <span className="font-mono">{it.year}</span>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+              <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
+            </div>
+          </article>
+        ))}
       </section>
     </SiteLayout>
   );
