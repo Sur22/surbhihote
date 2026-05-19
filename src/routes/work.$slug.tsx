@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { caseStudies, getCaseStudy } from "@/lib/case-studies";
+import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function CaseStudyPage() {
-  const { study: c } = Route.useLoaderData();
+  const { study: c } = Route.useLoaderData() as { study: CaseStudy };
   const idx = caseStudies.findIndex((x) => x.slug === c.slug);
   const next = caseStudies[(idx + 1) % caseStudies.length];
 
