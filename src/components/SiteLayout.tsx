@@ -10,6 +10,19 @@ const nav = [
   { to: "/about", label: "About" },
 ] as const;
 
+function ThemeToggle() {
+  const { theme, toggle } = useTheme();
+  return (
+    <button
+      onClick={toggle}
+      className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+    </button>
+  );
+}
+
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -20,12 +33,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <span className="eyebrow hidden sm:inline">— Studio</span>
           </Link>
           <nav className="flex items-center gap-7 text-sm">
-            <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Index</Link>
+            <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <a href="mailto:hello@miravale.studio" className="hidden sm:inline-flex items-center gap-1.5 text-foreground border-b border-foreground/40 hover:border-foreground transition-colors">
               Contact
             </a>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
