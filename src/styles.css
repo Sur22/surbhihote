@@ -71,6 +71,34 @@
   --ring: var(--ink);
 }
 
+.dark {
+  --paper: oklch(0.12 0.02 60);
+  --ink: oklch(0.93 0.018 80);
+  --clay: oklch(0.68 0.12 38);
+  --sage: oklch(0.65 0.05 150);
+  --rule: oklch(0.28 0.02 75);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: oklch(0.18 0.015 70);
+  --card-foreground: var(--ink);
+  --popover: var(--card);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: oklch(0.22 0.018 70);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.22 0.018 70);
+  --muted-foreground: oklch(0.62 0.02 70);
+  --accent: var(--clay);
+  --accent-foreground: var(--paper);
+  --destructive: oklch(0.60 0.18 27);
+  --destructive-foreground: var(--paper);
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: var(--ink);
+}
+
 @layer base {
   * { border-color: var(--color-border); }
 
