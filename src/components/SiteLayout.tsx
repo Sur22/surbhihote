@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
+import { Sun, Moon, Linkedin, Mail } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 import type { ReactNode } from "react";
 
 const nav = [
-  { to: "/", label: "Index" },
+  { to: "/", label: "Case Studies" },
   { to: "/work/fjord", label: "Work" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
