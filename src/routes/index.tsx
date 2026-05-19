@@ -71,7 +71,7 @@ function IndexPage() {
               className="group block"
             >
               <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-                <div className={`md:col-span-7 ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
                   <div className="overflow-hidden rounded-sm bg-secondary">
                     <img
                       src={c.cover}
@@ -83,7 +83,7 @@ function IndexPage() {
                     />
                   </div>
                 </div>
-                <div className={`md:col-span-5 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
                   <div className="flex items-baseline gap-4 mb-4">
                     <span className="font-serif text-2xl text-accent">{c.index}</span>
                     <span className="eyebrow">{c.tags.join(" · ")}</span>
