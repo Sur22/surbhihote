@@ -2,8 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Download } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { caseStudies } from "@/lib/case-studies";
-import hero from "@/assets/hero.jpg";
 import heroPortrait from "@/assets/hero-portrait.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,8 +24,7 @@ function IndexPage() {
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-7">
-            <p className="eyebrow mb-8">Portfolio — 2020 / 2025</p>
-            <h1 className="display text-[clamp(3rem,9vw,8.5rem)]">
+            <h1 className="display text-[clamp(1.5rem,4.5vw,4.25rem)]">
               Designing<br />
               calm software<br />
               <em className="text-accent not-italic font-serif italic">for noisy lives.</em>
@@ -33,10 +32,6 @@ function IndexPage() {
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
               I'm Mira — an independent product designer working with teams that take their craft seriously. Three case studies below.
             </p>
-            <div className="mt-8 flex items-center gap-6 text-sm">
-              <Link to="/about" className="border-b border-foreground/40 hover:border-foreground">About</Link>
-              <a href="mailto:hello@miravale.studio" className="border-b border-foreground/40 hover:border-foreground">Available Q3</a>
-            </div>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-6">
             <div className="overflow-hidden rounded-sm w-full max-w-sm">
@@ -57,10 +52,6 @@ function IndexPage() {
               Download Resume
             </a>
           </div>
-        </div>
-
-        <div className="mt-20 overflow-hidden rounded-sm">
-          <img src={hero} alt="" width={1600} height={1200} className="w-full h-[55vh] object-cover" />
         </div>
       </section>
 

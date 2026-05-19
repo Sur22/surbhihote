@@ -1,6 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { Phone, Mail, Linkedin } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import portrait from "@/assets/about-portrait.jpg";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -28,18 +33,20 @@ const services = [
 ];
 
 export function AboutPage() {
+  const autoplay = useRef(Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }));
+
   return (
     <SiteLayout>
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
         <p className="eyebrow mb-8">About</p>
-        <div className="grid md:grid-cols-12 gap-12">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-7">
-            <h1 className="display text-[clamp(2.5rem,7vw,6.5rem)] mb-10">
+            <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
               Twelve years<br />
               of paying attention to<br />
               <em className="text-accent not-italic font-serif italic">small things.</em>
             </h1>
-            <div className="prose max-w-xl space-y-6 text-lg leading-relaxed text-foreground/80">
+            <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
                 I'm Mira Vale, a product designer working independently from Lisbon. My practice sits at the intersection of editorial sensibility and engineering rigor — I care about the rhythm of a paragraph as much as the bezier of a curve.
               </p>
@@ -63,12 +70,12 @@ export function AboutPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Services */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24">
-        <div className="grid md:grid-cols-12 gap-12">
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">How I work</p>
           </div>
-          <div className="md:col-span-9 grid sm:grid-cols-3 gap-10">
+          <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {services.map((s) => (
               <div key={s.n}>
                 <p className="font-serif text-3xl text-accent mb-3">{s.n}</p>
@@ -82,22 +89,30 @@ export function AboutPage() {
 
       <div className="rule mx-6 md:mx-10" />
 
-      {/* Timeline */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24">
-        <div className="grid md:grid-cols-12 gap-12">
+      {/* Career Carousel */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">Career</p>
           </div>
           <div className="md:col-span-9">
-            <ul className="divide-y divide-border">
-              {timeline.map((t) => (
-                <li key={t.year} className="py-6 grid grid-cols-12 gap-4 items-baseline">
-                  <span className="col-span-4 md:col-span-3 text-sm text-muted-foreground">{t.year}</span>
-                  <span className="col-span-8 md:col-span-5 font-serif text-2xl">{t.role}</span>
-                  <span className="hidden md:block md:col-span-4 text-sm text-muted-foreground md:text-right">{t.where}</span>
-                </li>
-              ))}
-            </ul>
+            <Carousel
+              opts={{ loop: true, align: "start" }}
+              plugins={[autoplay.current]}
+              className="w-full"
+            >
+              <CarouselContent>
+                {timeline.map((t) => (
+                  <CarouselItem key={t.year} className="sm:basis-1/2 lg:basis-1/3">
+                    <div className="border border-border rounded-sm p-6 h-full bg-secondary/30">
+                      <p className="text-xs text-muted-foreground mb-4">{t.year}</p>
+                      <p className="font-serif text-2xl mb-2">{t.role}</p>
+                      <p className="text-sm text-muted-foreground">{t.where}</p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </section>
@@ -105,14 +120,14 @@ export function AboutPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Clients */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24">
-        <div className="grid md:grid-cols-12 gap-12">
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">Selected clients</p>
           </div>
           <div className="md:col-span-9">
             <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
-              {["Fjord", "Solace", "Atlas", "Linear", "Arc", "Monzo", "On Deck", "Stripe Press", "Notion"].map((c) => (
+              {["Fjord", "Solace", "Atlas", "Linear"].map((c) => (
                 <span key={c}>{c}</span>
               ))}
             </div>
@@ -120,7 +135,42 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24">
+      <div className="rule mx-6 md:mx-10" />
+
+      {/* Get in Touch */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <p className="eyebrow mb-6 text-accent">Let's connect</p>
+        <h2 className="display text-[clamp(2.25rem,6vw,5rem)] mb-6">Get in Touch</h2>
+        <p className="text-base md:text-lg text-foreground/70 max-w-xl mb-12">
+          Whether you have a role in mind, a collaboration idea, or just want to talk design — I'd love to hear from you.
+        </p>
+        <div className="rule mb-12" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="tel:+919876543210" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+            <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
+              <Phone size={18} className="text-muted-foreground" />
+            </div>
+            <p className="eyebrow mb-3">Phone</p>
+            <p className="font-serif text-2xl">+91 98765 43210</p>
+          </a>
+          <a href="mailto:hello@miravale.studio" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+            <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
+              <Mail size={18} className="text-muted-foreground" />
+            </div>
+            <p className="eyebrow mb-3">Email</p>
+            <p className="font-serif text-2xl break-all">hello@miravale.studio</p>
+          </a>
+          <a href="#" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+            <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
+              <Linkedin size={18} className="text-muted-foreground" />
+            </div>
+            <p className="eyebrow mb-3">LinkedIn</p>
+            <p className="font-serif text-2xl inline-flex items-center gap-2">Connect with me <span aria-hidden>↗</span></p>
+          </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-16 md:pb-24">
         <Link to="/" className="text-sm border-b border-foreground/40 hover:border-foreground">← Back to work</Link>
       </section>
     </SiteLayout>
