@@ -25,11 +25,12 @@ function IndexPage() {
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-7">
             <h1 className="display text-[clamp(1.5rem,4.5vw,4.25rem)]">
-              Hi, I'm Surbhi —<br />
-              I design <em className="text-accent not-italic font-serif italic">calm, useful</em> products.
+              Designing<br />
+              calm software<br />
+              <em className="text-accent not-italic font-serif italic">for noisy lives.</em>
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
-              I help product teams turn complex problems into clean, intuitive experiences. My work spans SaaS platforms, enterprise tools, and consumer apps — always rooted in real user research and quiet, deliberate craft.
+              I'm Mira — an independent product designer working with teams that take their craft seriously. Three case studies below.
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-6">
