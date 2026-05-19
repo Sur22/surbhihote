@@ -1,6 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { Phone, Mail, Linkedin } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import portrait from "@/assets/about-portrait.jpg";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
