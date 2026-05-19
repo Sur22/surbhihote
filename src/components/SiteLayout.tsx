@@ -1,12 +1,27 @@
 import { Link } from "@tanstack/react-router";
+import { Sun, Moon, Linkedin, Mail } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 import type { ReactNode } from "react";
 
 const nav = [
-  { to: "/", label: "Index" },
+  { to: "/", label: "Case Studies" },
   { to: "/work/fjord", label: "Work" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
 ] as const;
+
+function ThemeToggle() {
+  const { theme, toggle } = useTheme();
+  return (
+    <button
+      onClick={toggle}
+      className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+    </button>
+  );
+}
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
@@ -18,12 +33,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <span className="eyebrow hidden sm:inline">— Studio</span>
           </Link>
           <nav className="flex items-center gap-7 text-sm">
-            <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Index</Link>
+            <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <a href="mailto:hello@miravale.studio" className="hidden sm:inline-flex items-center gap-1.5 text-foreground border-b border-foreground/40 hover:border-foreground transition-colors">
               Contact
             </a>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
@@ -31,33 +47,17 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="border-t border-border mt-32">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <p className="font-serif text-4xl md:text-5xl leading-[1.05] max-w-md">
-              Have a product worth designing well?
-            </p>
-            <a href="mailto:hello@miravale.studio" className="mt-6 inline-block text-base border-b border-foreground/40 hover:border-foreground">
-              hello@miravale.studio
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Mira Vale. All rights reserved.
+          </p>
+          <div className="flex items-center gap-5">
+            <a href="mailto:hello@miravale.studio" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+              <Mail size={18} />
             </a>
-          </div>
-          <div className="md:col-span-3">
-            <p className="eyebrow mb-4">Studio</p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Independent product design practice. Based in Lisbon, working worldwide.
-            </p>
-          </div>
-          <div className="md:col-span-2">
-            <p className="eyebrow mb-4">Elsewhere</p>
-            <ul className="space-y-2 text-sm">
-              <li><a className="hover:text-accent" href="#">Read.cv</a></li>
-              <li><a className="hover:text-accent" href="#">Are.na</a></li>
-              <li><a className="hover:text-accent" href="#">Dribbble</a></li>
-              <li><a className="hover:text-accent" href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div className="md:col-span-2 md:text-right text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()}</p>
-            <p className="mt-1">All rights reserved.</p>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <Linkedin size={18} />
+            </a>
           </div>
         </div>
       </footer>
