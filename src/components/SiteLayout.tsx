@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Linkedin, Mail } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
