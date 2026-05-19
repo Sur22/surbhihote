@@ -57,9 +57,9 @@ function IndexPage() {
 
       {/* Selected work */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-20">
-        <div className="flex items-end justify-between mb-12">
-          <p className="eyebrow">Selected Work</p>
-          <p className="text-sm text-muted-foreground">Three of nineteen</p>
+        <div className="mb-12">
+          <p className="eyebrow mb-4">Selected Work</p>
+          <h2 className="font-serif text-4xl md:text-5xl">Case studies</h2>
         </div>
 
         <div className="space-y-24">
