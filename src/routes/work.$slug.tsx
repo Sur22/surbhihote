@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 
 export const Route = createFileRoute("/work/$slug")({
@@ -49,6 +50,8 @@ function CaseStudyPage() {
 
   return (
     <SiteLayout>
+      <ScrollProgress />
+
       {/* Title block */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <div className="flex items-baseline gap-4 mb-8">
