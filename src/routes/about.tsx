@@ -26,7 +26,6 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const autoplayOpts = { delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true };
 const galleryImages = [
   { src: g1, alt: "Gallery image one" },
   { src: g2, alt: "Gallery image two" },
