@@ -106,42 +106,43 @@ export function AboutPage() {
 
       <div className="rule mx-6 md:mx-10" />
 
-      {/* Career Carousel */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">Career</p>
-          </div>
-          <div className="md:col-span-9">
-            <Carousel
-              opts={{ loop: true, align: "start" }}
-              plugins={[autoplay.current]}
-              className="w-full"
-            >
-              <CarouselContent>
-                {timeline.map((t) => (
-                  <CarouselItem key={t.year} className="sm:basis-1/2 lg:basis-1/3">
-                    <div className="border border-border rounded-sm p-6 h-full bg-secondary/30">
-                      <p className="text-xs text-muted-foreground mb-4">{t.year}</p>
-                      <p className="font-serif text-2xl mb-2">{t.role}</p>
-                      <p className="text-sm text-muted-foreground">{t.where}</p>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
-        </div>
-      </section>
-
-      <div className="rule mx-6 md:mx-10" />
-
       {/* Clients */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">Selected clients</p>
           </div>
+          <div className="md:col-span-9">
+            <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
+              {["Fjord", "Solace", "Atlas", "Linear"].map((c) => (
+                <span key={c}>{c}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="rule mx-6 md:mx-10" />
+
+      {/* Image Carousel */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <p className="eyebrow mb-8">From the studio</p>
+        <Carousel
+          opts={{ loop: true, align: "start" }}
+          plugins={[autoplay.current]}
+          className="w-full"
+        >
+          <CarouselContent>
+            {galleryImages.map((g) => (
+              <CarouselItem key={g.src} className="sm:basis-1/2 lg:basis-1/3">
+                <div className="overflow-hidden rounded-sm aspect-[4/5]">
+                  <img src={g.src} alt={g.alt} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </section>
           <div className="md:col-span-9">
             <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
               {["Fjord", "Solace", "Atlas", "Linear"].map((c) => (
