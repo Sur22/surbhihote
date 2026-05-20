@@ -143,17 +143,10 @@ export function AboutPage() {
           </CarouselContent>
         </Carousel>
       </section>
-          <div className="md:col-span-9">
-            <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
-              {["Fjord", "Solace", "Atlas", "Linear"].map((c) => (
-                <span key={c}>{c}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       <div className="rule mx-6 md:mx-10" />
+
+
 
       {/* Get in Touch */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
