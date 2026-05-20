@@ -67,6 +67,13 @@ export function AboutPage() {
                 I take on three to four projects a year. I work directly with founders and design leads, embedded for 8–14 weeks. No decks, no account managers, no junior shadow team.
               </p>
             </div>
+            <div className="mt-8">
+              <Button asChild variant="outline" size="lg">
+                <a href="/resume.pdf" download>
+                  <Download /> Resume
+                </a>
+              </Button>
+            </div>
           </div>
           <div className="md:col-span-5">
             <div className="overflow-hidden rounded-sm">
