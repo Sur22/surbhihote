@@ -1,10 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Phone, Mail, Linkedin } from "lucide-react";
+import { Phone, Mail, Linkedin, Download } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import portrait from "@/assets/about-portrait.jpg";
+import g1 from "@/assets/gallery-1.jpg";
+import g2 from "@/assets/gallery-2.jpg";
+import g3 from "@/assets/gallery-3.jpg";
+import g4 from "@/assets/gallery-4.jpg";
+import g5 from "@/assets/gallery-5.jpg";
+import g6 from "@/assets/gallery-6.jpg";
 
 
 export const Route = createFileRoute("/about")({
