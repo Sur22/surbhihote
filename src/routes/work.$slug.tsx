@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 
 export const Route = createFileRoute("/work/$slug")({
