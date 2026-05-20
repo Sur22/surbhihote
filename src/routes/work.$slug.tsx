@@ -50,6 +50,8 @@ function CaseStudyPage() {
 
   return (
     <SiteLayout>
+      <ScrollProgress />
+
       {/* Title block */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <div className="flex items-baseline gap-4 mb-8">
