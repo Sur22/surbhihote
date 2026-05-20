@@ -2,7 +2,55 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Download } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { caseStudies } from "@/lib/case-studies";
+import { useReveal } from "@/hooks/use-reveal";
 import heroPortrait from "@/assets/hero-portrait.jpg";
+
+function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
+  const { ref, visible } = useReveal<HTMLDivElement>();
+  return (
+    <div
+      ref={ref}
+      style={{ transitionDelay: visible ? `${(i % 2) * 80}ms` : "0ms" }}
+      className={`transition-all duration-700 ease-out ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      <Link to="/work/$slug" params={{ slug: c.slug }} className="group block">
+        <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
+          <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
+            <div className="overflow-hidden rounded-sm bg-secondary">
+              <img
+                src={c.cover}
+                alt={c.title}
+                width={1400}
+                height={1000}
+                loading="lazy"
+                className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
+              />
+            </div>
+          </div>
+          <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+            <div className="flex items-baseline gap-4 mb-4">
+              <span className="font-serif text-2xl text-accent">{c.index}</span>
+              <span className="eyebrow">{c.tags.join(" · ")}</span>
+            </div>
+            <h2 className="font-serif text-5xl md:text-6xl mb-5 group-hover:text-accent transition-colors">
+              {c.title}
+            </h2>
+            <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
+              {c.subtitle}
+            </p>
+            <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground pb-0.5">
+              Read the case study
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </p>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
+}
+
 
 
 export const Route = createFileRoute("/")({
@@ -64,45 +112,10 @@ function IndexPage() {
 
         <div className="space-y-24">
           {caseStudies.map((c, i) => (
-            <Link
-              key={c.slug}
-              to="/work/$slug"
-              params={{ slug: c.slug }}
-              className="group block"
-            >
-              <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                  <div className="overflow-hidden rounded-sm bg-secondary">
-                    <img
-                      src={c.cover}
-                      alt={c.title}
-                      width={1400}
-                      height={1000}
-                      loading="lazy"
-                      className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
-                    />
-                  </div>
-                </div>
-                <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
-                  <div className="flex items-baseline gap-4 mb-4">
-                    <span className="font-serif text-2xl text-accent">{c.index}</span>
-                    <span className="eyebrow">{c.tags.join(" · ")}</span>
-                  </div>
-                  <h2 className="font-serif text-5xl md:text-6xl mb-5 group-hover:text-accent transition-colors">
-                    {c.title}
-                  </h2>
-                  <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
-                    {c.subtitle}
-                  </p>
-                  <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground pb-0.5">
-                    Read the case study
-                    <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </p>
-                </div>
-              </div>
-            </Link>
+            <CaseStudyItem key={c.slug} c={c} i={i} />
           ))}
         </div>
+
       </section>
     </SiteLayout>
   );
