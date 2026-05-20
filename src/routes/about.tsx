@@ -1,10 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Phone, Mail, Linkedin } from "lucide-react";
+import { Phone, Mail, Linkedin, Download } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import portrait from "@/assets/about-portrait.jpg";
+import g1 from "@/assets/gallery-1.jpg";
+import g2 from "@/assets/gallery-2.jpg";
+import g3 from "@/assets/gallery-3.jpg";
+import g4 from "@/assets/gallery-4.jpg";
+import g5 from "@/assets/gallery-5.jpg";
+import g6 from "@/assets/gallery-6.jpg";
 
 
 export const Route = createFileRoute("/about")({
@@ -19,11 +26,13 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const timeline = [
-  { year: "2022 — now", role: "Independent practice", where: "Mira Vale Studio" },
-  { year: "2019 — 2022", role: "Principal Designer", where: "Linear" },
-  { year: "2016 — 2019", role: "Senior Product Designer", where: "Monzo" },
-  { year: "2013 — 2016", role: "Designer", where: "IDEO London" },
+const galleryImages = [
+  { src: g1, alt: "Gallery image one" },
+  { src: g2, alt: "Gallery image two" },
+  { src: g3, alt: "Gallery image three" },
+  { src: g4, alt: "Gallery image four" },
+  { src: g5, alt: "Gallery image five" },
+  { src: g6, alt: "Gallery image six" },
 ];
 
 const services = [
@@ -57,6 +66,13 @@ export function AboutPage() {
                 I take on three to four projects a year. I work directly with founders and design leads, embedded for 8–14 weeks. No decks, no account managers, no junior shadow team.
               </p>
             </div>
+            <div className="mt-8">
+              <Button asChild variant="outline" size="lg">
+                <a href="/resume.pdf" download>
+                  <Download /> Resume
+                </a>
+              </Button>
+            </div>
           </div>
           <div className="md:col-span-5">
             <div className="overflow-hidden rounded-sm">
@@ -89,36 +105,6 @@ export function AboutPage() {
 
       <div className="rule mx-6 md:mx-10" />
 
-      {/* Career Carousel */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">Career</p>
-          </div>
-          <div className="md:col-span-9">
-            <Carousel
-              opts={{ loop: true, align: "start" }}
-              plugins={[autoplay.current]}
-              className="w-full"
-            >
-              <CarouselContent>
-                {timeline.map((t) => (
-                  <CarouselItem key={t.year} className="sm:basis-1/2 lg:basis-1/3">
-                    <div className="border border-border rounded-sm p-6 h-full bg-secondary/30">
-                      <p className="text-xs text-muted-foreground mb-4">{t.year}</p>
-                      <p className="font-serif text-2xl mb-2">{t.role}</p>
-                      <p className="text-sm text-muted-foreground">{t.where}</p>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
-        </div>
-      </section>
-
-      <div className="rule mx-6 md:mx-10" />
-
       {/* Clients */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
@@ -136,6 +122,30 @@ export function AboutPage() {
       </section>
 
       <div className="rule mx-6 md:mx-10" />
+
+      {/* Image Carousel */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+        <p className="eyebrow mb-8">From the studio</p>
+        <Carousel
+          opts={{ loop: true, align: "start" }}
+          plugins={[autoplay.current]}
+          className="w-full"
+        >
+          <CarouselContent>
+            {galleryImages.map((g) => (
+              <CarouselItem key={g.src} className="sm:basis-1/2 lg:basis-1/3">
+                <div className="overflow-hidden rounded-sm aspect-[4/5]">
+                  <img src={g.src} alt={g.alt} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </section>
+
+      <div className="rule mx-6 md:mx-10" />
+
+
 
       {/* Get in Touch */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
