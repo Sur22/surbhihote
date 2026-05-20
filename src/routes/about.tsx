@@ -26,11 +26,14 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const timeline = [
-  { year: "2022 — now", role: "Independent practice", where: "Mira Vale Studio" },
-  { year: "2019 — 2022", role: "Principal Designer", where: "Linear" },
-  { year: "2016 — 2019", role: "Senior Product Designer", where: "Monzo" },
-  { year: "2013 — 2016", role: "Designer", where: "IDEO London" },
+const autoplayOpts = { delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true };
+const galleryImages = [
+  { src: g1, alt: "Gallery image one" },
+  { src: g2, alt: "Gallery image two" },
+  { src: g3, alt: "Gallery image three" },
+  { src: g4, alt: "Gallery image four" },
+  { src: g5, alt: "Gallery image five" },
+  { src: g6, alt: "Gallery image six" },
 ];
 
 const services = [
