@@ -23,12 +23,12 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "fjord",
     index: "01",
-    title: "Fjord Bank",
-    subtitle: "Rebuilding a 40-year-old bank into something people actually open on Sundays.",
+    title: "Ampersand",
+    subtitle: "Audience Building tool to create custom audience segments.",
     client: "Fjord, Oslo",
     year: "2025",
     role: "Lead Product Designer",
-    tags: ["Fintech", "Mobile", "Design System"],
+    tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
     cover: fjord,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
@@ -64,12 +64,12 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "solace",
     index: "02",
-    title: "Solace",
-    subtitle: "A meditation app that doesn't sound like a meditation app.",
+    title: "Suuchi Grid Website",
+    subtitle: "Tech Pack building tool for manufacturing of clothes.",
     client: "Solace Health",
     year: "2024",
     role: "Product Designer & Brand",
-    tags: ["Wellness", "iOS", "Brand"],
+    tags: ["Enterprise", "SaaS", "PLM", "ERP", "B2B", "Web"],
     cover: solace,
     summary:
       "Designed the first version of Solace — a 10-minute-a-day practice for people who are skeptical of wellness culture. No crystals. No infinite scrolls.",
@@ -105,12 +105,12 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "atlas",
     index: "03",
-    title: "Atlas Maps",
-    subtitle: "A travel-planning tool for people who hate travel-planning tools.",
+    title: "Suuchi Grid Mobile app",
+    subtitle: "Product Manufacturing Management and Tracking.",
     client: "Atlas, NYC",
     year: "2024",
     role: "Design Lead",
-    tags: ["Travel", "Web App", "Maps"],
+    tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas,
     summary:
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
