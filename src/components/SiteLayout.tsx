@@ -51,7 +51,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="border-t border-border mt-32">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Surbhi Hote. All rights reserved.
           </p>
