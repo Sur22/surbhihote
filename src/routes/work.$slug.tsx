@@ -11,12 +11,12 @@ export const Route = createFileRoute("/work/$slug")({
   },
   head: ({ loaderData }) => {
     const s = loaderData?.study;
-    if (!s) return { meta: [{ title: "Case study — Mira Vale" }] };
+    if (!s) return { meta: [{ title: "Case study — Surbhi Hote" }] };
     return {
       meta: [
-        { title: `${s.title} — Mira Vale` },
+        { title: `${s.title} — Surbhi Hote` },
         { name: "description", content: s.summary },
-        { property: "og:title", content: `${s.title} — Mira Vale` },
+        { property: "og:title", content: `${s.title} — Surbhi Hote` },
         { property: "og:description", content: s.summary },
         { property: "og:image", content: s.cover },
       ],

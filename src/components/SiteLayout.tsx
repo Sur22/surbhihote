@@ -34,7 +34,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-serif text-2xl leading-none">Mira Vale</span>
+            <span className="font-serif text-2xl leading-none">Surbhi Hote</span>
           </Link>
           <nav className="flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>

@@ -17,9 +17,9 @@ import g6 from "@/assets/gallery-6.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Mira Vale" },
+      { title: "About — Surbhi Hote" },
       { name: "description", content: "Independent product designer. Twelve years across fintech, wellness, and consumer software. Based in Lisbon." },
-      { property: "og:title", content: "About — Mira Vale" },
+      { property: "og:title", content: "About — Surbhi Hote" },
       { property: "og:description", content: "Independent product designer based in Lisbon." },
     ],
   }),
@@ -57,7 +57,7 @@ export function AboutPage() {
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
-                I'm Mira Vale, a product designer working independently from Lisbon. My practice sits at the intersection of editorial sensibility and engineering rigor — I care about the rhythm of a paragraph as much as the bezier of a curve.
+                I'm Surbhi Hote, a product designer working independently from Lisbon. My practice sits at the intersection of editorial sensibility and engineering rigor — I care about the rhythm of a paragraph as much as the bezier of a curve.
               </p>
               <p>
                 I've spent the last decade inside product teams at Linear, Monzo, and IDEO — shipping software used by millions and quietly removing more than I added. In 2022 I went independent so I could choose collaborators by craft, not headcount.
@@ -76,7 +76,7 @@ export function AboutPage() {
           </div>
           <div className="md:col-span-5">
             <div className="overflow-hidden rounded-sm">
-              <img src={portrait} alt="Mira Vale at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-auto object-cover" />
+              <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-auto object-cover" />
             </div>
             <p className="mt-4 text-xs text-muted-foreground italic">Studio, Príncipe Real — September 2025</p>
           </div>
