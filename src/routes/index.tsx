@@ -75,10 +75,10 @@ function IndexPage() {
             <div className="relative w-full max-w-sm mx-auto md:mx-0">
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-[5%] border-2 border-foreground"
-                style={{ transform: "rotate(25deg)" }}
+                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
+                style={{ transform: "rotate(10deg)" }}
               />
-              <div className="relative overflow-hidden rounded-[5%] w-full shadow-2xl">
+              <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
                 <img
                   src={heroPortrait}
                   alt="Surbhi Hote"
