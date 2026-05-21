@@ -72,14 +72,21 @@ function IndexPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5 md:order-1">
-            <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
-              <img
-                src={heroPortrait}
-                alt="Surbhi Hote"
-                width={800}
-                height={1000}
-                className="w-full h-auto object-cover"
+            <div className="relative w-full max-w-sm mx-auto md:mx-0">
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-[5%] border-2 border-foreground"
+                style={{ transform: "rotate(25deg)" }}
               />
+              <div className="relative overflow-hidden rounded-[5%] w-full shadow-2xl">
+                <img
+                  src={heroPortrait}
+                  alt="Surbhi Hote"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
           <div className="md:col-span-7 md:order-2">
