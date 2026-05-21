@@ -54,6 +54,14 @@ function CaseStudyPage() {
 
       {/* Title block */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+        <Link
+          to="/"
+          hash="case-studies"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-10"
+        >
+          <ArrowLeft size={16} />
+          Back to portfolio
+        </Link>
         <div className="flex items-baseline gap-4 mb-8">
           <span className="font-serif text-3xl text-accent">{c.index}</span>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
