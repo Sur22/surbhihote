@@ -69,7 +69,7 @@ function IndexPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5 md:order-1">
             <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
