@@ -23,8 +23,8 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "fjord",
     index: "01",
-    title: "Ampersand",
-    subtitle: "Audience Building tool to create custom audience segments.",
+    title: "Audience Builder",
+    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
     client: "Fjord, Oslo",
     year: "2025",
     role: "Lead Product Designer",
