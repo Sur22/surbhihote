@@ -46,6 +46,7 @@ export const Route = createFileRoute("/work/$slug")({
 function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
   const idx = caseStudies.findIndex((x) => x.slug === c.slug);
+  const others = caseStudies.filter((x) => x.slug !== c.slug);
   const next = caseStudies[(idx + 1) % caseStudies.length];
 
   return (
