@@ -53,7 +53,7 @@ function CaseStudyPage() {
       <ScrollProgress />
 
       {/* Title block */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <div className="flex items-baseline gap-4 mb-8">
           <span className="font-serif text-3xl text-accent">{c.index}</span>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
@@ -65,7 +65,7 @@ function CaseStudyPage() {
       </section>
 
       {/* Meta grid */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-16">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
             { k: "Client", v: c.client },
@@ -82,14 +82,14 @@ function CaseStudyPage() {
       </section>
 
       {/* Cover */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
         <div className="overflow-hidden rounded-sm bg-secondary">
           <img src={c.cover} alt={c.title} width={1400} height={1000} className="w-full h-[60vh] object-cover" />
         </div>
       </section>
 
       {/* Summary + problem */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
         <div className="grid md:grid-cols-12 gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">Overview</p>
@@ -120,7 +120,7 @@ function CaseStudyPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Sections */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <div className="space-y-20">
           {c.sections.map((s, i) => (
             <article key={i} className="grid md:grid-cols-12 gap-12">
@@ -139,7 +139,7 @@ function CaseStudyPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-10">Outcome</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
@@ -156,7 +156,7 @@ function CaseStudyPage() {
         <Link
           to="/work/$slug"
           params={{ slug: next.slug }}
-          className="block mx-auto max-w-[1400px] px-6 md:px-10 py-20 group"
+          className="block mx-auto max-w-[1100px] px-6 md:px-10 py-20 group"
         >
           <div className="flex items-baseline justify-between">
             <div>

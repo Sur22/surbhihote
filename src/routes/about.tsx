@@ -46,7 +46,7 @@ export function AboutPage() {
 
   return (
     <SiteLayout>
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
         <p className="eyebrow mb-8">About</p>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-7">
@@ -86,7 +86,7 @@ export function AboutPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Services */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">How I work</p>
@@ -106,7 +106,7 @@ export function AboutPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Clients */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
             <p className="eyebrow">Selected clients</p>
@@ -124,7 +124,7 @@ export function AboutPage() {
       <div className="rule mx-6 md:mx-10" />
 
       {/* Image Carousel */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <p className="eyebrow mb-8">From the studio</p>
         <Carousel
           opts={{ loop: true, align: "start" }}
@@ -148,7 +148,7 @@ export function AboutPage() {
 
 
       {/* Get in Touch */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <p className="eyebrow mb-6 text-accent">Let's connect</p>
         <h2 className="display text-[clamp(2.25rem,6vw,5rem)] mb-6">Get in Touch</h2>
         <p className="text-base md:text-lg text-foreground/70 max-w-xl mb-12">
@@ -180,7 +180,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-16 md:pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16 md:pb-24">
         <Link to="/" className="text-sm border-b border-foreground/40 hover:border-foreground">← Back to work</Link>
       </section>
     </SiteLayout>
