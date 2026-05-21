@@ -46,7 +46,7 @@
   /* Warm paper / ink editorial palette */
   --paper: #ffffff;
   --ink: oklch(0.18 0.02 60);
-  --clay: oklch(0.58 0.13 38);
+  --clay: #006e90;
   --sage: oklch(0.55 0.05 150);
   --rule: oklch(0.82 0.02 75);
 
@@ -74,7 +74,7 @@
 .dark {
   --paper: oklch(0.12 0.02 60);
   --ink: oklch(0.93 0.018 80);
-  --clay: oklch(0.68 0.12 38);
+  --clay: #006e90;
   --sage: oklch(0.65 0.05 150);
   --rule: oklch(0.28 0.02 75);
 
