@@ -87,11 +87,7 @@ function GalleryPage() {
             <div className="mt-6 md:mt-8 grid md:grid-cols-12 gap-6 md:gap-10 items-start">
               <div className="md:col-span-7 flex flex-wrap items-center gap-x-4 gap-y-3">
                 <h2 className="font-serif text-2xl md:text-3xl leading-tight">{it.title}</h2>
-                <div className="flex flex-wrap gap-x-4 gap-y-2 text-muted-foreground text-sm">
-                  {it.tags.map((t) => (
-                    <span key={t}>{t}</span>
-                  ))}
-                </div>
+                <span className="eyebrow">{it.tags.join(" · ")}</span>
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
