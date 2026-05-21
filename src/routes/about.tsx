@@ -152,21 +152,21 @@ export function AboutPage() {
         </p>
         <div className="rule mb-12" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a href="tel:+919876543210" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+          <a href="tel:+17134807041" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
             <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
               <Phone size={18} className="text-muted-foreground" />
             </div>
             <p className="eyebrow mb-3">Phone</p>
-            <p className="font-serif text-2xl">+91 98765 43210</p>
+            <p className="font-serif text-2xl">+1 713 480 7041</p>
           </a>
-          <a href="mailto:hello@miravale.studio" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+          <a href="mailto:surbhihote@gmail.com" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
             <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
               <Mail size={18} className="text-muted-foreground" />
             </div>
             <p className="eyebrow mb-3">Email</p>
-            <p className="font-serif text-2xl break-all">hello@miravale.studio</p>
+            <p className="font-serif text-2xl break-all">surbhihote@gmail.com</p>
           </a>
-          <a href="#" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
+          <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
             <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
               <Linkedin size={18} className="text-muted-foreground" />
             </div>
