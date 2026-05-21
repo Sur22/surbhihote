@@ -101,10 +101,10 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
       {/* Selected work */}
-      <section id="case-studies" className="mx-auto max-w-[1400px] px-6 md:px-10 py-20 scroll-mt-20">
+      <section id="case-studies" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
         <div className="mb-12">
           <p className="eyebrow mb-4">Selected Work</p>
           <h2 className="font-serif text-4xl md:text-5xl">Case studies</h2>
