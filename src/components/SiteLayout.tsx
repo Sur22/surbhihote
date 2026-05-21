@@ -32,7 +32,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 h-16 flex items-center justify-between">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-10 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-baseline gap-2">
             <span className="font-serif text-2xl leading-none">Surbhi Hote</span>
           </Link>
