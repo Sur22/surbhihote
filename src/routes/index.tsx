@@ -56,9 +56,9 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mira Vale — Product & UX Design Studio" },
+      { title: "Surbhi Hote — Product & UX Design Studio" },
       { name: "description", content: "Independent product designer crafting calm, considered software. Selected case studies in fintech, wellness, and travel." },
-      { property: "og:title", content: "Mira Vale — Product & UX Design Studio" },
+      { property: "og:title", content: "Surbhi Hote — Product & UX Design Studio" },
       { property: "og:description", content: "Selected work in fintech, wellness, and travel." },
     ],
   }),
@@ -91,7 +91,7 @@ function IndexPage() {
             <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
               <img
                 src={heroPortrait}
-                alt="Mira Vale"
+                alt="Surbhi Hote"
                 width={800}
                 height={1000}
                 className="w-full h-auto object-cover"

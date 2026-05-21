@@ -10,9 +10,9 @@ import g6 from "@/assets/gallery-6.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Mira Vale" },
+      { title: "Gallery — Surbhi Hote" },
       { name: "description", content: "Sketches, explorations, off-cuts. A loose archive from the studio." },
-      { property: "og:title", content: "Gallery — Mira Vale" },
+      { property: "og:title", content: "Gallery — Surbhi Hote" },
       { property: "og:description", content: "Sketches, explorations, off-cuts." },
     ],
   }),
