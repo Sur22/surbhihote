@@ -56,7 +56,7 @@ function GalleryPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-10 md:pt-16 pb-16 md:pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-10 md:pt-16 pb-16 md:pb-24">
         <div className="overflow-hidden rounded-sm bg-secondary">
           <img
             src={g1}
@@ -73,7 +73,7 @@ function GalleryPage() {
       </section>
 
       {/* Full-size entries */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pb-24 space-y-20 md:space-y-28">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24 space-y-20 md:space-y-28">
         {items.map((it, i) => (
           <article key={i}>
             <div className="overflow-hidden rounded-sm bg-secondary">
