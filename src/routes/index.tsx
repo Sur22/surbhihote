@@ -91,7 +91,7 @@ function IndexPage() {
             <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
               <img
                 src={heroPortrait}
-                alt="Mira Vale"
+                alt="Surbhi Hote"
                 width={800}
                 height={1000}
                 className="w-full h-auto object-cover"

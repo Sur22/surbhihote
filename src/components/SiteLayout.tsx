@@ -53,7 +53,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <footer className="border-t border-border mt-32">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Mira Vale. All rights reserved.
+            © {new Date().getFullYear()} Surbhi Hote. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             <a href="mailto:hello@miravale.studio" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
