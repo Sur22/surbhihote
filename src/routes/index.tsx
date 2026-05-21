@@ -69,7 +69,7 @@ function IndexPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="mx-auto max-w-[1400px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <section className="mx-auto max-w-[1400px] px-6 md:pl-[8vw] md:pr-10 pt-16 md:pt-24 pb-24">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5 md:order-1">
             <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
@@ -101,10 +101,10 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="rule mx-6 md:ml-[8vw] md:mr-10" />
 
       {/* Selected work */}
-      <section id="case-studies" className="mx-auto max-w-[1400px] px-6 md:px-10 py-20 scroll-mt-20">
+      <section id="case-studies" className="mx-auto max-w-[1400px] px-6 md:pl-[8vw] md:pr-10 py-20 scroll-mt-20">
         <div className="mb-12">
           <p className="eyebrow mb-4">Selected Work</p>
           <h2 className="font-serif text-4xl md:text-5xl">Case studies</h2>
