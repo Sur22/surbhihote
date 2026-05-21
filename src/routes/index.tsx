@@ -87,8 +87,8 @@ function IndexPage() {
               Resume
             </a>
           </div>
-          <div className="md:col-span-5">
-            <div className="overflow-hidden rounded-[5%] w-full max-w-sm">
+          <div className="md:col-span-5 md:ml-auto">
+            <div className="overflow-hidden rounded-[5%] w-full max-w-sm md:ml-auto">
               <img
                 src={heroPortrait}
                 alt="Surbhi Hote"
