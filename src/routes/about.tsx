@@ -51,9 +51,8 @@ export function AboutPage() {
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-7">
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              Twelve years<br />
-              of paying attention to<br />
-              <em className="text-accent not-italic font-serif italic">small things.</em>
+              Person behind<br />
+              the pixel
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
@@ -61,9 +60,6 @@ export function AboutPage() {
               </p>
               <p>
                 I've spent the last decade inside product teams at Linear, Monzo, and IDEO — shipping software used by millions and quietly removing more than I added. In 2022 I went independent so I could choose collaborators by craft, not headcount.
-              </p>
-              <p>
-                I take on three to four projects a year. I work directly with founders and design leads, embedded for 8–14 weeks. No decks, no account managers, no junior shadow team.
               </p>
             </div>
             <div className="mt-8">
@@ -109,11 +105,11 @@ export function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">Selected clients</p>
+            <p className="eyebrow">Companies I worked with</p>
           </div>
           <div className="md:col-span-9">
             <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
-              {["Fjord", "Solace", "Atlas", "Linear"].map((c) => (
+              {["Ampersand", "Suuchi Inc.", "Spacewood", "Make a Difference"].map((c) => (
                 <span key={c}>{c}</span>
               ))}
             </div>
