@@ -42,6 +42,12 @@ const designValues = [
   { t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
 ];
 
+const services = [
+  { n: "01", t: "Product design", d: "End-to-end work on consumer and prosumer software — discovery, IA, interaction, visual." },
+  { n: "02", t: "Design systems", d: "Token-first systems that survive contact with engineering, marketing, and ten new hires." },
+  { n: "03", t: "Workshops", d: "Two-day intensives for in-house teams on product principles, IA, and the craft of cuts." },
+];
+
 export function AboutPage() {
   const autoplay = useRef(Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }));
 
@@ -95,6 +101,26 @@ export function AboutPage() {
               <p className="text-base leading-relaxed text-muted-foreground">{v.d}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <div className="rule mx-6 md:mx-10" />
+
+      {/* Services */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
+          <div className="md:col-span-3">
+            <p className="eyebrow">How I work</p>
+          </div>
+          <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            {services.map((s) => (
+              <div key={s.n}>
+                <p className="font-serif text-3xl text-accent mb-3">{s.n}</p>
+                <h3 className="font-serif text-2xl mb-3">{s.t}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{s.d}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
