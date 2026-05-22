@@ -89,7 +89,6 @@ function AboutPage() {
           <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {services.map((s) => (
               <div key={s.n}>
-                <p className="font-serif text-3xl text-accent mb-3">{s.n}</p>
                 <h3 className="font-serif text-2xl mb-3">{s.t}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">{s.d}</p>
               </div>
