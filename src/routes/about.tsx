@@ -35,12 +35,6 @@ const galleryImages = [
   { src: g6, alt: "Gallery image six" },
 ];
 
-const designValues = [
-  { t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
-  { t: "Aesthetic Precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
-  { t: "Technical Grounding", d: "My background in semiconductors and engineering ensures designs are not only beautiful but also technically robust and feasible." },
-  { t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
-];
 
 const services = [
   { n: "01", t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
@@ -84,24 +78,6 @@ export function AboutPage() {
             </div>
             <p className="mt-4 text-xs text-muted-foreground italic">Studio, Príncipe Real — September 2025</p>
           </div>
-        </div>
-      </section>
-
-      <div className="rule mx-6 md:mx-10" />
-
-      {/* Design Values */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <div className="flex items-center gap-6 mb-10 md:mb-12">
-          <h2 className="display text-[clamp(1.75rem,4vw,2.75rem)]">Design Values</h2>
-          <div className="flex-1 h-px bg-border" />
-        </div>
-        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
-          {designValues.map((v) => (
-            <div key={v.t} className="border border-border rounded-lg p-6 md:p-8">
-              <h3 className="font-sans font-bold text-xl md:text-2xl mb-4">{v.t}</h3>
-              <p className="text-base leading-relaxed text-muted-foreground">{v.d}</p>
-            </div>
-          ))}
         </div>
       </section>
 
