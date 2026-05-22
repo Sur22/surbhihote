@@ -93,8 +93,8 @@ function IndexPage() {
             <h1 className="font-serif">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
-            <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
-              Identifying the equilibrium between user needs, business priorities, and technological possibilities. My work spans B2B, SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft. With a background in IT engineering and Computer Science, I approach problems with technical precision and aesthetic excellence to design outcomes that scale.
+            <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md font-sans">
+              Identifying the equilibrium between user needs, business opportunities, and technological possibilities. My work spans B2B, SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft. With a background in IT engineering and Computer Science, I approach problems with technical precision and aesthetic excellence to design outcomes that scale.
             </p>
             <a
               href="/resume.pdf"
