@@ -77,6 +77,13 @@ function GalleryPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24 space-y-20 md:space-y-28">
         {items.map((it, i) => (
           <article key={i}>
+            <div className="mb-6 md:mb-8 grid md:grid-cols-12 gap-6 md:gap-10 items-start">
+              <div className="md:col-span-7 flex flex-wrap items-center gap-x-4 gap-y-3">
+                <h2 className="font-serif text-2xl md:text-3xl leading-tight">{it.title}</h2>
+                <span className="eyebrow">{it.tags.join(" · ")}</span>
+              </div>
+              <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
+            </div>
             <div className="overflow-hidden rounded-sm bg-secondary">
               <img
                 src={it.src}
@@ -84,13 +91,6 @@ function GalleryPage() {
                 loading="lazy"
                 className="w-full h-auto object-cover"
               />
-            </div>
-            <div className="mt-6 md:mt-8 grid md:grid-cols-12 gap-6 md:gap-10 items-start">
-              <div className="md:col-span-7 flex flex-wrap items-center gap-x-4 gap-y-3">
-                <h2 className="font-serif text-2xl md:text-3xl leading-tight">{it.title}</h2>
-                <span className="eyebrow">{it.tags.join(" · ")}</span>
-              </div>
-              <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
           </article>
         ))}
