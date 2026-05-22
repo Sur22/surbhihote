@@ -111,7 +111,7 @@ export function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">How I work</p>
+            <p className="eyebrow">Design values</p>
           </div>
           <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {services.map((s) => (
