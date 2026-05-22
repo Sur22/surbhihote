@@ -25,7 +25,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 width={1400}
                 height={1000}
                 loading="lazy"
-                className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
+                className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-md shadow-md"
               />
             </div>
           </div>
