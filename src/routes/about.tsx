@@ -104,7 +104,7 @@ export function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">Companies I worked with</p>
+            <p className="eyebrow">Trusted by</p>
           </div>
           <div className="md:col-span-9">
             <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
