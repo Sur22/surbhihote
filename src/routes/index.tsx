@@ -89,12 +89,12 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-7 md:order-2">
+          <div className="font-serif md:text-5xl text-6xl">
             <h1 className="font-serif text-4xl md:text-5xl">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
-              Identifying the equilibrium between user needs, business priorities, and technological possibilities. My work spans SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft.
+              Identifying the equilibrium between user needs, business priorities, and technological possibilities. My work spans B2B, SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft. With a background in IT engineering and Computer Science, I approach problems with technical precision and aesthetic excellence to design outcomes that scale.
             </p>
             <a
               href="/resume.pdf"
