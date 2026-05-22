@@ -171,16 +171,6 @@ function CaseStudyPage() {
                 params={{ slug: o.slug }}
                 className="group block"
               >
-                <div className="overflow-hidden rounded-sm bg-secondary mb-5">
-                  <img
-                    src={o.cover}
-                    alt={o.title}
-                    width={1400}
-                    height={1000}
-                    loading="lazy"
-                    className="w-full h-[280px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
-                  />
-                </div>
                 <div className="flex items-baseline gap-3 mb-2">
                   <span className="font-serif text-xl text-accent">{o.index}</span>
                   <span className="eyebrow">{o.tags.slice(0, 3).join(" · ")}</span>
