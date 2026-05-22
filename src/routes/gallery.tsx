@@ -62,7 +62,7 @@ function GalleryPage() {
           <img
             src={g1}
             alt="Gallery hero — studio archive"
-            className="w-full h-[40vh] md:h-[60vh] object-cover"
+            className="w-full h-[20vh] md:h-[30vh] object-cover"
           />
         </div>
         <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
