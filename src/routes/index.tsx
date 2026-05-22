@@ -19,14 +19,14 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       <Link to="/work/$slug" params={{ slug: c.slug }} className="group block">
         <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
-            <div className="overflow-hidden rounded-sm bg-secondary">
+            <div className="overflow-hidden rounded-[5%] bg-secondary">
               <img
                 src={c.cover}
                 alt={c.title}
                 width={1400}
                 height={1000}
                 loading="lazy"
-                className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-md shadow-md"
+                className="w-full h-[420px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md"
               />
             </div>
           </div>
