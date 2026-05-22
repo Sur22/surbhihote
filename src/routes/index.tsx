@@ -89,8 +89,8 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="font-serif md:text-5xl text-6xl">
-            <h1 className="font-serif text-4xl md:text-5xl">
+          <div className="md:col-span-7 md:order-2 font-serif md:text-5xl text-6xl">
+            <h1 className="font-serif">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
