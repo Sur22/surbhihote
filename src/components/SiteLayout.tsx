@@ -73,7 +73,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
 
           {/* Vibe line */}
-          <p className="text-sm text-muted-foreground flex items-center gap-1.5">
+          <p className="p text-accent flex items-center gap-1.5">
             Made with <span className="text-red-500">❤️</span> <span className="text-amber-600">🍜</span> <span className="text-emerald-600">🍵</span> and vibe coding
           </p>
 
