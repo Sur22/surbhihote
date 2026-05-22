@@ -43,7 +43,7 @@ const services = [
   { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
 ];
 
-export function AboutPage() {
+function AboutPage() {
   const autoplay = useRef(Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }));
 
   return (
