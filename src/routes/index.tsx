@@ -90,9 +90,9 @@ function IndexPage() {
             </div>
           </div>
           <div className="md:col-span-7 md:order-2">
-            <h2 className="font-serif text-4xl md:text-5xl">
-              Hi, I'm <span className="text-accent">Surbhi</span>.
-            </h2>
+            <h1 className="font-serif text-4xl md:text-5xl">
+              Hi, I'm <em className="text-accent">Surbhi</em>.
+            </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
               Identifying the equilibrium between user needs, business priorities, and technological possibilities. My work spans SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft.
             </p>
