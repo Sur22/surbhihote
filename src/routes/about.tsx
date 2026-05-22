@@ -43,9 +43,10 @@ const designValues = [
 ];
 
 const services = [
-  { n: "01", t: "Product design", d: "End-to-end work on consumer and prosumer software — discovery, IA, interaction, visual." },
-  { n: "02", t: "Design systems", d: "Token-first systems that survive contact with engineering, marketing, and ten new hires." },
-  { n: "03", t: "Workshops", d: "Two-day intensives for in-house teams on product principles, IA, and the craft of cuts." },
+  { n: "01", t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
+  { n: "02", t: "Aesthetic Precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
+  { n: "03", t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
+  { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
 ];
 
 export function AboutPage() {
