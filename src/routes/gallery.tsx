@@ -89,7 +89,7 @@ function GalleryPage() {
                 src={it.src}
                 alt={it.title}
                 loading="lazy"
-                className="w-full h-auto object-cover"
+                className="w-full h-[280px] md:h-[380px] object-cover"
               />
             </div>
           </article>
