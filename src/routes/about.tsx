@@ -66,6 +66,15 @@ export function AboutPage() {
                 Thank you for exploring my work. I blend tech, and design and strategy,  to solve complex problems. For me, it's all about creating tangible value and outcomes that stick. If you have an interesting project on the horizon, let's connect.
               </p>
             </div>
+            <div className="mt-8">
+              <Button asChild variant="outline" size="lg">
+                <a href="/resume.pdf" download>
+                  <Download /> Resume
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div className="rule mx-6 md:mx-10" />
