@@ -90,11 +90,11 @@ function IndexPage() {
             </div>
           </div>
           <div className="md:col-span-7 md:order-2">
-            <h1 className="display text-[clamp(1.5rem,4.5vw,4.25rem)]">
-              Hi, I'm Surbhi.
-            </h1>
+            <h2 className="font-serif text-4xl md:text-5xl">
+              Hi, I'm <span className="text-accent">Surbhi</span>.
+            </h2>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
-              I help product teams turn complex problems into clean, intuitive experiences. My work spans SaaS platforms, enterprise tools, and consumer apps — always rooted in real user research and quiet, deliberate craft.
+              Identifying the equilibrium between user needs, business priorities, and technological possibilities. My work spans SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft.
             </p>
             <a
               href="/resume.pdf"
