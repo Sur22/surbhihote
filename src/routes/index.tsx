@@ -97,14 +97,13 @@ function IndexPage() {
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md font-sans">
               Identifying the equilibrium between user needs, business opportunities, and technological possibilities. My work spans B2B, SaaS platforms, enterprise tools—always rooted in real user research and quiet, deliberate craft. With a background in IT engineering and Computer Science, I approach problems with technical precision and aesthetic excellence to design outcomes that scale.
             </p>
-            <a
-              href="/resume.pdf"
-              download
-              className="mt-8 inline-flex items-center gap-2 text-sm border border-foreground/40 hover:border-foreground hover:bg-secondary px-4 py-2.5 transition-colors"
-            >
-              <Download size={14} />
-              Resume
-            </a>
+            <div className="mt-8">
+              <Button asChild variant="outline" size="lg">
+                <a href="/resume.pdf" download>
+                  <Download /> Resume
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
