@@ -40,8 +40,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
-            <a href="mailto:surbhihote@gmail.com" className="hidden sm:inline-flex items-center gap-1.5 text-foreground border-b border-foreground/40 hover:border-foreground transition-colors">
-              Contact
+            <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+              <Mail size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <Linkedin size={18} />
             </a>
             <ThemeToggle />
           </nav>
