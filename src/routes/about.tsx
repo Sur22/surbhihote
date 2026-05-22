@@ -40,10 +40,10 @@ const services = [
   { n: "01", t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
   { n: "02", t: "Aesthetic Precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
   { n: "03", t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
+  { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
   { n: "05", t: "Data Driven Design", d: "I use user research data to inform my design decisions rather than assumptions." },
   { n: "06", t: "AI Forward Design", d: "I embrace and adopt quickly to the changing technology and have incorporated it into my design process to speed it up." },
-
-function AboutPage() {
+];
   const autoplay = useRef(Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }));
 
   return (
