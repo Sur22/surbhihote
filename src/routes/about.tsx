@@ -44,6 +44,8 @@ const services = [
   { n: "05", t: "Data Driven Design", d: "I use user research data to inform my design decisions rather than assumptions." },
   { n: "06", t: "AI Forward Design", d: "I embrace and adopt quickly to the changing technology and have incorporated it into my design process to speed it up." },
 ];
+
+function AboutPage() {
   const autoplay = useRef(Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }));
 
   return (
