@@ -35,10 +35,11 @@ const galleryImages = [
   { src: g6, alt: "Gallery image six" },
 ];
 
-const services = [
-  { n: "01", t: "Product design", d: "End-to-end work on consumer and prosumer software — discovery, IA, interaction, visual." },
-  { n: "02", t: "Design systems", d: "Token-first systems that survive contact with engineering, marketing, and ten new hires." },
-  { n: "03", t: "Workshops", d: "Two-day intensives for in-house teams on product principles, IA, and the craft of cuts." },
+const designValues = [
+  { t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
+  { t: "Aesthetic Precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
+  { t: "Technical Grounding", d: "My background in semiconductors and engineering ensures designs are not only beautiful but also technically robust and feasible." },
+  { t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
 ];
 
 export function AboutPage() {
@@ -81,21 +82,19 @@ export function AboutPage() {
 
       <div className="rule mx-6 md:mx-10" />
 
-      {/* Services */}
+      {/* Design Values */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">How I work</p>
-          </div>
-          <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {services.map((s) => (
-              <div key={s.n}>
-                <p className="font-serif text-3xl text-accent mb-3">{s.n}</p>
-                <h3 className="font-serif text-2xl mb-3">{s.t}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-              </div>
-            ))}
-          </div>
+        <div className="flex items-center gap-6 mb-10 md:mb-12">
+          <h2 className="display text-[clamp(1.75rem,4vw,2.75rem)]">Design Values</h2>
+          <div className="flex-1 h-px bg-border" />
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+          {designValues.map((v) => (
+            <div key={v.t} className="border border-border rounded-lg p-6 md:p-8">
+              <h3 className="font-sans font-bold text-xl md:text-2xl mb-4">{v.t}</h3>
+              <p className="text-base leading-relaxed text-muted-foreground">{v.d}</p>
+            </div>
+          ))}
         </div>
       </section>
 
