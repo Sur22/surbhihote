@@ -91,7 +91,7 @@ function IndexPage() {
           </div>
           <div className="md:col-span-7 md:order-2">
             <h1 className="display text-[clamp(1.5rem,4.5vw,4.25rem)]">
-              Hi, I'm Surbhi — I design calm, useful products.
+              Hi, I'm Surbhi.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 max-w-md">
               I help product teams turn complex problems into clean, intuitive experiences. My work spans SaaS platforms, enterprise tools, and consumer apps — always rooted in real user research and quiet, deliberate craft.
