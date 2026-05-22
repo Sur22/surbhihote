@@ -1,6 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { caseStudies } from "@/lib/case-studies";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -94,42 +93,6 @@ function GalleryPage() {
             </div>
           </article>
         ))}
-      </section>
-
-      {/* Case studies */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-20">
-          <p className="eyebrow mb-10">Case studies</p>
-          <div className="grid md:grid-cols-2 gap-10">
-            {caseStudies.map((o) => (
-              <Link
-                key={o.slug}
-                to="/work/$slug"
-                params={{ slug: o.slug }}
-                className="group block"
-              >
-                <div className="overflow-hidden rounded-sm bg-secondary mb-5">
-                  <img
-                    src={o.cover}
-                    alt={o.title}
-                    width={1400}
-                    height={1000}
-                    loading="lazy"
-                    className="w-full h-[280px] object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
-                  />
-                </div>
-                <div className="flex items-baseline gap-3 mb-2">
-                  <span className="font-serif text-xl text-accent">{o.index}</span>
-                  <span className="eyebrow">{o.tags.slice(0, 3).join(" · ")}</span>
-                </div>
-                <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors">
-                  {o.title}
-                </h3>
-                <p className="mt-2 text-foreground/70 leading-relaxed max-w-md">{o.subtitle}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
       </section>
     </SiteLayout>
   );
