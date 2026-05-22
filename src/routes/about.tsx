@@ -51,17 +51,19 @@ export function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
         <p className="eyebrow mb-8">About</p>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-7">
+          <div className="md:col-span-5 order-2 md:order-1">
+            <div className="overflow-hidden rounded-2xl aspect-square">
+              <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-full object-cover" />
+            </div>
+            <p className="mt-4 text-xs text-muted-foreground italic">Studio, Príncipe Real — September 2025</p>
+          </div>
+          <div className="md:col-span-7 order-1 md:order-2">
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              Person behind<br />
-              the pixel
+              Hi, <em className="text-accent">Again!</em>
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
-                I'm Surbhi Hote, a product designer working independently from Lisbon. My practice sits at the intersection of editorial sensibility and engineering rigor — I care about the rhythm of a paragraph as much as the bezier of a curve.
-              </p>
-              <p>
-                I've spent the last decade inside product teams at Linear, Monzo, and IDEO — shipping software used by millions and quietly removing more than I added. In 2022 I went independent so I could choose collaborators by craft, not headcount.
+                Thank you for exploring my work. I blend tech, and design and strategy,  to solve complex problems. For me, it's all about creating tangible value and outcomes that stick. If you have an interesting project on the horizon, let's connect.
               </p>
             </div>
             <div className="mt-8">
@@ -71,12 +73,6 @@ export function AboutPage() {
                 </a>
               </Button>
             </div>
-          </div>
-          <div className="md:col-span-5">
-            <div className="overflow-hidden rounded-sm">
-              <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-auto object-cover" />
-            </div>
-            <p className="mt-4 text-xs text-muted-foreground italic">Studio, Príncipe Real — September 2025</p>
           </div>
         </div>
       </section>
