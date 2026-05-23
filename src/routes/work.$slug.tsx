@@ -104,22 +104,9 @@ function CaseStudyPage() {
           </div>
           <div className="md:col-span-9 space-y-12">
             <p className="font-serif text-3xl md:text-4xl leading-[1.2]">{c.summary}</p>
-            <div className="grid md:grid-cols-2 gap-12 pt-4">
-              <div>
-                <p className="eyebrow mb-3">The problem</p>
-                <p className="text-lg leading-relaxed text-foreground/80">{c.problem}</p>
-              </div>
-              <div>
-                <p className="eyebrow mb-3">Approach</p>
-                <ul className="space-y-3 text-foreground/80">
-                  {c.approach.map((a, i) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="font-serif text-accent shrink-0 w-6">{String(i + 1).padStart(2, "0")}</span>
-                      <span className="leading-relaxed">{a}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="pt-4">
+              <p className="eyebrow mb-3">The problem</p>
+              <p className="text-lg leading-relaxed text-foreground/80">{c.problem}</p>
             </div>
           </div>
         </div>
