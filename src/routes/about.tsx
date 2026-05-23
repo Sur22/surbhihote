@@ -176,9 +176,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16 md:pb-24">
-        <Link to="/" className="text-sm border-b border-foreground/40 hover:border-foreground">← Back to work</Link>
-      </section>
     </SiteLayout>
   );
 }
