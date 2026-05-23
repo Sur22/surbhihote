@@ -208,6 +208,9 @@ function CaseStudyPage() {
                   {o.title}
                 </h3>
                 <p className="mt-2 text-foreground/70 leading-relaxed max-w-md">{o.subtitle}</p>
+                <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
+                  Read the case study →
+                </span>
               </Link>
             ))}
           </div>
