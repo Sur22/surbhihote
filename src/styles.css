@@ -74,7 +74,7 @@
 .dark {
   --paper: oklch(0.12 0.02 60);
   --ink: oklch(0.93 0.018 80);
-  --clay: #006e90;
+  --clay: #5BC2E7;
   --sage: oklch(0.65 0.05 150);
   --rule: oklch(0.28 0.02 75);
 
