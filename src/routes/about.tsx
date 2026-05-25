@@ -31,12 +31,6 @@ export const Route = createFileRoute("/about")({
 });
 
 const galleryImages = [
-  { src: g1, alt: "Gallery image one" },
-  { src: g2, alt: "Gallery image two" },
-  { src: g3, alt: "Gallery image three" },
-  { src: g4, alt: "Gallery image four" },
-  { src: g5, alt: "Gallery image five" },
-  { src: g6, alt: "Gallery image six" },
   { src: g7, alt: "City skyline at night with full moon" },
   { src: g8, alt: "Skyscrapers from below against blue sky" },
   { src: g9, alt: "Gallery image nine" },
