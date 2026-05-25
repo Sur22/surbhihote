@@ -116,10 +116,9 @@ function CaseStudyPage() {
           {c.sections.map((s, i) => (
             <article key={i}>
               <div className="mb-6">
-                <p className="font-serif text-accent text-2xl mb-2">{String(i + 1).padStart(2, "0")}</p>
                 <h3 className="font-serif text-3xl">{s.heading}</h3>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 max-w-3xl">{s.body}</p>
+              <p className="text-lg leading-relaxed text-foreground/85">{s.body}</p>
             </article>
           ))}
         </div>
