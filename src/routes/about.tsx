@@ -83,7 +83,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Services */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
@@ -102,7 +102,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Clients */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
@@ -131,7 +131,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Image Carousel */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
@@ -153,7 +153,7 @@ function AboutPage() {
         </Carousel>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
 
 

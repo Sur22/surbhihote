@@ -112,7 +112,7 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
@@ -131,7 +131,7 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="rule mx-6 md:mx-10" />
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Outcomes */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
