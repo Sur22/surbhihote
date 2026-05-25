@@ -12,6 +12,10 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
+import ampersandLogo from "@/assets/clients/ampersand.webp";
+import suuchiLogo from "@/assets/clients/suuchi.png";
+import spacewoodLogo from "@/assets/clients/spacewood.png";
+import madLogo from "@/assets/clients/mad.png";
 
 
 export const Route = createFileRoute("/about")({
@@ -108,9 +112,20 @@ function AboutPage() {
             <p className="eyebrow">Trusted by</p>
           </div>
           <div className="md:col-span-9">
-            <div className="flex flex-wrap gap-x-10 gap-y-5 font-serif text-3xl md:text-4xl text-foreground/80">
-              {["Ampersand", "Suuchi Inc.", "Spacewood", "Make a Difference"].map((c) => (
-                <span key={c}>{c}</span>
+            <div className="flex flex-wrap items-center gap-x-12 gap-y-8">
+              {[
+                { name: "Ampersand", src: ampersandLogo },
+                { name: "Suuchi Inc.", src: suuchiLogo },
+                { name: "Spacewood", src: spacewoodLogo },
+                { name: "Make a Difference", src: madLogo },
+              ].map((c) => (
+                <img
+                  key={c.name}
+                  src={c.src}
+                  alt={c.name}
+                  loading="lazy"
+                  className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                />
               ))}
             </div>
           </div>
