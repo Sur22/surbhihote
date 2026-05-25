@@ -6,12 +6,6 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import portrait from "@/assets/about-portrait.jpg";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
 import g7 from "@/assets/gallery-7.jpg";
 import g8 from "@/assets/gallery-8.webp";
 import g9 from "@/assets/gallery-9.jpg";
@@ -37,12 +31,6 @@ export const Route = createFileRoute("/about")({
 });
 
 const galleryImages = [
-  { src: g1, alt: "Gallery image one" },
-  { src: g2, alt: "Gallery image two" },
-  { src: g3, alt: "Gallery image three" },
-  { src: g4, alt: "Gallery image four" },
-  { src: g5, alt: "Gallery image five" },
-  { src: g6, alt: "Gallery image six" },
   { src: g7, alt: "City skyline at night with full moon" },
   { src: g8, alt: "Skyscrapers from below against blue sky" },
   { src: g9, alt: "Gallery image nine" },
