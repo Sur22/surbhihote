@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
 const nav = [
-  { to: "/", label: "Case Studies" },
-  { to: "/work/fjord", label: "Work" },
+  { to: "/", label: "Case Studies", hash: "case-studies" as const },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
 ] as const;
@@ -36,7 +36,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <Link to="/" className="flex items-baseline gap-2">
             <span className="font-serif text-2xl leading-none">SH.</span>
           </Link>
-          <nav className="flex items-center gap-7 text-sm">
+          <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
@@ -48,6 +48,44 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </a>
             <ThemeToggle />
           </nav>
+
+          {/* Mobile hamburger menu */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <button
+                className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors md:hidden"
+                aria-label="Open menu"
+              >
+                <Menu size={20} />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[280px] sm:w-[320px]">
+              <div className="flex flex-col gap-8 mt-8">
+                <div className="flex flex-col gap-6 text-lg">
+                  {nav.map((item) => (
+                    <SheetClose asChild key={item.to}>
+                      <Link
+                        to={item.to}
+                        hash={"hash" in item ? item.hash : undefined}
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </div>
+                <div className="flex items-center gap-5 pt-6 border-t border-border">
+                  <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+                    <Mail size={20} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+                    <Linkedin size={20} />
+                  </a>
+                  <ThemeToggle />
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </header>
 
