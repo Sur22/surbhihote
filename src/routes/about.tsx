@@ -106,31 +106,27 @@ function AboutPage() {
 
       {/* Clients */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">Trusted by</p>
-          </div>
-          <div className="md:col-span-9">
-            <div className="flex flex-nowrap items-center gap-4 sm:gap-6 md:gap-8 overflow-x-auto">
-              {[
-                { name: "Ampersand", src: ampersandLogo, dark: false },
-                { name: "Suuchi Inc.", src: suuchiLogo, dark: false },
-                { name: "Spacewood", src: spacewoodLogo, dark: true },
-                { name: "Make a Difference", src: madLogo, dark: false },
-              ].map((c) => (
-                <div
-                  key={c.name}
-                  className={`shrink-0 flex items-center justify-center h-14 md:h-16 px-3 rounded-sm ${c.dark ? "bg-black" : ""}`}
-                >
-                  <img
-                    src={c.src}
-                    alt={c.name}
-                    loading="lazy"
-                    className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-                  />
-                </div>
-              ))}
-            </div>
+        <div className="flex flex-col gap-6">
+          <p className="eyebrow">Trusted by</p>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8">
+            {[
+              { name: "Ampersand", src: ampersandLogo, dark: false },
+              { name: "Suuchi Inc.", src: suuchiLogo, dark: false },
+              { name: "Spacewood", src: spacewoodLogo, dark: true },
+              { name: "Make a Difference", src: madLogo, dark: false },
+            ].map((c) => (
+              <div
+                key={c.name}
+                className={`shrink-0 flex items-center justify-center h-14 md:h-16 px-3 rounded-sm ${c.dark ? "bg-black" : ""}`}
+              >
+                <img
+                  src={c.src}
+                  alt={c.name}
+                  loading="lazy"
+                  className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
