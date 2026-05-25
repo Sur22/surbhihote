@@ -17,6 +17,7 @@ import g8 from "@/assets/gallery-8.webp";
 import g9 from "@/assets/gallery-9.jpg";
 import g10 from "@/assets/gallery-10.jpg";
 import g11 from "@/assets/gallery-11.jpg";
+import g12 from "@/assets/gallery-12.jpg";
 import ampersandLogo from "@/assets/clients/ampersand.webp";
 import suuchiLogo from "@/assets/clients/suuchi.png";
 import spacewoodLogo from "@/assets/clients/spacewood.png";
@@ -47,6 +48,7 @@ const galleryImages = [
   { src: g9, alt: "Gallery image nine" },
   { src: g10, alt: "Gallery image ten" },
   { src: g11, alt: "Gallery image eleven" },
+  { src: g12, alt: "Gallery image twelve" },
 ];
 
 
