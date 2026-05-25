@@ -87,18 +87,14 @@ function AboutPage() {
 
       {/* Services */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">Design values</p>
-          </div>
-          <div className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {services.map((s) => (
-              <div key={s.n}>
-                <h3 className="font-serif text-2xl mb-3">{s.t}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-              </div>
-            ))}
-          </div>
+        <p className="eyebrow mb-10">Design values</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          {services.map((s) => (
+            <div key={s.n}>
+              <h3 className="font-serif text-2xl mb-3">{s.t}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{s.d}</p>
+            </div>
+          ))}
         </div>
       </section>
 
