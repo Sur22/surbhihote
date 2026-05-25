@@ -98,16 +98,12 @@ function CaseStudyPage() {
 
       {/* Summary + problem */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
-        <div className="grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-3">
-            <p className="eyebrow">Overview</p>
-          </div>
-          <div className="md:col-span-9 space-y-12">
-            <p className="font-serif text-3xl md:text-4xl leading-[1.2]">{c.summary}</p>
-            <div className="pt-4">
-              <p className="eyebrow mb-3">The problem</p>
-              <p className="text-lg leading-relaxed text-foreground/80">{c.problem}</p>
-            </div>
+        <p className="eyebrow mb-8">Overview</p>
+        <div className="space-y-12">
+          <p className="font-serif text-3xl md:text-4xl leading-[1.2]">{c.summary}</p>
+          <div className="pt-4">
+            <p className="eyebrow mb-3">The problem</p>
+            <p className="text-lg leading-relaxed text-foreground/80">{c.problem}</p>
           </div>
         </div>
       </section>
@@ -118,14 +114,12 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <div className="space-y-20">
           {c.sections.map((s, i) => (
-            <article key={i} className="grid md:grid-cols-12 gap-12">
-              <div className="md:col-span-3">
+            <article key={i}>
+              <div className="mb-6">
                 <p className="font-serif text-accent text-2xl mb-2">{String(i + 1).padStart(2, "0")}</p>
                 <h3 className="font-serif text-3xl">{s.heading}</h3>
               </div>
-              <div className="md:col-span-8 md:col-start-5">
-                <p className="text-lg leading-relaxed text-foreground/85 max-w-2xl">{s.body}</p>
-              </div>
+              <p className="text-lg leading-relaxed text-foreground/85 max-w-3xl">{s.body}</p>
             </article>
           ))}
         </div>
