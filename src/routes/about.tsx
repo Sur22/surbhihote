@@ -102,7 +102,7 @@ function AboutPage() {
 
       {/* Clients */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8 md:gap-10">
           <p className="eyebrow">Trusted by</p>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8">
             {[
