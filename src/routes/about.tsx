@@ -12,6 +12,11 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
+import g7 from "@/assets/gallery-7.jpg";
+import g8 from "@/assets/gallery-8.webp";
+import g9 from "@/assets/gallery-9.jpg";
+import g10 from "@/assets/gallery-10.jpg";
+import g11 from "@/assets/gallery-11.jpg";
 import ampersandLogo from "@/assets/clients/ampersand.webp";
 import suuchiLogo from "@/assets/clients/suuchi.png";
 import spacewoodLogo from "@/assets/clients/spacewood.png";
@@ -37,6 +42,11 @@ const galleryImages = [
   { src: g4, alt: "Gallery image four" },
   { src: g5, alt: "Gallery image five" },
   { src: g6, alt: "Gallery image six" },
+  { src: g7, alt: "City skyline at night with full moon" },
+  { src: g8, alt: "Skyscrapers from below against blue sky" },
+  { src: g9, alt: "Gallery image nine" },
+  { src: g10, alt: "Gallery image ten" },
+  { src: g11, alt: "Gallery image eleven" },
 ];
 
 
@@ -135,7 +145,7 @@ function AboutPage() {
 
       {/* Image Carousel */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <p className="eyebrow mb-8">From the studio</p>
+        <p className="eyebrow mb-8">From My Lens</p>
         <Carousel
           opts={{ loop: true, align: "start" }}
           plugins={[autoplay.current]}
