@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu, X } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
 const nav = [
-  { to: "/", label: "Case Studies" },
-  { to: "/work/fjord", label: "Work" },
+  { to: "/", label: "Case Studies", hash: "case-studies" as const },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
 ] as const;
