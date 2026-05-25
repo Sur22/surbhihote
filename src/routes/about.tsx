@@ -61,7 +61,6 @@ function AboutPage() {
             <div className="overflow-hidden rounded-2xl aspect-square">
               <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-full object-cover" />
             </div>
-            <p className="mt-4 text-xs text-muted-foreground italic">Studio, Príncipe Real — September 2025</p>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
@@ -112,20 +111,24 @@ function AboutPage() {
             <p className="eyebrow">Trusted by</p>
           </div>
           <div className="md:col-span-9">
-            <div className="flex flex-wrap items-center gap-x-12 gap-y-8">
+            <div className="flex flex-nowrap items-center gap-4 sm:gap-6 md:gap-8 overflow-x-auto">
               {[
-                { name: "Ampersand", src: ampersandLogo },
-                { name: "Suuchi Inc.", src: suuchiLogo },
-                { name: "Spacewood", src: spacewoodLogo },
-                { name: "Make a Difference", src: madLogo },
+                { name: "Ampersand", src: ampersandLogo, dark: false },
+                { name: "Suuchi Inc.", src: suuchiLogo, dark: false },
+                { name: "Spacewood", src: spacewoodLogo, dark: true },
+                { name: "Make a Difference", src: madLogo, dark: false },
               ].map((c) => (
-                <img
+                <div
                   key={c.name}
-                  src={c.src}
-                  alt={c.name}
-                  loading="lazy"
-                  className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-                />
+                  className={`shrink-0 flex items-center justify-center h-14 md:h-16 px-3 rounded-sm ${c.dark ? "bg-black" : ""}`}
+                >
+                  <img
+                    src={c.src}
+                    alt={c.name}
+                    loading="lazy"
+                    className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  />
+                </div>
               ))}
             </div>
           </div>
