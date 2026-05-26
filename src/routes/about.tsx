@@ -110,7 +110,7 @@ function AboutPage() {
               { name: "Suuchi Inc.", src: suuchiLogo, dark: false },
               { name: "Spacewood", src: spacewoodLogo, dark: true },
               { name: "Make a Difference", src: madLogo, dark: false },
-              { name: "A Name G.N. Computing", src: undefined, dark: false },
+              { name: "G.N. Computing", src: undefined, dark: false },
             ].map((c) => (
               <div
                 key={c.name}
@@ -124,7 +124,7 @@ function AboutPage() {
                     className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 ) : (
-                  <span className="font-serif text-lg md:text-xl whitespace-nowrap opacity-90 hover:opacity-100 transition-opacity">
+                  <span className="font-serif text-[1.5rem] md:text-[1.7rem] whitespace-nowrap opacity-90 hover:opacity-100 transition-opacity">
                     {c.name}
                   </span>
                 )}
