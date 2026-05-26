@@ -8,6 +8,7 @@ import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
 import brainstormingImg from "@/assets/brainstorming-session.jpg";
+import userGroupsImg from "@/assets/user-groups.png";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -259,6 +260,29 @@ function CaseStudyPage() {
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+      {/* User Groups */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">User Groups</h2>
+        <button
+          type="button"
+          onClick={() => setZoomImg(userGroupsImg)}
+          className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10"
+        >
+          <img
+            src={userGroupsImg}
+            alt="Diagram showing user groups connected to the Techpack Editor feature"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers.
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
 
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
