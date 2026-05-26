@@ -96,14 +96,16 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      {/* Summary + problem */}
+      {/* Overview + Goal */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
-        <p className="eyebrow mb-8">Overview</p>
-        <div className="space-y-12">
-          <p className="font-serif text-3xl md:text-4xl leading-[1.2]">{c.summary}</p>
-          <div className="pt-4">
-            <p className="eyebrow mb-3">The problem</p>
-            <p className="text-lg leading-relaxed text-foreground/80">{c.problem}</p>
+        <div className="space-y-16">
+          <div>
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">Overview</h2>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
+          </div>
+          <div>
+            <h2 className="font-serif text-4xl md:text-5xl mb-6">Goal</h2>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
           </div>
         </div>
       </section>
