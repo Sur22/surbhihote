@@ -16,6 +16,8 @@ import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
 import brainstormingImg from "@/assets/brainstorming-session.jpg";
 import userGroupsImg from "@/assets/user-groups.png";
+import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
+import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -323,12 +325,20 @@ function CaseStudyPage() {
           <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[1, 2].map((n) => (
-            <div key={n} className="overflow-hidden rounded-sm border border-border bg-secondary">
-              <div className="flex aspect-[4/3] w-full items-center justify-center text-foreground/40">
-                <span className="font-serif text-xl">Wireframe {n}</span>
-              </div>
-            </div>
+          {[wireframeImg1, wireframeImg2].map((img, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setZoomImg(img)}
+              className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in"
+            >
+              <img
+                src={img}
+                alt={`Low fidelity wireframe ${i + 1}`}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
           ))}
         </div>
       </section>
