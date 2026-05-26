@@ -29,6 +29,7 @@ export type CaseStudy = {
       sharedGoals: string[];
     };
   };
+  brainstorming: string;
   tags: string[];
   cover: string;
   summary: string;
