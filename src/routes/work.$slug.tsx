@@ -66,7 +66,7 @@ function CaseStudyPage() {
           <span className="font-serif text-3xl text-accent">{c.index}</span>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h2 className="display text-[clamp(3rem,9vw,8rem)] mb-10">{c.title}</h2>
+        <h1 className="display text-[clamp(3rem,9vw,8rem)] mb-10">{c.title}</h1>
         <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
           {c.subtitle}
         </p>
