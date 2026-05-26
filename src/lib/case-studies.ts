@@ -21,6 +21,14 @@ export type CaseStudy = {
     userInterviewInsights: { quote: string; author: string }[];
   };
   survey: string;
+  strategy: {
+    productGoals: {
+      intro: string;
+      businessGoals: string[];
+      userGoals: string[];
+      sharedGoals: string[];
+    };
+  };
   tags: string[];
   cover: string;
   summary: string;
