@@ -25,9 +25,9 @@ export type CaseStudy = {
 const defaultMeta = {
   role: "UI/UX Designer",
   timeframe: "4 Weeks",
-  tools: "Balsamiq, Adobe XD, Illustrator, OBS Studios, White Board, Google Forms, JIRA, Confluence",
+  tools: "Balsamiq, Adobe XD, Illustrator, White Board, Google Forms, JIRA, Confluence",
   tasksPerformed:
-    "Handle end to end design process. User Interview & stakeholder interview Brainstorming, User flow Wireframing, Prototyping Usability Testing Iterations Design Handoff Quality Assurance Collaborate with Product & Engineering and QA team throughout the process.",
+    "End to End Design, User Research, Design Strategy, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
 };
 
 export const caseStudies: CaseStudy[] = [
