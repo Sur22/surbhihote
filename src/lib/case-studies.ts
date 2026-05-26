@@ -65,7 +65,7 @@ const defaultMeta = {
     ],
   },
   survey:
-    'A survey was conducted to <strong>inform the decision of developing this feature as a part of UX Strategy</strong> to see responses from existing clients that this feature will be useful to them or not. Also to predict that potential prospects will find it valuable and <strong>boosting the product sales.</strong>\n\nThis was to gain more information for the types of tools they are using and if we could get better understanding of tools present in the market and study them',
+    'A survey was conducted to <strong>inform the decision of developing this feature as a part of UX Strategy</strong> to see responses from existing clients that this feature will be useful to them or not. Also to predict that potential prospects will find it valuable and <strong>boosting the product sales.</strong>\n\nThis was to gain more information for the types of tools they are using and if we could get better understanding of tools present in the market and study them. We also wanted to know which tool they prefer to enter techpack and material details like trims, labels, applique and other details of the style.',
 };
 
 export const caseStudies: CaseStudy[] = [
