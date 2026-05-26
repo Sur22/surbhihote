@@ -13,6 +13,8 @@ export type CaseStudy = {
   timeframe: string;
   tools: string;
   tasksPerformed: string;
+  overview: string;
+  goal: string;
   tags: string[];
   cover: string;
   summary: string;
@@ -28,6 +30,10 @@ const defaultMeta = {
   tools: "Balsamiq, Adobe XD, Illustrator, White Board, Google Forms, JIRA, Confluence",
   tasksPerformed:
     "End to End Design, User Research, Design Strategy, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
+  overview:
+    "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\nThe software have various stages where different files are stored. Each stage has certain assets that we need to track which would help in kicking of other phases of the supply chain.",
+  goal:
+    "In every stage there are certain files that are stored. Each file is technically an asset that the brand has used to facilitate their product development. We need to grant abilities to create the assets within the GRID. This would focus on creation of Tech pack for the “Tech pack” Stage. This would provide ability to users to create and consolidate the following in one single document:\n1. Consolidate/upload all the product sketches (CAD) with other parts of the assets\n2. Create/upload detailed sketches\n3. Create BOM’s\n4. Export the Tech pack into PDF file formats\n5. Material library, CAD Library, Techpack Library\n6. Sharing the the output PDF with factories and clients",
 };
 
 export const caseStudies: CaseStudy[] = [
