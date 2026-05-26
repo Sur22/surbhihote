@@ -116,7 +116,7 @@ function IndexPage() {
       <section id="case-studies" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
         <div className="mb-12">
           <p className="eyebrow mb-4">Selected Work</p>
-          <h2 className="font-serif text-4xl md:text-5xl">Case studies</h2>
+          <h2 className="font-serif text-4xl md:text-4xl">Case studies</h2>
         </div>
 
         <div className="space-y-24">

@@ -86,7 +86,7 @@ function CaseStudyPage() {
           <span className="font-serif text-3xl text-accent">{c.index}</span>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="font-serif text-4xl font-bold mb-8 md:text-lg">{c.title}</h1>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">{c.title}</h1>
         <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
           {c.subtitle}
         </p>
@@ -120,11 +120,11 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
         <div className="space-y-16">
           <div>
-            <h2 className="font-serif text-3xl mb-6">Overview</h2>
+            <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
           </div>
           <div>
-            <h2 className="font-serif text-3xl mb-6">Goal</h2>
+            <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
           </div>
         </div>
@@ -134,7 +134,7 @@ function CaseStudyPage() {
 
       {/* Research */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Research</h2>
+        <h2 className="font-serif text-4xl mb-8 font-normal md:text-2xl">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
             <h3 className="text-lg text-foreground/85">Stakeholder Interview</h3>
@@ -152,7 +152,7 @@ function CaseStudyPage() {
 
         {/* User Interview Insights */}
         <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
-          <h3 className="font-serif text-3xl md:text-4xl text-center mb-12">User interview Insights</h3>
+          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
           <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
             {c.research.userInterviewInsights.map((q, i) => (
               <figure key={i} className="text-center italic">
@@ -165,7 +165,7 @@ function CaseStudyPage() {
 
         {/* Survey */}
         <div className="mt-16">
-          <h3 className="font-serif text-3xl mb-6">Survey</h3>
+          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
           <div
             className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
             dangerouslySetInnerHTML={{
@@ -181,7 +181,7 @@ function CaseStudyPage() {
                 key={img.src}
                 type="button"
                 onClick={() => setZoomImg(img.src)}
-                className="group overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in"
+                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
               >
                 <img
                   src={img.src}
@@ -205,8 +205,8 @@ function CaseStudyPage() {
 
       {/* Strategy */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Strategy</h2>
-        <h3 className="font-serif text-3xl mb-6">Product Goals</h3>
+        <h2 className="font-serif text-4xl mb-8 font-normal md:text-2xl">Strategy</h2>
+        <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
           className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground"
           dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
@@ -252,12 +252,12 @@ function CaseStudyPage() {
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Brainstorming session with product team</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
         <button
           type="button"
           onClick={() => setZoomImg(brainstormingImg)}
-          className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in"
+          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
         >
           <img
             src={brainstormingImg}
@@ -272,11 +272,11 @@ function CaseStudyPage() {
 
       {/* User Groups */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">User Groups</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
         <button
           type="button"
           onClick={() => setZoomImg(userGroupsImg)}
-          className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10"
+          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
         >
           <img
             src={userGroupsImg}
@@ -294,7 +294,7 @@ function CaseStudyPage() {
 
       {/* User Flow */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">User flow</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
         </p>
@@ -320,7 +320,7 @@ function CaseStudyPage() {
 
       {/* Low Fidelity Wireframes */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-3xl font-bold mb-6 md:text-lg">Low Fidelity Wireframes</h2>
+        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Low Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
         </p>
@@ -330,7 +330,7 @@ function CaseStudyPage() {
               key={i}
               type="button"
               onClick={() => setZoomImg(img)}
-              className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in"
+              className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
             >
               <img
                 src={img}
@@ -350,7 +350,7 @@ function CaseStudyPage() {
 
       {/* Review with Users, Product & Engineering Team */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">
           Review with Users, Product &amp; Engineering Team
         </h2>
         <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
@@ -408,7 +408,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-6">Testing</p>
 
-        <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Usability Testing Preparation</h3>
+        <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Usability Testing Preparation</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
           Before usability testing, it is important to set up test objectives, subject, methodology, tasks, and rubrics for measuring the result of the testing before conducting a test. Therefore, I wrote a <strong className="font-semibold">usability testing plan</strong> to define what and why I want to test and get prepared for the test.
         </p>
@@ -416,7 +416,7 @@ function CaseStudyPage() {
           For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">87% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.
         </p>
 
-        <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Usability Testing</h3>
+        <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Usability Testing</h3>
         <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -458,7 +458,7 @@ function CaseStudyPage() {
 
       {/* Final Thoughts + Next Steps */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Final Thoughts + Next Steps</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
           <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
         </p>
@@ -471,7 +471,7 @@ function CaseStudyPage() {
 
       {/* Measuring the Success */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Measuring the Success</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
           These features have added more value for our existing users, clients and to the business and increase the competitiveness. <strong className="font-semibold">The designed feature is live and users are using it</strong>. This feature have also added value for the sales team for demos and attracting new clients who loved this feature in particular and they <strong className="font-semibold">closed the deal with 6 deals</strong> within a few moths after this feature was released. Getting feedback from internal users who are Product Development Manager user group were happy for this feature releases it made their work a lot easier and had saved them lot of efforts and time.
         </p>
