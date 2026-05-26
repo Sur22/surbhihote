@@ -1,8 +1,12 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Check } from "lucide-react";
+import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
+import surveyImg1 from "@/assets/techpack-survey-1.png";
+import surveyImg3 from "@/assets/techpack-survey-3.png";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -47,6 +51,11 @@ export const Route = createFileRoute("/work/$slug")({
 function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
   const others = caseStudies.filter((x) => x.slug !== c.slug);
+  const [zoomImg, setZoomImg] = useState<string | null>(null);
+  const surveyImages = [
+    { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
+    { src: surveyImg3, alt: "Which tool you use for material details — survey results" },
+  ];
 
   return (
     <SiteLayout>
@@ -155,8 +164,31 @@ function CaseStudyPage() {
                 .join(""),
             }}
           />
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {surveyImages.map((img) => (
+              <button
+                key={img.src}
+                type="button"
+                onClick={() => setZoomImg(img.src)}
+                className="group overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  loading="lazy"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       </section>
+
+      <Dialog open={!!zoomImg} onOpenChange={(o) => !o && setZoomImg(null)}>
+        <DialogContent className="max-w-5xl p-2 bg-background">
+          {zoomImg && <img src={zoomImg} alt="Survey result" className="w-full h-auto" />}
+        </DialogContent>
+      </Dialog>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
