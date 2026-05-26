@@ -18,6 +18,7 @@ export type CaseStudy = {
   research: {
     stakeholderInterview: string;
     userInterview: string;
+    userInterviewInsights: { quote: string; author: string }[];
   };
   tags: string[];
   cover: string;
