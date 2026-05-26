@@ -100,11 +100,11 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
         <div className="space-y-16">
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">Overview</h2>
+            <h2 className="font-serif text-3xl mb-6">Overview</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
           </div>
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-6">Goal</h2>
+            <h2 className="font-serif text-3xl mb-6">Goal</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
           </div>
         </div>
