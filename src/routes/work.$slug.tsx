@@ -4,6 +4,13 @@ import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
@@ -286,9 +293,25 @@ function CaseStudyPage() {
       {/* User Flow */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">User flow</h2>
-        <p className="text-lg leading-relaxed text-foreground/85">
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
         </p>
+
+        <Carousel opts={{ loop: true }} className="relative">
+          <CarouselContent>
+            {[1, 2, 3].map((n) => (
+              <CarouselItem key={n}>
+                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
+                    <span className="font-serif text-2xl">User flow {n}</span>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
