@@ -239,6 +239,14 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Brainstorming */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Brainstorming session with product team</h2>
+        <p className="text-lg leading-relaxed text-foreground/85">{c.brainstorming}</p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <div className="space-y-20">
