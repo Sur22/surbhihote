@@ -7,6 +7,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
+import brainstormingImg from "@/assets/brainstorming-session.jpg";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -242,7 +243,19 @@ function CaseStudyPage() {
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Brainstorming session with product team</h2>
-        <p className="text-lg leading-relaxed text-foreground/85">{c.brainstorming}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
+        <button
+          type="button"
+          onClick={() => setZoomImg(brainstormingImg)}
+          className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in"
+        >
+          <img
+            src={brainstormingImg}
+            alt="Whiteboard from brainstorming session with the product team"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
