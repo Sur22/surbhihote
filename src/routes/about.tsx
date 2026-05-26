@@ -124,7 +124,7 @@ function AboutPage() {
                     className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
                   />
                 ) : (
-                  <span className="font-serif text-[1.5rem] md:text-[1.7rem] whitespace-nowrap opacity-90 hover:opacity-100 transition-opacity">
+                  <span className="font-serif font-bold text-[1.875rem] md:text-[2.125rem] whitespace-nowrap opacity-90 hover:opacity-100 transition-opacity" style={{ color: "#4a6079" }}>
                     {c.name}
                   </span>
                 )}
