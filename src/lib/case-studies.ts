@@ -44,6 +44,24 @@ const defaultMeta = {
       "After I get a brief from product team about the new feature and receive the product requirement document(PRD) and comitative analysis to get holistic idea of the feature and the functionality we are thinking of developing.\nI interviewed stakeholder of this feature was the 'Head of Product Development' team. It gave me better understanding of the problem we are trying to solve.\nAs there are many phases and stages of PLM Product Development Managers were having hard time managing all the product related files and data. They had to use multiple tools to manage the communication with the factory and the client when any change/ update was made for the product",
     userInterview:
       "Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I had 5 users which I interviewed .I asked them  question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.",
+    userInterviewInsights: [
+      {
+        quote: "It's difficult to put together all the details about the style in one place as different detail are in different files.",
+        author: "Bejan, Technical Designer",
+      },
+      {
+        quote: "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult",
+        author: "Bobby, Fashion Designer",
+      },
+      {
+        quote: "Every time there are changes we have to keep factories updated with that and provide them the updated project related files",
+        author: "Rachna, Product Development Manager",
+      },
+      {
+        quote: "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files",
+        author: "Pinky, Product Development Manager",
+      },
+    ],
   },
 };
 
