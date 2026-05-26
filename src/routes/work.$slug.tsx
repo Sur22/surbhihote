@@ -383,6 +383,63 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* High Fidelity Iteration Carousel */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <Carousel opts={{ loop: true }} className="relative">
+          <CarouselContent>
+            {[1, 2, 3].map((n) => (
+              <CarouselItem key={n}>
+                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
+                    <span className="font-serif text-2xl">Iteration {n}</span>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+      {/* Testing */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <p className="eyebrow mb-6">Testing</p>
+
+        <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Usability Testing Preparation</h3>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+          Before usability testing, it is important to set up test objectives, subject, methodology, tasks, and rubrics for measuring the result of the testing before conducting a test. Therefore, I wrote a <strong className="font-semibold">usability testing plan</strong> to define what and why I want to test and get prepared for the test.
+        </p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-16">
+          For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">87% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.
+        </p>
+
+        <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">Usability Testing</h3>
+        <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.</span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline">Usability test questions</span></span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products.</span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>Based on the test result data some changes were made to fix issues findability and usability issues.</span>
+          </li>
+        </ul>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+
       {/* Outcomes */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-10">Outcome</p>
