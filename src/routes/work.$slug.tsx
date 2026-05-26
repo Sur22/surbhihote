@@ -283,6 +283,17 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* User Flow */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">User flow</h2>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+
 
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
