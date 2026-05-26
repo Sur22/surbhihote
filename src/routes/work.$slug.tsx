@@ -142,6 +142,20 @@ function CaseStudyPage() {
             ))}
           </div>
         </div>
+
+        {/* Survey */}
+        <div className="mt-16">
+          <h3 className="font-serif text-3xl mb-6">Survey</h3>
+          <div
+            className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
+            dangerouslySetInnerHTML={{
+              __html: c.survey
+                .split("\n\n")
+                .map((p) => `<p>${p}</p>`)
+                .join(""),
+            }}
+          />
+        </div>
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
