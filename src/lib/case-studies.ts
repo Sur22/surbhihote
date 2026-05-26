@@ -10,6 +10,9 @@ export type CaseStudy = {
   client: string;
   year: string;
   role: string;
+  timeframe: string;
+  tools: string;
+  tasksPerformed: string;
   tags: string[];
   cover: string;
   summary: string;
@@ -17,6 +20,14 @@ export type CaseStudy = {
   approach: string[];
   outcome: { label: string; value: string }[];
   sections: { heading: string; body: string }[];
+};
+
+const defaultMeta = {
+  role: "UI/UX Designer",
+  timeframe: "4 Weeks",
+  tools: "Balsamiq, Adobe XD, Illustrator, OBS Studios, White Board, Google Forms, JIRA, Confluence",
+  tasksPerformed:
+    "Handle end to end design process. User Interview & stakeholder interview Brainstorming, User flow Wireframing, Prototyping Usability Testing Iterations Design Handoff Quality Assurance Collaborate with Product & Engineering and QA team throughout the process.",
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -28,6 +39,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     role: "Lead Product Designer",
+    ...defaultMeta,
     tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
     cover: fjord,
     summary:
@@ -69,6 +81,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Solace Health",
     year: "2024",
     role: "Product Designer & Brand",
+    ...defaultMeta,
     tags: ["Enterprise", "SaaS", "PLM", "ERP", "B2B", "Web"],
     cover: solace,
     summary:
@@ -110,6 +123,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Atlas, NYC",
     year: "2024",
     role: "Design Lead",
+    ...defaultMeta,
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas,
     summary:
