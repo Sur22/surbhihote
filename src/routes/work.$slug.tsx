@@ -348,18 +348,37 @@ function CaseStudyPage() {
 
 
 
-      {/* Sections */}
+      {/* Review with Users, Product & Engineering Team */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <div className="space-y-20">
-          {c.sections.map((s, i) => (
-            <article key={i}>
-              <div className="mb-6">
-                <h3 className="font-serif text-3xl">{s.heading}</h3>
-              </div>
-              <p className="text-lg leading-relaxed text-foreground/85">{s.body}</p>
-            </article>
-          ))}
-        </div>
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">
+          Review with Users, Product &amp; Engineering Team
+        </h2>
+        <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>
+              Reviewing the initial <strong className="font-semibold">low fidelity clickable wireframes</strong> I presented them to the users to get their <strong className="font-semibold">feedback on functionalities</strong> and the <strong className="font-semibold">usability</strong> aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added. I made the second iteration and again showed it to the users.
+            </span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>
+              After the <strong className="font-semibold">second iteration</strong> I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added which are not mention In Product requirement document and update it for engineering team to keep everyone in the loop.
+            </span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>
+              To confirm <strong className="font-semibold">technical feasibility</strong>, software architecture and to know the development efforts and time required form CTO. I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
+            </span>
+          </li>
+          <li className="flex gap-4">
+            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+            <span>
+              After taking feedback and considering inputs from users, Product and Engineering team I start putting together high fidelity wireframes and make it better and the <strong className="font-semibold">third iteration</strong> of the design.
+            </span>
+          </li>
+        </ul>
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
