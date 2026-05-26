@@ -316,6 +316,26 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Low Fidelity Wireframes */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Low Fidelity Wireframes</h2>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+          <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[1, 2].map((n) => (
+            <div key={n} className="overflow-hidden rounded-sm border border-border bg-secondary">
+              <div className="flex aspect-[4/3] w-full items-center justify-center text-foreground/40">
+                <span className="font-serif text-xl">Wireframe {n}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+
 
 
       {/* Sections */}
