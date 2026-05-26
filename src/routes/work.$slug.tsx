@@ -456,6 +456,30 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Final Thoughts + Next Steps */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Final Thoughts + Next Steps</h2>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
+        </p>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          If I had more time, I would dive deeper in developing some of those nice-to-have features and more details. After it was released I have monitored it using google analytics In order to fill any gaps which I could find about how users are using it and checking the scope for future improvements from user &amp; business perspective.
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+      {/* Measuring the Success */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Measuring the Success</h2>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          These features have added more value for our existing users, clients and to the business and increase the competitiveness. <strong className="font-semibold">The designed feature is live and users are using it</strong>. This feature have also added value for the sales team for demos and attracting new clients who loved this feature in particular and they <strong className="font-semibold">closed the deal with 6 deals</strong> within a few moths after this feature was released. Getting feedback from internal users who are Product Development Manager user group were happy for this feature releases it made their work a lot easier and had saved them lot of efforts and time.
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+
 
       {/* Outcomes */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
