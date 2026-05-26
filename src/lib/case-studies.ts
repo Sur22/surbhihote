@@ -38,8 +38,8 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
     client: "Fjord, Oslo",
     year: "2025",
-    role: "Lead Product Designer",
     ...defaultMeta,
+    role: "Lead Product Designer",
     tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
     cover: fjord,
     summary:
@@ -80,8 +80,8 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Tech Pack building tool for manufacturing of clothes.",
     client: "Solace Health",
     year: "2024",
-    role: "Product Designer & Brand",
     ...defaultMeta,
+    role: "Product Designer & Brand",
     tags: ["Enterprise", "SaaS", "PLM", "ERP", "B2B", "Web"],
     cover: solace,
     summary:
@@ -122,8 +122,8 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Product Manufacturing Management and Tracking.",
     client: "Atlas, NYC",
     year: "2024",
-    role: "Design Lead",
     ...defaultMeta,
+    role: "Design Lead",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas,
     summary:
