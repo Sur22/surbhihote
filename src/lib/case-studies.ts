@@ -15,6 +15,10 @@ export type CaseStudy = {
   tasksPerformed: string;
   overview: string;
   goal: string;
+  research: {
+    stakeholderInterview: string;
+    userInterview: string;
+  };
   tags: string[];
   cover: string;
   summary: string;
