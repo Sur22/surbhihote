@@ -76,10 +76,9 @@ function IndexPage() {
             <div className="relative w-full mx-auto md:mx-0" style={{ maxWidth: "20.4rem" }}>
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20 overflow-hidden"
+                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
                 style={{ transform: "rotate(10deg)" }}
               >
-                <img src={brandSquare} alt="" className="w-full h-full object-cover" />
               </div>
               <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
                 <img
