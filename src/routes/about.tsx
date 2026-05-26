@@ -45,8 +45,8 @@ const services = [
   { n: "02", t: "Aesthetic Precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
   { n: "03", t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
   { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
-  { n: "05", t: "Data Driven Design", d: "I use user research data to inform my design decisions rather than assumptions." },
-  { n: "06", t: "AI Forward Design", d: "I embrace and adopt quickly to the changing technology and have incorporated it into my design process to speed it up." },
+  { n: "05", t: "Data Driven Design", d: "My design decisions  are informed by research and numbers rather than depending on just assumptions.It saves time, resources and make sure that product is going into right direction. " },
+  { n: "06", t: "AI Forward Design", d: "I embrace and adopt quickly to the changing technology .AI-accelerated design process involving Quick AI-enabled Prototyping, Peer Review and Team Feedback, and subsequent Design Iterations." },
 ];
 
 function AboutPage() {
