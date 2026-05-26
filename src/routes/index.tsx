@@ -80,7 +80,7 @@ function IndexPage() {
                 className="absolute inset-0 rounded-[5%] border-2 border-foreground/20 overflow-hidden"
                 style={{ transform: "rotate(10deg)" }}
               >
-                <img src={brandSquare} alt="" className="w-full h-full object-cover" />
+                <img src={brandSquare} alt="" className="w-full h-full object-cover opacity-60" />
               </div>
               <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
                 <img
