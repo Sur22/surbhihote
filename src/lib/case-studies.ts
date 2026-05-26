@@ -41,10 +41,10 @@ export type CaseStudy = {
 
 const defaultMeta = {
   role: "UI/UX Designer",
-  timeframe: "4 Weeks",
+  timeframe: "6 Weeks",
   tools: "Balsamiq, Adobe XD, Illustrator, White Board, Google Forms, JIRA, Confluence",
   tasksPerformed:
-    "End to End Design, User Research, Design Strategy, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
+    "End to End Design, User Research, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
   overview:
     "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\nThe software have various stages where different files are stored. Each stage has certain assets that we need to track which would help in kicking of other phases of the supply chain.",
   goal:
@@ -154,8 +154,8 @@ export const caseStudies: CaseStudy[] = [
     client: "Solace Health",
     year: "2024",
     ...defaultMeta,
-    role: "Product Designer & Brand",
-    tags: ["Enterprise", "SaaS", "PLM", "ERP", "B2B", "Web"],
+    role: "Lead UI UX Designer ",
+    tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
     cover: solace,
     summary:
       "Designed the first version of Solace — a 10-minute-a-day practice for people who are skeptical of wellness culture. No crystals. No infinite scrolls.",

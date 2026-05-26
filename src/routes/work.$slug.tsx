@@ -86,7 +86,7 @@ function CaseStudyPage() {
           <span className="font-serif text-3xl text-accent">{c.index}</span>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="display text-[clamp(3rem,9vw,8rem)] mb-10">{c.title}</h1>
+        <h1 className="font-serif text-4xl font-bold mb-8 md:text-lg">{c.title}</h1>
         <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
           {c.subtitle}
         </p>
@@ -134,7 +134,7 @@ function CaseStudyPage() {
 
       {/* Research */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-12">Research</h2>
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
             <h3 className="text-lg text-foreground/85">Stakeholder Interview</h3>
@@ -205,7 +205,7 @@ function CaseStudyPage() {
 
       {/* Strategy */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-16">Strategy</h2>
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6">Product Goals</h3>
         <p
           className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground"
@@ -252,7 +252,7 @@ function CaseStudyPage() {
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Brainstorming session with product team</h2>
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
         <button
           type="button"
@@ -272,7 +272,7 @@ function CaseStudyPage() {
 
       {/* User Groups */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">User Groups</h2>
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">User Groups</h2>
         <button
           type="button"
           onClick={() => setZoomImg(userGroupsImg)}
@@ -294,7 +294,7 @@ function CaseStudyPage() {
 
       {/* User Flow */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">User flow</h2>
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">User flow</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
         </p>
@@ -320,7 +320,7 @@ function CaseStudyPage() {
 
       {/* Low Fidelity Wireframes */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Low Fidelity Wireframes</h2>
+        <h2 className="font-serif text-3xl font-bold mb-6 md:text-lg">Low Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
         </p>
@@ -350,7 +350,7 @@ function CaseStudyPage() {
 
       {/* Review with Users, Product & Engineering Team */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">
+        <h2 className="font-serif text-4xl font-bold mb-8 md:text-lg">
           Review with Users, Product &amp; Engineering Team
         </h2>
         <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
