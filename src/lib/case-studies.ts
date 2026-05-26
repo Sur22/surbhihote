@@ -39,6 +39,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     role: "Lead Product Designer",
+    ...defaultMeta,
     tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
     cover: fjord,
     summary:
@@ -80,6 +81,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Solace Health",
     year: "2024",
     role: "Product Designer & Brand",
+    ...defaultMeta,
     tags: ["Enterprise", "SaaS", "PLM", "ERP", "B2B", "Web"],
     cover: solace,
     summary:
@@ -121,6 +123,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Atlas, NYC",
     year: "2024",
     role: "Design Lead",
+    ...defaultMeta,
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas,
     summary:
