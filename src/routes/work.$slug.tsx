@@ -112,6 +112,27 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Research */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-12">Research</h2>
+        <div className="space-y-12">
+          <div className="grid md:grid-cols-[1fr_2fr] gap-8">
+            <h3 className="text-lg text-foreground/85">Stakeholder Interview</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+              {c.research.stakeholderInterview}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-[1fr_2fr] gap-8">
+            <h3 className="text-lg text-foreground/85">User Interview</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+              {c.research.userInterview}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <div className="space-y-20">
