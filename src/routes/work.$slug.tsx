@@ -72,6 +72,13 @@ function CaseStudyPage() {
         </p>
       </section>
 
+      {/* Cover */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
+        <div className="overflow-hidden rounded-sm bg-secondary">
+          <img src={c.cover} alt={c.title} width={1400} height={1000} className="w-full h-[60vh] object-cover" />
+        </div>
+      </section>
+
       {/* Meta grid */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
@@ -86,13 +93,6 @@ function CaseStudyPage() {
               <p className="font-serif text-xl">{m.v}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Cover */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
-        <div className="overflow-hidden rounded-sm bg-secondary">
-          <img src={c.cover} alt={c.title} width={1400} height={1000} className="w-full h-[60vh] object-cover" />
         </div>
       </section>
 
