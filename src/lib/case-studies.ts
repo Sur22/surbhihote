@@ -20,6 +20,7 @@ export type CaseStudy = {
     userInterview: string;
     userInterviewInsights: { quote: string; author: string }[];
   };
+  survey: string;
   tags: string[];
   cover: string;
   summary: string;
