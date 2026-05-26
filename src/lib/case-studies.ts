@@ -74,6 +74,30 @@ const defaultMeta = {
   },
   survey:
     'A survey was conducted to <strong>inform the decision of developing this feature as a part of UX Strategy</strong> to see responses from existing clients that this feature will be useful to them or not. Also to predict that potential prospects will find it valuable and <strong>boosting the product sales.</strong>\n\nThis was to gain more information for the types of tools they are using and if we could get better understanding of tools present in the market and study them. We also wanted to know which tool they prefer to enter techpack and material details like trims, labels, applique and other details of the style.',
+  strategy: {
+    productGoals: {
+      intro:
+        "Alignment of user goals and business goals to benefit both is important. Helping <strong>users achieve their goals helps in user retention</strong> and hence profitable for business.",
+      businessGoals: [
+        "Provide a feature to stand out amongst competitors",
+        "Make product strong",
+        "Provide solution for user problems",
+        "Improve Sales",
+      ],
+      userGoals: [
+        "To work Efficiently",
+        "Managing all project related things at one place",
+        "Communicate changes to clients & factories",
+        "Add material, Trims, Label from directly from library",
+        "Ability to reuse existing CAD and Techpack",
+      ],
+      sharedGoals: [
+        "Adding libraries for Techpack, CAD & Materials",
+        "Make it easy to communication to client and the factory",
+        "Streamline the workflow for users",
+      ],
+    },
+  },
 };
 
 export const caseStudies: CaseStudy[] = [
