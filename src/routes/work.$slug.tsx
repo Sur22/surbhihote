@@ -16,6 +16,8 @@ import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
 import brainstormingImg from "@/assets/brainstorming-session.jpg";
 import userGroupsImg from "@/assets/user-groups.png";
+import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
+import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
