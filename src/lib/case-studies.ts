@@ -10,6 +10,9 @@ export type CaseStudy = {
   client: string;
   year: string;
   role: string;
+  timeframe: string;
+  tools: string;
+  tasksPerformed: string;
   tags: string[];
   cover: string;
   summary: string;
@@ -17,6 +20,14 @@ export type CaseStudy = {
   approach: string[];
   outcome: { label: string; value: string }[];
   sections: { heading: string; body: string }[];
+};
+
+const defaultMeta = {
+  role: "UI/UX Designer",
+  timeframe: "4 Weeks",
+  tools: "Balsamiq, Adobe XD, Illustrator, OBS Studios, White Board, Google Forms, JIRA, Confluence",
+  tasksPerformed:
+    "Handle end to end design process. User Interview & stakeholder interview Brainstorming, User flow Wireframing, Prototyping Usability Testing Iterations Design Handoff Quality Assurance Collaborate with Product & Engineering and QA team throughout the process.",
 };
 
 export const caseStudies: CaseStudy[] = [
