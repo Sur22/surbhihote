@@ -83,14 +83,14 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "Client", v: c.client },
-            { k: "Year", v: c.year },
             { k: "Role", v: c.role },
-            { k: "Discipline", v: c.tags[0] },
+            { k: "Timeframe", v: c.timeframe },
+            { k: "Tools", v: c.tools },
+            { k: "Tasks Performed", v: c.tasksPerformed },
           ].map((m) => (
             <div key={m.k}>
-              <p className="eyebrow mb-2">{m.k}</p>
-              <p className="font-serif text-xl">{m.v}</p>
+              <p className="eyebrow mb-2 font-bold">{m.k}</p>
+              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
             </div>
           ))}
         </div>
