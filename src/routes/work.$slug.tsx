@@ -192,6 +192,53 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Strategy */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-5xl md:text-6xl font-bold mb-16">Strategy</h2>
+        <h3 className="font-serif text-3xl mb-6">Product Goals</h3>
+        <p
+          className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground"
+          dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
+        />
+
+        <div className="relative border-2 border-accent rounded-sm px-6 md:px-12 py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-start">
+            {/* Business Goals */}
+            <div>
+              <h4 className="text-xl font-semibold text-muted-foreground mb-8">Business Goals</h4>
+              <ul className="space-y-6">
+                {c.strategy.productGoals.businessGoals.map((g) => (
+                  <li key={g} className="text-base text-muted-foreground leading-relaxed">{g}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Shared (overlap circle) */}
+            <div className="relative flex justify-center">
+              <div className="aspect-square w-full max-w-[340px] rounded-full bg-accent/20 border-2 border-accent flex items-center justify-center px-6 py-8">
+                <ul className="space-y-6 text-center">
+                  {c.strategy.productGoals.sharedGoals.map((g) => (
+                    <li key={g} className="text-sm md:text-base text-muted-foreground leading-relaxed">{g}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* User Goals */}
+            <div>
+              <h4 className="text-xl font-semibold text-muted-foreground mb-8">User Goals</h4>
+              <ul className="space-y-6">
+                {c.strategy.productGoals.userGoals.map((g) => (
+                  <li key={g} className="text-base text-muted-foreground leading-relaxed">{g}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Sections */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <div className="space-y-20">
