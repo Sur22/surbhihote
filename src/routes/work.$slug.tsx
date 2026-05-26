@@ -243,7 +243,19 @@ function CaseStudyPage() {
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Brainstorming session with product team</h2>
-        <p className="text-lg leading-relaxed text-foreground/85">{c.brainstorming}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
+        <button
+          type="button"
+          onClick={() => setZoomImg(brainstormingImg)}
+          className="group block w-full overflow-hidden rounded-sm border border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in"
+        >
+          <img
+            src={brainstormingImg}
+            alt="Whiteboard from brainstorming session with the product team"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
       </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
