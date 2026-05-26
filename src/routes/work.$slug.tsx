@@ -7,6 +7,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
+import brainstormingImg from "@/assets/brainstorming-session.jpg";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
