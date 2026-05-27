@@ -84,7 +84,7 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "8%" }}>
+            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "4%" }}>
               <img
                 src={it.src}
                 alt={it.title}
