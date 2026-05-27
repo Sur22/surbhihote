@@ -84,12 +84,12 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden rounded-sm bg-secondary">
+            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "8%" }}>
               <img
                 src={it.src}
                 alt={it.title}
                 loading="lazy"
-                className="w-full h-[280px] md:h-[380px] object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           </article>
