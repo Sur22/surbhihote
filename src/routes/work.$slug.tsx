@@ -137,13 +137,13 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
-            <h3 className="text-lg text-foreground/85">Stakeholder Interview</h3>
+            <h3 className="text-foreground/85 text-xl">Stakeholder Interview</h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.stakeholderInterview}
             </p>
           </div>
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
-            <h3 className="text-lg text-foreground/85">User Interview</h3>
+            <h3 className="text-foreground/85 text-xl">User Interview</h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
             </p>
