@@ -163,6 +163,30 @@ function CaseStudyPage() {
           </div>
         </div>
 
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
+      {/* User Groups */}
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
+        <button
+          type="button"
+          onClick={() => setZoomImg(userGroupsImg)}
+          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+        >
+          <img
+            src={userGroupsImg}
+            alt="Diagram showing user groups connected to the Techpack Editor feature"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers.
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+
         {/* Survey */}
         <div className="mt-16">
           <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
@@ -268,27 +292,6 @@ function CaseStudyPage() {
         </button>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
-
-      {/* User Groups */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
-        <button
-          type="button"
-          onClick={() => setZoomImg(userGroupsImg)}
-          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
-        >
-          <img
-            src={userGroupsImg}
-            alt="Diagram showing user groups connected to the Techpack Editor feature"
-            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-            loading="lazy"
-          />
-        </button>
-        <p className="text-lg leading-relaxed text-foreground/85">
-          This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers.
-        </p>
-      </section>
 
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
