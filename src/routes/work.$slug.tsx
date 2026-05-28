@@ -134,7 +134,7 @@ function CaseStudyPage() {
 
       {/* Research */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-normal md:text-2xl">Research</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
             <h3 className="text-lg text-foreground/85">Stakeholder Interview</h3>
