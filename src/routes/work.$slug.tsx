@@ -116,6 +116,7 @@ function CaseStudyPage() {
         </div>
       </section>
 
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-24">
