@@ -73,7 +73,7 @@ function CaseStudyPage() {
       <ScrollProgress />
 
       {/* Title block */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/"
           hash="case-studies"
@@ -93,14 +93,14 @@ function CaseStudyPage() {
       </section>
 
       {/* Cover */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pb-16">
         <div className="overflow-hidden rounded-sm bg-secondary">
           <img src={c.cover} alt={c.title} width={1400} height={1000} className="w-full h-[60vh] object-cover" />
         </div>
       </section>
 
       {/* Meta grid */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
             { k: "Role", v: c.role },
@@ -116,10 +116,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 pb-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24">
         <div className="space-y-16">
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
@@ -132,10 +132,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
@@ -165,10 +165,10 @@ function CaseStudyPage() {
           </div>
         </div>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* User Groups */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
         <button
           type="button"
@@ -187,7 +187,7 @@ function CaseStudyPage() {
         </p>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
         {/* Survey */}
         <div className="mt-16">
@@ -227,10 +227,10 @@ function CaseStudyPage() {
         </DialogContent>
       </Dialog>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Strategy */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
@@ -274,10 +274,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Brainstorming */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
         <button
@@ -295,10 +295,10 @@ function CaseStudyPage() {
       </section>
 
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* User Flow */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
@@ -321,10 +321,10 @@ function CaseStudyPage() {
         </Carousel>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Low Fidelity Wireframes */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Low Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
@@ -348,13 +348,13 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
 
 
 
       {/* Review with Users, Product & Engineering Team */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">
           Review with Users, Product &amp; Engineering Team
         </h2>
@@ -386,10 +386,10 @@ function CaseStudyPage() {
         </ul>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* High Fidelity Iteration Carousel */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
             {[1, 2, 3].map((n) => (
@@ -407,10 +407,10 @@ function CaseStudyPage() {
         </Carousel>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Testing */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-6">Testing</p>
 
         <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Usability Testing Preparation</h3>
@@ -459,10 +459,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Final Thoughts + Next Steps */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
           <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
@@ -472,22 +472,22 @@ function CaseStudyPage() {
         </p>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Measuring the Success */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
           These features have added more value for our existing users, clients and to the business and increase the competitiveness. <strong className="font-semibold">The designed feature is live and users are using it</strong>. This feature have also added value for the sales team for demos and attracting new clients who loved this feature in particular and they <strong className="font-semibold">closed the deal with 6 deals</strong> within a few moths after this feature was released. Getting feedback from internal users who are Product Development Manager user group were happy for this feature releases it made their work a lot easier and had saved them lot of efforts and time.
         </p>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
 
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-10">Outcome</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
@@ -501,7 +501,7 @@ function CaseStudyPage() {
 
       {/* Interested in more */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-20">
+        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-20">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
             <h2 className="font-serif text-4xl md:text-5xl">Interested in more?</h2>
             <div>
@@ -530,7 +530,7 @@ function CaseStudyPage() {
 
       {/* More case studies */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-20">
+        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-20">
           <p className="eyebrow mb-10">More case studies</p>
           <div className="grid md:grid-cols-2 gap-10">
             {others.map((o) => (
