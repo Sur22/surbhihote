@@ -232,7 +232,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Strategy */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="strategy" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
