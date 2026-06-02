@@ -3,6 +3,7 @@ import { ArrowLeft, Check } from "lucide-react";
 import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import {
   Carousel,
@@ -71,6 +72,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <ScrollProgress />
+      <CaseStudySideNav />
 
       {/* Title block */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
@@ -119,7 +121,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24">
+      <section id="overview" className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
         <div className="space-y-16">
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
@@ -135,7 +137,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="research" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
           <div className="grid md:grid-cols-[1fr_2fr] gap-8">
@@ -230,7 +232,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Strategy */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="strategy" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
@@ -277,7 +279,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Brainstorming */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
         <button
@@ -410,7 +412,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Testing */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="testing" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <p className="eyebrow mb-6">Testing</p>
 
         <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Usability Testing Preparation</h3>
@@ -462,7 +464,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Final Thoughts + Next Steps */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="impact" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
           <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
