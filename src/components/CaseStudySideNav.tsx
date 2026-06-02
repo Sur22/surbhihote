@@ -32,10 +32,7 @@ export function CaseStudySideNav() {
   }, []);
 
   return (
-    <nav
-      aria-label="Case study sections"
-      className="hidden xl:block fixed left-8 top-1/2 -translate-y-1/2 z-40"
-    >
+    <nav aria-label="Case study sections">
       <ul className="space-y-5">
         {sections.map((s) => {
           const active = activeId === s.id;

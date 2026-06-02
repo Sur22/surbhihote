@@ -72,7 +72,6 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <ScrollProgress />
-      <CaseStudySideNav />
 
       {/* Title block */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
@@ -118,21 +117,30 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
-      {/* Overview + Goal */}
-      <section id="overview" className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
-        <div className="space-y-16">
-          <div>
-            <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
-          </div>
-          <div>
-            <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
-          </div>
+      {/* Overview + Goal (with side nav) */}
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 pb-24">
+        <div className="flex gap-10">
+          <aside className="hidden xl:block w-[200px] shrink-0">
+            <div className="sticky top-24">
+              <CaseStudySideNav />
+            </div>
+          </aside>
+          <section id="overview" className="flex-1 min-w-0 max-w-[768px] scroll-mt-24">
+            <div className="space-y-16">
+              <div>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
+                <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
+              </div>
+              <div>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+                <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
