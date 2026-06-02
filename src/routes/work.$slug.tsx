@@ -331,7 +331,7 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           {[wireframeImg1, wireframeImg2].map((img, i) => (
             <button
               key={i}
