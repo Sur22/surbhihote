@@ -203,7 +203,7 @@ function CaseStudyPage() {
                 .join(""),
             }}
           />
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-10 flex flex-col gap-6">
             {surveyImages.map((img) => (
               <button
                 key={img.src}
