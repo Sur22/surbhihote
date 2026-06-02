@@ -171,7 +171,9 @@ function CaseStudyPage() {
 
       {/* User Groups */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
+          {c.slug === "solace" ? "Workflow" : "User Groups"}
+        </h2>
         <button
           type="button"
           onClick={() => setZoomImg(userGroupsImg)}
@@ -184,8 +186,29 @@ function CaseStudyPage() {
             loading="lazy"
           />
         </button>
+        {c.slug === "solace" && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            {[
+              "Product Development Manager",
+              "Fashion Designer",
+              "Client",
+              "Manufacturer",
+            ].map((persona) => (
+              <div
+                key={persona}
+                className="rounded-xl border bg-card text-card-foreground shadow p-6 flex items-center justify-center text-center"
+              >
+                <span className="font-semibold leading-none tracking-tight text-lg">
+                  {persona}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
         <p className="text-lg leading-relaxed text-foreground/85">
-          This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers.
+          {c.slug === "solace"
+            ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
+            : "This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers."}
         </p>
       </section>
 
