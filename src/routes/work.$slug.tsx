@@ -279,7 +279,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Brainstorming */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
         <button
