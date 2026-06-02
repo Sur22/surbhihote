@@ -11,6 +11,7 @@ const sections = [
 
 export function CaseStudySideNav() {
   const [activeId, setActiveId] = useState<string>(sections[0].id);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const els = sections
@@ -19,20 +20,45 @@ export function CaseStudySideNav() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
+        const vis = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (visible[0]) setActiveId(visible[0].target.id);
+        if (vis[0]) setActiveId(vis[0].target.id);
       },
       { rootMargin: "-20% 0px -70% 0px", threshold: 0 },
     );
-
     els.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const update = () => {
+      const start = document.getElementById("overview");
+      const end = document.getElementById("case-study-end");
+      if (!start || !end) {
+        setVisible(false);
+        return;
+      }
+      const startTop = start.getBoundingClientRect().top;
+      const endTop = end.getBoundingClientRect().top;
+      setVisible(startTop <= 120 && endTop > 120);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
   return (
-    <nav aria-label="Case study sections">
+    <nav
+      aria-label="Case study sections"
+      className={`hidden xl:block fixed top-24 right-[calc(50%+424px)] w-[200px] z-40 transition-opacity duration-200 ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
       <ul className="space-y-5">
         {sections.map((s) => {
           const active = activeId === s.id;
