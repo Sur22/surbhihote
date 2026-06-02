@@ -73,7 +73,7 @@ function CaseStudyPage() {
       <ScrollProgress />
 
       {/* Title block */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="w-full px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/"
           hash="case-studies"
