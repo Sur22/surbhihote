@@ -500,6 +500,9 @@ function CaseStudyPage() {
           ))}
         </div>
       </section>
+      <div id="case-study-end" aria-hidden />
+
+
 
       {/* Interested in more */}
       <section className="border-t border-border">
