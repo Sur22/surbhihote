@@ -140,14 +140,14 @@ function CaseStudyPage() {
       <section id="research" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
-          <div className="grid md:grid-cols-[1fr_2fr] gap-8">
-            <h3 className="text-foreground/85 text-xl">Stakeholder Interview</h3>
+          <div>
+            <h3 className="text-foreground/85 text-xl mb-4">Stakeholder Interview</h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.stakeholderInterview}
             </p>
           </div>
-          <div className="grid md:grid-cols-[1fr_2fr] gap-8">
-            <h3 className="text-foreground/85 text-xl">User Interview</h3>
+          <div>
+            <h3 className="text-foreground/85 text-xl mb-4">User Interview</h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
             </p>
