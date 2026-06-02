@@ -412,7 +412,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Testing */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section id="testing" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <p className="eyebrow mb-6">Testing</p>
 
         <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Usability Testing Preparation</h3>
