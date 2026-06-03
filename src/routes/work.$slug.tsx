@@ -255,6 +255,87 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Workflow */}
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
+          {c.slug === "solace" ? "Workflow" : "User Groups"}
+        </h2>
+        <button
+          type="button"
+          onClick={() => setZoomImg(userGroupsImg)}
+          className="group block w-full overflow-hidden rounded-sm border-border bg-white p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+        >
+          <img
+            src={userGroupsImg}
+            alt="Diagram showing user groups connected to the Techpack Editor feature"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
+        {c.slug === "solace" && (
+          <>
+            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Target Users</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              {[
+                {
+                  name: "Product Development Manager",
+                  goals: [
+                    "Manage end-to-end product lifecycle from design to production",
+                    "Coordinate between design, client, and manufacturing teams",
+                    "Track changes and maintain version control across all documents",
+                  ],
+                },
+                {
+                  name: "Fashion Designer",
+                  goals: [
+                    "Create detailed sketches and CAD designs efficiently",
+                    "Organize materials, trims, and labels in one place",
+                    "Communicate design changes to stakeholders seamlessly",
+                  ],
+                },
+                {
+                  name: "Client",
+                  goals: [
+                    "Review and approve designs and techpacks in real time",
+                    "Request changes and provide feedback directly on documents",
+                    "Stay informed about production progress and updates",
+                  ],
+                },
+                {
+                  name: "Manufacturer",
+                  goals: [
+                    "Receive complete and accurate techpacks for production",
+                    "Access BOMs, material specs, and design details easily",
+                    "Clarify requirements and communicate back to the brand",
+                  ],
+                },
+              ].map((persona) => (
+                <div
+                  key={persona.name}
+                  className="rounded-xl border bg-card text-card-foreground shadow p-6"
+                >
+                  <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                    {persona.name}
+                  </h4>
+                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
+                    {persona.goals.map((goal, idx) => (
+                      <li key={idx}>{goal}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        <p className="text-lg leading-relaxed text-foreground/85">
+          {c.slug === "solace"
+            ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
+            : "This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers."}
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Brainstorming */}
       <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
