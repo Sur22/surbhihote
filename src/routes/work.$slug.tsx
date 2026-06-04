@@ -19,6 +19,8 @@ import brainstormingImg from "@/assets/brainstorming-session.jpg";
 import userGroupsImg from "@/assets/user-groups.png";
 import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
 import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
+import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
+
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
