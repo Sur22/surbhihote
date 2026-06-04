@@ -19,6 +19,8 @@ import brainstormingImg from "@/assets/brainstorming-session.jpg";
 import userGroupsImg from "@/assets/user-groups.png";
 import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
 import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
+import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
+
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -217,40 +219,14 @@ function CaseStudyPage() {
           dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
         />
 
-        <div className="relative border-2 border-accent rounded-sm px-6 md:px-12 py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-start">
-            {/* Business Goals */}
-            <div>
-              <h4 className="text-xl font-semibold text-muted-foreground mb-8">Business Goals</h4>
-              <ul className="space-y-6">
-                {c.strategy.productGoals.businessGoals.map((g) => (
-                  <li key={g} className="text-base text-muted-foreground leading-relaxed">{g}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Shared (overlap circle) */}
-            <div className="relative flex justify-center">
-              <div className="aspect-square w-full max-w-[340px] rounded-full bg-accent/20 border-2 border-accent flex items-center justify-center px-6 py-8">
-                <ul className="space-y-6 text-center">
-                  {c.strategy.productGoals.sharedGoals.map((g) => (
-                    <li key={g} className="text-sm md:text-base text-muted-foreground leading-relaxed">{g}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* User Goals */}
-            <div>
-              <h4 className="text-xl font-semibold text-muted-foreground mb-8">User Goals</h4>
-              <ul className="space-y-6">
-                {c.strategy.productGoals.userGoals.map((g) => (
-                  <li key={g} className="text-base text-muted-foreground leading-relaxed">{g}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="bg-white rounded-sm p-6 md:p-10">
+          <img
+            src={uxStrategyImg.url}
+            alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
+            className="w-full h-auto"
+          />
         </div>
+
       </section>
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
