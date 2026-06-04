@@ -6,6 +6,7 @@ const sections = [
   { id: "strategy", label: "Strategy" },
   { id: "design-process", label: "Design Process" },
   { id: "testing", label: "Testing" },
+  { id: "final-designs", label: "The Solution" },
   { id: "impact", label: "Impact & Learnings" },
 ];
 
