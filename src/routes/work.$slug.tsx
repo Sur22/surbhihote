@@ -521,6 +521,28 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Final Designs */}
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs</h2>
+        <Carousel opts={{ loop: true }} className="relative">
+          <CarouselContent>
+            {[1, 2, 3, 4].map((n) => (
+              <CarouselItem key={n}>
+                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
+                    <span className="font-serif text-2xl">Final design {n}</span>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
+      </section>
+
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Final Thoughts + Next Steps */}
       <section id="impact" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
