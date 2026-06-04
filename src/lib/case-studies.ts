@@ -149,8 +149,8 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "solace",
     index: "02",
-    title: "Suuchi Grid Website",
-    subtitle: "Tech Pack building tool for manufacturing of clothes.",
+    title: "Grid Website",
+    subtitle: "Document-Centric Workflows to a Connected PLM Ecosystem.",
     client: "Solace Health",
     year: "2024",
     ...defaultMeta,
