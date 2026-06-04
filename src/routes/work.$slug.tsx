@@ -219,11 +219,11 @@ function CaseStudyPage() {
           dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
         />
 
-        <div className="bg-white rounded-sm p-6 md:p-10">
+        <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
           <img
             src={uxStrategyImg.url}
             alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
-            className="w-full h-auto"
+            className="w-1/2 h-auto"
           />
         </div>
 
