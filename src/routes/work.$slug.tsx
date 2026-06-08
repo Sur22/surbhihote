@@ -161,10 +161,12 @@ function CaseStudyPage() {
           <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
           <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
             {c.research.userInterviewInsights.map((q, i) => (
-              <figure key={i} className="text-center italic">
-                <blockquote className="text-lg md:text-xl leading-relaxed">"{q.quote}"</blockquote>
-                <figcaption className="mt-2 text-base">-{q.author}</figcaption>
-              </figure>
+              q.quote && (
+                <figure key={i} className="text-center italic">
+                  <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">"{q.quote}"</blockquote>
+                  {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                </figure>
+              )
             ))}
           </div>
         </div>
