@@ -142,12 +142,14 @@ function CaseStudyPage() {
       <section id="research" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
         <div className="space-y-12">
-          <div>
-            <h3 className="text-foreground/85 text-xl mb-4">Stakeholder Interview</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {c.research.stakeholderInterview}
-            </p>
-          </div>
+          {c.slug === "solace" && (
+            <div>
+              <h3 className="text-foreground/85 text-xl mb-4">Stakeholder Interview</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.research.stakeholderInterview}
+              </p>
+            </div>
+          )}
           <div>
             <h3 className="text-foreground/85 text-xl mb-4">User Interview</h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -161,45 +163,49 @@ function CaseStudyPage() {
           <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
           <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
             {c.research.userInterviewInsights.map((q, i) => (
-              <figure key={i} className="text-center italic">
-                <blockquote className="text-lg md:text-xl leading-relaxed">"{q.quote}"</blockquote>
-                <figcaption className="mt-2 text-base">-{q.author}</figcaption>
-              </figure>
+              q.quote && (
+                <figure key={i} className="text-center italic">
+                  <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">"{q.quote}"</blockquote>
+                  {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                </figure>
+              )
             ))}
           </div>
         </div>
 
 
         {/* Survey */}
-        <div className="mt-16">
-          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
-          <div
-            className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
-            dangerouslySetInnerHTML={{
-              __html: c.survey
-                .split("\n\n")
-                .map((p) => `<p>${p}</p>`)
-                .join(""),
-            }}
-          />
-          <div className="mt-10 flex flex-col gap-6">
-            {surveyImages.map((img) => (
-              <button
-                key={img.src}
-                type="button"
-                onClick={() => setZoomImg(img.src)}
-                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  loading="lazy"
-                />
-              </button>
-            ))}
+        {c.survey && c.survey.trim() !== "" && (
+          <div className="mt-16">
+            <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
+            <div
+              className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
+              dangerouslySetInnerHTML={{
+                __html: c.survey
+                  .split("\n\n")
+                  .map((p) => `<p>${p}</p>`)
+                  .join(""),
+              }}
+            />
+            <div className="mt-10 flex flex-col gap-6">
+              {surveyImages.map((img) => (
+                <button
+                  key={img.src}
+                  type="button"
+                  onClick={() => setZoomImg(img.src)}
+                  className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </section>
 
       <Dialog open={!!zoomImg} onOpenChange={(o) => !o && setZoomImg(null)}>
@@ -306,7 +312,7 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85">
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
-            : "This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers."}
+            : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n"}
         </p>
       </section>
 
@@ -337,7 +343,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
+          {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of notification preference management, I was able to think through the necessary steps and examine the user experience in details. Below is the flow for the main notification settings tasks." : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
         </p>
 
         <Carousel opts={{ loop: true }} className="relative">
@@ -359,11 +365,11 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
-      {/* Low Fidelity Wireframes */}
+      {/* Mid Fidelity Wireframes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Low Fidelity Wireframes</h2>
+        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Mid Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          <strong className="font-semibold">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.</strong> In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.
+          Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
         </p>
         <div className="flex flex-col gap-6">
           {[wireframeImg1, wireframeImg2].map((img, i) => (
@@ -375,7 +381,7 @@ function CaseStudyPage() {
             >
               <img
                 src={img}
-                alt={`Low fidelity wireframe ${i + 1}`}
+                alt={`Mid fidelity wireframe ${i + 1}`}
                 className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
                 loading="lazy"
               />
@@ -465,7 +471,7 @@ function CaseStudyPage() {
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline">Usability test questions</span></span>
+            <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline">Usability test questions</span> (5.    PLM Stage Update)</span>
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -523,7 +529,7 @@ function CaseStudyPage() {
       <section id="impact" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
+          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
         </p>
         <p className="text-lg leading-relaxed text-foreground/85">
           If I had more time, I would dive deeper in developing some of those nice-to-have features and more details. After it was released I have monitored it using google analytics In order to fill any gaps which I could find about how users are using it and checking the scope for future improvements from user &amp; business perspective.

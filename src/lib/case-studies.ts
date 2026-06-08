@@ -46,35 +46,35 @@ const defaultMeta = {
   tasksPerformed:
     "End to End Design, User Research, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
   overview:
-    "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\nThe software have various stages where different files are stored. Each stage has certain assets that we need to track which would help in kicking of other phases of the supply chain.",
+    "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. \n\n\nThroughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\n",
   goal:
-    "In every stage there are certain files that are stored. Each file is technically an asset that the brand has used to facilitate their product development. We need to grant abilities to create the assets within the GRID. This would focus on creation of Tech pack for the “Tech pack” Stage. This would provide ability to users to create and consolidate the following in one single document:\n1. Consolidate/upload all the product sketches (CAD) with other parts of the assets\n2. Create/upload detailed sketches\n3. Create BOM’s\n4. Export the Tech pack into PDF file formats\n5. Material library, CAD Library, Techpack Library\n6. Sharing the the output PDF with factories and clients",
+    "The goal is to give users  flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.     Provide different user types ability to pick and choose the notifications that they would like to receive\n2.     Serve users ability to choose the notifications that they would like to receive per module and per product\n3.     Allow users ability to switch on/off notifications at any point of time\n \n\n",
   research: {
     stakeholderInterview:
-      "After I get a brief from product team about the new feature and receive the product requirement document(PRD) and compitative analysis to get holistic idea of the feature and the functionality we are thinking of developing.I interviewed stakeholder of this feature was the 'Head of Product Development' team. It gave me better understanding of the problem we are trying to solve.\nAs there are many phases and stages of PLM Product Development Managers were having hard time managing all the product related files and data. They had to use multiple tools to manage the communication with the factory and the client when any change/ update was made for the product",
+      " After I received the PRD from  product team and getting a walkthrough of PRD from product for the kickstart the design process. Other than the pinpoints which I already knew , Product team had additional thing which was notifications template to create at entity level for all its user types.\nAs Grid mobile app dose not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the which user type they are assigned. The mobile designs will be both for Android and iOS version of the application.",
     userInterview:
-      "Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I had 5 users which I interviewed .I asked them  question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.",
+      "As there are multiple user types I recruited 5 different type of users (which included users who requested the feature )to get sense of what kind of notifications are important to which type of users and conducted user interview.",
     userInterviewInsights: [
       {
-        quote: "It's difficult to put together all the details about the style in one place as different detail are in different files.",
-        author: "Bejan, Technical Designer",
+        quote: "Only few notifications are really important to me ,I should be able to control which notifications I want to see and which one I don't.\"\n-Client\n‍\n\"Once I missed out on an important notification and as a result the the product got delayed.\"\n- Production Manager\n‍\n\"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming.\"\n-Product Development Manager\n\n\"Managing more than 40 + products for a client company is pretty hectic and notifications are a mess \"\n- Company Account Manager\n‍",
+        author: "",
       },
       {
-        quote: "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult",
-        author: "Bobby, Fashion Designer",
+        quote: "",
+        author: "",
       },
       {
-        quote: "Every time there are changes we have to keep factories updated with that and provide them the updated project related files",
-        author: "Rachna, Product Development Manager",
+        quote: "",
+        author: "",
       },
       {
-        quote: "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files",
-        author: "Pinky, Product Development Manager",
+        quote: "",
+        author: "",
       },
     ],
   },
   survey:
-    'A survey was conducted to <strong>inform the decision of developing this feature as a part of UX Strategy</strong> to see responses from existing clients that this feature will be useful to them or not. Also to predict that potential prospects will find it valuable and <strong>boosting the product sales.</strong>\n\nThis was to gain more information for the types of tools they are using and if we could get better understanding of tools present in the market and study them. We also wanted to know which tool they prefer to enter techpack and material details like trims, labels, applique and other details of the style.',
+    '\n\n',
   strategy: {
     productGoals: {
       intro:
