@@ -469,7 +469,7 @@ function CaseStudyPage() {
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline">Usability test questions</span></span>
+            <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline">Usability test questions</span> (5.    PLM Stage Update)</span>
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
