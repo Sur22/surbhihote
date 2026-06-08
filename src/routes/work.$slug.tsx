@@ -306,7 +306,7 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85">
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
-            : "This shows all the different user groups which are directly tied to this feature in grey circles which are Product Development Manager, Clients, Factories and Suppliers."}
+            : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n"}
         </p>
       </section>
 
