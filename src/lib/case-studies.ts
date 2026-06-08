@@ -211,7 +211,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Reduction in Missed  Deadlines", value: "-49%" },
-      { label: "Free → Paid", value: "1.8% → 6.4%" },
+      { label: "Client Satisfaction Rate Increased ", value: "40% → 56%" },
       { label: "Reduced Missed Notification", value: "−88%" },
       { label: "Beta NPS", value: "71" },
     ],
