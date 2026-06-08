@@ -529,7 +529,7 @@ function CaseStudyPage() {
       <section id="impact" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">Final Thoughts + Next Steps</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
+          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
         </p>
         <p className="text-lg leading-relaxed text-foreground/85">
           If I had more time, I would dive deeper in developing some of those nice-to-have features and more details. After it was released I have monitored it using google analytics In order to fill any gaps which I could find about how users are using it and checking the scope for future improvements from user &amp; business perspective.
