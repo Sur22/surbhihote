@@ -566,32 +566,9 @@ function CaseStudyPage() {
 
 
 
-      {/* Interested in more */}
+      {/* Empty space after case study */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-20">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-            <h2 className="font-serif text-4xl md:text-5xl">Interested in more?</h2>
-            <div>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-                <span className="text-accent font-medium">Interested in more?</span>{" "}
-                Contact me for the case study's with additional insights and artifacts:
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Voice of the customer insights",
-                  "Deep dive on process of one feature",
-                  "Design thinking lunch and learn",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/20 text-accent">
-                      <Check size={14} strokeWidth={2.5} />
-                    </span>
-                    <span className="text-foreground/85">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-10">
         </div>
       </section>
 
