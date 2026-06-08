@@ -375,7 +375,7 @@ function CaseStudyPage() {
             >
               <img
                 src={img}
-                alt={`Low fidelity wireframe ${i + 1}`}
+                alt={`Mid fidelity wireframe ${i + 1}`}
                 className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
                 loading="lazy"
               />
