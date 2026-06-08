@@ -173,35 +173,37 @@ function CaseStudyPage() {
 
 
         {/* Survey */}
-        <div className="mt-16">
-          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
-          <div
-            className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
-            dangerouslySetInnerHTML={{
-              __html: c.survey
-                .split("\n\n")
-                .map((p) => `<p>${p}</p>`)
-                .join(""),
-            }}
-          />
-          <div className="mt-10 flex flex-col gap-6">
-            {surveyImages.map((img) => (
-              <button
-                key={img.src}
-                type="button"
-                onClick={() => setZoomImg(img.src)}
-                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  loading="lazy"
-                />
-              </button>
-            ))}
+        {c.survey && c.survey.trim() !== "" && (
+          <div className="mt-16">
+            <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
+            <div
+              className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
+              dangerouslySetInnerHTML={{
+                __html: c.survey
+                  .split("\n\n")
+                  .map((p) => `<p>${p}</p>`)
+                  .join(""),
+              }}
+            />
+            <div className="mt-10 flex flex-col gap-6">
+              {surveyImages.map((img) => (
+                <button
+                  key={img.src}
+                  type="button"
+                  onClick={() => setZoomImg(img.src)}
+                  className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </section>
 
       <Dialog open={!!zoomImg} onOpenChange={(o) => !o && setZoomImg(null)}>
