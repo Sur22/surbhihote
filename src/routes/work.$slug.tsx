@@ -132,6 +132,13 @@ function CaseStudyPage() {
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
+            {c.goal && (
+              <div className="mt-8 rounded-full border border-border px-8 py-5 text-center">
+                <p className="font-semibold text-base md:text-lg">
+                  Give Control to User = Make User Feel Empowered = Better User Experience
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </section>
