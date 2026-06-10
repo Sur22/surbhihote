@@ -549,7 +549,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
-          These features have added more value for our existing users, clients and to the business and increase the competitiveness. <strong className="font-semibold">The designed feature is live and users are using it</strong>. This feature have also added value for the sales team for demos and attracting new clients who loved this feature in particular and they <strong className="font-semibold">closed the deal with 6 deals</strong> within a few moths after this feature was released. Getting feedback from internal users who are Product Development Manager user group were happy for this feature releases it made their work a lot easier and had saved them lot of efforts and time.
+          I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories.
         </p>
       </section>
 
