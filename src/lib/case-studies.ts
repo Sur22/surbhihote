@@ -126,10 +126,10 @@ export const caseStudies: CaseStudy[] = [
       "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
     ],
     outcome: [
-      { label: "Task success", value: "+38%" },
-      { label: "Support tickets", value: "−41%" },
-      { label: "App store rating", value: "3.1 → 4.7" },
-      { label: "NPS", value: "+29" },
+      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
+      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
+      { label: "Increase in speed and Efficiency", value: "26%" },
+      { label: "User Satisfaction", value: "+29%" },
     ],
     sections: [
       {
