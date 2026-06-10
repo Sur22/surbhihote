@@ -417,19 +417,19 @@ function CaseStudyPage() {
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
             <span>
-              After the <strong className="font-semibold">second iteration</strong> I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added which are not mention In Product requirement document and update it for engineering team to keep everyone in the loop.
+              Reviewing designs with developers and CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs.
             </span>
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
             <span>
-              To confirm <strong className="font-semibold">technical feasibility</strong>, software architecture and to know the development efforts and time required form CTO. I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
+              To solve that problem I went back and changed few things. I converted tabs into 2 buttons and then again reached out to developers for their opinion the new option.
             </span>
           </li>
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
             <span>
-              After taking feedback and considering inputs from users, Product and Engineering team I start putting together high fidelity wireframes and make it better and the <strong className="font-semibold">third iteration</strong> of the design.
+              Developers and CTO gave me a green flag and I went ahead for the usability testing with users.
             </span>
           </li>
         </ul>
