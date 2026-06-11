@@ -78,7 +78,7 @@ const defaultMeta = {
   strategy: {
     productGoals: {
       intro:
-        "Alignment of user goals and business goals to benefit both is important. Helping <strong>users achieve their goals helps in user retention</strong> and hence profitable for business.",
+        "Alignment of user goals and business goals to benefit both is important. Helping <strong>users achieve their goals helps in user retention</strong> and hence profitable for business.\n\n\nBusiness Goals\n1.Make Process Faster and Efficient \n2.Increase Productivity \n3.Strategic Differentiator \n4.Revenue Impact\n\n\nUser Goals\n1.Manage Project Assets Easily and efficiently\n2. Reuse and Repurpose Existing Assests\n3.Track Changes \n4.Ease in Collaboration \n\n",
       businessGoals: [
         "Provide a feature to stand out amongst competitors",
         "Make product strong",
