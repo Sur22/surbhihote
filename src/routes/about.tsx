@@ -42,7 +42,7 @@ const galleryImages = [
 
 const services = [
   { n: "01", t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
-  { n: "02", t: "User Centered Design/asthetic precision", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
+  { n: "02", t: "User Centered Design", d: "Bringing exceptional taste and creativity to ensure every pixel serves a purpose and every interaction feels premium." },
   { n: "03", t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
   { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
   { n: "05", t: "Data Driven Design", d: "My design decisions  are informed by research and numbers rather than depending on just assumptions.It saves time, resources and make sure that product is going into right direction. " },
@@ -65,7 +65,7 @@ function AboutPage() {
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              Hi,&nbsp;it's nice to see you here!
+              Hey,&nbsp;it's nice to see you!
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
