@@ -58,8 +58,15 @@ function AboutPage() {
         <p className="eyebrow mb-8">About</p>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-5 order-2 md:order-1">
-            <div className="overflow-hidden rounded-2xl aspect-square">
-              <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-full object-cover" />
+            <div className="relative w-full mx-auto md:mx-0">
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
+                style={{ transform: "rotate(10deg)" }}
+              />
+              <div className="relative overflow-hidden rounded-[5%] aspect-square border border-foreground/40">
+                <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-full object-cover" />
+              </div>
             </div>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
