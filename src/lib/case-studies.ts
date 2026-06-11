@@ -56,7 +56,7 @@ const defaultMeta = {
       "As there are multiple user types I recruited 5 different type of users (which included users who requested the feature )to get sense of what kind of notifications are important to which type of users and conducted user interview.",
     userInterviewInsights: [
       {
-        quote: "\"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don't.\"\n-Client\n‍\n\"Once I missed out on an important notification and as a result the the product got delayed.\"\n- Production Manager\n‍\n\"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming.\"\n-Product Development Manager\n\n\"Managing more than 40 + products for a client company is pretty hectic and notifications are a\nmess\"\n- Company Account Manager",
+        quote: "\"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don't.\"\n-Client\n‍\n\"Once I missed out on an important notification and as a result the the product got delayed.\"\n- Production Manager\n‍\n\"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming.\"\n-Product Development Manager\n\n\"Managing more than 40+ products for a client company is pretty hectic and notifications are a\nmess\"\n- Company Account Manager",
         author: "",
       },
       {
