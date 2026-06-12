@@ -12,7 +12,7 @@ export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Gallery — Surbhi Hote" },
-      { name: "description", content: "Sketches, explorations, off-cuts. A loose archive from the studio." },
+      { name: "description", content: "Sketches, explorations, off-cuts. A loose archive from different projects , concept explorations, and the finished piece that never found a home in a case study." },
       { property: "og:title", content: "Gallery — Surbhi Hote" },
       { property: "og:description", content: "Sketches, explorations, off-cuts." },
     ],
@@ -35,14 +35,14 @@ const items = [
   },
   {
     src: g4,
-    title: "Unannounced retail — brand moodboard",
-    tags: ["Brand", "Moodboard", "2025"],
-    body: "An early-stage brand moodboard for a retail client. Material studies, archival typography, and a colour story built around warmth and restraint.",
+    title: "GSN Marketplace - A white label e-com for clients  ",
+    tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
+    body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
     src: g5,
-    title: "Internal tool — dashboard study",
-    tags: ["Product", "Dashboard", "2023"],
+    title: "Dashboard- PLM & ERP ",
+    tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
   {
@@ -68,7 +68,7 @@ function GalleryPage() {
         <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
           <h1 className="md:col-span-7 display text-[clamp(2.5rem,7vw,6rem)]">Gallery</h1>
           <p className="md:col-span-5 text-foreground/75 leading-relaxed">
-            A loose archive from the studio — process work, explorations, and the occasional finished piece that never found a home in a case study.
+            A loose archive from different projects , concept explorations, and the finished piece that never found a home in a case study.
           </p>
         </div>
       </section>
