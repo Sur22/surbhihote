@@ -99,7 +99,7 @@ function CaseStudyPage() {
       {/* Cover */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
         <div className="overflow-hidden rounded-sm">
-          <img src={c.cover} alt={c.title} width={1400} height={1000} className="w-full h-auto" />
+          <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${c.slug === "atlas" ? "w-[35%] mx-auto" : "w-full"}`} />
         </div>
       </section>
 
