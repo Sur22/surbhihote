@@ -1,6 +1,6 @@
 import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.jpg";
-import atlas from "@/assets/case-atlas.jpg";
+import atlas from "@/assets/case-atlas.png.asset.json";
 
 export type CaseStudy = {
   slug: "fjord" | "solace" | "atlas";
@@ -198,7 +198,7 @@ export const caseStudies: CaseStudy[] = [
     ...defaultMeta,
     role: "Design Lead",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
-    cover: atlas,
+    cover: atlas.url,
     summary:
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
     problem:
