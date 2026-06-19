@@ -1,4 +1,4 @@
-import fjord from "@/assets/case-fjord.jpg";
+import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.jpg";
 import atlas from "@/assets/case-atlas.jpg";
 
@@ -114,7 +114,7 @@ export const caseStudies: CaseStudy[] = [
     ...defaultMeta,
     role: "Lead Product Designer",
     tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
-    cover: fjord,
+    cover: fjord.url,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
     problem:
