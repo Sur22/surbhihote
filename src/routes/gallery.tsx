@@ -5,7 +5,7 @@ import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
+import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/gallery-6.jpg";
 
 export const Route = createFileRoute("/gallery")({
@@ -40,7 +40,7 @@ const items = [
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
-    src: g5,
+    src: g5.url,
     title: "Dashboard- PLM & ERP ",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
