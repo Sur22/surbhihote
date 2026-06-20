@@ -189,6 +189,9 @@ function CaseStudyPage() {
         {c.slug === "solace" && (
           <div className="mt-16">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
+            </p>
             {c.survey && c.survey.trim() !== "" && (
               <div
                 className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
