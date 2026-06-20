@@ -1,5 +1,5 @@
 import fjord from "@/assets/case-fjord.png.asset.json";
-import solace from "@/assets/case-solace.jpg";
+import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 
 export type CaseStudy = {
