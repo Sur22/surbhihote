@@ -185,7 +185,7 @@ function CaseStudyPage() {
             {c.research.userInterviewInsights.map((q, i) => (
               q.quote && (
                 <figure key={i} className="text-center italic">
-                  <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">"{q.quote}"</blockquote>
+                  <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
                   {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
                 </figure>
               )
