@@ -254,7 +254,7 @@ function CaseStudyPage() {
           <img
             src={uxStrategyImg.url}
             alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
-            className="w-1/2 h-auto"
+            className="w-[62.5%] h-auto"
           />
         </div>
 
