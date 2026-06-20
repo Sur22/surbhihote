@@ -25,20 +25,13 @@ function getSystemTheme(): Theme {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
-  const [resolved, setResolved] = useState<Theme>("light");
-  const [ready, setReady] = useState(false);
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "light";
+    return getStoredTheme() ?? getSystemTheme();
+  });
+  const [resolved, setResolved] = useState<Theme>(theme);
 
   useEffect(() => {
-    const stored = getStoredTheme();
-    const resolvedTheme = stored ?? getSystemTheme();
-    setTheme(resolvedTheme);
-    setResolved(resolvedTheme);
-    setReady(true);
-  }, []);
-
-  useEffect(() => {
-    if (!ready) return;
     const root = document.documentElement;
     if (theme === "dark") {
       root.classList.add("dark");
@@ -47,7 +40,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
     window.localStorage.setItem(STORAGE_KEY, theme);
     setResolved(theme);
-  }, [theme, ready]);
+  }, [theme]);
 
   const toggle = () => setTheme((t) => (t === "light" ? "dark" : "light"));
 
