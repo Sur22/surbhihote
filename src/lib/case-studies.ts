@@ -56,7 +56,7 @@ const defaultMeta = {
       "Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I had 5 users which I interviewed .I asked them  question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it. ",
     userInterviewInsights: [
       {
-        quote: "\"It's difficult to put together all the details about the style in one place as different detail are in different files.\"\n-Bejan, Technical Designer\n\u200d\n\"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult\"\n-Bobby, Fashion Designer\n\u200d\n\"Every time there are changes we have to keep factories updated with that and provide them the updated project related files\"\n-Rachna, Product Development Manager\n\n\"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files \"\n-Pinky, Product Development Manager",
+        quote: "\"It's difficult to put together all the details about the style in one place as different detail are in different files.\"\n-Bejan, Technical Designer\n‍\n\"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult\"\n-Bobby, Fashion Designer\n‍\n\"Every time there are changes we have to keep factories updated with that and provide them the updated project related files\"\n-Rachna, Product Development Manager\n\n\"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files \"\n-Pinky, Product Development Manager",
         author: "",
       },
       {
@@ -78,7 +78,7 @@ const defaultMeta = {
   strategy: {
     productGoals: {
       intro:
-        "Alignment of user goals and business goals to benefit both is important. Helping users achieve their goals helps in user retention and hence profitable for business. Business Goals is to make the process and tool efficient\u00a0 that could drive impact on productivity and revenue . Keeping tha\u00a0",
+        "Alignment of user goals and business goals to benefit both is important. Helping <strong>users achieve their goals helps in user retention</strong> and hence profitable for business.\n\n\nBusiness Goals\n1.Make Process Faster and Efficient \n2.Increase Productivity \n3.Strategic Differentiator \n4.Revenue Impact\n\n\nUser Goals\n1.Manage Project Assets Easily and efficiently\n2. Reuse and Repurpose Existing Assests\n3.Track Changes \n4.Ease in Collaboration \n\n",
       businessGoals: [
         "Provide a feature to stand out amongst competitors",
         "Make product strong",
