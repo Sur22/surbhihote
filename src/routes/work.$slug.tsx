@@ -403,6 +403,30 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Initial Sketches */}
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Initial Sketches</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setZoomImg(s.url)}
+              className="group block w-full overflow-hidden rounded-sm bg-secondary p-3 transition-colors cursor-zoom-in"
+            >
+              <img
+                src={s.url}
+                alt={`Initial sketch ${i + 1}`}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
+          ))}
+        </div>
+      </section>
+
+
+
 
 
 
