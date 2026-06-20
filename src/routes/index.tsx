@@ -26,7 +26,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 width={1400}
                 height={1000}
                 loading="lazy"
-                className={`w-full h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md ${c.slug === "fjord" || c.slug === "atlas" ? "object-contain" : "object-cover"}`}
+                className={`w-full h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md ${c.slug === "fjord" || c.slug === "solace" || c.slug === "atlas" ? "object-contain" : "object-cover"}`}
               />
             </div>
           </div>
