@@ -131,12 +131,21 @@ function CaseStudyPage() {
         <div className="space-y-16">
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">Overview</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.overview}</p>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+              {c.slug === "solace" 
+                ? "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\nThe software have various stages where different files are stored. Each stage has certain assets that we need to track which would help in kicking of other phases of the supply chain.\nThroughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\n" 
+                : c.overview}
+            </p>
           </div>
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal}</p>
-            {c.goal && (
+            <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+              {c.slug === "solace"
+                ? "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\n"
+                : <p>{c.goal}</p>
+              }
+            </div>
+            {c.goal && c.slug !== "solace" && (
               <div className="mt-8 rounded-full border border-border px-8 py-5 text-center">
                 <p className="font-semibold text-base md:text-lg">
                   Give Control to User = Make User Feel Empowered = Better User Experience
@@ -325,11 +334,14 @@ function CaseStudyPage() {
             </div>
           </>
         )}
-        <p className="text-lg leading-relaxed text-foreground/85">
+        <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
-            : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n"}
-        </p>
+            : (c.slug === "atlas" 
+                ? "In every stage there are certain files that are stored. Each file is technically an asset that the brand has used to facilitate their product development. We need to grant abilities to create the assets within the GRID. This would focus on creation of Tech pack for the “Tech pack” Stage. This would provide ability to users to create and consolidate the following in one single document:\n1.     Consolidate/upload all the product sketches (CAD) with other parts of the assets\n2.    Create/upload detailed sketches\n3.    Create BOM’s\n4.    Export the Tech pack into PDF file formats\n5.    Material library, CAD Library, Techpack Library\n6.   Sharing the the output PDF with factories and clients"
+                : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
+          }
+        </div>
       </section>
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
