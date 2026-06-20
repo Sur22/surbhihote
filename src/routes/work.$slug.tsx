@@ -19,6 +19,10 @@ import brainstormingImg from "@/assets/brainstorming-session.jpg";
 import userGroupsImg from "@/assets/user-groups.png";
 import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
 import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
+import sketchImg1 from "@/assets/techpack-sketch-1.jpg.asset.json";
+import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
+import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
+import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 
 
