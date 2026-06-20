@@ -279,61 +279,6 @@ function CaseStudyPage() {
             loading="lazy"
           />
         </button>
-        {c.slug === "solace" && (
-          <>
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Target Users</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-              {[
-                {
-                  name: "Product Development Manager",
-                  goals: [
-                    "Manage end-to-end product lifecycle from design to production",
-                    "Coordinate between design, client, and manufacturing teams",
-                    "Track changes and maintain version control across all documents",
-                  ],
-                },
-                {
-                  name: "Fashion Designer",
-                  goals: [
-                    "Create detailed sketches and CAD designs efficiently",
-                    "Organize materials, trims, and labels in one place",
-                    "Communicate design changes to stakeholders seamlessly",
-                  ],
-                },
-                {
-                  name: "Client",
-                  goals: [
-                    "Review and approve designs and techpacks in real time",
-                    "Request changes and provide feedback directly on documents",
-                    "Stay informed about production progress and updates",
-                  ],
-                },
-                {
-                  name: "Manufacturer",
-                  goals: [
-                    "Receive complete and accurate techpacks for production",
-                    "Access BOMs, material specs, and design details easily",
-                    "Clarify requirements and communicate back to the brand",
-                  ],
-                },
-              ].map((persona) => (
-                <div
-                  key={persona.name}
-                  className="rounded-xl border bg-card text-card-foreground shadow p-6"
-                >
-                  <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
-                    {persona.name}
-                  </h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
-                    {persona.goals.map((goal, idx) => (
-                      <li key={idx}>{goal}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
         <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
