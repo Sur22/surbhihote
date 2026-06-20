@@ -186,18 +186,20 @@ function CaseStudyPage() {
 
 
         {/* Survey */}
-        {c.survey && c.survey.trim() !== "" && (
+        {c.slug === "solace" && (
           <div className="mt-16">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
-            <div
-              className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
-              dangerouslySetInnerHTML={{
-                __html: c.survey
-                  .split("\n\n")
-                  .map((p) => `<p>${p}</p>`)
-                  .join(""),
-              }}
-            />
+            {c.survey && c.survey.trim() !== "" && (
+              <div
+                className="text-lg leading-relaxed text-foreground/85 space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground"
+                dangerouslySetInnerHTML={{
+                  __html: c.survey
+                    .split("\n\n")
+                    .map((p) => `<p>${p}</p>`)
+                    .join(""),
+                }}
+              />
+            )}
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {surveyImages.map((img) => (
                 <button
