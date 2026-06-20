@@ -156,7 +156,7 @@ export const caseStudies: CaseStudy[] = [
     ...defaultMeta,
     role: "Lead UI UX Designer ",
     tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
-    cover: solace,
+    cover: solace.url,
     summary:
       "Designed the first version of Solace — a 10-minute-a-day practice for people who are skeptical of wellness culture. No crystals. No infinite scrolls.",
     problem:
