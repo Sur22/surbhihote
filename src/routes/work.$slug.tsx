@@ -602,7 +602,6 @@ function CaseStudyPage() {
         </p>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Outcomes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
