@@ -320,8 +320,8 @@ function CaseStudyPage() {
 
       {/* Initial Sketches */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-3xl mb-2 font-normal md:text-5xl">Design</h2>
-        <p className="text-lg text-muted-foreground mb-8">Initial sketch</p>
+        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Design</h2>
+        <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
             <button
