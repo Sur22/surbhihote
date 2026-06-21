@@ -28,7 +28,6 @@ import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 
-
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
     const c = getCaseStudy(params.slug);
@@ -196,7 +195,6 @@ function CaseStudyPage() {
           </div>
         </div>
 
-
         {/* Survey */}
         {c.slug === "solace" && (
           <div className="mt-16">
@@ -320,6 +318,30 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Initial Sketches */}
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Initial Sketches</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setZoomImg(s.url)}
+              className="group block w-full overflow-hidden rounded-sm bg-secondary p-3 transition-colors cursor-zoom-in"
+            >
+              <img
+                src={s.url}
+                alt={`Initial sketch ${i + 1}`}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Workflow */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
@@ -367,33 +389,7 @@ function CaseStudyPage() {
         </button>
       </section>
 
-
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
-
-      {/* Initial Sketches */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Initial Sketches</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setZoomImg(s.url)}
-              className="group block w-full overflow-hidden rounded-sm bg-secondary p-3 transition-colors cursor-zoom-in"
-            >
-              <img
-                src={s.url}
-                alt={`Initial sketch ${i + 1}`}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
-
 
       {/* User Flow */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
@@ -452,7 +448,6 @@ function CaseStudyPage() {
           ))}
         </div>
       </section>
-
 
       {/* Review with Users, Product & Engineering Team */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
@@ -608,8 +603,6 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
-
-
       {/* Outcomes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <p className="eyebrow mb-10">Outcome</p>
@@ -623,8 +616,6 @@ function CaseStudyPage() {
         </div>
       </section>
       <div id="case-study-end" aria-hidden />
-
-
 
       {/* Empty space after case study */}
       <section className="border-t border-border">
