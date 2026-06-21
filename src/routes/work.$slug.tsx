@@ -378,7 +378,8 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-          In these wireframes, I included elements that directly address users' goals, needs, frustrations. As I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.{"\n\n\n\n"}
+          In these wireframes, I included elements that directly address users' goals, needs, frustrations. As I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Including Engineering Early On</h3>
           To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
         </p>
         <div className="flex flex-col gap-6">
