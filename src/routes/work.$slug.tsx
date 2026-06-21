@@ -322,11 +322,15 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
+        <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           I gathered the excel sheets which Fashion Designer or PDM used to send to the clients and the factory
-          1.Bill of Material (Material and trims costing file)
-          2.Final CAD file
-          3.Tech Pack file
+        </p>
+        <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
+          <li>Bill of Material (Material and trims costing file)</li>
+          <li>Final CAD file</li>
+          <li>Tech Pack file</li>
+        </ul>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To understand the details to get started with the initial sketches and get some inputs from users.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
