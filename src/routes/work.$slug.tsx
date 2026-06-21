@@ -618,12 +618,6 @@ function CaseStudyPage() {
       </section>
       <div id="case-study-end" aria-hidden />
 
-      {/* Empty space after case study */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-10">
-        </div>
-      </section>
-
       {/* More case studies */}
       <section className="border-t border-border">
         <div className="mx-auto max-w-[768px] px-6 md:px-10 py-20">
