@@ -322,9 +322,12 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          I gathered the excel sheets which Fashion Designer or PDM used to send the 1.Bill of Material (Material and trims costing file)<br />
-          2.Final CAD and Tech Pack
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
+          I gathered the excel sheets which Fashion Designer or PDM used to send to the clients and the factory
+          1.Bill of Material (Material and trims costing file)
+          2.Final CAD file
+          3.Tech Pack file
+          To understand the details which needs to be included
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
