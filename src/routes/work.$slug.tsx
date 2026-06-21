@@ -379,6 +379,7 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           In these wireframes, I included elements that directly address users' goals, needs, frustrations. As I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
+          To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
         </p>
         <div className="flex flex-col gap-6">
           {[wireframeImg1, wireframeImg2].map((img, i) => (
@@ -479,13 +480,7 @@ function CaseStudyPage() {
           <li className="flex gap-4">
             <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
             <span>
-              After the second iteration I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added which are not mention In Product requirement document and update it for engineering team to keep everyone in the loop.
-            </span>
-          </li>
-          <li className="flex gap-4">
-            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>
-              To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
+              After the second iteration I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added and are not mention In Product Requirement Document was updated for engineering team to keep everyone in the loop.
             </span>
           </li>
           <li className="flex gap-4">
