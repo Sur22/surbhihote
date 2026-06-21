@@ -342,6 +342,26 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Brainstorming */}
+      <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
+        <button
+          type="button"
+          onClick={() => setZoomImg(brainstormingImg)}
+          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
+        >
+          <img
+            src={brainstormingImg}
+            alt="Whiteboard from brainstorming session with the product team"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
+      </section>
+
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Workflow */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
@@ -367,26 +387,6 @@ function CaseStudyPage() {
                 : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
           }
         </div>
-      </section>
-
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
-
-      {/* Brainstorming */}
-      <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.brainstorming}</p>
-        <button
-          type="button"
-          onClick={() => setZoomImg(brainstormingImg)}
-          className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
-        >
-          <img
-            src={brainstormingImg}
-            alt="Whiteboard from brainstorming session with the product team"
-            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-            loading="lazy"
-          />
-        </button>
       </section>
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
