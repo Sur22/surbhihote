@@ -323,7 +323,7 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-          I gathered the excel sheets which Fashion Designer or PDM used to send to the clients and the factory
+          I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory
         </p>
         <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
           <li>Bill of Material (Material and trims costing file)</li>
