@@ -582,16 +582,25 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {[1, 2, 3, 4].map((n) => (
-              <CarouselItem key={n}>
+            {[
+              { src: finalProto.url, label: "Prototype overview" },
+              { src: finalLibrary.url, label: "Techpack Library" },
+              { src: finalSketchSel.url, label: "Sketch selection" },
+              { src: finalDetailedSketch.url, label: "Detailed sketch" },
+              { src: finalBom.url, label: "Bill of Materials" },
+              { src: finalPdf.url, label: "Exported PDF" },
+              { src: finalToolScreens.url, label: "Tool screens" },
+            ].map((img) => (
+              <CarouselItem key={img.label}>
                 <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
-                    <span className="font-serif text-2xl">Final design {n}</span>
-                  </div>
+                  <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
