@@ -23,6 +23,9 @@ import sketchImg1 from "@/assets/techpack-sketch-1.jpg.asset.json";
 import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
 import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
 import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
+import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
+import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
+import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 
 
@@ -376,13 +379,20 @@ function CaseStudyPage() {
 
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {[1, 2, 3].map((n) => (
-              <CarouselItem key={n}>
-                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
-                    <span className="font-serif text-2xl">User flow {n}</span>
-                  </div>
-                </div>
+            {[userFlow1, userFlow2, userFlow3].map((img, i) => (
+              <CarouselItem key={i}>
+                <button
+                  type="button"
+                  onClick={() => setZoomImg(img.url)}
+                  className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+                >
+                  <img
+                    src={img.url}
+                    alt={`User flow ${i + 1}`}
+                    className="w-full h-auto object-contain"
+                    loading="lazy"
+                  />
+                </button>
               </CarouselItem>
             ))}
           </CarouselContent>
