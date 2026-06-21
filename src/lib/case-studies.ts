@@ -78,7 +78,7 @@ const defaultMeta = {
   strategy: {
     productGoals: {
       intro:
-        "Alignment of user goals and business goals to benefit both are important things to balance when it comes to the strategy part. To come up with design strategy it's crucial to understand the business/product goals Helping users achieve their goals helps in user retention and hence profitable for business. Business Goals 1.Make Process Faster and Efficient  2.Increase Productivity  3.Strategic Differentiator  4.Revenue Impact User Goals 1.Manage Project Assets Easily and efficiently 2. Reuse and Repurpose Existing Assests 3.Track Changes  4.Ease in Collaboration",
+        "Alignment of user goals and business goals to benefit both are important things to balance when it comes to the strategy part. To\u00a0 help users and product to goals is crucial for user retention and hence profitable for business. Business Goals 1.Make Process Faster and Efficient\u00a0 2.Increase Productivity\u00a0 3.Strategic Differentiator\u00a0 4.Revenue Impact User Goals 1.Manage Project Assets Easily and efficiently 2. Reuse and Repurpose Existing Assests 3.Track Changes\u00a0 4.Ease in Collaboration",
       businessGoals: [
         "Provide a feature to stand out amongst competitors",
         "Make product strong",
