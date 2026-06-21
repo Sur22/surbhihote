@@ -327,7 +327,7 @@ function CaseStudyPage() {
           1.Bill of Material (Material and trims costing file)
           2.Final CAD file
           3.Tech Pack file
-          To understand the details which needs to be included
+          To understand the details to get started with the initial sketches and get some inputs from users.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
