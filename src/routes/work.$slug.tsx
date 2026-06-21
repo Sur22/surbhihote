@@ -427,7 +427,7 @@ function CaseStudyPage() {
 
       {/* Mid Fidelity Wireframes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Mid Fidelity Wireframes</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
         </p>
