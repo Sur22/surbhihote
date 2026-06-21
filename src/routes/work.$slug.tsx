@@ -374,6 +374,33 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Mid Fidelity Wireframes */}
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+          Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
+        </p>
+        <div className="flex flex-col gap-6">
+          {[wireframeImg1, wireframeImg2].map((img, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setZoomImg(img)}
+              className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
+            >
+              <img
+                src={img}
+                alt={`Mid fidelity wireframe ${i + 1}`}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Workflow */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
@@ -435,31 +462,6 @@ function CaseStudyPage() {
       </section>
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
-
-      {/* Mid Fidelity Wireframes */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
-        </p>
-        <div className="flex flex-col gap-6">
-          {[wireframeImg1, wireframeImg2].map((img, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setZoomImg(img)}
-              className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
-            >
-              <img
-                src={img}
-                alt={`Mid fidelity wireframe ${i + 1}`}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-          ))}
-        </div>
-      </section>
 
       {/* Review with Users, Product & Engineering Team */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
