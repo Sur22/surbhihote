@@ -455,8 +455,8 @@ function CaseStudyPage() {
 
 
       {/* Review with Users, Product & Engineering Team */}
-
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">
           Review with Users, Product &amp; Engineering Team
         </h2>
