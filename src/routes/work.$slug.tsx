@@ -379,13 +379,20 @@ function CaseStudyPage() {
 
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {[1, 2, 3].map((n) => (
-              <CarouselItem key={n}>
-                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
-                    <span className="font-serif text-2xl">User flow {n}</span>
-                  </div>
-                </div>
+            {[userFlow1, userFlow2, userFlow3].map((img, i) => (
+              <CarouselItem key={i}>
+                <button
+                  type="button"
+                  onClick={() => setZoomImg(img.url)}
+                  className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+                >
+                  <img
+                    src={img.url}
+                    alt={`User flow ${i + 1}`}
+                    className="w-full h-auto object-contain"
+                    loading="lazy"
+                  />
+                </button>
               </CarouselItem>
             ))}
           </CarouselContent>
