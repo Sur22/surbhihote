@@ -316,6 +316,8 @@ function CaseStudyPage() {
 
       </section>
 
+      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Initial Sketches */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-3xl mb-6 font-normal md:text-5xl">Initial Sketches</h2>
