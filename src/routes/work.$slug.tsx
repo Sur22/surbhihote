@@ -601,9 +601,6 @@ function CaseStudyPage() {
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
       </section>
 
 
