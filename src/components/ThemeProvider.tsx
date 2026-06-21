@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
-const STORAGE_KEY = "mira-theme";
+const STORAGE_KEY = "mira-theme-choice";
+const DEFAULT_THEME: Theme = "light";
 
 type Theme = "light" | "dark";
 
@@ -14,20 +15,19 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 function getStoredTheme(): Theme | null {
   if (typeof window === "undefined") return null;
-  const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
-  if (stored === "light" || stored === "dark") return stored;
+  try {
+    const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
+    if (stored === "light" || stored === "dark") return stored;
+  } catch {
+    return null;
+  }
   return null;
-}
-
-function getSystemTheme(): Theme {
-  if (typeof window === "undefined") return "light";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window === "undefined") return "light";
-    return getStoredTheme() ?? getSystemTheme();
+    if (typeof window === "undefined") return DEFAULT_THEME;
+    return getStoredTheme() ?? DEFAULT_THEME;
   });
   const [resolved, setResolved] = useState<Theme>(theme);
 
@@ -38,11 +38,20 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     } else {
       root.classList.remove("dark");
     }
-    window.localStorage.setItem(STORAGE_KEY, theme);
     setResolved(theme);
   }, [theme]);
 
-  const toggle = () => setTheme((t) => (t === "light" ? "dark" : "light"));
+  const toggle = () => {
+    setTheme((currentTheme) => {
+      const nextTheme = currentTheme === "light" ? "dark" : "light";
+      try {
+        window.localStorage.setItem(STORAGE_KEY, nextTheme);
+      } catch {
+        // Theme still changes for this session if storage is unavailable.
+      }
+      return nextTheme;
+    });
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, resolved, toggle }}>
