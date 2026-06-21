@@ -27,6 +27,13 @@ import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
+import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
+import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
+import finalLibrary from "@/assets/tecpack_library.png.asset.json";
+import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
+import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
+import finalBom from "@/assets/techpack_bom.png.asset.json";
+import finalPdf from "@/assets/techpack_pdf.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -575,12 +582,18 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {[1, 2, 3, 4].map((n) => (
-              <CarouselItem key={n}>
+            {[
+              { src: finalProto.url, label: "Prototype overview" },
+              { src: finalLibrary.url, label: "Techpack Library" },
+              { src: finalSketchSel.url, label: "Sketch selection" },
+              { src: finalDetailedSketch.url, label: "Detailed sketch" },
+              { src: finalBom.url, label: "Bill of Materials" },
+              { src: finalPdf.url, label: "Exported PDF" },
+              { src: finalToolScreens.url, label: "Tool screens" },
+            ].map((img) => (
+              <CarouselItem key={img.label}>
                 <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
-                    <span className="font-serif text-2xl">Final design {n}</span>
-                  </div>
+                  <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
                 </div>
               </CarouselItem>
             ))}
