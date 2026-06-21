@@ -357,7 +357,7 @@ function CaseStudyPage() {
       {/* Brainstorming */}
       <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and discussion about the design requirements form engineering standpoint and the concept I gained more  It was helpful for kickstarting the mid fidelity wireframe.</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
         <button
           type="button"
           onClick={() => setZoomImg(brainstormingImg)}
