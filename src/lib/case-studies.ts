@@ -29,6 +29,8 @@ export type CaseStudy = {
       businessGoals: string[];
       userGoals: string[];
       sharedGoals: string[];
+      workshopAttendees?: string;
+      workshopSchedule?: string;
     };
   };
   brainstorming: string;
