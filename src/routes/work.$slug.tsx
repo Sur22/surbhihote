@@ -436,12 +436,12 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Prioritize section follow-up content.]
               </p>
               <div className="grid grid-cols-1 gap-6">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 h-full">
-                  <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-full object-cover" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 grid grid-cols-2 gap-2 h-full">
-                  <img src={prioritizeImg2a.url} alt="High to low cards voting on glass wall" className="w-full h-full object-cover" />
-                  <img src={prioritizeImg2b.url} alt="Prioritization matrix with impact vs effort quadrants" className="w-full h-full object-cover" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2 grid grid-cols-2 gap-2">
+                  <img src={prioritizeImg2a.url} alt="High to low cards voting on glass wall" className="w-full h-auto object-contain" />
+                  <img src={prioritizeImg2b.url} alt="Prioritization matrix with impact vs effort quadrants" className="w-full h-auto object-contain" />
                 </div>
               </div>
             </div>
