@@ -602,7 +602,7 @@ function CaseStudyPage() {
           <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          Click here to see the output PDF file of this project.
+          <a href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent">Click here</a> to see the output PDF file of this project.
         </p>
       </section>
 
