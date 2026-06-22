@@ -168,9 +168,9 @@ export const caseStudies: CaseStudy[] = [
       "Partnered with the writers on tone-of-voice so the copy and the UI shipped as one thing.",
     ],
     outcome: [
-      { label: "D7 retention", value: "54%" },
-      { label: "Avg. session length", value: "11 min" },
-      { label: "Paying conversion", value: "9.2%" },
+      { label: "Reduced Delays in Production", value: "-32%\u00a0" },
+      { label: "User Satisfaction\u00a0", value: "+27%" },
+      { label: "Faster Workflow\u00a0", value: "\u00a0+13" },
       { label: "Launch reviews", value: "1,400+" },
     ],
     sections: [
