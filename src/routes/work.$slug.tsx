@@ -26,6 +26,7 @@ import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
 import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.asset.json";
 import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
+import prioritizeImg1 from "@/assets/affiliate-workshop-voting-session.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
