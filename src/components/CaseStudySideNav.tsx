@@ -56,7 +56,7 @@ export function CaseStudySideNav() {
   return (
     <nav
       aria-label="Case study sections"
-      className={`hidden xl:block fixed top-24 right-[calc(50%+424px)] w-[200px] z-40 transition-opacity duration-200 ${
+      className={`hidden xl:block fixed top-24 right-[calc(50%+424px)] w-[300px] z-40 transition-opacity duration-200 ${
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
@@ -79,7 +79,7 @@ export function CaseStudySideNav() {
                     .getElementById(s.id)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                className={`whitespace-nowrap text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
                   active
                     ? "text-accent"
                     : "text-muted-foreground hover:text-foreground"
