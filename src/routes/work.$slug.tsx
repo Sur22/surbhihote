@@ -325,6 +325,11 @@ function CaseStudyPage() {
       <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || "Strategy"}</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
+
+        <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+          [Placeholder paragraph for planning section follow-up content.]
+        </p>
+
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
@@ -354,10 +359,6 @@ function CaseStudyPage() {
             className="w-[50.78%] h-auto"
           />
         </div>
-
-        <p className="text-lg leading-relaxed text-foreground/85 mt-12">
-          [Placeholder paragraph for planning section follow-up content.]
-        </p>
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
