@@ -90,6 +90,14 @@ function CaseStudyPage() {
     { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
     { src: surveyImg3, alt: "Which tool you use for material details — survey results" },
   ];
+  const affiliateSurveyImages = [
+    { src: affSurveyQ1.url, alt: "How do you typically access your orders?" },
+    { src: affSurveyQ2.url, alt: "What are the tasks you mainly perform on the Affiliate site?" },
+    { src: affSurveyQ3.url, alt: "Please rate your experience with the current Affiliate site" },
+    { src: affSurveyQ4.url, alt: "How frequently do you use Affiliate site?" },
+    { src: affSurveyQ5.url, alt: "How reliant are you on the AMP affiliate site for day-to-day workflow?" },
+    { src: affSurveyQ6.url, alt: "Would you join future affiliate site enhancement feedback sessions?" },
+  ];
 
   return (
     <SiteLayout>
