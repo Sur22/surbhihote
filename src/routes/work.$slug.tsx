@@ -91,7 +91,7 @@ function CaseStudyPage() {
       <CaseStudySideNav />
 
       {/* Title block */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/"
           hash="case-studies"
@@ -111,14 +111,14 @@ function CaseStudyPage() {
       </section>
 
       {/* Cover */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="overflow-hidden rounded-sm">
           <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${c.slug === "atlas" ? "w-[35%] mx-auto" : "w-full"}`} />
         </div>
       </section>
 
       {/* Meta grid */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pb-16">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
             { k: "Role", v: c.role },
@@ -134,7 +134,7 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
       <section id="overview" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
