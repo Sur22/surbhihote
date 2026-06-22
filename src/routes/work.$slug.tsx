@@ -35,6 +35,12 @@ import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
 import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
 import finalBom from "@/assets/techpack_bom.png.asset.json";
 import finalPdf from "@/assets/techpack_pdf.png.asset.json";
+import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
+import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
+import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
+import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
+import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
+import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
