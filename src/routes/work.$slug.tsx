@@ -612,7 +612,7 @@ function CaseStudyPage() {
       )}
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-0 pb-0">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-0 pb-10">
         <p className="eyebrow mb-10">Outcome</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
