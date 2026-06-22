@@ -171,7 +171,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Reduced Delays in Production", value: "-32%\u00a0" },
       { label: "User Satisfaction\u00a0", value: "+27%" },
       { label: "Faster Workflow\u00a0", value: "\u00a0+13" },
-      { label: "Launch reviews", value: "1,400+" },
+      { label: "Workflow Errors\u00a0", value: "1,400+" },
     ],
     sections: [
       {
