@@ -355,6 +355,9 @@ function CaseStudyPage() {
           />
         </div>
 
+        <p className="text-lg leading-relaxed text-foreground/85 mt-12">
+          [Placeholder paragraph for planning section follow-up content.]
+        </p>
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
