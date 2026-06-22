@@ -565,12 +565,12 @@ function CaseStudyPage() {
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
             {[
+              { src: finalToolScreens.url, label: "Tool screens" },
               { src: finalLibrary.url, label: "Techpack Library" },
               { src: finalSketchSel.url, label: "Sketch selection" },
               { src: finalDetailedSketch.url, label: "Detailed sketch" },
               { src: finalBom.url, label: "Bill of Materials" },
               { src: finalPdf.url, label: "Exported PDF" },
-              { src: finalToolScreens.url, label: "Tool screens" },
               { src: finalProto.url, label: "Prototype overview" },
             ].map((img) => (
               <CarouselItem key={img.label}>
