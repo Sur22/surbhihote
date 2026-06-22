@@ -181,7 +181,9 @@ function CaseStudyPage() {
             </div>
           )}
           <div>
-            <h3 className="text-foreground/85 text-xl mb-4">User Interview</h3>
+            <h3 className="text-foreground/85 text-xl mb-4">
+              {c.slug === "fjord2" ? "Survey" : "User Interview"}
+            </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
             </p>
