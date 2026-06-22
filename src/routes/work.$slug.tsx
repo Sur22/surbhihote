@@ -438,9 +438,8 @@ function CaseStudyPage() {
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 grid grid-cols-2 gap-2">
-                  <img src={prioritizeImg2a.url} alt="High to low cards voting on glass wall" className="w-full h-auto object-contain" />
-                  <img src={prioritizeImg2b.url} alt="Prioritization matrix with impact vs effort quadrants" className="w-full h-auto object-contain" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={prioritizeImg2.url} alt="Affiliate workshop voting and prioritization matrix on glass wall" className="w-full h-auto object-contain" />
                 </div>
               </div>
             </div>
