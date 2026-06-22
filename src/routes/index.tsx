@@ -35,7 +35,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               <span className="font-serif text-2xl text-accent">{c.index}</span>
               <span className="eyebrow">{c.tags.join(" · ")}</span>
             </div>
-            <h2 className="font-serif text-5xl md:text-6xl mb-5 group-hover:text-accent transition-colors whitespace-pre-line">
+            <h2 className="font-serif text-5xl md:text-6xl mb-5 group-hover:text-accent transition-colors">
               {c.title}
             </h2>
             <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
