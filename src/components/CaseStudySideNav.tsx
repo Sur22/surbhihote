@@ -79,7 +79,7 @@ export function CaseStudySideNav() {
                     .getElementById(s.id)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                className={`whitespace-nowrap text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
                   active
                     ? "text-accent"
                     : "text-muted-foreground hover:text-foreground"
