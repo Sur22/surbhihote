@@ -21,6 +21,8 @@ export type CaseStudy = {
     userInterviewInsights: { quote: string; author: string }[];
   };
   survey: string;
+  strategySectionTitle?: string;
+  strategySectionSubtitle?: string;
   strategy: {
     productGoals: {
       intro: string;
