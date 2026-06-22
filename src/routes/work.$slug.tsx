@@ -327,7 +327,7 @@ function CaseStudyPage() {
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
 
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-          The workshop was not a typical Design thinking workshop it was customized based on to make most out of the limited time available.&nbsp;&nbsp;
+          The workshop was not a typical Design thinking workshop it was customized based on to make most out of the limited time available.I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop.&nbsp;&nbsp;
         </p>
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
