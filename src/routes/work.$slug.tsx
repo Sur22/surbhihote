@@ -372,7 +372,7 @@ function CaseStudyPage() {
           />
         )}
 
-        <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+        <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
           <img
             src={uxStrategyImg.url}
             alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
