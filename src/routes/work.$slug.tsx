@@ -334,15 +334,17 @@ function CaseStudyPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Attendees</h4>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.strategy.productGoals.workshopAttendees}
-              </p>
+              <p
+                className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
+                dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopAttendees }}
+              />
             </div>
             <div>
               <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Schedule</h4>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.strategy.productGoals.workshopSchedule}
-              </p>
+              <p
+                className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
+                dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopSchedule }}
+              />
             </div>
           </div>
         ) : (
