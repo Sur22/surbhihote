@@ -363,31 +363,82 @@ function CaseStudyPage() {
         </div>
 
         {c.slug === "fjord2" && (
-          <div className="mt-16">
-            <h3 className="font-serif text-3xl mb-6 font-medium">Workshop Activities</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
-              {["Empathize", "Define", "Ideate", "Prioritize", "Define success matrix"].map((phase, i) => (
-                <div
-                  key={phase}
-                  className="rounded-sm border border-border bg-secondary p-4 text-center"
-                >
-                  <span className="text-sm text-muted-foreground block mb-1">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="font-semibold text-foreground">{phase}</span>
+          <>
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Empathize</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Empathize section follow-up content.]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
                 </div>
-              ))}
-            </div>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-              [Placeholder paragraph for workshop activities section follow-up content.]
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image 1</span>
-              </div>
-              <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                <span className="text-sm text-muted-foreground">Image 2</span>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
               </div>
             </div>
-          </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Define</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Define section follow-up content.]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
+                </div>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Ideate</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Ideate section follow-up content.]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
+                </div>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Prioritize</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Prioritize section follow-up content.]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
+                </div>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Define success matrix</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Define success matrix section follow-up content.]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
+                </div>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
+              </div>
+            </div>
+          </>
         )}
       </section>
 
