@@ -326,7 +326,7 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || "Strategy"}</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
         <p
-          className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground"
+          className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
           dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
         />
 
