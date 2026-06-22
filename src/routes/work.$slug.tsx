@@ -361,6 +361,34 @@ function CaseStudyPage() {
             className="w-[50.78%] h-auto"
           />
         </div>
+
+        {c.slug === "fjord2" && (
+          <div className="mt-16">
+            <h3 className="font-serif text-3xl mb-6 font-medium">Workshop Activities</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+              {["Empathize", "Define", "Ideate", "Prioritize", "Define success matrix"].map((phase, i) => (
+                <div
+                  key={phase}
+                  className="rounded-sm border border-border bg-secondary p-4 text-center"
+                >
+                  <span className="text-sm text-muted-foreground block mb-1">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="font-semibold text-foreground">{phase}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+              [Placeholder paragraph for workshop activities section follow-up content.]
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image 1</span>
+              </div>
+              <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                <span className="text-sm text-muted-foreground">Image 2</span>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
