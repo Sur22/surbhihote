@@ -140,7 +140,7 @@ function CaseStudyPage() {
       <section id="overview" className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
         <div className="space-y-16">
           <div>
-            <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Overview</h2>
+            <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Overview</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "solace" 
                 ? "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments. GRID is designed to serve as the backbone for the SaaS business model, there is a potential for providing users with design capabilities within the software itself. This feature would provide users to not only create Tech pack in the GRID but will also give them opportunity to kickstart the sourcing process through Bill of Material.\nThe software have various stages where different files are stored. Each stage has certain assets that we need to track which would help in kicking of other phases of the supply chain.\nThroughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\n" 
@@ -170,7 +170,7 @@ function CaseStudyPage() {
 
       {/* Research */}
       <section id="research" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Research</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
         <div className="space-y-12">
           {c.slug === "solace" && (
             <div>
@@ -307,7 +307,7 @@ function CaseStudyPage() {
 
       {/* Strategy */}
       <section id="strategy" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Strategy</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
           className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground"
@@ -328,7 +328,7 @@ function CaseStudyPage() {
 
       {/* Initial Sketches */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Design</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory
@@ -509,7 +509,7 @@ function CaseStudyPage() {
 
       {/* Testing */}
       <section id="testing" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-4xl font-semibold">Testing</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
 
         <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing Preparation</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
