@@ -4,10 +4,10 @@ const sections = [
   { id: "overview", label: "Overview" },
   { id: "research", label: "Research" },
   { id: "strategy", label: "Strategy" },
-  { id: "design-process", label: "Design Process" },
+  { id: "design-process", label: "Design" },
   { id: "testing", label: "Testing" },
   { id: "final-designs", label: "The Solution" },
-  { id: "impact", label: "Impact & Learnings" },
+  { id: "impact", label: "Impact" },
 ];
 
 export function CaseStudySideNav() {
