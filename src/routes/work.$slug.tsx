@@ -504,25 +504,6 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
-      {/* High Fidelity Iteration Carousel */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
-        <Carousel opts={{ loop: true }} className="relative">
-          <CarouselContent>
-            {[1, 2, 3].map((n) => (
-              <CarouselItem key={n}>
-                <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                  <div className="flex aspect-[16/9] w-full items-center justify-center text-foreground/40">
-                    <span className="font-serif text-2xl">Iteration {n}</span>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
-      </section>
-
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Testing */}
