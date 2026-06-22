@@ -128,7 +128,7 @@ function CaseStudyPage() {
 
       {/* Cover */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="overflow-hidden rounded-sm">
+        <div className="overflow-hidden rounded-sm bg-secondary">
           <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${c.slug === "atlas" ? "w-[35%] mx-auto" : "w-full"}`} />
         </div>
       </section>
@@ -372,7 +372,7 @@ function CaseStudyPage() {
           />
         )}
 
-        <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+        <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
           <img
             src={uxStrategyImg.url}
             alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
@@ -418,8 +418,12 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto rounded-sm border border-border" />
-                <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto rounded-sm border border-border" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
+                </div>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
+                </div>
               </div>
             </div>
 
@@ -553,7 +557,7 @@ function CaseStudyPage() {
         <button
           type="button"
           onClick={() => setZoomImg(userGroupsImg)}
-          className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-white p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+          className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
         >
           <img
             src={userGroupsImg}
@@ -733,7 +737,7 @@ function CaseStudyPage() {
 
       {c.slug === "solace" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10">
-          <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
