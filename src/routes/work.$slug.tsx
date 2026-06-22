@@ -599,15 +599,17 @@ function CaseStudyPage() {
         </p>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10">
-        <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
-          <img
-            src={techpackOutcomeImg.url}
-            alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
-            className="w-full h-auto"
-          />
+      {c.slug === "solace" && (
+        <div className="mx-auto max-w-[768px] px-6 md:px-10">
+          <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+            <img
+              src={techpackOutcomeImg.url}
+              alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Outcomes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
