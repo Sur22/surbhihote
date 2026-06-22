@@ -605,7 +605,7 @@ function CaseStudyPage() {
             <img
               src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
-              className="w-full h-auto"
+              className="w-[75%] h-auto"
             />
           </div>
         </div>
