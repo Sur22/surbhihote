@@ -341,13 +341,13 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To understand the details to get started with the initial sketches and get some inputs from users.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="flex flex-row gap-4 overflow-x-auto pb-2">
           {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
             <button
               key={i}
               type="button"
               onClick={() => setZoomImg(s.url)}
-              className="group block w-full overflow-hidden rounded-sm bg-secondary p-3 transition-colors cursor-zoom-in"
+              className="group block flex-shrink-0 w-[22%] min-w-[180px] overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
             >
               <img
                 src={s.url}
