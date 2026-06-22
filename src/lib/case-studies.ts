@@ -21,6 +21,8 @@ export type CaseStudy = {
     userInterviewInsights: { quote: string; author: string }[];
   };
   survey: string;
+  strategySectionTitle?: string;
+  strategySectionSubtitle?: string;
   strategy: {
     productGoals: {
       intro: string;
@@ -238,6 +240,15 @@ export const caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
+    strategySectionTitle: "Design Thinking Workshop",
+    strategySectionSubtitle: "Planning",
+    strategy: {
+      ...defaultMeta.strategy,
+      productGoals: {
+        ...defaultMeta.strategy.productGoals,
+        intro: "ATTENDEES\nStakeholders-\n1.Sr. Mgr, Affiliate Relations & Agency ops\n2.VP of Political Ops\n3.Director Of Billing Ops Markets and Political\n4.User Administration Manager\n\n\nProduct-\n5.Senior Product Manager\n6. UI UX Designer (Me as a Facilitator)\n\n\nEngineering-\n7.Director, QA Software Engineering\n8.Senior Director, Software Engineering"
+      }
+    },
     timeframe: "8 Weeks",
     tools: "Adobe XD, Survey Monkey,Microsoft Clarity, Power BI,Microsoft Azure\u00a0",
     tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Brainstorming, Wire-framing, Prototyping, Stakeholder buy-in, Collaborate with PM, QA and\nEngineering team.\u00a0",
@@ -245,7 +256,7 @@ export const caseStudies: CaseStudy[] = [
     goal: "To redesign the website to improve the workflows and communication between the internal users and the affiliates better and smoother.\u00a0\n1.\u00a0\u00a0\u00a0\u00a0\u00a0Solve for loss of business/revenue\n2.\u00a0\u00a0\u00a0\u00a0Clean up -Remove unused parts of the website\n3.\u00a0\u00a0\u00a0\u00a0Simplify- Remove redandancy and consuing part\n4.\u00a0 \u00a0 Repair - Fix broken Functionality\u00a0\n5.\u00a0 \u00a0 Enhance - Make it faster and efficient.\u00a0\n6.\u00a0 \u00a0 Faster Adoption - Keep the learning curve as flat as possible\u00a0",
     research: {
       ...defaultMeta.research,
-      userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions \n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128\n\n",
+      userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128.\n\n",
     },
     role: "Lead Product Designer",
     tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
