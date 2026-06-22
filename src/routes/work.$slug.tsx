@@ -327,7 +327,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Initial Sketches */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+      <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
@@ -363,7 +363,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Brainstorming */}
-      <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
         <button
@@ -592,7 +592,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Measuring the Success */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0">
+      <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
           I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories.
@@ -626,7 +626,7 @@ function CaseStudyPage() {
       <div id="case-study-end" aria-hidden />
 
       {/* Final Thoughts */}
-      <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10 scroll-mt-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">{"\n"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-6">
           <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
