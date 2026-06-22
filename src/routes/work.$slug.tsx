@@ -557,7 +557,7 @@ function CaseStudyPage() {
         <button
           type="button"
           onClick={() => setZoomImg(userGroupsImg)}
-          className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-white p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+          className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
         >
           <img
             src={userGroupsImg}
