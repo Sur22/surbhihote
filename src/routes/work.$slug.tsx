@@ -137,7 +137,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1100px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section id="overview" className="mx-auto max-w-[768px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
+      <section id="overview" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
         <div className="space-y-16">
           <div>
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Overview</h2>
@@ -166,10 +166,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
-      <section id="research" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
         <div className="space-y-12">
           {c.slug === "solace" && (
@@ -303,10 +303,10 @@ function CaseStudyPage() {
         </DialogContent>
       </Dialog>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Strategy */}
-      <section id="strategy" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Strategy</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Product Goals</h3>
         <p
@@ -324,10 +324,10 @@ function CaseStudyPage() {
 
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Initial Sketches */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
@@ -360,10 +360,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Brainstorming */}
-      <section id="design-process" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
         <button
@@ -380,10 +380,10 @@ function CaseStudyPage() {
         </button>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Mid Fidelity Wireframes */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">Mid Fidelity Wireframes</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           In these wireframes, I included elements that directly address users' goals, needs, frustrations. As I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
@@ -411,10 +411,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Workflow */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
           {c.slug === "solace" ? "Workflow" : "User Groups"}
         </h2>
@@ -440,10 +440,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* User Flow */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in details. Below is the flow to show from various places you can start and access the design studio and edit the Tech Pack." : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
@@ -473,10 +473,10 @@ function CaseStudyPage() {
         </Carousel>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Review with Users, Product & Engineering Team */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
 
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">
           Review with Users, Product &amp; Engineering Team
@@ -503,12 +503,12 @@ function CaseStudyPage() {
         </ul>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Testing */}
-      <section id="testing" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
 
         <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing Preparation</h3>
@@ -557,10 +557,10 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Final Designs */}
-      <section id="final-designs" className="mx-auto max-w-[768px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
@@ -589,10 +589,10 @@ function CaseStudyPage() {
       </section>
 
 
-      <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Measuring the Success */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-24 pb-0">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
           I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories.
@@ -600,7 +600,7 @@ function CaseStudyPage() {
       </section>
 
       {c.slug === "solace" && (
-        <div className="mx-auto max-w-[768px] px-6 md:px-10">
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10">
           <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={techpackOutcomeImg.url}
@@ -612,7 +612,7 @@ function CaseStudyPage() {
       )}
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-0 pb-6">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
         <p className="eyebrow mb-10">Outcome</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
