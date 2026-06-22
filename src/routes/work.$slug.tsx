@@ -737,7 +737,7 @@ function CaseStudyPage() {
 
       {c.slug === "solace" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10">
-          <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
