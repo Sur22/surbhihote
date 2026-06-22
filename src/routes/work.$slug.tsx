@@ -27,8 +27,7 @@ import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.asset.json";
 import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
 import prioritizeImg1 from "@/assets/affiliate-workshop-voting-session.png.asset.json";
-import prioritizeImg2a from "@/assets/affiliate-workshop-high-to-low-voting.png.asset.json";
-import prioritizeImg2b from "@/assets/affiliate-workshop-prioritization-matrix.png.asset.json";
+import prioritizeImg2 from "@/assets/affiliate-workshop-voting-and-prioritization.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
@@ -439,9 +438,8 @@ function CaseStudyPage() {
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 grid grid-cols-2 gap-2">
-                  <img src={prioritizeImg2a.url} alt="High to low cards voting on glass wall" className="w-full h-auto object-contain" />
-                  <img src={prioritizeImg2b.url} alt="Prioritization matrix with impact vs effort quadrants" className="w-full h-auto object-contain" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={prioritizeImg2.url} alt="Affiliate workshop voting and prioritization matrix on glass wall" className="w-full h-auto object-contain" />
                 </div>
               </div>
             </div>
