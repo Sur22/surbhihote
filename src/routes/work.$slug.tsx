@@ -418,8 +418,12 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto rounded-sm border border-border" />
-                <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto rounded-sm border border-border" />
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
+                </div>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
+                </div>
               </div>
             </div>
 
