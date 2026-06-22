@@ -233,8 +233,8 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "fjord2",
     index: "04",
-    title: "Audience Builder",
-    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
+    title: "Affiliates Website\u00a0\nRedesign",
+    subtitle: "Redesigning a legacy application",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
