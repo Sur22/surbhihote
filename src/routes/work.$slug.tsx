@@ -24,6 +24,8 @@ import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
 import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
 import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
 import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
+import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.asset.json";
+import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
@@ -416,12 +418,8 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
-                </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
-                </div>
+                <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto rounded-sm border border-border" />
+                <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto rounded-sm border border-border" />
               </div>
             </div>
 
