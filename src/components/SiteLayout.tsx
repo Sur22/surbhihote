@@ -91,7 +91,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <main className="flex-1">{children}</main>
 
-      <footer className="border-t border-border mt-32">
+      <footer className="border-t border-border mt-8">
         <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-10 flex flex-col items-center gap-5">
           {/* Nav links */}
           <div className="flex items-center gap-6 text-sm">
