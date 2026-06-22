@@ -418,12 +418,8 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
-                </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
-                </div>
+                <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto rounded-sm border border-border" />
+                <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto rounded-sm border border-border" />
               </div>
             </div>
 
