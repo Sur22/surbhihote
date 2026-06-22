@@ -439,8 +439,9 @@ function CaseStudyPage() {
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto" />
                 </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2 grid grid-cols-2 gap-2">
+                  <img src={prioritizeImg2a.url} alt="High to low cards voting on glass wall" className="w-full h-auto" />
+                  <img src={prioritizeImg2b.url} alt="Prioritization matrix with impact vs effort quadrants" className="w-full h-auto" />
                 </div>
               </div>
             </div>
