@@ -3,7 +3,7 @@ import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 
 export type CaseStudy = {
-  slug: "fjord" | "solace" | "atlas";
+  slug: "fjord" | "solace" | "atlas" | "fjord2";
   index: string;
   title: string;
   subtitle: string;
@@ -227,6 +227,48 @@ export const caseStudies: CaseStudy[] = [
       {
         heading: "Snap blocks",
         body: "9 itinerary block types — meal, stay, transit, note, photo, link, ticket, day-header, free-time. Each snaps to a pin and inherits its color. The constraint kept the surface clean and let us avoid building a form-builder.",
+      },
+    ],
+  },
+  {
+    slug: "fjord2",
+    index: "04",
+    title: "Audience Builder",
+    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
+    client: "Fjord, Oslo",
+    year: "2025",
+    ...defaultMeta,
+    role: "Lead Product Designer",
+    tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
+    cover: fjord.url,
+    summary:
+      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
+    problem:
+      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
+    approach: [
+      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
+      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
+      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
+      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
+    ],
+    outcome: [
+      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
+      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
+      { label: "Increase in speed and Efficiency", value: "26%" },
+      { label: "User Satisfaction", value: "+29%" },
+    ],
+    sections: [
+      {
+        heading: "Discovery",
+        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
+      },
+      {
+        heading: "Foundations",
+        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
+      },
+      {
+        heading: "Launch",
+        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
       },
     ],
   },
