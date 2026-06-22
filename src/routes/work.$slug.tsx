@@ -325,10 +325,27 @@ function CaseStudyPage() {
       <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || "Strategy"}</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
-        <p
-          className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
-          dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
-        />
+        {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Attendees</h4>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.strategy.productGoals.workshopAttendees}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Schedule</h4>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.strategy.productGoals.workshopSchedule}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <p
+            className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
+            dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
+          />
+        )}
 
         <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
           <img
