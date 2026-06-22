@@ -602,7 +602,7 @@ function CaseStudyPage() {
           <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          Click here to see the output PDF file of this project which will be handed over
+          Click here to see the output PDF file of this project.
         </p>
       </section>
 
