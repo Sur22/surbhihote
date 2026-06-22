@@ -188,14 +188,16 @@ function CaseStudyPage() {
               {c.research.userInterview}
             </p>
             {c.slug === "fjord2" && (
-              <div className="mt-10 grid grid-cols-3 gap-4">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {affiliateSurveyImages.map((img, i) => (
+                  <button
                     key={i}
-                    className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center"
+                    type="button"
+                    onClick={() => setZoomImg(img.src)}
+                    className="block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
                   >
-                    <span className="text-sm text-muted-foreground">Image {i + 1}</span>
-                  </div>
+                    <img src={img.src} alt={img.alt} className="w-full h-auto object-contain" loading="lazy" />
+                  </button>
                 ))}
               </div>
             )}
