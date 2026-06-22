@@ -56,7 +56,7 @@ const defaultMeta = {
       "Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I had 5 users which I interviewed .I asked them  question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it. ",
     userInterviewInsights: [
       {
-        quote: "\"It's difficult to put together all the details about the style in one place as different detail are in different files.\"\n-Bejan, Technical Designer\n‍\n\"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult\"\n-Bobby, Fashion Designer\n‍\n\"Every time there are changes we have to keep factories updated with that and provide them the updated project related files\"\n-Rachna, Product Development Manager\n\n\"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files \"\n-Pinky, Product Development Manager",
+        quote: "\n",
         author: "",
       },
       {
