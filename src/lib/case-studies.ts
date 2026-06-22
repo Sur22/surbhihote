@@ -249,8 +249,8 @@ export const caseStudies: CaseStudy[] = [
       productGoals: {
         ...defaultMeta.strategy.productGoals,
         intro: "",
-        workshopAttendees: "Stakeholders\u00a0\n1.Sr. Mgr, Affiliate Relations & Agency ops\n2.VP of Political Ops\n3.Director Of Billing Ops Markets and Political\n4.User Administration Manager\n\nProduct\u00a0\n5.Senior Product Manager\n6. UI UX Designer (Me as a Facilitator)\n\nEngineering\u00a0\n7.Director, QA Software Engineering\n8.Senior Director, Software Engineering",
-        workshopSchedule: "Day 1\n1.Applications Walk through\n2.Defining The Scope\n3.Defining Personas\n4.Survey Feedback Analysis\n5.Card sorting\u00a0\n\nDay 2\u00a0\n1. Themes /Cluster\x03Voting\n2.Prioritization\n3.Sketching & Presenting\n4. Defining Success Metrics \x03\n5. Define Next steps\n"
+        workshopAttendees: "<strong>Stakeholders</strong>\u00a0\n1.Sr. Mgr, Affiliate Relations & Agency ops\n2.VP of Political Ops\n3.Director Of Billing Ops Markets and Political\n4.User Administration Manager\n\n<strong>Product</strong>\u00a0\n5.Senior Product Manager\n6. UI UX Designer (Me as a Facilitator)\n\n<strong>Engineering</strong>\u00a0\n7.Director, QA Software Engineering\n8.Senior Director, Software Engineering",
+        workshopSchedule: "<strong>Day 1</strong>\n1.Applications Walk through\n2.Defining The Scope\n3.Defining Personas\n4.Survey Feedback Analysis\n5.Card sorting\u00a0\n\n<strong>Day 2</strong>\u00a0\n1. Themes /Cluster\x03Voting\n2.Prioritization\n3.Sketching & Presenting\n4. Defining Success Metrics \x03\n5. Define Next steps\n"
       }
     },
     timeframe: "8 Weeks",
