@@ -192,7 +192,9 @@ function CaseStudyPage() {
 
         {/* User Interview Insights */}
         <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
-          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">
+            {c.slug === "fjord2" ? "Survey Insights" : "User interview Insights"}
+          </h3>
           <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
             {c.research.userInterviewInsights.map((q, i) => (
               q.quote && (
