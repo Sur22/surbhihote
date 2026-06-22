@@ -35,6 +35,12 @@ import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
 import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
 import finalBom from "@/assets/techpack_bom.png.asset.json";
 import finalPdf from "@/assets/techpack_pdf.png.asset.json";
+import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
+import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
+import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
+import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
+import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
+import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -83,6 +89,14 @@ function CaseStudyPage() {
   const surveyImages = [
     { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
     { src: surveyImg3, alt: "Which tool you use for material details — survey results" },
+  ];
+  const affiliateSurveyImages = [
+    { src: affSurveyQ1.url, alt: "How do you typically access your orders?" },
+    { src: affSurveyQ2.url, alt: "What are the tasks you mainly perform on the Affiliate site?" },
+    { src: affSurveyQ3.url, alt: "Please rate your experience with the current Affiliate site" },
+    { src: affSurveyQ4.url, alt: "How frequently do you use Affiliate site?" },
+    { src: affSurveyQ5.url, alt: "How reliant are you on the AMP affiliate site for day-to-day workflow?" },
+    { src: affSurveyQ6.url, alt: "Would you join future affiliate site enhancement feedback sessions?" },
   ];
 
   return (
@@ -188,14 +202,16 @@ function CaseStudyPage() {
               {c.research.userInterview}
             </p>
             {c.slug === "fjord2" && (
-              <div className="mt-10 grid grid-cols-3 gap-4">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {affiliateSurveyImages.map((img, i) => (
+                  <button
                     key={i}
-                    className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center"
+                    type="button"
+                    onClick={() => setZoomImg(img.src)}
+                    className="block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
                   >
-                    <span className="text-sm text-muted-foreground">Image {i + 1}</span>
-                  </div>
+                    <img src={img.src} alt={img.alt} className="w-full h-auto object-contain" loading="lazy" />
+                  </button>
                 ))}
               </div>
             )}
