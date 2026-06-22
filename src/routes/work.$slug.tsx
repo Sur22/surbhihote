@@ -187,6 +187,18 @@ function CaseStudyPage() {
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
             </p>
+            {c.slug === "fjord2" && (
+              <div className="mt-10 grid grid-cols-3 gap-4">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center"
+                  >
+                    <span className="text-sm text-muted-foreground">Image {i + 1}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
