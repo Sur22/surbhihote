@@ -605,7 +605,6 @@ function CaseStudyPage() {
           <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
         </p>
         <p className="text-lg leading-relaxed text-foreground/85">
-          I tried to address the pinpoints of the user not able to handle the notifications. I tried to provide simple way to unsubscribe / subscribe to the notifications type, product and companies that users want to do by conducting user interviews and testing the designs at early stage which seems to serve the purpose as per the usability test results. The feature is live & users have been using it.
         </p>
       </section>
 
