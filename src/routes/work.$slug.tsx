@@ -592,7 +592,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[768px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Measuring the Success */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-24 pb-0">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85">
           I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories.
@@ -612,7 +612,7 @@ function CaseStudyPage() {
       )}
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[768px] px-6 md:px-10 pt-0 pb-24">
         <p className="eyebrow mb-10">Outcome</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
@@ -638,7 +638,7 @@ function CaseStudyPage() {
 
       {/* More case studies */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-[768px] px-6 md:px-10 py-20">
+        <div className="mx-auto max-w-[768px] px-6 md:px-10 pt-20 pb-0">
           <p className="eyebrow mb-10">More case studies</p>
           <div className="grid md:grid-cols-2 gap-10">
             {others.map((o) => (
