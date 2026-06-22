@@ -327,7 +327,7 @@ function CaseStudyPage() {
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
 
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-          [Placeholder paragraph for planning section follow-up content.]
+          The workshop was not a typical Design thinking workshop it was customized based on to make most out of the limited time available.&nbsp;&nbsp;
         </p>
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
