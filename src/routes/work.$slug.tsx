@@ -638,7 +638,7 @@ function CaseStudyPage() {
 
       {/* More case studies */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-[768px] px-6 md:px-10 pt-20 pb-0">
+        <div className="mx-auto max-w-[768px] px-6 md:px-10 pt-20 pb-10">
           <p className="eyebrow mb-10">More case studies</p>
           <div className="grid md:grid-cols-2 gap-10">
             {others.map((o) => (
