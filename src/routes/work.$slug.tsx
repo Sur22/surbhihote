@@ -27,6 +27,7 @@ import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
+import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
 import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
 import finalLibrary from "@/assets/tecpack_library.png.asset.json";
@@ -598,6 +599,17 @@ function CaseStudyPage() {
         </p>
       </section>
 
+      {c.slug === "solace" && (
+        <div className="mx-auto max-w-[768px] px-6 md:px-10">
+          <div className="bg-white rounded-sm p-6 md:p-10 flex justify-center">
+            <img
+              src={techpackOutcomeImg.url}
+              alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Outcomes */}
       <section className="mx-auto max-w-[768px] px-6 md:px-10 py-24">
