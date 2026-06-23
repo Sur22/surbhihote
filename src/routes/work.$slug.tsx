@@ -28,6 +28,8 @@ import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.ass
 import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
 import prioritizeImg1 from "@/assets/affiliate-workshop-voting-session.png.asset.json";
 import prioritizeImg2 from "@/assets/affiliate-workshop-voting-and-prioritization.png.asset.json";
+import defineImg1 from "@/assets/affiliate-workshop-define-session.png.asset.json";
+import defineImg2 from "@/assets/affiliate-workshop-must-have-nice-to-have.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
