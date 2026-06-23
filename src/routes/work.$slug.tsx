@@ -292,7 +292,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Fashion Designer",
+                  name: "Political Campaign\u00a0Manager/ Support\nSpecialist\u200b",
                   goals: [
                     "Create detailed sketches and CAD designs efficiently",
                     "Organize materials, trims, and labels in one place",
@@ -308,7 +308,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Manufacturer",
+                  name: "Admin /Super User",
                   goals: [
                     "Receive complete and accurate techpacks for production",
                     "Access BOMs, material specs, and design details easily",
@@ -320,7 +320,7 @@ function CaseStudyPage() {
                   key={persona.name}
                   className="rounded-xl border border-[#0068FF] dark:border-border bg-card text-card-foreground shadow p-6"
                 >
-                  <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                  <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                     {persona.name}
                   </h4>
                   <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
@@ -416,7 +416,7 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Fashion Designer",
+                      name: "Political Campaign\u00a0Manager/ Support\nSpecialist\u200b",
                       usage: 3,
                       dependency: 2,
                       goals: [
@@ -432,7 +432,7 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Manufacturer",
+                      name: "Admin /Super User",
                       usage: 4,
                       dependency: 3,
                       goals: [
@@ -444,7 +444,7 @@ function CaseStudyPage() {
                       key={persona.name}
                       className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
                     >
-                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                         {persona.name}
                       </h4>
                       <div className="space-y-2 mb-5">
