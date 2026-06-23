@@ -400,6 +400,19 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define section follow-up content.]
               </p>
+              <div>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                  <p>{c.goal}</p>
+                </div>
+                {c.goal && (
+                  <div className="mt-8 rounded-full border border-border px-8 py-5 text-center">
+                    <p className="font-semibold text-base md:text-lg">
+                      Give Control to User = Make User Feel Empowered = Better User Experience
+                    </p>
+                  </div>
+                )}
+              </div>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
