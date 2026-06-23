@@ -546,18 +546,6 @@ function CaseStudyPage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
-                </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
-                </div>
-              </div>
               <div className="mt-10">
                 <Table>
                   <TableHeader>
@@ -654,6 +642,25 @@ function CaseStudyPage() {
           />
         </button>
       </section>
+
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
+      {c.slug === "fjord2" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+              <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 1</span>
+                </div>
+                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
+                  <span className="text-sm text-muted-foreground">Image 2</span>
+                </div>
+              </div>
+        </section>
+      )}
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
