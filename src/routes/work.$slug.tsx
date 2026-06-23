@@ -12,6 +12,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableHead,
+  TableRow,
+  TableCell,
+} from "@/components/ui/table";
 import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
