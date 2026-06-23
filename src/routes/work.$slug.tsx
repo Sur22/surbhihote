@@ -400,6 +400,9 @@ function CaseStudyPage() {
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
+                [Placeholder paragraph for second image follow-up content.]
+              </p>
             </div>
 
             <div className="mt-16">
@@ -415,6 +418,9 @@ function CaseStudyPage() {
                   <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
                 </div>
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
+                [Placeholder paragraph for second image follow-up content.]
+              </p>
             </div>
 
             <div className="mt-16">
@@ -430,6 +436,9 @@ function CaseStudyPage() {
                   <img src={prioritizeImg2.url} alt="Affiliate workshop voting and prioritization matrix on glass wall" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
+                [Placeholder paragraph for second image follow-up content.]
+              </p>
             </div>
 
             <div className="mt-16">
