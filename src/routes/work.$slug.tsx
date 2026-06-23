@@ -405,7 +405,7 @@ function CaseStudyPage() {
                 </div>
 
                 <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Personas</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
                       name: "Political Sales Manager/Planner",
