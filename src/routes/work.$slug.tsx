@@ -409,35 +409,35 @@ function CaseStudyPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                   {[
                     {
-                      name: "Product Development Manager",
+                      name: "Political Sales Manager/Planner",
                       goals: [
-                        "Manage end-to-end product lifecycle from design to production",
-                        "Coordinate between design, client, and manufacturing teams",
-                        "Track changes and maintain version control across all documents",
+                        "\n",
+                        "\n",
+                        "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
                     {
                       name: "Fashion Designer",
                       goals: [
-                        "Create detailed sketches and CAD designs efficiently",
-                        "Organize materials, trims, and labels in one place",
-                        "Communicate design changes to stakeholders seamlessly",
+                        "\n",
+                        "\n",
+                        "\n\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
                       name: "Client",
                       goals: [
-                        "Review and approve designs and techpacks in real time",
-                        "Request changes and provide feedback directly on documents",
-                        "Stay informed about production progress and updates",
+                        "\n",
+                        "\n",
+                        "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
                     {
                       name: "Manufacturer",
                       goals: [
-                        "Receive complete and accurate techpacks for production",
-                        "Access BOMs, material specs, and design details easily",
-                        "Clarify requirements and communicate back to the brand",
+                        "\n",
+                        "\n",
+                        "Tasks\nReplicate all capabilities of\x03an affiliate user\u200b\nTroubleshoot for affiliate user\u200b\nIdentify discrepancies between\nPlatform and affiliate site orders\u200b\nTest deployment of affiliate site\nchanges\nValidate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
                   ].map((persona) => (
@@ -450,7 +450,7 @@ function CaseStudyPage() {
                       </h4>
                       <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
                         {persona.goals.map((goal, idx) => (
-                          <li key={idx}>{goal}</li>
+                          <li key={idx} className="whitespace-pre-line">{goal}</li>
                         ))}
                       </ul>
                     </div>
