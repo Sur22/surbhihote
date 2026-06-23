@@ -601,28 +601,28 @@ function CaseStudyPage() {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell>Orders and all its functions</TableCell>
-                      <TableCell>[Phase 2 item 1]</TableCell>
+                      <TableCell>Orders and Event log</TableCell>
+                      <TableCell>Messaging&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>{"\n"}</TableCell>
-                      <TableCell>[Phase 2 item 2]</TableCell>
+                      <TableCell>Collatrals</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[Phase 1 item 3]</TableCell>
-                      <TableCell>[Phase 2 item 3]</TableCell>
+                      <TableCell>Compare Order Version</TableCell>
+                      <TableCell>Platform Notifications</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[Phase 1 item 4]</TableCell>
-                      <TableCell>[Phase 2 item 4]</TableCell>
+                      <TableCell>Internal & External Rate Cards</TableCell>
+                      <TableCell>Super User Profile</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[Phase 1 item 5]</TableCell>
-                      <TableCell>[Phase 2 item 5]</TableCell>
+                      <TableCell>Email Notifications&nbsp;</TableCell>
+                      <TableCell>Makegood&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[Phase 1 item 6]</TableCell>
-                      <TableCell>[Phase 2 item 6]</TableCell>
+                      <TableCell>Contacts & Resources</TableCell>
+                      <TableCell>Order Revision</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
