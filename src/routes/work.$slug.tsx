@@ -605,7 +605,7 @@ function CaseStudyPage() {
                       <TableCell>Messaging&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{"\n"}</TableCell>
+                      <TableCell>Views and  Search </TableCell>
                       <TableCell>Collatrals</TableCell>
                     </TableRow>
                     <TableRow>
