@@ -470,15 +470,17 @@ function CaseStudyPage() {
                         ].map((bar) => (
                           <div key={bar.label}>
                             <div className="text-sm font-medium mb-2">{bar.label}</div>
-                            <div className="grid grid-cols-4 gap-2">
-                              {Array.from({ length: 4 }).map((_, i) => (
-                                <div
-                                  key={i}
-                                  className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
-                                    i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
-                                  }`}
-                                />
-                              ))}
+                            <div className="w-[70%]">
+                              <div className="grid grid-cols-4 gap-2">
+                                {Array.from({ length: 4 }).map((_, i) => (
+                                  <div
+                                    key={i}
+                                    className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                      i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                    }`}
+                                  />
+                                ))}
+                              </div>
                             </div>
                           </div>
                         ))}
