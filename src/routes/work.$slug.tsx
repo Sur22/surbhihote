@@ -507,6 +507,49 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define success matrix section follow-up content.]
               </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="font-semibold">KPIs</TableHead>
+                    <TableHead className="font-semibold">How to measure</TableHead>
+                    <TableHead className="font-semibold">Frequency</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>[KPI 1]</TableCell>
+                    <TableCell>[How to measure 1]</TableCell>
+                    <TableCell>[Frequency 1]</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>[KPI 2]</TableCell>
+                    <TableCell>[How to measure 2]</TableCell>
+                    <TableCell>[Frequency 2]</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>[KPI 3]</TableCell>
+                    <TableCell>[How to measure 3]</TableCell>
+                    <TableCell>[Frequency 3]</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>[KPI 4]</TableCell>
+                    <TableCell>[How to measure 4]</TableCell>
+                    <TableCell>[Frequency 4]</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>[KPI 5]</TableCell>
+                    <TableCell>[How to measure 5]</TableCell>
+                    <TableCell>[Frequency 5]</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
                   <span className="text-sm text-muted-foreground">Image 1</span>
@@ -515,13 +558,6 @@ function CaseStudyPage() {
                   <span className="text-sm text-muted-foreground">Image 2</span>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
-              </p>
             </div>
           </>
         )}
