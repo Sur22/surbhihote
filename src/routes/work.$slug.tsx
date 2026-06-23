@@ -558,6 +558,42 @@ function CaseStudyPage() {
                   <span className="text-sm text-muted-foreground">Image 2</span>
                 </div>
               </div>
+              <div className="mt-10">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Phase 1</TableHead>
+                      <TableHead>Phase 2</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 1]</TableCell>
+                      <TableCell>[Phase 2 item 1]</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 2]</TableCell>
+                      <TableCell>[Phase 2 item 2]</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 3]</TableCell>
+                      <TableCell>[Phase 2 item 3]</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 4]</TableCell>
+                      <TableCell>[Phase 2 item 4]</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 5]</TableCell>
+                      <TableCell>[Phase 2 item 5]</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>[Phase 1 item 6]</TableCell>
+                      <TableCell>[Phase 2 item 6]</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
           </>
         )}
