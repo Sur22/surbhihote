@@ -565,29 +565,29 @@ function CaseStudyPage() {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell>[KPI 1]</TableCell>
-                      <TableCell>[How to measure 1]</TableCell>
-                      <TableCell>[Frequency 1]</TableCell>
+                      <TableCell>Table stakes</TableCell>
+                      <TableCell>Feedback & Survey</TableCell>
+                      <TableCell>Continuous&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[KPI 2]</TableCell>
-                      <TableCell>[How to measure 2]</TableCell>
-                      <TableCell>[Frequency 2]</TableCell>
+                      <TableCell>Speed</TableCell>
+                      <TableCell>Clarity, App Insight, Support</TableCell>
+                      <TableCell>Continuous&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[KPI 3]</TableCell>
-                      <TableCell>[How to measure 3]</TableCell>
-                      <TableCell>[Frequency 3]</TableCell>
+                      <TableCell>Efficiency</TableCell>
+                      <TableCell>Clarity, App Insight, Support</TableCell>
+                      <TableCell>Continuous&nbsp;</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[KPI 4]</TableCell>
-                      <TableCell>[How to measure 4]</TableCell>
-                      <TableCell>[Frequency 4]</TableCell>
+                      <TableCell>Secured & less Technology Risks</TableCell>
+                      <TableCell>Security Scan</TableCell>
+                      <TableCell>Quarterly</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[KPI 5]</TableCell>
-                      <TableCell>[How to measure 5]</TableCell>
-                      <TableCell>[Frequency 5]</TableCell>
+                      <TableCell>Performance Tracking</TableCell>
+                      <TableCell>Power BI</TableCell>
+                      <TableCell>Continuous&nbsp;</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
@@ -601,11 +601,11 @@ function CaseStudyPage() {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell>[Phase 1 item 1]</TableCell>
+                      <TableCell>Orders and all its functions</TableCell>
                       <TableCell>[Phase 2 item 1]</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>[Phase 1 item 2]</TableCell>
+                      <TableCell>{"\n"}</TableCell>
                       <TableCell>[Phase 2 item 2]</TableCell>
                     </TableRow>
                     <TableRow>
