@@ -455,28 +455,40 @@ function CaseStudyPage() {
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                         {persona.name}
                       </h4>
-                      {[
-                        { label: "Platform Usage", value: persona.usage },
-                        { label: "Platform Dependency", value: persona.dependency },
-                      ].map((bar) => (
-                        <div key={bar.label} className="mb-2">
-                          <div className="text-sm font-medium mb-2">{bar.label}</div>
-                          <div className="grid grid-cols-4 gap-2">
-                            {Array.from({ length: 4 }).map((_, i) => (
-                              <div
-                                key={i}
-                                className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
-                                  i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
-                                }`}
-                              />
-                            ))}
+                      <div className="space-y-2 mb-1">
+                        {[
+                          { label: "Platform Usage", value: persona.usage },
+                          { label: "Platform Dependency", value: persona.dependency },
+                        ].map((bar) => (
+                          <div key={bar.label}>
+                            <div className="text-sm font-medium mb-2">{bar.label}</div>
+                            <div className="grid grid-cols-4 gap-2">
+                              {Array.from({ length: 4 }).map((_, i) => (
+                                <div
+                                  key={i}
+                                  className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                    i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                  }`}
+                                />
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      ))}
-                      <ul className="text-sm font-bold text-foreground/85 dark:text-primary-foreground/85 space-y-2">
-                        {persona.goals.map((goal, idx) => (
-                          <li key={idx} className="whitespace-pre-line">{goal}</li>
                         ))}
+                      </div>
+                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                        {persona.goals.map((goal, idx) => {
+                          const tasksIndex = goal.indexOf("Tasks");
+                          if (tasksIndex !== -1 && goal.slice(tasksIndex + 6).startsWith("\n")) {
+                            const before = goal.slice(0, tasksIndex);
+                            const after = goal.slice(tasksIndex + 6);
+                            return (
+                              <li key={idx} className="whitespace-pre-line">
+                                {before}<span className="font-bold">Tasks</span>{after}
+                              </li>
+                            );
+                          }
+                          return <li key={idx} className="whitespace-pre-line">{goal}</li>;
+                        })}
                       </ul>
                     </div>
                   ))}
