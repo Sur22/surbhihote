@@ -375,13 +375,15 @@ function CaseStudyPage() {
           />
         )}
 
-        <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
-          <img
-            src={uxStrategyImg.url}
-            alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
-            className="w-[50.78%] h-auto"
-          />
-        </div>
+        {c.slug !== "fjord2" && (
+          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
+            <img
+              src={uxStrategyImg.url}
+              alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
+              className="w-[50.78%] h-auto"
+            />
+          </div>
+        )}
 
         {c.slug === "fjord2" && (
           <>
