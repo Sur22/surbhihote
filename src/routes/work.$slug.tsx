@@ -675,7 +675,7 @@ function CaseStudyPage() {
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
+                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>]
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
