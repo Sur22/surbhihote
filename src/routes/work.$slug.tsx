@@ -410,6 +410,8 @@ function CaseStudyPage() {
                   {[
                     {
                       name: "Political Sales Manager/Planner",
+                      usage: 2,
+                      dependency: 3,
                       goals: [
                         "\n",
                         "\n",
@@ -418,6 +420,8 @@ function CaseStudyPage() {
                     },
                     {
                       name: "Fashion Designer",
+                      usage: 3,
+                      dependency: 2,
                       goals: [
                         "\n",
                         "\n",
@@ -426,6 +430,8 @@ function CaseStudyPage() {
                     },
                     {
                       name: "Client",
+                      usage: 2,
+                      dependency: 2,
                       goals: [
                         "\n",
                         "\n",
@@ -434,6 +440,8 @@ function CaseStudyPage() {
                     },
                     {
                       name: "Manufacturer",
+                      usage: 4,
+                      dependency: 3,
                       goals: [
                         "\n",
                         "\n",
@@ -443,12 +451,30 @@ function CaseStudyPage() {
                   ].map((persona) => (
                     <div
                       key={persona.name}
-                      className="rounded-xl border bg-card text-card-foreground shadow p-6"
+                      className="rounded-xl border bg-primary text-primary-foreground shadow p-6"
                     >
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                         {persona.name}
                       </h4>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
+                      {[
+                        { label: "Platform Usage", value: persona.usage },
+                        { label: "Platform Dependency", value: persona.dependency },
+                      ].map((bar) => (
+                        <div key={bar.label} className="mb-4">
+                          <div className="text-sm font-medium mb-2">{bar.label}</div>
+                          <div className="grid grid-cols-4 gap-2">
+                            {Array.from({ length: 4 }).map((_, i) => (
+                              <div
+                                key={i}
+                                className={`h-2 rounded-full border border-primary-foreground/70 ${
+                                  i < bar.value ? "bg-primary-foreground" : "bg-transparent"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                      <ul className="text-sm text-primary-foreground/85 space-y-2">
                         {persona.goals.map((goal, idx) => (
                           <li key={idx} className="whitespace-pre-line">{goal}</li>
                         ))}
