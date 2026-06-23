@@ -394,7 +394,7 @@ function CaseStudyPage() {
                 [Placeholder paragraph for Define section follow-up content.]
               </p>
               <div>
-                <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                   <p>{c.goal}</p>
                 </div>
@@ -412,7 +412,7 @@ function CaseStudyPage() {
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
+                        "Tasks\n1. Quick identification of new\n\u00a0business\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
                     {
@@ -424,11 +424,11 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Client",
+                      name: "Political & Markets Yeild Team\u00a0 (ERC)",
                       usage: 2,
                       dependency: 2,
                       goals: [
-                        "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
+                        "Tasks\n1. Quick identification of new\n\u00a0business\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
                     {
@@ -436,23 +436,23 @@ function CaseStudyPage() {
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                        "Tasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
                     {
-                      name: "Admin /Super User",
+                      name: "Markets Account Manager / Planner",
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                        "Tasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
                     {
-                      name: "Admin /Super User",
+                      name: "Markets Campaign Manager",
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                        "Tasks\n1. Gather intel across both Linear and\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Digital orders\u200b\n2. New & historical linear & digital orders\u200b\n3. Total investment/total impressions\u200b\n4. The AMP AE on orders/markets\u200b\n5. Which AMP offcie order is from\u200b",
                       ],
                     },
                   ].map((persona, idx) => (
