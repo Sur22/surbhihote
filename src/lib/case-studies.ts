@@ -158,6 +158,27 @@ export const caseStudies: CaseStudy[] = [
     client: "Solace Health",
     year: "2024",
     ...defaultMeta,
+    research: {
+      ...defaultMeta.research,
+      userInterviewInsights: [
+        {
+          quote: '"It\'s difficult to put together all the details about the style in one place as different detail are in different files."',
+          author: "Bejan, Technical Designer",
+        },
+        {
+          quote: '"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"',
+          author: "Bobby, Fashion Designer",
+        },
+        {
+          quote: '"Every time there are changes we have to keep factories updated with that and provide them the updated project related files"',
+          author: "Rachna, Product Development Manager",
+        },
+        {
+          quote: '"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files"',
+          author: "Pinky, Product Development Manager",
+        },
+      ],
+    },
     role: "Lead UI UX Designer ",
     tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
     cover: solace.url,
