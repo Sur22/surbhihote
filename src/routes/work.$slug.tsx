@@ -400,6 +400,22 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define section follow-up content.]
               </p>
+              <div>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                  {c.slug === "solace"
+                    ? "In every stage there are certain files that are stored. Each file is technically an asset that the brand has used to facilitate their product development. We need to grant abilities to create the assets within the GRID. This would focus on creation of Tech pack for the "Tech pack" Stage. This would provide ability to users to create and consolidate the following in one single document:\n1.     Consolidate/upload all the product sketches (CAD) with other parts of the assets\n2.    Create/upload detailed sketches\n3.    Create BOM's\n4.    Export the Tech pack into PDF file formats\n5.    Material library, CAD Library, Techpack Library\n6.    Sharing the the output PDF with factories and clients "
+                    : <p>{c.goal}</p>
+                  }
+                </div>
+                {c.goal && c.slug !== "solace" && (
+                  <div className="mt-8 rounded-full border border-border px-8 py-5 text-center">
+                    <p className="font-semibold text-base md:text-lg">
+                      Give Control to User = Make User Feel Empowered = Better User Experience
+                    </p>
+                  </div>
+                )}
+              </div>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
