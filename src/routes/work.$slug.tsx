@@ -688,6 +688,8 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
+      {c.slug !== "fjord2" && (
+        <>
       {/* Workflow */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
@@ -747,6 +749,8 @@ function CaseStudyPage() {
           <CarouselNext className="right-4" />
         </Carousel>
       </section>
+        </>
+      )}
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
