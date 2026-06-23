@@ -459,7 +459,7 @@ function CaseStudyPage() {
                         { label: "Platform Usage", value: persona.usage },
                         { label: "Platform Dependency", value: persona.dependency },
                       ].map((bar) => (
-                        <div key={bar.label} className="mb-4">
+                        <div key={bar.label} className="mb-2">
                           <div className="text-sm font-medium mb-2">{bar.label}</div>
                           <div className="grid grid-cols-4 gap-2">
                             {Array.from({ length: 4 }).map((_, i) => (
@@ -473,7 +473,7 @@ function CaseStudyPage() {
                           </div>
                         </div>
                       ))}
-                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                      <ul className="text-sm font-bold text-foreground/85 dark:text-primary-foreground/85 space-y-2">
                         {persona.goals.map((goal, idx) => (
                           <li key={idx} className="whitespace-pre-line">{goal}</li>
                         ))}
