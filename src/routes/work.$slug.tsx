@@ -300,7 +300,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Client",
+                  name: "Politocal & Market Yield Team",
                   goals: [
                     "Review and approve designs and techpacks in real time",
                     "Request changes and provide feedback directly on documents",
@@ -412,7 +412,7 @@ function CaseStudyPage() {
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Quick identification of new\n\u00a0business\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
+                        "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
                       ],
                     },
                     {
@@ -428,7 +428,7 @@ function CaseStudyPage() {
                       usage: 2,
                       dependency: 2,
                       goals: [
-                        "Tasks\n1. Quick identification of new\n\u00a0business\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
+                        "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
                       ],
                     },
                     {
