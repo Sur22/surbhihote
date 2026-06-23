@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Check } from "lucide-react";
 import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -400,9 +401,24 @@ function CaseStudyPage() {
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
                 </div>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
-              </p>
+              <div className="mt-8">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Column 1</TableHead>
+                      <TableHead>Column 2</TableHead>
+                      <TableHead>Column 3</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell></TableRow>
+                    <TableRow><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell></TableRow>
+                    <TableRow><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell></TableRow>
+                    <TableRow><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell></TableRow>
+                    <TableRow><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell></TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
 
             <div className="mt-16">
@@ -418,9 +434,24 @@ function CaseStudyPage() {
                   <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
                 </div>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
-              </p>
+              <div className="mt-8">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Column 1</TableHead>
+                      <TableHead>Column 2</TableHead>
+                      <TableHead>Column 3</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell></TableRow>
+                    <TableRow><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell></TableRow>
+                    <TableRow><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell></TableRow>
+                    <TableRow><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell></TableRow>
+                    <TableRow><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell></TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
 
             <div className="mt-16">
@@ -436,9 +467,24 @@ function CaseStudyPage() {
                   <img src={prioritizeImg2.url} alt="Affiliate workshop voting and prioritization matrix on glass wall" className="w-full h-auto object-contain" />
                 </div>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
-              </p>
+              <div className="mt-8">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Column 1</TableHead>
+                      <TableHead>Column 2</TableHead>
+                      <TableHead>Column 3</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell><TableCell>Row 1</TableCell></TableRow>
+                    <TableRow><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell><TableCell>Row 2</TableCell></TableRow>
+                    <TableRow><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell><TableCell>Row 3</TableCell></TableRow>
+                    <TableRow><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell><TableCell>Row 4</TableCell></TableRow>
+                    <TableRow><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell><TableCell>Row 5</TableCell></TableRow>
+                  </TableBody>
+                </Table>
+              </div>
             </div>
 
             <div className="mt-16">
