@@ -470,9 +470,9 @@ function CaseStudyPage() {
                       <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
                         {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
                           const tasksIndex = goal.indexOf("Tasks");
-                          if (tasksIndex !== -1 && goal.slice(tasksIndex + 6).startsWith("\n")) {
+                          if (tasksIndex !== -1) {
                             const before = goal.slice(0, tasksIndex);
-                            const after = goal.slice(tasksIndex + 6);
+                            const after = goal.slice(tasksIndex + 5);
                             return (
                               <li key={idx} className="whitespace-pre-line">
                                 {before}<span className="font-bold">Tasks</span>{after}
