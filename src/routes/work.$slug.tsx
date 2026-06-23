@@ -224,22 +224,21 @@ function CaseStudyPage() {
           </div>
         </div>
 
-        {/* User Interview Insights */}
-        <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
-          <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">
-            {c.slug === "fjord2" ? "Survey Insights" : "User interview Insights"}
-          </h3>
-          <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
-            {c.research.userInterviewInsights.map((q, i) => (
-              q.quote && (
-                <figure key={i} className="text-center italic">
-                  <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                  {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
-                </figure>
-              )
-            ))}
+        {c.slug !== "fjord2" && (
+          <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
+            <h3 className ="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+            <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+              {c.research.userInterviewInsights.map((q, i) => (
+                q.quote && (
+                  <figure key={i} className="text-center italic">
+                    <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
+                    {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                  </figure>
+                )
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Survey */}
         {c.slug === "solace" && (
@@ -376,13 +375,15 @@ function CaseStudyPage() {
           />
         )}
 
-        <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
-          <img
-            src={uxStrategyImg.url}
-            alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
-            className="w-[50.78%] h-auto"
-          />
-        </div>
+        {c.slug !== "fjord2" && (
+          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
+            <img
+              src={uxStrategyImg.url}
+              alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
+              className="w-[50.78%] h-auto"
+            />
+          </div>
+        )}
 
         {c.slug === "fjord2" && (
           <>
