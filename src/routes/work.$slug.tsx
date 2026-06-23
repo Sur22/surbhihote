@@ -450,7 +450,7 @@ function CaseStudyPage() {
                   ].map((persona) => (
                     <div
                       key={persona.name}
-                      className="rounded-xl border bg-primary text-primary-foreground shadow p-6"
+                      className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
                     >
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                         {persona.name}
@@ -465,15 +465,15 @@ function CaseStudyPage() {
                             {Array.from({ length: 4 }).map((_, i) => (
                               <div
                                 key={i}
-                                className={`h-2 rounded-full border border-primary-foreground/70 ${
-                                  i < bar.value ? "bg-primary-foreground" : "bg-transparent"
+                                className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                  i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
                                 }`}
                               />
                             ))}
                           </div>
                         </div>
                       ))}
-                      <ul className="text-sm text-primary-foreground/85 space-y-2">
+                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
                         {persona.goals.map((goal, idx) => (
                           <li key={idx} className="whitespace-pre-line">{goal}</li>
                         ))}
