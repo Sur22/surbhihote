@@ -406,12 +406,12 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define section follow-up content.]
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
+              <div className="grid grid-cols-1 gap-6">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
                 </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
                 </div>
               </div>
             </div>
