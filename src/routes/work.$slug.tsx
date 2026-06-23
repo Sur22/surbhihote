@@ -446,6 +446,13 @@ function CaseStudyPage() {
                 </div>
               </div>
             </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative - Focus Group</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
+              </p>
+            </div>
           </>
         )}
       </section>
