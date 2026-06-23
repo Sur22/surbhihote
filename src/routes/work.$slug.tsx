@@ -202,7 +202,7 @@ function CaseStudyPage() {
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {c.slug === "fjord2" ? "Quantitative - Survey" : "User Interview"}
+              {c.slug === "fjord2" ? "1. Quantitative Research - Survey" : "User Interview"}
             </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
@@ -243,7 +243,7 @@ function CaseStudyPage() {
         {/* Survey */}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Quantitative - Survey</h3>
+            <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">1. Quantitative Research - Survey</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-6">
               I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs.The survey inform the decision of developing this feature as a part of UX Strategy  The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
             </p>
@@ -448,7 +448,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative - Focus Group</h3>
+              <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="#" className="font-bold underline">Click here</a>]
               </p>
