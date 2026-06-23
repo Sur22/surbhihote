@@ -458,7 +458,7 @@ function CaseStudyPage() {
                       goals: [
                         "\n",
                         "\n",
-                        "Tasks\nReplicate all capabilities of\x03an affiliate user\u200b\nTroubleshoot for affiliate user\u200b\nIdentify discrepancies between\nPlatform and affiliate site orders\u200b\nTest deployment of affiliate site\nchanges\nValidate the affiliate site is\x03running successfully\u200b",
+                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
                   ].map((persona) => (
