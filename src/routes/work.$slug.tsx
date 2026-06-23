@@ -439,9 +439,25 @@ function CaseStudyPage() {
                         "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
-                  ].map((persona) => (
+                    {
+                      name: "Admin /Super User",
+                      usage: 4,
+                      dependency: 3,
+                      goals: [
+                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                      ],
+                    },
+                    {
+                      name: "Admin /Super User",
+                      usage: 4,
+                      dependency: 3,
+                      goals: [
+                        "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                      ],
+                    },
+                  ].map((persona, idx) => (
                     <div
-                      key={persona.name}
+                      key={`${persona.name}-${idx}`}
                       className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
                     >
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
