@@ -455,7 +455,7 @@ function CaseStudyPage() {
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                         {persona.name}
                       </h4>
-                      <div className="space-y-2 mb-1">
+                      <div className="space-y-2 mb-0">
                         {[
                           { label: "Platform Usage", value: persona.usage },
                           { label: "Platform Dependency", value: persona.dependency },
