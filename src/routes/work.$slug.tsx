@@ -412,8 +412,6 @@ function CaseStudyPage() {
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "\n",
-                        "\n",
                         "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
@@ -422,9 +420,7 @@ function CaseStudyPage() {
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "\n",
-                        "\n",
-                        "\n\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Tasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
@@ -432,8 +428,6 @@ function CaseStudyPage() {
                       usage: 2,
                       dependency: 2,
                       goals: [
-                        "\n",
-                        "\n",
                         "Tasks\n1. Identify new business\u200b\u200b\u200b\x03Quick identification of\n2. unaccepted orders\n3. Track new orders\u200b\n4. Track revenue\u200b\n5. View order for oversight\n\n",
                       ],
                     },
@@ -442,8 +436,6 @@ function CaseStudyPage() {
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "\n",
-                        "\n",
                         "Tasks\n1. Replicate all capabilities of\x03an affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
@@ -476,7 +468,7 @@ function CaseStudyPage() {
                         ))}
                       </div>
                       <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
-                        {persona.goals.map((goal, idx) => {
+                        {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
                           const tasksIndex = goal.indexOf("Tasks");
                           if (tasksIndex !== -1 && goal.slice(tasksIndex + 6).startsWith("\n")) {
                             const before = goal.slice(0, tasksIndex);
