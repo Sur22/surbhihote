@@ -421,7 +421,7 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
                 </div>
