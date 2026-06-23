@@ -387,21 +387,6 @@ function CaseStudyPage() {
         {c.slug === "fjord2" && (
           <>
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Empathize</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Empathize section follow-up content.]
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
-                </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define section follow-up content.]
