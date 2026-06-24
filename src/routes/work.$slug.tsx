@@ -51,6 +51,8 @@ import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
+import initialDesign1 from "@/assets/initial-design-1.png.asset.json";
+import initialDesign2 from "@/assets/initial-design-2.png.asset.json";
 import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
 import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
 import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
