@@ -42,13 +42,6 @@ import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
-import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
-import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
-import finalLibrary from "@/assets/tecpack_library.png.asset.json";
-import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
-import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
-import finalBom from "@/assets/techpack_bom.png.asset.json";
-import finalPdf from "@/assets/techpack_pdf.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
 import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
 import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
@@ -904,13 +897,6 @@ function CaseStudyPage() {
               { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
               { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
               { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
-              { src: finalToolScreens.url, label: "Tool screens" },
-              { src: finalLibrary.url, label: "Techpack Library" },
-              { src: finalSketchSel.url, label: "Sketch selection" },
-              { src: finalDetailedSketch.url, label: "Detailed sketch" },
-              { src: finalBom.url, label: "Bill of Materials" },
-              { src: finalPdf.url, label: "Exported PDF" },
-              { src: finalProto.url, label: "Prototype overview" },
             ].map((img) => (
               <CarouselItem key={img.label}>
                 <div className="overflow-hidden rounded-sm border border-border bg-secondary">
