@@ -738,13 +738,8 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Qualitative - Focus Group section follow-up content. <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>]
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 1</span>
-                </div>
-                <div className="aspect-[4/3] rounded-sm border border-dashed border-border bg-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Image 2</span>
-                </div>
+              <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
               </div>
         </section>
       )}
