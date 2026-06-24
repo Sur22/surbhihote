@@ -61,6 +61,7 @@ import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
+import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
