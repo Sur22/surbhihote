@@ -642,17 +642,35 @@ function CaseStudyPage() {
       {/* Initial Sketches */}
       <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
-        <h3 className="font-serif text-3xl mb-6 font-medium">Initial sketch</h3>
+        <h3 className="font-serif text-3xl mb-6 font-medium">
+          {c.slug === "fjord2" ? "Initial Design" : "Initial sketch"}
+        </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-          I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory
+          {c.slug === "fjord2" 
+            ? "I started by creating a sitemap to understand exactly how many screens needs to be redesigned and also to make sure I do not miss any of the screens form the websited.\u00a0"
+            : "I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory"
+          }
         </p>
         <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-          <li>Bill of Material (Material and trims costing file)</li>
-          <li>Final CAD file</li>
-          <li>Tech Pack file</li>
+          {c.slug === "fjord2" ? (
+            <>
+              <li>{"\n"}</li>
+              <li>{"\n"}</li>
+              <li>{"\n"}</li>
+            </>
+          ) : (
+            <>
+              <li>Bill of Material (Material and trims costing file)</li>
+              <li>Final CAD file</li>
+              <li>Tech Pack file</li>
+            </>
+          )}
         </ul>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          To understand the details to get started with the initial sketches and get some inputs from users.
+          {c.slug === "fjord2"
+            ? "I started with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
+            : "To understand the details to get started with the initial sketches and get some inputs from users."
+          }
         </p>
         {c.slug === "fjord2" ? (
           <button
