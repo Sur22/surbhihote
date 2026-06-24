@@ -23,14 +23,14 @@ export const Route = createFileRoute("/gallery")({
 const items = [
   {
     src: g2,
-    title: "Fjord — wordmark trials",
-    tags: ["Typography", "Branding", "2025"],
-    body: "Late-stage exploration of the Fjord wordmark — testing serif against geometric sans pairings, looking for a quiet, considered mark that holds up across scale and surface.",
+    title: "Creator Hub",
+    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
+    body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
     src: g3,
-    title: "Solace — hero photography R&D",
-    tags: ["Art Direction", "Product", "2024"],
+    title: "Travel AI",
+    tags: ["AI TRAVEL TOOL", "AI FOR UX ", "DESIGNLAB  2026"],
     body: "Studio R&D for the Solace launch — exploring soft, diffused light and considered colour palettes to match the calm, deliberate tone of the product itself.",
   },
   {
