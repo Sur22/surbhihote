@@ -28,6 +28,17 @@ import userGroupsImg from "@/assets/user-groups.png";
 import wireframeImg1 from "@/assets/techpack-wireframe-1.png";
 import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
 import affiliateSitemap from "@/assets/Affiliate_website_sitemap.png.asset.json";
+import sketchImg1 from "@/assets/techpack-sketch-1.jpg.asset.json";
+import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
+import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
+import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
+import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
+import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
+import finalLibrary from "@/assets/tecpack_library.png.asset.json";
+import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
+import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
+import finalBom from "@/assets/techpack_bom.png.asset.json";
+import finalPdf from "@/assets/techpack_pdf.png.asset.json";
 import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.asset.json";
 import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
@@ -643,18 +654,38 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To understand the details to get started with the initial sketches and get some inputs from users.
         </p>
-        <button
-          type="button"
-          onClick={() => setZoomImg(affiliateSitemap.url)}
-          className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
-        >
-          <img
-            src={affiliateSitemap.url}
-            alt="Affiliate website sitemap"
-            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-            loading="lazy"
-          />
-        </button>
+        {c.slug === "fjord2" ? (
+          <button
+            type="button"
+            onClick={() => setZoomImg(affiliateSitemap.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+          >
+            <img
+              src={affiliateSitemap.url}
+              alt="Affiliate website sitemap"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
+        ) : (
+          <div className="flex flex-row gap-4 overflow-x-auto pb-2">
+            {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setZoomImg(s.url)}
+                className="group block flex-shrink-0 w-[22%] min-w-[180px] overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+              >
+                <img
+                  src={s.url}
+                  alt={`Initial sketch ${i + 1}`}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
@@ -884,12 +915,23 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs Phase 1</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {[
-              { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
-              { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
-              { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
-              { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
-            ].map((img) => (
+            {(c.slug === "fjord2"
+              ? [
+                  { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
+                  { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
+                  { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
+                  { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
+                ]
+              : [
+                  { src: finalProto.url, label: "Prototype overview" },
+                  { src: finalLibrary.url, label: "Techpack Library" },
+                  { src: finalSketchSel.url, label: "Sketch selection" },
+                  { src: finalDetailedSketch.url, label: "Detailed sketch" },
+                  { src: finalBom.url, label: "Bill of Materials" },
+                  { src: finalPdf.url, label: "Exported PDF" },
+                  { src: finalToolScreens.url, label: "Tool screens" },
+                ]
+            ).map((img) => (
               <CarouselItem key={img.label}>
                 <div className="overflow-hidden rounded-sm border border-border bg-secondary">
                   <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
