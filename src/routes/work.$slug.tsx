@@ -853,33 +853,7 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
-      {/* Review with Users, Product & Engineering Team */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">
-          Review with Users, Product &amp; Engineering Team
-        </h2>
-        <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
-          <li className="flex gap-4">
-            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>
-              Reviewing the initial <strong className="font-semibold">low fidelity clickable wireframes</strong> I presented them to the users to get their <strong className="font-semibold">feedback on functionalities</strong> and the <strong className="font-semibold">usability</strong> aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added. I made the second iteration and again showed it to the users.
-            </span>
-          </li>
-          <li className="flex gap-4">
-            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>
-              After the second iteration I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added and are not mention In Product Requirement Document was updated for engineering team to keep everyone in the loop.
-            </span>
-          </li>
-          <li className="flex gap-4">
-            <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-            <span>
-              After taking feedback and considering inputs from users, Product and Engineering team I start putting together high feudality wireframes and make it better and the third iteration of the design.
-            </span>
-          </li>
-        </ul>
-      </section>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
