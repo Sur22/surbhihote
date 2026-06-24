@@ -55,6 +55,7 @@ import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
 import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
 import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
 import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
+import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -896,6 +897,7 @@ function CaseStudyPage() {
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
             {[
+              { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
               { src: finalToolScreens.url, label: "Tool screens" },
               { src: finalLibrary.url, label: "Techpack Library" },
               { src: finalSketchSel.url, label: "Sketch selection" },
