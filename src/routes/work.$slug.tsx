@@ -643,23 +643,18 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           To understand the details to get started with the initial sketches and get some inputs from users.
         </p>
-        <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-          {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setZoomImg(s.url)}
-              className="group block flex-shrink-0 w-[22%] min-w-[180px] overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
-            >
-              <img
-                src={s.url}
-                alt={`Initial sketch ${i + 1}`}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-          ))}
-        </div>
+        <button
+          type="button"
+          onClick={() => setZoomImg(affiliateSitemap.url)}
+          className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+        >
+          <img
+            src={affiliateSitemap.url}
+            alt="Affiliate website sitemap"
+            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+            loading="lazy"
+          />
+        </button>
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
