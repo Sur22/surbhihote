@@ -34,6 +34,12 @@ const items = [
     body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
+    src: g6,
+    title: "Atlas — itinerary icon sketches",
+    tags: ["Iconography", "Sketch", "2024"],
+    body: "Hand sketches for the Atlas itinerary blocks. A loose vocabulary of travel moments — meals, transit, rest — drawn small to keep them honest.",
+  },
+  {
     src: g4,
     title: "GSN Marketplace - A white label e-com for clients  ",
     tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
@@ -44,12 +50,6 @@ const items = [
     title: "Dashboard- PLM & ERP ",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
-  },
-  {
-    src: g6,
-    title: "Atlas — itinerary icon sketches",
-    tags: ["Iconography", "Sketch", "2024"],
-    body: "Hand sketches for the Atlas itinerary blocks. A loose vocabulary of travel moments — meals, transit, rest — drawn small to keep them honest.",
   },
 ] as const;
 
