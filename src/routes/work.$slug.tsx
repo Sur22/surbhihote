@@ -783,27 +783,31 @@ function CaseStudyPage() {
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           In these wireframes, I included elements that directly address users' goals, needs, frustrations. As I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles.Following mid fidelity wireframes were created for usability testing to validate the design if they are meeting the needs and solving their pain points or not.
         </p>
-        <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">Including Engineering Early On</h3>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
-        </p>
-        <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-          {[wireframeImg1, wireframeImg2].map((img, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setZoomImg(img)}
-              className="group flex-shrink-0 w-[45%] min-w-[180px] overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
-            >
-              <img
-                src={img}
-                alt={`Mid fidelity wireframe ${i + 1}`}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-          ))}
-        </div>
+        {c.slug !== "fjord2" && (
+          <>
+            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">Including Engineering Early On</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+              To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
+            </p>
+            <div className="flex flex-row gap-4 overflow-x-auto pb-2">
+              {[wireframeImg1, wireframeImg2].map((img, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setZoomImg(img)}
+                  className="group flex-shrink-0 w-[45%] min-w-[180px] overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
+                >
+                  <img
+                    src={img}
+                    alt={`Mid fidelity wireframe ${i + 1}`}
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
