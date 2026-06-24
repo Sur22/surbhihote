@@ -62,6 +62,7 @@ import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
+import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -738,8 +739,13 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates along with the wo{"\u00A0"}<a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>
               </p>
-              <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+                </div>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
+                </div>
               </div>
         </section>
       )}
