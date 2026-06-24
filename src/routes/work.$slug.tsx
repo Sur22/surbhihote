@@ -60,6 +60,7 @@ import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.as
 import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.asset.json";
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
+import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -631,6 +632,16 @@ function CaseStudyPage() {
                     </TableRow>
                   </TableBody>
                 </Table>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">The Team</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                [Placeholder paragraph for The Team section.]
+              </p>
+              <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
               </div>
             </div>
           </>
