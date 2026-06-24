@@ -60,6 +60,7 @@ import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.as
 import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.asset.json";
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
+import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
