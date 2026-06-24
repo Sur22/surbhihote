@@ -656,7 +656,7 @@ function CaseStudyPage() {
       <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         <h3 className="font-serif text-3xl mb-6 font-medium">
-          {c.slug === "fjord2" ? "Initial Design" : "Initial sketch"}
+          {c.slug === "fjord2" ? "Sitemap" : "Initial sketch"}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {c.slug === "fjord2" 
@@ -715,7 +715,7 @@ function CaseStudyPage() {
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Brainstorming session with product team</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : "Brainstorming session with product team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
         <button
           type="button"
@@ -737,7 +737,11 @@ function CaseStudyPage() {
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates along with the wo{"\u00A0"}<a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>
+                I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates{"\u00A0"}
+                <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
+                to see the list of question for focus group.{"\u00A0"}
+                <br />
+                We asked them to walk us through their day to day workflow and asked question along and ended the session by showing the initial mockups to get their feedback and understand if we are heading into the right direction.{"\u00A0"}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
