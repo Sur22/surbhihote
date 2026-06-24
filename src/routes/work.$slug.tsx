@@ -640,7 +640,7 @@ function CaseStudyPage() {
             <div className="mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">The Team</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for The Team section.]
+                {"\\n"}
               </p>
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
