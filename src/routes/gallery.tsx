@@ -30,8 +30,8 @@ const items = [
   {
     src: g3,
     title: "Travel AI",
-    tags: ["AI TRAVEL TOOL", "AI FOR UX ", "DESIGNLAB  2026"],
-    body: "Studio R&D for the Solace launch — exploring soft, diffused light and considered colour palettes to match the calm, deliberate tone of the product itself.",
+    tags: ["AI TRAVEL TOOL", "CONCEPT\u00a0\u00a0", "AI FOR UX", "DESIGNLAB 2026"],
+    body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
     src: g4,
