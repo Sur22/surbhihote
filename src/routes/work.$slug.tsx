@@ -400,7 +400,7 @@ function CaseStudyPage() {
               </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
-                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
                 </div>
               </div>
