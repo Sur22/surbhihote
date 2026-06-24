@@ -736,7 +736,7 @@ function CaseStudyPage() {
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                {"\u00A0"}Qualitative - Focus Group section follow-up content. <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>
+                I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates along with the wo{"\u00A0"}<a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>
               </p>
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
