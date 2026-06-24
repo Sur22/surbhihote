@@ -35,9 +35,9 @@ const items = [
   },
   {
     src: g6,
-    title: "Atlas — itinerary icon sketches",
-    tags: ["Iconography", "Sketch", "2024"],
-    body: "Hand sketches for the Atlas itinerary blocks. A loose vocabulary of travel moments — meals, transit, rest — drawn small to keep them honest.",
+    title: "Data Visualization",
+    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMACE "],
+    body: "For enterprise clients the most important part is to see how their campaigns are running and the outcome of the money they spent.\u00a0",
   },
   {
     src: g4,
