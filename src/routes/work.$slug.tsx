@@ -662,21 +662,13 @@ function CaseStudyPage() {
             : "I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory"
           }
         </p>
-        <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-          {c.slug === "fjord2" ? (
-            <>
-              <li>{"\n"}</li>
-              <li>{"\n"}</li>
-              <li>{"\n"}</li>
-            </>
-          ) : (
-            <>
-              <li>Bill of Material (Material and trims costing file)</li>
-              <li>Final CAD file</li>
-              <li>Tech Pack file</li>
-            </>
-          )}
-        </ul>
+        {c.slug !== "fjord2" && (
+          <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
+            <li>Bill of Material (Material and trims costing file)</li>
+            <li>Final CAD file</li>
+            <li>Tech Pack file</li>
+          </ul>
+        )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {c.slug === "fjord2"
             ? "I started with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
