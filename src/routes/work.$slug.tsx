@@ -358,7 +358,7 @@ function CaseStudyPage() {
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
 
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-          The workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop.
+          This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop.
         </p>
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
@@ -400,7 +400,7 @@ function CaseStudyPage() {
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Define section follow-up content.]
+                The workshop started with a walk through of Affiliate website and{"\u00a0"}
               </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Goal - Why redesign ?</h2>
