@@ -51,8 +51,7 @@ import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
-import initialDesign1 from "@/assets/initial-design-1.png.asset.json";
-import initialDesign2 from "@/assets/initial-design-2.png.asset.json";
+import fjord2InitialDesign from "@/assets/fjord2-initial-design.png.asset.json";
 import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
 import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
 import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
@@ -720,22 +719,13 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : "Brainstorming session with product team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
         {c.slug === "fjord2" ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <button
-              type="button"
-              onClick={() => setZoomImg(initialDesign1.url)}
-              className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
-            >
-              <img src={initialDesign1.url} alt="Initial design - Orders view" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setZoomImg(initialDesign2.url)}
-              className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
-            >
-              <img src={initialDesign2.url} alt="Initial design - Dashboard view" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setZoomImg(fjord2InitialDesign.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
+          >
+            <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+          </button>
         ) : (
           <button
             type="button"
