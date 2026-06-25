@@ -398,7 +398,7 @@ function CaseStudyPage() {
         {c.slug === "fjord2" && (
           <>
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Empathize &{"\u00a0"}Define</h3>
+              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define section follow-up content.]
               </p>
@@ -515,7 +515,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Ideate</h3>
+              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Ideate</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Ideate section follow-up content.]
               </p>
@@ -533,7 +533,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Prioritize</h3>
+              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Prioritize</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Prioritize section follow-up content.]
               </p>
@@ -551,7 +551,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Define success matrix</h3>
+              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Define success matrix</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define success matrix section follow-up content.]
               </p>
