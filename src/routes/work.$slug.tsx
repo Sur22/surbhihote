@@ -510,7 +510,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
+                Based on the su
               </p>
             </div>
 
