@@ -594,6 +594,7 @@ function CaseStudyPage() {
                   </TableBody>
                 </Table>
               </div>
+              </div>
             </div>
 
             <div className="mt-16">
