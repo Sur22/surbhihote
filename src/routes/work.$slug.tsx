@@ -449,14 +449,6 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Markets Account Manager / Planner",
-                      usage: 4,
-                      dependency: 3,
-                      goals: [
-                        "Tasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
-                      ],
-                    },
-                    {
                       name: "Markets Campaign Manager",
                       usage: 4,
                       dependency: 3,
