@@ -358,7 +358,7 @@ function CaseStudyPage() {
         <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
 
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-          The workshop was not a typical Design thinking workshop it was customized based on to make most out of the limited time available and the project.I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop.&nbsp;&nbsp;
+          The workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop.
         </p>
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
@@ -510,7 +510,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
+                Based on the su
               </p>
             </div>
 
@@ -528,7 +528,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
+                Based on the su
               </p>
             </div>
 
@@ -546,7 +546,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for second image follow-up content.]
+                Based on the su
               </p>
             </div>
 
