@@ -53,6 +53,7 @@ import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
 import initialDesign1 from "@/assets/initial-design-1.png.asset.json";
 import initialDesign2 from "@/assets/initial-design-2.png.asset.json";
+import fjord2InitialDesign from "@/assets/fjord2-initial-design.png.asset.json";
 import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
 import affSurveyQ3 from "@/assets/affiliate-survey-q3.png.asset.json";
 import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
