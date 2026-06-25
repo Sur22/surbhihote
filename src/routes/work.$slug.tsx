@@ -453,7 +453,7 @@ function CaseStudyPage() {
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Gather intel across both Linear and\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Digital orders\u200b\n2. New & historical linear & digital orders\u200b\n3. Total investment/total impressions\u200b\n4. The AMP AE on orders/markets\u200b\n5. Which AMP offcie order is from\u200b",
+                        "Tasks\n1. Gather intel across both Linear and Digital orders\u200b\n2. New & historical linear & digital orders\u200b\n3. Total investment/total impressions\u200b\n4. The AMP AE on orders/markets\u200b\n5. Which AMP offcie order is from\u200b",
                       ],
                     },
                   ].map((persona, idx) => (
