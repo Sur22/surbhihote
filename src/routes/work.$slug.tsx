@@ -592,41 +592,6 @@ function CaseStudyPage() {
                     </TableRow>
                   </TableBody>
                 </Table>
-
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Phase 1</TableHead>
-                      <TableHead>Phase 2</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell>Orders and Event log</TableCell>
-                      <TableCell>Messaging&nbsp;</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Views and  Search </TableCell>
-                      <TableCell>Collatrals</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Compare Order Version</TableCell>
-                      <TableCell>Platform Notifications</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Internal & External Rate Cards</TableCell>
-                      <TableCell>Super User Profile</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Email Notifications&nbsp;</TableCell>
-                      <TableCell>Makegood&nbsp;</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Contacts & Resources</TableCell>
-                      <TableCell>Order Revision</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
               </div>
             </div>
 
@@ -753,6 +718,42 @@ function CaseStudyPage() {
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
+              </div>
+              <div className="mt-8">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Phase 1</TableHead>
+                      <TableHead>Phase 2</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Orders and Event log</TableCell>
+                      <TableCell>Messaging&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Views and  Search </TableCell>
+                      <TableCell>Collatrals</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Compare Order Version</TableCell>
+                      <TableCell>Platform Notifications</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Internal & External Rate Cards</TableCell>
+                      <TableCell>Super User Profile</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Email Notifications&nbsp;</TableCell>
+                      <TableCell>Makegood&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Contacts & Resources</TableCell>
+                      <TableCell>Order Revision</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
               </div>
         </section>
       )}
