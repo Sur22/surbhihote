@@ -988,8 +988,8 @@ function CaseStudyPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
             <div key={o.label} className="border-t border-border pt-6">
-              <p className="display text-5xl md:text-6xl text-accent mb-3">{o.value}</p>
-              <p className="text-sm text-muted-foreground">{o.label}</p>
+              {o.value && <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">{o.value}</p>}
+              <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
             </div>
           ))}
         </div>
