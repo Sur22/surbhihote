@@ -278,7 +278,7 @@ export const caseStudies: CaseStudy[] = [
     tools: "Adobe XD, Survey Monkey,Microsoft Clarity, Power BI,Microsoft Azure,Teams",
     tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Brainstorming, Wire-framing, Prototyping, Stakeholder buy-in, Collaborate with PM, QA and\nEngineering team.\u00a0",
     overview: "A multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast,COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addrasable.\nAll the affiliates working with Ampersand has been using the 20 years old site which has many things which is not working.Some things are not used anymore, speed is slow,cannot add new fucntionality becaus of old codebase.To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.Some functionalities are broken and need to be fixed and dated UI/UX.\n",
-    goal: "\u00a0easier to modify and maintain in the future.\n1.\u00a0\u00a0\u00a0\u00a0\u00a0Solve for loss of business/revenue\n2.\u00a0\u00a0\u00a0\u00a0Clean up -Remove unused parts of the website.\n3.\u00a0\u00a0\u00a0\u00a0Simplify- Remove redundency and confusing areas.\n4.\u00a0 \u00a0 Repair - Fix broken Functionality .\n5.\u00a0 \u00a0 Enhance - Make it faster and efficient.\u00a0\n6.\u00a0 \u00a0 Add new functionalities and features",
+    goal: "\u00a0easier to modify and maintain in the future.\n1.\u00a0\u00a0\u00a0\u00a0\u00a0Solve for loss of business/revenue\n2.\u00a0\u00a0\u00a0\u00a0Clean up -Remove unused parts of the website.\n3.\u00a0\u00a0\u00a0\u00a0Simplify- Remove redundency and confusing areas.\n4.\u00a0 \u00a0 Repair - Fix broken Functionality .\n5.\u00a0 \u00a0 Enhance - Make it faster and efficient.\u00a0\n6.\u00a0 \u00a0 Add new functionalities and features\u00a0\n\n",
     research: {
       ...defaultMeta.research,
       userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128.\n\n",
@@ -297,9 +297,9 @@ export const caseStudies: CaseStudy[] = [
       "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
     ],
     outcome: [
-      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
-      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
-      { label: "Increase in speed and Efficiency", value: "26%" },
+      { label: "Clunky and outdated → seamless workflows", value: "" },
+      { label: "Time suck → time saved", value: "Redundency → Clear Design" },
+      { label: "Increase in speed\nTime stuck → time saved", value: "" },
       { label: "User Satisfaction", value: "+29%" },
     ],
     sections: [
