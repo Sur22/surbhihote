@@ -301,7 +301,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Political Campaign\u00a0Manager/ Support\nSpecialist\u200b",
+                  name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
                   goals: [
                     "Create detailed sketches and CAD designs efficiently",
                     "Organize materials, trims, and labels in one place",
@@ -317,7 +317,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Admin /Super User",
+                  name: "Admin / Super User",
                   goals: [
                     "Receive complete and accurate techpacks for production",
                     "Access BOMs, material specs, and design details easily",
@@ -417,7 +417,7 @@ function CaseStudyPage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
-                      name: "Political Sales Manager/Planner",
+                      name: "Political Sales Manager\u00a0 \u00a0 /\u00a0Sales\u00a0Planner\n",
                       usage: 2,
                       dependency: 3,
                       goals: [
@@ -425,7 +425,7 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Political Campaign\u00a0Manager/ Support\nSpecialist\u200b",
+                      name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
                       usage: 3,
                       dependency: 2,
                       goals: [
@@ -441,7 +441,7 @@ function CaseStudyPage() {
                       ],
                     },
                     {
-                      name: "Admin /Super User",
+                      name: "Admin / Super User",
                       usage: 4,
                       dependency: 3,
                       goals: [
