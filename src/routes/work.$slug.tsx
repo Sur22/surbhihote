@@ -555,8 +555,9 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 [Placeholder paragraph for Define success matrix section follow-up content.]
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Table>
+              <div className="flex justify-center">
+                <div className="w-full max-w-2xl">
+                  <Table>
                   <TableHeader>
                     <TableRow>
                       <TableHead className="font-semibold">KPIs</TableHead>
