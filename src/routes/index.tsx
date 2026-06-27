@@ -96,7 +96,7 @@ function IndexPage() {
             <h1 className="font-serif text-[72px] leading-[1.1]">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
-            <p className="mt-8 text-lg leading-relaxed text-foreground/80 font-sans">
+            <p className="mt-8 text-[42px] font-bold leading-relaxed text-foreground/80 font-sans">
               Identifying the equilibrium between user needs, business opportunities, and technological possibilities to convert complex problems to simplified solutions.
             </p>
             <div className="mt-8">
