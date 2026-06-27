@@ -221,6 +221,27 @@ export const caseStudies: CaseStudy[] = [
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
+    research: {
+      ...defaultMeta.research,
+      userInterviewInsights: [
+        {
+          quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."',
+          author: "Client",
+        },
+        {
+          quote: '"Once I missed out on an important notification and as a result the product got delayed."',
+          author: "Production Manager",
+        },
+        {
+          quote: '"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming."',
+          author: "Product Development Manager",
+        },
+        {
+          quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"',
+          author: "Company Account Manager",
+        },
+      ],
+    },
     role: "Design Lead",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas.url,
