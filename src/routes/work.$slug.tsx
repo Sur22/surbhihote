@@ -35,6 +35,7 @@ import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
 import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
 import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
 import finalLibrary from "@/assets/tecpack_library.png.asset.json";
+import notificationsProto from "@/assets/notifications_portotyping_connection.png.asset.json";
 import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
 import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
 import finalBom from "@/assets/techpack_bom.png.asset.json";
@@ -933,7 +934,11 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs&nbsp;</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {(c.slug === "fjord2"
+            {(c.slug === "atlas"
+              ? [
+                  { src: notificationsProto.url, label: "Updated notification design" },
+                ]
+              : c.slug === "fjord2"
               ? [
                   { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
                   { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
