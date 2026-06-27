@@ -928,9 +928,9 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
-      {/* Final Designs Phase 1 */}
+      {/* Final Designs */}
       <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs Phase 1</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs&nbsp;</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
             {(c.slug === "fjord2"
