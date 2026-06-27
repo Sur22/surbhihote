@@ -64,6 +64,7 @@ import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
+import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -192,6 +193,11 @@ function CaseStudyPage() {
                 : <p className="whitespace-pre-line">{c.goal}</p>
               }
             </div>
+            {c.slug === "atlas" && (
+              <div className="mt-10 overflow-hidden rounded-sm">
+                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
+              </div>
+            )}
           </div>
         </div>
       </section>
