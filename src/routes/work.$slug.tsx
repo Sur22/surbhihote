@@ -937,6 +937,7 @@ function CaseStudyPage() {
           <CarouselContent>
             {(c.slug === "atlas"
               ? [
+                  { src: notificationsMockup.url, label: "Notifications mockup" },
                   { src: notificationsProto.url, label: "Updated notification design" },
                 ]
               : c.slug === "fjord2"
