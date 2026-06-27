@@ -97,7 +97,7 @@ function IndexPage() {
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-foreground/80 font-sans">
-              Identifying the equilibrium between user needs, business opportunities, and technological possibilities to make an impact/ convert complex problems to simplified solutions.
+              Identifying the equilibrium between user needs, business opportunities, and technological possibilities to make create impact.
             </p>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
