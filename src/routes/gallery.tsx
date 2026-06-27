@@ -1,12 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { caseStudies } from "@/lib/case-studies";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/gallery-6.jpg";
+import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -40,7 +48,10 @@ const items = [
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
   },
   {
-    src: g4,
+    images: [
+      { src: g4, alt: "GSN Marketplace — product grid" },
+      { src: gsnMockup.url, alt: "GSN Marketplace — Suuchi mockup" },
+    ],
     title: "GSN Marketplace - A white label e-com for clients  ",
     tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
@@ -85,12 +96,31 @@ function GalleryPage() {
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
             <div className="overflow-hidden bg-secondary" style={{ borderRadius: "4%" }}>
-              <img
-                src={it.src}
-                alt={it.title}
-                loading="lazy"
-                className="w-full h-auto object-contain"
-              />
+              {"images" in it ? (
+                <Carousel opts={{ loop: true }} className="relative">
+                  <CarouselContent>
+                    {it.images.map((img, idx) => (
+                      <CarouselItem key={idx}>
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          loading="lazy"
+                          className="w-full h-auto object-contain"
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
+              ) : (
+                <img
+                  src={it.src}
+                  alt={it.title}
+                  loading="lazy"
+                  className="w-full h-auto object-contain"
+                />
+              )}
             </div>
           </article>
         ))}
