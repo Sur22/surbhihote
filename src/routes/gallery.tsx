@@ -100,14 +100,14 @@ function GalleryPage() {
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
                     {it.images.map((img, idx) => (
-                      <CarouselItem key={idx}>
-                        <img
-                          src={img.src}
-                          alt={img.alt}
-                          loading="lazy"
-                          className="w-full h-auto object-contain"
-                        />
-                      </CarouselItem>
+                  <CarouselItem key={idx} className="flex items-center justify-center">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain"
+                    />
+                  </CarouselItem>
                     ))}
                   </CarouselContent>
                   <CarouselPrevious className="left-4" />
