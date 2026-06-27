@@ -151,8 +151,70 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "solace",
+    slug: "fjord2",
     index: "02",
+    title: "Affiliates Website Redesign",
+    subtitle: "Redesigning a legacy application",
+    client: "Fjord, Oslo",
+    year: "2025",
+    ...defaultMeta,
+    strategySectionTitle: "Design Thinking Workshop",
+    strategySectionSubtitle: "Planning",
+    strategy: {
+      ...defaultMeta.strategy,
+      productGoals: {
+        ...defaultMeta.strategy.productGoals,
+        intro: "",
+        workshopAttendees: "<strong>Stakeholders</strong>\u00a0\n1.Sr. Mgr, Affiliate Relations & Agency ops\n2.VP of Political Ops\n3.Director Of Billing Ops Markets and Political\n4.User Administration Manager\n\n<strong>Product</strong>\u00a0\n5.Senior Product Manager\n6. UI UX Designer (Me as a Facilitator)\n\n<strong>Engineering</strong>\u00a0\n7.Director, QA Software Engineering\n8.Senior Director, Software Engineering",
+        workshopSchedule: "<strong>Day 1</strong>\n1.Applications Walk through\n2.Defining The Scope\n3.Defining Personas\n4.Survey Feedback Analysis\n5.Card sorting\u00a0\n\n<strong>Day 2</strong>\u00a0\n1. Themes /Cluster\x03Voting\n2.Prioritization\n3.Sketching & Presenting\n4. Defining Success Metrics \x03\n5. Define Next steps\n"
+      }
+    },
+    timeframe: "8 Weeks",
+    tools: "Survey Monkey,\u00a0Claude ,\nMicrosoft Clarity, Power BI,Microsoft Azure,Teams,\nAdobe XD",
+    tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA and Engineering team.\u00a0",
+    overview: "A multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast,COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addrasable.\n\n",
+    goal: "All the affiliates working with the company has been using the 20 years old site which has many things which is not working.Some things are not used anymore, speed is slow, cannot add new functionality because of old codebase.To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.Some functionalities are broken and need to be fixed and dated UI/UX.\n",
+    research: {
+      ...defaultMeta.research,
+      userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128.\n\n",
+    },
+    role: "Lead Product Designer",
+    tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
+    cover: fjord.url,
+    summary:
+      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
+    problem:
+      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
+    approach: [
+      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
+      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
+      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
+      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
+    ],
+    outcome: [
+      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
+      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
+      { label: "Increase in speed and Efficiency", value: "26%" },
+      { label: "User Satisfaction", value: "+29%" },
+    ],
+    sections: [
+      {
+        heading: "Discovery",
+        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
+      },
+      {
+        heading: "Foundations",
+        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
+      },
+      {
+        heading: "Launch",
+        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
+      },
+    ],
+  },
+  {
+    slug: "solace",
+    index: "03",
     title: "Grid Website",
     subtitle: "Document-Centric Workflows to a Connected PLM Ecosystem.",
     client: "Solace Health",
