@@ -82,7 +82,7 @@ function IndexPage() {
               </div>
               <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
                 <img
-                  src={heroPortrait}
+                  src={heroPortrait.url}
                   alt="Surbhi Hote"
                   width={800}
                   height={1000}
