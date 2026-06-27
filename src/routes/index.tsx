@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import heroPortrait from "@/assets/hero-portrait.png.asset.json";
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
