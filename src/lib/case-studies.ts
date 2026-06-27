@@ -117,7 +117,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     ...defaultMeta,
     role: "Lead Product Designer",
-    tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
+    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: fjord.url,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
@@ -154,7 +154,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "fjord2",
     index: "02",
     title: "Affiliates Website Redesign",
-    subtitle: "Redesigning a legacy application",
+    subtitle: "Redesigning a legacy application\u00a0",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
@@ -179,7 +179,7 @@ export const caseStudies: CaseStudy[] = [
       userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128.\n\n",
     },
     role: "Lead Product Designer",
-    tags: ["Advertising", "Enterprise", "ad-tech", "media", "data"],
+    tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
     cover: fjord.url,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
