@@ -73,7 +73,7 @@ function IndexPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5 md:order-1">
-            <div className="relative w-full mx-auto md:mx-0" style={{ maxWidth: "20.4rem" }}>
+            <div className="relative w-full mx-auto md:mx-0 mt-8" style={{ maxWidth: "20.4rem" }}>
               <div
                 aria-hidden
                 className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
