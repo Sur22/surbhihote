@@ -188,7 +188,7 @@ function CaseStudyPage() {
             <h2 className="font-serif text-3xl mb-6 font-medium">{c.slug === "fjord2" ? "Intoduction" : "Goal"}</h2>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "solace"
-                ? "In every stage there are certain files that are stored. Each file is technically an asset that the brand has used to facilitate their product development. We need to grant abilities to create the assets within the GRID. This would focus on creation of Tech pack for the “Tech pack” Stage. This would provide ability to users to create and consolidate the following in one single document:\n1.     Consolidate/upload all the product sketches (CAD) with other parts of the assets\n2.    Create/upload detailed sketches\n3.    Create BOM’s\n4.    Export the Tech pack into PDF file formats\n5.    Material library, CAD Library, Techpack Library\n6.   Sharing the the output PDF with factories and clients "
+                ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.\u00a0\u00a0\u00a0\u00a0 Provide different user types ability to pick and choose the notifications that they would like to receive\n2.\u00a0\u00a0\u00a0\u00a0 Serve users ability to choose the notifications that they would like to receive per module and per product\n3.\u00a0\u00a0\u00a0\u00a0 Allow users ability to switch on/off notifications at any point of time\n"
                 : <p className="whitespace-pre-line">{c.goal}</p>
               }
             </div>
