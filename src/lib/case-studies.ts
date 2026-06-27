@@ -45,10 +45,10 @@ export type CaseStudy = {
 
 const defaultMeta = {
   role: "UI/UX Designer",
-  timeframe: "6 Weeks",
-  tools: "Balsamiq, Adobe XD, Illustrator, White Board, Google Forms, JIRA, Confluence",
+  timeframe: "2 Weeks",
+  tools: "Pen and Paper, Adobe XD, Miro, Confluence, JIRA",
   tasksPerformed:
-    "End to End Design, User Research, Brainstorming, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
+    "End to End Design, User Research, UI Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
   overview:
     "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments.\n\nThroughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\n",
   goal:
