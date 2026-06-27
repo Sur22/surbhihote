@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
-import heroPortrait from "@/assets/hero-portrait.png.asset.json";
+import heroPortrait from "@/assets/hero-portrait-cropped.png";
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
@@ -82,7 +82,7 @@ function IndexPage() {
               </div>
               <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
                 <img
-                  src={heroPortrait.url}
+                  src={heroPortrait}
                   alt="Surbhi Hote"
                   width={800}
                   height={1000}
