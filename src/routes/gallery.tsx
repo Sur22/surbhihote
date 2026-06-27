@@ -96,12 +96,31 @@ function GalleryPage() {
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
             <div className="overflow-hidden bg-secondary" style={{ borderRadius: "4%" }}>
-              <img
-                src={it.src}
-                alt={it.title}
-                loading="lazy"
-                className="w-full h-auto object-contain"
-              />
+              {"images" in it ? (
+                <Carousel opts={{ loop: true }} className="relative">
+                  <CarouselContent>
+                    {it.images.map((img, idx) => (
+                      <CarouselItem key={idx}>
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          loading="lazy"
+                          className="w-full h-auto object-contain"
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
+              ) : (
+                <img
+                  src={it.src}
+                  alt={it.title}
+                  loading="lazy"
+                  className="w-full h-auto object-contain"
+                />
+              )}
             </div>
           </article>
         ))}
