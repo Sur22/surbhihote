@@ -36,6 +36,7 @@ import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
 import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
 import finalLibrary from "@/assets/tecpack_library.png.asset.json";
 import notificationsProto from "@/assets/notifications_portotyping_connection.png.asset.json";
+import notificationsMockup from "@/assets/notifications_mockup.jpg.asset.json";
 import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
 import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
 import finalBom from "@/assets/techpack_bom.png.asset.json";
