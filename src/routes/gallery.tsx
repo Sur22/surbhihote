@@ -48,7 +48,10 @@ const items = [
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
   },
   {
-    src: g4,
+    images: [
+      { src: g4, alt: "GSN Marketplace — product grid" },
+      { src: gsnMockup.url, alt: "GSN Marketplace — Suuchi mockup" },
+    ],
     title: "GSN Marketplace - A white label e-com for clients  ",
     tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
