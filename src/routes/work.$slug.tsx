@@ -934,7 +934,11 @@ function CaseStudyPage() {
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Designs&nbsp;</h2>
         <Carousel opts={{ loop: true }} className="relative">
           <CarouselContent>
-            {(c.slug === "fjord2"
+            {(c.slug === "atlas"
+              ? [
+                  { src: notificationsProto.url, label: "Updated notification design" },
+                ]
+              : c.slug === "fjord2"
               ? [
                   { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
                   { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
