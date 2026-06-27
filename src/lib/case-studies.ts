@@ -117,7 +117,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     ...defaultMeta,
     role: "Lead Product Designer",
-    tags: ["AD-TECH", "ADVERTISING", "ENTERPRISE", "MEDIA", "DATA"],
+    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: fjord.url,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
