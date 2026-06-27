@@ -57,7 +57,7 @@ const defaultMeta = {
     stakeholderInterview:
       "After I get a brief from product team about the new feature and receive the product requirement document(PRD) and comitative analysis to get holistic idea of the feature and the functionality we are thinking of developing.\nI interviewed stakeholder of this feature was the 'Head of Product Development' team. It gave me better understanding of the problem we are trying to solve.\nAs there are many phases and stages of PLM Product Development Managers were having hard time managing all the product related files and data. They had to use multiple tools to manage the communication with the factory and the client when any change/ update was made for the product",
     userInterview:
-      "Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I had 5 users which I interviewed .I asked them  question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it. ",
+      "As there are multiple user types I recruited 5 different type of users (which included users who requested the feature )to get sense of what kind of notifications are important to which type of users and conducted user interview.",
     userInterviewInsights: [
       {
         quote: "\n",
