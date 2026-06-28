@@ -642,6 +642,10 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {c.slug === "atlas" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
       {/* Initial Sketches */}
       <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
