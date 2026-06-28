@@ -372,7 +372,7 @@ function CaseStudyPage() {
       )}
 
       {/* Strategy */}
-      <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: c.slug === "atlas" ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || (c.slug === "atlas" ? "\n" : "Strategy")}</h2>
         {c.slug !== "atlas" && (
           <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
