@@ -208,11 +208,6 @@ function CaseStudyPage() {
                 : <p className="whitespace-pre-line">{c.goal}</p>
               }
             </div>
-            {c.slug === "atlas" && (
-              <div className="mt-10 overflow-hidden rounded-sm">
-                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
-              </div>
-            )}
           </div>
         </div>
       </section>
