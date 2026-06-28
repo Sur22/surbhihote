@@ -954,7 +954,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 Before usability testing, it is important to set up test objectives, subject, methodology, tasks, and rubrics for measuring the result of the testing before conducting a test. Therefore, I wrote a <strong className="font-semibold">usability testing plan</strong> to define what and why I want to test and get prepared for the test.\n
               </p>
               <p className="text-lg leading-relaxed text-foreground/85 mb-16">
-                For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">87% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.
+                For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.
               </p>
             </>
           )}
@@ -982,7 +982,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { label: "Test Completion Rate", value: "100%" },
-              { label: "Error-free rate", value: "87%" },
+              { label: "Error-free rate", value: "90%" },
               { label: "Solving the problem?", value: "Yes" },
             ].map((s) => (
               <div
