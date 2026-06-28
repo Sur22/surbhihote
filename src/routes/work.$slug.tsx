@@ -998,6 +998,34 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </section>
       )}
 
+      {c.slug === "atlas" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Test Findings</h3>
+          <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>4 out of the 5 participants confused edit icon for company list cards.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>3 out of the 4 participants were confused with the &ldquo;Expand your search&rdquo; icon while searching the products.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>All participants felt the site was modern, clean and intuitive.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>All participants felt the checkout process was clear, organized and easy to use.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span> out of the 4 participants did not notice the &ldquo;promotional offer&rdquo; banner at the top of the landing page.</span>
+            </li>
+          </ul>
+        </section>
+      )}
+
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Final Designs */}
