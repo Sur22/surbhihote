@@ -367,7 +367,9 @@ function CaseStudyPage() {
         </DialogContent>
       </Dialog>
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Strategy */}
       <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
