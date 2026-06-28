@@ -832,15 +832,18 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </section>
       )}
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Challenges */}
+      {c.slug !== "atlas" && (
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{"\n"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {"\n"}
         </p>
-        {c.slug !== "fjord2" && c.slug !== "atlas" && (
+        {c.slug !== "fjord2" && (
           <>
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
@@ -866,15 +869,18 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </>
         )}
       </section>
+      )}
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {c.slug !== "fjord2" && (
         <>
       {/* Workflow */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24" style={{ display: c.slug === "atlas" ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
-          {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "\n" : "User Groups"}
+          {c.slug === "solace" ? "Workflow" : "User Groups"}
         </h2>
         {c.slug !== "atlas" && (
           <button
@@ -900,10 +906,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </div>
       </section>
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* User Flow */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24" style={{ display: c.slug === "atlas" ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{c.slug === "atlas" ? "\n" : "User flow"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in details. Below is the flow to show from various places you can start and access the design studio and edit the Tech Pack." : c.slug === "atlas" ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
@@ -937,9 +945,13 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </>
       )}
 
+      {c.slug !== "atlas" && (
+      <>
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      </>
+      )}
 
       {c.slug !== "fjord2" && (
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
@@ -1024,7 +1036,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </section>
       )}
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Final Designs */}
       <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
