@@ -82,7 +82,7 @@ const defaultMeta = {
   strategy: {
     productGoals: {
       intro:
-        "Alignment of user goals and business goals to benefit both are important things to balance when it comes to the strategy part. To help users and product to acheive their goals is crucial for user retention and hence profitable for business. Making process efficient faster and have a differentiator  which could result into revenue growth. Based on the user research managing the project assets which could be reuse and repurpose and improve collaboration was the must haves for users. To marry both of these I came up with the strategy below.",
+        "\n",
       businessGoals: [
         "Provide a feature to stand out amongst competitors",
         "Make product strong",
