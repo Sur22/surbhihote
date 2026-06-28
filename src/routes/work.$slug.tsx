@@ -267,6 +267,10 @@ function CaseStudyPage() {
           </div>
         )}
 
+        {c.slug === "atlas" && (
+          <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+        )}
+
         {/* Survey */}
         {c.slug === "solace" && (
           <div className="mt-16">
