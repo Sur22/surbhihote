@@ -997,7 +997,18 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          Click here to watch a short video.
+          {c.slug === "atlas" ? (
+            <a
+              href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-medium"
+            >
+              Click here to watch a short video.
+            </a>
+          ) : (
+            "Click here to watch a short video."
+          )}
         </p>
       </section>
 
