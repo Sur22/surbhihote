@@ -997,7 +997,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          Placeholder paragraph describing the final design outcomes and key improvements delivered in this case study.
+          Click here to watch a short video.
         </p>
       </section>
 
