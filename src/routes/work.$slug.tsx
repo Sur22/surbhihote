@@ -695,6 +695,19 @@ Every product could have customized stages. Overall there were 35+ types of noti
               loading="lazy"
             />
           </button>
+        ) : c.slug === "atlas" ? (
+          <button
+            type="button"
+            onClick={() => setZoomImg(notificationsWireframe.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+          >
+            <img
+              src={notificationsWireframe.url}
+              alt="Notifications wireframe"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
         ) : (
           <div className="flex flex-row gap-4 overflow-x-auto pb-2">
             {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
