@@ -193,10 +193,10 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications{"\u00a0"}
-                1.Users getting so many spam notifications{"\u00a0"}
-                2.Important notifications for there job getting lost resulting into delays and missed dedlines
-                3.Users need only selective set of notifications which are important for their job responsibilities{"\u00a0"}
+                {`Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications
+ \u00a01.Users getting so many spam notifications
+ \u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
+ \u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
               </p>
             </div>
           )}
