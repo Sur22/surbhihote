@@ -872,28 +872,30 @@ Every product could have customized stages. Overall there were 35+ types of noti
           {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in details. Below is the flow to show from various places you can start and access the design studio and edit the Tech Pack." : c.slug === "atlas" ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
         </p>
 
-        <Carousel opts={{ loop: true }} className="relative">
-          <CarouselContent>
-            {[userFlow1, userFlow2, userFlow3].map((img, i) => (
-              <CarouselItem key={i}>
-                <button
-                  type="button"
-                  onClick={() => setZoomImg(img.url)}
-                  className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
-                >
-                  <img
-                    src={img.url}
-                    alt={`User flow ${i + 1}`}
-                    className="w-full h-auto object-contain"
-                    loading="lazy"
-                  />
-                </button>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
+        {c.slug !== "atlas" && (
+          <Carousel opts={{ loop: true }} className="relative">
+            <CarouselContent>
+              {[userFlow1, userFlow2, userFlow3].map((img, i) => (
+                <CarouselItem key={i}>
+                  <button
+                    type="button"
+                    onClick={() => setZoomImg(img.url)}
+                    className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+                  >
+                    <img
+                      src={img.url}
+                      alt={`User flow ${i + 1}`}
+                      className="w-full h-auto object-contain"
+                      loading="lazy"
+                    />
+                  </button>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        )}
       </section>
         </>
       )}
