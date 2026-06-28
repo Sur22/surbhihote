@@ -180,7 +180,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section id="overview" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 pb-24 scroll-mt-24">
+      <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${c.slug === "atlas" ? "pb-0" : "pb-24"}`}>
         <div className="space-y-16">
           <div>
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Overview</h2>
