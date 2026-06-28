@@ -208,11 +208,6 @@ function CaseStudyPage() {
                 : <p className="whitespace-pre-line">{c.goal}</p>
               }
             </div>
-            {c.slug === "atlas" && (
-              <div className="mt-10 overflow-hidden rounded-sm">
-                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -388,6 +383,12 @@ in all these there comments for communication between the staff handling the pro
 Every product could have customized stages. Overall there were 35+ types of notifications on the platform. `
             : "This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop."}
         </p>
+
+        {c.slug === "atlas" && (
+          <div className="mt-10 mb-12 overflow-hidden rounded-sm">
+            <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
+          </div>
+        )}
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
