@@ -685,8 +685,8 @@ function CaseStudyPage() {
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : "Brainstorming session with product team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback.</p>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : c.slug === "atlas" ? "User Task Flow" : "Brainstorming session with product team"}</h2>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">{c.slug === "atlas" ? "To map out the user journeys for notification management, I created detailed task flows covering subscription, unsubscription, and company- and product-level preferences. These flows informed the interaction model and ensured that every path—whether initiated from the notifications panel, manage links, or profile settings—led to a consistent confirmation and clear next state." : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
         {c.slug === "fjord2" ? (
           <button
             type="button"
@@ -694,6 +694,14 @@ function CaseStudyPage() {
             className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
           >
             <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+          </button>
+        ) : c.slug === "atlas" ? (
+          <button
+            type="button"
+            onClick={() => setZoomImg(atlasTaskFlow.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
+          >
+            <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
           </button>
         ) : (
           <button
