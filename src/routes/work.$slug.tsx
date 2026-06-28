@@ -52,6 +52,7 @@ import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import atlasStrategyDiagram from "@/assets/atlas-strategy-diagram.png.asset.json";
+import atlasTaskFlow from "@/assets/atlas-task-flow.png.asset.json";
 import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
 import fjord2InitialDesign from "@/assets/fjord2-initial-design.png.asset.json";
