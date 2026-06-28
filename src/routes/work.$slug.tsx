@@ -1025,7 +1025,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       )}
 
       {c.slug === "atlas" && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-12">
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Test Findings</h3>
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
