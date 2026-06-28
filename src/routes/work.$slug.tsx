@@ -989,7 +989,7 @@ function CaseStudyPage() {
           <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          {"\n"}
+          Placeholder paragraph describing the final design outcomes and key improvements delivered in this case study.
         </p>
       </section>
 
