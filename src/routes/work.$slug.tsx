@@ -738,7 +738,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
         )}
       </section>
 
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      {c.slug !== "atlas" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {c.slug === "fjord2" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
@@ -805,7 +807,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {"\n"}
         </p>
-        {c.slug !== "fjord2" && (
+        {c.slug !== "fjord2" && c.slug !== "atlas" && (
           <>
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
