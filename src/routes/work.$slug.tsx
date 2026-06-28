@@ -841,7 +841,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {/* Workflow */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
-          {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "" : "User Groups"}
+          {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "\n" : "User Groups"}
         </h2>
         <button
           type="button"
