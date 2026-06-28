@@ -857,7 +857,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
             : (c.slug === "atlas" 
-                ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and specific to\u00a0 their job profile\u00a0\n1.\u00a0 Provide different user types ability to pick and choose the notifications that are important to get there job done\n2. Serve users ability to choose the notifications that they would like to receive per company/product/stage\n3.\u00a0 Allow users ability to switch on/off notifications at any point of time\n4. Ability to create a notification template (for web only)\n\n\n"
+                ? "\n\n\n"
                 : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
           }
         </div>
