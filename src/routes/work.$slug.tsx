@@ -32,6 +32,7 @@ import sketchImg1 from "@/assets/techpack-sketch-1.jpg.asset.json";
 import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
 import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
 import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
+import notificationsWireframe from "@/assets/notifications-wireframe.png.asset.json";
 import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
 import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
 import finalLibrary from "@/assets/tecpack_library.png.asset.json";
@@ -690,6 +691,19 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <img
               src={affiliateSitemap.url}
               alt="Affiliate website sitemap"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
+        ) : c.slug === "atlas" ? (
+          <button
+            type="button"
+            onClick={() => setZoomImg(notificationsWireframe.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+          >
+            <img
+              src={notificationsWireframe.url}
+              alt="Notifications wireframe"
               className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
               loading="lazy"
             />
