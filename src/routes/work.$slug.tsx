@@ -189,6 +189,14 @@ function CaseStudyPage() {
                 : c.overview}
             </p>
           </div>
+          {c.slug === "atlas" && (
+            <div>
+              <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                Placeholder paragraph describing the core problem this case study addresses.
+              </p>
+            </div>
+          )}
           <div>
             <h2 className="font-serif text-3xl mb-6 font-medium">{c.slug === "fjord2" ? "Intoduction" : "Goal"}</h2>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
