@@ -961,6 +961,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </>
       )}
 
+      {c.slug === "atlas" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
       {c.slug !== "fjord2" && (
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
