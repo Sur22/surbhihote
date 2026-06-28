@@ -876,18 +876,20 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
           {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "\n" : "User Groups"}
         </h2>
-        <button
-          type="button"
-          onClick={() => setZoomImg(userGroupsImg)}
-          className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
-        >
-          <img
-            src={userGroupsImg}
-            alt="Diagram showing user groups connected to the Techpack Editor feature"
-            className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-            loading="lazy"
-          />
-        </button>
+        {c.slug !== "atlas" && (
+          <button
+            type="button"
+            onClick={() => setZoomImg(userGroupsImg)}
+            className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+          >
+            <img
+              src={userGroupsImg}
+              alt="Diagram showing user groups connected to the Techpack Editor feature"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
+        )}
         <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
           {c.slug === "solace"
             ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
@@ -934,10 +936,6 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </section>
         </>
       )}
-
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
