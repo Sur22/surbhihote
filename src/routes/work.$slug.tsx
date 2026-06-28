@@ -634,7 +634,9 @@ function CaseStudyPage() {
         )}
       </section>
 
+      {c.slug !== "atlas" && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Initial Sketches */}
       <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
