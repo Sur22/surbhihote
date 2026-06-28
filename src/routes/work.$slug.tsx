@@ -967,7 +967,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://docs.google.com/document/d/1nvp5c2-HadCPWBBaYZvTyO92Wk0OiqTZ/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</span>
+              <span>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
