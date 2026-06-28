@@ -370,8 +370,8 @@ function CaseStudyPage() {
 
       {/* Strategy */}
       <section id="strategy" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || "Strategy"}</h2>
-        <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || (c.slug === "atlas" ? "\n" : "Strategy")}</h2>
+        <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || (c.slug === "atlas" ? "Design Strategy" : "Product Goals")}</h3>
 
         <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
           {c.slug === "atlas"
@@ -704,7 +704,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : c.slug === "atlas" ? "User Flow" : "Brainstorming session with product team"}</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : c.slug === "atlas" ? "\n" : "Brainstorming session with product team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{c.slug === "atlas" ? "As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0\n1. Sourcing Stage\n2. Pre- production Stage\n3. Production Stage\nin all these there comments for communication between the staff handling the project , Client and the factories.Apart from that the notification related to the files of the each stage file uploaded,\u00a0accepted or rejected etc. along with finance or billing.\u00a0\nEvery product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0 \u00a0\n\n\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
         {c.slug === "fjord2" ? (
           <button
@@ -841,7 +841,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {/* Workflow */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
-          {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "" : "User Groups"}
+          {c.slug === "solace" ? "Workflow" : c.slug === "atlas" ? "\n" : "User Groups"}
         </h2>
         <button
           type="button"
