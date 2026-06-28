@@ -807,9 +807,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </p>
         {c.slug !== "fjord2" && (
           <>
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">Including Engineering Early On</h3>
+            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.
+              {"\n"}
             </p>
             <div className="flex flex-row gap-4 overflow-x-auto pb-2">
               {[wireframeImg1, wireframeImg2].map((img, i) => (
