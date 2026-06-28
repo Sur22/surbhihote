@@ -377,14 +377,7 @@ function CaseStudyPage() {
 
         {c.slug !== "atlas" && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-            {c.slug === "atlas"
-              ? `As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0
-1. Sourcing Stage
-2. Pre- production Stage
-3. Production Stage
-in all these there comments for communication between the staff handling the project Client and the factories.Apart from that the notification related to the files of the each stage file uploaded, accepted or rejected etc. along with finance or billing.\u00a0
-Every product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0`
-              : "This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop."}
+            This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop.
           </p>
         )}
 
