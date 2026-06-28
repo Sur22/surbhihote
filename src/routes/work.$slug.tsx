@@ -381,11 +381,6 @@ function CaseStudyPage() {
           </p>
         )}
 
-        {c.slug === "atlas" && (
-          <div className="mt-10 mb-12 overflow-hidden rounded-sm">
-            <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
-          </div>
-        )}
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
@@ -411,12 +406,12 @@ function CaseStudyPage() {
           />
         )}
 
-        {c.slug !== "fjord2" && (
+        {c.slug !== "fjord2" && c.slug !== "atlas" && (
           <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
             <img
-              src={c.slug === "atlas" ? atlasStrategyDiagram.url : uxStrategyImg.url}
-              alt={c.slug === "atlas" ? "Notification hierarchy diagram showing all notifications branching into company, product development, and general notifications" : "UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"}
-              className={c.slug === "atlas" ? "w-full h-auto" : "w-[50.78%] h-auto"}
+              src={uxStrategyImg.url}
+              alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
+              className="w-[50.78%] h-auto"
             />
           </div>
         )}
