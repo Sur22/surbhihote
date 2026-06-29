@@ -15,6 +15,7 @@ import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
+import ampBg from "@/assets/amp-mockup-bg.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
