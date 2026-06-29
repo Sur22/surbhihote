@@ -13,7 +13,7 @@ import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
-import g6 from "@/assets/gallery-6.jpg";
+import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
