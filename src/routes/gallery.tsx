@@ -17,6 +17,7 @@ import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 import ampBg from "@/assets/amp-mockup-bg.png.asset.json";
+import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -100,11 +101,17 @@ function GalleryPage() {
             <div
               className={cn(
                 "overflow-hidden shadow-xl",
-                it.title === "Data Visualization" ? "bg-cover bg-center bg-no-repeat" : "bg-secondary"
+                it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
+                  ? "bg-cover bg-center bg-no-repeat"
+                  : "bg-secondary"
               )}
               style={{
                 borderRadius: "2.4%",
-                ...(it.title === "Data Visualization" ? { backgroundImage: `url(${ampBg.url})` } : {}),
+                ...(it.title === "Data Visualization"
+                  ? { backgroundImage: `url(${ampBg.url})` }
+                  : it.title === "GSN Marketplace - A white label e-com for clients  "
+                    ? { backgroundImage: `url(${gridBg.url})` }
+                    : {}),
               }}
             >
               {"images" in it ? (
