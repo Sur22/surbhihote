@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { caseStudies } from "@/lib/case-studies";
@@ -15,6 +16,7 @@ import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
+import ampBg from "@/assets/amp-mockup-bg.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -95,7 +97,16 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden bg-secondary shadow-xl" style={{ borderRadius: "2.4%" }}>
+            <div
+              className={cn(
+                "overflow-hidden shadow-xl",
+                it.title === "Data Visualization" ? "bg-cover bg-center bg-no-repeat" : "bg-secondary"
+              )}
+              style={{
+                borderRadius: "2.4%",
+                ...(it.title === "Data Visualization" ? { backgroundImage: `url(${ampBg.url})` } : {}),
+              }}
+            >
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
