@@ -102,7 +102,7 @@ function IndexPage() {
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
                 <a href="/resume.pdf" download>
-                  <Download /> Resume
+                  <Download /> Let's Connect
                 </a>
               </Button>
             </div>
