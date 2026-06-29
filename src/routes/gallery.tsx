@@ -109,17 +109,20 @@ function GalleryPage() {
             <div
               className={cn(
                 "overflow-hidden shadow-xl",
-                it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
+                it.title === "Data Visualization" || 
+                it.title === "GSN Marketplace - A white label e-com for clients  " ||
+                it.title === "Dashboard- PLM & ERP "
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
-                it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28"
+                it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
+                it.title === "Dashboard- PLM & ERP " && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  "
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard- PLM & ERP "
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : {}),
               }}
