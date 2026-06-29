@@ -61,7 +61,6 @@ const items = [
   },
   {
     images: [
-      { src: g4, alt: "GSN Marketplace — product grid" },
       { src: gsnMockup.url, alt: "GSN Marketplace — Suuchi mockup" },
     ],
     title: "GSN Marketplace - A white label e-com for clients  ",
