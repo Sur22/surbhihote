@@ -348,7 +348,7 @@ function CaseStudyPage() {
               ].map((persona) => (
                 <div
                   key={persona.name}
-                  className="rounded-xl border border-[#0068FF] dark:border-border bg-card text-card-foreground shadow p-6"
+                  className="rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6"
                 >
                   <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                     {persona.name}
