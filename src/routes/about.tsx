@@ -55,7 +55,7 @@ function AboutPage() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
-        <p className="eyebrow mb-8">About</p>
+        <p className="eyebrow mb-8">{"\n"}</p>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
           <div className="md:col-span-5 order-2 md:order-1">
             <div className="relative w-[85%] mx-auto">
