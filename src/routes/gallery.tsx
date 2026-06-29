@@ -112,7 +112,8 @@ function GalleryPage() {
                 "overflow-hidden shadow-xl",
                 it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
                   ? "bg-cover bg-center bg-no-repeat"
-                  : "bg-secondary"
+                  : "bg-secondary",
+                it.title === "Data Visualization" && "py-12"
               )}
               style={{
                 borderRadius: "2.4%",
