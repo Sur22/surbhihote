@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
-import heroPortrait from "@/assets/hero-portrait-cropped.png";
+
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
@@ -71,27 +71,8 @@ function IndexPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
-        <div className="grid md:grid-cols-12 gap-10 items-start">
-          <div className="md:col-span-5 md:order-1">
-            <div className="relative w-full mx-auto md:mx-0 mt-8" style={{ maxWidth: "16.3rem" }}>
-              <div
-                aria-hidden
-                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
-                style={{ transform: "rotate(10deg)" }}
-              >
-              </div>
-              <div className="relative overflow-hidden rounded-[5%] w-full border border-foreground/40">
-                <img
-                  src={heroPortrait}
-                  alt="Surbhi Hote"
-                  width={800}
-                  height={1000}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="md:col-span-7 md:order-2 font-serif md:text-5xl text-6xl">
+        <div>
+          <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">DESIGNER WITH A TECHNICAL EDGE</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
               Hi, I'm <em className="text-accent">Surbhi</em>.
