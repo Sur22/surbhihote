@@ -139,7 +139,8 @@ function GalleryPage() {
                       className={cn(
                         "h-auto object-contain",
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
-                        it.title === "Dashboard- PLM & ERP "
+                        it.title === "Dashboard- PLM & ERP " ||
+                        it.title === "Data Visualization"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
