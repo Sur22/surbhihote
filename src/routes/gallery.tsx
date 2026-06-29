@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { caseStudies } from "@/lib/case-studies";
 import {
@@ -61,7 +61,6 @@ const items = [
   },
   {
     images: [
-      { src: g4, alt: "GSN Marketplace — product grid" },
       { src: gsnMockup.url, alt: "GSN Marketplace — Suuchi mockup" },
     ],
     title: "GSN Marketplace - A white label e-com for clients  ",
