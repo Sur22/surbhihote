@@ -1,6 +1,7 @@
 import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
+import notificationBanner from "@/assets/notification-banner.png.asset.json";
 
 export type CaseStudy = {
   slug: "fjord" | "solace" | "atlas" | "atlas2" | "fjord2";
@@ -306,7 +307,7 @@ export const caseStudies: CaseStudy[] = [
     },
     role: "Design Lead",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
-    cover: atlas.url,
+    cover: notificationBanner.url,
     summary:
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
     problem:
