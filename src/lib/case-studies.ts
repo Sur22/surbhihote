@@ -3,7 +3,7 @@ import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 
 export type CaseStudy = {
-  slug: "fjord" | "solace" | "atlas" | "fjord2" | "fjord3";
+  slug: "fjord" | "solace" | "atlas" | "atlas2" | "fjord2";
   index: string;
   title: string;
   subtitle: string;
