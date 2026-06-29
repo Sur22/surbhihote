@@ -18,6 +18,10 @@ import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 import ampBg from "@/assets/amp-mockup-bg.png.asset.json";
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
+import dataViz1 from "@/assets/data-viz-1.png.asset.json";
+import dataViz2 from "@/assets/data-viz-2.png.asset.json";
+import dataViz3 from "@/assets/data-viz-3.png.asset.json";
+import dataViz4 from "@/assets/data-viz-4.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -45,7 +49,12 @@ const items = [
     body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
-    src: g6.url,
+    images: [
+      { src: dataViz1.url, alt: "Data Visualization — mockup 1" },
+      { src: dataViz2.url, alt: "Data Visualization — mockup 2" },
+      { src: dataViz3.url, alt: "Data Visualization — mockup 3" },
+      { src: dataViz4.url, alt: "Data Visualization — mockup 4" },
+    ],
     title: "Data Visualization",
     tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMACE "],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
