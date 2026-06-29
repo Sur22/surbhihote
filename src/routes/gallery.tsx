@@ -68,7 +68,7 @@ const items = [
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
-    src: g5.url,
+    images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
     title: "Dashboard- PLM & ERP ",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
@@ -109,17 +109,20 @@ function GalleryPage() {
             <div
               className={cn(
                 "overflow-hidden shadow-xl",
-                it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
+                it.title === "Data Visualization" || 
+                it.title === "GSN Marketplace - A white label e-com for clients  " ||
+                it.title === "Dashboard- PLM & ERP "
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
-                it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28"
+                it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
+                it.title === "Dashboard- PLM & ERP " && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  "
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard- PLM & ERP "
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : {}),
               }}
