@@ -68,7 +68,7 @@ const items = [
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
-    src: g5.url,
+    images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
     title: "Dashboard- PLM & ERP ",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
