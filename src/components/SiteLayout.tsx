@@ -116,7 +116,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </p>
 
           <p className="text-sm text-muted-foreground whitespace-pre-line">
-            {"\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Vibe Coded With\n\n© 2026 Surbhi Hote. All rights reserved."}
+            {"\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Vibe Coded With ❤️ 🍜 🍵\n\n© 2026 Surbhi Hote. All rights reserved."}
           </p>
         </div>
       </footer>
