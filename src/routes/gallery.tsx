@@ -13,7 +13,7 @@ import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
-import g6 from "@/assets/gallery-6.jpg";
+import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
@@ -42,7 +42,7 @@ const items = [
     body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
-    src: g6,
+    src: g6.url,
     title: "Data Visualization",
     tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMACE "],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
