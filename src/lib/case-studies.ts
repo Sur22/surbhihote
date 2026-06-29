@@ -213,69 +213,6 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "atlas2",
-    index: "05",
-    title: "Grid Mobile app (Copy)",
-    subtitle: "Product Manufacturing Management and Tracking.",
-    client: "Atlas, NYC",
-    year: "2024",
-    ...defaultMeta,
-    research: {
-      ...defaultMeta.research,
-      userInterviewInsights: [
-        {
-          quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."',
-          author: "Client",
-        },
-        {
-          quote: '"Once I missed out on an important notification and as a result the product got delayed."',
-          author: "Production Manager",
-        },
-        {
-          quote: '"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming."',
-          author: "Product Development Manager",
-        },
-        {
-          quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"',
-          author: "Company Account Manager",
-        },
-      ],
-    },
-    role: "Design Lead",
-    tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
-    cover: atlas.url,
-    summary:
-      "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
-    problem:
-      "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
-    approach: [
-      "Killed the two-panel layout. Map and list now share one scroll surface that responds to zoom.",
-      "Designed 'pinch-to-day' — a gesture that collapses the map to a calendar strip and back.",
-      "Built a kit of 9 itinerary blocks (meal, transit, stay, note…) that snap to the map.",
-      "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
-    ],
-    outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-49%" },
-      { label: "Client Satisfaction Rate Increased ", value: "40% → 56%" },
-      { label: "Reduced Missed Notification", value: "−88%" },
-      { label: "Beta NPS", value: "71" },
-    ],
-    sections: [
-      {
-        heading: "One surface",
-        body: "The single biggest fix was geometric. Map and itinerary had been two panels arguing for attention. We collapsed them into one continuous canvas — the map IS the document, the pins ARE the list. Suddenly planning felt like sketching on a napkin again.",
-      },
-      {
-        heading: "Pinch-to-day",
-        body: "A single gesture switches the canvas between geographic and chronological views. Pinch in: you see the trip on a map. Pinch out: you see it on a calendar. Same content, two lenses. We prototyped this in Origami before committing — gesture work doesn't survive being mocked up in Figma.",
-      },
-      {
-        heading: "Snap blocks",
-        body: "9 itinerary block types — meal, stay, transit, note, photo, link, ticket, day-header, free-time. Each snaps to a pin and inherits its color. The constraint kept the surface clean and let us avoid building a form-builder.",
-      },
-    ],
-  },
-  {
     slug: "solace",
     index: "03",
     title: "Grid Website",
