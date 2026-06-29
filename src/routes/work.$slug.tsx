@@ -202,7 +202,7 @@ function CaseStudyPage() {
             </div>
           )}
           <div>
-            <h2 className="font-serif text-3xl mb-6 font-medium">{c.slug === "fjord2" ? "Intoduction" : "Goal"}</h2>
+            <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord2" || c.slug === "fjord3") ? "Intoduction" : "Goal"}</h2>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "solace"
                 ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.\u00a0\u00a0\u00a0\u00a0 Provide different user types ability to pick and choose the notifications that they would like to receive\n2.\u00a0\u00a0\u00a0\u00a0 Serve users ability to choose the notifications that they would like to receive per module and per product\n3.\u00a0\u00a0\u00a0\u00a0 Allow users ability to switch on/off notifications at any point of time\n"
@@ -229,12 +229,12 @@ function CaseStudyPage() {
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {c.slug === "fjord2" ? "1. Quantitative Research - Survey" : "User Interview"}
+              {(c.slug === "fjord2" || c.slug === "fjord3") ? "1. Quantitative Research - Survey" : "User Interview"}
             </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
             </p>
-            {c.slug === "fjord2" && (
+            {(c.slug === "fjord2" || c.slug === "fjord3") && (
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {affiliateSurveyImages.map((img, i) => (
                   <button
@@ -251,7 +251,7 @@ function CaseStudyPage() {
           </div>
         </div>
 
-        {c.slug !== "fjord2" && (
+        {(c.slug !== "fjord2" && c.slug !== "fjord3") && (
           <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
             <h3 className ="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
             <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
@@ -413,7 +413,7 @@ function CaseStudyPage() {
           />
         )}
 
-        {c.slug !== "fjord2" && c.slug !== "atlas" && (
+        {(c.slug !== "fjord2" && c.slug !== "fjord3") && c.slug !== "atlas" && (
           <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={uxStrategyImg.url}
@@ -423,7 +423,7 @@ function CaseStudyPage() {
           </div>
         )}
 
-        {c.slug === "fjord2" && (
+        {(c.slug === "fjord2" || c.slug === "fjord3") && (
           <>
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
@@ -673,17 +673,17 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </>
         )}
         <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
-          {c.slug === "fjord2" ? "Sitemap" : c.slug === "atlas" ? "Mid-Fidelity Wireframes" : "Initial sketch"}
+          {(c.slug === "fjord2" || c.slug === "fjord3") ? "Sitemap" : c.slug === "atlas" ? "Mid-Fidelity Wireframes" : "Initial sketch"}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-          {c.slug === "fjord2" 
+          {(c.slug === "fjord2" || c.slug === "fjord3") 
             ? "I started by creating a sitemap to understand exactly how many screens needs to be redesigned and also to make sure I do not miss any of the screens form the websited.\u00a0"
             : c.slug === "atlas"
             ? "To validate the design if they are meeting the needs of the user. Solving solution tot their pain points and if design is usable i made mid feudality wireframes."
             : "I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory"
           }
         </p>
-        {c.slug !== "fjord2" && c.slug !== "atlas" && (
+        {(c.slug !== "fjord2" && c.slug !== "fjord3") && c.slug !== "atlas" && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
@@ -691,14 +691,14 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          {c.slug === "fjord2"
+          {(c.slug === "fjord2" || c.slug === "fjord3")
             ? "I started with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
             : c.slug === "atlas"
             ? "Reviewing designs with developers and\u00a0 CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs."
             : "To understand the details to get started with the initial sketches and get some inputs from users."
           }
         </p>
-        {c.slug === "fjord2" ? (
+        {(c.slug === "fjord2" || c.slug === "fjord3") ? (
           <button
             type="button"
             onClick={() => setZoomImg(affiliateSitemap.url)}
@@ -749,9 +749,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Brainstorming */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{c.slug === "fjord2" ? "Initial Design" : c.slug === "atlas" ? "User Flow" : "Brainstorming session with product team"}</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{(c.slug === "fjord2" || c.slug === "fjord3") ? "Initial Design" : c.slug === "atlas" ? "User Flow" : "Brainstorming session with product team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{c.slug === "atlas" ? "As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0\n1. Sourcing Stage\n2. Pre- production Stage\n3. Production Stage\nin all these there comments for communication between the staff handling the project , Client and the factories.Apart from that the notification related to the files of the each stage file uploaded,\u00a0accepted or rejected etc. along with finance or billing.\u00a0\nEvery product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0 \u00a0\n\n\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
-        {c.slug === "fjord2" ? (
+        {(c.slug === "fjord2" || c.slug === "fjord3") ? (
           <button
             type="button"
             onClick={() => setZoomImg(fjord2InitialDesign.url)}
@@ -787,7 +787,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {c.slug === "fjord2" && (
+      {(c.slug === "fjord2" || c.slug === "fjord3") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
@@ -855,7 +855,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {"\n"}
         </p>
-        {c.slug !== "fjord2" && (
+        {(c.slug !== "fjord2" && c.slug !== "fjord3") && (
           <>
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
@@ -887,7 +887,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {c.slug !== "fjord2" && (
+      {(c.slug !== "fjord2" && c.slug !== "fjord3") && (
         <>
       {/* Workflow */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24" style={{ display: c.slug === "atlas" ? "none" : undefined }}>
@@ -969,7 +969,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {c.slug !== "fjord2" && (
+      {(c.slug !== "fjord2" && c.slug !== "fjord3") && (
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
 
@@ -1066,7 +1066,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                   { src: notificationsMockup.url, label: "Notifications mockup" },
                   { src: notificationsProto.url, label: "Updated notification design" },
                 ]
-              : c.slug === "fjord2"
+              : (c.slug === "fjord2" || c.slug === "fjord3")
               ? [
                   { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
                   { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
