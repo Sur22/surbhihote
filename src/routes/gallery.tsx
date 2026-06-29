@@ -112,7 +112,8 @@ function GalleryPage() {
                 it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
-                it.title === "Data Visualization" && "py-12"
+                it.title === "Data Visualization" && "py-12",
+                it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
