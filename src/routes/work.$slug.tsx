@@ -1005,22 +1005,24 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
           </ul>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { label: "Test Completion Rate", value: "100%" },
-              { label: "Error-free rate", value: "90%" },
-              { label: "Solving the problem?", value: "Yes" },
-            ].map((s) => (
-              <div
-                key={s.label}
-                className="rounded-lg border border-border bg-card px-8 py-10 text-center shadow-sm"
-              >
-                <p className="text-lg font-bold text-foreground">
-                  {s.label}: <span>{s.value}</span>
-                </p>
-              </div>
-            ))}
-          </div>
+          {c.slug !== "solace" && (
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { label: "Test Completion Rate", value: "100%" },
+                { label: "Error-free rate", value: "90%" },
+                { label: "Solving the problem?", value: "Yes" },
+              ].map((s) => (
+                <div
+                  key={s.label}
+                  className="rounded-lg border border-border bg-card px-8 py-10 text-center shadow-sm"
+                >
+                  <p className="text-lg font-bold text-foreground">
+                    {s.label}: <span>{s.value}</span>
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
