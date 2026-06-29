@@ -341,7 +341,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "atlas2",
     index: "05",
-    title: "Grid Mobile app (Copy)",
+    title: "Redesign Product Page\u00a0",
     subtitle: "Product Manufacturing Management and Tracking.",
     client: "Atlas, NYC",
     year: "2024",
