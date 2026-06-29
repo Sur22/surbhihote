@@ -95,7 +95,7 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "4%" }}>
+            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "2.4%" }}>
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
