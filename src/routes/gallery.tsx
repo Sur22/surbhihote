@@ -96,7 +96,16 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden bg-secondary shadow-xl" style={{ borderRadius: "2.4%" }}>
+            <div
+              className={cn(
+                "overflow-hidden shadow-xl",
+                it.title === "Data Visualization" ? "bg-cover bg-center bg-no-repeat" : "bg-secondary"
+              )}
+              style={{
+                borderRadius: "2.4%",
+                ...(it.title === "Data Visualization" ? { backgroundImage: `url(${ampBg.url})` } : {}),
+              }}
+            >
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
