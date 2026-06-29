@@ -101,11 +101,17 @@ function GalleryPage() {
             <div
               className={cn(
                 "overflow-hidden shadow-xl",
-                it.title === "Data Visualization" ? "bg-cover bg-center bg-no-repeat" : "bg-secondary"
+                it.title === "Data Visualization" || it.title === "GSN Marketplace - A white label e-com for clients  "
+                  ? "bg-cover bg-center bg-no-repeat"
+                  : "bg-secondary"
               )}
               style={{
                 borderRadius: "2.4%",
-                ...(it.title === "Data Visualization" ? { backgroundImage: `url(${ampBg.url})` } : {}),
+                ...(it.title === "Data Visualization"
+                  ? { backgroundImage: `url(${ampBg.url})` }
+                  : it.title === "GSN Marketplace - A white label e-com for clients  "
+                    ? { backgroundImage: `url(${gridBg.url})` }
+                    : {}),
               }}
             >
               {"images" in it ? (
