@@ -69,7 +69,7 @@ function GalleryPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-10 md:pt-16 pb-16 md:pb-24">
-        <div className="overflow-hidden rounded-sm bg-secondary">
+        <div className="overflow-hidden rounded-sm bg-secondary shadow-xl">
           <img
             src={g1}
             alt="Gallery hero — studio archive"
@@ -95,7 +95,7 @@ function GalleryPage() {
               </div>
               <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
             </div>
-            <div className="overflow-hidden bg-secondary" style={{ borderRadius: "2.4%" }}>
+            <div className="overflow-hidden bg-secondary shadow-xl" style={{ borderRadius: "2.4%" }}>
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
