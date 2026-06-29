@@ -45,8 +45,8 @@ export type CaseStudy = {
 
 const defaultMeta = {
   role: "UI/UX Designer",
-  timeframe: "2 Weeks",
-  tools: "Pen and Paper, Adobe XD, Miro, Confluence, JIRA",
+  timeframe: "1 Weeks",
+  tools: "Adobe XD, Miro, Confluence, JIRA",
   tasksPerformed:
     "End to End Design, User Research, UI Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
   overview:
