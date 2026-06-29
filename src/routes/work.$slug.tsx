@@ -663,7 +663,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <div className="mt-10 mb-12 overflow-hidden rounded-sm">
               <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
             </div>
-            <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
+            <div className="rounded-sm p-6 md:p-10 flex justify-center">
               <img
                 src={atlasStrategyDiagram.url}
                 alt="Notification hierarchy diagram showing all notifications branching into company, product development, and general notifications"
@@ -763,7 +763,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <button
             type="button"
             onClick={() => setZoomImg(atlasTaskFlow.url)}
-            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
+            className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
           >
             <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
           </button>
