@@ -849,37 +849,33 @@ Every product could have customized stages. Overall there were 35+ types of noti
       )}
 
       {/* Challenges */}
-      {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2") && (
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{"\n"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {"\n"}
         </p>
-        {(c.slug !== "fjord2") && (
-          <>
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              {"\n"}
-            </p>
-            <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-              {[wireframeImg1, wireframeImg2].map((img, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => setZoomImg(img)}
-                  className="group flex-shrink-0 w-[45%] min-w-[180px] overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
-                >
-                  <img
-                    src={img}
-                    alt={`Mid fidelity wireframe ${i + 1}`}
-                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                    loading="lazy"
-                  />
-                </button>
-              ))}
-            </div>
-          </>
-        )}
+        <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+          {"\n"}
+        </p>
+        <div className="flex flex-row gap-4 overflow-x-auto pb-2">
+          {[wireframeImg1, wireframeImg2].map((img, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setZoomImg(img)}
+              className="group flex-shrink-0 w-[45%] min-w-[180px] overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"
+            >
+              <img
+                src={img}
+                alt={`Mid fidelity wireframe ${i + 1}`}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
+          ))}
+        </div>
       </section>
       )}
 
