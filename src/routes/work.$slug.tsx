@@ -462,8 +462,8 @@ function CaseStudyPage() {
                     },
                     {
                       name: "Political & Markets Yeild Team\u00a0 (ERC)",
-                      usage: 2,
-                      dependency: 2,
+                      usage: 4,
+                      dependency: 4,
                       goals: [
                         "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
                       ],
