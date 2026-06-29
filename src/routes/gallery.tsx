@@ -42,7 +42,7 @@ const items = [
     body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
-    src: g6,
+    src: g6.url,
     title: "Data Visualization",
     tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMACE "],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
