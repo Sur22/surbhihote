@@ -414,7 +414,7 @@ function CaseStudyPage() {
         )}
 
         {(c.slug !== "fjord2") && (c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
+          <div className={`${c.slug === "solace" ? "" : "bg-secondary"} rounded-sm p-6 md:p-10 flex justify-center`}>
             <img
               src={uxStrategyImg.url}
               alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
@@ -898,7 +898,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <button
             type="button"
             onClick={() => setZoomImg(userGroupsImg)}
-            className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
+            className={`group block w-[60%] mx-auto overflow-hidden rounded-sm border-border ${c.slug === "solace" ? "" : "bg-secondary"} p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0`}
           >
             <img
               src={userGroupsImg}
@@ -1122,7 +1122,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {c.slug === "solace" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10">
-          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
+          <div className="rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
