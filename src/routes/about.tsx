@@ -86,7 +86,7 @@ function AboutPage() {
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
                 <a href="/resume.pdf" download>
-                  <Download /> Let's Connect&nbsp;
+                  <Download /> Let's Connect
                 </a>
               </Button>
             </div>
