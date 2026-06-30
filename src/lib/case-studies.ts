@@ -322,7 +322,7 @@ const _caseStudies: CaseStudy[] = [
       { label: "Reduction in Missed  Deadlines", value: "-48%" },
       { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
       { label: "Reduced Missed Notification", value: "−87%" },
-      { label: "Beta NPS", value: "71" },
+      { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
       {
@@ -385,7 +385,7 @@ const _caseStudies: CaseStudy[] = [
       { label: "Reduction in Missed  Deadlines", value: "-48%" },
       { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
       { label: "Reduced Missed Notification", value: "−87%" },
-      { label: "Beta NPS", value: "71" },
+      { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
       {
