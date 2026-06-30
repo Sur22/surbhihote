@@ -319,9 +319,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-49%" },
-      { label: "Client Satisfaction Rate Increased ", value: "40% → 56%" },
-      { label: "Reduced Missed Notification", value: "−88%" },
+      { label: "Reduction in Missed  Deadlines", value: "-48%" },
+      { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
+      { label: "Reduced Missed Notification", value: "−87%" },
       { label: "Beta NPS", value: "71" },
     ],
     sections: [
@@ -382,9 +382,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-49%" },
-      { label: "Client Satisfaction Rate Increased ", value: "40% → 56%" },
-      { label: "Reduced Missed Notification", value: "−88%" },
+      { label: "Reduction in Missed  Deadlines", value: "-48%" },
+      { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
+      { label: "Reduced Missed Notification", value: "−87%" },
       { label: "Beta NPS", value: "71" },
     ],
     sections: [
