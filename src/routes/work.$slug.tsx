@@ -326,7 +326,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
+                  name: "Technical / Fashion Designer\u200b",
                   goals: [
                     "Create detailed sketches and CAD designs efficiently",
                     "Organize materials, trims, and labels in one place",
