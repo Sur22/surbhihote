@@ -9,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import {
   Table,
@@ -946,8 +944,6 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
           </Carousel>
         )}
       </section>
@@ -1099,8 +1095,6 @@ Every product could have customized stages. Overall there were 35+ types of noti
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
           {(c.slug === "atlas" || c.slug === "atlas2") ? (
