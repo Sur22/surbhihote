@@ -161,7 +161,7 @@ function CaseStudyPage() {
       {/* Cover */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="overflow-hidden rounded-sm">
-          <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "fjord2" ? "w-[85%] mx-auto" : "w-full"}`} />
+          <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "fjord2" ? "w-[72%] mx-auto" : "w-full"}`} />
         </div>
       </section>
 
