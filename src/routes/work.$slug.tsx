@@ -586,7 +586,7 @@ function CaseStudyPage() {
             <div className="mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Define success matrix</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Define success matrix section follow-up content.]
+                The final step was to define KPI's and how we will measure it. We came up with 5 KPI's which covers all the aspects of the project.{"\u00a0"}
               </p>
               <div className="flex justify-center">
                 <div className="w-full max-w-2xl">
