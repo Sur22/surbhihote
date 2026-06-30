@@ -85,8 +85,8 @@ function AboutPage() {
             </div>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
-                <a href="/resume.pdf" download>
-                  <Download /> Let's Connect
+                <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
+                  Let's Connect
                 </a>
               </Button>
             </div>
