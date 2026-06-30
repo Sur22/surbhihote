@@ -334,7 +334,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Politocal & Market Yield Team",
+                  name: "Client\u00a0",
                   goals: [
                     "Review and approve designs and techpacks in real time",
                     "Request changes and provide feedback directly on documents",
@@ -342,7 +342,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Admin / Super User",
+                  name: "Manufacturing Factory User",
                   goals: [
                     "Receive complete and accurate techpacks for production",
                     "Access BOMs, material specs, and design details easily",
