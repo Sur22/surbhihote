@@ -2,6 +2,7 @@ import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 import notificationBanner from "@/assets/notification-banner.png.asset.json";
+import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
   slug: "fjord" | "solace" | "atlas" | "atlas2" | "fjord2";
@@ -119,7 +120,7 @@ const _caseStudies: CaseStudy[] = [
     ...defaultMeta,
     role: "Lead Product Designer",
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
-    cover: fjord.url,
+    cover: audienceBuilderMockup.url,
     summary:
       "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
     problem:
