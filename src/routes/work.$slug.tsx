@@ -1069,8 +1069,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <CarouselContent>
             {((c.slug === "atlas" || c.slug === "atlas2")
               ? [
-                  { src: notificationsMockup.url, label: "Notifications mockup" },
-                  { src: notificationsProto.url, label: "Updated notification design" },
+                  { src: notificationsFinalScreens.url, label: "Final screens mockup" },
                 ]
               : (c.slug === "fjord2")
               ? [
