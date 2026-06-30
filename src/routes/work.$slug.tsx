@@ -660,8 +660,8 @@ function CaseStudyPage() {
 in all these there comments for communication between the staff handling the project Client and the factories.Apart from that the notification related to the files of the each stage file uploaded, accepted or rejected etc. along with finance or billing.\u00a0
 Every product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0`}
             </p>
-            <div className="mt-10 mb-12 overflow-hidden rounded-sm">
-              <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
+            <div className="mt-10 mb-12 overflow-hidden rounded-[8px]">
+              <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto rounded-[8px]" />
             </div>
             <div className="rounded-[8px] p-6 md:p-10 flex justify-center">
               <img
