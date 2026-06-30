@@ -1119,13 +1119,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
               </CarouselItem>
             ))}
           </CarouselContent>
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
-            <>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </>
-          )}
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
         </Carousel>
+
 
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
           {(c.slug === "atlas" || c.slug === "atlas2") && (
