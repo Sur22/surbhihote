@@ -326,7 +326,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
+                  name: "Technical / Fashion Designer\u200b",
                   goals: [
                     "Create detailed sketches and CAD designs efficiently",
                     "Organize materials, trims, and labels in one place",
@@ -334,7 +334,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Politocal & Market Yield Team",
+                  name: "Client\u00a0",
                   goals: [
                     "Review and approve designs and techpacks in real time",
                     "Request changes and provide feedback directly on documents",
@@ -342,7 +342,7 @@ function CaseStudyPage() {
                   ],
                 },
                 {
-                  name: "Admin / Super User",
+                  name: "Manufacturing Factory User",
                   goals: [
                     "Receive complete and accurate techpacks for production",
                     "Access BOMs, material specs, and design details easily",
