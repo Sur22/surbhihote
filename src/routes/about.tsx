@@ -85,8 +85,8 @@ function AboutPage() {
             </div>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
-                <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
-                  Let's Connect
+                <a href="https://drive.google.com/file/d/1eQoqLP73ekMFoeeHYQkh2yf0AL8ptpvW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  Resume
                 </a>
               </Button>
             </div>
