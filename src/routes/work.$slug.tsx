@@ -579,7 +579,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the su
+                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
             </div>
 
