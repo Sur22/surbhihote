@@ -69,6 +69,7 @@ import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
 import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
+import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -1068,8 +1069,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <CarouselContent>
             {((c.slug === "atlas" || c.slug === "atlas2")
               ? [
-                  { src: notificationsMockup.url, label: "Notifications mockup" },
-                  { src: notificationsProto.url, label: "Updated notification design" },
+                  { src: notificationsFinalScreens.url, label: "Final screens mockup" },
                 ]
               : (c.slug === "fjord2")
               ? [
