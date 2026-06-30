@@ -929,7 +929,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <Carousel opts={{ loop: true }} className="relative">
             <CarouselContent>
-              {(c.slug === "fjord" ? [audienceSegmentFlow, userFlow1, userFlow2, userFlow3] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
+              {(c.slug === "fjord" ? [audienceSegmentFlow] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
                 <CarouselItem key={i}>
                   <button
                     type="button"
