@@ -894,7 +894,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <button
             type="button"
             onClick={() => setZoomImg(userGroupsImg)}
-            className={`group block w-[60%] mx-auto overflow-hidden rounded-sm border-border ${c.slug === "solace" ? "" : "bg-secondary"} p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0`}
+            className={`group block w-[60%] mx-auto overflow-hidden rounded-sm border-border ${c.slug === "solace" ? "dark:bg-white" : "bg-secondary"} p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0`}
           >
             <img
               src={userGroupsImg}
