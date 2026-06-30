@@ -1099,10 +1099,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
               rel="noopener noreferrer"
               className="underline font-medium"
             >
-              Click here to watch a short video.
+              {"\n"}
             </a>
           ) : (
-            "Click here to watch a short video."
+            "\n"
           )}
         </p>
       </section>
