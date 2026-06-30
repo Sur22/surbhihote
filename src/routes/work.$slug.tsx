@@ -891,6 +891,13 @@ Every product could have customized stages. Overall there were 35+ types of noti
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {c.slug === "solace" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+          <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Review with Users, Product &amp; Engineering Team</h2>
+          <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">Placeholder paragraph for review with users, product and engineering team section.</p>
+        </section>
+      )}
+
       {(c.slug !== "fjord2") && (
         <>
       {/* Workflow */}
