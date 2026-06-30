@@ -639,7 +639,7 @@ function CaseStudyPage() {
                 <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                [Placeholder paragraph for The Team section follow-up content.]
+                We wrapped up the 1 and a half day workshop with a clear next steps and ready to initiate the design phase.
               </p>
             </div>
           </>
