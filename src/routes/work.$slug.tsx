@@ -1097,17 +1097,15 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </CarouselContent>
         </Carousel>
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
-          {(c.slug === "atlas" || c.slug === "atlas2") ? (
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
             <a
               href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline font-medium"
+              className="underline font-bold"
             >
-              {"\n"}
+              Click here to watch a short video{" "}
             </a>
-          ) : (
-            "\n"
           )}
         </p>
       </section>
