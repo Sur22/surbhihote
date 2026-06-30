@@ -221,7 +221,7 @@ function CaseStudyPage() {
         <div className="space-y-12">
           {c.slug === "solace" && (
             <div>
-              <h3 className="text-foreground/85 text-xl mb-4">Stakeholder Interview</h3>
+              <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Stakeholder Interview</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.research.stakeholderInterview}
               </p>
