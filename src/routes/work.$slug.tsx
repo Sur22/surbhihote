@@ -543,14 +543,14 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the su
+                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
             </div>
 
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Ideate</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Ideate section follow-up content.]
+                The Second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
               </p>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
@@ -561,7 +561,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the su
+                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
             </div>
 
@@ -579,7 +579,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the su
+                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
             </div>
 
