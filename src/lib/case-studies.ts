@@ -109,6 +109,9 @@ const defaultMeta = {
 };
 
 export const caseStudies: CaseStudy[] = [
+  // NOTE: case study 05 (slug: atlas2) is hidden from all listings
+].concat([
+  {
   {
     slug: "fjord",
     index: "01",
