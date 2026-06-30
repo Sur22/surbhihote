@@ -108,7 +108,7 @@ const defaultMeta = {
     "I  had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. with the help of whiteboard I showed product team what design I  have in my mind as a possible solution for the feature we are building.",
 };
 
-export const caseStudies: CaseStudy[] = [
+const _caseStudies: CaseStudy[] = [
   {
     slug: "fjord",
     index: "01",
@@ -403,6 +403,8 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
 ];
+
+export const caseStudies = _caseStudies.filter((c) => c.slug !== "atlas2");
 
 export const getCaseStudy = (slug: string) =>
   caseStudies.find((c) => c.slug === slug);
