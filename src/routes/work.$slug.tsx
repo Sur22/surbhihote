@@ -786,7 +786,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         {c.slug === "solace" && (
           <>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Low Fidelity Wireframes</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles. In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.</p>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles. In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.</p>
           </>
         )}
       </section>
