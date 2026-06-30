@@ -70,7 +70,7 @@ function IndexPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24">
+      <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24 min-h-screen">
         <div>
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">DESIGNER BEHIND THE CRAFT</p>
