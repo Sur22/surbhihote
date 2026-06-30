@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import heroBg from "@/assets/portfolio-hero-bg.png.asset.json";
+import heroBg from "@/assets/portfolio-hero-bg-new.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
