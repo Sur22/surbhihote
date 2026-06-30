@@ -193,10 +193,10 @@ const _caseStudies: CaseStudy[] = [
       "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
     ],
     outcome: [
-      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
-      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
-      { label: "Increase in speed and Efficiency", value: "26%" },
-      { label: "User Satisfaction", value: "+29%" },
+      { label: "Improved\u00a0", value: "-71%" },
+      { label: "Redadency Is elimeated\u00a0", value: "−41%" },
+      { label: "Usability Issues Fixed\u00a0", value: "26%" },
+      { label: "Improved Speed", value: "+29%" },
     ],
     sections: [
       {
