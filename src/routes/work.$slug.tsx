@@ -1104,7 +1104,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 ]
             ).map((img) => (
               <CarouselItem key={img.label}>
-                {(c.slug === "atlas" || c.slug === "atlas2") ? (
+                {(c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? (
                   <div
                     className="overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
                     style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
