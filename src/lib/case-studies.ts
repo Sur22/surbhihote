@@ -2,6 +2,7 @@ import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 import notificationBanner from "@/assets/notification-banner.png.asset.json";
+import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
   slug: "fjord" | "solace" | "atlas" | "atlas2" | "fjord2";
