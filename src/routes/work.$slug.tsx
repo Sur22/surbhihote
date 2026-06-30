@@ -806,12 +806,14 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {(c.slug === "fjord2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">2 .Qualitative Research - Focus Group</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-wrap">
                 I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
                 to see the list of question for focus group.{"\u00A0"}
-                <br />
-                We asked them to walk us through their day to day workflow and asked question along and ended the session by showing the initial mockups to get their feedback and understand if we are heading into the right direction.{"\u00A0"}
+                {"\n"}
+                We asked them to walk us through their day to day workflow and asked question along and ended the session by showing the initial mockups to get their feedback and understand if we are heading into the right direction.
+                {"\n"}
+                Many assumptions were ruled out after knowing their workflows{"\u00A0"}{"\u00A0"}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
