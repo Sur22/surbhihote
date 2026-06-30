@@ -51,6 +51,8 @@ import defineImg1 from "@/assets/affiliate-workshop-define-session.png.asset.jso
 import defineImg2 from "@/assets/affiliate-workshop-must-have-nice-to-have.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
+import userFlowSolace2 from "@/assets/techpack-user-flow-2-v2.png.asset.json";
+import userFlowSolace3 from "@/assets/techpack-user-flow-3-v2.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import atlasStrategyDiagram from "@/assets/atlas-strategy-diagram.png.asset.json";
 import atlasTaskFlow from "@/assets/atlas-task-flow.png.asset.json";
