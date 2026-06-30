@@ -638,6 +638,9 @@ function CaseStudyPage() {
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
+                [Placeholder paragraph for The Team section follow-up content.]
+              </p>
             </div>
           </>
         )}
