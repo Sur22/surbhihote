@@ -783,6 +783,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
             />
           </button>
         )}
+        {c.slug === "solace" && (
+          <>
+            <h3 className="font-serif text-3xl mb-4 mt-10 font-medium md:text-2xl">mid- fidelity wireframes</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">Placeholder paragraph for mid-fidelity wireframes section.</p>
+          </>
+        )}
       </section>
 
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace") && (
