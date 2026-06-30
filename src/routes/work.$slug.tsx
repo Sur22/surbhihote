@@ -70,6 +70,7 @@ import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
 import userControlBanner from "@/assets/user-control-banner.png.asset.json";
+import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
