@@ -256,10 +256,10 @@ const _caseStudies: CaseStudy[] = [
       "Partnered with the writers on tone-of-voice so the copy and the UI shipped as one thing.",
     ],
     outcome: [
-      { label: "Reduced Delays in Production", value: "-32%\u00a0" },
-      { label: "User Satisfaction\u00a0", value: "+9" },
-      { label: "Faster Workflow\u00a0", value: "+13%" },
-      { label: "Workflow Errors\u00a0", value: "-37%" },
+      { label: "Accounting Errors\u00a0", value: "-46%\u00a0" },
+      { label: "User Satisfaction\u00a0", value: "+11" },
+      { label: "Faster Workflow\u00a0", value: "+18%" },
+      { label: "Workflow Errors\u00a0", value: "-27%" },
     ],
     sections: [
       {
