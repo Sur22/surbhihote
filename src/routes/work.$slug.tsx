@@ -1119,7 +1119,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </section>
 
       {c.slug === "solace" && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10">
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10 mt-[50px] mb-[80px]">
           <div className="rounded-sm dark:bg-white p-6 md:p-10 flex justify-center">
             <img
               src={techpackOutcomeImg.url}
