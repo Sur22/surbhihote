@@ -579,7 +579,7 @@ function CaseStudyPage() {
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
+                The next step was to use Prioritization Matrix to understand the level of efforts and the impact of that particular card so we have clarity about which things needs to be worked on for this porject.{"\u00a0\u00a0"}
               </p>
             </div>
 
