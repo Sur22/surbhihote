@@ -1149,7 +1149,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
-            ? <>The first phase of the project is live and users have started using it.So far it is working smoothly and I am monitoring how users are interacting with the website using Microsoft Clarity and power BI Reports. We are going to send a feedback survey to understand users initial thoughts. Users are currently using both old and new websites as we wont sunset it{"\u00a0"} till we release the second phase of the project and make sure everything is working as expected.{"\u00a0"} {"\u00a0"}{"\u00a0"}</>
+            ? <>The first phase of the project is live. So far it is working smoothly and I am monitoring how users are interacting with the website using Microsoft Clarity and power BI Reports.The initial feedback after the release has been positive. Users are currently using both old and new websites as we wont sunset it{"\u00a0"} till we release the second phase of the project and make sure everything is working as expected.{"\u00a0"} {"\u00a0"}{"\u00a0"}</>
             : "I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories."}
         </p>
       </section>
