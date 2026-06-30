@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, Check } from "lucide-react";
+import { ArrowLeft, Check, TrendingUp } from "lucide-react";
 import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -1136,7 +1136,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
             <div key={o.label} className="border-t border-border pt-6">
-              {o.value && <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">{o.value}</p>}
+              {o.value && (
+                <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
+                  {o.value}
+                  {o.label.includes("User Satisfaction") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
+                </p>
+              )}
               <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
             </div>
           ))}
