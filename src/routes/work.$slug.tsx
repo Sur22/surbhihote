@@ -9,6 +9,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 import {
   Table,
@@ -49,6 +51,8 @@ import defineImg1 from "@/assets/affiliate-workshop-define-session.png.asset.jso
 import defineImg2 from "@/assets/affiliate-workshop-must-have-nice-to-have.png.asset.json";
 import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
+import userFlowSolace2 from "@/assets/techpack-user-flow-2-v2.png.asset.json";
+import userFlowSolace3 from "@/assets/techpack-user-flow-3-v2.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import atlasStrategyDiagram from "@/assets/atlas-strategy-diagram.png.asset.json";
 import atlasTaskFlow from "@/assets/atlas-task-flow.png.asset.json";
@@ -932,7 +936,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <Carousel opts={{ loop: true }} className="relative">
             <CarouselContent>
-              {(c.slug === "fjord" ? [audienceSegmentFlow] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
+              {(c.slug === "fjord" ? [audienceSegmentFlow] : c.slug === "solace" ? [userFlow1, userFlowSolace2, userFlowSolace3] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
                 <CarouselItem key={i}>
                   <button
                     type="button"
@@ -949,6 +953,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 </CarouselItem>
               ))}
             </CarouselContent>
+            {c.slug === "solace" && (
+              <>
+                <CarouselPrevious />
+                <CarouselNext />
+              </>
+            )}
           </Carousel>
         )}
       </section>
