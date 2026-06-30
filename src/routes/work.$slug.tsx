@@ -229,7 +229,7 @@ function CaseStudyPage() {
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {(c.slug === "fjord2") ? "\u00a0Survey" : "User Interview"}
+              {(c.slug === "fjord2") ? "Survey" : "User Interview"}
             </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.research.userInterview}
