@@ -71,10 +71,15 @@ function IndexPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section
-        className="relative mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24 min-h-screen flex flex-col justify-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg.url})`, backgroundSize: 'auto 70%', backgroundPosition: 'right bottom' }}
-      >
+      <section className="relative mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
+          style={{
+            backgroundImage: `url(${heroBg.url})`,
+            transform: 'scale(0.7)',
+            transformOrigin: 'bottom right',
+          }}
+        />
         <div>
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">DESIGNER BEHIND THE CRAFT</p>
