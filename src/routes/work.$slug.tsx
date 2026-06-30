@@ -663,11 +663,11 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <div className="mt-10 mb-12 overflow-hidden rounded-sm">
               <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto" />
             </div>
-            <div className="rounded-sm p-6 md:p-10 flex justify-center">
+            <div className="rounded-[8px] p-6 md:p-10 flex justify-center">
               <img
                 src={atlasStrategyDiagram.url}
                 alt="Notification hierarchy diagram showing all notifications branching into company, product development, and general notifications"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-[8px]"
               />
             </div>
           </>
