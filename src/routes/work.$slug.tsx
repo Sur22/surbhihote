@@ -74,6 +74,7 @@ import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.j
 import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
+import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
