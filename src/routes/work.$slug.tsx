@@ -858,7 +858,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Challenges */}
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2") && (
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-24" : "py-24"}`}>
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{"\n"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {"\n"}
