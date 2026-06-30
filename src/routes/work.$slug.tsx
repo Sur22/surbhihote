@@ -70,6 +70,7 @@ import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
 import userControlBanner from "@/assets/user-control-banner.png.asset.json";
+import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -928,7 +929,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <Carousel opts={{ loop: true }} className="relative">
             <CarouselContent>
-              {[userFlow1, userFlow2, userFlow3].map((img, i) => (
+              {(c.slug === "fjord" ? [audienceSegmentFlow, userFlow1, userFlow2, userFlow3] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
                 <CarouselItem key={i}>
                   <button
                     type="button"
