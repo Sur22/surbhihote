@@ -568,7 +568,7 @@ function CaseStudyPage() {
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Prioritize</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                [Placeholder paragraph for Prioritize section follow-up content.]
+                All the attendees were given an opportunity to vote by giving limited 5 votes to each as to get to the actual important themes. After Everyone voted I took all the sticky notes with votes and arranged them in the descending order.{"\u00a0\u00a0"}
               </p>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
