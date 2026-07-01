@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const sections = [
+const baseSections = [
   { id: "overview", label: "Overview" },
   { id: "research", label: "Research" },
   { id: "strategy", label: "Strategy" },
@@ -10,7 +10,8 @@ const sections = [
   { id: "impact", label: "Impact" },
 ];
 
-export function CaseStudySideNav() {
+export function CaseStudySideNav({ slug }: { slug?: string }) {
+  const sections = slug === "fjord2" ? baseSections.filter((s) => s.id !== "strategy") : baseSections;
   const [activeId, setActiveId] = useState<string>(sections[0].id);
   const [visible, setVisible] = useState(false);
 
