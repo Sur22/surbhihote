@@ -1140,6 +1140,16 @@ Every product could have customized stages. Overall there were 35+ types of noti
               Click here to watch a short video{" "}
             </a>
           )}
+          {c.slug === "solace" && (
+            <a
+              href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Click here to see PDF output
+            </a>
+          )}
         </p>
       </section>
 
