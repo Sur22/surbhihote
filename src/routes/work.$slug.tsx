@@ -136,7 +136,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <ScrollProgress />
-      <CaseStudySideNav />
+      <CaseStudySideNav slug={c.slug} />
 
       {/* Title block */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
