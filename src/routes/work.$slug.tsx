@@ -1094,11 +1094,16 @@ Every product could have customized stages. Overall there were 35+ types of noti
               className="w-full h-auto"
               loading="lazy"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <a
+              href="https://drive.google.com/file/d/1BqBCepSDL7VSyxSFTBBNYRDKje2RHUip/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 flex items-center justify-center"
+            >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
                 <Play className="h-7 w-7 fill-current" />
               </div>
-            </div>
+            </a>
           </div>
         ) : (
           <Carousel opts={{ loop: true }} className="relative">
