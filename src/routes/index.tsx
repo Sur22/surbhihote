@@ -80,7 +80,7 @@ function IndexPage() {
             transformOrigin: 'bottom right',
           }}
         />
-        <div className="ml-[60px]">
+        <div className="mx-auto max-w-[1100px]">
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">DESIGNER WITH A TECHNICAL EDGE</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
