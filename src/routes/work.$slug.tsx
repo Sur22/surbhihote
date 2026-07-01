@@ -1086,48 +1086,64 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {/* Final Designs */}
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : "py-24"}`}>
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Screens&nbsp;</h2>
-        <Carousel opts={{ loop: true }} className="relative">
-          <CarouselContent>
-            {((c.slug === "atlas" || c.slug === "atlas2")
-              ? [
-                  { src: notificationsFinalScreens.url, label: "Final screens mockup" },
-                ]
-              : (c.slug === "fjord2")
-              ? [
-                  { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
-                  { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
-                  { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
-                  { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
-                ]
-              : [
-                  { src: finalToolScreens.url, label: "Tool screens" },
-                  { src: finalLibrary.url, label: "Techpack Library" },
-                  { src: finalSketchSel.url, label: "Sketch selection" },
-                  { src: finalDetailedSketch.url, label: "Detailed sketch" },
-                  { src: finalBom.url, label: "Bill of Materials" },
-                  { src: finalPdf.url, label: "Exported PDF" },
-                  { src: finalProto.url, label: "Prototype overview" },
-                ]
-            ).map((img) => (
-              <CarouselItem key={img.label}>
-                {(c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? (
-                  <div
-                    className="overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
-                    style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
-                  >
-                    <img src={img.src} alt={img.label} className="w-[85%] mx-auto h-auto" loading="lazy" />
-                  </div>
-                ) : (
-                  <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                    <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
-                  </div>
-                )}
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
+        {c.slug === "fjord" ? (
+          <div className="relative overflow-hidden rounded-sm border border-border bg-secondary">
+            <img
+              src={audienceBuilderMockup2.url}
+              alt="Audience Builder final screen"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
+                <Play className="h-7 w-7 fill-current" />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <Carousel opts={{ loop: true }} className="relative">
+            <CarouselContent>
+              {((c.slug === "atlas" || c.slug === "atlas2")
+                ? [
+                    { src: notificationsFinalScreens.url, label: "Final screens mockup" },
+                  ]
+                : (c.slug === "fjord2")
+                ? [
+                    { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
+                    { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
+                    { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
+                    { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
+                  ]
+                : [
+                    { src: finalToolScreens.url, label: "Tool screens" },
+                    { src: finalLibrary.url, label: "Techpack Library" },
+                    { src: finalSketchSel.url, label: "Sketch selection" },
+                    { src: finalDetailedSketch.url, label: "Detailed sketch" },
+                    { src: finalBom.url, label: "Bill of Materials" },
+                    { src: finalPdf.url, label: "Exported PDF" },
+                    { src: finalProto.url, label: "Prototype overview" },
+                  ]
+              ).map((img) => (
+                <CarouselItem key={img.label}>
+                  {(c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? (
+                    <div
+                      className="overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+                      style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
+                    >
+                      <img src={img.src} alt={img.label} className="w-[85%] mx-auto h-auto" loading="lazy" />
+                    </div>
+                  ) : (
+                    <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                      <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
+                    </div>
+                  )}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        )}
 
 
         <p className="text-lg leading-relaxed text-foreground/85 mt-10">
