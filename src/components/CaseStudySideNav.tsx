@@ -10,8 +10,12 @@ const baseSections = [
   { id: "impact", label: "Impact" },
 ];
 
+const slugsWithoutStrategy = new Set(["fjord2", "atlas", "atlas2"]);
+
 export function CaseStudySideNav({ slug }: { slug?: string }) {
-  const sections = slug === "fjord2" ? baseSections.filter((s) => s.id !== "strategy") : baseSections;
+  const sections = slug && slugsWithoutStrategy.has(slug)
+    ? baseSections.filter((s) => s.id !== "strategy")
+    : baseSections;
   const [activeId, setActiveId] = useState<string>(sections[0].id);
   const [visible, setVisible] = useState(false);
 
@@ -31,7 +35,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
     );
     els.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [sections]);
 
   useEffect(() => {
     const update = () => {
