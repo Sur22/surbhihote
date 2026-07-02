@@ -154,7 +154,7 @@ const _caseStudies: CaseStudy[] = [
   },
   {
     slug: "fjord2",
-    index: "02",
+    index: "01",
     title: "Affiliates Website Redesign",
     subtitle: "Redesigning a legacy application\u00a0",
     client: "Fjord, Oslo",
