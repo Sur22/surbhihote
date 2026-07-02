@@ -65,7 +65,7 @@ import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
 import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
 import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
 import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.asset.json";
-import brainstormingAudienceBuilder from "@/assets/brainstorming-audience-builder.png.asset.json";
+import brainstormingAudienceBuilder from "@/assets/brainstorming-audience-builder-v2.png.asset.json";
 import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.asset.json";
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
