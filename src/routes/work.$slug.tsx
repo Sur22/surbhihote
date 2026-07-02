@@ -1092,11 +1092,11 @@ Broad notification categories for users are as follows
             </>
           )}
 
-          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing</h3>
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.</span>
+              <span>Beta environment&nbsp;{"\n"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
