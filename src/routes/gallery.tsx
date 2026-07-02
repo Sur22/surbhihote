@@ -153,7 +153,7 @@ function GalleryPage() {
                         "h-auto object-contain",
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
                         it.title === "Dashboard- PLM & ERP " ||
-                        it.title.startsWith("Product Page") ||
+                        it.title === "Product Evolution\u00a0" ||
                         it.title === "Data Visualization"
                           ? "w-[85%] mx-auto"
                           : "w-full"
