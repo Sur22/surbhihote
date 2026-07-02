@@ -74,9 +74,17 @@ function IndexPage() {
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
+          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat block dark:hidden"
           style={{
             backgroundImage: `url(${heroBg.url})`,
+            transform: 'scale(0.7)',
+            transformOrigin: 'bottom right',
+          }}
+        />
+        <div
+          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat hidden dark:block"
+          style={{
+            backgroundImage: `url(${heroBgDark.url})`,
             transform: 'scale(0.7)',
             transformOrigin: 'bottom right',
           }}
