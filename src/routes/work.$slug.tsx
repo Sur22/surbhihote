@@ -1294,7 +1294,7 @@ Broad notification categories for users are as follows
               {o.value && (
                 <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
                   {o.value === "1 week - 5 min" ? (
-                    <>1 <span className="text-lg">week</span> - 5 <span className="text-lg">min</span></>
+                    <>1<br /><span className="text-lg">week</span><br />- 5<br /><span className="text-lg">min</span></>
                   ) : (
                     <>{o.value}</>
                   )}
