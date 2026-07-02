@@ -256,6 +256,51 @@ function CaseStudyPage() {
               </div>
             )}
           </div>
+          {(c.slug === "fjord") && (
+            <div className="mt-16">
+              <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Personas</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                {[
+                  {
+                    name: "Political Sales Manager\u00a0 \u00a0 /\u00a0Sales\u00a0Planner\n",
+                    goals: [
+                      "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
+                    ],
+                  },
+                  {
+                    name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
+                    goals: [
+                      "Tasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                    ],
+                  },
+                ].map((persona, idx) => (
+                  <div
+                    key={`${persona.name}-${idx}`}
+                    className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
+                  >
+                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
+                      {persona.name}
+                    </h4>
+                    <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                      {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
+                        const tasksIndex = goal.indexOf("Tasks");
+                        if (tasksIndex !== -1) {
+                          const before = goal.slice(0, tasksIndex);
+                          const after = goal.slice(tasksIndex + 5);
+                          return (
+                            <li key={gidx} className="whitespace-pre-line">
+                              {before}<span className="font-bold">Tasks</span>{after}
+                            </li>
+                          );
+                        }
+                        return <li key={gidx} className="whitespace-pre-line">{goal}</li>;
+                      })}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {(c.slug !== "fjord" && c.slug !== "fjord2") && (
