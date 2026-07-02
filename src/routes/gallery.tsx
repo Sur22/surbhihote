@@ -23,6 +23,7 @@ import dataViz3 from "@/assets/data-viz-3-new.png.asset.json";
 import dataViz4 from "@/assets/data-viz-4.png.asset.json";
 import productBefore from "@/assets/product-before.png.asset.json";
 import productAfter from "@/assets/product-after.png.asset.json";
+import gsnListView from "@/assets/gsn_list_view.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -63,6 +64,7 @@ const items = [
   {
     images: [
       { src: gsnMockup.url, alt: "GSN Marketplace — Suuchi mockup" },
+      { src: gsnListView.url, alt: "GSN Marketplace — list view" },
     ],
     title: "GSN Marketplace - A white label e-com for clients  ",
     tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
