@@ -135,7 +135,7 @@ function GalleryPage() {
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard- PLM & ERP " || it.title.startsWith("Product Page")
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard- PLM & ERP " || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : {}),
               }}
