@@ -112,7 +112,7 @@ const defaultMeta = {
 const _caseStudies: CaseStudy[] = [
   {
     slug: "fjord",
-    index: "01",
+    index: "02",
     title: "Audience Builder",
     subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
     client: "Fjord, Oslo",
