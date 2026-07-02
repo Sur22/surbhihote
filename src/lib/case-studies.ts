@@ -111,48 +111,6 @@ const defaultMeta = {
 
 const _caseStudies: CaseStudy[] = [
   {
-    slug: "fjord",
-    index: "02",
-    title: "Audience Builder",
-    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
-    client: "Fjord, Oslo",
-    year: "2025",
-    ...defaultMeta,
-    role: "Lead Product Designer",
-    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
-    cover: audienceBuilderMockup.url,
-    summary:
-      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
-    problem:
-      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
-    approach: [
-      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
-      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
-      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
-      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
-    ],
-    outcome: [
-      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
-      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
-      { label: "Increase in speed and Efficiency", value: "26%" },
-      { label: "User Satisfaction", value: "+29%" },
-    ],
-    sections: [
-      {
-        heading: "Discovery",
-        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
-      },
-      {
-        heading: "Foundations",
-        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
-      },
-      {
-        heading: "Launch",
-        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
-      },
-    ],
-  },
-  {
     slug: "fjord2",
     index: "01",
     title: "Affiliates Website Redesign",
@@ -198,6 +156,48 @@ const _caseStudies: CaseStudy[] = [
       { label: "Redadency Is elimeated\u00a0", value: "−41%" },
       { label: "Usability Issues Fixed\u00a0", value: "26%" },
       { label: "Improved Speed", value: "+29%" },
+    ],
+    sections: [
+      {
+        heading: "Discovery",
+        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
+      },
+      {
+        heading: "Foundations",
+        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
+      },
+      {
+        heading: "Launch",
+        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
+      },
+    ],
+  },
+  {
+    slug: "fjord",
+    index: "02",
+    title: "Audience Builder",
+    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
+    client: "Fjord, Oslo",
+    year: "2025",
+    ...defaultMeta,
+    role: "Lead Product Designer",
+    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
+    cover: audienceBuilderMockup.url,
+    summary:
+      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
+    problem:
+      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
+    approach: [
+      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
+      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
+      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
+      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
+    ],
+    outcome: [
+      { label: "Missed Important Notification Rate Reduced", value: "-71%" },
+      { label: "Missed Deadline/Delays For Product Lifecycle Reduced", value: "−41%" },
+      { label: "Increase in speed and Efficiency", value: "26%" },
+      { label: "User Satisfaction", value: "+29%" },
     ],
     sections: [
       {
