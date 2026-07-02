@@ -10,8 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
@@ -39,13 +38,13 @@ export const Route = createFileRoute("/gallery")({
 
 const items = [
   {
-    src: g2,
+    src: newGalleryImg.url,
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
-    src: g3,
+    src: newGalleryImg.url,
     title: "Travel AI",
     tags: ["AI TRAVEL TOOL", "CONCEPT\u00a0\u00a0", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is more important than ever. Using AI as your companion to speed up your workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
