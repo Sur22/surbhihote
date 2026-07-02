@@ -217,6 +217,14 @@ function CaseStudyPage() {
               }
             </div>
           </div>
+          {c.slug === "fjord" && (
+            <div>
+              <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+              <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                <p className="whitespace-pre-line">{c.goal}</p>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
