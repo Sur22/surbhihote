@@ -155,7 +155,7 @@ const _caseStudies: CaseStudy[] = [
       { label: "Reduced Workload\nfor Data Team\u00a0", value: "-20%" },
       { label: "Turn Around Time Reduced\u00a0", value: "1 week - 5 min" },
       { label: "Saved on yearly basis for the company", value: "$400K" },
-      { label: "Speed Increased for Users", value: "+16%" },
+      { label: "Speed Increased for Users", value: "+8%" },
     ],
     sections: [
       {
@@ -197,7 +197,7 @@ const _caseStudies: CaseStudy[] = [
       { label: "Reduced Workload\nfor Data Team\u00a0", value: "-20%" },
       { label: "Turn Around Time Reduced\u00a0", value: "1 week - 5 min" },
       { label: "Saved on yearly basis for the company", value: "$400K" },
-      { label: "Speed Increased for Users", value: "+16%" },
+      { label: "Speed Increased for Users", value: "+9%" },
     ],
     sections: [
       {
