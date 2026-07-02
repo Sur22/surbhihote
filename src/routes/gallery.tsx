@@ -22,6 +22,8 @@ import dataViz1 from "@/assets/data-viz-1.png.asset.json";
 import dataViz2 from "@/assets/data-viz-2.png.asset.json";
 import dataViz3 from "@/assets/data-viz-3-new.png.asset.json";
 import dataViz4 from "@/assets/data-viz-4.png.asset.json";
+import productBefore from "@/assets/product-before.png.asset.json";
+import productAfter from "@/assets/product-after.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
