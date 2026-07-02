@@ -925,7 +925,7 @@ Broad notification categories for users are as follows
                     </TableRow>
                     <TableRow>
                       <TableCell>Compare Order Version</TableCell>
-                      <TableCell>Platform Notifications</TableCell>
+                      <TableCell>Speed & Efficiency</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Internal & External Rate Cards</TableCell>
