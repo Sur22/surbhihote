@@ -802,37 +802,6 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {c.slug === "fjord" && (
         <>
-          {/* User Groups */}
-          <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-            <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">User Groups</h2>
-            <button
-              type="button"
-              onClick={() => setZoomImg(userGroupsImg)}
-              className="group block w-[60%] mx-auto overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0"
-            >
-              <img
-                src={userGroupsImg}
-                alt="Diagram showing user groups connected to the Techpack Editor feature"
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-            <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications
-
-Broad notification categories for users are as follows 
-1.     Comments posted by different user types (Client, Factory, Staff, Finance )
-2.    Files - Uploads ,Approval, Rejection
-3.    PLM Stage Activities
-4.    Timeline/ETA Changes
-5.    Chat messages ,Tagged Comment in the product or in the chat
-6.    Finance - Costing, invoicing, PO updates  
-7.    Product level notifications 
-8.    Company level notifications 
-
-            </div>
-          </section>
-
           {/* User Flow */}
           <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
