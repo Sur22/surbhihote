@@ -75,9 +75,9 @@ const items = [
   },
   {
     images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
-    title: "Dashboard- PLM & ERP ",
+    title: "Product Page - Before & After\u00a0\u00a0",
     tags: ["B2B", "B2C", "PLM", "ERP"],
-    body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
+    body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
   },
 ] as const;
 
