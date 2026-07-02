@@ -22,6 +22,8 @@ import dataViz1 from "@/assets/data-viz-1.png.asset.json";
 import dataViz2 from "@/assets/data-viz-2.png.asset.json";
 import dataViz3 from "@/assets/data-viz-3-new.png.asset.json";
 import dataViz4 from "@/assets/data-viz-4.png.asset.json";
+import productBefore from "@/assets/product-before.png.asset.json";
+import productAfter from "@/assets/product-after.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -74,7 +76,10 @@ const items = [
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
   {
-    images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
+    images: [
+      { src: productBefore.url, alt: "Product Page — Before" },
+      { src: productAfter.url, alt: "Product Page — After" },
+    ],
     title: "Product Page - Before & After\u00a0\u00a0",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
