@@ -129,7 +129,7 @@ function GalleryPage() {
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard- PLM & ERP " || it.title.startsWith("Product Page")) && "py-28"
+                (it.title === "Dashboard- PLM & ERP " || it.title === "Product Evolution\u00a0") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
