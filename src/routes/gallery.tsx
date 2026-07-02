@@ -124,7 +124,7 @@ function GalleryPage() {
                 it.title === "Data Visualization" || 
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard- PLM & ERP " ||
-                it.title.startsWith("Product Page")
+                it.title === "Product Evolution\u00a0"
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
