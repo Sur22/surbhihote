@@ -72,7 +72,7 @@ const items = [
   },
   {
     images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
-    title: "Dashboard- PLM & ERP ",
+    title: "Dashboard",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
