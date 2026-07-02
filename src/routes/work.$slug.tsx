@@ -1288,7 +1288,7 @@ Broad notification categories for users are as follows
       {/* Outcomes */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
         <p className="eyebrow mb-10">Outcome</p>
-        <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {c.outcome.map((o) => (
             <div key={o.label} className="border-t border-border pt-6">
               {o.value && (
