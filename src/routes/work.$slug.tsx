@@ -1293,7 +1293,11 @@ Broad notification categories for users are as follows
             <div key={o.label} className="border-t border-border pt-6">
               {o.value && (
                 <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
-                  {o.value}
+                  {o.value === "1 week - 5 min" ? (
+                    <>1 <span className="text-lg">week</span> - 5 <span className="text-lg">min</span></>
+                  ) : (
+                    <>{o.value}</>
+                  )}
                   {o.label.includes("User Satisfaction") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
                 </p>
               )}
