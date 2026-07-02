@@ -81,7 +81,7 @@ const items = [
       { src: productBefore.url, alt: "Product Page — Before" },
       { src: productAfter.url, alt: "Product Page — After" },
     ],
-    title: "Product Page - Before & After\u00a0\u00a0",
+    title: "Product Evolution\u00a0",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
   },
