@@ -863,12 +863,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </section>
       )}
 
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "solace") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "solace" && c.slug !== "fjord") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
       {/* Challenges */}
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "fjord") && (
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-24" : "py-24"}`}>
         {c.slug !== "solace" && (
           <>
