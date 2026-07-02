@@ -10,8 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
