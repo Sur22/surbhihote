@@ -65,6 +65,7 @@ import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
 import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
 import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
 import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.asset.json";
+import brainstormingAudienceBuilder from "@/assets/brainstorming-audience-builder.png.asset.json";
 import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.asset.json";
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
@@ -842,18 +843,34 @@ Broad notification categories for users are as follows
             <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
           </button>
         ) : (
-          <button
-            type="button"
-            onClick={() => setZoomImg(brainstormingImg)}
-            className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
-          >
-            <img
-              src={brainstormingImg}
-              alt="Whiteboard from brainstorming session with the product team"
-              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-              loading="lazy"
-            />
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={() => setZoomImg(brainstormingImg)}
+              className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
+            >
+              <img
+                src={brainstormingImg}
+                alt="Whiteboard from brainstorming session with the product team"
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </button>
+            {c.slug === "fjord" && (
+              <button
+                type="button"
+                onClick={() => setZoomImg(brainstormingAudienceBuilder.url)}
+                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 mt-8 transition-colors hover:border-foreground/40 cursor-zoom-in border-0"
+              >
+                <img
+                  src={brainstormingAudienceBuilder.url}
+                  alt="Audience builder brainstorming screens"
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+              </button>
+            )}
+          </>
         )}
         {c.slug === "solace" && (
           <>
