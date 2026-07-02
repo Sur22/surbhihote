@@ -72,7 +72,7 @@ const items = [
   },
   {
     images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
-    title: "Dashboard- PLM & ERP ",
+    title: "Dashboard",
     tags: ["B2B", "B2C", "PLM", "ERP"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
@@ -123,19 +123,19 @@ function GalleryPage() {
                 "overflow-hidden shadow-xl",
                 it.title === "Data Visualization" || 
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
-                it.title === "Dashboard- PLM & ERP " ||
+                it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0"
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard- PLM & ERP " || it.title === "Product Evolution\u00a0") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard- PLM & ERP " || it.title === "Product Evolution\u00a0"
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : {}),
               }}
@@ -152,7 +152,7 @@ function GalleryPage() {
                       className={cn(
                         "h-auto object-contain",
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
-                        it.title === "Dashboard- PLM & ERP " ||
+                        it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
                         it.title === "Data Visualization"
                           ? "w-[85%] mx-auto"
