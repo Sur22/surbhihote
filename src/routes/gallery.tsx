@@ -7,7 +7,9 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselDots,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
