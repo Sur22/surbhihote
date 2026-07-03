@@ -27,6 +27,7 @@ import gsnListView from "@/assets/gsn_list_view.png.asset.json";
 import creatorHubDashboard from "@/assets/creator-hub-dashboard.png.asset.json";
 import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.json";
 import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
+import creatorHubCreatePost from "@/assets/creator-hub-create-post.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
