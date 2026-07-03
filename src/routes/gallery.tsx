@@ -106,7 +106,7 @@ function HoverAutoplayCarousel({
   const start = React.useCallback(() => {
     if (!api) return;
     if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(() => api.scrollNext(), 3000);
+intervalRef.current = setInterval(() => api.scrollNext(), 2000);
   }, [api]);
 
   const stop = React.useCallback(() => {
