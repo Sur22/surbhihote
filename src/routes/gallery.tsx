@@ -180,8 +180,8 @@ function GalleryPage() {
                   ? { backgroundImage: `url(${ampBg.url})` }
                   : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
-                    : it.title === "Creator Hub"
-                      ? { backgroundImage: `url(${newGalleryImg.url})` }
+                      : it.title === "Creator Hub"
+                        ? { backgroundImage: `url(${creatorHubBg.url})` }
                       : {}),
               }}
             >
