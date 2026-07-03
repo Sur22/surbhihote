@@ -42,7 +42,11 @@ export const Route = createFileRoute("/gallery")({
 
 const items = [
   {
-    src: newGalleryImg.url,
+    images: [
+      { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
+      { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
+      { src: creatorHubAnalytics2.url, alt: "Creator Hub — Analytics 2" },
+    ],
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
