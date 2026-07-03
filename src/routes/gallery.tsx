@@ -24,6 +24,9 @@ import dataViz4 from "@/assets/data-viz-4.png.asset.json";
 import productBefore from "@/assets/product-before.png.asset.json";
 import productAfter from "@/assets/product-after.png.asset.json";
 import gsnListView from "@/assets/gsn_list_view.png.asset.json";
+import creatorHubDashboard from "@/assets/creator-hub-dashboard.png.asset.json";
+import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.json";
+import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -39,7 +42,11 @@ export const Route = createFileRoute("/gallery")({
 
 const items = [
   {
-    src: newGalleryImg.url,
+    images: [
+      { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
+      { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
+      { src: creatorHubAnalytics2.url, alt: "Creator Hub — Analytics 2" },
+    ],
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
@@ -124,12 +131,14 @@ function GalleryPage() {
                 it.title === "Data Visualization" || 
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
-                it.title === "Product Evolution\u00a0"
+                it.title === "Product Evolution\u00a0" ||
+                it.title === "Creator Hub"
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28",
+                it.title === "Creator Hub" && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -137,7 +146,9 @@ function GalleryPage() {
                   ? { backgroundImage: `url(${ampBg.url})` }
                   : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
-                    : {}),
+                    : it.title === "Creator Hub"
+                      ? { backgroundImage: `url(${newGalleryImg.url})` }
+                      : {}),
               }}
             >
               {"images" in it ? (
@@ -154,7 +165,8 @@ function GalleryPage() {
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
-                        it.title === "Data Visualization"
+                        it.title === "Data Visualization" ||
+                        it.title === "Creator Hub"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
