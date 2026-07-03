@@ -46,7 +46,7 @@ const items = [
     images: [
       { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
       { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
-      { src: creatorHubAnalytics2.url, alt: "Creator Hub — Analytics 2" },
+      { src: creatorHubCreatePost.url, alt: "Creator Hub — Create Post" },
     ],
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
