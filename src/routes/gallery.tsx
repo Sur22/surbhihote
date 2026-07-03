@@ -96,6 +96,37 @@ const items = [
   },
 ] as const;
 
+function HoverAutoplayCarousel({
+  children,
+  ...props
+}: React.ComponentProps<typeof Carousel>) {
+  const [api, setApi] = React.useState<CarouselApi | null>(null);
+  const intervalRef = React.useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const start = React.useCallback(() => {
+    if (!api) return;
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => api.scrollNext(), 3000);
+  }, [api]);
+
+  const stop = React.useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
+
+  React.useEffect(() => () => stop(), [stop]);
+
+  return (
+    <div onMouseEnter={start} onMouseLeave={stop}>
+      <Carousel {...props} setApi={(a) => { setApi(a); props.setApi?.(a); }}>
+        {children}
+      </Carousel>
+    </div>
+  );
+}
+
 function GalleryPage() {
   return (
     <SiteLayout>
