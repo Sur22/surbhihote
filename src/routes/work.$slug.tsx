@@ -1319,8 +1319,16 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <div key={o.label} className="border-t border-border pt-6">
               {o.value && (
                 <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
-                  {o.value === "1 week - 5 min" ? (
-                    <span className="whitespace-nowrap">1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></span>
+                  {o.value === "1 week - 5 min" || o.value === "$850K\u00A0→\u00A0$0" ? (
+                    <span className="whitespace-nowrap">
+                      {o.value === "$850K\u00A0→\u00A0$0" ? (
+                        <>
+                          $850K <span className="text-[70%]">→</span> $0
+                        </>
+                      ) : (
+                        <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
+                      )}
+                    </span>
                   ) : (
                     <>{o.value}</>
                   )}
