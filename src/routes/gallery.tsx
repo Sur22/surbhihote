@@ -165,7 +165,8 @@ function GalleryPage() {
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
-                        it.title === "Data Visualization"
+                        it.title === "Data Visualization" ||
+                        it.title === "Creator Hub"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
