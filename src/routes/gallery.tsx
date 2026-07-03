@@ -6,8 +6,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselDots,
 } from "@/components/ui/carousel";
 import g1 from "@/assets/gallery-1.jpg";
 import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
@@ -175,12 +174,7 @@ function GalleryPage() {
                   </CarouselItem>
                     ))}
                   </CarouselContent>
-                  {it.images.length > 1 && (
-                    <>
-                      <CarouselPrevious className="left-4" />
-                      <CarouselNext className="right-4" />
-                    </>
-                  )}
+                  {it.images.length > 1 && <CarouselDots />}
                 </Carousel>
               ) : (
                 <img
