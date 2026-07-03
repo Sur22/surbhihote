@@ -12,7 +12,6 @@ import {
 import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
-import creatorHubBg from "@/assets/creator-hub-bg.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
@@ -57,7 +56,7 @@ const items = [
   {
     src: newGalleryImg.url,
     title: "Travel AI",
-    tags: ["AI FOR UX", "DESIGNLAB", "PROJECT", "CONCEPT", "AI TRAVEL TOOL"],
+    tags: ["AI TRAVEL TOOL", "CONCEPT\u00a0\u00a0", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
@@ -180,8 +179,8 @@ function GalleryPage() {
                   ? { backgroundImage: `url(${ampBg.url})` }
                   : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
-                      : it.title === "Creator Hub"
-                        ? { backgroundImage: `url(${creatorHubBg.url})` }
+                    : it.title === "Creator Hub"
+                      ? { backgroundImage: `url(${newGalleryImg.url})` }
                       : {}),
               }}
             >
