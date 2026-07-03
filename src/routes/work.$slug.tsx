@@ -221,7 +221,8 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                <p className="whitespace-pre-line">{c.goal}</p>
+                <p className="whitespace-pre-line">{c.slug === "fjord" ? `When clients wants to run their ads on TV or streaming platform they \x03have to define the target Audiance to whom they want their ads to reach they want to include or exclude some type of audiance for their campaigns.\x03Ampersand AE’s build the custome audiance acoording to their needs so \x03the number of audiance can be calculated to meet the expectation of the client in terms or Reach and Impressons for the campaing to be successful \x03for the clients.
+If AE’s want to build a custom audience to for the clients would require to send a request\x03to the data team and the turn around time was at least a week as the team is small. \x03AE’s had to wait for getting their coustom audience for the campaign.` : c.goal}</p>
               </div>
             </div>
           )}
