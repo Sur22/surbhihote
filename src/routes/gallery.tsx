@@ -174,12 +174,7 @@ function GalleryPage() {
                   </CarouselItem>
                     ))}
                   </CarouselContent>
-                  {it.images.length > 1 && (
-                    <>
-                      <CarouselPrevious className="left-4" />
-                      <CarouselNext className="right-4" />
-                    </>
-                  )}
+                  {it.images.length > 1 && <CarouselDots />}
                 </Carousel>
               ) : (
                 <img
