@@ -7,7 +7,9 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselDots,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
@@ -94,6 +96,37 @@ const items = [
   },
 ] as const;
 
+function HoverAutoplayCarousel({
+  children,
+  ...props
+}: React.ComponentProps<typeof Carousel>) {
+  const [api, setApi] = React.useState<CarouselApi | null>(null);
+  const intervalRef = React.useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const start = React.useCallback(() => {
+    if (!api) return;
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => api.scrollNext(), 3000);
+  }, [api]);
+
+  const stop = React.useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
+
+  React.useEffect(() => () => stop(), [stop]);
+
+  return (
+    <div onMouseEnter={start} onMouseLeave={stop}>
+      <Carousel {...props} setApi={(a) => { setApi(a); props.setApi?.(a); }}>
+        {children}
+      </Carousel>
+    </div>
+  );
+}
+
 function GalleryPage() {
   return (
     <SiteLayout>
@@ -152,7 +185,7 @@ function GalleryPage() {
               }}
             >
               {"images" in it ? (
-                <Carousel opts={{ loop: true }} className="relative">
+                <HoverAutoplayCarousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
                     {it.images.map((img, idx) => (
                   <CarouselItem key={idx} className="flex items-center justify-center">
@@ -175,7 +208,7 @@ function GalleryPage() {
                     ))}
                   </CarouselContent>
                   {it.images.length > 1 && <CarouselDots />}
-                </Carousel>
+                </HoverAutoplayCarousel>
               ) : (
                 <img
                   src={it.src}
