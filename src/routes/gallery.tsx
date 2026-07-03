@@ -56,7 +56,7 @@ const items = [
   {
     src: newGalleryImg.url,
     title: "Travel AI",
-    tags: ["AI TRAVEL TOOL", "CONCEPT\u00a0\u00a0", "AI FOR UX", "DESIGNLAB 2026"],
+    tags: ["AI FOR UX", "DESIGNLAB", "PROJECT", "CONCEPT", "AI TRAVEL TOOL"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
