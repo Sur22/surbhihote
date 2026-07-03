@@ -6,8 +6,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselDots,
 } from "@/components/ui/carousel";
 import g1 from "@/assets/gallery-1.jpg";
 import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
