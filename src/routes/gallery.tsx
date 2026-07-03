@@ -131,12 +131,14 @@ function GalleryPage() {
                 it.title === "Data Visualization" || 
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
-                it.title === "Product Evolution\u00a0"
+                it.title === "Product Evolution\u00a0" ||
+                it.title === "Creator Hub"
                   ? "bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28",
+                it.title === "Creator Hub" && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -144,7 +146,9 @@ function GalleryPage() {
                   ? { backgroundImage: `url(${ampBg.url})` }
                   : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
-                    : {}),
+                    : it.title === "Creator Hub"
+                      ? { backgroundImage: `url(${newGalleryImg.url})` }
+                      : {}),
               }}
             >
               {"images" in it ? (
