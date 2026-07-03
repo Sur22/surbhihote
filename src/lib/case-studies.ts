@@ -180,6 +180,7 @@ const _caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
+    goal: "When clients wants to run their ads on TV or streaming platform they\n\nhave to define the target Audiance to whom they want their ads to reach\n\nthey want to include or exclude some type of audiance for their campaigns.\n\nAmpersand AE’s build the custome audiance acoording to their needs so\n\nthe number of audiance can be calculated to meet the expectation of the\n\nclient in terms or Reach and Impressons for the campaing to be successful\n\nfor the clients.",
     role: "Lead Product Designer",
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: audienceBuilderMockup.url,
