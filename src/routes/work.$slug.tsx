@@ -740,7 +740,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </>
         )}
         <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
-          {(c.slug === "fjord2") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : "Initial sketch"}
+          {(c.slug === "fjord2") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "fjord2") 
