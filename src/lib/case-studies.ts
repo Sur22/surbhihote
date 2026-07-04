@@ -318,6 +318,8 @@ const _caseStudies: CaseStudy[] = [
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
+    opportunity:
+      "Placeholder text for the Opportunity section.",
     approach: [
       "Killed the two-panel layout. Map and list now share one scroll surface that responds to zoom.",
       "Designed 'pinch-to-day' — a gesture that collapses the map to a calendar strip and back.",
