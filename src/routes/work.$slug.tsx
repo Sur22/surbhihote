@@ -274,15 +274,15 @@ If AE’s want to build a custom audience to for the clients would require to se
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                 {[
                   {
-                    name: "Political Sales Manager\u00a0 \u00a0 /\u00a0Sales\u00a0Planner\n",
+                    name: "Account Executive\n",
                     goals: [
-                      "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
+                      "Tasks\n1. Develop customized media strategies to best target constituents and stakeholders in agency portfolio.\n2. Build Custom Audiance for cl\u00a0\n3. Download rates\u00a0\n\n",
                     ],
                   },
                   {
-                    name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
+                    name: "Account Director",
                     goals: [
-                      "Tasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                      "Tasks\x03\n1. Manage full sales cycle to achieve campaign success.\n\u00a02. orders in timely manner\n3. Create Makegoods\u200b\n\n",
                     ],
                   },
                 ].map((persona, idx) => (
