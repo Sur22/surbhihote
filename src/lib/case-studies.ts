@@ -180,6 +180,10 @@ const _caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
+    research: {
+      ...defaultMeta.research,
+      userInterview: "I talked with the both the user groups which were going to use this tool. I also talked with those selected user who are using the tool currently and asked them what do they like and dont like about the tool so I can make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs which we need to built plus few more things to enhance the functionality and make it easy for users to use.\u00a0\n1. Not very Intuitive\n2.A way to copy the whole segment logic once it is built\n3. Copy and modify existing segment\u00a0\n\n",
+    },
     role: "Lead Product Designer",
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: audienceBuilderMockup.url,
