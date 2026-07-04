@@ -794,7 +794,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </button>
         ) : (
           <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-            {[sketchImg1, sketchImg2].map((s, i) => (
+            {(c.slug === "fjord" ? [fjordComponentLeft, sketchImg2] : [sketchImg1, sketchImg2]).map((s, i) => (
               <button
                 key={i}
                 type="button"
