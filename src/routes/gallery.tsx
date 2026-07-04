@@ -50,7 +50,7 @@ const items = [
       { src: creatorHubCreatePost.url, alt: "Creator Hub — Create Post" },
     ],
     title: "Creator Hub",
-    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "2026"],
+    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML\u00a0", "2026"],
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
