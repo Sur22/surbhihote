@@ -138,6 +138,7 @@ function CaseStudyPage() {
 
   return (
     <SiteLayout>
+      <div className={(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}>
       <ScrollProgress />
       <CaseStudySideNav slug={c.slug} />
 
