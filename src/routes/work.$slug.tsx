@@ -283,7 +283,7 @@ If AE’s want to build a custom audience to for the clients would require to se
                   {
                     name: "Account Director",
                     goals: [
-                      "Tasks\x03\n1. Manage full sales cycle to achieve campaign success.\n2. Create custom audience for the campaign\u00a0\n3. Create Makegoods\u200b\n\n",
+                      "Tasks\x03\n1. Manage full sales cycle to achieve campaign success.\n2. Create custom audience for the campaign\u00a0\n3. Work with AE's to create a schedule for the created audience \u200b\n\n",
                     ],
                   },
                 ].map((persona, idx) => (
