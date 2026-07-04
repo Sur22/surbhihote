@@ -220,7 +220,7 @@ function CaseStudyPage() {
           )}
           {c.slug === "atlas" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">Opportunity</h2>
+              <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.opportunity}
               </p>
@@ -228,7 +228,7 @@ function CaseStudyPage() {
           )}
           {c.slug !== "fjord2" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
+              <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : (c.slug === "atlas") ? "\n" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace"
                   ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.\u00a0\u00a0\u00a0\u00a0 Provide different user types ability to pick and choose the notifications that they would like to receive\n2.\u00a0\u00a0\u00a0\u00a0 Serve users ability to choose the notifications that they would like to receive per module and per product\n3.\u00a0\u00a0\u00a0\u00a0 Allow users ability to switch on/off notifications at any point of time\n"
