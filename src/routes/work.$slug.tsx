@@ -202,7 +202,7 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Introduction</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                A 25 years old site which was being used by affiliates working with the company
               </p>
             </div>
           )}
