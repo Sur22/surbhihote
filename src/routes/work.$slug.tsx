@@ -755,7 +755,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Audience Segment Selector\u00a0 \u00a0</li>
             <li>Workspace - to create a custom audience using drag and drop</li>
-            <li>\n</li>
+            
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
