@@ -32,6 +32,7 @@ import sketchImg1 from "@/assets/fjord-component-1.png.asset.json";
 import sketchImg2 from "@/assets/fjord-component-2.png.asset.json";
 import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
 import sketchImg4 from "@/assets/techpack-sketch-4.jpg.asset.json";
+import fjordComponentLeft from "@/assets/fjord-component-left.png.asset.json";
 import notificationsWireframe from "@/assets/notifications-wireframe.png.asset.json";
 import finalProto from "@/assets/tech_pack_prototype.png.asset.json";
 import finalToolScreens from "@/assets/techpack_tool_screens.png.asset.json";
@@ -793,7 +794,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </button>
         ) : (
           <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-            {[sketchImg1, sketchImg2].map((s, i) => (
+            {(c.slug === "fjord" ? [fjordComponentLeft, sketchImg2] : [sketchImg1, sketchImg2]).map((s, i) => (
               <button
                 key={i}
                 type="button"
