@@ -793,7 +793,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </button>
         ) : (
           <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-            {[sketchImg1, sketchImg2, sketchImg3, sketchImg4].map((s, i) => (
+            {[sketchImg1, sketchImg2].map((s, i) => (
               <button
                 key={i}
                 type="button"
