@@ -753,13 +753,13 @@ in all these there comments for communication between the staff handling the pro
 Every product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0`}
             </p>
             <div className="mt-10 mb-12 overflow-hidden rounded-[8px]">
-              <img src={userControlBanner.url} alt="Give control to user banner" className="w-full h-auto rounded-[8px]" />
+              <img src={userControlBanner.url} alt="Give control to user banner" className={(c.slug === "atlas" || c.slug === "atlas2") ? "w-1/2 mx-auto h-auto rounded-[8px]" : "w-full h-auto rounded-[8px]"} />
             </div>
             <div className="rounded-[8px] p-6 md:p-10 flex justify-center">
               <img
                 src={atlasStrategyDiagram.url}
                 alt="Notification hierarchy diagram showing all notifications branching into company, product development, and general notifications"
-                className="w-full h-auto rounded-[8px]"
+                className={(c.slug === "atlas" || c.slug === "atlas2") ? "w-1/2 h-auto rounded-[8px]" : "w-full h-auto rounded-[8px]"}
               />
             </div>
           </>
@@ -822,7 +822,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <img
               src={notificationsWireframe.url}
               alt="Notifications wireframe"
-              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              className={(c.slug === "atlas" || c.slug === "atlas2") ? "w-1/2 mx-auto h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" : "w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"}
               loading="lazy"
             />
           </button>
