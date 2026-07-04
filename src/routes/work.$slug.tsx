@@ -138,6 +138,7 @@ function CaseStudyPage() {
 
   return (
     <SiteLayout>
+      <div className={(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}>
       <ScrollProgress />
       <CaseStudySideNav slug={c.slug} />
 
@@ -1401,6 +1402,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </div>
         </div>
       </section>
+      </div>
     </SiteLayout>
   );
 }
