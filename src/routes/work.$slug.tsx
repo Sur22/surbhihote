@@ -508,7 +508,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor inAll the affiliates working with the company has been using the 20 years old site which has\n\n1. Dated UI UX\n\n2. Slow and clunky\n\n3.\u00a0 Some functionalities not working\n\n4. Some part not being used anymore\n\n5. Cannot add new functionality because of old codebase.\n\n6. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n\n7. Broken functionalities"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
