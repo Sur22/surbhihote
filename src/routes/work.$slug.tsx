@@ -1139,7 +1139,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
           </ul>
 
-          {c.slug !== "solace" && (
+          {c.slug !== "solace" && c.slug !== "fjord" && (
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: "Test Completion Rate", value: "100%" },
