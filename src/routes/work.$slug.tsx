@@ -507,6 +507,9 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
+                <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
                 </div>
