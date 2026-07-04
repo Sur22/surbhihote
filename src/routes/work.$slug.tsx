@@ -1394,14 +1394,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 params={{ slug: o.slug }}
                 className="group block"
               >
-                <div className="flex items-baseline gap-3 mb-2">
-                  <span className="font-serif text-xl text-accent">{o.index}</span>
-                  <span className="eyebrow">{o.tags.slice(0, 3).join(" · ")}</span>
-                </div>
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors">
                   {o.title}
                 </h3>
-                <p className="mt-2 text-foreground/70 leading-relaxed max-w-md">{o.subtitle}</p>
                 <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
                   Read the case study →
                 </span>
