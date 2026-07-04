@@ -33,16 +33,9 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             </div>
           </div>
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="font-serif text-2xl text-accent">{c.index}</span>
-              <span className="eyebrow">{c.tags.join(" · ")}</span>
-            </div>
             <h2 className="font-serif text-5xl md:text-6xl mb-5 group-hover:text-accent transition-colors whitespace-pre-line">
               {c.title}
             </h2>
-            <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
-              {c.subtitle}
-            </p>
             <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground pb-0.5">
               Read the case study
               <span className="transition-transform group-hover:translate-x-1">→</span>
