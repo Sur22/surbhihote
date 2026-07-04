@@ -243,6 +243,15 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       </section>
 
+      {c.slug === "fjord2" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Why Redesign</h2>
+          <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </section>
+      )}
+
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
