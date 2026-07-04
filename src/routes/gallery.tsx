@@ -29,6 +29,7 @@ import creatorHubDashboard from "@/assets/creator-hub-dashboard.png.asset.json";
 import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.json";
 import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
 import creatorHubCreatePost from "@/assets/creator-hub-create-post.png.asset.json";
+import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -180,7 +181,7 @@ function GalleryPage() {
                   : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
-                      ? { backgroundImage: `url(${newGalleryImg.url})` }
+                      ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
                       : {}),
               }}
             >
