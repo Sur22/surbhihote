@@ -496,7 +496,7 @@ If AE’s want to build a custom audience to for the clients would require to se
                 The workshop started with a walk through of Affiliate website and{"\u00a0"}
               </p>
               <div>
-                <h2 className="font-serif text-3xl mb-6 font-medium">Goal - Why redesign ?</h2>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
                 </div>
