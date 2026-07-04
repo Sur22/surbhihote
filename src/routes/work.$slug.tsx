@@ -1114,7 +1114,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 {"\n"}
               </p>
               <p className="text-lg leading-relaxed text-foreground/85 mb-16">
-                For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.
+                {c.slug === "fjord" 
+                  ? "For testing we decided to release it on the beta environment as the functionality was drag and drop. I connected with users asking them to sharee the screens and observed how they are using the tool and it was working for the"
+                  : <>For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">4 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.</>}
               </p>
             </>
           )}
@@ -1123,19 +1125,23 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Beta environment&nbsp;{"\n"}</span>
+              <span>{c.slug === "fjord" ? "Beta environment - Remote testing  " : "Beta environment\u00a0\n"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>I divided functionality in <strong className="font-semibold">10 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</span>
+              <span>
+                {c.slug === "fjord" 
+                  ? "I divided functionality in 5\u00a0tasks to check the task completion rate and time required to complete those tasks."
+                  : <>I divided functionality in <strong className="font-semibold">10 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+              </span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products.</span>
+              <span>{c.slug === "fjord" ? "Usability test I recruited 8 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products." : "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Based on the test result data some changes were made to fix issues findability and usability issues.</span>
+              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues findability and usability issues."}</span>
             </li>
           </ul>
 
