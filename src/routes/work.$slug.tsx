@@ -1369,6 +1369,17 @@ Every product could have customized stages. Overall there were 35+ types of noti
           ))}
         </div>
       </section>
+
+      {/* Interested in more */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 md:py-24 border-t border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+          <h2 className="font-serif text-3xl md:text-4xl font-normal">Interested in more?</h2>
+          <p className="text-lg leading-relaxed text-foreground/85">
+            <span className="text-accent">Interested in more?</span> Contact me for the case study's with additional insights and artifacts.
+          </p>
+        </div>
+      </section>
+
       <div id="case-study-end" aria-hidden />
 
       {/* Final Thoughts */}
