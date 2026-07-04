@@ -748,14 +748,15 @@ Every product could have customized stages. Overall there were 35+ types of noti
             ? "I started by creating a sitemap to understand exactly how many screens needs to be redesigned and also to make sure I do not miss any of the screens form the websited.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate the design if they are meeting the needs of the user. Solving solution tot their pain points and if design is usable i made mid feudality wireframes."
-            : "This tool design demanded custom components\u00a0"
+            : "This tool needed a custom components to be designed as which was mainly the two parts\u00a0"
           }
         </p>
         {(c.slug !== "fjord2") && (c.slug !== "atlas" && c.slug !== "atlas2") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-            <li>Audience Segment Selector</li>
-            <li>Workspace with segment pills- to create a custom audience using drag and drop</li>
-            
+            <li>Audience Segment Selector\u00a0 \u00a0</li>
+            <li>Workspace - to create a custom audience using drag and drop</li>
+            <li>
+</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
