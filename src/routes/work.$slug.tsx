@@ -929,7 +929,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
