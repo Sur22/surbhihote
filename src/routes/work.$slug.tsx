@@ -270,19 +270,19 @@ If AE’s want to build a custom audience to for the clients would require to se
           </div>
           {(c.slug === "fjord") && (
             <div className="mt-16">
-              <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Personas</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                 {[
                   {
                     name: "Account Executive\n",
                     goals: [
-                      "Tasks\n1. Develop customized media strategies to best target constituents and stakeholders in agency portfolio.\n2. Build Custom Audiance for cl\u00a0\n3. Download rates\u00a0\n\n",
+                      "Tasks\n1. Develop customized media strategies to best target constituents and stakeholders in agency portfolio.\n2. Build Custom Audience for Clients / Agencies\n3. Create a schedule with created custom audience\u00a0\n\n",
                     ],
                   },
                   {
                     name: "Account Director",
                     goals: [
-                      "Tasks\x03\n1. Manage full sales cycle to achieve campaign success.\n\u00a02. orders in timely manner\n3. Create Makegoods\u200b\n\n",
+                      "Tasks\x03\n1. Manage full sales cycle to achieve campaign success.\n2. Create custom audience for the Campaign\u00a0\n3. Create Makegoods\u200b\n\n",
                     ],
                   },
                 ].map((persona, idx) => (
