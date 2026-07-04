@@ -1402,6 +1402,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </div>
         </div>
       </section>
+      </div>
     </SiteLayout>
   );
 }
