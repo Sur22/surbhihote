@@ -133,7 +133,7 @@ const _caseStudies: CaseStudy[] = [
     tools: "Survey Monkey,\u00a0Claude ,\nMicrosoft Clarity, Power BI,Microsoft Azure,Teams,\nAdobe XD",
     tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA and Engineering team.\u00a0",
     overview: "A multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast,COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addrasable.\n\n",
-    goal: "hello how are you",
+    goal: "\n",
     research: {
       ...defaultMeta.research,
       userInterview: "A Survey was sent to all the affiliates which included the questions about the Old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements.\u00a0\nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n\u00a0\nThe total responses we got for the survey was 128.\n\n",
