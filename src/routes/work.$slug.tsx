@@ -218,6 +218,14 @@ function CaseStudyPage() {
               </p>
             </div>
           )}
+          {c.slug === "atlas" && (
+            <div>
+              <h2 className="font-serif text-3xl mb-6 font-medium">Opportunity</h2>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.opportunity}
+              </p>
+            </div>
+          )}
           {c.slug !== "fjord2" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
