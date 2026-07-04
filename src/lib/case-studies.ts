@@ -154,7 +154,7 @@ const _caseStudies: CaseStudy[] = [
     outcome: [
       { label: "Reduced Workload\nfor Data Team\u00a0", value: "-20%" },
       { label: "No business lost till now", value: "$850K\u00a0→\u00a0$0" },
-      { label: "Functionalities Fixed\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a07" },
+      { label: "Functionalities Fixed\u00a0", value: "\u00a0 \u00a0 \u00a0 7" },
       { label: "Faster Paltform", value: "\u00a0 2x" },
     ],
     sections: [
