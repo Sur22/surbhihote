@@ -277,7 +277,7 @@ If AE’s want to build a custom audience to for the clients would require to se
                   {
                     name: "Account Executive\n",
                     goals: [
-                      "Tasks\n1. Develop customized media strategies to best target constituents and stakeholders in agency portfolio.\n2. Build Custom Audience for Clients / Agencies\n3. Create a schedule with created custom audience\u00a0\n\n",
+                      "Tasks\n1. Develop customized media strategies for stakeholders in agency portfolio.\n2. Build Custom Audience for Clients / Agencies\n3. Create a schedule with created custom audience\u00a0\n\n",
                     ],
                   },
                   {
