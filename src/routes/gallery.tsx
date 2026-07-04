@@ -56,7 +56,7 @@ const items = [
   {
     src: newGalleryImg.url,
     title: "Travel AI",
-    tags: ["AI TRAVEL TOOL", "CONCEPT\u00a0\u00a0", "AI FOR UX", "DESIGNLAB 2026"],
+    tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
   {
@@ -67,7 +67,7 @@ const items = [
       { src: dataViz4.url, alt: "Data Visualization — mockup 4" },
     ],
     title: "Data Visualization",
-    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMACE "],
+    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMANCE\u00a0", "2025"],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
   },
   {
@@ -76,13 +76,13 @@ const items = [
       { src: gsnListView.url, alt: "GSN Marketplace — list view" },
     ],
     title: "GSN Marketplace - A white label e-com for clients  ",
-    tags: ["B2B", "E-COMMERCE", "MARKETPLACE ", "2020"],
+    tags: ["B2B", "E-COMMERCE", "MARKETPLACE", "2021"],
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
     images: [{ src: g5.url, alt: "Dashboard- PLM & ERP" }],
     title: "Dashboard",
-    tags: ["B2B", "B2C", "PLM", "ERP"],
+    tags: ["B2B", "B2C", "PLM", "ERP.", "2020"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
   {
@@ -91,7 +91,7 @@ const items = [
       { src: productAfter.url, alt: "Product Page — After" },
     ],
     title: "Product Evolution\u00a0",
-    tags: ["B2B", "B2C", "PLM", "ERP"],
+    tags: ["B2B", "B2C", "PLM", "ERP\u00a0", "2021"],
     body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
   },
 ] as const;
