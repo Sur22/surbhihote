@@ -1370,6 +1370,12 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </div>
       </section>
 
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
+        <p className="text-lg leading-relaxed text-foreground/85">
+          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
+        </p>
+      </section>
+
       {/* Interested in more */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 md:py-24 border-t border-border">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
@@ -1381,17 +1387,6 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </section>
 
       <div id="case-study-end" aria-hidden />
-
-      {/* Final Thoughts */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-semibold">{"\n"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
-        </p>
-        <p className="text-lg leading-relaxed text-foreground/85">
-        </p>
-      </section>
-
 
       {/* More case studies */}
       <section className="border-t border-border">
