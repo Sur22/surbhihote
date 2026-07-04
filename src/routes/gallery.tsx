@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
-import newGalleryImg from "@/assets/portfolio-bg-1-mixed.png.asset.json";
+import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
@@ -55,7 +55,7 @@ const items = [
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
-    src: newGalleryImg.url,
+    src: travelAiBg.url,
     title: "Travel AI",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
