@@ -11,11 +11,19 @@ const baseSections = [
 ];
 
 const slugsWithoutStrategy = new Set(["fjord2", "atlas", "atlas2"]);
+const slugsWithWorkshop = new Set(["fjord2"]);
 
 export function CaseStudySideNav({ slug }: { slug?: string }) {
-  const sections = slug && slugsWithoutStrategy.has(slug)
+  let sections = slug && slugsWithoutStrategy.has(slug)
     ? baseSections.filter((s) => s.id !== "strategy")
-    : baseSections;
+    : [...baseSections];
+
+  if (slug && slugsWithWorkshop.has(slug)) {
+    const researchIdx = sections.findIndex((s) => s.id === "research");
+    if (researchIdx !== -1) {
+      sections.splice(researchIdx + 1, 0, { id: "workshop", label: "Workshop" });
+    }
+  }
   const [activeId, setActiveId] = useState<string>(sections[0].id);
   const [visible, setVisible] = useState(false);
 
