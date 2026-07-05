@@ -10,7 +10,7 @@ const baseSections = [
   { id: "impact", label: "Impact" },
 ];
 
-const slugsWithoutStrategy = new Set(["fjord2", "atlas", "atlas2"]);
+const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["fjord2"]);
 
 export function CaseStudySideNav({ slug }: { slug?: string }) {
