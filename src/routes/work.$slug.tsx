@@ -1140,6 +1140,27 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {(c.slug === "fjord2") && (
+        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
+          <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Conducted moderated usability testing with affiliate users across different job profiles to validate the redesigned flows.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Divided the prototype into task-based scenarios to measure completion rate, time on task and error-free rate.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Findings from the sessions informed refinements to navigation, order details and revise-orders flows before hand-off.</span>
+            </li>
+          </ul>
+        </section>
+      )}
+
       {(c.slug !== "fjord2") && (
         <section id="testing" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24" : "py-24"}`}>
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
