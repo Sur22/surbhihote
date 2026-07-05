@@ -28,21 +28,29 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const els = sections
-      .map((s) => document.getElementById(s.id))
-      .filter((el): el is HTMLElement => !!el);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const vis = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (vis[0]) setActiveId(vis[0].target.id);
-      },
-      { rootMargin: "-20% 0px -70% 0px", threshold: 0 },
-    );
-    els.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const ids = sections.map((s) => s.id);
+    const update = () => {
+      const threshold = window.innerHeight * 0.25;
+      let currentId = ids[0];
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top - threshold <= 0) {
+          currentId = id;
+        } else {
+          break;
+        }
+      }
+      setActiveId(currentId);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
   }, [sections]);
 
   useEffect(() => {
