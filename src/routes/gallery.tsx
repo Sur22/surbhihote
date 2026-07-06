@@ -156,7 +156,7 @@ function GalleryPage() {
               }}
             >
               {"images" in it ? (
-                <HoverAutoplayCarousel opts={{ loop: true }} className="relative">
+                <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
                     {it.images.map((img, idx) => (
                   <CarouselItem key={idx} className="flex items-center justify-center">
