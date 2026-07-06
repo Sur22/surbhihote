@@ -82,6 +82,10 @@ import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
 import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
 import ampMockupBg2 from "@/assets/amp-mockup-bg-2.png.asset.json";
+import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset.json";
+import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
+import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
+import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
