@@ -1430,7 +1430,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                     <span className="whitespace-nowrap">
                       {o.value === "~$850K\u00A0→\u00A0$0" ? (
                         <>
-                          $850K <span className="text-[70%]">→</span> $0
+                          ~$850K <span className="text-[70%]">→</span> $0
                         </>
                       ) : (
                         <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
