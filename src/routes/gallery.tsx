@@ -144,12 +144,13 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
-                it.title === "Creator Hub"
+                it.title === "Creator Hub" ||
+                it.title === "Travel AI"
                   ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Travel AI") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -159,14 +160,17 @@ function GalleryPage() {
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
                       ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
-                      : {}),
+                      : it.title === "Travel AI"
+                        ? { backgroundImage: `url(${travelAiBg.url})` }
+                        : {}),
               }}
             >
               {(it.title === "Data Visualization" ||
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
-                it.title === "Creator Hub") && (
+                it.title === "Creator Hub" ||
+                it.title === "Travel AI") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               )}
               {"images" in it ? (
