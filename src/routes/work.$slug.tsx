@@ -311,7 +311,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 ].map((persona, idx) => (
                   <div
                     key={`${persona.name}-${idx}`}
-                    className="relative rounded-xl border border-[#0068FF] dark:border-border shadow overflow-hidden"
+                    className="relative rounded-xl shadow overflow-hidden"
                   >
                     <div
                       className="absolute inset-0 bg-cover bg-center opacity-50"
