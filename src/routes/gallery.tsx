@@ -63,7 +63,7 @@ const items = [
       { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
       { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
       { src: voyagerItinerary.url, alt: "Voyager — Itinerary" },
-      { src: voyagerMap.url, alt: "Voyager — Map View" },
+      { src: voyagerMap2.url, alt: "Voyager — Map View" },
     ],
     title: "Travel AI",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
