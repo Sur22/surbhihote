@@ -81,6 +81,7 @@ import notificationsFinalScreens from "@/assets/notifications-final-screens-mock
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
 import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
+import ampMockupBg2 from "@/assets/amp-mockup-bg-2.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
