@@ -154,6 +154,9 @@ function GalleryPage() {
                       : {}),
               }}
             >
+              {it.title === "Creator Hub" && (
+                <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
+              )}
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
