@@ -76,9 +76,7 @@ function AboutPage() {
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
-                Thank you for exploring my work. I blend tech, and design and strategy, to solve complex problems. For me, it's all about creating tangible value and outcomes that stick.
-                <br />
-                I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward.
+                Thank you for exploring my work. I blend tech, and design and strategy, to solve complex problems. For me, it's all about creating tangible value and outcomes that stick. I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward.
                 <br />
                 Through my work, I want to help create useful, engaging, and intuitive solutions that help people improve their lives.
               </p>
