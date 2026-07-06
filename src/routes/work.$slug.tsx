@@ -314,7 +314,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     className="relative rounded-xl border border-[#0068FF] dark:border-border shadow overflow-hidden"
                   >
                     <div
-                      className="absolute inset-0 bg-cover bg-center"
+                      className="absolute inset-0 bg-cover bg-center opacity-50"
                       style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                     />
                     <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
@@ -587,7 +587,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       className="relative rounded-xl border border-[#0068FF] dark:border-border shadow overflow-hidden"
                     >
                       <div
-                        className="absolute inset-0 bg-cover bg-center"
+                        className="absolute inset-0 bg-cover bg-center opacity-50"
                         style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                       />
                       <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
