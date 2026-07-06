@@ -188,7 +188,8 @@ function GalleryPage() {
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
                         it.title === "Data Visualization" ||
-                        it.title === "Creator Hub"
+                        it.title === "Creator Hub" ||
+                        it.title === "Travel AI"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
