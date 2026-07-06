@@ -578,7 +578,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   ].map((persona, idx) => (
                     <div
                       key={`${persona.name}-${idx}`}
-                      className="rounded-xl border border-white/30 bg-cover bg-center text-white shadow p-6"
+                      className="rounded-xl border border-[#0068FF] dark:border-border bg-cover bg-center text-foreground dark:text-primary-foreground shadow p-6"
                       style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                     >
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
