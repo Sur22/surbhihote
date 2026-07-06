@@ -149,7 +149,7 @@ function AboutPage() {
 
       {/* Image Carousel */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-16 md:py-24">
-        <p className="eyebrow mb-8">From My Lens</p>
+        <p className="eyebrow mb-8">OTHER THAN DESIGN&nbsp;</p>
         <Carousel
           opts={{ loop: true, align: "start" }}
           plugins={[autoplay.current]}
