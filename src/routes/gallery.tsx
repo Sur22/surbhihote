@@ -34,6 +34,7 @@ import voyagerChat from "@/assets/voyager-chat.png.asset.json";
 import voyagerItinerary from "@/assets/voyager-itinerary.png.asset.json";
 import voyagerMap from "@/assets/voyager-map.png.asset.json";
 import voyagerMap2 from "@/assets/voyager-map-2.png.asset.json";
+import voyagerMap3 from "@/assets/voyager-map-3.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
