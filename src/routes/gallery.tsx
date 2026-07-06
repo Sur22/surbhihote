@@ -179,7 +179,7 @@ function GalleryPage() {
                     ))}
                   </CarouselContent>
                   {it.images.length > 1 && <CarouselDots />}
-                </HoverAutoplayCarousel>
+                </Carousel>
               ) : (
                 <img
                   src={it.src}
