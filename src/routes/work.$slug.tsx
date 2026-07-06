@@ -311,27 +311,33 @@ If AE's want to build a custom audience to for the clients would require to send
                 ].map((persona, idx) => (
                   <div
                     key={`${persona.name}-${idx}`}
-                    className="rounded-xl border border-[#0068FF] dark:border-border bg-cover bg-center text-foreground dark:text-primary-foreground shadow p-6"
-                    style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                    className="relative rounded-xl border border-[#0068FF] dark:border-border shadow overflow-hidden"
                   >
-                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
-                      {persona.name}
-                    </h4>
+                    <div
+                      className="absolute inset-0 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                    />
+                    <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                    <div className="relative p-6 text-foreground dark:text-primary-foreground">
+                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
+                        {persona.name}
+                      </h4>
                       <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
-                      {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
-                        const tasksIndex = goal.indexOf("Tasks");
-                        if (tasksIndex !== -1) {
-                          const before = goal.slice(0, tasksIndex);
-                          const after = goal.slice(tasksIndex + 5);
-                          return (
-                            <li key={gidx} className="whitespace-pre-line">
-                              {before}<span className="font-bold">Tasks</span>{after}
-                            </li>
-                          );
-                        }
-                        return <li key={gidx} className="whitespace-pre-line">{goal}</li>;
-                      })}
-                    </ul>
+                        {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
+                          const tasksIndex = goal.indexOf("Tasks");
+                          if (tasksIndex !== -1) {
+                            const before = goal.slice(0, tasksIndex);
+                            const after = goal.slice(tasksIndex + 5);
+                            return (
+                              <li key={gidx} className="whitespace-pre-line">
+                                {before}<span className="font-bold">Tasks</span>{after}
+                              </li>
+                            );
+                          }
+                          return <li key={gidx} className="whitespace-pre-line">{goal}</li>;
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -578,49 +584,55 @@ If AE's want to build a custom audience to for the clients would require to send
                   ].map((persona, idx) => (
                     <div
                       key={`${persona.name}-${idx}`}
-                      className="rounded-xl border border-[#0068FF] dark:border-border bg-cover bg-center text-foreground dark:text-primary-foreground shadow p-6"
-                      style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                      className="relative rounded-xl border border-[#0068FF] dark:border-border shadow overflow-hidden"
                     >
-                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
-                        {persona.name}
-                      </h4>
-                      <div className="space-y-2 mb-5">
-                        {[
-                          { label: "Platform Usage", value: persona.usage },
-                          { label: "Platform Dependency", value: persona.dependency },
-                        ].map((bar) => (
-                          <div key={bar.label}>
-                            <div className="text-sm font-medium mb-2">{bar.label}</div>
-                            <div className="w-[70%]">
-                              <div className="grid grid-cols-4 gap-2">
-                                {Array.from({ length: 4 }).map((_, i) => (
-                                  <div
-                                    key={i}
-                                    className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
-                                      i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
-                                    }`}
-                                  />
-                                ))}
+                      <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                      />
+                      <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                      <div className="relative p-6 text-foreground dark:text-primary-foreground">
+                        <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
+                          {persona.name}
+                        </h4>
+                        <div className="space-y-2 mb-5">
+                          {[
+                            { label: "Platform Usage", value: persona.usage },
+                            { label: "Platform Dependency", value: persona.dependency },
+                          ].map((bar) => (
+                            <div key={bar.label}>
+                              <div className="text-sm font-medium mb-2">{bar.label}</div>
+                              <div className="w-[70%]">
+                                <div className="grid grid-cols-4 gap-2">
+                                  {Array.from({ length: 4 }).map((_, i) => (
+                                    <div
+                                      key={i}
+                                      className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                      }`}
+                                    />
+                                  ))}
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
+                        <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                          {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
+                            const tasksIndex = goal.indexOf("Tasks");
+                            if (tasksIndex !== -1) {
+                              const before = goal.slice(0, tasksIndex);
+                              const after = goal.slice(tasksIndex + 5);
+                              return (
+                                <li key={idx} className="whitespace-pre-line">
+                                  {before}<span className="font-bold">Tasks</span>{after}
+                                </li>
+                              );
+                            }
+                            return <li key={idx} className="whitespace-pre-line">{goal}</li>;
+                          })}
+                        </ul>
                       </div>
-                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
-                        {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
-                          const tasksIndex = goal.indexOf("Tasks");
-                          if (tasksIndex !== -1) {
-                            const before = goal.slice(0, tasksIndex);
-                            const after = goal.slice(tasksIndex + 5);
-                            return (
-                              <li key={idx} className="whitespace-pre-line">
-                                {before}<span className="font-bold">Tasks</span>{after}
-                              </li>
-                            );
-                          }
-                          return <li key={idx} className="whitespace-pre-line">{goal}</li>;
-                        })}
-                      </ul>
                     </div>
                   ))}
                 </div>
