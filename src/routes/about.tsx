@@ -42,7 +42,7 @@ const galleryImages = [
 
 const services = [
   { n: "01", t: "Systems-Level Thinking", d: "I don't just design screens; I design scalable systems that bridge the gap between technical complexity and user needs." },
-  { n: "02", t: "Absolute Learner", d: "My endless curiosity of learning about design, new technology, business, different perspective and anything and everything which interests me, I try to learn about it." },
+  { n: "02", t: "Absolute Learner", d: "My endless curiosity of learning about design, new technology, business, different perspective , anything and everything which interests me, I try to learn about it." },
   { n: "03", t: "Outcome-Driven", d: "Focusing on tangible business and user outcomes over mere outputs, ensuring design directly contributes to success." },
   { n: "04", t: "Technical Grounding", d: "My background in Information Technology Engineering and Master's In Computer Science ensures designs are not only beautiful but also technically robust and feasible." },
   { n: "05", t: "Data Driven Design", d: "My design decisions are informed by research and numbers rather than depending on just assumptions.I see the pattern in the data which helps the product and users." },
