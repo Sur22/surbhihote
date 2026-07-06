@@ -609,7 +609,11 @@ If AE's want to build a custom audience to for the clients would require to send
                                     <div
                                       key={i}
                                       className={`h-2 border border-[#0068FF] dark:border-primary-foreground/70 ${
-                                        i === 0 || i === 3 ? "rounded-full" : "rounded-none"
+                                        i === 0
+                                          ? "rounded-l-full rounded-r-none"
+                                          : i === 3
+                                            ? "rounded-r-full rounded-l-none"
+                                            : "rounded-none"
                                       } ${
                                         i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
                                       }`}
