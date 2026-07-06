@@ -1312,7 +1312,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img src={img.src} alt={img.label} className="relative paths" loading="lazy" />
+                      <img src={img.src} alt={img.label} className="relative w-[85%] mx-auto h-auto" loading="lazy" />
                     </div>
                   ) : (
                     <div className="overflow-hidden rounded-sm border border-border bg-secondary">
