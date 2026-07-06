@@ -32,6 +32,7 @@ import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.jso
 import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
 import voyagerChat from "@/assets/voyager-chat.png.asset.json";
 import voyagerItinerary from "@/assets/voyager-itinerary.png.asset.json";
+import voyagerItinerary2 from "@/assets/voyager-itinerary-2.png.asset.json";
 import voyagerMap from "@/assets/voyager-map.png.asset.json";
 import voyagerMap2 from "@/assets/voyager-map-2.png.asset.json";
 import voyagerMap3 from "@/assets/voyager-map-3.png.asset.json";
@@ -63,7 +64,7 @@ const items = [
     images: [
       { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
       { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
-      { src: voyagerItinerary.url, alt: "Voyager — Itinerary" },
+      { src: voyagerItinerary2.url, alt: "Voyager — Itinerary" },
       { src: voyagerMap3.url, alt: "Voyager — Map View" },
     ],
     title: "Travel AI",
