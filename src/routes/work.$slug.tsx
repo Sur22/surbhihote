@@ -317,7 +317,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                       {persona.name}
                     </h4>
-                      <ul className="text-sm text-white/90 space-y-2">
+                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
                       {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
                         const tasksIndex = goal.indexOf("Tasks");
                         if (tasksIndex !== -1) {
