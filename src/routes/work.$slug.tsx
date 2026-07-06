@@ -1316,10 +1316,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
                   ]
                 : (c.slug === "fjord2")
                 ? [
-                    { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
-                    { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
-                    { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
-                    { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
+                    { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
+                    { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
+                    { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
+                    { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
                   ]
                 : [
                     { src: finalToolScreens.url, label: "Tool screens" },
