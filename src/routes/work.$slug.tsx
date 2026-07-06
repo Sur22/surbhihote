@@ -82,6 +82,10 @@ import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
 import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
 import ampMockupBg2 from "@/assets/amp-mockup-bg-2.png.asset.json";
+import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset.json";
+import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
+import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
+import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -1312,10 +1316,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
                   ]
                 : (c.slug === "fjord2")
                 ? [
-                    { src: affiliateBeforeAfter.url, label: "Before and after comparison" },
-                    { src: affiliateFinalScreens.url, label: "Affiliate website final screens" },
-                    { src: affiliateOrderDetails.url, label: "Affiliate website order details page" },
-                    { src: affiliateReviseOrders.url, label: "Affiliate website revise orders" },
+                    { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
+                    { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
+                    { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
+                    { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
                   ]
                 : [
                     { src: finalToolScreens.url, label: "Tool screens" },
