@@ -86,6 +86,7 @@ import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset
 import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
 import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
 import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
+import ampMockupBg3 from "@/assets/amp-mockup-bg-3.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -1287,23 +1288,29 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Screens&nbsp;</h2>
         {c.slug === "fjord" ? (
           <>
-            <div className="relative overflow-hidden rounded-sm border border-border bg-secondary">
-              <img
-                src={audienceBuilderMockup2.url}
-                alt="Audience Builder final screen"
-                className="w-full h-auto"
-                loading="lazy"
-              />
-              <a
-                href="https://drive.google.com/file/d/1BqBCepSDL7VSyxSFTBBNYRDKje2RHUip/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center"
-              >
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
-                  <Play className="h-7 w-7 fill-current" />
-                </div>
-              </a>
+            <div
+              className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+              style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg3.url})` }}
+            >
+              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
+              <div className="relative w-[85%] mx-auto">
+                <img
+                  src={audienceBuilderMockup2.url}
+                  alt="Audience Builder final screen"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1BqBCepSDL7VSyxSFTBBNYRDKje2RHUip/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
+                    <Play className="h-7 w-7 fill-current" />
+                  </div>
+                </a>
+              </div>
             </div>
             <p className="mt-4 text-center text-sm text-muted-foreground">Click to watch a short video</p>
           </>
