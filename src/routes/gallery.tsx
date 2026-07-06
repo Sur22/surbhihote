@@ -1,18 +1,17 @@
 import { cn } from "@/lib/utils";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { caseStudies } from "@/lib/case-studies";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselDots,
-  type CarouselApi,
+
 } from "@/components/ui/carousel";
 import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
-import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
