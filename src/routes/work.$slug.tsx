@@ -1174,15 +1174,15 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Conducted moderated usability testing with affiliate users across different job profiles to validate the redesigned flows.</span>
+              <span>As the affiliates are external users it was not possible for me to conduct usability testing as stack holder are the one who are able to do that and they being not avialable and also it was not possible to ask more time from the affiliates as we already had a survey and the session with them. I&nbsp; had to take the route of using Microsoft Clarity to monitor how users are using the site.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Divided the prototype into task-based scenarios to measure completion rate, time on task and error-free rate.</span>
+              <span>After 2 months of usage we sent a popup survey on the platform asking for open ended feedback and how&nbsp; are they rating the new website.&nbsp;&nbsp;</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Findings from the sessions informed refinements to navigation, order details and revise-orders flows before hand-off.</span>
+              <span>The feedback we got were positive and I&nbsp; watched some sessions using Microsoft Clarity to check if it is being used as we expected it to be used and results seemed satisfactory.</span>
             </li>
           </ul>
         </section>
