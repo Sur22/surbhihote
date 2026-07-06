@@ -1402,6 +1402,8 @@ Every product could have customized stages. Overall there were 35+ types of noti
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
             ? <>The first phase of the project is live. So far it is working smoothly and I am monitoring how users are interacting with the website using Microsoft Clarity and power BI Reports.The initial feedback after the release has been positive. Users are currently using both old and new websites as we wont sunset it{"\u00a0"} till we release the second phase of the project and make sure everything is working as expected.{"\u00a0"} {"\u00a0"}{"\u00a0"}</>
+            : c.slug === "fjord"
+            ? "We successfully deployed the tool and it reduced the significant amount of time for creating a custom audience as they no longer has to wait for data team to make it for them for those who did not had access to the paid tool.We save a good amount to the company and also was able provide few more features than existing tool by making it more intuitive . I learnt to make sure to have all the possible resources to be available for the users for learning and for smoother adoption."
             : "I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories."}
         </p>
       </section>
@@ -1450,7 +1452,11 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
-          <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
+          {c.slug === "fjord" ? "\n" : (
+            <>
+              <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
+            </>
+          )}
         </p>
       </section>
 
