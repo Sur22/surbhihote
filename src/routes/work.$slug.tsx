@@ -86,6 +86,7 @@ import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset
 import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
 import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
 import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
+import ampMockupBg3 from "@/assets/amp-mockup-bg-3.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
