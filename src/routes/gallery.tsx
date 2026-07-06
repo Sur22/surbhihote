@@ -29,6 +29,10 @@ import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.jso
 import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
 import creatorHubCreatePost from "@/assets/creator-hub-create-post.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
+import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
+import voyagerChat from "@/assets/voyager-chat.png.asset.json";
+import voyagerItinerary from "@/assets/voyager-itinerary.png.asset.json";
+import voyagerMap from "@/assets/voyager-map.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
