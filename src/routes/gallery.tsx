@@ -141,7 +141,7 @@ function GalleryPage() {
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
                 (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28",
-                it.title === "Creator Hub" && "py-28"
+                it.title === "Creator Hub" && "relative py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -154,6 +154,9 @@ function GalleryPage() {
                       : {}),
               }}
             >
+              {it.title === "Creator Hub" && (
+                <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
+              )}
               {"images" in it ? (
                 <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
