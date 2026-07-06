@@ -194,14 +194,7 @@ function GalleryPage() {
                   </CarouselContent>
                   {it.images.length > 1 && <CarouselDots />}
                 </Carousel>
-              ) : (
-                <img
-                  src={it.src}
-                  alt={it.title}
-                  loading="lazy"
-                  className="w-full h-auto object-contain"
-                />
-              )}
+              ) : null}
             </div>
           </article>
         ))}
