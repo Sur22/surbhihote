@@ -1,18 +1,17 @@
 import { cn } from "@/lib/utils";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { caseStudies } from "@/lib/case-studies";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselDots,
-  type CarouselApi,
+
 } from "@/components/ui/carousel";
 import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
-import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.png.asset.json";
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
@@ -97,36 +96,6 @@ const items = [
   },
 ] as const;
 
-function HoverAutoplayCarousel({
-  children,
-  ...props
-}: React.ComponentProps<typeof Carousel>) {
-  const [api, setApi] = React.useState<CarouselApi | null>(null);
-  const intervalRef = React.useRef<ReturnType<typeof setInterval> | null>(null);
-
-  const start = React.useCallback(() => {
-    if (!api) return;
-    if (intervalRef.current) clearInterval(intervalRef.current);
-intervalRef.current = setInterval(() => api.scrollNext(), 2000);
-  }, [api]);
-
-  const stop = React.useCallback(() => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-  }, []);
-
-  React.useEffect(() => () => stop(), [stop]);
-
-  return (
-    <div onMouseEnter={start} onMouseLeave={stop}>
-      <Carousel {...props} setApi={(a) => { setApi(a); props.setApi?.(a); }}>
-        {children}
-      </Carousel>
-    </div>
-  );
-}
 
 function GalleryPage() {
   return (
@@ -186,7 +155,7 @@ function GalleryPage() {
               }}
             >
               {"images" in it ? (
-                <HoverAutoplayCarousel opts={{ loop: true }} className="relative">
+                <Carousel opts={{ loop: true }} className="relative">
                   <CarouselContent>
                     {it.images.map((img, idx) => (
                   <CarouselItem key={idx} className="flex items-center justify-center">
@@ -209,7 +178,7 @@ function GalleryPage() {
                     ))}
                   </CarouselContent>
                   {it.images.length > 1 && <CarouselDots />}
-                </HoverAutoplayCarousel>
+                </Carousel>
               ) : (
                 <img
                   src={it.src}
