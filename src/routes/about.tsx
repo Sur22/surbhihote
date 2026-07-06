@@ -78,7 +78,7 @@ function AboutPage() {
               <p>
                 Thank you for exploring my work. I blend tech, and design and strategy, to solve complex problems. For me, it's all about creating tangible value and outcomes that stick.
                 <br />
-                I am a curious creative who likes to explore and learn about what could be as well as a down-to-earth critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward.
+                I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward.
                 <br />
                 Through my work, I want to help create useful, engaging, and intuitive solutions that help people improve their lives.
               </p>
