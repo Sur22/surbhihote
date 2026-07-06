@@ -29,6 +29,10 @@ import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.jso
 import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
 import creatorHubCreatePost from "@/assets/creator-hub-create-post.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
+import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
+import voyagerChat from "@/assets/voyager-chat.png.asset.json";
+import voyagerItinerary from "@/assets/voyager-itinerary.png.asset.json";
+import voyagerMap from "@/assets/voyager-map.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -54,7 +58,12 @@ const items = [
     body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
-    src: travelAiBg.url,
+    images: [
+      { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
+      { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
+      { src: voyagerItinerary.url, alt: "Voyager — Itinerary" },
+      { src: voyagerMap.url, alt: "Voyager — Map View" },
+    ],
     title: "Travel AI",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
@@ -135,12 +144,13 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
-                it.title === "Creator Hub"
+                it.title === "Creator Hub" ||
+                it.title === "Travel AI"
                   ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Travel AI") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -150,14 +160,17 @@ function GalleryPage() {
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
                       ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
-                      : {}),
+                      : it.title === "Travel AI"
+                        ? { backgroundImage: `url(${travelAiBg.url})` }
+                        : {}),
               }}
             >
               {(it.title === "Data Visualization" ||
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
-                it.title === "Creator Hub") && (
+                it.title === "Creator Hub" ||
+                it.title === "Travel AI") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               )}
               {"images" in it ? (
@@ -175,7 +188,8 @@ function GalleryPage() {
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
                         it.title === "Data Visualization" ||
-                        it.title === "Creator Hub"
+                        it.title === "Creator Hub" ||
+                        it.title === "Travel AI"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
@@ -185,14 +199,7 @@ function GalleryPage() {
                   </CarouselContent>
                   {it.images.length > 1 && <CarouselDots />}
                 </Carousel>
-              ) : (
-                <img
-                  src={it.src}
-                  alt={it.title}
-                  loading="lazy"
-                  className="w-full h-auto object-contain"
-                />
-              )}
+              ) : null}
             </div>
           </article>
         ))}
