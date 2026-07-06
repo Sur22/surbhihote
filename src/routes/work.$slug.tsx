@@ -1187,7 +1187,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           </ul>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
-            Placeholder paragraph for adoption details.
+            Before the release we made sure to have the help resources ready&nbsp; such as short videos showing how to perform a task and a list of possible FAQ's and also, a place where users can send the feedback and also can report any bugs or errors they encounter.&nbsp;&nbsp;
           </p>
         </section>
       )}
