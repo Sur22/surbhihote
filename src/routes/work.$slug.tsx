@@ -80,6 +80,7 @@ import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
+import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -310,12 +311,13 @@ If AE's want to build a custom audience to for the clients would require to send
                 ].map((persona, idx) => (
                   <div
                     key={`${persona.name}-${idx}`}
-                    className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
+                    className="rounded-xl border border-white/30 bg-cover bg-center text-white shadow p-6"
+                    style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                   >
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                       {persona.name}
                     </h4>
-                    <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                      <ul className="text-sm text-white/90 space-y-2">
                       {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
                         const tasksIndex = goal.indexOf("Tasks");
                         if (tasksIndex !== -1) {
@@ -576,7 +578,8 @@ If AE's want to build a custom audience to for the clients would require to send
                   ].map((persona, idx) => (
                     <div
                       key={`${persona.name}-${idx}`}
-                      className="rounded-xl border border-[#0068FF] dark:border-border bg-white dark:bg-primary text-foreground dark:text-primary-foreground shadow p-6"
+                      className="rounded-xl border border-white/30 bg-cover bg-center text-white shadow p-6"
+                      style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                     >
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                         {persona.name}
@@ -593,8 +596,8 @@ If AE's want to build a custom audience to for the clients would require to send
                                 {Array.from({ length: 4 }).map((_, i) => (
                                   <div
                                     key={i}
-                                    className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
-                                      i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                    className={`h-2 rounded-full border border-white/70 ${
+                                      i < bar.value ? "bg-white" : "bg-transparent"
                                     }`}
                                   />
                                 ))}
@@ -603,7 +606,7 @@ If AE's want to build a custom audience to for the clients would require to send
                           </div>
                         ))}
                       </div>
-                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                      <ul className="text-sm text-white/90 space-y-2">
                         {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
                           const tasksIndex = goal.indexOf("Tasks");
                           if (tasksIndex !== -1) {
