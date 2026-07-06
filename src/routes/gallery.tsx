@@ -28,6 +28,7 @@ import creatorHubDashboard from "@/assets/creator-hub-dashboard.png.asset.json";
 import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-1.png.asset.json";
 import creatorHubAnalytics2 from "@/assets/creator-hub-analytics-2.png.asset.json";
 import creatorHubCreatePost from "@/assets/creator-hub-create-post.png.asset.json";
+import creatorHubCreatePostNew from "@/assets/creator-hub-create-post-new.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
 import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
 import voyagerChat from "@/assets/voyager-chat.png.asset.json";
