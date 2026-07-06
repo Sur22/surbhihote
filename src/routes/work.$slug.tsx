@@ -596,8 +596,8 @@ If AE's want to build a custom audience to for the clients would require to send
                                 {Array.from({ length: 4 }).map((_, i) => (
                                   <div
                                     key={i}
-                                    className={`h-2 rounded-full border border-white/70 ${
-                                      i < bar.value ? "bg-white" : "bg-transparent"
+                                    className={`h-2 rounded-full border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                      i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
                                     }`}
                                   />
                                 ))}
