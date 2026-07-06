@@ -883,7 +883,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-8 pb-0" : "py-24"}`}>
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wireframes\u00a0" : "Brainstorming Session With Product Team"}</h2>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution\u00a0" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0\n1. Sourcing Stage\n2. Pre- production Stage\n3. Production Stage\nin all these there comments for communication between the staff handling the project , Client and the factories.Apart from that the notification related to the files of the each stage file uploaded,\u00a0accepted or rejected etc. along with finance or billing.\u00a0\nEvery product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0 \u00a0\n\n\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
         {(c.slug === "fjord2") ? (
           <button
@@ -1210,19 +1210,19 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Beta environment - Remote testing  " : "Beta environment\u00a0\n"}</span>
+              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : "Beta environment\u00a0\n"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>
                 {c.slug === "fjord" 
-                  ? "I divided functionality in 5\u00a0tasks to check the task completion rate and time required to complete those tasks."
+                  ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks.\n1.\u00a0 Search a segment\n2. Drag and Drop it to the build area\u00a0\n3. Create a group of segments\u00a0\n4. Switch between OR & AND ,Include and exclude\u00a0\n5. Name and save a segment\u00a0\n6. Use the created segment into either Schedule Creation or Container Creation process."
                   : <>I divided functionality in <strong className="font-semibold">10 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Usability test I recruited 8 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products." : "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products."}</span>
+              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to navigate products."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -1285,7 +1285,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Final Designs */}
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : "py-24"}`}>
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Final Screens&nbsp;</h2>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-medium">Solution\u00a0</h2>
         {c.slug === "fjord" ? (
           <>
             <div
