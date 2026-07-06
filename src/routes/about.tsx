@@ -130,7 +130,7 @@ function AboutPage() {
                     src={c.src}
                     alt={c.name}
                     loading="lazy"
-                    className="h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                    className={`h-10 md:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity ${c.name === "Spacewood" ? "scale-[0.8]" : ""}`}
                   />
                 ) : (
                   <span className="font-serif font-bold text-[1.875rem] md:text-[2.125rem] whitespace-nowrap opacity-90 hover:opacity-100 transition-opacity" style={{ color: "#4a6079" }}>
