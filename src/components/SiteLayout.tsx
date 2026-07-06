@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail, Menu } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu, Heart, UtensilsCrossed, Coffee } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
@@ -116,7 +116,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </p>
 
           <p className="text-sm text-muted-foreground whitespace-pre-line">
-            {"\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Vibe Coded With ❤️ 🍜 🍵\n\n© 2026 Surbhi Hote. All rights reserved."}
+            {"\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Vibe Coded With "}
+            <Heart size={14} className="inline-block align-text-bottom text-foreground" />
+            {" "}
+            <UtensilsCrossed size={14} className="inline-block align-text-bottom text-foreground" />
+            {" "}
+            <Coffee size={14} className="inline-block align-text-bottom text-foreground" />
+            {"\n\n© 2026 Surbhi Hote. All rights reserved."}
           </p>
         </div>
       </footer>
