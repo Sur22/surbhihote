@@ -164,11 +164,15 @@ function GalleryPage() {
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
                       ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
-                      : it.title === "Travel AI"
-                        ? { backgroundImage: `url(${travelAiBg.url})` }
-                        : {}),
+                      : {}),
               }}
             >
+              {it.title === "Travel AI" && (
+                <div
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${travelAiBg.url})`, opacity: 0.7 }}
+                />
+              )}
               {(it.title === "Data Visualization" ||
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
