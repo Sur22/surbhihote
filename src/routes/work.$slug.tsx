@@ -81,6 +81,7 @@ import notificationsFinalScreens from "@/assets/notifications-final-screens-mock
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
 import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
+import ampMockupBg2 from "@/assets/amp-mockup-bg-2.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -1325,6 +1326,14 @@ Every product could have customized stages. Overall there were 35+ types of noti
                     <div
                       className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
+                    >
+                      <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
+                      <img src={img.src} alt={img.label} className="relative w-[85%] mx-auto h-auto" loading="lazy" />
+                    </div>
+                  ) : (c.slug === "fjord2") ? (
+                    <div
+                      className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+                      style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
                       <img src={img.src} alt={img.label} className="relative w-[85%] mx-auto h-auto" loading="lazy" />
