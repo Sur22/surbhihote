@@ -131,17 +131,16 @@ function GalleryPage() {
             <div
               className={cn(
                 "overflow-hidden shadow-xl",
-                it.title === "Data Visualization" || 
+                it.title === "Data Visualization" ||
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
                 it.title === "Creator Hub"
-                  ? "bg-cover bg-center bg-no-repeat"
+                  ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0") && "py-28",
-                it.title === "Creator Hub" && "relative py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -154,7 +153,11 @@ function GalleryPage() {
                       : {}),
               }}
             >
-              {it.title === "Creator Hub" && (
+              {(it.title === "Data Visualization" ||
+                it.title === "GSN Marketplace - A white label e-com for clients  " ||
+                it.title === "Dashboard" ||
+                it.title === "Product Evolution\u00a0" ||
+                it.title === "Creator Hub") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               )}
               {"images" in it ? (
