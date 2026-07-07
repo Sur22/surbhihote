@@ -289,20 +289,9 @@ const _caseStudies: CaseStudy[] = [
     subtitle: "Product Manufacturing Management and Tracking.",
     client: "Atlas, NYC",
     year: "2024",
-    role: "Design Lead",
+    ...defaultMeta,
     timeframe: "2 Weeks",
-    tools: "Adobe XD, Miro, Zoom meetings",
-    tasksPerformed:
-      "End to End Design, User Research, UI Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
-    overview:
-      "The GRID enables real-time collaboration through the supply chain providing users visibility into the manufacturing process as well as keeping the stakeholders informed about all the processes within their supply chain. GRID serves as a communication tool where the all active users within the supply chain can interact throughout the manufacturing process while allowing the client to request changes, share & update documents, and leave comments.\n",
-    goal:
-      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
     research: {
-      stakeholderInterview:
-        "After I get a brief from product team about the new feature and receive the product requirement document(PRD) and comitative analysis to get holistic idea of the feature and the functionality we are thinking of developing.\nI interviewed stakeholder of this feature was the 'Head of Product Development' team. It gave me better understanding of the problem we are trying to solve.\nAs there are many phases and stages of PLM Product Development Managers were having hard time managing all the product related files and data. They had to use multiple tools to manage the communication with the factory and the client when any change/ update was made for the product",
-      userInterview:
-        "As there are multiple user types I recruited 5 different type of users; which included users who requested the feature to get sense of what kind of notifications are important to which type of users and conducted user interview.\nAfter talking to all the users I understood their frustration and the pain points. Following are some of the things which users said during the user interview.\nAs a fast growing startup environment and everyone is being busy I carried out the users interview by going to their desks and asking them the set of questions.\u00a0\n\n",
       ...defaultMeta.research,
       userInterviewInsights: [
         {
@@ -330,9 +319,6 @@ const _caseStudies: CaseStudy[] = [
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
-    opportunity:
-      "Placeholder text for the Opportunity section.As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.",
-    goal: "\n",
     approach: [
       "Killed the two-panel layout. Map and list now share one scroll surface that responds to zoom.",
       "Designed 'pinch-to-day' — a gesture that collapses the map to a calendar strip and back.",
