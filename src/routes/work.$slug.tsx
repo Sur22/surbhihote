@@ -787,7 +787,7 @@ If AE's want to build a custom audience to for the clients would require to send
 in all these there comments for communication between the staff handling the project Client and the factories.Apart from that the notification related to the files of the each stage file uploaded, accepted or rejected etc. along with finance or billing.\u00a0
 Every product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0`}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
                 <img src={userControlBanner.url} alt="Give control to user banner" className="w-full max-w-[320px] h-auto rounded-[8px]" />
               </div>
