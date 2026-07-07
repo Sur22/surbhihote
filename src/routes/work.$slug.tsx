@@ -550,12 +550,12 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                The workshop started with a walk through of Affiliate website and{"\u00a0"}
+                The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}
               </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"All the affiliates working with the company has been using the 20 years old site which has\n\u00a01. Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0 Some functionalities not working\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions. 7. Broken functionalities"}
+                  {"All the affiliates working with the company has been using the 20 years old site which has\n\u00a01. Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0 Some functionalities not working\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n\u00a07. Broken functionalities"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
