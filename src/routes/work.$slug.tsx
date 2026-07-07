@@ -1456,9 +1456,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
-          {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "atlas" || c.slug === "atlas2") ? "\n" : (
+          {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? "\n" : (
             <>
-              <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
+              <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
             </>
           )}
         </p>
