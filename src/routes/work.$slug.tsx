@@ -1285,6 +1285,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {c.slug === "solace" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
       {/* Final Designs */}
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : "py-24"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
