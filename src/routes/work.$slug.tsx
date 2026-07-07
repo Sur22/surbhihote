@@ -1251,7 +1251,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-lg border border-border bg-card px-8 py-10 text-center shadow-sm"
+                  className="rounded-lg border border-border bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center"
                 >
                   <p className="text-lg font-bold text-foreground">
                     {s.label}: <span>{s.value}</span>
