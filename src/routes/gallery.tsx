@@ -69,7 +69,7 @@ const items = [
       { src: voyagerItinerary2.url, alt: "Voyager — Itinerary" },
       { src: voyagerMap3.url, alt: "Voyager — Map View" },
     ],
-    title: "Travel AI",
+    title: "Voyager - AI Travel Assistant",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
   },
@@ -155,12 +155,12 @@ function GalleryPage() {
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
                 it.title === "Creator Hub" ||
-                it.title === "Travel AI"
+                it.title === "Voyager - AI Travel Assistant"
                   ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Travel AI") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
@@ -173,7 +173,7 @@ function GalleryPage() {
                       : {}),
               }}
             >
-              {it.title === "Travel AI" && (
+              {it.title === "Voyager - AI Travel Assistant" && (
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{ backgroundImage: `url(${travelAiBg.url})`, opacity: 0.7 }}
@@ -184,7 +184,7 @@ function GalleryPage() {
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
                 it.title === "Creator Hub" ||
-                it.title === "Travel AI") && (
+                it.title === "Voyager - AI Travel Assistant") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               )}
               {"images" in it ? (
@@ -203,7 +203,7 @@ function GalleryPage() {
                         it.title === "Product Evolution\u00a0" ||
                         it.title === "Data Visualization" ||
                         it.title === "Creator Hub" ||
-                        it.title === "Travel AI"
+                        it.title === "Voyager - AI Travel Assistant"
                           ? "w-[85%] mx-auto"
                           : "w-full"
                       )}
