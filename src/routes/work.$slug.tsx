@@ -1263,6 +1263,10 @@ Every product could have customized stages. Overall there were 35+ types of noti
         </section>
       )}
 
+      {(c.slug === "atlas" || c.slug === "atlas2") && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
