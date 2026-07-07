@@ -859,7 +859,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             <img
               src={notificationsWireframe.url}
               alt="Notifications wireframe"
-              className={(c.slug === "atlas" || c.slug === "atlas2") ? "w-[85%] mx-auto h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" : "w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"}
+              className={(c.slug === "atlas" || c.slug === "atlas2") ? "w-[127.5%] mx-auto h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" : "w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"}
               loading="lazy"
             />
           </button>
