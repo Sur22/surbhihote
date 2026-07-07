@@ -566,7 +566,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
                 </div>
 
-                <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Personas</h3>
+                <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Personas</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
