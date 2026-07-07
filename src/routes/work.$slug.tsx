@@ -789,7 +789,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </p>
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
-                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full max-w-[864px] h-auto rounded-[8px]" />
+                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full max-w-[1123px] h-auto rounded-[8px]" />
               </div>
               <div className="rounded-[8px] p-4 flex items-center justify-center">
                 <img
