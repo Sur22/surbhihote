@@ -1236,23 +1236,23 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to subscribe and unsubscribe from particular, product ,company, stage or phase of the product lifecycle." : "Beta environment\u00a0\n"}</span>
+              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to subscribe and unsubscribe from particular, product ,company, stage or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>
                 {c.slug === "fjord" 
                   ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks.\n1.\u00a0 Search an aduience segment.\n2. Drag and Drop it to the build area.\u00a0\n3. Create a group of segments.\u00a0\u00a0\n4. Switch between OR & AND, Include and exclude.\u00a0\u00a0\n5. Name and save a segment.\u00a0\u00a0\n6. Use the created segment into either Schedule Creation or Container Creation process."
-                  : <>I divided functionality in <strong className="font-semibold">7 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+                  : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "1 out of the 4 participants confused edit icon for company list cards. 2 out of the 4 participants were confused with some of the namings of the notoification category.All participants felt the navigation is easy and intuitive.\u00a0"}</span>
+              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings -\u00a0\n1. 2 out of the 4 participants felt the need of adding the label are detailed sketch page.\n2. 3 out of the 4 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application.\n2. 3 out of the 4 participants were confused with the details drawer not opening at Bill of Material page.\u00a0\nAll participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues like adding a tooltip to the titles of the notification to avoid any confusion."}</span>
+              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
           </ul>
 
