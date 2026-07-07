@@ -1486,7 +1486,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 key={o.slug}
                 to="/work/$slug"
                 params={{ slug: o.slug }}
-                className={`group block ${i > 0 ? 'md:border-l md:border-border md:pl-12' : ''} ${i < others.length - 1 ? 'md:pr-12' : ''} pb-12 md:pb-0`}
+                className={`group block ${i > 0 ? 'md:border-l md:border-border md:pl-12' : ''} ${i < others.length - 1 ? 'md:pr-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
               >
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors">
                   {o.title}
