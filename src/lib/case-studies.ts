@@ -301,7 +301,7 @@ const _caseStudies: CaseStudy[] = [
     overview:
       "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
     goal:
-      "As a solution to the problem providing an easy way of managing the notifications preferences on all the levels like Product, Company, Files , Comments, Product development phases and stages etc. to the users for avoiding any important notifications which is necessary for their job responsibilities and daily task of Product Lifecycle Management.\n\n\n\n\n\u00a0",
+      "As a solution to the problem providing an easy way of managing the notifications preferences on all the levels like Product, Company, Files , Comments, Product development phases and stages, Vendors, Billing etc. to the users for avoiding any notifications which is crucial for their day to day job responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
     timeframe: "2 Weeks",
     research: {
       ...defaultMeta.research,
