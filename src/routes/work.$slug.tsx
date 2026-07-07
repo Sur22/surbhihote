@@ -352,17 +352,22 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
 
         {(c.slug !== "fjord" && c.slug !== "fjord2") && (
-          <div className="mt-16 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-foreground px-6 md:px-16 py-16">
-            <h3 className ="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
-            <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
-              {c.research.userInterviewInsights.map((q, i) => (
-                q.quote && (
-                  <figure key={i} className="text-center italic">
-                    <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                    {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
-                  </figure>
-                )
-              ))}
+          <div className={`mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden`}>
+            {c.slug === "solace" && (
+              <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+            )}
+            <div className="relative z-10">
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+              <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+                {c.research.userInterviewInsights.map((q, i) => (
+                  q.quote && (
+                    <figure key={i} className="text-center italic">
+                      <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
+                      {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                    </figure>
+                  )
+                ))}
+              </div>
             </div>
           </div>
         )}
