@@ -73,14 +73,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Surbhi Hote - Lead Designer - Portfolio" },
+      { name: "description", content: "Leading the design and delivery of scalable, user-centered B2B ,SaaS  Enterprise products across web & mobile." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Surbhi Hote - Lead Designer - Portfolio" },
+      { property: "og:description", content: "Leading the design and delivery of scalable, user-centered B2B ,SaaS  Enterprise products across web & mobile." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Surbhi Hote - Lead Designer - Portfolio" },
+      { name: "twitter:description", content: "Leading the design and delivery of scalable, user-centered B2B ,SaaS  Enterprise products across web & mobile." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3aa5163f-2b07-470b-ae01-964d70eecd0f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3aa5163f-2b07-470b-ae01-964d70eecd0f" },
     ],
     links: [
       {
