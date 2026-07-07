@@ -550,7 +550,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}
+                The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}Defining the personas and going through survey responses.
               </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
