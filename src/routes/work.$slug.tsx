@@ -147,7 +147,21 @@ function CaseStudyPage() {
 
   return (
     <SiteLayout>
-      <div className={(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}>
+      <div
+        className={(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}
+        onClick={(e) => {
+          const target = e.target as HTMLElement;
+          const img = target.closest("img") as HTMLImageElement | null;
+          if (!img) return;
+          // Skip tiny icons/avatars and images inside interactive controls we don't want to hijack
+          if (img.closest("a, button[data-no-zoom]")) return;
+          if (img.naturalWidth && img.naturalWidth < 80) return;
+          if (img.src) {
+            e.preventDefault();
+            setZoomImg(img.src);
+          }
+        }}
+      >
       <ScrollProgress />
       <CaseStudySideNav slug={c.slug} />
 
