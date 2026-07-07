@@ -1252,7 +1252,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues like adding a tooltip to the titles of the notification to avoid any confusion."}</span>
+              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
           </ul>
 
