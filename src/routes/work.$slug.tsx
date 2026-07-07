@@ -1086,7 +1086,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {(c.slug !== "fjord2") && (
         <>
       {/* Workflow */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-10 pb-24" : "py-24"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-10 pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
           {c.slug === "solace" ? "Workflow" : "User Groups"}
         </h2>
@@ -1115,7 +1115,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </section>
 
       {/* User Flow */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[100px] pb-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "User flow"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in details. Below is the flow to show from various places you can start and access the design studio and edit the Tech Pack." : (c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
