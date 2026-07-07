@@ -1243,7 +1243,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
               <span>
                 {c.slug === "fjord" 
                   ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks.\n1.\u00a0 Search an aduience segment.\n2. Drag and Drop it to the build area.\u00a0\n3. Create a group of segments.\u00a0\u00a0\n4. Switch between OR & AND, Include and exclude.\u00a0\u00a0\n5. Name and save a segment.\u00a0\u00a0\n6. Use the created segment into either Schedule Creation or Container Creation process."
-                  : <>I divided functionality in <strong className="font-semibold">7 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+                  : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             <li className="flex gap-4">
