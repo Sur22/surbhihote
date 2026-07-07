@@ -6,8 +6,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
   CarouselDots,
-
 } from "@/components/ui/carousel";
 import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
