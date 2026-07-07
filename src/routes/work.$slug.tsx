@@ -352,7 +352,7 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
 
         {(c.slug !== "fjord" && c.slug !== "fjord2") && (
-          <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16">
+          <div className="mt-16 rounded-xl bg-white/10 backdrop-blur-md border border-white/10 text-foreground px-6 md:px-16 py-16">
             <h3 className ="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
             <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
               {c.research.userInterviewInsights.map((q, i) => (
@@ -448,7 +448,7 @@ If AE's want to build a custom audience to for the clients would require to send
               ].map((persona) => (
                 <div
                   key={persona.name}
-                  className="rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6"
+                  className="rounded-xl border border-white/10 bg-white/10 backdrop-blur-md text-foreground shadow p-6"
                 >
                   <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                     {persona.name}
