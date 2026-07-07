@@ -181,6 +181,10 @@ const _caseStudies: CaseStudy[] = [
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
+    overview:
+      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+    goal:
+      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
     research: {
       ...defaultMeta.research,
       userInterview: "I talked with the both the user groups which were going to use this tool. I also talked with those selected user who are using the tool currently and asked them what do they like and dont like about the tool so I can make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs which we need to built plus few more things to enhance the functionality and make it easy for users to use.\u00a0\n1. Not very Intuitive\n2. Copy the whole segment logic once it is built.\n3. Copy and modify existing segment.\n4. Ability to see segments created by other users & copy them.\n\n",
