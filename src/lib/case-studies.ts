@@ -339,7 +339,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Reduction in Missed  Deadlines", value: "-48%" },
-      { label: "Spam notifications Reduced\u00a0", value: "62 %→ 5%" },
+      { label: "Spam notifications Reduced\u00a0", value: "62 %→ 7%" },
       { label: "Reduced Missed Notification", value: "−87%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
