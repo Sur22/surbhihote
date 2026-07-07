@@ -1050,7 +1050,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       {/* Challenges */}
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "fjord") && (
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-24" : "py-24"}`}>
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-0" : "py-24"}`}>
         {c.slug !== "solace" && (
           <>
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{"\n"}</h2>
@@ -1086,7 +1086,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
       {(c.slug !== "fjord2") && (
         <>
       {/* Workflow */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-10 pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
           {c.slug === "solace" ? "Workflow" : "User Groups"}
         </h2>
