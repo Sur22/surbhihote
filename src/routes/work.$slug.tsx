@@ -870,7 +870,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 key={i}
                 type="button"
                 onClick={() => setZoomImg(s.url)}
-                className="group block flex-shrink-0 w-[48.1%] min-w-[393px] overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+                className={"group block flex-shrink-0 overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in " + (c.slug === "solace" ? "w-[24%] min-w-[196px]" : "w-[48.1%] min-w-[393px]")}
               >
                 <img
                   src={s.url}
