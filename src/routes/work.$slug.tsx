@@ -1480,13 +1480,13 @@ Every product could have customized stages. Overall there were 35+ types of noti
       <section className="border-t border-border">
         <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-20 pb-10">
           <p className="eyebrow mb-10">More case studies</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {others.map((o) => (
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {others.map((o, i) => (
               <Link
                 key={o.slug}
                 to="/work/$slug"
                 params={{ slug: o.slug }}
-                className="group block"
+                className={`group block ${i > 0 ? 'md:border-l md:border-border md:pl-12' : ''} ${i < others.length - 1 ? 'md:pr-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
               >
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors">
                   {o.title}
