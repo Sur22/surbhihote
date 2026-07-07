@@ -189,7 +189,7 @@ function GalleryPage() {
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               )}
               {"images" in it ? (
-                <Carousel opts={{ loop: true }} className="relative">
+                <Carousel opts={{ loop: true }} className="relative group">
                   <CarouselContent>
                     {it.images.map((img, idx) => (
                   <CarouselItem key={idx} className="flex items-center justify-center">
@@ -212,6 +212,12 @@ function GalleryPage() {
                   </CarouselItem>
                     ))}
                   </CarouselContent>
+                  {it.images.length > 1 && (
+                    <>
+                      <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <CarouselNext className="right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </>
+                  )}
                   {it.images.length > 1 && <CarouselDots />}
                 </Carousel>
               ) : null}
