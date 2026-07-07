@@ -1222,7 +1222,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : "Beta environment\u00a0\n"}</span>
+              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to subscribe and unsubscribe from particular, product ,company, stage or phase of the product lifecycle." : "Beta environment\u00a0\n"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
