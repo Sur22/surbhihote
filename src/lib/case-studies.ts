@@ -290,6 +290,7 @@ const _caseStudies: CaseStudy[] = [
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
+    timeframe: "2 Weeks",
     research: {
       ...defaultMeta.research,
       userInterviewInsights: [
@@ -318,9 +319,6 @@ const _caseStudies: CaseStudy[] = [
       "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
-    opportunity:
-      "Placeholder text for the Opportunity section.As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.",
-    goal: "\n",
     approach: [
       "Killed the two-panel layout. Map and list now share one scroll surface that responds to zoom.",
       "Designed 'pinch-to-day' — a gesture that collapses the map to a calendar strip and back.",
