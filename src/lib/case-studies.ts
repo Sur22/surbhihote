@@ -298,6 +298,10 @@ const _caseStudies: CaseStudy[] = [
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
+    overview:
+      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+    goal:
+      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
     timeframe: "2 Weeks",
     research: {
       ...defaultMeta.research,
