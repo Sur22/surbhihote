@@ -1416,6 +1416,8 @@ Every product could have customized stages. Overall there were 35+ types of noti
             ? <>This project was more than a redesign. We addressed major pain points of the users like speed, stability, broken functionalities &amp;&nbsp; workflows, redundancy, manual refresh etc. The highlight is avoiding any loss of business which is till date is $0 since it is launched and the jump in the usability.Second phase of the project is in development which mainly consists of new features and will be released in a few months which will largely change the way affiliates do communication and&nbsp; will have more better , easier workflow than before.&nbsp;</>
             : c.slug === "fjord"
             ? "We successfully deployed the tool and it reduced the significant amount of time for creating a custom audience as they no longer has to wait for data team to make it for them for those who did not had access to the paid tool.We save a good amount to the company and also was able provide few more features than existing tool by making it more intuitive . I learnt to make sure to have all the possible resources to be available for the users for learning and for smoother adoption."
+            : (c.slug === "atlas" || c.slug === "atlas2")
+            ? "By design I made sure users can totally control the the notifications which important to their job for different levels, the Company Level, Product level, Product Lifecycle stage Level.We were successful in eliminating most of the spam notifications which led to a great reduction in missing important notifications which reduction in missed deadlines for the product delivery to the clients.\u00a0"
             : "I tried to address the pinpoints of the user to just get the notifications important to their job or the Company Level, Product level, Product Lifecycle stage Level. which they want to get updated on. I tried to provide simplest way to unsubscribe / subscribe to the notifications type for internal users, Clients, Factories."}
         </p>
       </section>
@@ -1464,7 +1466,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
-          {(c.slug === "fjord" || c.slug === "fjord2") ? "\n" : (
+          {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "atlas" || c.slug === "atlas2") ? "\n" : (
             <>
               <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> {c.slug === "solace" ? "I successfully designed the notification preference center for the GRID platform." : "I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries."}
             </>
