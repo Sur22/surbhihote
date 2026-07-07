@@ -37,6 +37,7 @@ import voyagerItinerary2 from "@/assets/voyager-itinerary-2.png.asset.json";
 import voyagerMap from "@/assets/voyager-map.png.asset.json";
 import voyagerMap2 from "@/assets/voyager-map-2.png.asset.json";
 import voyagerMap3 from "@/assets/voyager-map-3.png.asset.json";
+import overlay from "@/assets/overlay.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -115,11 +116,16 @@ function GalleryPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-10 md:pt-16 pb-16 md:pb-24">
-        <div className="overflow-hidden rounded-sm bg-secondary shadow-xl">
+        <div className="overflow-hidden rounded-sm bg-secondary shadow-xl relative">
           <img
             src={g1}
             alt="Gallery hero — studio archive"
             className="w-full h-[20vh] md:h-[30vh] object-cover"
+          />
+          <img
+            src={overlay.url}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
         </div>
         <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
