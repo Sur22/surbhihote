@@ -662,7 +662,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             </div>
                           ))}
                         </div>
-                        <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                        <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
                           {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
                             const tasksIndex = goal.indexOf("Tasks");
                             if (tasksIndex !== -1) {
