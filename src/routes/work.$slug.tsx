@@ -646,7 +646,7 @@ If AE's want to build a custom audience to for the clients would require to send
                                   {Array.from({ length: 4 }).map((_, i) => (
                                     <div
                                       key={i}
-                                      className={`h-2 border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                      className={`h-2 border border-[#0068FF] dark:border-primary/70 ${
                                         i === 0
                                           ? "rounded-l-full rounded-r-none"
                                           : i === 3
