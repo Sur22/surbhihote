@@ -653,7 +653,7 @@ If AE's want to build a custom audience to for the clients would require to send
                                             ? "rounded-r-full rounded-l-none"
                                             : "rounded-none"
                                       } ${
-                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary" : "bg-transparent"
                                       }`}
                                     />
                                   ))}
