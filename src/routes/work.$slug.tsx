@@ -80,7 +80,7 @@ import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
-import ampBgPersona from "@/assets/amp-bg-persona.png.asset.json";
+import ampBgPersona from "@/assets/persona_cards_bg.png.asset.json";
 import ampMockupBg2 from "@/assets/amp-mockup-bg-2.png.asset.json";
 import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset.json";
 import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
