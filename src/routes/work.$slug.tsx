@@ -349,11 +349,11 @@ If AE's want to build a custom audience to for the clients would require to send
                       style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                     />
                     <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                    <div className="relative p-6 text-foreground dark:text-primary-foreground">
+                    <div className="relative p-6 text-foreground dark:text-primary">
                       <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                         {persona.name}
                       </h4>
-                      <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                      <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
                         {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
                           const tasksIndex = goal.indexOf("Tasks");
                           if (tasksIndex !== -1) {
@@ -630,7 +630,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                       />
                       <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                      <div className="relative p-6 text-foreground dark:text-primary-foreground">
+                      <div className="relative p-6 text-foreground dark:text-primary">
                         <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                           {persona.name}
                         </h4>
@@ -646,14 +646,14 @@ If AE's want to build a custom audience to for the clients would require to send
                                   {Array.from({ length: 4 }).map((_, i) => (
                                     <div
                                       key={i}
-                                      className={`h-2 border border-[#0068FF] dark:border-primary-foreground/70 ${
+                                      className={`h-2 border border-[#0068FF] dark:border-primary/70 ${
                                         i === 0
                                           ? "rounded-l-full rounded-r-none"
                                           : i === 3
                                             ? "rounded-r-full rounded-l-none"
                                             : "rounded-none"
                                       } ${
-                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary-foreground" : "bg-transparent"
+                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary" : "bg-transparent"
                                       }`}
                                     />
                                   ))}
@@ -662,7 +662,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             </div>
                           ))}
                         </div>
-                        <ul className="text-sm text-foreground/85 dark:text-primary-foreground/85 space-y-2">
+                        <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
                           {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
                             const tasksIndex = goal.indexOf("Tasks");
                             if (tasksIndex !== -1) {
