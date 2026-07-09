@@ -485,7 +485,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                       {persona.name}
                     </h4>
-                    <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
+                    <ul className="list-disc list-inside text-sm text-card-foreground space-y-2">
                       {persona.goals.map((goal, idx) => (
                         <li key={idx}>{goal}</li>
                       ))}
