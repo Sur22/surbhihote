@@ -804,14 +804,9 @@ If AE's want to build a custom audience to for the clients would require to send
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
-            <h3 className="font-serif text-3xl mb-6 font-medium">Design Strategy</h3>
+            <h3 className="font-serif text-3xl mb-6 font-medium">Approch</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-              {`As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0
-1. Sourcing Stage
-2. Pre- production Stage
-3. Production Stage
-in all these there comments for communication between the staff handling the project Client and the factories.Apart from that the notification related to the files of the each stage file uploaded, accepted or rejected etc. along with finance or billing.\u00a0
-Every product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0`}
+              Following are the three different user flows to manage their notifications form.
             </p>
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
