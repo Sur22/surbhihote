@@ -226,7 +226,7 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Introduction</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                A 25 years old site which was being used by affiliates working with the company on day to day basis. The website has many issues which couldn't be fixed due to the old code base cannot be touched. The solution is to rebuild the entire site so the broken parts can be fixed, new functionlities can be added and the issues can be addressed.&nbsp;
+                A 25 years old site which was being used by 500+ affiliates working with the company on day to day basis. The website has many issues which couldn't be fixed due to the old code base cannot be touched. The solution is to rebuild the entire site so the broken parts can be fixed, new functionalities can be added and the issues can be addressed.
               </p>
             </div>
           )}
