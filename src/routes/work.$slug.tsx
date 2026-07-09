@@ -1027,7 +1027,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
               </div>
               <div className="mt-8 flex items-baseline gap-4">
-                <p className="text-3xl md:text-4xl font-normal mb-1">20%</p>
+                <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
               <div className="mt-8">
                 <Table>
