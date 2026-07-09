@@ -594,7 +594,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       <strong>Dead features nobody used</strong>
                       {" → cut them, and reclaim the space and attention for what matters.\n"}
                       <strong>A codebase that couldn't take new functionality</strong>
-                      {" → a foundation built to extend, so the platform can grow instead of freeze again.\n\n"}
+                      {" → a foundation built to extend, so the platform can grow instead of freeze again.\n"}
                       <strong>Manual refreshing to catch order updates</strong>
                       {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live turning a constant manual chore into a system that tells users when something moves."}
                     </blockquote>
