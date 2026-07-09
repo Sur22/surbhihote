@@ -574,6 +574,27 @@ If AE's want to build a custom audience to for the clients would require to send
                   <p>{c.goal}</p>
                 </div>
               </div>
+              <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden">
+                <div className="relative z-10">
+                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+                  <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+                    {[
+                      { quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."', author: "Client" },
+                      { quote: '"Once I missed out on an important notification and as a result the product got delayed."', author: "Production Manager" },
+                      { quote: '"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming."', author: "Product Development Manager" },
+                      { quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"', author: "Company Account Manager" },
+                    ].map((q, i) => (
+                      q.quote && (
+                        <figure key={i} className="text-center italic">
+                          <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
+                          {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                        </figure>
+                      )
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
