@@ -215,7 +215,7 @@ function CaseStudyPage() {
       <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
         <div className="space-y-16">
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Overview</h2>
+            <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Context</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "solace" 
                 ? "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins." 
@@ -224,9 +224,11 @@ function CaseStudyPage() {
           </div>
           {c.slug === "fjord2" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">Introduction</h2>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
+                {`Affiliates - the partner networks who buy and transact against that inventory\u00a0 run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 20 years old. Its codebase was frozen ; no fix could ship without a full rebuild . 25 years of workarounds had hardened into the way affiliates worked.`}
+              </p>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                A 25 years old site which was being used by 500+ affiliates working with the company on day to day basis. The website has many issues which couldn't be fixed due to the old code base cannot be touched. The solution is to rebuild the entire site so the broken parts can be fixed, new functionalities can be added and the issues can be addressed.
+                {`I led the end-to-end redesign as Lead Product Designer owning the research, facilitating a cross-functional workshop with leadership, product, and engineering, and driving the design from problem definition through launch. The mandate wasn't a visual refresh. It was to rebuild a business-critical tool that 500+ affiliates depend on daily\u00a0 without losing a dollar of revenue in the transition.`}
               </p>
             </div>
           )}
