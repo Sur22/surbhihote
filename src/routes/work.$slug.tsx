@@ -577,7 +577,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
                 </div>
 
-                <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Personas</h3>
+                <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">User Groups</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
@@ -585,7 +585,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
+                        "Tasks\n1. Upload ,View,Download rates\n\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
+
                       ],
                     },
                     {
@@ -601,7 +602,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Tasks\n1. Upload new rates\u200b\n2. View rates\u200b\n3. Download rates\u00a0\n4. Editing of rate cards\u200b\n5. Report on gaps in ratecards\u200b\u00a0\n",
+                        "Tasks\n1. Upload ,View,Download rates\n\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
                       ],
                     },
                     {
@@ -910,13 +911,13 @@ Every product could have customized stages. Overall there were 35+ types of noti
       </section>
 
 
-      {c.slug !== "solace" && c.slug !== "fjord" && c.slug !== "fjord2" && (
+      {c.slug !== "solace" && c.slug !== "fjord" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
-        <h2 className={`font-serif mb-8 ${c.slug === "solace" || c.slug === "fjord2" ? "text-3xl font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution" : "Brainstorming Session With Product Team"}</h2>
+        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "As Grid shows all the stages in lifecycle of the product the following image gives an idea of the amount of notifications generated at each stage of the product mainly divided by\u00a0\n1. Sourcing Stage\n2. Pre- production Stage\n3. Production Stage\nin all these there comments for communication between the staff handling the project , Client and the factories.Apart from that the notification related to the files of the each stage file uploaded,\u00a0accepted or rejected etc. along with finance or billing.\u00a0\nEvery product could have customized stages. Overall there were 35+ types of notifications on the platform.\u00a0 \u00a0\n\n\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
         {(c.slug === "fjord2") ? (
           <button
@@ -1030,6 +1031,9 @@ Every product could have customized stages. Overall there were 35+ types of noti
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <div className="mt-8 flex items-baseline gap-4">
+                <p className="text-3xl md:text-4xl font-normal mb-1">28%</p>
+              </div>
               <div className="mt-8">
                 <Table>
                   <TableHeader>
@@ -1055,6 +1059,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                       <TableCell>Internal & External Rate Cards</TableCell>
                       <TableCell>Super User Profile</TableCell>
                     </TableRow>
+
                     <TableRow>
                       <TableCell>Email Notifications&nbsp;</TableCell>
                       <TableCell>Makegood&nbsp;</TableCell>
