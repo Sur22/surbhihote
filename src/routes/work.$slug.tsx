@@ -855,7 +855,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {(c.slug === "fjord2")
-            ? "I started with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
+            ? "I kicked off with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "Reviewing designs with developers and\u00a0 CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs."
             : (c.slug === "fjord")
