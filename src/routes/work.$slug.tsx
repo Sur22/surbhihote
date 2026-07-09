@@ -1059,6 +1059,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                       <TableCell>Internal & External Rate Cards</TableCell>
                       <TableCell>Super User Profile</TableCell>
                     </TableRow>
+
                     <TableRow>
                       <TableCell>Email Notifications&nbsp;</TableCell>
                       <TableCell>Makegood&nbsp;</TableCell>
