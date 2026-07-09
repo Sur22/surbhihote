@@ -590,7 +590,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       { quote: "\n", author: "\n" },
                     ].map((q, i) => (
                       q.quote && (
-                        <figure key={i} className="text-center italic">
+                        <figure key={i} className="text-left italic">
                           <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
                           {q.author && <figcaption className="mt-2 text-base">{q.author === "\n" ? "\n" : `-${q.author}`}</figcaption>}
                         </figure>
