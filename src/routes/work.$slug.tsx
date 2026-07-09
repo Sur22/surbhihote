@@ -585,7 +585,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Upload ,View,Download rates\n\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
+                        "Tasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
 
                       ],
                     },
@@ -602,7 +602,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Tasks\n1. Upload ,View,Download rates\n\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
+                        "Tasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
                       ],
                     },
                     {
