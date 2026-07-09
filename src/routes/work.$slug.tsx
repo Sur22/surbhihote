@@ -582,20 +582,22 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <div className="relative z-10">
                   <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Opportunities{"\u00a0"}</h3>
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
-                    {[
-                      { quote: "The codebase was frozen — no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\n\n\n\nEvery affiliate ran their daily business on a 25-year-old platform. On paper it was a maintenance problem; in practice it was a frozen codebase where nothing could be fixed without a full rebuild.\u00a0\n\nThat constraint was the opportunity — a rare mandate to rethink workflows that had calcified around a broken tool for two decades, rather than patch them.\n\n\nThe rebuild let us tackle six things at once:\n\nA dated UI/UX → rebuild the experience around how affiliates actually work today, not the conventions of 2005.\nSlow and clunky performance → a modern stack fast enough that the tool gets out of the user's way.\nBroken functionalities → restore the capabilities affiliates had learned to work around and live without.\nDead features nobody used → cut them, and reclaim the space and attention for what matters.\nA codebase that couldn't take new functionality → a foundation built to extend, so the platform can grow instead of freeze again.\nManual refreshing to catch order updates → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live — turning a constant manual chore into a system that tells users when something moves.", author: "\n" },
-                      { quote: "\n", author: "\n" },
-                      { quote: "\n", author: "\n" },
-                      { quote: "\n", author: "\n" },
-                    ].map((q, i) => (
-                      q.quote && (
-                        <figure key={i} className="text-left italic">
-                          <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                          {q.author && <figcaption className="mt-2 text-base">{q.author === "\n" ? "\n" : `-${q.author}`}</figcaption>}
-                        </figure>
-                      )
-                    ))}
+                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+                    <blockquote className="text-lg md:text-xl leading-relaxed text-left italic whitespace-pre-line">
+                      {"The codebase was frozen — no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\n\n\n\nEvery affiliate ran their daily business on a 25-year-old platform. On paper it was a maintenance problem; in practice it was a frozen codebase where nothing could be fixed without a full rebuild.\u00a0\n\nThat constraint was the opportunity — a rare mandate to rethink workflows that had calcified around a broken tool for two decades, rather than patch them.\n\n\nThe rebuild let us tackle six things at once:\n\n"}
+                      <strong>A dated UI/UX</strong>
+                      {" → rebuild the experience around how affiliates actually work today, not the conventions of 2005.\n"}
+                      <strong>Slow and clunky performance</strong>
+                      {" → a modern stack fast enough that the tool gets out of the user's way.\n"}
+                      <strong>Broken functionalities</strong>
+                      {" → restore the capabilities affiliates had learned to work around and live without.\n"}
+                      <strong>Dead features nobody used</strong>
+                      {" → cut them, and reclaim the space and attention for what matters.\n"}
+                      <strong>A codebase that couldn't take new functionality</strong>
+                      {" → a foundation built to extend, so the platform can grow instead of freeze again.\n"}
+                      <strong>Manual refreshing to catch order updates</strong>
+                      {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live — turning a constant manual chore into a system that tells users when something moves."}
+                    </blockquote>
                   </div>
                 </div>
               </div>
