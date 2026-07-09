@@ -177,7 +177,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "fjord",
     index: "02",
     title: "Audience Builder",
-    subtitle: "Audience Building tool to create custom audience segments on the AND Platform.",
+    subtitle: "Audience Building Tool to Create Custom Audience Segments ",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
