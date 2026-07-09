@@ -1023,7 +1023,17 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 {"\n"}
                 Many assumptions were ruled out after knowing their workflows{"\u00A0"}{"\u00A0"}
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+                </div>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
+                  <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
+                </div>
+              </div>
+              <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">28%</p>
+              </div>
               <div className="mt-8">
                 <Table>
                   <TableHeader>
