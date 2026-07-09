@@ -568,7 +568,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"All the affiliates working with the company has been using the 20 years old site which has\n\u00a01. Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0 Some functionalities not working\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n\u00a07. Broken functionalities"}
+                  {"All the affiliates working with the company has been using the 20 years old site which has\n\u00a01.\u00a0 Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0Broken functionalities\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
@@ -576,18 +576,18 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
               <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden">
                 <div className="relative z-10">
-                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Opportunities{"\u00a0"}</h3>
                   <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                     {[
-                      { quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."', author: "Client" },
-                      { quote: '"Once I missed out on an important notification and as a result the product got delayed."', author: "Production Manager" },
-                      { quote: '"Every time I have to scroll through notifications to find notifications I need to see, which is very time consuming."', author: "Product Development Manager" },
-                      { quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"', author: "Company Account Manager" },
+                      { quote: "The codebase was frozen — no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\n\n\n\nEvery affiliate ran their daily business on a 25-year-old platform. On paper it was a maintenance problem; in practice it was a frozen codebase where nothing could be fixed without a full rebuild.\u00a0\n\nThat constraint was the opportunity — a rare mandate to rethink workflows that had calcified around a broken tool for two decades, rather than patch them.\n\n\nThe rebuild let us tackle six things at once:\n\nA dated UI/UX → rebuild the experience around how affiliates actually work today, not the conventions of 2005.\nSlow and clunky performance → a modern stack fast enough that the tool gets out of the user's way.\nBroken functionalities → restore the capabilities affiliates had learned to work around and live without.\nDead features nobody used → cut them, and reclaim the space and attention for what matters.\nA codebase that couldn't take new functionality → a foundation built to extend, so the platform can grow instead of freeze again.\nManual refreshing to catch order updates → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live — turning a constant manual chore into a system that tells users when something moves.", author: "\n" },
+                      { quote: "\n", author: "\n" },
+                      { quote: "\n", author: "\n" },
+                      { quote: "\n", author: "\n" },
                     ].map((q, i) => (
                       q.quote && (
                         <figure key={i} className="text-center italic">
                           <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                          {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                          {q.author && <figcaption className="mt-2 text-base">{q.author === "\n" ? "\n" : `-${q.author}`}</figcaption>}
                         </figure>
                       )
                     ))}
