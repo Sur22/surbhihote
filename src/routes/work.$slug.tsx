@@ -218,7 +218,7 @@ function CaseStudyPage() {
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Overview</h2>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "solace" 
-                ? "A multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast,COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addrasable.\u00a0" 
+                ? "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins." 
                 : c.overview}
             </p>
           </div>
@@ -1136,7 +1136,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
         )}
         <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
           {c.slug === "solace"
-            ? "This workflow shows how the four key personas interact with the Techpack Editor feature throughout the product development lifecycle."
+            ? "Alignment of user goals and business goals to benefit both is important. Helping users achieve their goals helps in user retention and hence profitable for business."
             : ((c.slug === "atlas" || c.slug === "atlas2") 
                 ? "\n\n\n"
                 : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
@@ -1264,7 +1264,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings -\u00a0\n\n1. 2 out of the 5 participants felt the need of adding the label are detailed sketch page.\n2. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application.\n3. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
+              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\n\u00a0- 2 out of the 5 participants felt the need of adding the label are detailed sketch page.\n\u00a0- 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the\u00a0 \u00a0 \u00a0 \u00a0part of the application.\n\u00a0- 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0\n\u00a0- All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
