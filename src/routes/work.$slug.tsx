@@ -512,7 +512,7 @@ If AE's want to build a custom audience to for the clients would require to send
       <section id={c.slug === "fjord2" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product Goals"}</h3>
+          <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product + Design Stategy"}</h3>
         )}
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
@@ -1032,7 +1032,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
                 </div>
               </div>
               <div className="mt-8 flex items-baseline gap-4">
-                <p className="text-3xl md:text-4xl font-normal mb-1">28%</p>
+                <p className="text-3xl md:text-4xl font-normal mb-1">20%</p>
               </div>
               <div className="mt-8">
                 <Table>
@@ -1264,7 +1264,7 @@ Every product could have customized stages. Overall there were 35+ types of noti
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\n\u00a0- 2 out of the 5 participants felt the need of adding the label are detailed sketch page.\n\u00a0- 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the\u00a0 \u00a0 \u00a0 \u00a0part of the application.\n\u00a0- 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0\n\u00a0- All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
+              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\u00a0 2 out of the 5 participants felt the need of adding the label are detailed sketch page. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
