@@ -568,7 +568,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"All the affiliates working with the company has been using the 20 years old site which has\n\u00a01.\u00a0 Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0Broken functionalities\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n"}
+                  {"All the affiliates working with the company has been using the 25 years old site which has\n\u00a01.\u00a0 Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0Broken functionalities\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
@@ -595,6 +595,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       {" → cut them, and reclaim the space and attention for what matters.\n"}
                       <strong>A codebase that couldn't take new functionality</strong>
                       {" → a foundation built to extend, so the platform can grow instead of freeze again.\n\n"}
+                      <strong>Manual refreshing to catch order updates</strong>
+                      {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live turning a constant manual chore into a system that tells users when something moves."}
                     </blockquote>
                   </div>
                 </div>
