@@ -565,7 +565,10 @@ If AE's want to build a custom audience to for the clients would require to send
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-            This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop.
+            {c.slug === "fjord2" 
+              ? "This workshop was not a typical design thinking workshop,It was customized based on the project and the available information to make most out of one and a half day of time we had .\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
+              : "This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop."
+            }
           </p>
         )}
 
