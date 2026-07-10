@@ -1300,11 +1300,11 @@ Refer the Survey results section you will find the we asked a question to rate t
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>As the affiliates are external users it was not possible for me to conduct usability testing as stack holder are the one who are able to do that and they being not avialable and also it was not possible to ask more time from the affiliates as we already had a survey and the session with them. I&nbsp; had to take the route of using Microsoft Clarity to monitor how users are using the site.</span>
+              <span>Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>After 2 months of usage we sent a popup survey on the platform asking for open ended feedback and how&nbsp; are they rating the new website.&nbsp;&nbsp;</span>
+              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after 3 months of live use."</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
