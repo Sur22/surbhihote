@@ -128,6 +128,41 @@ export const Route = createFileRoute("/work/$slug")({
   component: CaseStudyPage,
 });
 
+function OutcomeMetrics({ c }: { c: CaseStudy }) {
+  return (
+    <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
+      <p className="eyebrow mb-10">Outcome</p>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        {c.outcome.map((o) => (
+          <div key={o.label} className="border-t border-border pt-6">
+            {o.value && (
+              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
+                {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0\u2192\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
+                  <span className="whitespace-nowrap">
+                    {o.value === "~$850K\u00A0\u2192\u00A0$0" ? (
+                      <>
+                        ~$850K <span className="text-[70%]">\u2192</span> $0
+                      </>
+                    ) : o.value === "1 week - 5 min" ? (
+                      <>1 <span className="text-2xl">week</span> <span className="text-[70%]">\u2192</span> 5 <span className="text-2xl">min</span></>
+                    ) : (
+                      <>{o.value}</>
+                    )}
+                  </span>
+                ) : (
+                  <>{o.value}</>
+                )}
+                {o.label.includes("Usability Improved") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
+              </p>
+            )}
+            <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
   const others = caseStudies.filter((x) => x.slug !== c.slug);
@@ -210,6 +245,8 @@ function CaseStudyPage() {
       </section>
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
+      {c.slug === "fjord2" && <OutcomeMetrics c={c} />}
 
       {/* Overview + Goal */}
       <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
@@ -1477,36 +1514,7 @@ Refer the Survey results section you will find the we asked a question to rate t
       )}
 
       {/* Outcomes */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
-        <p className="eyebrow mb-10">Outcome</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {c.outcome.map((o) => (
-            <div key={o.label} className="border-t border-border pt-6">
-              {o.value && (
-                <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
-                  {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0→\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
-                    <span className="whitespace-nowrap">
-                      {o.value === "~$850K\u00A0→\u00A0$0" ? (
-                        <>
-                          ~$850K <span className="text-[70%]">→</span> $0
-                        </>
-                      ) : o.value === "1 week - 5 min" ? (
-                        <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
-                      ) : (
-                        <>{o.value}</>
-                      )}
-                    </span>
-                  ) : (
-                    <>{o.value}</>
-                  )}
-                  {o.label.includes("Usability Improved") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
-                </p>
-              )}
-              <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
