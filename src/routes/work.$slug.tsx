@@ -1043,10 +1043,15 @@ If AE's want to build a custom audience to for the clients would require to send
                 I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
                 to see the list of question for focus group.{"\u00A0"}
-                {"\n"}
-                We asked them to walk us through their day to day workflow and asked question along and ended the session by showing the initial mockups to get their feedback and understand if we are heading into the right direction.
-                {"\n"}
-                Many assumptions were ruled out after knowing their workflows{"\u00A0"}{"\u00A0"}
+
+                <p className="mt-8">
+                  Watching the work overturned assumptions we'd carried into the project. 
+                  Stakeholders assumed that they do not need the symbols of D,V,P,C  but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff.
+                </p>
+
+                <p className="mt-8">
+                  Two other beliefs didn't survive contact with real users stakeholder wanted to remove military time but turns out affiliates are not comfortable with that at all , and Some pages which stakeholder wanted to remove are still in use . Each one redirected a decision we would otherwise have made on instinct.
+                </p>
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
