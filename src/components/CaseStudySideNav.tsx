@@ -30,7 +30,7 @@ function getSections(slug?: string): Section[] {
 
   if (slug && affiliateSlugs.has(slug)) {
     sections = sections.map((s) => {
-      if (s.id === "impact") return { ...s, label: "Reflection" };
+      if (s.id === "impact") return { ...s, label: "REFLECTION" };
       return s;
     });
   }
