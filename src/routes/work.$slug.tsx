@@ -153,7 +153,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                         ~$850K <span className="text-[70%]">\u2192</span> $0
                       </>
                     ) : o.value === "1 week - 5 min" ? (
-                      <>1 <span className="text-2xl">week</span> <span className="text-[70%]">\u2192</span> 5 <span className="text-2xl">min</span></>
+                      <>1 <span className="text-2xl">week</span> <span className="inline-flex items-center justify-center"><ArrowRight className="w-[1em] h-[1em]" /></span> 5 <span className="text-2xl">min</span></>
                     ) : (
                       <>{o.value}</>
                     )}
