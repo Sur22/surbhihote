@@ -1529,7 +1529,9 @@ If AE's want to build a custom audience to for the clients would require to send
       </section>
 
 
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      {c.slug !== "fjord" && c.slug !== "fjord2" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Measuring the Success */}
       <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
@@ -1560,8 +1562,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       )}
 
-      {/* Outcomes */}
-      {c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
+      {/* Outcomes for non-affiliate case studies */}
+      {c.slug !== "fjord" && c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
