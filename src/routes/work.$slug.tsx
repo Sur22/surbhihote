@@ -683,7 +683,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "Goal: Maintain makegoods business\u00a0\nFrustration-\u00a0Makegood Processing and Synchronization issue\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\nTasks\n\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the upload template match\u00a0",
+                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\nTasks:\n\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the upload template match\u00a0",
                       ],
                     },
                     {
@@ -701,7 +701,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       goals: [
                         "\n",
                         "\n",
-                        "Goal\u00a0\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration Manual account setup & updating\u00a0\n\n\nTasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
+                        "Goal:\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration:\u00a0Manual account setup & updating\u00a0\n\n\nTasks:\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
                       ],
                     },
                     {
@@ -709,8 +709,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\nTasks",
-                        "Tasks\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\n\u00a0 on orders/markets\u200b orders\n\u00a0\n4. \u200bOrder admin\u00a0reference\u00a0",
+                        "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\nTasks:",
+                        "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
                       ],
                     },
                   ].map((persona, idx) => (
