@@ -13,6 +13,7 @@ const baseSections = [
 const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["fjord2"]);
 const affiliateSlugs = new Set(["fjord", "fjord2"]);
+const slugsWithTopImpact = new Set(["solace", "atlas", "fjord2"]);
 
 type Section = { id: string; label: string; anchor?: string };
 
@@ -35,6 +36,14 @@ function getSections(slug?: string): Section[] {
     });
   }
 
+  if (slug && slugsWithTopImpact.has(slug)) {
+    sections = sections.map((s) => {
+      if (s.id === "overview") return { ...s, anchor: "impact" };
+      if (s.id === "impact") return { ...s, anchor: "reflection" };
+      return s;
+    });
+  }
+
   return sections;
 }
 
@@ -44,16 +53,15 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const ids = sections.map((s) => s.id);
     const update = () => {
       const threshold = window.innerHeight * 0.25;
-      let currentId = ids[0];
-      for (const id of ids) {
-        const el = document.getElementById(id);
+      let currentId = sections[0]?.id ?? "overview";
+      for (const s of sections) {
+        const el = document.getElementById(s.anchor ?? s.id);
         if (!el) continue;
         const top = el.getBoundingClientRect().top;
         if (top - threshold <= 0) {
-          currentId = id;
+          currentId = s.id;
         } else {
           break;
         }
@@ -71,7 +79,8 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
 
   useEffect(() => {
     const update = () => {
-      const start = document.getElementById(sections[0]?.id ?? "overview");
+      const first = sections[0];
+      const start = document.getElementById(first?.anchor ?? first?.id ?? "overview");
       const end = document.getElementById("case-study-end");
       if (!start || !end) {
         setVisible(false);
