@@ -710,7 +710,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       dependency: 3,
                       goals: [
                         "Goal\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\nTasks",
-                        "Tasks\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3. Coordinate with AMP Account Execuiteves on orders/markets\u200b\n4. \u200bOrder ddmin\u00a0reference\u00a0",
+                        "Tasks\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\n\u00a0 on orders/markets\u200b orders\n\u00a0\n4. \u200bOrder admin\u00a0reference\u00a0",
                       ],
                     },
                   ].map((persona, idx) => (
