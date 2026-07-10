@@ -14,8 +14,10 @@ const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["fjord2"]);
 const affiliateSlugs = new Set(["fjord", "fjord2"]);
 
-function getSections(slug?: string) {
-  let sections = slug && slugsWithoutStrategy.has(slug)
+type Section = { id: string; label: string; anchor?: string };
+
+function getSections(slug?: string): Section[] {
+  let sections: Section[] = slug && slugsWithoutStrategy.has(slug)
     ? baseSections.filter((s) => s.id !== "strategy")
     : [...baseSections];
 
@@ -26,33 +28,6 @@ function getSections(slug?: string) {
     }
   }
 
-  // Affiliate case study: rename "Impact" -> "Reflection" and point "Overview" to the impact section
-  if (slug && affiliateSlugs.has(slug)) {
-    sections = sections.map((s) => {
-      if (s.id === "impact") return { ...s, label: "Reflection" };
-      if (s.id === "overview") return { ...s, anchor: "impact" };
-      return s;
-    });
-  }
-
-  return sections;
-}
-const slugsWithReflection = new Set(["fjord2"]);
-const affiliateSlugs = new Set(["fjord", "fjord2"]);
-
-function getSections(slug?: string) {
-  let sections = slug && slugsWithoutStrategy.has(slug)
-    ? baseSections.filter((s) => s.id !== "strategy")
-    : [...baseSections];
-
-  if (slug && slugsWithWorkshop.has(slug)) {
-    const researchIdx = sections.findIndex((s) => s.id === "research");
-    if (researchIdx !== -1) {
-      sections.splice(researchIdx + 1, 0, { id: "workshop", label: "Workshop" });
-    }
-  }
-
-  // Affiliate case study: rename "Impact" -> "Reflection" and point "Overview" to the impact section
   if (slug && affiliateSlugs.has(slug)) {
     sections = sections.map((s) => {
       if (s.id === "impact") return { ...s, label: "Reflection" };
@@ -65,21 +40,12 @@ function getSections(slug?: string) {
 }
 
 export function CaseStudySideNav({ slug }: { slug?: string }) {
-  let sections = slug && slugsWithoutStrategy.has(slug)
-    ? baseSections.filter((s) => s.id !== "strategy")
-    : [...baseSections];
-
-  if (slug && slugsWithWorkshop.has(slug)) {
-    const researchIdx = sections.findIndex((s) => s.id === "research");
-    if (researchIdx !== -1) {
-      sections.splice(researchIdx + 1, 0, { id: "workshop", label: "Workshop" });
-    }
-  }
-  const [activeId, setActiveId] = useState<string>(sections[0].id);
+  const sections = getSections(slug);
+  const [activeId, setActiveId] = useState<string>(sections[0]?.id ?? "overview");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const ids = sections.map((s) => s.id);
+    const ids = sections.map((s) => s.anchor ?? s.id);
     const update = () => {
       const threshold = window.innerHeight * 0.25;
       let currentId = ids[0];
@@ -106,7 +72,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
 
   useEffect(() => {
     const update = () => {
-      const start = document.getElementById("overview");
+      const start = document.getElementById(sections[0]?.anchor ?? sections[0]?.id ?? "overview");
       const end = document.getElementById("case-study-end");
       if (!start || !end) {
         setVisible(false);
@@ -123,7 +89,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
     };
-  }, []);
+  }, [sections]);
 
   return (
     <nav
@@ -134,7 +100,8 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
     >
       <ul className="space-y-5">
         {sections.map((s) => {
-          const active = activeId === s.id;
+          const targetId = s.anchor ?? s.id;
+          const active = activeId === targetId;
           return (
             <li key={s.id} className="flex items-center gap-3">
               <span
@@ -144,11 +111,11 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
                 }`}
               />
               <a
-                href={`#${s.id}`}
+                href={`#${targetId}`}
                 onClick={(e) => {
                   e.preventDefault();
                   document
-                    .getElementById(s.id)
+                    .getElementById(targetId)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
                 className={`whitespace-nowrap text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
