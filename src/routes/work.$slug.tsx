@@ -1128,7 +1128,7 @@ Refer the Survey results section you will find the we asked a question to rate t
                       <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Views and  Search </TableCell>
+                      <TableCell>{c.slug === "fjord2" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
                       <TableCell>Order Revision</TableCell>
                     </TableRow>
                     <TableRow>
@@ -1149,7 +1149,7 @@ Refer the Survey results section you will find the we asked a question to rate t
                       <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Search , Auto refresh</TableCell>
+                      <TableCell>{c.slug === "fjord2" ? "Auto refresh\u00a0" : "Search , Auto refresh"}</TableCell>
                       <TableCell>Exports</TableCell>
                     </TableRow>
                     <TableRow>
