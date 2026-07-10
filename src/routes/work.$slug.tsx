@@ -1148,6 +1148,14 @@ Refer the Survey results section you will find the we asked a question to rate t
                       <TableCell>Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
                       <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
+                    <TableRow>
+                      <TableCell>Search , Auto refresh</TableCell>
+                      <TableCell>Exports</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{"\u00a0"}</TableCell>
+                      <TableCell>Automation</TableCell>
+                    </TableRow>
                   </TableBody>
                 </Table>
               </div>
