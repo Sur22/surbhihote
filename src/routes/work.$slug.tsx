@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration ",
+                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\nTasks\n\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the upload template match\u00a0",
                       ],
                     },
                     {
