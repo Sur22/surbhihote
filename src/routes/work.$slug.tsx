@@ -129,15 +129,15 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
-  const isFjord2 = c.slug === "fjord2";
+  const showImpactHeader = c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2";
   return (
-    <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${isFjord2 ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
-      <p className={`eyebrow mb-4 ${isFjord2 ? "text-center" : ""}`}>{isFjord2 ? "IMPACT" : "Outcome"}</p>
-      {isFjord2 && (
+    <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${showImpactHeader ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
+      <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
+      {showImpactHeader && (
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
-            {isFjord2 ? "This project was a major overhaul, a rethink of a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster and better platform, happier users, and a system built to evolve..\n" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+            This project was a major overhaul, a rethink of a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster and better platform, happier users, and a system built to evolve..
           </p>
         </>
       )}
