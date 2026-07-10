@@ -51,16 +51,16 @@ const defaultMeta = {
   timeframe: "3 Months",
   tools: "Adobe XD, Miro, Zoom meetings",
   tasksPerformed:
-    "End to End Design, User Research, UI Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
+    "End-to-End Design, User Research, UI Design, User Flows, Wireframing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
-    "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+    "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
   goal:
-    "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
+    "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AEs & ADs — the Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off their shoulders.\n4. Build an in-house tool to cut down the cost of the external tool used to build custom audiences.\u00a0",
   research: {
     stakeholderInterview:
-      "After I get a brief from product team about the new feature and receive the product requirement document(PRD) and comitative analysis to get holistic idea of the feature and the functionality we are thinking of developing.\nI interviewed stakeholder of this feature was the 'Head of Product Development' team. It gave me better understanding of the problem we are trying to solve.\nAs there are many phases and stages of PLM Product Development Managers were having hard time managing all the product related files and data. They had to use multiple tools to manage the communication with the factory and the client when any change/ update was made for the product",
+      "After I get a brief from the product team about the new feature and receive the product requirements document (PRD) and competitive analysis, I gain a holistic view of the feature and functionality we are thinking of developing.\nThe stakeholder I interviewed for this feature was the 'Head of Product Development'. It gave me a better understanding of the problem we are trying to solve.\nAs there are many phases and stages in PLM, Product Development Managers were having a hard time managing all the product-related files and data. They had to use multiple tools to manage communication with the factory and the client whenever any change or update was made to the product.",
     userInterview:
-      "As there are multiple user types I recruited 5 different type of users; which included users who requested the feature to get sense of what kind of notifications are important to which type of users and conducted user interview.\nAfter talking to all the users I understood their frustration and the pain points. Following are some of the things which users said during the user interview.\nAs a fast growing startup environment and everyone is being busy I carried out the users interview by going to their desks and asking them the set of questions.\u00a0\n\n",
+      "As there are multiple user types, I recruited 5 different types of users — including users who requested the feature — to get a sense of what kinds of notifications are important to which type of user, and conducted user interviews.\nAfter talking to all the users, I understood their frustrations and pain points. Following are some of the things users said during the user interviews.\nIn a fast-growing startup environment where everyone is busy, I carried out the user interviews by going to their desks and asking them the set of questions.\u00a0\n\n",
     userInterviewInsights: [
       {
         quote: "\n",
@@ -107,7 +107,7 @@ const defaultMeta = {
     },
   },
   brainstorming:
-    "I  had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. with the help of whiteboard I showed product team what design I  have in my mind as a possible solution for the feature we are building.",
+    "I had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. With the help of a whiteboard, I showed the product team what design I had in mind as a possible solution for the feature we were building.",
 };
 
 const _caseStudies: CaseStudy[] = [
@@ -131,13 +131,13 @@ const _caseStudies: CaseStudy[] = [
       }
     },
     timeframe: "3 Months",
-    tools: "Survey Monkey,\u00a0Claude ,\nMicrosoft Clarity, Power BI,Microsoft Azure,Teams,\nAdobe XD",
-    tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA and Engineering team.\u00a0",
+    tools: "Survey Monkey,\u00a0Claude,\nMicrosoft Clarity, Power BI, Microsoft Azure, Teams,\nAdobe XD",
+    tasksPerformed: "End-to-End Design, User Research, Workshop Facilitation, Wireframing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA, and Engineering teams.\u00a0",
     overview: "\n",
     goal: "\n",
     research: {
       ...defaultMeta.research,
-      userInterview: "A Survey was sent to all the affiliates which included the questions about the old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements. \nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n \nThe total responses we got for the survey was 128.\n\nThe major issues immersed from open ended questions responses are as follow \n 1. Speed & stability - Platform Speed, Speed for Processing large orders. (Known Issue) \n 2. Makegood Processing and Synchronization\n 3. Order Revisions History   \n 4. Searching and filtering not holding \n 5. Redundancy and Confusion due to poor naming conventions\n 6. Broken functionalities / Workarounds (Known Issue)\n 7. Automation of Manual tasks\n 8. Issues related to File exports \n\n\n",
+      userInterview: "A survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.\nOpen-Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable?\n3. Please share your feedback, additional comments, or suggestions.\n \nThe total number of responses we got for the survey was 128.\n\nThe major issues that emerged from the open-ended question responses are as follows:\n 1. Speed & stability — platform speed, and speed for processing large orders (known issue).\n 2. Makegood processing and synchronization.\n 3. Order revisions history.\n 4. Searching and filtering not holding.\n 5. Redundancy and confusion due to poor naming conventions.\n 6. Broken functionalities / workarounds (known issue).\n 7. Automation of manual tasks.\n 8. Issues related to file exports.\n\n\n",
     },
     role: "Lead Product Designer",
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
@@ -154,9 +154,9 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
-      { label: "No business lost till the date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
+      { label: "No business lost to date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
-      { label: "Faster Loading Time Than Erlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
+      { label: "Faster loading time than earlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
     ],
     sections: [
       {
@@ -182,12 +182,12 @@ const _caseStudies: CaseStudy[] = [
     year: "2025",
     ...defaultMeta,
     overview:
-      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+    "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
     goal:
-      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
+      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AEs & ADs — the Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off their shoulders.\n4. Build an in-house tool to cut down the cost of the external tool used to build custom audiences.\u00a0",
     research: {
       ...defaultMeta.research,
-      userInterview: "I talked with the both the user groups which were going to use this tool. I also talked with those selected user who are using the tool currently and asked them what do they like and dont like about the tool so I can make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs which we need to built plus few more things to enhance the functionality and make it easy for users to use.\u00a0\n1. Not very Intuitive\n2. Copy the whole segment logic once it is built.\n3. Copy and modify existing segment.\n4. Ability to see segments created by other users & copy them.\n\n",
+      userInterview: "I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.\u00a0\n1. Not very intuitive.\n2. Copy the whole segment logic once it is built.\n3. Copy and modify an existing segment.\n4. Ability to see segments created by other users and copy them.\n\n",
     },
     role: "Lead Product Designer",
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
@@ -232,9 +232,9 @@ const _caseStudies: CaseStudy[] = [
     year: "2024",
     ...defaultMeta,
     overview:
-      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
     goal:
-      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
+      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AEs & ADs — the Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off their shoulders.\n4. Build an in-house tool to cut down the cost of the external tool used to build custom audiences.\u00a0",
     research: {
       ...defaultMeta.research,
       userInterviewInsights: [
@@ -272,7 +272,7 @@ const _caseStudies: CaseStudy[] = [
     outcome: [
       { label: "Accounting Errors\u00a0", value: "-46%\u00a0" },
       { label: "User Satisfaction\u00a0", value: "+11" },
-      { label: "Faster,Efficient &\nStreamlined Workflow\u00a0", value: "+22%" },
+      { label: "Faster, Efficient &\nStreamlined Workflow\u00a0", value: "+22%" },
       { label: "Workflow Errors\u00a0", value: "-27%" },
     ],
     sections: [
@@ -299,9 +299,9 @@ const _caseStudies: CaseStudy[] = [
     year: "2024",
     ...defaultMeta,
     overview:
-      "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
+      "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role, the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
     goal:
-      "As a solution to the problem providing an easy way of managing the notifications preferences on all the levels like Product, Company, Files , Comments, Product development phases and stages, Vendors, Billing etc. to the users for avoiding any notifications which is crucial for their day to day job responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
+      "As a solution to the problem, we are providing an easy way to manage notification preferences at all levels — Product, Company, Files, Comments, Product Development phases and stages, Vendors, Billing, etc. — so users can avoid unwanted notifications while still receiving those crucial to their day-to-day responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
     timeframe: "2 Weeks",
     research: {
       ...defaultMeta.research,
@@ -338,9 +338,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-48%" },
-      { label: "Spam notifications Reduced\u00a0", value: "62 %→ 7%" },
-      { label: "Reduced Missed Notification", value: "−87%" },
+      { label: "Reduction in Missed Deadlines", value: "-48%" },
+      { label: "Spam Notifications Reduced\u00a0", value: "62% → 7%" },
+      { label: "Reduced Missed Notifications", value: "−87%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
@@ -367,9 +367,9 @@ const _caseStudies: CaseStudy[] = [
     year: "2024",
     ...defaultMeta,
     overview:
-      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable. ",
+      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
     goal:
-      "As a solution to this problem we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AE's & AD's -Data team took on an average a week of turn around time to fulfill the custom audience creation.\n3. Take off this responsibility form their shoulders.\n4. Build in-house tool to cut down the cost of external tool using to build custom audience.\u00a0",
+      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the\u00a0 \u00a0 \u00a0 Data Team.\n2.\u00a0 Cut the waiting time for AEs & ADs — the Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off their shoulders.\n4. Build an in-house tool to cut down the cost of the external tool used to build custom audiences.\u00a0",
     research: {
       ...defaultMeta.research,
       userInterviewInsights: [
@@ -405,9 +405,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-48%" },
+      { label: "Reduction in Missed Deadlines", value: "-48%" },
       { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
-      { label: "Reduced Missed Notification", value: "−87%" },
+      { label: "Reduced Missed Notifications", value: "−87%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
