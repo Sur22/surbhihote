@@ -749,17 +749,19 @@ If AE's want to build a custom audience to for the clients would require to send
                         </div>
                         <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
                           {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
-                            const tasksIndex = goal.indexOf("Tasks");
-                            if (tasksIndex !== -1) {
-                              const before = goal.slice(0, tasksIndex);
-                              const after = goal.slice(tasksIndex + 5);
-                              return (
-                                <li key={idx} className="whitespace-pre-line">
-                                  {before}<span className="font-bold">Tasks</span>{after}
-                                </li>
-                              );
-                            }
-                            return <li key={idx} className="whitespace-pre-line">{goal}</li>;
+                            return (
+                              <li key={idx} className="whitespace-pre-line">
+                                {goal.split('\n').map((line, lIdx) => {
+                                  const isHeader = line.startsWith('Goal') || line.startsWith('Top Frustration') || line.startsWith('Frustration') || line.startsWith('Tasks');
+                                  return (
+                                    <span key={lIdx} className={isHeader ? "font-bold block mt-1" : ""}>
+                                      {line}
+                                      {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
+                                    </span>
+                                  );
+                                })}
+                              </li>
+                            );
                           })}
                         </ul>
                       </div>
