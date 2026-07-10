@@ -237,8 +237,8 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      {/* Outcome for affiliate case studies */}
-      {(c.slug === "fjord" || c.slug === "fjord2") && <OutcomeMetrics c={c} />}
+      {/* Outcome for case studies 02-04 */}
+      {(c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord2") && <OutcomeMetrics c={c} />}
 
       {/* Meta grid */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
