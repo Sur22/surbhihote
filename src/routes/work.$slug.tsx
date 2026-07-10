@@ -905,7 +905,7 @@ If AE's want to build a custom audience to for the clients would require to send
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "fjord2") 
-            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers which were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild.\nWith the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
+            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers which were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild. With the limited amount of information I had from the survey data.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate the design if they are meeting the needs of the user. Solving solution tot their pain points and if design is usable i made mid feudality wireframes."
             : (c.slug === "fjord")
@@ -991,7 +991,7 @@ If AE's want to build a custom audience to for the clients would require to send
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution" : "Brainstorming Session With Product Team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows to manage their notifications form." : (c.slug === "fjord2") ? "I presented wireframes with Stakeholders ,Engineering and the PM. We discussed about the assumptions that stakeholders had.I had multiple question about the workflow of the users, what is crucial for them to perform their day to day jobs on the website.The stakeholders did not had answers to most of my questions so I pushed for having a session with all the main affiliates to understand their workflow which will provide insights and avoid any assumption based decision which might affect their workflow negatively or create any obstacles for them. " : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows to manage their notifications form." : (c.slug === "fjord2") ? "I presented wireframes with Stakeholders ,Engineering and the PM. We discussed about the assumptions that stakeholders had.I had multiple question about the workflow of the users, what is crucial for them to perform their day to day jobs on the website.The stakeholders did not had answers to most of my questions so, I pushed for having a session with all the main affiliates to understand their workflow which will provide insights and avoid any assumption based decision which might affect their workflow negatively or create any obstacles for them.\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
         {(c.slug === "fjord2") ? (
           <button
             type="button"
@@ -1133,7 +1133,7 @@ Refer the Survey results section you will find the we asked a question to rate t
                     </TableRow>
                     <TableRow>
                       <TableCell>Compare Order Version</TableCell>
-                      <TableCell>Speed & Efficiency</TableCell>
+                      <TableCell>Platform Notificatios</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Internal & External Rate Cards</TableCell>
