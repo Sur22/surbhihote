@@ -101,7 +101,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
       <ul className="space-y-5">
         {sections.map((s) => {
           const targetId = s.anchor ?? s.id;
-          const active = activeId === targetId;
+          const active = activeId === s.id;
           return (
             <li key={s.id} className="flex items-center gap-3">
               <span
