@@ -7,7 +7,7 @@ const baseSections = [
   { id: "design-process", label: "Design" },
   { id: "testing", label: "Testing" },
   { id: "final-designs", label: "Solution" },
-  { id: "impact", label: "Impact" },
+  { id: "impact", label: "REFLECTION" },
 ];
 
 const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
