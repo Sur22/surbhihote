@@ -580,7 +580,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   <p>{c.goal}</p>
                 </div>
               </div>
-              <div className="mt-[80px] rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
+              <div className="mt-[35px] rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-50"
                   style={{ backgroundImage: `url(${ampBgPersona.url})` }}
