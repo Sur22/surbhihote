@@ -130,8 +130,9 @@ export const Route = createFileRoute("/work/$slug")({
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const isFjord2 = c.slug === "fjord2";
+  const isAffiliate = c.slug === "fjord" || c.slug === "fjord2";
   return (
-    <section className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${isFjord2 ? "pb-[100px]" : "pb-6"}`}>
+    <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${isFjord2 ? "pb-[100px]" : isAffiliate ? "pb-24" : "pb-6"} scroll-mt-24`}>
       <p className={`eyebrow mb-4 ${isFjord2 ? "text-center" : ""}`}>{isFjord2 ? "IMPACT" : "Outcome"}</p>
       {isFjord2 && (
         <>
@@ -236,8 +237,8 @@ function CaseStudyPage() {
         </div>
       </section>
 
-      {/* Outcome for fjord2 */}
-      {c.slug === "fjord2" && <OutcomeMetrics c={c} />}
+      {/* Outcome for affiliate case studies */}
+      {(c.slug === "fjord" || c.slug === "fjord2") && <OutcomeMetrics c={c} />}
 
       {/* Meta grid */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
@@ -1528,7 +1529,9 @@ If AE's want to build a custom audience to for the clients would require to send
       </section>
 
 
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      {c.slug !== "fjord" && c.slug !== "fjord2" && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
 
       {/* Measuring the Success */}
       <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
@@ -1559,8 +1562,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       )}
 
-      {/* Outcomes */}
-      {c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
+      {/* Outcomes for non-affiliate case studies */}
+      {c.slug !== "fjord" && c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
