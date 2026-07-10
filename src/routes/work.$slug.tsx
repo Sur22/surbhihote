@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, TrendingUp, Play } from "lucide-react";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
