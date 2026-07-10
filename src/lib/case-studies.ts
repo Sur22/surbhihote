@@ -293,8 +293,8 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "atlas",
     index: "04",
-    title: "Grid Mobile app",
-    subtitle: "Product Manufacturing Management and Tracking.",
+    title: "Notifications Management\u00a0",
+    subtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
