@@ -143,7 +143,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
     cover: fjord.url,
     summary:
-      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
+      "Redesigned a legacy affiliate application used by media sellers — improving usability by 26%, eliminating workarounds, and cutting loading time in half.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -193,7 +193,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: audienceBuilderMockup.url,
     summary:
-      "A complete redesign of the Fjord mobile app — from rigid ledger to a calm, glanceable surface that prioritizes the three things customers do 92% of the time.",
+      "Built an in-house Audience Builder tool so Account Executives and Directors can create custom TV audience segments without waiting on the Data Team.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -260,7 +260,7 @@ const _caseStudies: CaseStudy[] = [
     tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
     cover: solace.url,
     summary:
-      "Designed the first version of Solace — a 10-minute-a-day practice for people who are skeptical of wellness culture. No crystals. No infinite scrolls.",
+      "Designed a connected Tech Pack Tool that moves fashion brands from scattered documents to a single PLM ecosystem with reusable libraries and automated BOMs.",
     problem:
       "Founders came to us frustrated: every competitor's onboarding asked 14 questions and shipped users into a content library the size of Netflix. They wanted an app that could be useful on day one, and finishable.",
     approach: [
@@ -328,7 +328,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: notificationBanner.url,
     summary:
-      "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
+      "Redesigned notification preferences for a supply-chain PLM, giving users granular control over product, company, file, and workflow alerts.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
@@ -395,7 +395,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas.url,
     summary:
-      "Reimagined Atlas as a single, scrollable canvas — map and itinerary on one surface — so planning a 10-day trip feels like sketching, not filing.",
+      "Redesigned the product page experience for a supply-chain platform to reduce clutter and improve findability.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [

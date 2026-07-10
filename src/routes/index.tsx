@@ -59,10 +59,10 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Surbhi Hote — Product & UX Design Studio" },
-      { name: "description", content: "Independent product designer crafting calm, considered software. Selected case studies in fintech, wellness, and travel." },
-      { property: "og:title", content: "Surbhi Hote — Product & UX Design Studio" },
-      { property: "og:description", content: "Selected work in fintech, wellness, and travel." },
+      { title: "Surbhi Hote — Lead Product Designer" },
+      { name: "description", content: "Lead product designer crafting calm, considered B2B and SaaS products. Selected case studies in ad-tech, PLM, ERP, and enterprise software." },
+      { property: "og:title", content: "Surbhi Hote — Lead Product Designer" },
+      { property: "og:description", content: "Lead product designer crafting calm, considered B2B and SaaS products. Selected case studies in ad-tech, PLM, ERP, and enterprise software." },
     ],
   }),
   component: IndexPage,
