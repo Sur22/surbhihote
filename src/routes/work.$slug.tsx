@@ -1045,13 +1045,15 @@ If AE's want to build a custom audience to for the clients would require to send
                 to see the list of question for focus group.{"\u00A0"}
 
                 <p className="mt-8">
-                  Watching the work overturned assumptions we'd carried into the project. 
-                  Stakeholders assumed that they do not need the symbols of D,V,P,C  but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff.
+                  Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed that they do not need the symbols of D,V,P,C  but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff.
+
+
+Refer the Survey results section you will find the we asked a question to rate their current experience 
                 </p>
 
-                <p className="mt-8">
-                  Two other beliefs didn't survive contact with real users stakeholder wanted to remove military time but turns out affiliates are not comfortable with that at all , and Some pages which stakeholder wanted to remove are still in use . Each one redirected a decision we would otherwise have made on instinct.
-                </p>
+                <div className="mt-8">
+                  If you refer the Survey results section you will find the we asked a question to rate their current experience of affiliate site.The survey results surprised us as most of them are satisfied and some of them have answered as very satisfied.During the session with one of the affiliates they said "We like it as it is, we don't want it to change" as this site is very old the users are so used it ,even with the workarounds. The change is very hard for them after leaning tp operated with all the workarounds which are turned into habits of the users.For me the take away for here was to keep the learning curve for the them as flat as possible.We decided the to do major changes which will make users hard to adopt the new platform. 
+                </div>
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
