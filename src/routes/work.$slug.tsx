@@ -1485,7 +1485,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         src={img.src}
                         alt={img.label}
                         className="relative mx-auto h-auto shrink-0"
-                        style={c.slug === "atlas" ? { width: "106.25%", maxWidth: "none" } : { width: "85%" }}
+                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
                         loading="lazy"
                       />
                     </div>
