@@ -362,7 +362,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "atlas2",
     index: "05",
     title: "Redesign Product Page\u00a0",
-    subtitle: "Product Manufacturing Management and Tracking.",
+    subtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
