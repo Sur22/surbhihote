@@ -1149,11 +1149,11 @@ Refer the Survey results section you will find the we asked a question to rate t
                       <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "fjord2" ? "Auto refresh\u00a0" : "Search , Auto refresh"}</TableCell>
+                      <TableCell>{c.slug === "fjord2" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
                       <TableCell>Exports</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "fjord2" ? "Fix broken functionalities" : "\u00a0"}</TableCell>
+                      <TableCell>{c.slug === "fjord2" ? "Fix Broken Functionalities" : "\u00a0"}</TableCell>
                       <TableCell>Automation</TableCell>
                     </TableRow>
                   </TableBody>
@@ -1313,7 +1313,7 @@ Refer the Survey results section you will find the we asked a question to rate t
           </ul>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
-            Before the release we made sure to have the help resources ready&nbsp; such as short videos showing how to perform a task and a list of possible FAQ's and also, a place where users can send the feedback and also can report any bugs or errors they encounter.&nbsp;&nbsp;
+            Before the release we made sure to have the help resources ready&nbsp; such as short videos showing how to perform all the tasks and a list of possible FAQ's and also, a place where users can send the feedback and also can report any bugs or errors they encounter.&nbsp;&nbsp;
           </p>
         </section>
       )}
