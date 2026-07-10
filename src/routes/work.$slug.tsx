@@ -227,6 +227,9 @@ function CaseStudyPage() {
         </div>
       </section>
 
+      {/* Outcome for fjord2 */}
+      {c.slug === "fjord2" && <OutcomeMetrics c={c} />}
+
       {/* Meta grid */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
@@ -246,10 +249,9 @@ function CaseStudyPage() {
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
-      {c.slug === "fjord2" && <OutcomeMetrics c={c} />}
-
       {/* Overview + Goal */}
       <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
+
         <div className={c.slug === "fjord2" ? "" : "space-y-16"}>
           <div>
             <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "fjord2" ? "mb-[35px]" : "mb-8"}`}>Context</h2>
