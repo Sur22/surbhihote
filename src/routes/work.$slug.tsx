@@ -701,7 +701,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       goals: [
                         "\n",
                         "\n",
-                        "Goal\u00a0\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration Manual account setup & updating\u00a0\n\n\nTasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
+                        "Goal:\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration:\u00a0Manual account setup & updating\u00a0\n\n\nTasks:\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
                       ],
                     },
                     {
