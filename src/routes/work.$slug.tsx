@@ -409,16 +409,24 @@ If AE's want to build a custom audience to for the clients would require to send
                       <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
                         {persona.goals.filter((g) => g.trim()).map((goal, gidx) => {
                           const tasksIndex = goal.indexOf("Tasks");
+                          const frustrationIndex = goal.indexOf("Frustration");
+                          const goalIndex = goal.indexOf("Goal");
+                          
+                          let content = goal;
+                          
                           if (tasksIndex !== -1) {
-                            const before = goal.slice(0, tasksIndex);
-                            const after = goal.slice(tasksIndex + 5);
-                            return (
-                              <li key={gidx} className="whitespace-pre-line">
-                                {before}<span className="font-bold">Tasks</span>{after}
-                              </li>
-                            );
+                            content = content.replace("Tasks", '<span class="font-bold">Tasks</span>');
                           }
-                          return <li key={gidx} className="whitespace-pre-line">{goal}</li>;
+                          if (frustrationIndex !== -1) {
+                            content = content.replace("Frustration", '<span class="font-bold">Frustration</span>');
+                          }
+                          if (goalIndex !== -1) {
+                            content = content.replace("Goal", '<span class="font-bold">Goal</span>');
+                          }
+
+                          return (
+                            <li key={gidx} className="whitespace-pre-line" dangerouslySetInnerHTML={{ __html: content }} />
+                          );
                         })}
                       </ul>
                     </div>
@@ -667,7 +675,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Goal\nIdentify new business   \n\n\nTop Frustration \n\nTasks\n1.Track new orders\n2.Track revenue\n3.View order for oversight\n4.Quickly identify unaccepted orders\n\n",
+                        "\n\nGoal  Identify new business \nFrustration Identify new business\nTasks\n1.Track new orders\n2.Track revenue\n\n\n3.View order for oversight\n4.Quick identification of unaccepted orders\n\n\n\n\n\n\n\n\n\n \n ",
                       ],
                     },
                     {
@@ -675,7 +683,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "Goal\n\n\n\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Goal   Maintain makegoods business \nReview and Confirm\norders in a timely\nmanner \n \n\n Frustration-\ Makegood Processing and Synchronization issue\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
@@ -683,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal\n\n\nTop Frustration \n\nTasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n   upload template match \n\n ",
+                        "Goal  Maintaining Electronic Rate cards\nFrustration Identify new business\nTasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n   upload template match \n\n ",
                       ],
                     },
                     {
@@ -691,9 +699,9 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal \nFrustration \nTasks",
-                        "Goal \n\nFrustration \n \nTasks",
-                        "Goal\n\n \nTasks\n1. Replicate all capabilities of\x03an\n    affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                        "Goal  Identify new business \nFrustration Identify new businessTasks",
+                        "Goal  Identify new business \nFrustration Identify new business\nTasks",
+                        "Goal  Validate the affiliate site is\x03running successfully\u200b\nFrustration Manual account setup & updating \n\n\nTasks\n1. Replicate all capabilities of\x03an\n    affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n    Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
                       ],
                     },
                     {
@@ -701,8 +709,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal \n\nFrustration ",
-                        "Tasks\n1. Gather intel across both Linear and Digital orders\u200b\n2. New & historical linear & digital orders\u200b\n3. Total investment/total impressions\u200b\n4. The AMP AE on orders/markets\u200b\n5. Which AMP offcie order is from\u200b",
+                        "Goal Gather intel across both Linear and Digital\n\norders\n\n\n Frustration Manual account setup & updating\nTasks",
+                        "Tasks\n1.  New & historical linear & digital orders\u200b\n2. Total investment/total impressions\u200b\n3. The AMP AE on orders/markets\u200b\n4. Which AMP offcie order is from\u200b",
                       ],
                     },
                   ].map((persona, idx) => (
@@ -1102,6 +1110,9 @@ If AE's want to build a custom audience to for the clients would require to send
                 to see the list of question for focus group.{"\u00A0"}
 
                 {"\n\n"}Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed that they do not need the symbols of D,V,P,C but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff. Refer the Survey results section you will find the we asked a question to rate their current experience{"\n\n\n\n"}If you refer the Survey results section you will find the we asked a question to rate their current experience of affiliate site.The survey results surprised us as most of them are satisfied and some of them have answered as very satisfied.During the session with one of the affiliates they said "We like it as it is, we don't want it to change" as this site is very old the users are so used it ,even with the workarounds. The change is very hard for them after leaning tp operated with all the workarounds into habits of the users.For me the take away for here was to keep the learning curve for the them as flat as possible.We decided the to do major changes which will make users hard to adopt the new platform.
+                <span className="hidden">Back to back order revisions, hard to track revision history  </span>
+                <span className="hidden">Makegood Processing and Synchronization issue</span>
+                <span className="hidden">Time consuming workarounds due to broken functionalities</span>
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
