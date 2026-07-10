@@ -137,7 +137,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
-            {isFjord2 ? "This project was a major overhaul, a rethink of how to redesign a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster and better platform, happier users, and a system built to evolve..\n" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+            {isFjord2 ? "This project was a major overhaul, a rethink of a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster and better platform, happier users, and a system built to evolve..\n" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
           </p>
         </>
       )}
@@ -243,7 +243,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "Role", v: c.role },
+            { k: "Role", v: c.slug === "fjord2" ? "Lead Product Designer(Sole)" : c.role },
             { k: "Timeframe", v: c.timeframe },
             { k: "Tools", v: c.tools },
             { k: "Tasks Performed", v: c.tasksPerformed },
