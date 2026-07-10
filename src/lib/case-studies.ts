@@ -226,7 +226,7 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "solace",
     index: "03",
-    title: "Grid Website",
+    title: "Tech Pack Tool",
     subtitle: "Document-Centric Workflows to a Connected PLM Ecosystem.",
     client: "Solace Health",
     year: "2024",
