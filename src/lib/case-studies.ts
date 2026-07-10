@@ -130,7 +130,7 @@ const _caseStudies: CaseStudy[] = [
         workshopSchedule: "\n"
       }
     },
-    timeframe: "8 Weeks",
+    timeframe: "3 Months",
     tools: "Survey Monkey,\u00a0Claude ,\nMicrosoft Clarity, Power BI,Microsoft Azure,Teams,\nAdobe XD",
     tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA and Engineering team.\u00a0",
     overview: "\n",
