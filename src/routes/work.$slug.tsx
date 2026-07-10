@@ -136,8 +136,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
       {isFjord2 && (
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
-          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
+            {isFjord2 ? "This project was a major overhaul, a rethink of how to redesign a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster workflows, happier users, and a system built to evolve..\n" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
           </p>
         </>
       )}
