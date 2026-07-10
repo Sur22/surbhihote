@@ -225,7 +225,7 @@ function CaseStudyPage() {
           {c.slug === "fjord2" && (
             <div>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable.\n`}
+                {`Affiliates, the partner networks who buy and transact against that inventory\u00a0 run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 25 years old. Its codebase was frozen no fix could ship without a full rebuild ,so after all these years of workarounds had hardened into the way affiliates worked.\u00a0I led the end-to-end redesign as Lead Product Designer.It was to rebuild a business-critical tool that 500+ affiliates depend on daily ,without losing a dollar of revenue in the transition.`}
               </p>
             </div>
           )}

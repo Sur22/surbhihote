@@ -133,7 +133,7 @@ const _caseStudies: CaseStudy[] = [
     timeframe: "8 Weeks",
     tools: "Survey Monkey,\u00a0Claude ,\nMicrosoft Clarity, Power BI,Microsoft Azure,Teams,\nAdobe XD",
     tasksPerformed: "End to End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping, Stakeholder buy-in, Collaboration with PM, QA and Engineering team.\u00a0",
-    overview: "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable.\n",
+    overview: "\n",
     goal: "\n",
     research: {
       ...defaultMeta.research,
