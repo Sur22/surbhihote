@@ -571,7 +571,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"My first step before starting any project is to understand, Why are we doing this project ?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons of why the affiliate website needs to be redesigned is as follows.\n\n"}
+                  {"My first step before starting any project is to understand, Why are we doing this project ?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons of why the affiliate website needs to be redesigned is as follows.\n"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
