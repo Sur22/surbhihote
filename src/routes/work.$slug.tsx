@@ -1534,10 +1534,10 @@ If AE's want to build a custom audience to for the clients would require to send
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {/* Measuring the Success */}
+      {/* Reflection */}
       <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
-          {c.slug === "fjord2" ? "Reflection" : "Measuring the Success"}
+          Reflection
         </h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
