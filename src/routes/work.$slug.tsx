@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal  Maintaining Electronic Rate cards\nFrustration Identify new business\nTasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n   upload template match \n\n ",
+                        "Goal  Maintaining Electronic Rate cards\nop Frustration ",
                       ],
                     },
                     {
@@ -709,7 +709,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal Gather intel across both Linear and Digital\n\norders\n\n\n Frustration Manual account setup & updating\nTasks",
+                        "Goal Gather intel across both Linear and Digital\n\norders\n\n\n Frustration Version comparison broken, Exports format\n\nTasks",
                         "Tasks\n1.  New & historical linear & digital orders\u200b\n2. Total investment/total impressions\u200b\n3. The AMP AE on orders/markets\u200b\n4. Which AMP offcie order is from\u200b",
                       ],
                     },
@@ -1110,8 +1110,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 to see the list of question for focus group.{"\u00A0"}
 
                 {"\n\n"}Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed that they do not need the symbols of D,V,P,C but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff. Refer the Survey results section you will find the we asked a question to rate their current experience{"\n\n\n\n"}If you refer the Survey results section you will find the we asked a question to rate their current experience of affiliate site.The survey results surprised us as most of them are satisfied and some of them have answered as very satisfied.During the session with one of the affiliates they said "We like it as it is, we don't want it to change" as this site is very old the users are so used it ,even with the workarounds. The change is very hard for them after leaning tp operated with all the workarounds into habits of the users.For me the take away for here was to keep the learning curve for the them as flat as possible.We decided the to do major changes which will make users hard to adopt the new platform.
-                <span className="hidden">Back to back order revisions, hard to track revision history  </span>
-                <span className="hidden">Makegood Processing and Synchronization issue</span>
+                <span className="hidden">Back to back order revisions, hard to track revision history & speed  </span>
+                <span className="hidden">Makegood Processing and Synchronization</span>
                 <span className="hidden">Time consuming workarounds due to broken functionalities</span>
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
