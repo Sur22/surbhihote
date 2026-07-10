@@ -153,10 +153,10 @@ const _caseStudies: CaseStudy[] = [
       "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
     ],
     outcome: [
-      { label: "Increased Usability", value: "28%" },
-      { label: "No business lost till the date since release", value: "~$850K\u00a0→\u00a0$0" },
+      { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
+      { label: "No business lost till the date since release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 7" },
-      { label: "Faster Paltform", value: "\u00a0 2x ↑" },
+      { label: "Faster Loading Time Than Erlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
     ],
     sections: [
       {

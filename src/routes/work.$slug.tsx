@@ -1482,20 +1482,22 @@ If AE's want to build a custom audience to for the clients would require to send
             <div key={o.label} className="border-t border-border pt-6">
               {o.value && (
                 <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
-                  {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0→\u00A0$0" ? (
+                  {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0→\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
                     <span className="whitespace-nowrap">
                       {o.value === "~$850K\u00A0→\u00A0$0" ? (
                         <>
                           ~$850K <span className="text-[70%]">→</span> $0
                         </>
-                      ) : (
+                      ) : o.value === "1 week - 5 min" ? (
                         <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
+                      ) : (
+                        <>{o.value}</>
                       )}
                     </span>
                   ) : (
                     <>{o.value}</>
                   )}
-                  {o.label.includes("User Satisfaction") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
+                  {o.label.includes("Usability Improved") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
                 </p>
               )}
               <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
