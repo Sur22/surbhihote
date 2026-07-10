@@ -1485,11 +1485,11 @@ If AE's want to build a custom audience to for the clients would require to send
                     </div>
                   ) : (c.slug === "fjord2") ? (
                     <div
-                      className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+                      className="relative bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img src={img.src} alt={img.label} className="relative w-[110%] mx-auto h-auto" loading="lazy" />
+                      <img src={img.src} alt={img.label} className="relative w-[110%] max-w-none mx-auto h-auto" loading="lazy" />
                     </div>
                   ) : (
                     <div className="overflow-hidden rounded-sm border border-border bg-secondary">
