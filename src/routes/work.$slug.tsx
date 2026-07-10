@@ -1499,8 +1499,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            {c.slug !== "fjord2" && <CarouselPrevious className="left-4" />}
+            {c.slug !== "fjord2" && <CarouselNext className="right-4" />}
           </Carousel>
         )}
 
