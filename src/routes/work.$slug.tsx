@@ -1369,6 +1369,11 @@ If AE's want to build a custom audience to for the clients would require to send
                   : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
+            {c.slug === "fjord" && (
+              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2">
+                Placeholder paragraph for usability section findings and observations.
+              </p>
+            )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\u00a0 2 out of the 5 participants felt the need of adding the label are detailed sketch page. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
