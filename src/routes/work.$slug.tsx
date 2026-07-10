@@ -194,7 +194,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}
+        className={`[&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
