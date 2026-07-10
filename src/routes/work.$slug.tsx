@@ -1077,11 +1077,11 @@ Refer the Survey results section you will find the we asked a question to rate t
                   <TableBody>
                     <TableRow>
                       <TableCell>Orders and Event log</TableCell>
-                      <TableCell>Messaging&nbsp;</TableCell>
+                      <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Views and  Search </TableCell>
-                      <TableCell>Collatrals</TableCell>
+                      <TableCell>Order Revision</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Compare Order Version</TableCell>
@@ -1093,12 +1093,12 @@ Refer the Survey results section you will find the we asked a question to rate t
                     </TableRow>
 
                     <TableRow>
-                      <TableCell>Email Notifications&nbsp;</TableCell>
-                      <TableCell>Makegood&nbsp;</TableCell>
+                      <TableCell>Speed & Efficiency</TableCell>
+                      <TableCell>Messaging</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Contacts & Resources</TableCell>
-                      <TableCell>Order Revision</TableCell>
+                      <TableCell>Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
+                      <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
