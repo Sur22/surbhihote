@@ -72,7 +72,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
 
   useEffect(() => {
     const update = () => {
-      const start = document.getElementById(sections[0]?.anchor ?? sections[0]?.id ?? "overview");
+      const start = document.getElementById(sections[0]?.id ?? "overview");
       const end = document.getElementById("case-study-end");
       if (!start || !end) {
         setVisible(false);
