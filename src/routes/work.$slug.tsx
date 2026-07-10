@@ -281,7 +281,7 @@ function CaseStudyPage() {
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Affiliates, the partner networks who buy and transact against that inventory\u00a0 run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 25 years old. Its codebase was frozen no fix could ship without a full rebuild ,so after all these years of workarounds had hardened into the way affiliates worked.\u00a0I led the end-to-end redesign as Lead Product Designer.It was to rebuild a business-critical tool that 500+ affiliates depend on daily ,without losing a dollar of revenue in the transition.`}
+                {`Affiliates — the partner networks who buy and transact against that inventory — run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 25 years old. Its codebase was frozen — no fix could ship without a full rebuild — so over the years, workarounds had hardened into the way affiliates worked.\u00a0I led the end-to-end redesign as Lead Product Designer. The goal was to rebuild a business-critical tool that 500+ affiliates depend on daily, without losing a dollar of revenue in the transition.`}
               </p>
             </div>
           )}
@@ -289,7 +289,7 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {`Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications
+                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
 \u00a01.Users getting so many spam notifications
 \u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
 \u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
@@ -300,7 +300,7 @@ function CaseStudyPage() {
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {`Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications
+                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
 \u00a01.Users getting so many spam notifications
 \u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
 \u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
@@ -322,7 +322,7 @@ function CaseStudyPage() {
                 {c.slug === "solace"
                   ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.\u00a0\u00a0\u00a0\u00a0 Provide different user types ability to pick and choose the notifications that they would like to receive\n2.\u00a0\u00a0\u00a0\u00a0 Serve users ability to choose the notifications that they would like to receive per module and per product\n3.\u00a0\u00a0\u00a0\u00a0 Allow users ability to switch on/off notifications at any point of time\n"
                   : c.slug === "fjord"
-                  ? <p className="whitespace-pre-line">{`When clients wants to run their ads on TV or streaming platform they \x03have to define the target Audiance to whom they want their ads to reach they want to include or exclude some type of audiance for their campaigns.\x03Ampersand AE's build the custome audiance acoording to their needs so \x03the number of audiance can be calculated to meet the expectation of the client in terms or Reach and Impressons for the campaing to be successful \x03for the clients.
+                  ? <p className="whitespace-pre-line">{`When clients want to run their ads on TV or a streaming platform, they \x03have to define the target audience they want their ads to reach — including or excluding certain types of audience for their campaigns.\x03Ampersand AEs build the custom audience according to their needs, so \x03the number of audience can be calculated to meet the client's expectation in terms of reach and impressions, for the campaign to be successful \x03for the clients.
 Limited number of users having access to an expensive tool where they can create custom audience. 
 If AE's want to build a custom audience to for the clients would require to send a request\x03to the data team and the turn around time was at least a week as the team is small. \x03AE's had to wait for getting their coustom audience for the campaign.`}</p>
                   : <p className="whitespace-pre-line">{c.goal}</p>
@@ -839,7 +839,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 {c.slug === "fjord2"
                   ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
-                  : "The final step was to define KPI's and how we will measure it. We came up with 5 KPI's which covers all the aspects of the project.\u00a0"}
+                  : "The final step was to define KPIs and how we would measure them. We came up with 5 KPIs which cover all aspects of the project.\u00a0"}
               </p>
               <div className="flex justify-center">
                 <div className="w-full max-w-2xl">
@@ -935,7 +935,7 @@ If AE's want to build a custom audience to for the clients would require to send
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "fjord2") 
-            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers which were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild. With the limited amount of information I had from the survey data.\u00a0"
+            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild — with the limited amount of information I had from the survey data.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
@@ -960,7 +960,7 @@ If AE's want to build a custom audience to for the clients would require to send
           {(c.slug === "fjord2")
             ? "\n"
             : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "Reviewing designs with developers and\u00a0 CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs."
+            ? "Reviewing designs with developers and the CTO at an early stage makes it easy and saves time and effort — in case something is not feasible, you might need to make many changes. I reviewed these with the mobile developers to confirm feasibility of the designs; it also makes them feel involved. Developers showed concern about the design — according to them, nested pages inside the tabs."
             : (c.slug === "fjord")
             ? "The custom component built for the projects are shown below"
             : "To understand the details to get started with the initial sketches and get some inputs from users."
@@ -1021,7 +1021,7 @@ If AE's want to build a custom audience to for the clients would require to send
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution" : "Brainstorming Session With Product Team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows for managing notifications." : (c.slug === "fjord2") ? "I presented wireframes with Stakeholders ,Engineering and the PM. We discussed about the assumptions that stakeholders had.I had multiple question about the workflow of the users, what is crucial for them to perform their day to day jobs on the website.The stakeholders did not had answers to most of my questions so, I pushed for having a session with all the main affiliates to understand their workflow which will provide insights and avoid any assumption based decision which might affect their workflow negatively or create any obstacles for them.\u00a0" : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows for managing notifications." : (c.slug === "fjord2") ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."}</p>
         {(c.slug === "fjord2") ? (
           <button
             type="button"
@@ -1248,7 +1248,7 @@ If AE's want to build a custom audience to for the clients would require to send
             ? "Alignment of user goals and business goals to benefit both is important. Helping users achieve their goals helps in user retention and hence profitable for business."
             : ((c.slug === "atlas" || c.slug === "atlas2") 
                 ? "\n\n\n"
-                : "Throughout the product lifecycle process there are different types of notifications which are received by the clients and the staff who are handling the project via email, push notification or as a text message. Currently there is no way to manage different types of notifications which client and the staff receives as user may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
+                : "Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
           }
         </div>
       </section>
@@ -1378,7 +1378,7 @@ If AE's want to build a custom audience to for the clients would require to send
             )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\u00a0 2 out of the 5 participants felt the need of adding the label are detailed sketch page. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
+              <span>{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings:\u00a0 2 out of the 5 participants felt the need to add labels on the Detailed Sketch page. 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to navigate to another part of the application. 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page.\u00a0 All participants felt the design served its purpose and addressed the pain points they had."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -1552,8 +1552,8 @@ If AE's want to build a custom audience to for the clients would require to send
             : c.slug === "fjord"
             ? "We successfully deployed the tool, and it significantly reduced the time for creating a custom audience, as users no longer had to wait for the Data team to make it for them — including those who did not have access to the paid tool. We saved a good amount for the company and were also able to provide a few more features than the existing tool by making it more intuitive. I learned to make sure all possible resources are available for users, for learning and smoother adoption."
             : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "By design I made sure users can totally control the the notifications which important to their job for different levels, the Company Level, Product level, Product Lifecycle stage Level.We were successful in eliminating most of the spam notifications which led to a great reduction in missing important notifications which resulted in missed deadlines for the product delivery to the clients which was a huge plus in terms of customer experience and helped in client retention for the company.\u00a0"
-            : "This was a big project and turned out to be a good selling point for the company. Apart from that\u00a0 it was great workflow improvement which eliminated accounting errors which happen due to manual workflow and due to the libraries built\u00a0 it speeded up the workflow and by reusing and repurposing . Because of the editor tool users don't had to go outside the platform to do all the editing for the manufacturing phase.Overall the project was a great success."}
+            ? "By design, I made sure users can fully control the notifications important to their job at different levels — Company level, Product level, and Product Lifecycle stage level. We were successful in eliminating most of the spam notifications, which led to a great reduction in missed important notifications that had resulted in missed deadlines for product delivery to clients. This was a huge plus for customer experience and helped with client retention for the company.\u00a0"
+            : "This was a big project and turned out to be a good selling point for the company. Apart from that,\u00a0it was a great workflow improvement, which eliminated accounting errors that happen due to manual workflow. Thanks to the libraries built,\u00a0it sped up the workflow through reuse and repurposing. Because of the editor tool, users didn't have to go outside the platform to do all the editing for the manufacturing phase. Overall, the project was a great success."}
         </p>
       </section>
 
