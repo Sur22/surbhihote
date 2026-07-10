@@ -134,7 +134,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
     <section className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${isFjord2 ? "pb-[100px]" : "pb-6"}`}>
       <p className={`eyebrow mb-4 ${isFjord2 ? "text-center" : ""}`}>{isFjord2 ? "IMPACT" : "Outcome"}</p>
       {isFjord2 && (
-        <h3 className="text-center text-2xl md:text-3xl font-semibold mb-10">At a glance</h3>
+        <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
       )}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
         {c.outcome.map((o) => (
