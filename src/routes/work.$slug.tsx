@@ -213,14 +213,16 @@ function CaseStudyPage() {
 
       {/* Overview + Goal */}
       <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
-        <div className="space-y-16">
+        <div className={c.slug === "fjord2" ? "" : "space-y-16"}>
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Context</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {c.slug === "solace" 
-                ? "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins." 
-                : c.overview}
-            </p>
+            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "fjord2" ? "mb-[35px]" : "mb-8"}`}>Context</h2>
+            {c.slug !== "fjord2" && (
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.slug === "solace" 
+                  ? "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins." 
+                  : c.overview}
+              </p>
+            )}
           </div>
           {c.slug === "fjord2" && (
             <div className="space-y-8">
