@@ -51,7 +51,7 @@ const defaultMeta = {
   timeframe: "3 Months",
   tools: "Adobe XD, Miro, Zoom meetings",
   tasksPerformed:
-    "End to End Design, User Research, UI Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaborate with Product, Engineering and QA teams.",
+    "End-to-End Design, User Research, UI Design, User Flows, Wireframing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
     "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
   goal:
@@ -107,7 +107,7 @@ const defaultMeta = {
     },
   },
   brainstorming:
-    "I  had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. with the help of whiteboard I showed product team what design I  have in my mind as a possible solution for the feature we are building.",
+    "I had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. With the help of a whiteboard, I showed the product team what design I had in mind as a possible solution for the feature we were building.",
 };
 
 const _caseStudies: CaseStudy[] = [
@@ -154,9 +154,9 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
-      { label: "No business lost till the date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
+      { label: "No business lost to date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
-      { label: "Faster Loading Time Than Erlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
+      { label: "Faster loading time than earlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
     ],
     sections: [
       {
@@ -299,7 +299,7 @@ const _caseStudies: CaseStudy[] = [
     year: "2024",
     ...defaultMeta,
     overview:
-      "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
+      "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role, the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
     goal:
       "As a solution to the problem providing an easy way of managing the notifications preferences on all the levels like Product, Company, Files , Comments, Product development phases and stages, Vendors, Billing etc. to the users for avoiding any notifications which is crucial for their day to day job responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
     timeframe: "2 Weeks",
@@ -338,9 +338,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-48%" },
-      { label: "Spam notifications Reduced\u00a0", value: "62 %→ 7%" },
-      { label: "Reduced Missed Notification", value: "−87%" },
+      { label: "Reduction in Missed Deadlines", value: "-48%" },
+      { label: "Spam notifications Reduced\u00a0", value: "62% → 7%" },
+      { label: "Reduced Missed Notifications", value: "−87%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
@@ -405,9 +405,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed  Deadlines", value: "-48%" },
+      { label: "Reduction in Missed Deadlines", value: "-48%" },
       { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
-      { label: "Reduced Missed Notification", value: "−87%" },
+      { label: "Reduced Missed Notifications", value: "−87%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
     ],
     sections: [
