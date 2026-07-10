@@ -1504,10 +1504,13 @@ If AE's want to build a custom audience to for the clients would require to send
 
       {/* Measuring the Success */}
       <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
-        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Measuring the Success</h2>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
+          {c.slug === "fjord2" ? "Reflection" : "Measuring the Success"}
+        </h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
-            ? <>This project was more than a redesign. We addressed major pain points of the users like speed, stability, broken functionalities &amp;&nbsp; workflows, redundancy, manual refresh etc. The highlight is avoiding any loss of business which is till date is $0 since it is launched and the jump in the usability.Second phase of the project is in development which mainly consists of new features and will be released in a few months which will largely change the way affiliates do communication and&nbsp; will have more better , easier workflow than before.&nbsp;</>
+            ? <>This project was more than a redesign. We addressed major pain points of the users like speed, stability, broken functionalities &amp;&nbsp; workflows, redundancy, manual refresh etc. The highlight is avoiding any loss of business which is till date is $0 since it is launched and the jump in the usability.Second phase of the project is in development which mainly consists of new features&nbsp; which is going to be a major shift in how affiliates communicate and smoother and better experience.&nbsp;</>
+
             : c.slug === "fjord"
             ? "We successfully deployed the tool and it reduced the significant amount of time for creating a custom audience as they no longer has to wait for data team to make it for them for those who did not had access to the paid tool.We save a good amount to the company and also was able provide few more features than existing tool by making it more intuitive . I learnt to make sure to have all the possible resources to be available for the users for learning and for smoother adoption."
             : (c.slug === "atlas" || c.slug === "atlas2")
