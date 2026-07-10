@@ -53,16 +53,15 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const ids = sections.map((s) => s.id);
     const update = () => {
       const threshold = window.innerHeight * 0.25;
-      let currentId = ids[0];
-      for (const id of ids) {
-        const el = document.getElementById(id);
+      let currentId = sections[0]?.id ?? "overview";
+      for (const s of sections) {
+        const el = document.getElementById(s.anchor ?? s.id);
         if (!el) continue;
         const top = el.getBoundingClientRect().top;
         if (top - threshold <= 0) {
-          currentId = id;
+          currentId = s.id;
         } else {
           break;
         }
