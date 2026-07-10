@@ -225,7 +225,7 @@ function CaseStudyPage() {
           {c.slug === "fjord2" && (
             <div className="space-y-8">
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
+                {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable.`}
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introdcution</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
