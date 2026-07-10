@@ -45,7 +45,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const ids = sections.map((s) => s.anchor ?? s.id);
+    const ids = sections.map((s) => s.id);
     const update = () => {
       const threshold = window.innerHeight * 0.25;
       let currentId = ids[0];
@@ -101,7 +101,7 @@ export function CaseStudySideNav({ slug }: { slug?: string }) {
       <ul className="space-y-5">
         {sections.map((s) => {
           const targetId = s.anchor ?? s.id;
-          const active = activeId === targetId;
+          const active = activeId === s.id;
           return (
             <li key={s.id} className="flex items-center gap-3">
               <span
