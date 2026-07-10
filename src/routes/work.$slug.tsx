@@ -565,6 +565,9 @@ If AE's want to build a custom audience to for the clients would require to send
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}Defining the personas and going through survey responses.
               </p>
+              <div className="overflow-hidden rounded-sm bg-secondary p-2 mb-8">
+                <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
+              </div>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
@@ -602,12 +605,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-6">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
-                </div>
-
-                <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">User Groups</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">User Groups</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
