@@ -1481,7 +1481,12 @@ If AE's want to build a custom audience to for the clients would require to send
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img src={img.src} alt={img.label} className="relative w-[85%] mx-auto h-auto" loading="lazy" />
+                      <img
+                        src={img.src}
+                        alt={img.label}
+                        className={`relative mx-auto h-auto ${c.slug === "atlas" ? "w-[106.25%] max-w-none" : "w-[85%]"}`}
+                        loading="lazy"
+                      />
                     </div>
                   ) : (c.slug === "fjord2") ? (
                     <div
@@ -1499,8 +1504,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {c.slug !== "fjord2" && <CarouselPrevious className="left-4" />}
-            {c.slug !== "fjord2" && <CarouselNext className="right-4" />}
+            {c.slug !== "fjord2" && c.slug !== "atlas" && <CarouselPrevious className="left-4" />}
+            {c.slug !== "fjord2" && c.slug !== "atlas" && <CarouselNext className="right-4" />}
           </Carousel>
         )}
 
