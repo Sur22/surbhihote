@@ -687,11 +687,11 @@ If AE's want to build a custom audience to for the clients would require to send
                       ],
                     },
                     {
-                      name: "Political & Markets Yeild Team  (ERC)",
+                      name: "Political & Markets Yeild Team (ERC)",
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\n\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the upload template match\u00a0",
+                        "Goal: Maintaining Electronic Rate cards\nFrustration: Time consuming workarounds due to broken functionalities\n\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
                       ],
                     },
                     {
@@ -699,9 +699,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "\n",
-                        "\n",
-                        "Goal:\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration:\u00a0Manual account setup & updating\u00a0\n\n\n\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
+                        "Goal: Validate the affiliate site is running successfully\nFrustration: Manual account setup & updating\n\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
                       ],
                     },
                     {
