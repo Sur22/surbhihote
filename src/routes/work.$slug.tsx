@@ -815,7 +815,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 We wrapped up the 1 and a half day workshop with a clear next steps and ready to initiate the design phase.
               </p>
             </div>
-          </>
+          </div>
         )}
       </section>
 
