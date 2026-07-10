@@ -131,7 +131,7 @@ export const Route = createFileRoute("/work/$slug")({
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const isFjord2 = c.slug === "fjord2";
   return (
-    <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
+    <section className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${isFjord2 ? "pb-[100px]" : "pb-6"}`}>
       <p className={`eyebrow mb-4 ${isFjord2 ? "text-center" : ""}`}>{isFjord2 ? "IMPACT" : "Outcome"}</p>
       {isFjord2 && (
         <h3 className="text-center text-2xl md:text-3xl font-semibold mb-10">At a glance</h3>
