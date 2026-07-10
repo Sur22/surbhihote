@@ -568,10 +568,10 @@ If AE's want to build a custom audience to for the clients would require to send
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}Defining the personas and going through survey responses.
               </p>
-              <div className="overflow-hidden rounded-sm bg-secondary p-2 mb-8">
+              <div className="overflow-hidden rounded-sm bg-secondary p-2 mb-[72px]">
                 <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
               </div>
-              <div className="mt-10">
+              <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
                   {"My first step before starting any project is to understand, Why are we doing this project ?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons of why the affiliate website needs to be redesigned is as follows.\n"}
