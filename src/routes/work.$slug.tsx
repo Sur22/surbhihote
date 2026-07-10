@@ -675,7 +675,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "\n\nGoal  Identify new business \nFrustration Identify new business\nTasks\n1.Track new orders\n2.Track revenue\n\n\n3.View order for oversight\n4.Quick identification of unaccepted orders\n\n\n\n\n\n\n\n\n\n \n ",
+                        "\n",
                       ],
                     },
                     {
@@ -683,7 +683,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "Goal   Maintain makegoods business \nReview and Confirm\norders in a timely\nmanner \n \n\n Frustration-\ Makegood Processing and Synchronization issue\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Goal: Maintain makegoods business\u00a0\nFrustration-\u00a0Makegood Processing and Synchronization issue\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal  Maintaining Electronic Rate cards\nFrustration ",
+                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration ",
                       ],
                     },
                     {
@@ -699,9 +699,9 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal  Identify new business \nFrustration Identify new businessTasks",
-                        "Goal  Identify new business \nFrustration Identify new business\nTasks",
-                        "Goal  Validate the affiliate site is\x03running successfully\u200b\nFrustration Manual account setup & updating \n\n\nTasks\n1. Replicate all capabilities of\x03an\n    affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n    Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
+                        "\n",
+                        "\n",
+                        "Goal\u00a0\u00a0Validate the affiliate site is\x03running successfully\u200b\nFrustration Manual account setup & updating\u00a0\n\n\nTasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n\u00a0 \u00a0 Platform and affiliate site orders\u200b\n4. Test deployment of affiliate site changes\n\n",
                       ],
                     },
                     {
@@ -709,8 +709,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal Gather intel across both Linear and Digital\n\norders\n\n\n Frustration Version comparison broken, Exports format\n\nTasks",
-                        "Tasks\n1.  New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3. Coordinate with AMP Account Execuiteves on orders/markets\u200b\n4. \u200bOrder ddmin reference ",
+                        "Goal\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\nTasks",
+                        "Tasks\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3. Coordinate with AMP Account Execuiteves on orders/markets\u200b\n4. \u200bOrder ddmin\u00a0reference\u00a0",
                       ],
                     },
                   ].map((persona, idx) => (
