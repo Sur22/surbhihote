@@ -692,8 +692,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       dependency: 4,
                       goals: [
                         "Goal: Maintaining Electronic Rate cards\nFrustration: Time consuming workarounds due to broken functionalities\nTasks:\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
-
                       ],
+
                     },
                     {
                       name: "Admin / Super User",
