@@ -129,9 +129,13 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
+  const isFjord2 = c.slug === "fjord2";
   return (
     <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-6">
-      <p className="eyebrow mb-10">{c.slug === "fjord2" ? "IMPACT" : "Outcome"}</p>
+      <p className={`eyebrow mb-4 ${isFjord2 ? "text-center" : ""}`}>{isFjord2 ? "IMPACT" : "Outcome"}</p>
+      {isFjord2 && (
+        <h3 className="text-center text-2xl md:text-3xl font-semibold mb-10">At a glance</h3>
+      )}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
         {c.outcome.map((o) => (
           <div key={o.label} className="border-t border-border pt-6">
