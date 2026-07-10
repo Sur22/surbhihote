@@ -128,8 +128,10 @@ export const Route = createFileRoute("/work/$slug")({
   component: CaseStudyPage,
 });
 
+const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["fjord2", "fjord", "solace", "atlas", "atlas2"]);
+
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
-  const showImpactHeader = c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2";
+  const showImpactHeader = topOutcomeSlugs.has(c.slug);
   return (
     <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${showImpactHeader ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
       <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
@@ -237,7 +239,7 @@ function CaseStudyPage() {
       </section>
 
       {/* Outcome for case studies 02-04 */}
-      {(c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord2") && <OutcomeMetrics c={c} />}
+      {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
       {/* Meta grid */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
@@ -1533,7 +1535,7 @@ If AE's want to build a custom audience to for the clients would require to send
       )}
 
       {/* Measuring the Success */}
-      <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
+      <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
           {c.slug === "fjord2" ? "Reflection" : "Measuring the Success"}
         </h2>
@@ -1561,8 +1563,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       )}
 
-      {/* Outcomes for case study 01 */}
-      {c.slug === "fjord" && <OutcomeMetrics c={c} />}
+      {/* Outcomes for case studies without top metrics */}
+      {!topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
