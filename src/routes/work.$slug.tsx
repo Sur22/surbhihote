@@ -733,7 +733,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             { label: "Platform Dependency", value: persona.dependency },
                           ].map((bar) => (
                             <div key={bar.label}>
-                              <div className="text-sm font-medium mb-2">{bar.label}</div>
+                              <div className="text-sm font-bold mb-2">{bar.label}</div>
                               <div className="w-[70%]">
                                 <div className="grid grid-cols-4 gap-px">
                                   {Array.from({ length: 4 }).map((_, i) => (
