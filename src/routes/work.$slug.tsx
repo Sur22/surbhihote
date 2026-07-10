@@ -1153,7 +1153,7 @@ Refer the Survey results section you will find the we asked a question to rate t
                       <TableCell>Exports</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{"\u00a0"}</TableCell>
+                      <TableCell>{c.slug === "fjord2" ? "Fix broken functionalities" : "\u00a0"}</TableCell>
                       <TableCell>Automation</TableCell>
                     </TableRow>
                   </TableBody>
