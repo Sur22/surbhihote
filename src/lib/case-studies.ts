@@ -137,7 +137,7 @@ const _caseStudies: CaseStudy[] = [
     goal: "\n",
     research: {
       ...defaultMeta.research,
-      userInterview: "A Survey was sent to all the affiliates which included the questions about the old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements. \nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n \nThe total responses we got for the survey was 128.\n\n\nOpen ended questions responses made 5 themes prominent \n 1. Speed - Platform Speed, Speed for Processing large orders,\n 2. Redundancy and Confusion due to poor naming conventions\n 3. Broken functionalities / Workarounds \n 4. Searching and filtering \n 5. Automation of Manual tasks\n 6. Issues related to File exports \n\n\nTop Frustration Points\n1. Website Performance and Stability \n2. Filters and search not holding \n3. Makegood Processing and Synchronization \n4. Order Revisions History\n\n\n",
+      userInterview: "A Survey was sent to all the affiliates which included the questions about the old application they are using to understand how critical it is for different job profile, how do they rate the current website and to know their pain points to know the area of improvements. \nOpen Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable\n3. Please share your feedback, Additional comments or suggestions\n \nThe total responses we got for the survey was 128.\n\nOpen ended questions responses made 6 themes prominent \n 1. Speed - Platform Speed, Speed for Processing large orders. (Known Issue)\n 2. Redundancy and Confusion due to poor naming conventions\n 3. Broken functionalities / Workarounds (Known Issue)\n 4. Searching and filtering \n 5. Automation of Manual tasks\n 6. Issues related to File exports \n\n\nTop Frustration Points\n1. Website Performance and Stability \n2. Filters and search not holding \n3. Makegood Processing and Synchronization \n4. Order Revisions History\n\n\n",
     },
     role: "Lead Product Designer",
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
@@ -154,7 +154,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
-      { label: "No business lost till the date since release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
+      { label: "No business lost till the date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
       { label: "Faster Loading Time Than Erlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
     ],
