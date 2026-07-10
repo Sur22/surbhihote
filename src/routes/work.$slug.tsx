@@ -559,7 +559,7 @@ If AE's want to build a custom audience to for the clients would require to send
         )}
 
         {(c.slug === "fjord2") && (
-          <>
+          <Fragment>
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
