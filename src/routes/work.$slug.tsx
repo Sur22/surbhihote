@@ -1489,7 +1489,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img src={img.src} alt={img.label} className="relative w-[85%] mx-auto h-auto" loading="lazy" />
+                      <img src={img.src} alt={img.label} className="relative w-[110%] mx-auto h-auto" loading="lazy" />
                     </div>
                   ) : (
                     <div className="overflow-hidden rounded-sm border border-border bg-secondary">
@@ -1499,8 +1499,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            {c.slug !== "fjord2" && <CarouselPrevious className="left-4" />}
+            {c.slug !== "fjord2" && <CarouselNext className="right-4" />}
           </Carousel>
         )}
 
