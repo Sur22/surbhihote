@@ -527,14 +527,14 @@ If AE's want to build a custom audience to for the clients would require to send
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Attendees</h4>
+              <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
               <p
                 className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
                 dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopAttendees }}
               />
             </div>
             <div>
-              <h4 className="font-serif text-2xl mb-4 font-medium">Workshop Schedule</h4>
+              <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
               <p
                 className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
                 dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopSchedule }}
