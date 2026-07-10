@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal  Maintaining Electronic Rate cards\nop Frustration ",
+                        "Goal  Maintaining Electronic Rate cards\nFrustration ",
                       ],
                     },
                     {
