@@ -571,7 +571,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"All the affiliates working with the company has been using the 25 years old site which has\n\u00a01.\u00a0 Dated UI UX\u00a0\n\u00a02. Slow and clunky\u00a0\n\u00a03.\u00a0Broken functionalities\u00a0\n\u00a04. Some part not being used anymore\u00a0\n\u00a05. Cannot add new functionality because of old codebase.\u00a0\n\u00a06. To get updated data user has to keep on refreshing manually after every few minutes so they don’t miss any of the orders or the order revisions.\n"}
+                  {"My first step before starting any project is to understand, Why are we doing this project ?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons of why the affiliate website needs to be redesigned is as follows.\n\n"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">
                   <p>{c.goal}</p>
@@ -605,7 +605,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
               </div>
 
-              <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">User Groups</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
                   {[
                     {
