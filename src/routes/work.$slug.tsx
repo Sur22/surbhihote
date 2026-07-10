@@ -139,7 +139,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
-            This project was a major overhaul, a rethink of a 25 years old platform in a way to not overwhelm the habituated users. The results speak for themselves: faster and better platform, happier users, and a system built to evolve..
+            This project was a major overhaul — a rethink of a 25-year-old platform in a way that would not overwhelm long-time users. The results speak for themselves: a faster, better platform, happier users, and a system built to evolve.
           </p>
         </>
       )}
@@ -245,7 +245,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "Role", v: c.slug === "fjord2" ? "Lead Product Designer(Sole)" : c.role },
+            { k: "Role", v: c.slug === "fjord2" ? "Lead Product Designer (Sole)" : c.role },
             { k: "Timeframe", v: c.timeframe },
             { k: "Tools", v: c.tools },
             { k: "Tasks Performed", v: c.tasksPerformed },
@@ -279,7 +279,7 @@ function CaseStudyPage() {
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
                 {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable.`}
               </p>
-              <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introdcution</h3>
+              <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
                 {`Affiliates, the partner networks who buy and transact against that inventory\u00a0 run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 25 years old. Its codebase was frozen no fix could ship without a full rebuild ,so after all these years of workarounds had hardened into the way affiliates worked.\u00a0I led the end-to-end redesign as Lead Product Designer.It was to rebuild a business-critical tool that 500+ affiliates depend on daily ,without losing a dollar of revenue in the transition.`}
               </p>
@@ -445,7 +445,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             )}
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User interview Insights</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.research.userInterviewInsights.map((q, i) => (
                   q.quote && (
@@ -469,7 +469,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <div className="mt-16">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs.The survey inform the decision of developing this feature as a part of UX Strategy  The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
+              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs.The survey informed the decision to develop this feature as part of the UX Strategy. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
             </p>
             {c.survey && c.survey.trim() !== "" && (
               <div
@@ -575,14 +575,14 @@ If AE's want to build a custom audience to for the clients would require to send
       <section id={c.slug === "fjord2" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product + Design Stategy"}</h3>
+          <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product + Design Strategy"}</h3>
         )}
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
             {c.slug === "fjord2" 
               ? "This workshop was not a typical design thinking workshop,It was customized based on the project and the available information to make most out of one and a half day of time we had .\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
-              : "This workshop was not a typical design thinking workshop.It was customized based on the project and the available information to make most out of one and a half day of time we had .I made sure to schedule the survey beforehand so we have the survey data before we conduct the workshop also made sure we have all the supplies needed for workshop."
+              : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop."
             }
           </p>
         )}
@@ -627,15 +627,15 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                The workshop started with a walk through of Affiliate website and{"\u00a0"}the problems about the site.{"\u00a0"}Defining the personas and going through survey responses.
+                The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
               </p>
               <div className="overflow-hidden rounded-sm bg-secondary p-2 mb-[72px]">
                 <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
               </div>
               <div>
-                <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign ?</h2>
+                <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
-                  {"My first step before starting any project is to understand, Why are we doing this project ?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons of why the affiliate website needs to be redesigned is as follows.\n"}
+                  {"My first step before starting any project is to understand: why are we doing this project?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons the affiliate website needs to be redesigned are as follows.\n"}
                 </p>
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-0">
                   <p>{c.goal}</p>
@@ -663,7 +663,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       <strong>A codebase that couldn't take new functionality</strong>
                       {" → a foundation built to extend, so the platform can grow instead of freeze again.\n"}
                       <strong>Manual refreshing to catch order updates</strong>
-                      {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live turning a constant manual chore into a system that tells users when something moves."}
+                      {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live, turning a constant manual chore into a system that tells users when something moves."}
                     </blockquote>
                   </div>
                 </div>
@@ -819,7 +819,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Prioritize</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                All the attendees were given an opportunity to vote by giving limited 5 votes to each as to get to the actual important themes. After Everyone voted I took all the sticky notes with votes and arranged them in the descending order.{"\u00a0\u00a0"}
+                All the attendees were given an opportunity to vote — limited to 5 votes each — to get to the actually important themes. After everyone voted, I took all the sticky notes with votes and arranged them in descending order.{"\u00a0\u00a0"}
               </p>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
@@ -830,7 +830,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                The next step was to use Prioritization Matrix to understand the level of efforts and the impact of that particular card so we have clarity about which things needs to be worked on for this porject.{"\u00a0\u00a0"}
+                The next step was to use the Prioritization Matrix to understand the level of effort and the impact of each card, so we had clarity about which things needed to be worked on for this project.{"\u00a0\u00a0"}
               </p>
             </div>
 
@@ -838,7 +838,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <h3 className="font-serif text-3xl mb-6 font-medium">Define Success Matrix{"\u00a0"}</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 {c.slug === "fjord2"
-                  ? "The final step was to define KPI's and how we will measure it. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
+                  ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
                   : "The final step was to define KPI's and how we will measure it. We came up with 5 KPI's which covers all the aspects of the project.\u00a0"}
               </p>
               <div className="flex justify-center">
@@ -892,7 +892,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                We wrapped up the 1 and a half day workshop with a clear next steps and ready to initiate the design phase.
+                We wrapped up the one and a half day workshop with clear next steps and were ready to initiate the design phase.
               </p>
             </div>
           </div>
@@ -912,9 +912,9 @@ If AE's want to build a custom audience to for the clients would require to send
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
-            <h3 className="font-serif text-3xl mb-6 font-medium">Approch</h3>
+            <h3 className="font-serif text-3xl mb-6 font-medium">Approach</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-              Following are the three different user flows to manage their notifications form.
+              Following are the three different user flows for managing notifications.
             </p>
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
@@ -937,10 +937,10 @@ If AE's want to build a custom audience to for the clients would require to send
           {(c.slug === "fjord2") 
             ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers which were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild. With the limited amount of information I had from the survey data.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "To validate the design if they are meeting the needs of the user. Solving solution tot their pain points and if design is usable i made mid feudality wireframes."
+            ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
             ? "This tool design demanded custom components\u00a0"
-            : "I procured the diffrent files which Fashion Designer/PDM used to send to the clients and the factory"
+            : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
           }
         </p>
         {(c.slug === "fjord") && (
@@ -1021,7 +1021,7 @@ If AE's want to build a custom audience to for the clients would require to send
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Solution" : "Brainstorming Session With Product Team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows to manage their notifications form." : (c.slug === "fjord2") ? "I presented wireframes with Stakeholders ,Engineering and the PM. We discussed about the assumptions that stakeholders had.I had multiple question about the workflow of the users, what is crucial for them to perform their day to day jobs on the website.The stakeholders did not had answers to most of my questions so, I pushed for having a session with all the main affiliates to understand their workflow which will provide insights and avoid any assumption based decision which might affect their workflow negatively or create any obstacles for them.\u00a0" : "I presented my sketches to the product team with the help of whiteboard the as the possible solution for the feature we are building .After the feedback and the discussion about the design requirements form engineering standpoint and the concept design was good enough to kickstart the mid fidelity wireframe and tale some user feedback."}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows for managing notifications." : (c.slug === "fjord2") ? "I presented wireframes with Stakeholders ,Engineering and the PM. We discussed about the assumptions that stakeholders had.I had multiple question about the workflow of the users, what is crucial for them to perform their day to day jobs on the website.The stakeholders did not had answers to most of my questions so, I pushed for having a session with all the main affiliates to understand their workflow which will provide insights and avoid any assumption based decision which might affect their workflow negatively or create any obstacles for them.\u00a0" : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."}</p>
         {(c.slug === "fjord2") ? (
           <button
             type="button"
@@ -1073,7 +1073,7 @@ If AE's want to build a custom audience to for the clients would require to send
         {c.slug === "solace" && (
           <>
             <h3 className="font-serif text-3xl mt-[100px] mb-6 font-medium">Low Fidelity Wireframes</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles. In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.</p>
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles. In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, and frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.</p>
           </>
         )}
       </section>
@@ -1084,7 +1084,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks.
+              To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks.
             </p>
             <Carousel opts={{ loop: true }} className="relative">
               <CarouselContent>
@@ -1118,11 +1118,11 @@ If AE's want to build a custom audience to for the clients would require to send
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-wrap">
-                I was able to get stakeholders to arrange meetings with 5 different affiliate{"\u00A0"}each have 5-10 people form their organization . We collectively came up with the questions we wanted to ask affiliates{"\u00A0"}
+                I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
-                to see the list of question for focus group.{"\u00A0"}
+                to see the list of questions for the focus group.{"\u00A0"}
 
-                {"\n\n"}Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed that they do not need the symbols of D,V,P,C but in session after session, they were very important to identify is someone is working on the order or no. the session also revealed a very important issue that affiliates have lost business because of the lost orders or as there is no clear way to identify if someone is working on an order or not. Another major problem discovered during session was the order revisions from the Ampersand side as the ampersand staff send the revisions after revision before the affiliates open it. It causes so much of problem for affiliates to understand what changed which needed to be restricted for Ampersand staff. Refer the Survey results section you will find the we asked a question to rate their current experience{"\n\n"}If you refer the Survey results section you will find the we asked a question to rate their current experience of affiliate site.The survey results surprised us as most of them are satisfied and some of them have answered as very satisfied.During the session with one of the affiliates they said "We like it as it is, we don't want it to change" as this site is very old the users are so used it ,even with the workarounds. The change is very hard for them after leaning tp operated with all the workarounds into habits of the users.For me the take away for here was to keep the learning curve for the them as flat as possible.We decided the to do major changes which will make users hard to adopt the new platform.
+                {"\n\n"}Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed they did not need the D, V, P, and C symbols, but in session after session, these were very important for identifying whether someone was working on an order. The sessions also revealed a very important issue: affiliates had lost business because of lost orders, or because there was no clear way to identify if someone was working on an order. Another major problem discovered during the sessions was the order revisions from the Ampersand side — Ampersand staff would send revision after revision before affiliates could open them. This caused a lot of problems for affiliates in understanding what had changed, and it needed to be restricted for Ampersand staff.{"\n\n"}If you refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, "We like it as it is, we don't want it to change." Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits. For me, the takeaway here was to keep the learning curve for them as flat as possible. We decided not to make major changes that would make it hard for users to adopt the new platform.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
@@ -1154,7 +1154,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     </TableRow>
                     <TableRow>
                       <TableCell>Compare Order Version</TableCell>
-                      <TableCell>Platform Notificatios</TableCell>
+                      <TableCell>Platform Notifications</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell>Internal & External Rate Cards</TableCell>
@@ -1257,7 +1257,7 @@ If AE's want to build a custom audience to for the clients would require to send
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[100px] pb-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "User flow"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in details. Below is the flow to show from various places you can start and access the design studio and edit the Tech Pack." : (c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of techpack tool to generate techpack and export it to a PDF and share it. I was able to think through the necessary steps and examine the user experience in details. Below is the flow for 2 tasks."}
+          {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in detail. Below is the flow showing the various places from which you can start and access the design studio and edit the Tech Pack." : (c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks."}
         </p>
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
@@ -1295,7 +1295,7 @@ If AE's want to build a custom audience to for the clients would require to send
       {c.slug === "solace" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
           <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Review with Users, Product &amp; Engineering Team</h2>
-          <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">Reviewing the initial low feudality clickable wireframes I presented them to the users to get their feedback on functionalities and the usability aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added. I made the second Iteration and again showed it to the users.&nbsp;{"\n"}After the second iteration I reviewed these with VP of Product to confirm that its meeting all the requirements and communicating the things users would like to have and what they need based on my observation during the user interviews. which I have added which are not mention In Product requirement document and update it for engineering team to keep everyone in the loop.&nbsp;To confirm technical feasibility, software architecture and to know the development efforts and time required form CTO.{"\n"}I received feedback and got some inputs to improve from engineering perspective. Also, reviewed it with developers and confirmed about some new UI components I will be needing for this feature and will they be able to build it and the efforts and time required to build them.&nbsp;&nbsp;After taking feedback and considering inputs from users, Product and Engineering team I start putting together high feudality wireframes and make it better and the third iteration of the design.&nbsp;</p>
+          <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">Reviewing the initial low-fidelity clickable wireframes, I presented them to the users to get their feedback on functionalities and the usability aspect of the design. After observing how they interacted with the wireframe and getting feedback on things that could be added, I made the second iteration and again showed it to the users.&nbsp;{"\n"}After the second iteration, I reviewed these with the VP of Product to confirm that they met all the requirements and communicated the things users would like to have and what they need based on my observations during the user interviews — including items I had added which were not mentioned in the product requirements document — and updated it for the engineering team to keep everyone in the loop.&nbsp;To confirm technical feasibility and software architecture, and to understand the development effort and time required, I reviewed it with the CTO.{"\n"}I received feedback and inputs to improve from an engineering perspective. I also reviewed it with the developers and confirmed the new UI components I would need for this feature, whether they would be able to build them, and the effort and time required to build them.&nbsp;&nbsp;After taking feedback and considering inputs from users, Product, and the Engineering team, I started putting together high-fidelity wireframes to improve the design in a third iteration.&nbsp;</p>
         </section>
       )}
 
@@ -1325,16 +1325,16 @@ If AE's want to build a custom audience to for the clients would require to send
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after 3 months of live use."</span>
+              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after 3 months of live use.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>The feedback we got were positive and I&nbsp; watched some sessions using Microsoft Clarity to check if it is being used as we expected it to be used and results seemed satisfactory.</span>
+              <span>The feedback we got was positive, and I&nbsp;watched some sessions using Microsoft Clarity to check if it was being used as we expected. The results seemed satisfactory.</span>
             </li>
           </ul>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
-            Before the release we made sure to have the help resources ready&nbsp; such as short videos showing how to perform all the tasks and a list of possible FAQ's and also, a place where users can send the feedback and also can report any bugs or errors they encounter.&nbsp;&nbsp;
+            Before the release, we made sure to have the help resources ready — such as short videos showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
           </p>
         </section>
       )}
@@ -1351,8 +1351,8 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
               <p className="text-lg leading-relaxed text-foreground/85 mb-16">
                 {c.slug === "fjord" 
-                  ? "For testing we decided to release it on the beta environment as the functionality was drag and drop. I connected with users asking them to sharee the screens and observed how they are using the tool and it was working for the"
-                  : <>For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">5 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jot down their mistakes, slips, and confusions they expressed in the process. This transcript is a perfect raw material for summarizing the patterns of user's interaction with the prototype.</>}
+                  ? "For testing, we decided to release it in the beta environment as the functionality was drag and drop. I connected with users, asking them to share their screens, and observed how they were using the tool. It was working for them."
+                  : <>For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">5 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jotted down their mistakes, slips, and any confusion they expressed in the process. These transcripts are perfect raw material for summarizing the patterns of users' interaction with the prototype.</>}
               </p>
             </>
           )}
@@ -1361,7 +1361,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "Usability test I recruited 4 participants to test the prototype. the objective of the test was to identify How easily users are able to subscribe and unsubscribe from particular, product ,company, stage or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
+              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "For usability testing, I recruited 4 participants to test the prototype. The objective of the test was to identify how easily users are able to subscribe and unsubscribe from a particular product, company, stage, or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -1373,16 +1373,16 @@ If AE's want to build a custom audience to for the clients would require to send
             </li>
             {c.slug === "fjord" && (
               <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2 whitespace-pre-line">
-                {"\u00a01.\u00a0 Search an aduiance segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment into either Schedule Creation or Container Creation process."}
+                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either the Schedule Creation or Container Creation process."}
               </p>
             )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0the objective of the test was to identify How easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\u00a0 2 out of the 5 participants felt the need of adding the label are detailed sketch page. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
+              <span>{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings :\u00a0 2 out of the 5 participants felt the need of adding the label are detailed sketch page. 3 out of the 5 participants wanted to save button if they wanted to leave it halfway and need to navigate to the part of the application. 3 out of the 5 participants were confused with the details drawer not opening at Bill of Material page.\u00a0 All participants felt that the design is serving the purpose and addressing the pain points they had."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Based on the test result data not all users did not had the knowlege about AND , OR logic so I added a help section for them to understand how it works so they can create segments with clear understanading and more precicely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
+              <span>{c.slug === "fjord" ? "Based on the test result data, not all users had knowledge of AND/OR logic, so I added a help section to help them understand how it works, so they can create segments with a clear understanding and more precisely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
           </ul>
 
@@ -1547,10 +1547,10 @@ If AE's want to build a custom audience to for the clients would require to send
         </h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
-            ? <>This project was more than a redesign. We addressed major pain points of the users like speed, stability, broken functionalities &amp;&nbsp; workflows, redundancy, manual refresh etc. The highlight is avoiding any loss of business which is till date is $0 since it is launched and the jump in the usability.Second phase of the project is in development which mainly consists of new features&nbsp; which is going to be a major shift in how affiliates communicate and smoother and better experience.&nbsp;</>
+            ? <>This project was more than a redesign. We addressed major pain points for users — speed, stability, broken functionalities &amp;&nbsp;workflows, redundancy, manual refresh, etc. The highlight is avoiding any loss of business, which to date remains $0 since launch, and the jump in usability. The second phase of the project is in development and mainly consists of new features that will be a major shift in how affiliates communicate — a smoother and better experience.&nbsp;</>
 
             : c.slug === "fjord"
-            ? "We successfully deployed the tool and it reduced the significant amount of time for creating a custom audience as they no longer has to wait for data team to make it for them for those who did not had access to the paid tool.We save a good amount to the company and also was able provide few more features than existing tool by making it more intuitive . I learnt to make sure to have all the possible resources to be available for the users for learning and for smoother adoption."
+            ? "We successfully deployed the tool, and it significantly reduced the time for creating a custom audience, as users no longer had to wait for the Data team to make it for them — including those who did not have access to the paid tool. We saved a good amount for the company and were also able to provide a few more features than the existing tool by making it more intuitive. I learned to make sure all possible resources are available for users, for learning and smoother adoption."
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "By design I made sure users can totally control the the notifications which important to their job for different levels, the Company Level, Product level, Product Lifecycle stage Level.We were successful in eliminating most of the spam notifications which led to a great reduction in missing important notifications which resulted in missed deadlines for the product delivery to the clients which was a huge plus in terms of customer experience and helped in client retention for the company.\u00a0"
             : "This was a big project and turned out to be a good selling point for the company. Apart from that\u00a0 it was great workflow improvement which eliminated accounting errors which happen due to manual workflow and due to the libraries built\u00a0 it speeded up the workflow and by reusing and repurposing . Because of the editor tool users don't had to go outside the platform to do all the editing for the manufacturing phase.Overall the project was a great success."}
@@ -1587,7 +1587,7 @@ If AE's want to build a custom audience to for the clients would require to send
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
           <h2 className="font-serif text-3xl md:text-4xl font-normal">Interested in more?</h2>
           <p className="text-lg leading-relaxed text-foreground/85">
-            <span className="text-accent">Interested in more?</span> Contact me for the case study's with additional insights and artifacts.
+            <span className="text-accent">Interested in more?</span> Contact me for the case studies with additional insights and artifacts.
           </p>
         </div>
       </section>
