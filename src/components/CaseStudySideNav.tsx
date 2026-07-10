@@ -12,6 +12,32 @@ const baseSections = [
 
 const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["fjord2"]);
+const slugsWithReflection = new Set(["fjord2"]);
+const affiliateSlugs = new Set(["fjord", "fjord2"]);
+
+function getSections(slug?: string) {
+  let sections = slug && slugsWithoutStrategy.has(slug)
+    ? baseSections.filter((s) => s.id !== "strategy")
+    : [...baseSections];
+
+  if (slug && slugsWithWorkshop.has(slug)) {
+    const researchIdx = sections.findIndex((s) => s.id === "research");
+    if (researchIdx !== -1) {
+      sections.splice(researchIdx + 1, 0, { id: "workshop", label: "Workshop" });
+    }
+  }
+
+  // Affiliate case study: rename "Impact" -> "Reflection" and point "Overview" to the impact section
+  if (slug && affiliateSlugs.has(slug)) {
+    sections = sections.map((s) => {
+      if (s.id === "impact") return { ...s, label: "Reflection" };
+      if (s.id === "overview") return { ...s, anchor: "impact" };
+      return s;
+    });
+  }
+
+  return sections;
+}
 
 export function CaseStudySideNav({ slug }: { slug?: string }) {
   let sections = slug && slugsWithoutStrategy.has(slug)
