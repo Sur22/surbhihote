@@ -1365,13 +1365,13 @@ If AE's want to build a custom audience to for the clients would require to send
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>
                 {c.slug === "fjord" 
-                  ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks.\n1.\u00a0 Search an aduience segment.\n2. Drag and Drop it to the build area.\u00a0\n3. Create a group of segments.\u00a0\u00a0\n4. Switch between OR & AND, Include and exclude.\u00a0\u00a0\n5. Name and save a segment.\u00a0\u00a0\n6. Use the created segment into either Schedule Creation or Container Creation process."
+                  ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks."
                   : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             {c.slug === "fjord" && (
-              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2">
-                Placeholder paragraph for usability section findings and observations.
+              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2 whitespace-pre-line">
+                {"\u00a01.\u00a0 Search an aduiance segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment into either Schedule Creation or Container Creation process."}
               </p>
             )}
             <li className="flex gap-4">
