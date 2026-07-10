@@ -663,28 +663,27 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
                   {[
                     {
-                      name: "Political Sales Manager\u00a0 \u00a0 /\u00a0Sales\u00a0Planner\n",
+                      name: "Political Sales Manager / Sales Planner\n",
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
-
+                        "Goal\nIdentify new business   \n\n\nTop Frustration \n\nTasks\n1.Track new orders\n2.Track revenue\n3.View order for oversight\n4.Quickly identify unaccepted orders\n\n",
                       ],
                     },
                     {
-                      name: "Political Campaign\u00a0Manager\n/ Support Specialist\u200b",
+                      name: "Political Campaign Manager\n/ Support Specialist\u200b",
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "Tasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Goal\n\n\n\nTasks\x03\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
-                      name: "Political & Markets Yeild Team\u00a0 (ERC)",
+                      name: "Political & Markets Yeild Team  (ERC)",
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Tasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n\u00a0 \u00a0upload template match\u00a0\n\n\u00a0",
+                        "Goal\n\n\nTop Frustration \n\nTasks\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the\n   upload template match \n\n ",
                       ],
                     },
                     {
@@ -692,7 +691,9 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Tasks\n1. Replicate all capabilities of\x03an\n\u00a0 \u00a0 affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
+                        "Goal \nFrustration \nTasks",
+                        "Goal \n\nFrustration \n \nTasks",
+                        "Goal\n\n \nTasks\n1. Replicate all capabilities of\x03an\n    affiliate user\u200b\n2. Troubleshoot for affiliate user\u200b\n3. Identify discrepancies between\n4. Platform and affiliate site orders\u200b\n5. Test deployment of affiliate site changes\n6. Validate the affiliate site is\x03running successfully\u200b",
                       ],
                     },
                     {
@@ -700,6 +701,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
+                        "Goal \n\nFrustration ",
                         "Tasks\n1. Gather intel across both Linear and Digital orders\u200b\n2. New & historical linear & digital orders\u200b\n3. Total investment/total impressions\u200b\n4. The AMP AE on orders/markets\u200b\n5. Which AMP offcie order is from\u200b",
                       ],
                     },
