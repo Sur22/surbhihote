@@ -675,7 +675,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "\n",
+                        "Goal:\u00a0 Identify new business\u00a0\nFrustration:\u00a0Back to back order revisions, hard to track revision history \u0026 speed\u00a0\u00a0\nTasks:\n1. Track new orders\n2. Track revenue\n3. View order for oversight\n4. Quick identification of unaccepted orders",
                       ],
                     },
                     {
@@ -691,7 +691,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration ",
+                        "Goal:\u00a0 \u00a0Maintaining Electronic Rate cards\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\nTasks\n\n1. Upload ,View,Download rates\n2.Keep rate cards up-to-date\n3.Report on gaps in rate cards\n4.Ensure downloaded exports and the upload template match\u00a0",
                       ],
                     },
                     {
