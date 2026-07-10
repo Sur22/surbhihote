@@ -1528,7 +1528,7 @@ If AE's want to build a custom audience to for the clients would require to send
       </section>
 
 
-      {c.slug !== "fjord" && c.slug !== "fjord2" && (
+      {c.slug !== "fjord2" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
@@ -1561,8 +1561,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       )}
 
-      {/* Outcomes for non-affiliate case studies */}
-      {c.slug !== "fjord" && c.slug !== "fjord2" && <OutcomeMetrics c={c} />}
+      {/* Outcomes for case study 01 */}
+      {c.slug === "fjord" && <OutcomeMetrics c={c} />}
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
