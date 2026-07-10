@@ -609,7 +609,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
 
               <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
                   {[
                     {
                       name: "Political Sales Manager\u00a0 \u00a0 /\u00a0Sales\u00a0Planner\n",
