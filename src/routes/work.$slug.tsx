@@ -905,7 +905,7 @@ If AE's want to build a custom audience to for the clients would require to send
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "fjord2") 
-            ? "I started by creating a sitemap to understand exactly how many screens needs to be redesigned and also to make sure I do not miss any of the screens form the websited.\u00a0"
+            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers which were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild.\nWith the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate the design if they are meeting the needs of the user. Solving solution tot their pain points and if design is usable i made mid feudality wireframes."
             : (c.slug === "fjord")
@@ -928,7 +928,7 @@ If AE's want to build a custom audience to for the clients would require to send
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
           {(c.slug === "fjord2")
-            ? "I kicked off with the concept of dashboard which was not present as the user logging in they just landed on to a page with multiple options to navigate to.With the limited amount of information I had from the survey data. I talked to stakeholders and suggested to arrange sessions with the affiliates to understand their workflow and which things are important to them on the website and to see how do they navigate through the site."
+            ? "\n"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "Reviewing designs with developers and\u00a0 CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs."
             : (c.slug === "fjord")
