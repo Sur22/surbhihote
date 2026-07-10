@@ -687,7 +687,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       ],
                     },
                     {
-                      name: "Political & Markets Yeild Team (ERC)",
+                      name: "Political & Markets Yield Team (ERC)",
                       usage: 4,
                       dependency: 4,
                       goals: [
