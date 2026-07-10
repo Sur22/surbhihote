@@ -701,8 +701,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       dependency: 3,
                       goals: [
                         "Goal: Validate the affiliate site is running successfully\nFrustration: Manual account setup & updating\nTasks:\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
-
                       ],
+
                     },
                     {
                       name: "Markets Campaign Manager",
