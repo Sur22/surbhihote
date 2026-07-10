@@ -733,7 +733,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             { label: "Platform Dependency", value: persona.dependency },
                           ].map((bar) => (
                             <div key={bar.label}>
-                              <div className="text-sm font-medium mb-2">{bar.label}</div>
+                              <div className="text-sm font-bold mb-2">{bar.label}</div>
                               <div className="w-[70%]">
                                 <div className="grid grid-cols-4 gap-px">
                                   {Array.from({ length: 4 }).map((_, i) => (
@@ -760,9 +760,20 @@ If AE's want to build a custom audience to for the clients would require to send
                             return (
                               <li key={idx} className="whitespace-pre-line">
                                 {goal.split('\n').map((line, lIdx) => {
-                                  const isHeader = line.startsWith('Goal') || line.startsWith('Top Frustration') || line.startsWith('Frustration') || line.startsWith('Tasks');
+                                  const labelMatch = line.match(/^(Goal:|Frustration:|Tasks:|Platform Usage|Platform Dependency)\s*/);
+                                  if (labelMatch) {
+                                    const label = labelMatch[1];
+                                    const rest = line.slice(labelMatch[0].length);
+                                    return (
+                                      <span key={lIdx} className="block mt-1">
+                                        <span className="font-bold">{label}</span>
+                                        {rest}
+                                        {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
+                                      </span>
+                                    );
+                                  }
                                   return (
-                                    <span key={lIdx} className={isHeader ? "font-bold block mt-1" : ""}>
+                                    <span key={lIdx} className="block mt-1">
                                       {line}
                                       {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
                                     </span>
