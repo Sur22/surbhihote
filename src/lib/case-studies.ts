@@ -155,7 +155,7 @@ const _caseStudies: CaseStudy[] = [
     outcome: [
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
       { label: "No business lost till the date since release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
-      { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 7" },
+      { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
       { label: "Faster Loading Time Than Erlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
     ],
     sections: [
