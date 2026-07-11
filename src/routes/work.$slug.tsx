@@ -944,14 +944,14 @@ If AE's want to build a custom audience to for the clients would require to send
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
-            ? "This tool design demanded custom components\u00a0"
+            ? "This tool design demanded custom a few component and some were reused for this project . \u00a0 \u00a0"
             : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
           }
         </p>
         {(c.slug === "fjord") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-            <li>Audience Segment Selector</li>
-            <li>Workspace with segment pills- to create a custom audience using drag and drop</li>
+            <li>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</li>
+            <li>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</li>
           </ul>
         )}
         {(c.slug === "solace") && (
@@ -1123,16 +1123,16 @@ If AE's want to build a custom audience to for the clients would require to send
         <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design Process</h2>
           <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-            This tool design demanded some custom components to be built specifically for this project\u00a0\u00a0
+            This tool design demanded custom a few component and some were reused for this project .{"\u00a0"}{"\u00a0"}
           </p>
           <ul className="space-y-4 text-lg leading-relaxed text-foreground/85 mb-12">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Segment Pills- to create a custom audience\u00a0 (New component)</span>
+              <span>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Audience Segment Selector (Reused\u00a0 component)</span>
+              <span>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</span>
             </li>
           </ul>
         </section>
