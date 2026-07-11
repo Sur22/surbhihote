@@ -1375,7 +1375,7 @@ If AE's want to build a custom audience to for the clients would require to send
             </li>
             {c.slug === "fjord" && (
               <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2 whitespace-pre-line">
-                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either the Schedule Creation or Container Creation process."}
+                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either the Schedule Creation or Container Creation process.\n\n"}
               </p>
             )}
             <li className="flex gap-4">
