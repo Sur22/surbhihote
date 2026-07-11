@@ -13,7 +13,8 @@ const baseSections = [
 const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["fjord2"]);
 const affiliateSlugs = new Set(["fjord", "fjord2"]);
-const slugsWithTopImpact = new Set(["solace", "atlas", "fjord2"]);
+const slugsWithTopImpact = new Set(["fjord", "fjord2", "solace", "atlas", "atlas2"]);
+
 
 type Section = { id: string; label: string; anchor?: string };
 
@@ -43,6 +44,8 @@ function getSections(slug?: string): Section[] {
       return s;
     });
   }
+
+
 
   return sections;
 }
