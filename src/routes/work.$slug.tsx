@@ -327,9 +327,11 @@ function CaseStudyPage() {
                 {c.slug === "solace"
                   ? "The goal is to give users \u00a0flexibility and control on subscribing to the notifications which are useful and important for their job.\n1.\u00a0\u00a0\u00a0\u00a0 Provide different user types ability to pick and choose the notifications that they would like to receive\n2.\u00a0\u00a0\u00a0\u00a0 Serve users ability to choose the notifications that they would like to receive per module and per product\n3.\u00a0\u00a0\u00a0\u00a0 Allow users ability to switch on/off notifications at any point of time\n"
                   : c.slug === "fjord"
-                  ? <p className="whitespace-pre-line">{`When clients want to run their ads on TV or a streaming platform, they \x03have to define the target audience they want their ads to reach, including or excluding certain types of audience for their campaigns.\x03Ampersand AEs build the custom audience according to their needs, so \x03the number of audience can be calculated to meet the client's expectation in terms of reach and impressions, for the campaign to be successful \x03for the clients.
+                  ? <p className="whitespace-pre-line">
+                      {`When clients want to run their ads on TV or a streaming platform, they \x03have to define the target audience they want their ads to reach, including or excluding certain types of audience for their campaigns.\x03Ampersand AEs build the custom audience according to their needs, so \x03the number of audience can be calculated to meet the client's expectation in terms of reach and impressions, for the campaign to be successful \x03for the clients.
 Limited number of users having access to an expensive tool where they can create custom audience.
-If AE's want to build a custom audience to for the clients would require to send a request\x03to the data team and the turn around time was at least a week as the team is small. \x03AE's had to wait for getting their coustom audience for the campaign.`}</p>
+If AE's want to build a custom audience to for the clients would require to send a request\x03to the data team and the turn around time was at least a week as the team is small. \x03AE's had to wait for getting their coustom audience for the campaign.`}
+                    </p>
                   : <p className="whitespace-pre-line">{c.goal}</p>
                 }
               </div>
@@ -365,7 +367,17 @@ If AE's want to build a custom audience to for the clients would require to send
               {(c.slug === "fjord2") ? "Survey" : "User Interview"}
             </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {c.research.userInterview}
+              {c.slug === "fjord" ? (
+                <>
+                  I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.
+                  {"\n"}I studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.{"\u00a0"}
+                  {"\n"}1.{"\u00a0"} Not very intuitive.
+                  {"\n"}2. Copy the whole segment logic once it is built.
+                  {"\n"}3. Copy and modify an existing segment.
+                  {"\n"}4. Ability to see segments created by other users and copy them.
+                  {"\n\n"}
+                </>
+              ) : c.research.userInterview}
             </p>
             {(c.slug === "fjord2") && (
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -950,8 +962,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </p>
         {(c.slug === "fjord") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-            <li>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</li>
-            <li>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</li>
+            <li>Segment Pill - was the main component designe apart from few more like logic switches, Include/ Exclude switch , bracket all are shown in the left side image.{"\u00a0"}{"\u00a0"}</li>
+            <li>While the{"\u00a0"}Audience Segment Selector on the right side image is a reused component that adapted the requirement of the tool.{"\u00a0"}</li>
           </ul>
         )}
         {(c.slug === "solace") && (
@@ -1026,7 +1038,16 @@ If AE's want to build a custom audience to for the clients would require to send
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback\u00a0" : "Brainstorming Session With Product Team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">{(c.slug === "atlas" || c.slug === "atlas2") ? "Following are the three different user flows for managing notifications." : (c.slug === "fjord2") ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."}</p>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
+          {(c.slug === "atlas" || c.slug === "atlas2") 
+            ? "Following are the three different user flows for managing notifications." 
+            : (c.slug === "fjord2") 
+              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" 
+              : (c.slug === "fjord")
+                ? "The reference point of the design was the tool which we are trying to replace.I studied the tool to see how it works and understand which functionalities it should cover. As a first time user some parts were not very intuitive and the UI felt complicated specifically the part where of building a segment I wanted to solve for the problems I observed so, I took the drag and drop approach which was best suited for ths tool."
+                : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
+          }
+        </p>
         {(c.slug === "fjord2") ? (
           <button
             type="button"
@@ -1123,16 +1144,16 @@ If AE's want to build a custom audience to for the clients would require to send
         <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design Process</h2>
           <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-            This tool design demanded custom a few component and some were reused for this project .{"\u00a0"}{"\u00a0"}
+            {"\n"}This tool design demanded custom a few component and some were reused for this project .{"\u00a0"}{"\u00a0"}
           </p>
           <ul className="space-y-4 text-lg leading-relaxed text-foreground/85 mb-12">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</span>
+              <span>Segment Pill - was the main component designe apart from few more like logic switches, Include/ Exclude switch , bracket all are shown in the left side image.{"\u00a0"}{"\u00a0"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</span>
+              <span>While the{"\u00a0"}Audience Segment Selector on the right side image is a reused component that adapted the requirement of the tool.{"\u00a0"}</span>
             </li>
           </ul>
         </section>
