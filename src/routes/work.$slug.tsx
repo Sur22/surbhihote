@@ -1123,16 +1123,16 @@ If AE's want to build a custom audience to for the clients would require to send
         <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design Process</h2>
           <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-            This tool design demanded some custom components to be built specifically for this project\u00a0\u00a0
+            This tool design demanded custom a few component and some were reused for this project .{"\u00a0"}{"\u00a0"}
           </p>
           <ul className="space-y-4 text-lg leading-relaxed text-foreground/85 mb-12">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Segment Pills- to create a custom audience\u00a0 (New component)</span>
+              <span>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Audience Segment Selector (Reused\u00a0 component)</span>
+              <span>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</span>
             </li>
           </ul>
         </section>
