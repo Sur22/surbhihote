@@ -268,6 +268,9 @@ function CaseStudyPage() {
         <div className={c.slug === "fjord2" ? "" : "space-y-16"}>
           <div>
             <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "fjord2" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
+            {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
+              <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
+            )}
             {c.slug !== "fjord2" && (
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace" 
