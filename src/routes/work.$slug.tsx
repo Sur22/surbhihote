@@ -944,7 +944,7 @@ If AE's want to build a custom audience to for the clients would require to send
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
-            ? "This tool design demanded custom components\u00a0"
+            ? "This tool design demanded custom a few component and some were reused for this project . \u00a0 \u00a0"
             : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
           }
         </p>
