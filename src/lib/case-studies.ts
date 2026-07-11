@@ -237,22 +237,22 @@ const _caseStudies: CaseStudy[] = [
       "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the Data Team.\n2.\u00a0 Cut the waiting time for Account Executives & Account Directors\n\u00a0 \u00a0 \u00a0-The Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off the Data team shoulders.\n4. Cut down the cost of the external tool used to build custom audiences.\u00a0",
     research: {
       ...defaultMeta.research,
-      userInterviewInsights: [
+    userInterviewInsights: [
         {
           quote: '"It\'s difficult to put together all the details about the style in one place as different detail are in different files."',
-          author: "Bejan, Technical Designer",
+          author: "Technical Designer",
         },
         {
           quote: '"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"',
-          author: "Bobby, Fashion Designer",
+          author: "\u00a0Fashion Designer",
         },
         {
           quote: '"Every time there are changes we have to keep factories updated with that and provide them the updated project related files"',
-          author: "Rachna, Product Development Manager",
+          author: "\u00a0Product Development Manager",
         },
         {
           quote: '"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files"',
-          author: "Pinky, Product Development Manager",
+          author: "\u00a0Product Development Manager",
         },
       ],
     },
