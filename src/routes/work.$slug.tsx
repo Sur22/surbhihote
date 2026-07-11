@@ -1116,6 +1116,25 @@ If AE's want to build a custom audience to for the clients would require to send
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {c.slug === "fjord" && (
+        <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design Process</h2>
+          <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+            This tool design demanded some custom components to be built specifically for this project\u00a0\u00a0
+          </p>
+          <ul className="space-y-4 text-lg leading-relaxed text-foreground/85 mb-12">
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Segment Pills- to create a custom audience\u00a0 (New component)</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Audience Segment Selector (Reused\u00a0 component)</span>
+            </li>
+          </ul>
+        </section>
+      )}
+
       {(c.slug === "fjord2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
