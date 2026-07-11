@@ -51,7 +51,7 @@ const defaultMeta = {
   timeframe: "3 Months",
   tools: "Adobe XD, Miro, Zoom meetings",
   tasksPerformed:
-    "End-to-End Design, User Research, UI Design, User Flows, Wireframing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
+    "End-to-End Design, User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
     "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
   goal:
