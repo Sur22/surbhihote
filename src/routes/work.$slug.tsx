@@ -367,7 +367,17 @@ If AE's want to build a custom audience to for the clients would require to send
               {(c.slug === "fjord2") ? "Survey" : "User Interview"}
             </h3>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {c.research.userInterview}
+              {c.slug === "fjord" ? (
+                <>
+                  I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.
+                  {"\n"}I studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.{"\u00a0"}
+                  {"\n"}1.{"\u00a0"} Not very intuitive.
+                  {"\n"}2. Copy the whole segment logic once it is built.
+                  {"\n"}3. Copy and modify an existing segment.
+                  {"\n"}4. Ability to see segments created by other users and copy them.
+                  {"\n\n"}
+                </>
+              ) : c.research.userInterview}
             </p>
             {(c.slug === "fjord2") && (
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
