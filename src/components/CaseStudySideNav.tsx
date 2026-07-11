@@ -39,10 +39,10 @@ function getSections(slug?: string): Section[] {
   if (slug && slugsWithTopImpact.has(slug)) {
     sections = sections.map((s) => {
       if (s.id === "overview") return { ...s, anchor: "impact" };
-      if (s.id === "impact") return { ...s, anchor: "reflection" };
       return s;
     });
   }
+
 
   return sections;
 }
