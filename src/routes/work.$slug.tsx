@@ -139,7 +139,9 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
-            This project was a major overhaul — a rethink of a 25-year-old platform in a way that would not overwhelm long-time users. The results speak for themselves: a faster, better platform, happier users, and a system built to evolve.
+            {c.slug === "fjord" 
+              ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
+              : "This project was a major overhaul — a rethink of a 25-year-old platform in a way that would not overwhelm long-time users. The results speak for themselves: a faster, better platform, happier users, and a system built to evolve."}
           </p>
         </>
       )}
