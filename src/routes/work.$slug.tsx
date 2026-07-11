@@ -950,8 +950,8 @@ If AE's want to build a custom audience to for the clients would require to send
         </p>
         {(c.slug === "fjord") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
-            <li>Audience Segment Selector</li>
-            <li>Workspace with segment pills- to create a custom audience using drag and drop</li>
+            <li>{"\u00a0"}Segment Pill - was the main component designer apart from few more are shown in the left image{"\u00a0"}{"\u00a0"}</li>
+            <li>While the{"\u00a0"}Audience Segment Selector (right image) is a reused component that adapted the requirement of the tool.{"\u00a0"}</li>
           </ul>
         )}
         {(c.slug === "solace") && (
