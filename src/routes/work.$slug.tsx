@@ -11,6 +11,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 } from "@/components/ui/carousel";
 import {
   Table,
@@ -1579,6 +1580,7 @@ If AE's want to build a custom audience to for the clients would require to send
             </CarouselContent>
             {c.slug !== "atlas" && <CarouselPrevious className="left-4" />}
             {c.slug !== "atlas" && <CarouselNext className="right-4" />}
+            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="mt-6" />}
           </Carousel>
         )}
 
