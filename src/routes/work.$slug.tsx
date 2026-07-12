@@ -1170,9 +1170,11 @@ If AE's want to build a custom audience to for the clients would require to send
                 <li>The sessions also revealed a very important issue which is - Affiliates{"\u00A0"}had lost business because of lost orders, or because there was no clear way to identify if someone was working on an order.</li>
                 <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them — caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
               </ul>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-wrap">
-                If you refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, "We like it as it is, we don't want it to change." Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits. For me, the takeaway here was to keep the learning curve for them as flat as possible. We decided not to make major changes that would make it hard for users to adopt the new platform.
-              </p>
+              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto mb-8">
+                <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
+                  {"If you refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, \"We like it as it is, we don't want it to change.\" Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits. For me, the takeaway here was to keep the learning curve for them as flat as possible. We decided not to make major changes that would make it hard for users to adopt the new platform."}
+                </blockquote>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
