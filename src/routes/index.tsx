@@ -60,9 +60,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Surbhi Hote — Lead Product Designer" },
-      { name: "description", content: "Lead product designer crafting calm, considered B2B and SaaS products. Selected case studies in ad-tech, PLM, ERP, and enterprise software." },
+      { name: "description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
       { property: "og:title", content: "Surbhi Hote — Lead Product Designer" },
-      { property: "og:description", content: "Lead product designer crafting calm, considered B2B and SaaS products. Selected case studies in ad-tech, PLM, ERP, and enterprise software." },
+      { property: "og:description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
     ],
   }),
   component: IndexPage,
