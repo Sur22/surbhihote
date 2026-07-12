@@ -11,6 +11,7 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 } from "@/components/ui/carousel";
 import {
   Table,
