@@ -1150,28 +1150,10 @@ If AE's want to build a custom audience to for the clients would require to send
         </>
       )}
 
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace" && c.slug !== "fjord") && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {c.slug === "fjord" && (
-        <section id="design-process" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
-          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design Process</h2>
-          <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-            {"\n"}This tool design demanded custom a few component and some were reused for this project .{"\u00a0"}{"\u00a0"}
-          </p>
-          <ul className="space-y-4 text-lg leading-relaxed text-foreground/85 mb-12">
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Segment Pill - was the main component designe apart from few more like logic switches, Include/ Exclude switch , bracket all are shown in the left side image.{"\u00a0"}{"\u00a0"}</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>While the{"\u00a0"}Audience Segment Selector on the right side image is a reused component that adapted the requirement of the tool.{"\u00a0"}</span>
-            </li>
-          </ul>
-        </section>
-      )}
 
       {(c.slug === "fjord2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
