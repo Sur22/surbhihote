@@ -371,9 +371,17 @@ If AE's want to build a custom audience to for the clients would require to send
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
                 <>
-                  I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.
-                  {"\n"}I studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.{"\u00a0"}
-                  {"\n"}1.{"\u00a0"} Not very intuitive.
+                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool, what they like and don't like about it 
+                  {"\n\n"}
+                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I made sure to understand friction points to address while designing. 
+                  {"\n"}Observations for the new users were
+                  {"\n"}1. Users had difficulty in how grouping of the segments work
+                  {"\n"}2. There were 2 searches for the audience on left and right side which were confusing 
+                  {"\n"}3. The screen was very busy due to the way UI was designer 
+                  {"\n\n"} 
+                  {"\n"}I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
+                  {"\n"}which we needed to build, plus a few more things to enhance the functionality and make it easy for users. 
+                  {"\n"}1.  Not very intuitive for.
                   {"\n"}2. Copy the whole segment logic once it is built.
                   {"\n"}3. Copy and modify an existing segment.
                   {"\n"}4. Ability to see segments created by other users and copy them.
@@ -1046,7 +1054,7 @@ If AE's want to build a custom audience to for the clients would require to send
             : (c.slug === "fjord2") 
               ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" 
               : (c.slug === "fjord")
-                ? "The reference point of the design was the tool which we are trying to replace.I studied the tool to see how it works and understand which functionalities it should cover. As a first time user some parts were not very intuitive and the UI felt complicated specifically the part where of building a segment I wanted to solve for the problems I observed so, I took the drag and drop approach which was best suited for ths tool."
+                ? "The reference point of the design was the tool which we are trying to replace.Some parts felt complicated as a first time seeing the application specifically the part where of building a segment I wanted to simplify that part as the users who don't have access to the tool and the users using the tool both should be able to understand and adopt quickly, I took the drag and drop approach which was best suited for this tool."
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
           }
         </p>
