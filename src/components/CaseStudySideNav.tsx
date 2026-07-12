@@ -4,7 +4,6 @@ const baseSections = [
   { id: "overview", label: "Overview" },
   { id: "research", label: "Research" },
   { id: "strategy", label: "Strategy" },
-  { id: "design-process", label: "Design" },
   { id: "testing", label: "Testing" },
   { id: "final-designs", label: "Solution" },
   { id: "impact", label: "REFLECTION" },
