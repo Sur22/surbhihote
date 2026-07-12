@@ -1054,7 +1054,7 @@ If AE's want to build a custom audience to for the clients would require to send
             : (c.slug === "fjord2") 
               ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" 
               : (c.slug === "fjord")
-                ? "The reference point of the design was the tool which we are trying to replace.Some parts felt complicated as a first time seeing the application specifically the part where of building a segment I wanted to simplify that part as the users who don't have access to the tool and the users using the tool both should be able to understand and adopt quickly, I took the drag and drop approach which was best suited for this tool."
+                ? "The reference point of the design was the tool which we are trying to replace.Some parts felt complicated as a first time seeing the application specifically to the new users while research phase the part where of building a segment and grouping and having a clean an intuitive UI.I wanted to simplify that part for both the users who don't have access and with the access should be able to understand and adopt quickly, I took the drag and drop approach which was best suited for this tool."
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
           }
         </p>
@@ -1120,7 +1120,11 @@ If AE's want to build a custom audience to for the clients would require to send
           <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks.
+              There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — 
+              1.To generate a custom segment for client and use the created segment to two different flows on for building a schedule for their campaign and another one is to create a Container.
+              2.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it.
+
+              Below is the flow for 2 tasks.
             </p>
             <Carousel opts={{ loop: true }} className="relative">
               <CarouselContent>
