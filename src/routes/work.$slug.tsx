@@ -1158,12 +1158,20 @@ If AE's want to build a custom audience to for the clients would require to send
       {(c.slug === "fjord2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-wrap">
+              <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
                 I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
                 to see the list of questions for the focus group.{"\u00A0"}
 
-                {"\n\n"}Watching the work overturned assumptions we'd carried into the project. Stakeholders assumed they did not need the D, V, P, and C symbols, but in session after session, these were very important for identifying whether someone was working on an order. The sessions also revealed a very important issue: affiliates had lost business because of lost orders, or because there was no clear way to identify if someone was working on an order. Another major problem discovered during the sessions was the order revisions from the Ampersand side — Ampersand staff would send revision after revision before affiliates could open them. This caused a lot of problems for affiliates in understanding what had changed, and it needed to be restricted for Ampersand staff.{"\n\n"}If you refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, "We like it as it is, we don't want it to change." Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits. For me, the takeaway here was to keep the learning curve for them as flat as possible. We decided not to make major changes that would make it hard for users to adopt the new platform.
+                {"\n\n"}Watching the work overturned assumptions we'd carried into the project.
+              </p>
+              <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
+                <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
+                <li>Affiliates had lost business because of lost orders, or because there was no clear way to identify if someone was working on an order.</li>
+                <li>Order revisions from the Ampersand side — staff sending revision after revision before affiliates could open them — caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
+              </ul>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-wrap">
+                If you refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, "We like it as it is, we don't want it to change." Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits. For me, the takeaway here was to keep the learning curve for them as flat as possible. We decided not to make major changes that would make it hard for users to adopt the new platform.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
