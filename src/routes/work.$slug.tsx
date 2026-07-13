@@ -1534,76 +1534,78 @@ If AE's want to build a custom audience to for the clients would require to send
             <p className="mt-4 text-center text-sm text-muted-foreground">Click to watch a short video</p>
           </>
         ) : (
-          <Carousel
-            opts={{ loop: true }}
-            className={cn(
-              "relative group",
-              (c.slug === "fjord2" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat pt-28 pb-12"
-            )}
-            style={
-              c.slug === "fjord2"
-                ? { borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }
-                : c.slug === "solace"
-                  ? { borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }
-                  : undefined
-            }
-          >
-            {(c.slug === "fjord2" || c.slug === "solace") && (
-              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
-            )}
-            <CarouselContent className={(c.slug === "fjord2" || c.slug === "solace") ? "relative z-10" : undefined}>
-              {((c.slug === "atlas" || c.slug === "atlas2")
-                ? [
-                    { src: notificationsFinalScreens.url, label: "Final screens mockup" },
-                  ]
-                : (c.slug === "fjord2")
-                ? [
-                    { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
-                    { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
-                    { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
-                    { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
-                  ]
-                : [
-                    { src: finalToolScreens.url, label: "Tool screens" },
-                    { src: finalLibrary.url, label: "Techpack Library" },
-                    { src: finalSketchSel.url, label: "Sketch selection" },
-                    { src: finalDetailedSketch.url, label: "Detailed sketch" },
-                    { src: finalBom.url, label: "Bill of Materials" },
-                    { src: finalPdf.url, label: "Exported PDF" },
-                    { src: finalProto.url, label: "Prototype overview" },
-                  ]
-              ).map((img) => (
-                <CarouselItem key={img.label} className={(c.slug === "fjord2" || c.slug === "solace") ? "flex items-center justify-center" : undefined}>
-                  {(c.slug === "atlas" || c.slug === "atlas2") ? (
-                    <div
-                      className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
-                      style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
-                    >
-                      <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img
-                        src={img.src}
-                        alt={img.label}
-                        className="relative mx-auto h-auto shrink-0"
-                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
-                        loading="lazy"
-                      />
-                    </div>
-                  ) : (c.slug === "fjord2") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
-                  ) : (c.slug === "solace") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%" }} loading="lazy" />
-                  ) : (
-                    <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                      <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
-                    </div>
-                  )}
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+          <Carousel opts={{ loop: true }} className="relative group">
+            <div
+              className={cn(
+                "relative",
+                (c.slug === "fjord2" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat py-28"
+              )}
+              style={
+                c.slug === "fjord2"
+                  ? { borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }
+                  : c.slug === "solace"
+                    ? { borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }
+                    : undefined
+              }
+            >
+              {(c.slug === "fjord2" || c.slug === "solace") && (
+                <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
+              )}
+              <CarouselContent className={(c.slug === "fjord2" || c.slug === "solace") ? "relative z-10" : undefined}>
+                {((c.slug === "atlas" || c.slug === "atlas2")
+                  ? [
+                      { src: notificationsFinalScreens.url, label: "Final screens mockup" },
+                    ]
+                  : (c.slug === "fjord2")
+                  ? [
+                      { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
+                      { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
+                      { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
+                      { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
+                    ]
+                  : [
+                      { src: finalToolScreens.url, label: "Tool screens" },
+                      { src: finalLibrary.url, label: "Techpack Library" },
+                      { src: finalSketchSel.url, label: "Sketch selection" },
+                      { src: finalDetailedSketch.url, label: "Detailed sketch" },
+                      { src: finalBom.url, label: "Bill of Materials" },
+                      { src: finalPdf.url, label: "Exported PDF" },
+                      { src: finalProto.url, label: "Prototype overview" },
+                    ]
+                ).map((img) => (
+                  <CarouselItem key={img.label} className={(c.slug === "fjord2" || c.slug === "solace") ? "flex items-center justify-center" : undefined}>
+                    {(c.slug === "atlas" || c.slug === "atlas2") ? (
+                      <div
+                        className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+                        style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
+                      >
+                        <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
+                        <img
+                          src={img.src}
+                          alt={img.label}
+                          className="relative mx-auto h-auto shrink-0"
+                          style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (c.slug === "fjord2") ? (
+                      <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
+                    ) : (c.slug === "solace") ? (
+                      <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%" }} loading="lazy" />
+                    ) : (
+                      <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                        <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
+                      </div>
+                    )}
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </div>
             {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
             {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
-            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
+            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="mt-4" />}
           </Carousel>
+
         )}
 
 
