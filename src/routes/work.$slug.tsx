@@ -294,7 +294,7 @@ function CaseStudyPage() {
 -The portal was 25 years old; Its codebase was frozen , no fix could ship without a full rebuild
 - Over the years, workarounds had hardened into the way affiliates worked.
 - I led the end-to-end redesign as Lead Product Designer.
-- The goal was to rebuild a business-critical tool that 500+ affiliates depend on daily, without losing a dollar of revenue in the transition.`}
+- The goal was to rebuild a business-critical tool that 500+ affiliates depend on daily, without disruption of daily activities on the platform.`}
               </p>
             </div>
           )}
