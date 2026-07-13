@@ -290,7 +290,11 @@ function CaseStudyPage() {
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Affiliates — the partner networks who buy and transact against that inventory — run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield. That portal was 25 years old. Its codebase was frozen — no fix could ship without a full rebuild — so over the years, workarounds had hardened into the way affiliates worked.\u00a0I led the end-to-end redesign as Lead Product Designer. The goal was to rebuild a business-critical tool that 500+ affiliates depend on daily, without losing a dollar of revenue in the transition.`}
+                {`Affiliates — the partner networks who buy and transact against that inventory ,run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.
+-The portal was 25 years old; Its codebase was frozen , no fix could ship without a full rebuild
+- Over the years, workarounds had hardened into the way affiliates worked.
+- I led the end-to-end redesign as Lead Product Designer.
+- The goal was to rebuild a business-critical tool that 500+ affiliates depend on daily, without losing a dollar of revenue in the transition.`}
               </p>
             </div>
           )}
