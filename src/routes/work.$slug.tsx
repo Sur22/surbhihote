@@ -1173,7 +1173,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
               <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
                 <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
-                <li>The sessions also revealed a very important issue which is - Affiliates{"\u00A0"}had lost business because of lost orders, or because there was no clear way to identify if someone was working on an order.</li>
+                <li>The sessions also revealed a very important issue which is - Affiliates{"\u00A0"}had lost business because of lost orders around 850K in last few years because, there was no clear way to identify if someone was working on an order.</li>
                 <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them — caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
               </ul>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto my-[50px]">
