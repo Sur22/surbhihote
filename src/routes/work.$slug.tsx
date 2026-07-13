@@ -377,21 +377,21 @@ If AE's want to build a custom audience to for the clients would require to send
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
                 <>
-                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool, what they like and don't like about it 
+                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,{"\u00A0"}what they like and don't like about it
                   {"\n\n"}
-                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I made sure to understand friction points to address while designing. 
+                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I{"\u00A0"}made sure to understand friction points to address while designing.
                   {"\n"}Observations for the new users were
                   {"\n"}1. Users had difficulty in how grouping of the segments work
-                  {"\n"}2. There were 2 searches for the audience on left and right side which were confusing 
-                  {"\n"}3. The screen was very busy due to the way UI was designer 
-                  {"\n\n"} 
+                  {"\n"}2. There were 2 searches for the audience on left and right side which were confusing
+                  {"\n"}3. The screen was very busy due to the way UI was designer
+                  {"\n"}4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
+                  {"\n\n"}
                   {"\n"}I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
-                  {"\n"}which we needed to build, plus a few more things to enhance the functionality and make it easy for users. 
-                  {"\n"}1.  Not very intuitive for.
+                  {"\n"}which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
+                  {"\n"}1.{"\u00A0"} Not very intuitive for.
                   {"\n"}2. Copy the whole segment logic once it is built.
                   {"\n"}3. Copy and modify an existing segment.
                   {"\n"}4. Ability to see segments created by other users and copy them.
-                  {"\n\n"}
                 </>
               ) : c.research.userInterview}
             </p>
