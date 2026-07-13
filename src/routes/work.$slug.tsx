@@ -1173,7 +1173,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
               <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
                 <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
-                <li>The sessions also revealed a very important issue which is - Affiliates{"\u00A0"}had lost business because of lost orders around 850K in last few years because, there was no clear way to identify if someone was working on an order.</li>
+                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly $850K in business to orders that slipped through unnoticed{"\u00A0"} there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
                 <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them — caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
               </ul>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto my-[50px]">
@@ -1630,9 +1630,13 @@ If AE's want to build a custom audience to for the clients would require to send
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
             ? <>
-                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years&nbsp; speed, stability, broken functionality, redundancy, and the constant manual refreshing and rebuilt the platform on a foundation that can finally evolve.{"\n\n"}
-                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost in last few years but its probably so much more if I could get the data for last 25 years from all the affiliates. it&nbsp;against the ~$850K the old system had been quietly bleeding.{"\n\n"}
-                The biggest lesson wasn't about the interface, it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one. Phase two, now in development, picks those up including a major shift in how affiliates communicate on the platform.
+                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years — speed, stability, broken functionality, redundancy, and the constant manual refreshing — and rebuilt the platform on a foundation that can finally evolve.{"\n\n"}
+                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.{"\n\n"}
+                The biggest lesson wasn't about the interface — it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one. Phase two, now in development, picks those up — including a major shift in how affiliates communicate on the platform.
+                {"\n\n"}
+                <p className="mt-4">
+                  The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost in last few years{"\u00A0"}against the ~$850K the old system had been quietly bleeding which would be higher if data is gathered since the launch. Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.
+                </p>
               </>
 
             : c.slug === "fjord"
