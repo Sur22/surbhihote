@@ -154,6 +154,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Task Success Rate\u00a0\n\u00a0 \u00a0\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a092%" },
+      { label: "Manual refresh eliminated", value: "\u00a0 \u00a0 \u00a0 \u00a078%" },
       { label: "No business lost to date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
       { label: "Faster loading time than earlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
