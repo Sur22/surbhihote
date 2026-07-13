@@ -1568,7 +1568,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }}
                     >
                       <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "101.2%", maxWidth: "none" }} loading="lazy" />
+                      <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
                     </div>
                   ) : (
                     <div className="overflow-hidden rounded-sm border border-border bg-secondary">
