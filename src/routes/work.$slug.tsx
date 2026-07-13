@@ -1603,7 +1603,7 @@ If AE's want to build a custom audience to for the clients would require to send
             {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
             {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
             {(c.slug === "fjord2" || c.slug === "solace") && (
-              <CarouselDots className="absolute bottom-6 left-1/2 z-20 mt-0 -translate-x-1/2" />
+              <CarouselDots className="absolute bottom-8 left-1/2 z-30 mt-0 -translate-x-1/2 rounded-full bg-background/80 px-3 py-2 shadow-sm backdrop-blur-sm [&_button]:bg-foreground/50 [&_button:hover]:bg-foreground/70 [&_button.w-4]:bg-foreground" />
             )}
           </Carousel>
         )}
