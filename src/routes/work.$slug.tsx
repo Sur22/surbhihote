@@ -1533,7 +1533,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <p className="mt-4 text-center text-sm text-muted-foreground">Click to watch a short video</p>
           </>
         ) : (
-          <Carousel opts={{ loop: true }} className="relative">
+          <Carousel opts={{ loop: true }} className="relative group">
             <CarouselContent>
               {((c.slug === "atlas" || c.slug === "atlas2")
                 ? [
@@ -1587,9 +1587,9 @@ If AE's want to build a custom audience to for the clients would require to send
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {c.slug !== "atlas" && <CarouselPrevious className="left-4" />}
-            {c.slug !== "atlas" && <CarouselNext className="right-4" />}
-            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="mt-6" />}
+            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
+            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
+            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots />}
           </Carousel>
         )}
 
