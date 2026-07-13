@@ -115,7 +115,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "fjord2",
     index: "01",
     title: "Affiliate Website Redesign",
-    subtitle: "Legacy system modernization\u00a0",
+    subtitle: "Redesigning a legacy application\u00a0",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
