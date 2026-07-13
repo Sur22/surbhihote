@@ -168,7 +168,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                 ) : (
                   <>{o.value}</>
                 )}
-                {(o.label.includes("Usability Improved") || o.label.includes("Task Success Rate")) && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
+                {o.label.includes("Usability Improved") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
+                {(o.label.includes("Manual refresh eliminated") || o.label.includes("No business lost to date since the release")) && <TrendingDown className="w-8 h-8 md:w-10 md:h-10" />}
               </p>
             )}
             <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
