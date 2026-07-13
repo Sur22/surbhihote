@@ -1629,7 +1629,11 @@ If AE's want to build a custom audience to for the clients would require to send
         </h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
-            ? <>This project was more than a redesign. We addressed major pain points for users — speed, stability, broken functionalities &amp;&nbsp;workflows, redundancy, manual refresh, etc. The highlight is avoiding any loss of business, which to date remains $0 since launch, and the jump in usability. The second phase of the project is in development and mainly consists of new features that will be a major shift in how affiliates communicate — a smoother and better experience.&nbsp;</>
+            ? <>
+                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years&nbsp; speed, stability, broken functionality, redundancy, and the constant manual refreshing and rebuilt the platform on a foundation that can finally evolve.{"\n\n"}
+                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost in last few years but its probably so much more if I could get the data for last 25 years from all the affiliates. it&nbsp;against the ~$850K the old system had been quietly bleeding.{"\n\n"}
+                The biggest lesson wasn't about the interface, it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one. Phase two, now in development, picks those up including a major shift in how affiliates communicate on the platform.
+              </>
 
             : c.slug === "fjord"
             ? "We successfully deployed the tool, and it significantly reduced the time for creating a custom audience, as users no longer had to wait for the Data team to make it for them — including those who did not have access to the paid tool. We saved a good amount for the company and were also able to provide a few more features than the existing tool by making it more intuitive. I learned to make sure all possible resources are available for users, for learning and smoother adoption."
