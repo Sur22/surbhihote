@@ -1178,7 +1178,10 @@ If AE's want to build a custom audience to for the clients would require to send
               </ul>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto my-[50px]">
                 <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
-                  {"Refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, \"We like it as it is, we don't want it to change.\" Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits.\n\n\"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool — it was rejection of a better one. I designed for flat adoption over dramatic change.\"\n\n\n"}
+                  {"Refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us — most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, \"We like it as it is, we don't want it to change.\" Because the site is very old, the users are so used to it — even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits."}
+                  {"\n\n"}
+                  <strong>"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool — it was rejection of a better one. I designed for flat adoption over dramatic change."</strong>
+                  {"\n\n\n"}
                 </blockquote>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
