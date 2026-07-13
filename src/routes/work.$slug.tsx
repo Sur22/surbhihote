@@ -144,6 +144,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
               : c.slug === "solace"
               ? "This project was an upgrade from manual paperwork to a streamlined process eliminating the manual errors, delays in production deadlines and product delivery."
+              : c.slug === "fjord2"
+              ? "Rebuilding a 25-year-old, business-critical platform for 500+ affiliates; where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
               : "This project was a major overhaul — a rethink of a 25-year-old platform in a way that would not overwhelm long-time users. The results speak for themselves: a faster, better platform, happier users, and a system built to evolve."}
           </p>
         </>
