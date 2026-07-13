@@ -683,7 +683,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <div className="relative z-10">
-                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems <ArrowRight className="w-6 h-6 md:w-8 md:h-8 stroke-1" /> Opportunity</h3>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                     <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
                       {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild let us tackle six things at once:\n\n"}
