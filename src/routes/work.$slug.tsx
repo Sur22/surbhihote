@@ -868,7 +868,7 @@ If AE's want to build a custom audience to for the clients would require to send
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Define Success Matrix{"\u00a0"}</h3>
+              <h3 className="font-serif text-3xl mb-6 font-medium">Define Success Matrics{"\u00a0"}</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 {c.slug === "fjord2"
                   ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
