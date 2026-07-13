@@ -171,7 +171,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                   <>{o.value.replace(/^[−-]/, "")}</>
                 )}
                 {o.label.includes("Usability Improved") && <TrendingUp className="w-8 h-8 md:w-10 md:h-10" />}
-                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost to date since the release") || o.value.includes("78%")) && <TrendingDown className="w-8 h-8 md:w-10 md:h-10" />}
+                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%")) && <TrendingDown className="w-8 h-8 md:w-10 md:h-10" />}
               </p>
             )}
             <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
@@ -1632,8 +1632,8 @@ If AE's want to build a custom audience to for the clients would require to send
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
             ? <>
-                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years — speed, stability, broken functionality, redundancy, and the constant manual refreshing — and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}{"\n"}
-                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.{"\u00A0"}h. Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.The biggest lesson wasn't about the interface — it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}{"\n"}
+                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years — speed, stability, broken functionality, redundancy, and the constant manual refreshing — and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
+                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.The biggest lesson wasn't about the interface — it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
                 Phase two, now in development, including a major shift in how affiliates communicate on the platform.{"\u00A0"}
               </>
 
