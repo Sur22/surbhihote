@@ -153,7 +153,7 @@ const _caseStudies: CaseStudy[] = [
       "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
     ],
     outcome: [
-      { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Usability Improved\n\u00a0 \u00a0 \u00a0Based on Clarity + Survey", value: "\u00a0 \u00a0 \u00a0 \u00a026%" },
+      { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Task Success Rate\u00a0\n\u00a0 \u00a0\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a092%" },
       { label: "No business lost to date since the release", value: "\u00a0 \u00a0 \u00a0 \u00a0 $0" },
       { label: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0Functionalities Fixed\u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0No More Workarounds", value: "\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 8" },
       { label: "Faster loading time than earlier", value: "\u00a0 \u00a0 \u00a0 \u00a0 2x ↑" },
