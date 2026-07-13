@@ -1196,8 +1196,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
               <div className="mt-8">
-                <div className="bg-secondary/50 border-2 border-dashed border-foreground/20 rounded-lg p-8 text-center text-foreground/60 mb-8">
-                  <p className="text-lg font-medium">Placeholder</p>
+                <div className="mt-8 mb-8">
+                  <p className="text-lg font-medium">{"\n"}</p>
                 </div>
                 <Table>
                   <TableHeader>
