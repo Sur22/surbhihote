@@ -446,8 +446,7 @@ If AE's want to build a custom audience to for the clients would require to send
               )}
             </div>
           </div>
-        </div>
-      </section>
+          </div>
           {(c.slug === "fjord") && (
             <div className="mt-16">
               <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
@@ -508,7 +507,8 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
             </div>
           )}
-        </div>
+
+
 
         {(c.slug !== "fjord" && c.slug !== "fjord2") && (
           <div className={`mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden`}>
@@ -544,7 +544,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   </div>
                 ) : (
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {c.userInterviewInsights || "Loading user interview insights..."}
+                    {(c as unknown as { userInterviewInsights?: string }).userInterviewInsights || ""}
                   </p>
                 )}
               </div>
