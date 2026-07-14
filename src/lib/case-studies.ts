@@ -222,7 +222,7 @@ const _caseStudies: CaseStudy[] = [
       "Partnered with the writers on tone-of-voice so the copy and the UI shipped as one thing.",
     ],
     outcome: [
-      { label: "Accounting Errors\u00a0", value: "-46%\u00a0" },
+      { label: "Accounting Errors\u00a0", value: "-64%\u00a0" },
       { label: "Customer Satisfaction\u00a0", value: "+11" },
       { label: "Faster & Efficient\u00a0\nStreamlined Workflow\u00a0", value: "+22%" },
       { label: "Workflow Errors\u00a0", value: "-27%" },
