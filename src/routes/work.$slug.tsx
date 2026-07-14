@@ -1729,13 +1729,13 @@ If AE's want to build a custom audience to for the clients would require to send
       <section className="border-t border-border">
         <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-20 pb-10">
           <p className="eyebrow mb-10">More case studies</p>
-          <div className="grid grid-cols-1 md:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             {others.map((o, i) => (
               <Link
                 key={o.slug}
                 to="/work/$slug"
                 params={{ slug: o.slug }}
-                className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-6' : ''} ${i < others.length - 1 ? 'md:pr-6' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
+                className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
               >
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
                   {o.title}
