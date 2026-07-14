@@ -333,7 +333,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: audienceBuilderMockup.url,
     summary:
-      "Built an in-house Audience Builder tool so Account Executives and Directors can create custom TV audience segments without waiting on the Data Team.",
+      "Internal ad-tech web app that lets Account Executives build custom TV audience segments in minutes instead of a week — saving $400K per year.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
