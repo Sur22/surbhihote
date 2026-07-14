@@ -325,6 +325,14 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
               </p>
             </div>
           )}
+          {c.slug === "solace" && (
+            <div>
+              <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                {c.problem}
+              </p>
+            </div>
+          )}
           {c.slug === "atlas" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
