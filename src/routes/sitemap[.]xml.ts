@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+const BASE_URL = "https://surbhihote.com";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
@@ -12,6 +12,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about", priority: "0.8" },
           { path: "/gallery", priority: "0.8" },
           { path: "/work/fjord", priority: "0.9" },
+          { path: "/work/fjord2", priority: "0.9" },
           { path: "/work/solace", priority: "0.9" },
           { path: "/work/atlas", priority: "0.9" },
         ];
