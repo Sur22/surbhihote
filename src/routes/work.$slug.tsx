@@ -154,7 +154,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           </p>
         </>
       )}
-      <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.slug === "fjord2" ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
+      <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
         {c.outcome.map((o) => (
           <div key={o.label} className="border-t border-border pt-6">
             {o.value && (
