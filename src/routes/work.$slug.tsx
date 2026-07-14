@@ -523,7 +523,24 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {"\nI carried out the user interviews by going to their desks and asking them the set of questions.\u00a0"}
+                  {c.slug === "solace" ? (
+                    <>
+                      {"\n"}
+                      "It's difficult to put together all the details about the style in one place as different detail are in different files."
+                      {"\n"}-Technical Designer
+                      {"\n\n"}
+                      "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
+                      {"\n"}-Fashion Designer
+                      {"\n\n"}
+                      "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
+                      {"\n"}- Product Development Manager
+                      {"\n\n"}
+                      "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
+                      {"\n"}- Product Development Manager
+                    </>
+                  ) : (
+                    "\nI carried out the user interviews by going to their desks and asking them the set of questions.\u00a0"
+                  )}
                   </p>
                 ) : (
                   c.research.userInterviewInsights.map((q, i) => (
