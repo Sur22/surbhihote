@@ -713,6 +713,31 @@ If AE's want to build a custom audience to for the clients would require to send
           </div>
         )}
 
+        {c.slug === "solace" && (
+          <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+            <div className="relative z-10">
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
+              <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+                <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                  {"\n"}
+                  "It's difficult to put together all the details about the style in one place as different detail are in different files."
+                  {"\n"}-Technical Designer
+                  {"\n\n"}
+                  "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
+                  {"\n"}-Fashion Designer
+                  {"\n\n"}
+                  "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
+                  {"\n"}- Product Development Manager
+                  {"\n\n"}
+                  "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
+                  {"\n"}- Product Development Manager
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {(c.slug === "fjord2") && (
           <div className="contents">
             <div className="mt-16">
