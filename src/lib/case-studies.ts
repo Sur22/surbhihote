@@ -111,7 +111,7 @@ const defaultMeta = {
     "I had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. With the help of a whiteboard, I showed the product team what design I had in mind as a possible solution for the feature we were building.",
 };
 
-const _caseStudies: CaseStudy[] = [
+const _caseStudies: CaseStudy[
   {
     slug: "fjord2",
     index: "01",
@@ -159,57 +159,6 @@ const _caseStudies: CaseStudy[] = [
       { label: "No business lost till the date since the release", value: "$0" },
       { label: "Functionalities Fixed\nNo More Workarounds", value: "8" },
       { label: "Faster loading time than earlier", value: "2x ↑" },
-    ],
-    sections: [
-      {
-        heading: "Discovery",
-        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
-      },
-      {
-        heading: "Foundations",
-        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
-      },
-      {
-        heading: "Launch",
-        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
-      },
-    ],
-  },
-  {
-    slug: "fjord",
-    index: "04",
-    title: "Audience Builder",
-    subtitle: "Audience Building Tool to Create Custom Audience Segments ",
-    client: "Fjord, Oslo",
-    year: "2025",
-    
-    ...defaultMeta,
-    overview:
-    "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
-    goal:
-      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the Data Team.\n2.\u00a0 Cut the waiting time for Account Executives & Account Directors\n\u00a0 \u00a0 \u00a0-The Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off the Data team shoulders.\n4. Cut down the cost of the external tool used to build custom audiences.\u00a0",
-    research: {
-      ...defaultMeta.research,
-      userInterview: "I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.\u00a0\n1. Not very intuitive.\n2. Copy the whole segment logic once it is built.\n3. Copy and modify an existing segment.\n4. Ability to see segments created by other users and copy them.\n\n",
-    },
-    role: "Lead Product Designer",
-    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
-    cover: audienceBuilderMockup.url,
-    summary:
-      "Built an in-house Audience Builder tool so Account Executives and Directors can create custom TV audience segments without waiting on the Data Team.",
-    problem:
-      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
-    approach: [
-      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
-      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
-      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
-      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
-    ],
-    outcome: [
-      { label: "Reduced Workload\nfor Data Team\u00a0", value: "-20%" },
-      { label: "Turn around time reduced significantly\u00a0", value: "1 week - 5 min" },
-      { label: "Yearly savings for the company", value: "$400K" },
-      { label: "Increased Workflow Efficiency\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a09% ↑" },
     ],
     sections: [
       {
@@ -358,6 +307,57 @@ const _caseStudies: CaseStudy[] = [
       {
         heading: "Snap blocks",
         body: "9 itinerary block types — meal, stay, transit, note, photo, link, ticket, day-header, free-time. Each snaps to a pin and inherits its color. The constraint kept the surface clean and let us avoid building a form-builder.",
+      },
+    ],
+  },
+  {
+    slug: "fjord",
+    index: "04",
+    title: "Audience Builder",
+    subtitle: "Audience Building Tool to Create Custom Audience Segments ",
+    client: "Fjord, Oslo",
+    year: "2025",
+    
+    ...defaultMeta,
+    overview:
+    "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
+    goal:
+      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the Data Team.\n2.\u00a0 Cut the waiting time for Account Executives & Account Directors\n\u00a0 \u00a0 \u00a0-The Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off the Data team shoulders.\n4. Cut down the cost of the external tool used to build custom audiences.\u00a0",
+    research: {
+      ...defaultMeta.research,
+      userInterview: "I talked with both of the user groups who were going to use this tool. I also talked with selected users who are currently using the tool and asked them what they like and don't like about it, so I could make sure to design for the shortcomings of the tool as well.\nI studied the existing tool to understand all the functionalities it performs, which we needed to build, plus a few more things to enhance the functionality and make it easy for users.\u00a0\n1. Not very intuitive.\n2. Copy the whole segment logic once it is built.\n3. Copy and modify an existing segment.\n4. Ability to see segments created by other users and copy them.\n\n",
+    },
+    role: "Lead Product Designer",
+    tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
+    cover: audienceBuilderMockup.url,
+    summary:
+      "Built an in-house Audience Builder tool so Account Executives and Directors can create custom TV audience segments without waiting on the Data Team.",
+    problem:
+      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
+    approach: [
+      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
+      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
+      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
+      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
+    ],
+    outcome: [
+      { label: "Reduced Workload\nfor Data Team\u00a0", value: "-20%" },
+      { label: "Turn around time reduced significantly\u00a0", value: "1 week - 5 min" },
+      { label: "Yearly savings for the company", value: "$400K" },
+      { label: "Increased Workflow Efficiency\u00a0", value: "\u00a0 \u00a0 \u00a0 \u00a09% ↑" },
+    ],
+    sections: [
+      {
+        heading: "Discovery",
+        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
+      },
+      {
+        heading: "Foundations",
+        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
+      },
+      {
+        heading: "Launch",
+        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
       },
     ],
   },
