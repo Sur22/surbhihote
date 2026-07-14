@@ -79,6 +79,8 @@ import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
 import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
+import audienceFlowCreateNew from "@/assets/audience-flow-create-new.png.asset.json";
+import audienceFlowCopyModify from "@/assets/audience-flow-copy-modify.png.asset.json";
 import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
@@ -1130,9 +1132,9 @@ If AE's want to build a custom audience to for the clients would require to send
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
               There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — First, to generate a custom segment for client and use the created segment to two different flows on for building a schedule for their campaign and another one is to create a Container.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it. Below is the flow for 2 tasks.
             </p>
-            <Carousel opts={{ loop: true }} className="relative">
+            <Carousel opts={{ loop: true }} className="relative group">
               <CarouselContent>
-                {[audienceSegmentFlow].map((img, i) => (
+                {[audienceFlowCreateNew, audienceFlowCopyModify].map((img, i) => (
                   <CarouselItem key={i}>
                     <button
                       type="button"
@@ -1149,6 +1151,9 @@ If AE's want to build a custom audience to for the clients would require to send
                   </CarouselItem>
                 ))}
               </CarouselContent>
+              <CarouselPrevious className="left-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <CarouselNext className="right-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <CarouselDots />
             </Carousel>
           </section>
         </>
