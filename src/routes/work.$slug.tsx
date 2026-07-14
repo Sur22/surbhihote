@@ -1589,9 +1589,10 @@ If AE's want to build a custom audience to for the clients would require to send
                 : (c.slug === "fjord2")
                 ? [
                     { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
-                    { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
-                    { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
-                    { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
+                    { src: affiliateDashboard4.url, label: "After – orders dashboard" },
+                    { src: affiliateDashboardChanges2.url, label: "Dashboard – annotated changes" },
+                    { src: affiliateRevisedTab3.url, label: "Revised orders tab with filters and pagination" },
+                    { src: affiliateOrderPage3.url, label: "Revamped order details page" },
                   ]
                 : [
                     { src: finalToolScreens.url, label: "Tool screens" },
