@@ -462,35 +462,6 @@ If AE's want to build a custom audience to for the clients would require to send
             </div>
           </div>
           </div>
-                  <p>
-                  Ampersand has a tool to create custom segments, but its UI was complicated and not intuitive. To understand the user's needs, frustrations, and pain points, I conducted user interviews with 5 different users.
-                  <br /><br />
-                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,&nbsp;what they like and don't like about it
-                  <br /><br />
-                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I&nbsp;made sure to understand friction points to address while designing.
-                  <br /><br />
-                  Observations for the new users were
-                  <br />1. Users had difficulty in how grouping of the segments work
-                  <br />2. There were 2 searches for the audience on left and right side which were confusing
-                  <br />3. The screen was very busy due to the way UI was designer
-                  <br />4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
-                  <br /><br />
-                  I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
-                  which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
-                  <br />1.&nbsp; Not very intuitive for.
-                  <br />2. Copy the whole segment logic once it is built.
-                  <br />3. Copy and modify an existing segment.
-                  <br />4. Ability to see segments created by other users and copy them.
-                  </p>
-                </>
-              ) : (c.slug === "fjord2") ? (
-                <p>{c.research.userInterview}</p>
-              ) : (
-                <p>{c.research.userInterview}</p>
-              )}
-            </div>
-          </div>
-          </div>
           {(c.slug === "fjord") && (
             <div className="mt-16">
               <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
