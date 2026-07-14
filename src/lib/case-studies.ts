@@ -313,6 +313,7 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "fjord",
     index: "04",
+    hidden: true,
     title: "Audience Builder",
     subtitle: "Audience Building Tool to Create Custom Audience Segments ",
     client: "Fjord, Oslo",
