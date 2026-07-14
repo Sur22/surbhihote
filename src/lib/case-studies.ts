@@ -49,7 +49,7 @@ export type CaseStudy = {
 
 const defaultMeta = {
   role: "UI/UX Designer",
-  timeframe: "6 Weeks",
+  timeframe: "2 Months",
   tools: "Sketchbook & Pencil, Withe board, Adobe XD, Miro, Google forms",
   tasksPerformed:
     "End-to-End Design,Lean UX,Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
@@ -255,7 +255,7 @@ const _caseStudies: CaseStudy[] = [
       "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role, the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
     goal:
       "As a solution to the problem, we are providing an easy way to manage notification preferences at all levels — Product, Company, Files, Comments, Product Development phases and stages, Vendors, Billing, etc. — so users can avoid unwanted notifications while still receiving those crucial to their day-to-day responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
-    timeframe: "6 Weeks",
+    timeframe: "2 Months",
     research: {
       ...defaultMeta.research,
       userInterviewInsights: [
