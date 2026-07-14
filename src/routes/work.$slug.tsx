@@ -248,10 +248,10 @@ function CaseStudyPage() {
           }
         }}
       >
-      <ScrollProgress />
-      <CaseStudySideNav slug={c.slug} />
+        <ScrollProgress />
+        <CaseStudySideNav slug={c.slug} />
 
-      {/* Title block */}
+        {/* Title block */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/"
@@ -415,42 +415,39 @@ If AE's want to build a custom audience to for the clients would require to send
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
               {(c.slug === "fjord2") ? "Survey" : "User Interview"}
             </h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+            <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
                 <>
-                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,{"\u00A0"}what they like and don't like about it
-                  {"\n\n"}
-                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I{"\u00A0"}made sure to understand friction points to address while designing.
-                  {"\n"}Observations for the new users were
-                  {"\n"}1. Users had difficulty in how grouping of the segments work
-                  {"\n"}2. There were 2 searches for the audience on left and right side which were confusing
-                  {"\n"}3. The screen was very busy due to the way UI was designer
-                  {"\n"}4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
-                  {"\n\n"}
-                  {"\n"}I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
-                  {"\n"}which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
-                  {"\n"}1.{"\u00A0"} Not very intuitive for.
-                  {"\n"}2. Copy the whole segment logic once it is built.
-                  {"\n"}3. Copy and modify an existing segment.
-                  {"\n"}4. Ability to see segments created by other users and copy them.
+                  <p>
+                  Ampersand has a tool to create custom segments, but its UI was complicated and not intuitive. To understand the user's needs, frustrations, and pain points, I conducted user interviews with 5 different users.
+                  <br /><br />
+                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,&nbsp;what they like and don't like about it
+                  <br /><br />
+                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I&nbsp;made sure to understand friction points to address while designing.
+                  <br /><br />
+                  Observations for the new users were
+                  <br />1. Users had difficulty in how grouping of the segments work
+                  <br />2. There were 2 searches for the audience on left and right side which were confusing
+                  <br />3. The screen was very busy due to the way UI was designer
+                  <br />4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
+                  <br /><br />
+                  I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
+                  which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
+                  <br />1.&nbsp; Not very intuitive for.
+                  <br />2. Copy the whole segment logic once it is built.
+                  <br />3. Copy and modify an existing segment.
+                  <br />4. Ability to see segments created by other users and copy them.
+                  </p>
                 </>
-              ) : c.research.userInterview}
-            </p>
-            {(c.slug === "fjord2") && (
-              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {affiliateSurveyImages.map((img, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => setZoomImg(img.src)}
-                    className="block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
-                  >
-                    <img src={img.src} alt={img.alt} className="w-full h-auto object-contain" loading="lazy" />
-                  </button>
-                ))}
-              </div>
-            )}
+              ) : (c.slug === "fjord2") ? (
+                <p>{c.research.userInterview}</p>
+              ) : (
+                <p>{c.research.userInterview}</p>
+              )}
+            </div>
           </div>
+        </div>
+      </section>
           {(c.slug === "fjord") && (
             <div className="mt-16">
               <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
@@ -519,32 +516,36 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             )}
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">
+              </h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
-                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {"\n"}
-                    "It's difficult to put together all the details about the style in one place as different detail are in different files."
-                    {"\n"}-Technical Designer
-                    {"\n\n"}
-                    "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
-                    {"\n"}-Fashion Designer
-                    {"\n\n"}
-                    "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
-                    {"\n"}- Product Development Manager
-                    {"\n\n"}
-                    "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
-                    {"\n"}- Product Development Manager
-                  </p>
+                  <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    <ul className="space-y-8 list-none p-0">
+                      <li>
+                        <span className="font-bold">Centralize</span>&nbsp;
+                        {"\n"}User: stop hunting for details across scattered files.
+                        {"\n"}Business: reduce rework and manual error.
+                        {"\n"}Result: Reduce manual accounting errors.
+                      </li>
+                      <li>
+                        <span className="font-bold">Connect</span>&nbsp;
+                        {"\n"}User: change something once, not in ten documents.
+                        {"\n"}Business: cut cycle time.
+                        {"\n"}Result: Faster and efficient workflow.
+                      </li>
+                      <li>
+                        <span className="font-bold">Collaborate</span>&nbsp;
+                        {"\n"}User: keep clients/factories current in real time.
+                        {"\n"}Business:&nbsp;
+                        {"\n"}Result: −27% workflow errors.
+                      </li>
+                    </ul>
+                  </div>
                 ) : (
-                  c.research.userInterviewInsights.map((q, i) => (
-                    q.quote && (
-                      <figure key={i} className="text-center italic">
-                        <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                        {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
-                      </figure>
-                    )
-                  ))
+                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    {c.userInterviewInsights || "Loading user interview insights..."}
+                  </p>
                 )}
               </div>
             </div>
@@ -659,7 +660,7 @@ If AE's want to build a custom audience to for the clients would require to send
       </Dialog>
 
       {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
       {/* Strategy / Workshop */}
@@ -1069,7 +1070,8 @@ If AE's want to build a custom audience to for the clients would require to send
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
-            <li>Tech Pack file</li>
+            <li>Tech Pack file
+&nbsp; &nbsp; &nbsp;Fabric & Trims Cateloge&nbsp;</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
@@ -1136,14 +1138,14 @@ If AE's want to build a custom audience to for the clients would require to send
 
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
-        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback\u00a0" : "Brainstorming Session With Product Team"}</h2>
+        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
             ? "Following are the three different user flows for managing notifications." 
             : (c.slug === "fjord2") 
-              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them.\u00a0" 
+              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
               : (c.slug === "fjord")
-                ? "The reference point of the design was the tool which we are trying to replace.Some parts felt complicated as a first time seeing the application specifically to the new users while research phase the part where of building a segment and grouping and having a clean an intuitive UI.I wanted to simplify that part for both the users who don't have access and with the access should be able to understand and adopt quickly, I took the drag and drop approach which was best suited for this tool."
+                ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
           }
         </p>
