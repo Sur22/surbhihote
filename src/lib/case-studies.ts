@@ -111,7 +111,7 @@ const defaultMeta = {
     "I had a brainstorming session with the Product team after conducting the user interviews. It was helpful for kickstarting the design phase. With the help of a whiteboard, I showed the product team what design I had in mind as a possible solution for the feature we were building.",
 };
 
-const _caseStudies: CaseStudy[
+const _caseStudies: CaseStudy[] = [
   {
     slug: "fjord2",
     index: "01",
