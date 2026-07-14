@@ -214,7 +214,7 @@ const _caseStudies: CaseStudy[] = [
     summary:
       "Designed a connected Tech Pack Tool that moves fashion brands from scattered documents to a single PLM ecosystem with reusable libraries and automated BOMs.",
     problem:
-      "Founders came to us frustrated: every competitor's onboarding asked 14 questions and shipped users into a content library the size of Netflix. They wanted an app that could be useful on day one, and finishable.",
+      "Fashion brands were running product development on disconnected Excel sheets, PDFs, and email threads. Style details, materials, trims, and BOMs lived in separate documents, so any change had to be manually updated across multiple files. Factories were often working from outdated versions, causing production delays, accounting errors, and miscommunication between design, product development, and vendors.",
     approach: [
       "Wrote the product principles before opening Figma — 'finishable', 'quiet', 'honest'.",
       "Designed a single onboarding question: 'How much time do you have today?'",
