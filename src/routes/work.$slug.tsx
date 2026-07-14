@@ -188,7 +188,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
 
 function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
-  const others = caseStudies.filter((x) => x.slug !== c.slug);
+  const others = caseStudies.filter((x) => x.slug !== c.slug && !x.hidden);
   const [zoomImg, setZoomImg] = useState<string | null>(null);
   const surveyImages = [
     { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
