@@ -1130,7 +1130,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — First, to generate a custom segment for client and use the created segment to two different flows on for building a schedule for their campaign and another one is to create a Container.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it. Below is the flow for 2 tasks.
+              There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — First, to generate a custom segment for client and use the created segment to 4 different flows as per requirement on for building a schedule for their campaign, create a Container, use it for Addressable campaign or Audience guaruntee.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it. Below is the flow for 2 tasks.
             </p>
             <Carousel opts={{ loop: true }} className="relative group">
               <CarouselContent>
@@ -1457,7 +1457,7 @@ If AE's want to build a custom audience to for the clients would require to send
             </li>
             {c.slug === "fjord" && (
               <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2 whitespace-pre-line">
-                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either the Schedule Creation or Container Creation process.\n\n"}
+                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either of the 4 workflows.\n\n"}
               </p>
             )}
             <li className="flex gap-4">
