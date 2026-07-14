@@ -223,7 +223,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Accounting Errors\u00a0", value: "-64%\u00a0" },
-      { label: "Customer Satisfaction\u00a0", value: "+11" },
+      { label: "Customer Satisfaction\u00a0", value: "+8" },
       { label: "Faster & Efficient\u00a0\nStreamlined Workflow\u00a0", value: "22%" },
       { label: "Workflow Errors\u00a0", value: "-27%" },
     ],
