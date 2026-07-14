@@ -738,7 +738,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <div className="mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                   {"\n"}
@@ -746,13 +746,15 @@ If AE's want to build a custom audience to for the clients would require to send
                   {"\n"}User: stop hunting for details across scattered files.
                   {"\n"}Business: reduce rework and manual error.
                   {"\n"}Result: Reduce manual accounting errors.
-                  {"\n"}Connect&nbsp;
+                  {"\n\n\n"}
+                  Connect&nbsp;
                   {"\n"}User: change something once, not in ten documents.
                   {"\n"}Business: cut cycle time.
                   {"\n"}Result: Faster and efficient workflow.
-                  {"\n"}Collaborate&nbsp;
+                  {"\n\n\n"}
+                  Collaborate&nbsp;
                   {"\n"}User: keep clients/factories current in real time.
-                  {"\n"}Business:&nbsp;
+                  {"\n"}Business: differentiator from the competitors&nbsp;&nbsp;
                   {"\n"}Result: −27% workflow errors.
                   {"\n"}&nbsp;
                 </p>
