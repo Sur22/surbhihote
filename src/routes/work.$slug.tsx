@@ -148,9 +148,19 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => document.getElementById("final-designs")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              asChild
             >
-              See the solution
+              <Link
+                to="."
+                hash="final-designs"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.hash = "final-designs";
+                  document.getElementById("final-designs")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+              >
+                See the solution
+              </Link>
             </Button>
           </div>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
