@@ -660,7 +660,7 @@ If AE's want to build a custom audience to for the clients would require to send
       </Dialog>
 
       {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
       {/* Strategy / Workshop */}
