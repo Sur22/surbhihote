@@ -1561,7 +1561,7 @@ If AE's want to build a custom audience to for the clients would require to send
             {(c.slug === "fjord2" || c.slug === "solace") && (
               <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
             )}
-            <CarouselContent className={(c.slug === "fjord2" || c.slug === "solace") ? "relative z-10" : undefined}>
+            <CarouselContent className={(c.slug === "fjord2" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
               {((c.slug === "atlas" || c.slug === "atlas2")
                 ? [
                     { src: notificationsFinalScreens.url, label: "Final screens mockup" },
@@ -1583,7 +1583,8 @@ If AE's want to build a custom audience to for the clients would require to send
                     { src: finalProto.url, label: "Prototype overview" },
                   ]
               ).map((img) => (
-                <CarouselItem key={img.label} className={(c.slug === "fjord2" || c.slug === "solace") ? "flex items-center justify-center" : undefined}>
+                <CarouselItem key={img.label} className={(c.slug === "fjord2" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
+
                   {(c.slug === "atlas" || c.slug === "atlas2") ? (
                     <div
                       className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
