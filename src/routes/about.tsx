@@ -21,9 +21,9 @@ import madLogo from "@/assets/clients/mad.png";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Surbhi Hote" },
+      { title: "About Surbhi Hote — Product & UX Designer" },
       { name: "description", content: "Independent product designer. Twelve years across fintech, wellness, and consumer software. Based in Lisbon." },
-      { property: "og:title", content: "About — Surbhi Hote" },
+      { property: "og:title", content: "About Surbhi Hote — Product & UX Designer" },
       { property: "og:description", content: "Independent product designer based in Lisbon." },
     ],
   }),
@@ -33,10 +33,10 @@ export const Route = createFileRoute("/about")({
 const galleryImages = [
   { src: g7, alt: "City skyline at night with full moon" },
   { src: g8, alt: "Skyscrapers from below against blue sky" },
-  { src: g9, alt: "Gallery image nine" },
-  { src: g10, alt: "Gallery image ten" },
-  { src: g11, alt: "Gallery image eleven" },
-  { src: g12, alt: "Gallery image twelve" },
+  { src: g9, alt: "Black-and-white photograph of a New York City subway platform with a train and station signs" },
+  { src: g10, alt: "Geodesic sphere facade glowing at sunset with palm tree silhouettes" },
+  { src: g11, alt: "Aerial view of a bright sunset above layered clouds" },
+  { src: g12, alt: "Dramatic sunset with the sun peeking through dark clouds above a city skyline" },
 ];
 
 
@@ -72,7 +72,7 @@ function AboutPage() {
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              Hey,&nbsp;it's nice to see you here!
+              About Surbhi Hote — Product & UX Designer
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
