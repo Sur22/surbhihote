@@ -144,7 +144,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
     cover: fjord.url,
     summary:
-      "Redesigned a legacy affiliate application used by media sellers — improving usability by 26%, eliminating workarounds, and cutting loading time in half.",
+      "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -212,7 +212,7 @@ const _caseStudies: CaseStudy[] = [
     tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
     cover: solace.url,
     summary:
-      "Designed a connected Tech Pack Tool that moves fashion brands from scattered documents to a single PLM ecosystem with reusable libraries and automated BOMs.",
+      "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
     problem:
       "Fashion brands were running product development on disconnected Excel sheets, PDFs, and email threads. Style details, materials, trims, and BOMs lived in separate documents, so any change had to be manually updated across multiple files. Factories were often working from outdated versions, causing production delays, accounting errors, and miscommunication between design, product development, and vendors.",
     approach: [
@@ -281,7 +281,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: notificationBanner.url,
     summary:
-      "Redesigned notification preferences for a supply-chain PLM, giving users granular control over product, company, file, and workflow alerts.",
+      "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 62% to 7% and missed alerts by 87%.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
@@ -333,7 +333,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH ·\u00a0ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA"],
     cover: audienceBuilderMockup.url,
     summary:
-      "Built an in-house Audience Builder tool so Account Executives and Directors can create custom TV audience segments without waiting on the Data Team.",
+      "Internal ad-tech web app that lets Account Executives build custom TV audience segments in minutes instead of a week — saving $400K per year.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -401,7 +401,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas.url,
     summary:
-      "Redesigned the product page experience for a supply-chain platform to reduce clutter and improve findability.",
+      "Product page redesign for a supply-chain PLM web app — restructuring layout and information density to reduce clutter and speed up findability.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
