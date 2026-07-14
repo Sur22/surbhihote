@@ -1128,11 +1128,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
             <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">User flow</h2>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — 
-              1.To generate a custom segment for client and use the created segment to two different flows on for building a schedule for their campaign and another one is to create a Container.
-              2.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it.
-
-              Below is the flow for 2 tasks.
+              There were 2 main flow of users which I needed to design for. By creating task flows that center on the key functions of the Audience builder tool — First, to generate a custom segment for client and use the created segment to two different flows on for building a schedule for their campaign and another one is to create a Container.Second one is to search for the existing list of custom build audience copy the segment and modify it to use it. Below is the flow for 2 tasks.
             </p>
             <Carousel opts={{ loop: true }} className="relative">
               <CarouselContent>
