@@ -5,6 +5,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
   Carousel,
