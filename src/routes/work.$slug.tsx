@@ -1717,7 +1717,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 params={{ slug: o.slug }}
                 className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-6' : ''} ${i < others.length - 1 ? 'md:pr-6' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
               >
-                <h3 className="font-serif text-xl md:text-2xl group-hover:text-accent transition-colors whitespace-nowrap">
+                <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
                   {o.title}
                 </h3>
                 <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
