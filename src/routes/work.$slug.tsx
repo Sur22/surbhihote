@@ -234,6 +234,8 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
+
+
         className={`[&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
@@ -248,10 +250,10 @@ function CaseStudyPage() {
           }
         }}
       >
-      <ScrollProgress />
-      <CaseStudySideNav slug={c.slug} />
+        <ScrollProgress />
+        <CaseStudySideNav slug={c.slug} />
 
-      {/* Title block */}
+        {/* Title block */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/"
@@ -415,42 +417,39 @@ If AE's want to build a custom audience to for the clients would require to send
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
               {(c.slug === "fjord2") ? "Survey" : "User Interview"}
             </h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+            <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
                 <>
-                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,{"\u00A0"}what they like and don't like about it
-                  {"\n\n"}
-                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I{"\u00A0"}made sure to understand friction points to address while designing.
-                  {"\n"}Observations for the new users were
-                  {"\n"}1. Users had difficulty in how grouping of the segments work
-                  {"\n"}2. There were 2 searches for the audience on left and right side which were confusing
-                  {"\n"}3. The screen was very busy due to the way UI was designer
-                  {"\n"}4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
-                  {"\n\n"}
-                  {"\n"}I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
-                  {"\n"}which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
-                  {"\n"}1.{"\u00A0"} Not very intuitive for.
-                  {"\n"}2. Copy the whole segment logic once it is built.
-                  {"\n"}3. Copy and modify an existing segment.
-                  {"\n"}4. Ability to see segments created by other users and copy them.
+                  <p>
+                  Ampersand has a tool to create custom segments, but its UI was complicated and not intuitive. To understand the user's needs, frustrations, and pain points, I conducted user interviews with 5 different users.
+                  <br /><br />
+                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,&nbsp;what they like and don't like about it
+                  <br /><br />
+                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I&nbsp;made sure to understand friction points to address while designing.
+                  <br /><br />
+                  Observations for the new users were
+                  <br />1. Users had difficulty in how grouping of the segments work
+                  <br />2. There were 2 searches for the audience on left and right side which were confusing
+                  <br />3. The screen was very busy due to the way UI was designer
+                  <br />4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
+                  <br /><br />
+                  I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
+                  which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
+                  <br />1.&nbsp; Not very intuitive for.
+                  <br />2. Copy the whole segment logic once it is built.
+                  <br />3. Copy and modify an existing segment.
+                  <br />4. Ability to see segments created by other users and copy them.
+                  </p>
                 </>
-              ) : c.research.userInterview}
-            </p>
-            {(c.slug === "fjord2") && (
-              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {affiliateSurveyImages.map((img, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => setZoomImg(img.src)}
-                    className="block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
-                  >
-                    <img src={img.src} alt={img.alt} className="w-full h-auto object-contain" loading="lazy" />
-                  </button>
-                ))}
-              </div>
-            )}
+              ) : (c.slug === "fjord2") ? (
+                <p>{c.research.userInterview}</p>
+              ) : (
+                <p>{c.research.userInterview}</p>
+              )}
+            </div>
           </div>
+        </div>
+      </section>
           {(c.slug === "fjord") && (
             <div className="mt-16">
               <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
@@ -519,32 +518,36 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             )}
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">
+              </h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
-                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {"\n"}
-                    "It's difficult to put together all the details about the style in one place as different detail are in different files."
-                    {"\n"}-Technical Designer
-                    {"\n\n"}
-                    "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
-                    {"\n"}-Fashion Designer
-                    {"\n\n"}
-                    "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
-                    {"\n"}- Product Development Manager
-                    {"\n\n"}
-                    "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
-                    {"\n"}- Product Development Manager
-                  </p>
+                  <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    <ul className="space-y-8 list-none p-0">
+                      <li>
+                        <span className="font-bold">Centralize</span>&nbsp;
+                        {"\n"}User: stop hunting for details across scattered files.
+                        {"\n"}Business: reduce rework and manual error.
+                        {"\n"}Result: Reduce manual accounting errors.
+                      </li>
+                      <li>
+                        <span className="font-bold">Connect</span>&nbsp;
+                        {"\n"}User: change something once, not in ten documents.
+                        {"\n"}Business: cut cycle time.
+                        {"\n"}Result: Faster and efficient workflow.
+                      </li>
+                      <li>
+                        <span className="font-bold">Collaborate</span>&nbsp;
+                        {"\n"}User: keep clients/factories current in real time.
+                        {"\n"}Business:&nbsp;
+                        {"\n"}Result: −27% workflow errors.
+                      </li>
+                    </ul>
+                  </div>
                 ) : (
-                  c.research.userInterviewInsights.map((q, i) => (
-                    q.quote && (
-                      <figure key={i} className="text-center italic">
-                        <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                        {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
-                      </figure>
-                    )
-                  ))
+                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    {c.userInterviewInsights || "Loading user interview insights..."}
+                  </p>
                 )}
               </div>
             </div>
@@ -1069,7 +1072,8 @@ If AE's want to build a custom audience to for the clients would require to send
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
-            <li>Tech Pack file</li>
+            <li>Tech Pack file
+&nbsp; &nbsp; &nbsp;Fabric & Trims Cateloge&nbsp;</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
