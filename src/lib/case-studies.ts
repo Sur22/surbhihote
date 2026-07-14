@@ -144,7 +144,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
     cover: fjord.url,
     summary:
-      "Redesigned a legacy affiliate application used by media sellers — improving usability by 26%, eliminating workarounds, and cutting loading time in half.",
+      "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
