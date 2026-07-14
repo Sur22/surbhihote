@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ProcessRouteImport } from './routes/process'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as AboutRouteImport } from './routes/about'
@@ -22,6 +23,11 @@ import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProcessRoute = ProcessRouteImport.update({
+  id: '/process',
+  path: '/process',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
+  '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
+  '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
+  '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/gallery'
     | '/mcp'
+    | '/process'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/gallery'
     | '/mcp'
+    | '/process'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/gallery'
     | '/mcp'
+    | '/process'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   GalleryRoute: typeof GalleryRoute
   McpRoute: typeof McpRoute
+  ProcessRoute: typeof ProcessRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -157,6 +170,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/process': {
+      id: '/process'
+      path: '/process'
+      fullPath: '/process'
+      preLoaderRoute: typeof ProcessRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   GalleryRoute: GalleryRoute,
   McpRoute: McpRoute,
+  ProcessRoute: ProcessRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
