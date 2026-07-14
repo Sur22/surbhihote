@@ -401,7 +401,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas.url,
     summary:
-      "Redesigned the product page experience for a supply-chain platform to reduce clutter and improve findability.",
+      "Product page redesign for a supply-chain PLM web app — restructuring layout and information density to reduce clutter and speed up findability.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
