@@ -538,22 +538,24 @@ If AE's want to build a custom audience to for the clients would require to send
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                     <ul className="space-y-8 list-none p-0">
                       <li>
-                        <span className="font-bold">Centralize</span>&nbsp;
-                        {"\n"}User: stop hunting for details across scattered files.
-                        {"\n"}Business: reduce rework and manual error.
-                        {"\n"}Result: Reduce manual accounting errors.
+                        {"\n"}
+                        "It's difficult to put together all the details about the style in one place as different detail are in different files."
+                        {"\n"}-Technical Designer
+                        {"\n\n"}
+                        "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult and time consuming"
+                        {"\n"}-Fashion Designer
+                        {"\n\n"}
+                        "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
+                        {"\n"}- Product Development Manager
+                        {"\n\n"}
+                        "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
+                        {"\n"}- Product Development Manager&nbsp;
                       </li>
                       <li>
-                        <span className="font-bold">Connect</span>&nbsp;
-                        {"\n"}User: change something once, not in ten documents.
-                        {"\n"}Business: cut cycle time.
-                        {"\n"}Result: Faster and efficient workflow.
+                        {"\n"}
                       </li>
                       <li>
-                        <span className="font-bold">Collaborate</span>&nbsp;
-                        {"\n"}User: keep clients/factories current in real time.
-                        {"\n"}Business:&nbsp;
-                        {"\n"}Result: −27% workflow errors.
+                        {"\n"}
                       </li>
                     </ul>
                   </div>
