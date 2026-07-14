@@ -443,6 +443,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <p>{c.research.userInterview}</p>
               ) : (c.slug === "solace") ? (
                 <p className="whitespace-pre-line">
+                  <span className="font-bold text-2xl mb-4 block">User Interview Insights</span>
                   {"\n"}
                   "It's difficult to put together all the details about the style in one place as different detail are in different files."
                   {"\n"}-Technical Designer
