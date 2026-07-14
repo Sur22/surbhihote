@@ -115,7 +115,7 @@ function IndexPage() {
       <section id="case-studies" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
         <div className="mb-12">
           <p className="eyebrow mb-4">Selected Work</p>
-          <h1 className="font-serif" style={{ fontSize: '62px' }}>Case Studies</h1>
+          <h2 className="font-serif" style={{ fontSize: '62px' }}>Case Studies</h2>
         </div>
 
         <div className="space-y-24">
