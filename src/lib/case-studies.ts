@@ -212,7 +212,7 @@ const _caseStudies: CaseStudy[] = [
     tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
     cover: solace.url,
     summary:
-      "Designed a connected Tech Pack Tool that moves fashion brands from scattered documents to a single PLM ecosystem with reusable libraries and automated BOMs.",
+      "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
     problem:
       "Fashion brands were running product development on disconnected Excel sheets, PDFs, and email threads. Style details, materials, trims, and BOMs lived in separate documents, so any change had to be manually updated across multiple files. Factories were often working from outdated versions, causing production delays, accounting errors, and miscommunication between design, product development, and vendors.",
     approach: [
