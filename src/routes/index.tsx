@@ -119,7 +119,7 @@ function IndexPage() {
         </div>
 
         <div className="space-y-24">
-          {caseStudies.map((c, i) => (
+          {caseStudies.filter((c) => !c.hidden).map((c, i) => (
             <CaseStudyItem key={c.slug} c={c} i={i} />
           ))}
         </div>
