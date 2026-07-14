@@ -92,6 +92,10 @@ import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.
 import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
 import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
 import affiliateSiteMockupDashboard2 from "@/assets/Affiliate_site_mockup_dashboard-2.png.asset.json";
+import affiliateDashboard4 from "@/assets/Affiliate_site_mockup_dashboard-4.png.asset.json";
+import affiliateDashboardChanges2 from "@/assets/affiliate_dashboar_changes-2.png.asset.json";
+import affiliateRevisedTab3 from "@/assets/Affiliate_site_mockup_revised_tab-3.png.asset.json";
+import affiliateOrderPage3 from "@/assets/Affiliate_site_mockup_order_page-3.png.asset.json";
 import ampMockupBg3 from "@/assets/amp-mockup-bg-3.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
@@ -1589,9 +1593,10 @@ If AE's want to build a custom audience to for the clients would require to send
                 : (c.slug === "fjord2")
                 ? [
                     { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
-                    { src: affiliateSiteDashboard.url, label: "After – orders dashboard" },
-                    { src: affiliateSiteRevisedTab.url, label: "Revised orders tab with filters and pagination" },
-                    { src: affiliateSiteOrderPage.url, label: "Revamped order details page" },
+                    { src: affiliateDashboard4.url, label: "After – orders dashboard" },
+                    { src: affiliateDashboardChanges2.url, label: "Dashboard – annotated changes" },
+                    { src: affiliateRevisedTab3.url, label: "Revised orders tab with filters and pagination" },
+                    { src: affiliateOrderPage3.url, label: "Revamped order details page" },
                   ]
                 : [
                     { src: finalToolScreens.url, label: "Tool screens" },
