@@ -431,7 +431,7 @@ const _caseStudies: CaseStudy[] = [
   },
 ];
 
-export const caseStudies = _caseStudies.filter((c) => c.slug !== "atlas2");
+export const caseStudies = _caseStudies;
 
 export const getCaseStudy = (slug: string) =>
   caseStudies.find((c) => c.slug === slug);
