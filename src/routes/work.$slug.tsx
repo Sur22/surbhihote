@@ -188,7 +188,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
 
 function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
-  const others = caseStudies.filter((x) => x.slug !== c.slug && !x.hidden);
+  const others = caseStudies.filter((x) => x.slug !== c.slug);
   const [zoomImg, setZoomImg] = useState<string | null>(null);
   const surveyImages = [
     { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
@@ -715,7 +715,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 2,
                       dependency: 3,
                       goals: [
-                        "Goal:\u00a0Identify new business\n\u00a0\nFrustration:Back to back order revisions, hard to track revision history & speed\u00a0\n\u00a0\nTasks:\n1. Track new orders\n2. Track revenue\n3. View order for oversight\n4. Quick identification of unaccepted orders",
+                        "Goal:\u00a0 Identify new business\u00a0\nFrustration:\u00a0Back to back order revisions, hard to track revision history \u0026 speed\u00a0\u00a0\nTasks:\n1. Track new orders\n2. Track revenue\n3. View order for oversight\n4. Quick identification of unaccepted orders",
                       ],
                     },
                     {
@@ -723,7 +723,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 3,
                       dependency: 2,
                       goals: [
-                        "Goal:\u00a0Maintain makegoods business\u00a0\n\nFrustration:\u00a0Makegood Processing and Synchronization issue\n\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                        "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
                     },
                     {
@@ -731,7 +731,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 4,
                       goals: [
-                        "Goal:\u00a0Maintaining Electronic Rate cards\n\nFrustration:\u00a0Time consuming workarounds due to broken functionalities\n\nTasks:\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
+                        "Goal: Maintaining Electronic Rate cards\nFrustration: Time consuming workarounds due to broken functionalities\nTasks:\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
                       ],
 
                     },
@@ -740,7 +740,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal:\u00a0Validate the affiliate site is running successfully\n\nFrustration :\u00a0Manual account setup & updating\u00a0\n\nTasks:\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
+                        "Goal: Validate the affiliate site is running successfully\nFrustration: Manual account setup & updating\nTasks:\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
                       ],
 
                     },
@@ -749,7 +749,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       usage: 4,
                       dependency: 3,
                       goals: [
-                        "Goal:\u00a0Gather intel across both Linear and Digital orders\n\nFrustration:\u00a0Version comparison broken, Exports format\n\n",
+                        "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\n",
                         "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
                       ],
                     },
@@ -800,7 +800,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             return (
                               <li key={idx} className="whitespace-pre-line">
                                 {goal.split('\n').map((line, lIdx) => {
-                                  const labelMatch = line.match(/^(Goal:|Goal\s*:|Frustration:|Frustration\s*:|Tasks:|Platform Usage|Platform Dependency)\s*/);
+                                  const labelMatch = line.match(/^(Goal:|Frustration:|Tasks:|Platform Usage|Platform Dependency)\s*/);
                                   if (labelMatch) {
                                     const label = labelMatch[1];
                                     const rest = line.slice(labelMatch[0].length);
@@ -1602,8 +1602,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
-            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 -translate-y-1/2 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
+            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
+            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />}
             {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
           </Carousel>
         )}
