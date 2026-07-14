@@ -540,7 +540,8 @@ If AE's want to build a custom audience to for the clients would require to send
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                     <ul className="space-y-8 list-none p-0">
                       <li>
-                        {"\n"}
+                        User Interview Insights
+                        {"\n"}&nbsp;
                         {"\n"}
                         "It's difficult to put together all the details about the style in one place as different detail are in different files."
                         {"\n"}-Technical Designer
