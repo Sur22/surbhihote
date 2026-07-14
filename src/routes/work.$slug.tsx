@@ -539,7 +539,7 @@ If AE's want to build a custom audience to for the clients would require to send
                       {"\n"}- Product Development Manager
                     </>
                   ) : (
-                    "\nI carried out the user interviews by going to their desks and asking them the set of questions.\u00a0"
+                    "\nI carried out the user interviews by going to their desks and asking them the set of questions; a lean sampling.\u00a0"
                   )}
                   </p>
                 ) : (
