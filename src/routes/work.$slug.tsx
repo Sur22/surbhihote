@@ -104,8 +104,9 @@ export const Route = createFileRoute("/work/$slug")({
     if (!c) throw notFound();
     return { study: c };
   },
-  head: ({ loaderData }) => {
+  head: ({ loaderData, params }) => {
     const s = loaderData?.study;
+    const url = `https://surbhihote.com/work/${params.slug}`;
     if (!s) return { meta: [{ title: "Case study — Surbhi Hote" }] };
     return {
       meta: [
@@ -114,7 +115,10 @@ export const Route = createFileRoute("/work/$slug")({
         { property: "og:title", content: `${s.title} — Surbhi Hote` },
         { property: "og:description", content: s.summary },
         { property: "og:image", content: s.cover },
+        { property: "og:url", content: url },
+        { property: "og:type", content: "article" },
       ],
+      links: [{ rel: "canonical", href: url }],
     };
   },
   notFoundComponent: () => (
