@@ -544,7 +544,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   </div>
                 ) : (
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {c.userInterviewInsights || "Loading user interview insights..."}
+                    {(c as unknown as { userInterviewInsights?: string }).userInterviewInsights || ""}
                   </p>
                 )}
               </div>
