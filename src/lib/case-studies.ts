@@ -44,6 +44,7 @@ export type CaseStudy = {
   approach: string[];
   outcome: { label: string; value: string }[];
   sections: { heading: string; body: string }[];
+  hidden?: boolean;
 };
 
 const defaultMeta = {
