@@ -143,7 +143,16 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
       <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
       {showImpactHeader && (
         <>
-          <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-10">At a glance</h3>
+          <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-6">At a glance</h3>
+          <div className="flex justify-center mb-10">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => document.getElementById("final-designs")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+            >
+              See the solution
+            </Button>
+          </div>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
             {c.slug === "fjord" 
               ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
