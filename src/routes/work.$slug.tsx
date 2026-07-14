@@ -521,14 +521,20 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="relative z-10">
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
-                {c.research.userInterviewInsights.map((q, i) => (
-                  q.quote && (
-                    <figure key={i} className="text-center italic">
-                      <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
-                      {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
-                    </figure>
-                  )
-                ))}
+                {c.slug === "solace" ? (
+                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    {"\nI carried out the user interviews by going to their desks and asking them the set of questions.\u00a0"}
+                  </p>
+                ) : (
+                  c.research.userInterviewInsights.map((q, i) => (
+                    q.quote && (
+                      <figure key={i} className="text-center italic">
+                        <blockquote className="text-lg md:text-xl leading-relaxed whitespace-pre-line">{q.quote}</blockquote>
+                        {q.author && <figcaption className="mt-2 text-base">-{q.author}</figcaption>}
+                      </figure>
+                    )
+                  ))
+                )}
               </div>
             </div>
           </div>
