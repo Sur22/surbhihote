@@ -737,17 +737,19 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                   {"\n"}
-                  "It's difficult to put together all the details about the style in one place as different detail are in different files."
-                  {"\n"}-Technical Designer
-                  {"\n\n"}
-                  "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
-                  {"\n"}-Fashion Designer
-                  {"\n\n"}
-                  "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
-                  {"\n"}- Product Development Manager
-                  {"\n\n"}
-                  "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
-                  {"\n"}- Product Development Manager
+                  Centralize&nbsp;
+                  {"\n"}User: stop hunting for details across scattered files.
+                  {"\n"}Business: reduce rework and manual error.
+                  {"\n"}Result: Reduce manual accounting errors.
+                  {"\n"}Connect&nbsp;
+                  {"\n"}User: change something once, not in ten documents.
+                  {"\n"}Business: cut cycle time.
+                  {"\n"}Result: Faster and efficient workflow.
+                  {"\n"}Collaborate&nbsp;
+                  {"\n"}User: keep clients/factories current in real time.
+                  {"\n"}Business:&nbsp;
+                  {"\n"}Result: −27% workflow errors.
+                  {"\n"}&nbsp;
                 </p>
               </div>
             </div>
