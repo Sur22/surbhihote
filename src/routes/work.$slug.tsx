@@ -721,24 +721,49 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             <div className="relative z-10">
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
-              <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+              <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-4xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                   Vision —&nbsp; From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
-                  {"\n\n"}
-                  Goals&nbsp;
-                  {"\n"}User: stop hunting for details across scattered files.
-                  {"\n"}Business: reduce rework and manual error.
-                  {"\n"}Result: Reduce manual accounting errors and data entry.
-                  {"\n\n"}
-                  User: change something once, not in ten documents.
-                  {"\n"}Business: cut cycle time.
-                  {"\n"}Result: faster and efficient workflow.
-                  {"\n\n"}
-                  User: keep clients/factories current in real time.
-                  {"\n"}Business: differentiator from the competitors&nbsp;&nbsp;
-                  {"\n"}Result: smoother workflow with updated data.
-                  {"\n"}&nbsp;
-                  {"\n"}Plan- Centralize ,Connect ,Collaborate&nbsp;
+                </p>
+
+                <div>
+                  <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Goals&nbsp;</h4>
+                  <div className="overflow-hidden rounded-sm border border-background/20">
+                    <Table>
+                      <TableHeader>
+                        <TableRow className="border-b border-background/20 hover:bg-transparent">
+                          <TableHead className="text-background font-semibold">Pillar</TableHead>
+                          <TableHead className="text-background font-semibold">User</TableHead>
+                          <TableHead className="text-background font-semibold">Business</TableHead>
+                          <TableHead className="text-background font-semibold">Result</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow className="border-b border-background/10 hover:bg-background/5">
+                          <TableCell className="font-semibold text-background">Centralize</TableCell>
+                          <TableCell className="text-background/90">Stop hunting for details across scattered files.</TableCell>
+                          <TableCell className="text-background/90">Reduce rework and manual error.</TableCell>
+                          <TableCell className="text-background/90">Reduce manual accounting errors and data entry.</TableCell>
+                        </TableRow>
+                        <TableRow className="border-b border-background/10 hover:bg-background/5">
+                          <TableCell className="font-semibold text-background">Connect</TableCell>
+                          <TableCell className="text-background/90">Change something once, not in ten documents.</TableCell>
+                          <TableCell className="text-background/90">Cut cycle time.</TableCell>
+                          <TableCell className="text-background/90">Faster and efficient workflow.</TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-background/5">
+                          <TableCell className="font-semibold text-background">Collaborate</TableCell>
+                          <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
+                          <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
+                          <TableCell className="text-background/90">Smoother workflow with updated data.</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </div>
+                </div>
+
+                <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                  Plan — Centralize, Connect, Collaborate&nbsp;
                 </p>
               </div>
             </div>
