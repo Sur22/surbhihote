@@ -676,7 +676,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
             {c.slug === "fjord2" 
               ? "This workshop was not a typical design thinking workshop,It was customized based on the project and the available information to make most out of one and a half day of time we had .\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
-              : (c.slug === "solace" ? "The First step is to understand what are the business and users goals.\u00a0" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
+              : (c.slug === "solace" ? "The First step is to understand what are the business and users goals from which we can define the expected OKR's and create a plan of so it provides a base to find the best possible solution, features and execution.\u00a0" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
             }
           </p>
         )}
@@ -777,7 +777,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
 
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Plan{"\n"}Centralize -Build a library to show the collection of all the the Tech Pack, CAD, files which are get added to the individual products.{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate paperwork.{"\n"}Connect{"\n"}Collaborate&nbsp;
+                  Plan{"\n"}Building Libraries -(Quick Wins){"\n"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}{"\n"}{"\n"}{"\n"}Connect{"\n"}Collaborate&nbsp;
                 </p>
               </div>
             </div>
