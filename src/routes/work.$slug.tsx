@@ -413,7 +413,7 @@ If AE's want to build a custom audience to for the clients would require to send
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {(c.slug === "fjord2") ? "Survey" : "User Interview"}
+              {(c.slug === "fjord2") ? "Survey" : (c.slug === "solace") ? "for\u00a0" : "User Interview"}
             </h3>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
