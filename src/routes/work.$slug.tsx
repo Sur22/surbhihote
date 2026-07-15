@@ -731,9 +731,9 @@ If AE's want to build a custom audience to for the clients would require to send
                       <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}Retain & Attract New Clients{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Placeholder user goal</TableCell>
-                      <TableCell className="text-foreground/90">Placeholder business goal</TableCell>
-                      <TableCell className="text-foreground/90">Placeholder result</TableCell>
+                      <TableCell className="text-foreground/90">{"\n"}</TableCell>
+                      <TableCell className="text-foreground/90">{"\n"}</TableCell>
+                      <TableCell className="text-foreground/90">{"\n"}</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
