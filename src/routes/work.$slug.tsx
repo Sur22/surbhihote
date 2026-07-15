@@ -723,7 +723,8 @@ If AE's want to build a custom audience to for the clients would require to send
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-4xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Vision —&nbsp; From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
+                  Vision&nbsp;&nbsp;
+{"\n"}From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
                 </p>
 
                 <div>
