@@ -747,7 +747,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 rel="noopener noreferrer"
                 className="underline hover:text-foreground transition-colors"
               >
-                click here
+                click here to see details
               </a>
             </p>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
