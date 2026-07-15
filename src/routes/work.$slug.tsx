@@ -777,7 +777,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
 
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Plan{"\n"}Centralize, Connect, Collaborate&nbsp;
+                  Plan{"\n"}Centralize -Build a library to show the collection of all the the Tech Pack, CAD, files which are get added to the individual products.{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate paperwork.{"\n"}Connect{"\n"}Collaborate&nbsp;
                 </p>
               </div>
             </div>
