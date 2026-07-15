@@ -766,10 +766,20 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableCell className="text-background/90">Provide transparency and trackability in PLM&nbsp;</TableCell>
                           <TableCell className="text-background/90">Trust,User satisfaction&nbsp;</TableCell>
                         </TableRow>
-                        <TableRow className="hover:bg-background/5">
+                        <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Sharing the finalized document of the product with factories and clients</TableCell>
                           <TableCell className="text-background/90">Standardization of the process&nbsp;&nbsp;</TableCell>
                           <TableCell className="text-background/90">User Satisfaction&nbsp;</TableCell>
+                        </TableRow>
+                        <TableRow className="border-b border-background/10 hover:bg-background/5">
+                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
+                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
+                          <TableCell className="text-background/90">Placeholder result</TableCell>
+                        </TableRow>
+                        <TableRow className="hover:bg-background/5">
+                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
+                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
+                          <TableCell className="text-background/90">Placeholder result</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
