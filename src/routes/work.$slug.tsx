@@ -740,7 +740,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
             </div>
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
-            <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               <strong>Building Libraries (Quick Win)-</strong>{"\u00a0"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}
               Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\n"}
