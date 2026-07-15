@@ -675,8 +675,8 @@ If AE's want to build a custom audience to for the clients would require to send
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
             {c.slug === "fjord2" 
-              ? "This workshop was not a typical design thinking workshop,It was customized based on the project and the available information to make most out of one and a half day of time we had .\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
-              : (c.slug === "solace" ? "Building an efficient and automated PLM ecosystem which reduce operational expenses, builds standardized workflows and improve margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
+              ? "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had.\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
+              : (c.slug === "solace" ? "Building an efficient and automated PLM ecosystem that reduces operational expenses, builds standardized workflows, and improves margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
             }
           </p>
         )}
@@ -698,37 +698,37 @@ If AE's want to build a custom audience to for the clients would require to send
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Stop hunting for details across scattered files.</TableCell>
                       <TableCell className="text-foreground/90">Reduce rework and manual error/data entry</TableCell>
-                      <TableCell className="text-foreground/90">Lower Accounting Error, Automation</TableCell>
+                      <TableCell className="text-foreground/90">Lower accounting errors, automation</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Change something once, not in ten documents.</TableCell>
                       <TableCell className="text-foreground/90">Cut cycle time.</TableCell>
-                      <TableCell className="text-foreground/90">Reduce Time on Task,{"\n"}Automation</TableCell>
+                      <TableCell className="text-foreground/90">Reduced time on task,{"\n"}automation</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Keep clients/factories current in real time.</TableCell>
-                      <TableCell className="text-foreground/90">Real time collaboration , communication & updates</TableCell>
-                      <TableCell className="text-foreground/90">Increased Speed{"\n"}& Workflow Efficiency</TableCell>
+                      <TableCell className="text-foreground/90">Real-time collaboration, communication & updates</TableCell>
+                      <TableCell className="text-foreground/90">Increased speed{"\n"}& workflow efficiency</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Repurpose & Reuse the existing Designs (CAD, Tech pack files)&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Reduce OpEx expenses and the time.</TableCell>
-                      <TableCell className="text-foreground/90">Increase Speed,{"\n"}Reduce Expenses&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Repurpose & reuse existing designs (CAD, tech pack files)&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Reduce OpEx and time.</TableCell>
+                      <TableCell className="text-foreground/90">Increased speed,{"\n"}reduced expenses&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Tracking all changes easily&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Provide transparency and trackability in PLM&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Trust,User satisfaction&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Track all changes easily&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Provide transparency and traceability in PLM&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Trust, user satisfaction&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Sharing the finalized document of the product with factories and clients</TableCell>
-                      <TableCell className="text-foreground/90">Standardization of the process&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User Satisfaction,{"\n"}Client retaintion{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
+                      <TableCell className="text-foreground/90">Standardize the process&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">User satisfaction,{"\n"}client retention{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Modifying&nbsp; CAD and Tech pack file in the platform&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User don't leave the platform,{"\n"}Differentiator form the competitiors{"\u00a0"}</TableCell>
-                      <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}Retain & Attract New Clients{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Users don't leave the platform,{"\n"}differentiator from competitors{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}retain & attract new clients{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">{"\n"}</TableCell>
@@ -751,15 +751,15 @@ If AE's want to build a custom audience to for the clients would require to send
               </a>
             </p>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {"\n"}<strong>1.Centralize</strong>{"\n"}
-              <strong>Building Libraries (Quick Win)-</strong>{"\u00a0"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}
+              {"\n"}<strong>1. Centralize</strong>{"\n"}
+              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
-              <strong>2.Collaboration</strong>{"\u00a0"}{"\n"}
-              <strong>Standardization -</strong> Bridge the gap between pre production and production stage of a Product lifecycle there is a need of a standardized document which will contain all the details of the product like all the designs, material, trims, detailed instructions which can be sent to the manufacturing factory. If there are modifications to it the details then a new version of the document will be created and sent to the factories making it easier to track the changes and communicate it the factories.{"\n"}
+              <strong>2. Collaboration</strong>{"\u00a0"}{"\n"}
+              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\n"}
               {"\n"}
-              <strong>3.Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
-              <strong>Automation -</strong> Transition form pre production to production stage came with lot of manual work of entering the material and trims details manually, In addition to that you have to add the costs for the product and create a bill of material. Which was a time consuming task and errors occurred frequently in calculations.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
-              Connecting all the the different parts of the platform to talk to each other and connect the workflow from Pre - production to Production stage enabling the ease of handling the process, documents, Cost sheet, Changes in product and collaborate with clients , factories and internally to make the workflow better and efficient.{"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>3. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
+              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\u00a0"}{"\u00a0"}{"\n"}
             </p>
           </>
         )}
