@@ -681,6 +681,82 @@ If AE's want to build a custom audience to for the clients would require to send
           </p>
         )}
 
+        {c.slug === "solace" && (
+          <>
+            <div className="my-12">
+              <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Goals</h4>
+              <div className="overflow-hidden rounded-sm border border-foreground/20">
+                <Table>
+                  <TableHeader>
+                    <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                      <TableHead className="text-foreground font-semibold">User</TableHead>
+                      <TableHead className="text-foreground font-semibold">Business</TableHead>
+                      <TableHead className="text-foreground font-semibold">Result</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Stop hunting for details across scattered files.</TableCell>
+                      <TableCell className="text-foreground/90">Reduce rework and manual error/data entry</TableCell>
+                      <TableCell className="text-foreground/90">Decrease Accounting Error,{"\n"}Automation</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Change something once, not in ten documents.</TableCell>
+                      <TableCell className="text-foreground/90">Cut cycle time.</TableCell>
+                      <TableCell className="text-foreground/90">Audtomation</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Keep clients/factories current in real time.</TableCell>
+                      <TableCell className="text-foreground/90">Real time collaboration , communication & updates</TableCell>
+                      <TableCell className="text-foreground/90">Increased Speed and Workflow Efficiency</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Repurpose & Reuse the existing Designs (CAD, Tech pack files)&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Reduce OpEx expenses and the time.</TableCell>
+                      <TableCell className="text-foreground/90">Increase Speed,{"\n"}Reduce Expenses&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Tracking all changes easily&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Provide transparency and trackability in PLM&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Trust,User satisfaction&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Sharing the finalized document of the product with factories and clients</TableCell>
+                      <TableCell className="text-foreground/90">Standardization of the process&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">User Satisfaction&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Modifying&nbsp; CAD and Tech pack file in the platform&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">User don't leave the platform, differentiator form the compatitiors&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Time spent on the platform, Attract Customers&nbsp;</TableCell>
+                    </TableRow>
+                    <TableRow className="hover:bg-foreground/5">
+                      <TableCell className="text-foreground/90">Placeholder user goal</TableCell>
+                      <TableCell className="text-foreground/90">Placeholder business goal</TableCell>
+                      <TableCell className="text-foreground/90">Placeholder result</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
+            </div>
+            <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+              Plan{"\n"}
+              Building Libraries -(Quick Win){"\n"}
+              To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}
+              Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}
+              {"\n"}
+              Automation-{"\u00a0"}{"\n"}
+              Transition form pre production to production stage came with lot of manual work of entering the material and trims details manually, In addition to that you have to add the costs for the product and create a bill of material. Which was a time consuming task and errors occurred frequently in calculations.{"\u00a0"}{"\u00a0"}{"\n"}
+              {"\n"}
+              Standardization -{"\u00a0"}{"\n"}
+              Bridge the gap between pre production and production stage of a Product lifecycle there is a need of a standardized document which will contain all the details of the product like all the designs, material, trims, detailed instructions which can be sent to the manufacturing factory. If there are modifications to it the details then a new version of the document will be created and sent to the factories making it easier to track the changes and communicate it the factories.{"\u00a0"}{"\n"}
+              {"\n"}
+              {"\n"}
+              Connect{"\n"}
+              Collaborate{"\u00a0"}
+            </p>
+          </>
+        )}
 
         {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
