@@ -1584,11 +1584,6 @@ If AE's want to build a custom audience to for the clients would require to send
               <p className="text-lg leading-relaxed text-foreground/85 mb-6">
                 {"\n"}
               </p>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-16">
-                {c.slug === "fjord" 
-                  ? "For testing, we decided to release it in the beta environment as the functionality was drag and drop. I connected with users, asking them to share their screens, and observed how they were using the tool. It was working for them."
-                  : <>For all the tests, I expect a <strong className="font-semibold">90% completion rate</strong> and <strong className="font-semibold">90% error-free rate</strong> because the prototype is not fully functioning, and users might take alternatives that have not been built up for completing the tasks. Conduct Usability Testing then conducted in-person testing with <strong className="font-semibold">5 participants,</strong> and created transcripts for each participant based on my observation of their interaction with the prototype. I jotted down their mistakes, slips, and any confusion they expressed in the process. These transcripts are perfect raw material for summarizing the patterns of users' interaction with the prototype.</>}
-              </p>
             </>
           )}
 
