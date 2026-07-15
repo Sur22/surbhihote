@@ -757,19 +757,19 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="text-background/90">Repurpose & Reuse the existing CAD, Tech pack files</TableCell>
-                          <TableCell className="text-background/90">Reduce&nbsp;</TableCell>
-                          <TableCell className="text-background/90">Speed&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Repurpose & Reuse the existing Designs (CAD, Tech pack files)&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Reduce OpEx expenses and the time.</TableCell>
+                          <TableCell className="text-background/90">Speed,</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder result</TableCell>
+                          <TableCell className="text-background/90">Tracking all changes easily&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Provide transparency and trackability in PLM&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Trust,User satisfaction&nbsp;</TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
-                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder result</TableCell>
+                          <TableCell className="text-background/90">{"\n"}</TableCell>
+                          <TableCell className="text-background/90">Better communication & collaboration&nbsp;</TableCell>
+                          <TableCell className="text-background/90">User Satisfaction&nbsp;</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
