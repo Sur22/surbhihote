@@ -738,9 +738,6 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableHead className="text-background font-semibold">User</TableHead>
                           <TableHead className="text-background font-semibold">Business</TableHead>
                           <TableHead className="text-background font-semibold">Result</TableHead>
-                          <TableHead className="text-background font-semibold">Placeholder A</TableHead>
-                          <TableHead className="text-background font-semibold">Placeholder B</TableHead>
-                          <TableHead className="text-background font-semibold">Placeholder C</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
@@ -748,25 +745,16 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableCell className="text-background/90">Stop hunting for details across scattered files.</TableCell>
                           <TableCell className="text-background/90">Reduce rework and manual error/data entry</TableCell>
                           <TableCell className="text-background/90">Decrease Accounting Error{"\n"}Faster Time on Task{"\n"}{"\n"}</TableCell>
-                          <TableCell className="text-background/90">Placeholder data A1</TableCell>
-                          <TableCell className="text-background/90">Placeholder data B1</TableCell>
-                          <TableCell className="text-background/90">Placeholder data C1</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Change something once, not in ten documents.</TableCell>
                           <TableCell className="text-background/90">Cut cycle time.</TableCell>
                           <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
-                          <TableCell className="text-background/90">Placeholder data A2</TableCell>
-                          <TableCell className="text-background/90">Placeholder data B2</TableCell>
-                          <TableCell className="text-background/90">Placeholder data C2</TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
                           <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
                           <TableCell className="text-background/90">{"\u00a0"}Increased Speed and Workflow EfficiencySpeed,{"\n"}</TableCell>
-                          <TableCell className="text-background/90">Placeholder data A3</TableCell>
-                          <TableCell className="text-background/90">Placeholder data B3</TableCell>
-                          <TableCell className="text-background/90">Placeholder data C3</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
