@@ -735,7 +735,6 @@ If AE's want to build a custom audience to for the clients would require to send
                     <Table>
                       <TableHeader>
                         <TableRow className="border-b border-background/20 hover:bg-transparent">
-                          <TableHead className="text-background font-semibold">Pillar</TableHead>
                           <TableHead className="text-background font-semibold">User</TableHead>
                           <TableHead className="text-background font-semibold">Business</TableHead>
                           <TableHead className="text-background font-semibold">Result</TableHead>
@@ -743,19 +742,16 @@ If AE's want to build a custom audience to for the clients would require to send
                       </TableHeader>
                       <TableBody>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="font-semibold text-background">Centralize</TableCell>
                           <TableCell className="text-background/90">Stop hunting for details across scattered files.</TableCell>
                           <TableCell className="text-background/90">Reduce rework and manual error.</TableCell>
                           <TableCell className="text-background/90">Reduce manual accounting errors and data entry.</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="font-semibold text-background">Connect</TableCell>
                           <TableCell className="text-background/90">Change something once, not in ten documents.</TableCell>
                           <TableCell className="text-background/90">Cut cycle time.</TableCell>
                           <TableCell className="text-background/90">Faster and efficient workflow.</TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
-                          <TableCell className="font-semibold text-background">Collaborate</TableCell>
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
                           <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
                           <TableCell className="text-background/90">Smoother workflow with updated data.</TableCell>
