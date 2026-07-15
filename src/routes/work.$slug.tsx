@@ -787,7 +787,22 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
 
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Plan{"\n"}Building Libraries -(Quick Wins){"\n"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}{"\u00a0"}Bridgeing the gap between pre production and production stage of a Product lifecycle which come with lot of manual work{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}Connect{"\n"}Collaborate&nbsp;
+                  Plan{"\n"}
+                  Building Libraries -(Quick Win){"\n"}
+                  To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}
+                  Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}
+                  {"\n"}
+                  Automation-{"\u00a0"}{"\n"}
+                  Transition form pre production to production stage came with lot of manual work of entering the material and trims details manually, In addition to that you have to add the costs for the product and create a bill of material. Which was a time consuming task and errors occurred frequently in calculations.{"\u00a0"}{"\u00a0"}{"\n"}
+                  {"\n"}
+                  Standardization -{"\u00a0"}{"\n"}
+                  {"\n"}
+                  Bridge the gap between pre production and production stage of a Product lifecycle there is a need of a standardized document which will contain all the details of the product like all the designs, material, trims, detailed instructions which can be sent to the manufacturing factory. If there are modifications to it the details then a new version of the document will be created and sent to the factories making it easier to track the changes and communicate it the factories.{"\u00a0"}{"\n"}
+                  {"\n"}
+                  {"\n"}
+                  Standardization-{"\u00a0"}{"\n"}
+                  Connect{"\n"}
+                  Collaborate{"\u00a0"}
                 </p>
               </div>
             </div>
