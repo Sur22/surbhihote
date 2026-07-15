@@ -723,27 +723,22 @@ If AE's want to build a custom audience to for the clients would require to send
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Vision — Centralize/Connect/Collaborate, stated as a future-state sentence, not just a diagram. Something like: move fashion brands from scattered documents to a single connected PLM ecosystem. (Your meta description already says this well — better than the page body does.)
-                  {"\n\n\n"}
-                  Goals — the pillar → user goal + business goal + key result table I sketched earlier. This is the tier that carries your −46% / +22% / −27% numbers and turns them into evidence.
-                  {"\n\n\n"}
-                  Plan — even three lines: what you attacked first in the 4 weeks, what you deferred, why that sequence.
-                  {"\n\n\n"}
-                  &nbsp;Centralize&nbsp;
+                  Vision —&nbsp; From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
+                  {"\n\n"}
+                  Goals&nbsp;
                   {"\n"}User: stop hunting for details across scattered files.
                   {"\n"}Business: reduce rework and manual error.
                   {"\n"}Result: Reduce manual accounting errors and data entry.
-                  {"\n\n\n"}
-                  Connect&nbsp;
-                  {"\n"}User: change something once, not in ten documents.
+                  {"\n\n"}
+                  User: change something once, not in ten documents.
                   {"\n"}Business: cut cycle time.
                   {"\n"}Result: faster and efficient workflow.
-                  {"\n\n\n"}
-                  Collaborate&nbsp;
-                  {"\n"}User: keep clients/factories current in real time.
+                  {"\n\n"}
+                  User: keep clients/factories current in real time.
                   {"\n"}Business: differentiator from the competitors&nbsp;&nbsp;
                   {"\n"}Result: smoother workflow with updated data.
                   {"\n"}&nbsp;
+                  {"\n"}Plan- Centralize ,Connect ,Collaborate&nbsp;
                 </p>
               </div>
             </div>
