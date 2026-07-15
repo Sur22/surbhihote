@@ -787,7 +787,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
 
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Plan{"\n"}Building Libraries -(Quick Wins){"\n"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}{"\n"}{"\n"}{"\n"}Connect{"\n"}Collaborate&nbsp;
+                  Plan{"\n"}Building Libraries -(Quick Wins){"\n"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}Build a the Material & Trims library so it can be added to the products directly and eliminate related manual data entry and paperwork.{"\n"}{"\u00a0"}Bridgeing the gap between pre production and production stage of a Product lifecycle which come with lot of manual work{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}Connect{"\n"}Collaborate&nbsp;
                 </p>
               </div>
             </div>
