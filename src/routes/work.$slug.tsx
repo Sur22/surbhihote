@@ -413,7 +413,7 @@ If AE's want to build a custom audience to for the clients would require to send
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {(c.slug === "fjord2") ? "Survey" : (c.slug === "solace") ? "for\u00a0" : "User Interview"}
+              {(c.slug === "fjord2") ? "Survey" : (c.slug === "solace") ? "User Interview Insights" : "User Interview"}
             </h3>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
@@ -525,7 +525,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             )}
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">{(c.slug === "solace") ? "for\u00a0" : "User Interview Insights\u00a0"}</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">{(c.slug === "solace") ? "User Interview Insights" : "User Interview Insights\u00a0"}</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
@@ -766,7 +766,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 </div>
 
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Plan — Centralize, Connect, Collaborate&nbsp;
+                  Plan{"\n"}Centralize, Connect, Collaborate&nbsp;
                 </p>
               </div>
             </div>
