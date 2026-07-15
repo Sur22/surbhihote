@@ -725,7 +725,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div>
                   <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Vision&nbsp;</h4>
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    Building an automated PLM ecosystem reducing Operational expenses, standerdized workflows and improving margins.&nbsp;
+                    Building an efficient and automated PLM ecosystem reducing operational expenses, standardized workflows and improving margins.&nbsp;
                   </p>
                 </div>
 
@@ -796,7 +796,6 @@ If AE's want to build a custom audience to for the clients would require to send
                   Transition form pre production to production stage came with lot of manual work of entering the material and trims details manually, In addition to that you have to add the costs for the product and create a bill of material. Which was a time consuming task and errors occurred frequently in calculations.{"\u00a0"}{"\u00a0"}{"\n"}
                   {"\n"}
                   Standardization -{"\u00a0"}{"\n"}
-                  {"\n"}
                   Bridge the gap between pre production and production stage of a Product lifecycle there is a need of a standardized document which will contain all the details of the product like all the designs, material, trims, detailed instructions which can be sent to the manufacturing factory. If there are modifications to it the details then a new version of the document will be created and sent to the factories making it easier to track the changes and communicate it the factories.{"\u00a0"}{"\n"}
                   {"\n"}
                   {"\n"}
