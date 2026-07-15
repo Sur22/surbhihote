@@ -698,37 +698,37 @@ If AE's want to build a custom audience to for the clients would require to send
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Stop hunting for details across scattered files.</TableCell>
                       <TableCell className="text-foreground/90">Reduce rework and manual error/data entry</TableCell>
-                      <TableCell className="text-foreground/90">Lower Accounting Error, Automation</TableCell>
+                      <TableCell className="text-foreground/90">Lower accounting errors, automation</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Change something once, not in ten documents.</TableCell>
                       <TableCell className="text-foreground/90">Cut cycle time.</TableCell>
-                      <TableCell className="text-foreground/90">Reduce Time on Task,{"\n"}Automation</TableCell>
+                      <TableCell className="text-foreground/90">Reduced time on task,{"\n"}automation</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Keep clients/factories current in real time.</TableCell>
-                      <TableCell className="text-foreground/90">Real time collaboration , communication & updates</TableCell>
-                      <TableCell className="text-foreground/90">Increased Speed{"\n"}& Workflow Efficiency</TableCell>
+                      <TableCell className="text-foreground/90">Real-time collaboration, communication & updates</TableCell>
+                      <TableCell className="text-foreground/90">Increased speed{"\n"}& workflow efficiency</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Repurpose & Reuse the existing Designs (CAD, Tech pack files)&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Reduce OpEx expenses and the time.</TableCell>
-                      <TableCell className="text-foreground/90">Increase Speed,{"\n"}Reduce Expenses&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Repurpose & reuse existing designs (CAD, tech pack files)&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Reduce OpEx and time.</TableCell>
+                      <TableCell className="text-foreground/90">Increased speed,{"\n"}reduced expenses&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Tracking all changes easily&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Provide transparency and trackability in PLM&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Trust,User satisfaction&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Track all changes easily&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Provide transparency and traceability in PLM&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Trust, user satisfaction&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Sharing the finalized document of the product with factories and clients</TableCell>
-                      <TableCell className="text-foreground/90">Standardization of the process&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User Satisfaction,{"\n"}Client retaintion{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
+                      <TableCell className="text-foreground/90">Standardize the process&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">User satisfaction,{"\n"}client retention{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
-                      <TableCell className="text-foreground/90">Modifying&nbsp; CAD and Tech pack file in the platform&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User don't leave the platform,{"\n"}Differentiator form the competitiors{"\u00a0"}</TableCell>
-                      <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}Retain & Attract New Clients{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Users don't leave the platform,{"\n"}differentiator from competitors{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}retain & attract new clients{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">{"\n"}</TableCell>
