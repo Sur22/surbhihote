@@ -731,11 +731,11 @@ If AE's want to build a custom audience to for the clients would require to send
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  {"\n\n\n"}
+                  {"\n"}
                   Centralize&nbsp;
                   {"\n"}User: stop hunting for details across scattered files.
                   {"\n"}Business: reduce rework and manual error.
-                  {"\n"}Result: Reduce manual accounting errors.
+                  {"\n"}Result: Reduce manual accounting errors and data entry.
                   {"\n\n\n"}
                   Connect&nbsp;
                   {"\n"}User: change something once, not in ten documents.
@@ -745,7 +745,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   Collaborate&nbsp;
                   {"\n"}User: keep clients/factories current in real time.
                   {"\n"}Business: differentiator from the competitors&nbsp;&nbsp;
-                  {"\n"}Result: −27% workflow errors.
+                  {"\n"}Result: smoother workflow with less.
                   {"\n"}&nbsp;
                 </p>
               </div>
