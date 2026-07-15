@@ -706,8 +706,8 @@ If AE's want to build a custom audience to for the clients would require to send
           />
         )}
 
-        {(c.slug !== "fjord2" && c.slug !== "solace") && (c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <div className={`${c.slug === "solace" ? "dark:bg-white" : "bg-secondary"} rounded-sm p-6 md:p-10 flex justify-center`}>
+        {c.slug === "fjord" && (
+          <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
             <img
               src={uxStrategyImg.url}
               alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
