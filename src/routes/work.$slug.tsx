@@ -725,7 +725,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div>
                   <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Vision&nbsp;</h4>
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    Building an automated PLM ecosystem reducing Operational expenses, streamlining workflows and improving margins.&nbsp;
+                    Building an automated PLM ecosystem reducing Operational expenses, standerdized workflows and improving margins.&nbsp;
                   </p>
                 </div>
 
@@ -1151,7 +1151,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
             <li>Tech Pack file</li>
-            <li>Fabric & Trims Cateloge&nbsp;</li>
+            <li>Fabric & Trims Catelloge&nbsp;</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
