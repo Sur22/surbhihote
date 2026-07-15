@@ -689,8 +689,8 @@ If AE's want to build a custom audience to for the clients would require to send
                 <Table>
                   <TableHeader>
                     <TableRow className="border-b border-foreground/20 hover:bg-transparent">
-                      <TableHead className="text-foreground font-semibold">User</TableHead>
-                      <TableHead className="text-foreground font-semibold">Business</TableHead>
+                      <TableHead className="text-foreground font-semibold">User Goals&nbsp;</TableHead>
+                      <TableHead className="text-foreground font-semibold">Business Goals</TableHead>
                       <TableHead className="text-foreground font-semibold">Expected Result</TableHead>
                     </TableRow>
                   </TableHeader>
