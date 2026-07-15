@@ -530,16 +530,16 @@ If AE's want to build a custom audience to for the clients would require to send
                 {c.slug === "solace" ? (
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                     <p>
-                      "It's difficult to put together all the details about the style in one place as different detail are in different files."
+                      <em className="italic">"It's difficult to put together all the details about the style in one place as different detail are in different files."</em>
                       {"\n"}- Technical Designer
                       {"\n\u200d\n"}
-                      "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"
+                      <em className="italic">"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"</em>
                       {"\n"}- Fashion Designer
                       {"\n\u200d\n"}
-                      "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
+                      <em className="italic">"Every time there are changes we have to keep factories updated with that and provide them the updated project related files"</em>
                       {"\n"}- Product Development Manager
                       {"\n\n"}
-                      "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
+                      <em className="italic">"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "</em>
                       {"\n"}- Product Development Manager
                       {"\n\u200d"}
                     </p>
