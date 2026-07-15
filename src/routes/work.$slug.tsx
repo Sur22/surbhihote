@@ -759,7 +759,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Repurpose & Reuse the existing Designs (CAD, Tech pack files)&nbsp;</TableCell>
                           <TableCell className="text-background/90">Reduce OpEx expenses and the time.</TableCell>
-                          <TableCell className="text-background/90">Speed,</TableCell>
+                          <TableCell className="text-background/90">Increase Speed,{"\n"}Reduce Expenses&nbsp;</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Tracking all changes easily&nbsp;</TableCell>
