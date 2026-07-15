@@ -768,7 +768,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
                           <TableCell className="text-background/90">Better communication & collaboration&nbsp;</TableCell>
-                          <TableCell className="text-background/90">{"\n"}</TableCell>
+                          <TableCell className="text-background/90">Better communication & collaboration&nbsp;</TableCell>
                           <TableCell className="text-background/90">User Satisfaction&nbsp;</TableCell>
                         </TableRow>
                       </TableBody>
