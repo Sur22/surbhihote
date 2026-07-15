@@ -739,12 +739,12 @@ If AE's want to build a custom audience to for the clients would require to send
                   Connect&nbsp;
                   {"\n"}User: change something once, not in ten documents.
                   {"\n"}Business: cut cycle time.
-                  {"\n"}Result: Faster and efficient workflow.
+                  {"\n"}Result: faster and efficient workflow.
                   {"\n\n\n"}
                   Collaborate&nbsp;
                   {"\n"}User: keep clients/factories current in real time.
                   {"\n"}Business: differentiator from the competitors&nbsp;&nbsp;
-                  {"\n"}Result: smoother workflow with less.
+                  {"\n"}Result: smoother workflow with updated data.
                   {"\n"}&nbsp;
                 </p>
               </div>
