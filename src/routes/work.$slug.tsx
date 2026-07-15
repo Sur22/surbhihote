@@ -725,7 +725,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div>
                   <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Vision&nbsp;</h4>
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    Building an efficient and automated PLM ecosystem reducing operational expenses, standardized workflows and improving margins.&nbsp;
+                    Building an efficient and automated PLM ecosystem which reduce operational expenses, builds standardized workflows and improve margins.&nbsp;
                   </p>
                 </div>
 
@@ -753,7 +753,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
-                          <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
+                          <TableCell className="text-background/90">Real time collaboration , communication & updates</TableCell>
                           <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
@@ -772,9 +772,9 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableCell className="text-background/90">User Satisfaction&nbsp;</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder result</TableCell>
+                          <TableCell className="text-background/90">Modifying&nbsp; CAD and Tech pack file in the platform&nbsp;&nbsp;</TableCell>
+                          <TableCell className="text-background/90">User don't leave the platform, differentiator form the compatitiors&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Time spent on the platform, Attract Customers&nbsp;</TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
                           <TableCell className="text-background/90">Placeholder user goal</TableCell>
@@ -799,7 +799,6 @@ If AE's want to build a custom audience to for the clients would require to send
                   Bridge the gap between pre production and production stage of a Product lifecycle there is a need of a standardized document which will contain all the details of the product like all the designs, material, trims, detailed instructions which can be sent to the manufacturing factory. If there are modifications to it the details then a new version of the document will be created and sent to the factories making it easier to track the changes and communicate it the factories.{"\u00a0"}{"\n"}
                   {"\n"}
                   {"\n"}
-                  Standardization-{"\u00a0"}{"\n"}
                   Connect{"\n"}
                   Collaborate{"\u00a0"}
                 </p>
