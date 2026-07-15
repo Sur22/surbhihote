@@ -722,10 +722,12 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="relative z-10">
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-4xl mx-auto">
-                <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                  Vision&nbsp;&nbsp;
-{"\n"}From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
-                </p>
+                <div>
+                  <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Vision&nbsp;</h4>
+                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
+                  </p>
+                </div>
 
                 <div>
                   <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Goals&nbsp;</h4>
