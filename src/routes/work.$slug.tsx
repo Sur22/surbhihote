@@ -530,17 +530,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 {c.slug === "solace" ? (
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                     <p>
-                      "It's difficult to put together all the details about the style in one place as different detail are in different files."
-                      {"\n"}-Technical Designer
-                      {"\n\n"}
-                      "If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult and time consuming"
-                      {"\n"}-Fashion Designer
-                      {"\n\n"}
-                      "Every time there are changes we have to keep factories updated with that and provide them the updated project related files"
-                      {"\n"}- Product Development Manager
-                      {"\n\n"}
-                      "We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "
-                      {"\n"}- Product Development Manager&nbsp;
+                      Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I did&nbsp;desk interviews with 5 users&nbsp; lean sampling.I&nbsp;chose guerrilla, in-context research to get signal fast without derailing a fast-moving team.I asked them question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
                     </p>
                   </div>
                 ) : (
