@@ -669,14 +669,14 @@ If AE's want to build a custom audience to for the clients would require to send
       <section id={c.slug === "fjord2" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <h3 className="font-serif text-3xl mb-6 font-medium">{c.strategySectionSubtitle || "Product + Design Strategy"}</h3>
+          <h3 className="font-serif text-3xl mb-6 font-medium">{c.slug === "solace" ? "Defining golas" : (c.strategySectionSubtitle || "Product + Design Strategy")}</h3>
         )}
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
             {c.slug === "fjord2" 
               ? "This workshop was not a typical design thinking workshop,It was customized based on the project and the available information to make most out of one and a half day of time we had .\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
-              : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop."
+              : (c.slug === "solace" ? "The First step is to understand what are the business and users goals\u00a0" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
             }
           </p>
         )}
@@ -743,18 +743,18 @@ If AE's want to build a custom audience to for the clients would require to send
                       <TableBody>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Stop hunting for details across scattered files.</TableCell>
-                          <TableCell className="text-background/90">Reduce rework and manual error.</TableCell>
-                          <TableCell className="text-background/90">Reduce manual accounting errors and data entry.</TableCell>
+                          <TableCell className="text-background/90">Reduce rework and manual error/data entry</TableCell>
+                          <TableCell className="text-background/90">Decrease Accounting Error{"\n"}Faster Time on Task{"\n"}{"\n"}</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Change something once, not in ten documents.</TableCell>
                           <TableCell className="text-background/90">Cut cycle time.</TableCell>
-                          <TableCell className="text-background/90">Faster and efficient workflow.</TableCell>
+                          <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
                         </TableRow>
                         <TableRow className="hover:bg-background/5">
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
                           <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
-                          <TableCell className="text-background/90">Smoother workflow with updated data.</TableCell>
+                          <TableCell className="text-background/90">{"\u00a0"}Increased Speed and Workflow EfficiencySpeed,{"\n"}</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
