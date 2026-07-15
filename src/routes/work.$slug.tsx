@@ -725,7 +725,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 <div>
                   <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Vision&nbsp;</h4>
                   <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    From scattered documents to a single connected PLM ecosystem reducing Operational expenses and COGS and improving margins.&nbsp;
+                    Building an automated PLM ecosystem reducing Operational expenses, streamlining workflows and improving margins.&nbsp;
                   </p>
                 </div>
 
