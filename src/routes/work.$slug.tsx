@@ -751,15 +751,15 @@ If AE's want to build a custom audience to for the clients would require to send
                           <TableCell className="text-background/90">Cut cycle time.</TableCell>
                           <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
                         </TableRow>
-                        <TableRow className="hover:bg-background/5">
+                        <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
                           <TableCell className="text-background/90">Differentiator from the competitors.</TableCell>
-                          <TableCell className="text-background/90">{"\u00a0"}Increased Speed and Workflow EfficiencySpeed,{"\n"}</TableCell>
+                          <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
-                          <TableCell className="text-background/90">Placeholder user goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder business goal</TableCell>
-                          <TableCell className="text-background/90">Placeholder result</TableCell>
+                          <TableCell className="text-background/90">Repurpose & Reuse the existing CAD, Tech pack files</TableCell>
+                          <TableCell className="text-background/90">Reduce&nbsp;</TableCell>
+                          <TableCell className="text-background/90">Speed&nbsp;</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Placeholder user goal</TableCell>
