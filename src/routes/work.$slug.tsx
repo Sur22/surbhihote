@@ -1126,7 +1126,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
             <li>Tech Pack file</li>
-            <li>&nbsp;Fabric & Trims Cateloge&nbsp;</li>
+            <li>Fabric & Trims Cateloge&nbsp;</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
