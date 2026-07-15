@@ -744,12 +744,12 @@ If AE's want to build a custom audience to for the clients would require to send
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Stop hunting for details across scattered files.</TableCell>
                           <TableCell className="text-background/90">Reduce rework and manual error/data entry</TableCell>
-                          <TableCell className="text-background/90">Decrease Accounting Error{"\n"}Faster Time on Task{"\n"}{"\n"}</TableCell>
+                          <TableCell className="text-background/90">Decrease Accounting Error,{"\n"}Automation</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Change something once, not in ten documents.</TableCell>
                           <TableCell className="text-background/90">Cut cycle time.</TableCell>
-                          <TableCell className="text-background/90">Increased Speed and Workflow Efficiency</TableCell>
+                          <TableCell className="text-background/90">Audtomation</TableCell>
                         </TableRow>
                         <TableRow className="border-b border-background/10 hover:bg-background/5">
                           <TableCell className="text-background/90">Keep clients/factories current in real time.</TableCell>
