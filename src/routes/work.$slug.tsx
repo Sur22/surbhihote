@@ -740,6 +740,16 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
             </div>
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
+            <p className="text-base leading-relaxed text-foreground/70 mb-6">
+              <a
+                href="https://docs.google.com/document/d/1Hyo1VYT0LFqGd6DyTtLSt_JilD68b9um/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+                click here
+              </a>
+            </p>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {"\n"}<strong>1.Centralize</strong>{"\n"}
               <strong>Building Libraries (Quick Win)-</strong>{"\u00a0"}To show the collection of all the the Tech Pack and CAD files which are get added to the individual products which is already available on the platform{"\u00a0"}{"\n"}
