@@ -533,11 +533,10 @@ If AE's want to build a custom audience to for the clients would require to send
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
             )}
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">UX Strategy&nbsp;</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">User Interview Insights&nbsp;</h3>
               <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    <p className="font-semibold mb-4">User Interview Insights&nbsp;</p>
                     <p>
                       "It's difficult to put together all the details about the style in one place as different detail are in different files."
                       {"\n"}-Technical Designer
