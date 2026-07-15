@@ -1817,7 +1817,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <img
               src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
-              className="w-[48.75%] h-auto"
+              className="w-[63.375%] h-auto"
             />
           </div>
         </div>
