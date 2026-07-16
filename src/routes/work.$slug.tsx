@@ -754,18 +754,8 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
             </div>
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
-            <p className="text-base leading-relaxed text-foreground/70 mb-6">
-              <a
-                href="https://docs.google.com/document/d/1Hyo1VYT0LFqGd6DyTtLSt_JilD68b9um/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-foreground transition-colors"
-              >
-                click here to see details
-              </a>
-            </p>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {"\n"}<strong>1. Centralize</strong>{"\n"}
+              <strong>1. Centralize</strong>{"\n"}
               <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
               <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
