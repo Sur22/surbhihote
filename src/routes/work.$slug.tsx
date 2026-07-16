@@ -747,7 +747,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
                       <TableCell className="text-foreground/90">Standardize the process&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User satisfaction, client retention{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">User satisfaction, Client retention{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
