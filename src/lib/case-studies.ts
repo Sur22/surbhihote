@@ -50,9 +50,9 @@ export type CaseStudy = {
 const defaultMeta = {
   role: "UI/UX Designer",
   timeframe: "2 Months",
-  tools: "Sketchbook & Pencil, Withe board, Adobe XD, Miro, Google forms",
+  tools: "Sketchbook & Pencil, Whiteboard, Adobe XD, Miro, Google forms",
   tasksPerformed:
-    "End-to-End Design,Lean UX,Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
+    "End-to-End Design, Lean UX, Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
     "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
   goal:
