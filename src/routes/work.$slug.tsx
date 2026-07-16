@@ -751,7 +751,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Users don't leave the platform, differentiator from {"\u00a0"}competitors</TableCell>
+                      <TableCell className="text-foreground/90">Users don't leave the platform, Differentiator from the competitors</TableCell>
                       <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}retain & attract new clients{"\u00a0"}</TableCell>
                     </TableRow>
                   </TableBody>
