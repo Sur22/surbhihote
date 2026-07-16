@@ -50,9 +50,9 @@ export type CaseStudy = {
 const defaultMeta = {
   role: "UI/UX Designer",
   timeframe: "2 Months",
-  tools: "Sketchbook & Pencil, Withe board, Adobe XD, Miro, Google forms",
+  tools: "Sketchbook & Pencil, Whiteboard, Adobe XD, Miro, Google forms",
   tasksPerformed:
-    "End-to-End Design,Lean UX,Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
+    "End-to-End Design, Lean UX, Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
     "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
   goal:
@@ -251,7 +251,7 @@ const _caseStudies: CaseStudy[] = [
     year: "2024",
     ...defaultMeta,
     overview:
-      "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role, the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins.",
+      "The GRID is end-to-end supply chain visibility from product conception to distribution with real-time updates and analytics on sourcing, product development, production, and shipping. For companies running their supply chain on Excel sheets and point solutions, the GRID functions as the ERP and as an intuitive supply chain productivity layer. For companies that have legacy PIMs and ERPs, the GRID integrates to connect people, data, and workflows. In either role, the GRID delivers quick time to value by eliminating errors and digitizing manual processes thereby reducing OpEx and COGS and improving margins.",
     goal:
       "As a solution to the problem, we are providing an easy way to manage notification preferences at all levels — Product, Company, Files, Comments, Product Development phases and stages, Vendors, Billing, etc. — so users can avoid unwanted notifications while still receiving those crucial to their day-to-day responsibilities of handling the product lifecycle efficiently.\n\n\n\n\n\u00a0",
     timeframe: "2 Months",

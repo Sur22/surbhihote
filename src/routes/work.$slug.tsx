@@ -97,7 +97,7 @@ import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset
 import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
 import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
 import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
-import affiliateSiteMockupDashboard2 from "@/assets/Affiliate_site_mockup_dashboard-2.png.asset.json";
+
 import affiliateDashboard4 from "@/assets/Affiliate_site_mockup_dashboard-4.png.asset.json";
 import affiliateDashboardChanges2 from "@/assets/affiliate_dashboar_changes-2.png.asset.json";
 import affiliateRevisedTab3 from "@/assets/Affiliate_site_mockup_revised_tab-3.png.asset.json";
@@ -321,7 +321,7 @@ function CaseStudyPage() {
             {c.slug !== "fjord2" && (
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace" 
-                  ? "The GRID is end-to-end supply chain visibility from product conception\x03to distribution with real-time updates and analytics on sourcing,\x03product development, production, and shipping. For companies \x03running their supply chain on Excel sheets and point solutions, \x03the GRID functions as the ERP and as an intuitive supply chain \x03productivity layer. For companies that have legacy PIMs and\x03ERPs, the GRID integrates to connect people, data, and workflows.\x03In either role,the GRID delivers quick time to value by eliminating \x03errors and digitizing manual processes thereby reducing OpEx and\x03COGS and improving margins." 
+                  ? "The GRID is end-to-end supply chain visibility from product conception to distribution with real-time updates and analytics on sourcing, product development, production, and shipping. For companies running their supply chain on Excel sheets and point solutions, the GRID functions as the ERP and as an intuitive supply chain productivity layer. For companies that have legacy PIMs and ERPs, the GRID integrates to connect people, data, and workflows. In either role, the GRID delivers quick time to value by eliminating errors and digitizing manual processes thereby reducing OpEx and COGS and improving margins." 
                   : c.overview}
               </p>
             )}
@@ -456,7 +456,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     {"\n"}
                   </p>
                   <p>
-                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I did&nbsp;desk interviews with 5 users&nbsp; lean sampling.I&nbsp;chose guerrilla, in-context research to get signal fast without derailing a fast-moving team.I asked them question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
+                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users — enough signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
                   </p>
                 </div>
               ) : (
@@ -577,7 +577,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <div className="mt-16">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs.The survey informed the decision to develop this feature as part of the UX Strategy. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
+              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs. The survey informed the decision to develop this feature as part of the UX Strategy. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
             </p>
             {c.survey && c.survey.trim() !== "" && (
               <div
@@ -742,16 +742,16 @@ If AE's want to build a custom audience to for the clients would require to send
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Track all changes easily&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Provide transparency and traceability in PLM&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Trust, user satisfaction&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Trust, User satisfaction&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
                       <TableCell className="text-foreground/90">Standardize the process&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">User satisfaction, client retention{"\u00a0"}</TableCell>
+                      <TableCell className="text-foreground/90">User satisfaction, Client retention{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Users don't leave the platform, differentiator from {"\u00a0"}competitors</TableCell>
+                      <TableCell className="text-foreground/90">Users don't leave the platform, Differentiator from the competitors</TableCell>
                       <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}retain & attract new clients{"\u00a0"}</TableCell>
                     </TableRow>
                   </TableBody>
@@ -761,7 +761,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               <strong>1. Centralize</strong>{"\n"}
-              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
+              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the Tech Pack and CAD files which get added to individual products already available on the platform,{"\u00a0"}Build the Material & Trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
               <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
               <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
@@ -1223,7 +1223,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <li>Bill of Material (Material and trims costing file)</li>
             <li>Final CAD file</li>
             <li>Tech Pack file</li>
-            <li>Fabric & Trims Catalog&nbsp;</li>
+            <li>Fabric & Trims Catalogue&nbsp;</li>
           </ul>
         )}
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
@@ -1680,7 +1680,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <span>
                 {c.slug === "fjord" 
                   ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks."
-                  : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+                  : <>I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             {c.slug === "fjord" && (
