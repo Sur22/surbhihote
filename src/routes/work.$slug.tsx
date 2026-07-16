@@ -16,6 +16,12 @@ import {
   CarouselDots,
 } from "@/components/ui/carousel";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   Table,
   TableHeader,
   TableBody,
