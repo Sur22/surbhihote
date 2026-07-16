@@ -456,7 +456,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     {"\n"}
                   </p>
                   <p>
-                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. I did&nbsp;desk interviews with 5 users&nbsp; lean sampling.I&nbsp;chose guerrilla, in-context research to get signal fast without derailing a fast-moving team.I asked them question specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
+                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users — enough signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
                   </p>
                 </div>
               ) : (
