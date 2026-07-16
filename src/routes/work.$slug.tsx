@@ -820,7 +820,7 @@ If AE's want to build a custom audience to for the clients would require to send
                   },
                 ].map((ws) => (
                   <AccordionItem key={ws.id} value={ws.id}>
-                    <AccordionTrigger className="text-base font-medium">{ws.title}</AccordionTrigger>
+                    <AccordionTrigger className="text-lg leading-relaxed text-foreground/85 font-bold">{ws.title}</AccordionTrigger>
                     <AccordionContent>
                       <div className="overflow-hidden rounded-md border border-border">
                         <table className="w-full text-sm">
