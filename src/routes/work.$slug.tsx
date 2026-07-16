@@ -1680,7 +1680,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <span>
                 {c.slug === "fjord" 
                   ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks."
-                  : <>I divided functionality in <strong className="font-semibold">6 different tasks</strong> tasks to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+                  : <>I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             {c.slug === "fjord" && (
