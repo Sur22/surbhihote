@@ -554,9 +554,14 @@ If AE's want to build a custom audience to for the clients would require to send
                     </p>
                   </div>
                 ) : (
-                  <p className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {(c as unknown as { userInterviewInsights?: string }).userInterviewInsights || ""}
-                  </p>
+                  <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line space-y-10">
+                    {c.research.userInterviewInsights.map((insight, idx) => (
+                      <p key={idx}>
+                        <em className="italic">{insight.quote}</em>
+                        {"\n"}-{insight.author}
+                      </p>
+                    ))}
+                  </div>
                 )}
               </div>
             </div>

@@ -259,11 +259,11 @@ const _caseStudies: CaseStudy[] = [
       ...defaultMeta.research,
       userInterviewInsights: [
         {
-          quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."',
+          quote: '"Only few notifications are really important to me ,I should be able to control which notifications I want to see and which one I don\'t."',
           author: "Client",
         },
         {
-          quote: '"Once I missed out on an important notification and as a result the product got delayed."',
+          quote: '"Once I missed out on an important notification and as a result the the product got delayed."',
           author: "Production Manager",
         },
         {
@@ -271,7 +271,7 @@ const _caseStudies: CaseStudy[] = [
           author: "Product Development Manager",
         },
         {
-          quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"',
+          quote: '"Managing more than 40 + products for a client company is pretty hectic and notifications are a mess "',
           author: "Company Account Manager",
         },
       ],
