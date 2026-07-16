@@ -1608,7 +1608,7 @@ If AE's want to build a custom audience to for the clients would require to send
             )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
+              <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
             {c.slug !== "fjord" && (
               <p className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
