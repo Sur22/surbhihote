@@ -778,33 +778,33 @@ If AE's want to build a custom audience to for the clients would require to send
             <div className="mt-12">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="work-stream-1">
-                  <AccordionTrigger className="text-base font-medium">Work Stream 1</AccordionTrigger>
+                  <AccordionTrigger className="text-base font-medium">CAD & Techpack Library</AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Work Stream 1 will be added here.</p>
+                    <p className="text-sm text-foreground/70">Details for CAD & Techpack Library will be added here.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="work-stream-2">
-                  <AccordionTrigger className="text-base font-medium">Work Stream 2</AccordionTrigger>
+                  <AccordionTrigger className="text-base font-medium">Materials & Trims Library</AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Work Stream 2 will be added here.</p>
+                    <p className="text-sm text-foreground/70">Details for Materials & Trims Library will be added here.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="work-stream-3">
-                  <AccordionTrigger className="text-base font-medium">Work Stream 3</AccordionTrigger>
+                  <AccordionTrigger className="text-base font-medium">Bill of Materials </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Work Stream 3 will be added here.</p>
+                    <p className="text-sm text-foreground/70">Details for Bill of Materials will be added here.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="work-stream-4">
-                  <AccordionTrigger className="text-base font-medium">Work Stream 4</AccordionTrigger>
+                  <AccordionTrigger className="text-base font-medium">Tech Pack Editor Tool</AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Work Stream 4 will be added here.</p>
+                    <p className="text-sm text-foreground/70">Details for Tech Pack Editor Tool will be added here.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="work-stream-5">
-                  <AccordionTrigger className="text-base font-medium">Work Stream 5</AccordionTrigger>
+                  <AccordionTrigger className="text-base font-medium">Standardized Document & Comments</AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Work Stream 5 will be added here.</p>
+                    <p className="text-sm text-foreground/70">Details for Standardized Document & Comments will be added here.</p>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
