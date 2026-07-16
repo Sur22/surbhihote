@@ -777,36 +777,84 @@ If AE's want to build a custom audience to for the clients would require to send
             </p>
             <div className="mt-12">
               <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="work-stream-1">
-                  <AccordionTrigger className="text-base font-medium">CAD & Techpack Library</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for CAD & Techpack Library will be added here.</p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="work-stream-2">
-                  <AccordionTrigger className="text-base font-medium">Materials & Trims Library</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Materials & Trims Library will be added here.</p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="work-stream-3">
-                  <AccordionTrigger className="text-base font-medium">Bill of Materials </AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Bill of Materials will be added here.</p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="work-stream-4">
-                  <AccordionTrigger className="text-base font-medium">Tech Pack Editor Tool</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Tech Pack Editor Tool will be added here.</p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="work-stream-5">
-                  <AccordionTrigger className="text-base font-medium">Standardized Document & Comments</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-sm text-foreground/70">Details for Standardized Document & Comments will be added here.</p>
-                  </AccordionContent>
-                </AccordionItem>
+                {[
+                  {
+                    id: "work-stream-1",
+                    title: "CAD & Techpack Library",
+                    pillar: "Centralize",
+                    timing: "Week 1",
+                    quickWin: "Yes",
+                    objective:
+                      "To bring all the CAD & Tech pack files used for products on the platform at one place so it can be reused and repurposed for other projects.",
+                    why: "The foundation of this project is CAD & Tech Pack as they play a crucial part in garment manufacturing and data already being present on the platform was a logical first step to start with building libraries. The Tech pack Editor tool is dependent on the data of the library.",
+                  },
+                  {
+                    id: "work-stream-2",
+                    title: "Materials & Trims Library",
+                    pillar: "Centralize",
+                    timing: "Week 2nd",
+                    quickWin: "Partially",
+                    objective:
+                      "Adding the details of the Material and trims from the catalog manually to the excel sheets and then uploading the document on the platform for the respective product.",
+                    why: "As CAD & Tech pack libraries were ready, it just used the same UI structure for the Library just with the difference of details form. This completes the Centralization part which is the foundation of the whole project and the Bill of material part has dependency on this one as well as the Tech pack Editor tool.",
+                  },
+                  {
+                    id: "work-stream-3",
+                    title: "Bill of Materials",
+                    pillar: "Connect",
+                    timing: "Week 3rd",
+                    quickWin: "No",
+                    objective:
+                      "Getting rid of manual calculations and data updates and the excel sheets, modifying any details needed to be updated and uploaded in the platform each time.",
+                    why: "The Bill of Materials details comes from Material & Trims library so we have data to build the costsheet for a product.",
+                  },
+                  {
+                    id: "work-stream-4",
+                    title: "Tech Pack Editor Tool",
+                    pillar: "Connect & Collaborate",
+                    timing: "Week 4th to 7th",
+                    quickWin: "No",
+                    objective:
+                      "Keeping users in the platform, Not having to gather multiple documents scattered around to get the product ready for the production.",
+                    why: "This part/tool brings everything together, at this point all the information is available and the ability to create a standardized document for the factories.",
+                  },
+                  {
+                    id: "work-stream-5",
+                    title: "Standardized Document & Comments",
+                    pillar: "Connect & Collaborate",
+                    timing: "Week 8th",
+                    quickWin: "No",
+                    objective:
+                      "Create a standardized production document with all the details required for the factories to manufacture which can be updated & shared. Adding communication layer for the document and the updation of document.",
+                    why: "The last piece was taking all the information from CAD, Tech pack, Material and trims details, BOM and creating an output file using the techpack tool and version if there are any revisions to keep everyone updated files and the comments. Comments functionality existed on the platform, the communication part is needed around the standardized document part of the tool so it was enabled at this point.",
+                  },
+                ].map((ws) => (
+                  <AccordionItem key={ws.id} value={ws.id}>
+                    <AccordionTrigger className="text-base font-medium">{ws.title}</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="overflow-hidden rounded-md border border-border">
+                        <table className="w-full text-sm">
+                          <tbody>
+                            {[
+                              ["Pillar", ws.pillar],
+                              ["Timing", ws.timing],
+                              ["Quick win?", ws.quickWin],
+                              ["Objective", ws.objective],
+                              ["Why now & Dependency", ws.why],
+                            ].map(([label, value]) => (
+                              <tr key={label} className="border-b border-border last:border-b-0 align-top">
+                                <th className="w-1/3 md:w-1/4 bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
+                                  {label}
+                                </th>
+                                <td className="p-3 text-foreground/80 leading-relaxed">{value}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
               </Accordion>
             </div>
           </>
