@@ -16,6 +16,12 @@ import {
   CarouselDots,
 } from "@/components/ui/carousel";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   Table,
   TableHeader,
   TableBody,
@@ -769,6 +775,40 @@ If AE's want to build a custom audience to for the clients would require to send
               <strong>3. Collaboration</strong>{"\u00a0"}{"\n"}
               <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\u00a0"}
             </p>
+            <div className="mt-12">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="work-stream-1">
+                  <AccordionTrigger className="text-base font-medium">Work Stream 1</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm text-foreground/70">Details for Work Stream 1 will be added here.</p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="work-stream-2">
+                  <AccordionTrigger className="text-base font-medium">Work Stream 2</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm text-foreground/70">Details for Work Stream 2 will be added here.</p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="work-stream-3">
+                  <AccordionTrigger className="text-base font-medium">Work Stream 3</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm text-foreground/70">Details for Work Stream 3 will be added here.</p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="work-stream-4">
+                  <AccordionTrigger className="text-base font-medium">Work Stream 4</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm text-foreground/70">Details for Work Stream 4 will be added here.</p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="work-stream-5">
+                  <AccordionTrigger className="text-base font-medium">Work Stream 5</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm text-foreground/70">Details for Work Stream 5 will be added here.</p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </>
         )}
 
