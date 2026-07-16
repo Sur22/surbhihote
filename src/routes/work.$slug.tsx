@@ -752,12 +752,12 @@ If AE's want to build a custom audience to for the clients would require to send
               {"\n"}<strong>1. Centralize</strong>{"\n"}
               <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
-              <strong>2. Collaboration</strong>{"\u00a0"}{"\n"}
-              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\n"}
-              {"\n"}
-              <strong>3. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
               <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
-              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\u00a0"}{"\u00a0"}{"\n"}
+              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\n"}
+              {"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>3. Collaboration</strong>{"\u00a0"}{"\n"}
+              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\u00a0"}
             </p>
           </>
         )}
@@ -1609,14 +1609,14 @@ If AE's want to build a custom audience to for the clients would require to send
               <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
             {c.slug !== "fjord" && (
-              <p className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
+              <div className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
                 <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
 {"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to.               navigate to another part of the application. </span>
                 <div className="mt-1">
                   <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
 {"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
                 </div>
-              </p>
+              </div>
             )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
