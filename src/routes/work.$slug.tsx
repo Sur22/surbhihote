@@ -577,7 +577,7 @@ If AE's want to build a custom audience to for the clients would require to send
           <div className="mt-16">
             <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">Survey</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-6">
-              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs.The survey informed the decision to develop this feature as part of the UX Strategy. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
+              I ran a short survey with fashion designers and product developers to understand how they currently build and manage tech packs. The survey informed the decision to develop this feature as part of the UX Strategy. The responses clarified the biggest pain points, the tools in use, and where a dedicated platform could save the most time.
             </p>
             {c.survey && c.survey.trim() !== "" && (
               <div
