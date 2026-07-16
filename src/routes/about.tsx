@@ -72,7 +72,7 @@ function AboutPage() {
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              About
+              Hi, Again!
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
