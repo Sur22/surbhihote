@@ -1724,7 +1724,6 @@ If AE's want to build a custom audience to for the clients would require to send
                   ]
                 : [
                     { src: finalToolScreens.url, label: "Tool screens" },
-                    { src: affiliateSiteMockupDashboard2.url, label: "Dashboard view" },
                     { src: finalSketchSel.url, label: "Sketch selection" },
                     { src: finalDetailedSketch.url, label: "Detailed sketch" },
                     { src: finalBom.url, label: "Bill of Materials" },
