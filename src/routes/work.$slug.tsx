@@ -761,7 +761,7 @@ If AE's want to build a custom audience to for the clients would require to send
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               <strong>1. Centralize</strong>{"\n"}
-              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
+              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the Tech Pack and CAD files which get added to individual products already available on the platform,{"\u00a0"}Build the Material & Trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
               <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
               <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
