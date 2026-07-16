@@ -1616,7 +1616,7 @@ If AE's want to build a custom audience to for the clients would require to send
 {"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to.               navigate to another part of the application. </span>
                 <div className="mt-1">
                   <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
-{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.</span>
+{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
                 </div>
               </p>
             )}
