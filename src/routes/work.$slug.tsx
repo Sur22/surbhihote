@@ -752,12 +752,12 @@ If AE's want to build a custom audience to for the clients would require to send
               {"\n"}<strong>1. Centralize</strong>{"\n"}
               <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the tech pack and CAD files that get added to individual products already available on the platform,{"\u00a0"}build a material & trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
               {"\u00a0"}{"\n"}
-              <strong>2. Collaboration</strong>{"\u00a0"}{"\n"}
-              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\n"}
-              {"\n"}
-              <strong>3. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
               <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
-              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\u00a0"}{"\u00a0"}{"\n"}
+              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\n"}
+              {"\u00a0"}{"\u00a0"}{"\n"}
+              <strong>3. Collaboration</strong>{"\u00a0"}{"\n"}
+              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\u00a0"}
             </p>
           </>
         )}
