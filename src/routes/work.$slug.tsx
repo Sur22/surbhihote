@@ -685,6 +685,16 @@ If AE's want to build a custom audience to for the clients would require to send
         )}
 
         {c.slug === "solace" && (
+          <div className="dark:bg-white rounded-sm p-6 md:p-10 flex justify-center mt-12">
+            <img
+              src={uxStrategyImg.url}
+              alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
+              className="w-[50.78%] h-auto"
+            />
+          </div>
+        )}
+
+        {c.slug === "solace" && (
           <>
             <div className="my-12">
               <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Goals</h4>
@@ -797,15 +807,6 @@ If AE's want to build a custom audience to for the clients would require to send
         )}
 
 
-        {c.slug === "solace" && (
-          <div className="dark:bg-white rounded-sm p-6 md:p-10 flex justify-center mt-12">
-            <img
-              src={uxStrategyImg.url}
-              alt="UX Strategy diagram showing Business Goals and User Goals converging into UX Strategy: Centralize, Connect, Collaborate"
-              className="w-[50.78%] h-auto"
-            />
-          </div>
-        )}
 
         {(c.slug === "fjord2") && (
           <div className="contents">
