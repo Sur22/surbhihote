@@ -97,7 +97,7 @@ import affiliateSiteOldBefore from "@/assets/affiliate-site-old-before.png.asset
 import affiliateSiteDashboard from "@/assets/affiliate-site-dashboard.png.asset.json";
 import affiliateSiteRevisedTab from "@/assets/affiliate-site-revised-tab.png.asset.json";
 import affiliateSiteOrderPage from "@/assets/affiliate-site-order-page.png.asset.json";
-import affiliateSiteMockupDashboard2 from "@/assets/Affiliate_site_mockup_dashboard-2.png.asset.json";
+
 import affiliateDashboard4 from "@/assets/Affiliate_site_mockup_dashboard-4.png.asset.json";
 import affiliateDashboardChanges2 from "@/assets/affiliate_dashboar_changes-2.png.asset.json";
 import affiliateRevisedTab3 from "@/assets/Affiliate_site_mockup_revised_tab-3.png.asset.json";
