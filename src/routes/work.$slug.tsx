@@ -742,7 +742,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Track all changes easily&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Provide transparency and traceability in PLM&nbsp;</TableCell>
-                      <TableCell className="text-foreground/90">Trust, user satisfaction&nbsp;</TableCell>
+                      <TableCell className="text-foreground/90">Trust, User satisfaction&nbsp;</TableCell>
                     </TableRow>
                     <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
                       <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
