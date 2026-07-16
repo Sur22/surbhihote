@@ -1609,14 +1609,14 @@ If AE's want to build a custom audience to for the clients would require to send
               <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
             {c.slug !== "fjord" && (
-              <p className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
+              <div className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
                 <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
 {"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to.               navigate to another part of the application. </span>
                 <div className="mt-1">
                   <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
 {"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
                 </div>
-              </p>
+              </div>
             )}
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
