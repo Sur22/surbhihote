@@ -163,8 +163,11 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                 hash="final-designs"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.location.hash = "final-designs";
-                  document.getElementById("final-designs")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  const el = document.getElementById("final-designs");
+                  if (el) {
+                    history.replaceState(null, "", "#final-designs");
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
                 }}
               >
                 See the solution
