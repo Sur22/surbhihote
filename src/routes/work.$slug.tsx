@@ -1,5 +1,4 @@
-import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
-import { isUnlocked } from "@/lib/gate.functions";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, TrendingUp, TrendingDown, Play } from "lucide-react";
 import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -107,12 +106,6 @@ import affiliateOrderPage3 from "@/assets/Affiliate_site_mockup_order_page-3.png
 import ampMockupBg3 from "@/assets/amp-mockup-bg-3.png.asset.json";
 
 export const Route = createFileRoute("/work/$slug")({
-  beforeLoad: async ({ location }) => {
-    const { unlocked } = await isUnlocked();
-    if (!unlocked) {
-      throw redirect({ to: "/unlock", search: { redirect: location.href } });
-    }
-  },
   loader: ({ params }) => {
     const c = getCaseStudy(params.slug);
     if (!c) throw notFound();
