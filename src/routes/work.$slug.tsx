@@ -54,6 +54,7 @@ import finalSketchSel from "@/assets/techpack_sketch_selection.png.asset.json";
 import finalDetailedSketch from "@/assets/techpack_detailed_skecth_no_drawer.png.asset.json";
 import finalBom from "@/assets/techpack_bom.png.asset.json";
 import finalPdf from "@/assets/techpack_pdf.png.asset.json";
+import finalColorMaterialDrawer from "@/assets/techpack-color-material-drawer.png.asset.json";
 import userFlow1 from "@/assets/techpack-userflow-1.png.asset.json";
 import ideateImg1 from "@/assets/affiliate-workshop-sketching-presenting.png.asset.json";
 import ideateImg2 from "@/assets/affiliate-workshop-sketches.png.asset.json";
@@ -1817,6 +1818,7 @@ If AE's want to build a custom audience to for the clients would require to send
                     { src: finalDetailedSketch.url, label: "Detailed sketch" },
                     { src: finalBom.url, label: "Bill of Materials" },
                     { src: finalPdf.url, label: "Exported PDF" },
+                    { src: finalColorMaterialDrawer.url, label: "Color and material drawer" },
                     { src: finalProto.url, label: "Prototype overview" },
                   ]
               ).map((img) => (
