@@ -770,7 +770,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <strong>3. Collaboration</strong>{"\u00a0"}{"\n"}
               <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\u00a0"}
               {"\n\n"}
-              Design ran ahead of engineering. Each work stream was researched, designed, and reviewed to sign-off, then handed to development{"\u00a0"} and while it was being built, I designed the next one. The eight weeks below are a single pipeline, not sequential phases; design and build overlap throughout.
+              Design ran ahead of engineering. Each work stream was researched, designed, and reviewed to sign-off, then handed to development{"\u00a0"} and while it was being built, I designed the next one. The eight weeks below are a single pipeline, not sequential phases; design and build overlap throughout.Following is the Build & release sequence.
             </p>
             <div className="mt-12">
               <Accordion type="single" collapsible className="w-full">
