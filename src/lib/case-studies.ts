@@ -223,7 +223,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Reduced calculation mistakes\nby automation replaced manual entry. ", value: "-64% " },
-      { label: "The workflow came in-platform by eliminating tools outside the platform.", value: "2  0" },
+      { label: "The workflow came in-platform by eliminating tools outside the platform.", value: "2 \u2192 0" },
       { label: "Time on Task by using bringing data on the platform. ", value: "-34%" },
       { label: "Workflow Errors went down by standardization and versioning ", value: "-27%" },
     ],
