@@ -222,10 +222,10 @@ const _caseStudies: CaseStudy[] = [
       "Partnered with the writers on tone-of-voice so the copy and the UI shipped as one thing.",
     ],
     outcome: [
-      { label: "Accounting Errors\u00a0", value: "-64%\u00a0" },
-      { label: "Increased time spent on the platform\u00a0", value: "+8%" },
-      { label: "Time on Task\u00a0\u00a0\nFaster & Efficient Streamlined Workflow\u00a0\u00a0", value: "34%" },
-      { label: "Workflow Errors\u00a0", value: "-27%" },
+      { label: "Reduced calculation mistakes\nby automation replaced manual entry. ", value: "-64% " },
+      { label: "The workflow came in-platform by eliminating tools outside the platform.", value: "2  0" },
+      { label: "Time on Task by using bringing data on the platform. ", value: "-34%" },
+      { label: "Workflow Errors went down by standardization and versioning ", value: "-27%" },
     ],
     sections: [
       {
