@@ -1246,7 +1246,7 @@ Users needed an easy way to control and manage the notifications they want and s
           {(c.slug === "fjord2")
             ? "\n"
             : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "Reviewing designs with developers and the CTO at an early stage makes it easy and saves time and effort — in case something is not feasible, you might need to make many changes. I reviewed these with the mobile developers to confirm feasibility of the designs; it also makes them feel involved. Developers showed concern about the design — according to them, nested pages inside the tabs."
+            ? "Reviewing designs with offshore developers and the CTO at an early stage makes it easy and saves time and effort in case something is not feasible, you might need to make many changes. I reviewed these with the mobile developers to confirm feasibility of the designs; it also makes them feel involved. Developers showed concern about the design according to them, nested pages inside the tabs."
             : (c.slug === "fjord")
             ? "The custom component built for the projects are shown below"
             : "To understand the details to get started with the initial sketches and get some inputs from users."
@@ -1309,7 +1309,8 @@ Users needed an easy way to control and manage the notifications they want and s
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
-            ? "Following are the three different user flows for managing notifications." 
+            ? "Following are the three different user flows for managing notifications, it shows from where\u00a0" 
+
             : (c.slug === "fjord2") 
               ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
               : (c.slug === "fjord")
