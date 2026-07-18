@@ -421,6 +421,18 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
             </div>
           )}
+          {c.slug === "atlas" && (
+            <div className="mb-12">
+              <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
+                Product Requirement Document
+              </h3>
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+                After I received the PRD from the product team and getting a walkthrough of PRD from product for the kickstart the design process. Other than the pinpoints which I already knew, Product team had additional thing which was notifications template to create at entity level for all its user types.
+
+As Grid mobile app does not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the which user type they are assigned. The mobile designs will be both for Android and iOS version of the application.
+              </p>
+            </div>
+          )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
               {(c.slug === "fjord2") ? "Survey" : "User Interview"}
