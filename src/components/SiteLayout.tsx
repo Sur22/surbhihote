@@ -115,8 +115,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             Made with <span className="text-red-500">❤️</span> <span className="text-amber-600">🍜</span> <span className="text-emerald-600">🍵</span> and vibe coding
           </p>
 
-          <p className="text-sm text-muted-foreground">
-            © 2026 SH.. All rights reserved.
+          <p className="text-sm text-muted-foreground whitespace-pre">
+            © 2026 SH.   All rights reserved.
           </p>
         </div>
       </footer>
