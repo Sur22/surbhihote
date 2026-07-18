@@ -83,7 +83,7 @@ function AboutPage() {
             </div>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
-                <a href="https://drive.google.com/file/d/1eQoqLP73ekMFoeeHYQkh2yf0AL8ptpvW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                   Resume
                 </a>
               </Button>
