@@ -1196,9 +1196,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
-            <h3 className="font-serif text-3xl mb-6 font-medium">Approach</h3>
+            <h3 className="font-serif text-3xl mb-6 font-medium">Mobile first Approach</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-              Following are the three different user flows for managing notifications.
+              I always start with designing for the mobile as it really forces you to choose and prioritize the essential and core functionality .The problem here was related to one of the heuristic principle which is 'User Control and Freedom'.
+Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
