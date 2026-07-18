@@ -50,7 +50,7 @@ export type CaseStudy = {
 const defaultMeta = {
   role: "UI/UX Designer",
   timeframe: "2 Months",
-  tools: "Sketchbook & Pencil, Whiteboard, Adobe XD, Miro, Google forms",
+  tools: "Sketchbook & Pencil, Whiteboard, Adobe XD, Miro,\u00a0",
   tasksPerformed:
     "End-to-End Design, Lean UX, Design Strategy,\u00a0User Research, UI Design, Component Design, User Flows, Wire-framing, Prototyping, Usability Testing, Design Handoff, Collaboration with Product, Engineering, and QA teams.",
   overview:
