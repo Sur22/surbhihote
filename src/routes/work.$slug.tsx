@@ -1309,7 +1309,8 @@ Users needed an easy way to control and manage the notifications they want and s
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
-            ? "Following are the three different user flows for managing notifications, it shows from where\u00a0" 
+            ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
+
 
             : (c.slug === "fjord2") 
               ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
