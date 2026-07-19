@@ -1299,6 +1299,17 @@ Users needed an easy way to control and manage the notifications they want and s
         )}
       </section>
 
+      {(c.slug === "atlas" || c.slug === "atlas2") && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-24">
+          <h3 className="font-serif text-3xl mb-6 font-medium">Review with Product & Engineering Team</h3>
+          <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 space-y-4">
+            <li>Reviewing the initial low fidelity clickable wireframes I presented them to the users to get their feedback on functionalities and the usability aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added I went for the second Iteration and again showed it to the users.</li>
+            <li>Reviewing designs with developers and CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs.</li>
+            <li>To solve that problem I went back and changed few things. I converted tabs into 2 buttons and then again reached out to developers for their opinion the new option.</li>
+            <li>Developers and CTO gave me a green flag and I went ahead for the usability testing with users.</li>
+          </ul>
+        </section>
+      )}
 
       {c.slug !== "solace" && c.slug !== "fjord" && c.slug !== "atlas" && c.slug !== "atlas2" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
