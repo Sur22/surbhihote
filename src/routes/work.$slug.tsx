@@ -1310,13 +1310,15 @@ Users needed an easy way to control and manage the notifications they want and s
             <li>To solve that problem I went back and changed few things. I converted tabs into 2 buttons and then again reached out to developers for their opinion the new option.</li>
             <li>Developers and CTO gave me a green flag and I went ahead for the usability testing with users.</li>
           </ul>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
-              <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
-            <button type="button" onClick={() => setZoomImg(atlasProfile.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
-              <img src={atlasProfile.url} alt="Mobile profile with notification settings" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
+          <div className="mt-10 max-w-[540px] mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
+                <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+              </button>
+              <button type="button" onClick={() => setZoomImg(atlasProfile.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
+                <img src={atlasProfile.url} alt="Mobile profile with notification settings" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+              </button>
+            </div>
           </div>
           <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on developer feedback.</p>
         </section>
