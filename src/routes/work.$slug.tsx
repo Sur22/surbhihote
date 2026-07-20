@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Check, TrendingUp, TrendingDown, Play } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowDown, Check, TrendingUp, TrendingDown, Play } from "lucide-react";
 import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -216,7 +216,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                   <>{o.value.replace(/^[−-]/, "")}</>
                 )}
                 {o.label.includes("Usability Improved") || o.value === "17%" ? <TrendingUp className="w-8 h-8 md:w-10 md:h-10" /> : null}
-                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("87%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && <TrendingDown className="w-8 h-8 md:w-10 md:h-10 shrink-0" />}
+                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("87%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && <ArrowDown className="w-8 h-8 md:w-10 md:h-10 shrink-0" />}
               </p>
             )}
             <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
