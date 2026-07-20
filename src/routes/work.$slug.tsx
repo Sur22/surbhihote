@@ -1737,12 +1737,27 @@ Users needed an easy way to control and manage the notifications they want and s
             </li>
             {c.slug !== "fjord" && (
               <div className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
-                <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
+                {(c.slug === "atlas" || c.slug === "atlas2") ? (
+                  <>
+                    <span>1)  4 out of the 5 participants confused edit icon for company list cards.
+{"\n"}2) 3 out of the 5 participants were confused with the “Expand your search” icon while searching the products.</span>
+                    <div className="mt-1">
+                      <span>3) 3 out of the 5 participants were confused by the naming of the notification categories. 
+{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.
+{"\n"}5) All participants felt the design was clear and intuitive.
+</span>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
 {"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to navigate to the  another part of the application. </span>
-                <div className="mt-1">
-                  <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
+                    <div className="mt-1">
+                      <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
 {"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
-                </div>
+                    </div>
+                  </>
+                )}
               </div>
             )}
             <li className="flex gap-4">
