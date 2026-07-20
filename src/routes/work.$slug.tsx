@@ -191,7 +191,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "This project was an upgrade from manual paperwork to a streamlined process eliminating the manual errors, delays in production deadlines and product delivery."
               : c.slug === "fjord2"
               ? "Rebuilding a 25-year-old, business-critical platform for 500+ affiliates; where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
-              : "When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. I redesigned mobile notifications around granular, role-aware preferences control at the company, product, and stage level so users receive only what actually moves their work forward."}
+              : "When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
           </p>
         </>
       )}
