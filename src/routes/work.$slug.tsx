@@ -1776,7 +1776,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: "Test Completion Rate", value: "100%" },
-                { label: "Error-free rate", value: "90%" },
+                { label: "Error-free rate", value: "87%" },
                 { label: "Solving the problem?", value: "Yes" },
               ].map((s) => (
                 <div
