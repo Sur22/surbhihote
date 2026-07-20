@@ -191,7 +191,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "This project was an upgrade from manual paperwork to a streamlined process eliminating the manual errors, delays in production deadlines and product delivery."
               : c.slug === "fjord2"
               ? "Rebuilding a 25-year-old, business-critical platform for 500+ affiliates; where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
-              : "This project was a major overhaul — a rethink of a 25-year-old platform in a way that would not overwhelm long-time users. The results speak for themselves: a faster, better platform, happier users, and a system built to evolve."}
+              : "When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. I redesigned mobile notifications around granular, role-aware preferences control at the company, product, and stage level so users receive only what actually moves their work forward."}
           </p>
         </>
       )}
