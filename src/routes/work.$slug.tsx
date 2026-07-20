@@ -199,9 +199,9 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
         {c.outcome.map((o) => (
           <div key={o.label} className="border-t border-border pt-6">
             {o.value && (
-              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line flex items-center gap-2">
+              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">
                 {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0\u2192\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
-                  <span className="whitespace-nowrap">
+                  <span className="whitespace-nowrap flex items-center gap-2">
                     {o.value === "~$850K\u00A0\u2192\u00A0$0" ? (
                       <>
                         ~$850K <span className="text-[70%]">\u2192</span> $0
@@ -213,10 +213,12 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                     )}
                   </span>
                 ) : (
-                  <>{o.value.replace(/^[−-]/, "")}</>
+                  <>{o.value}</>
                 )}
-                {o.label.includes("Usability Improved") || o.value === "17%" ? <TrendingUp className="w-8 h-8 md:w-10 md:h-10" /> : null}
-                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("87%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && <span className="text-[70%]">↓</span>}
+                {o.label.includes("Usability Improved") || o.value === "17%" ? <TrendingUp className="inline-block ml-2 w-8 h-8 md:w-10 md:h-10" /> : null}
+                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("87%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && (
+                  <span className={cn("text-[70%]", o.value.includes("\n") ? "block" : "inline-block ml-1")}>↓</span>
+                )}
               </p>
             )}
             <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
