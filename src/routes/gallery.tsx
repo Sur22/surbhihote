@@ -14,7 +14,7 @@ import * as React from "react";
 import g1 from "@/assets/gallery-1.jpg";
 import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
 import g5 from "@/assets/gallery-5.png.asset.json";
-import ssuchiDashboard2 from "@/assets/ssuchi-dashboard-2.png.asset.json";
+
 import g6 from "@/assets/containers-insight-mockup.png.asset.json";
 import gsnMockup from "@/assets/Gsn_suuchi_mockup.png.asset.json";
 import ampBg from "@/assets/amp-mockup-bg.png.asset.json";
@@ -96,7 +96,6 @@ const items = [
   {
     images: [
       { src: g5.url, alt: "Dashboard- PLM & ERP" },
-      { src: ssuchiDashboard2.url, alt: "Dashboard- SUUCHI overview" },
     ],
     title: "Dashboard",
     tags: ["B2B", "B2C", "PLM", "ERP\u00a0 · 2018-2021"],
