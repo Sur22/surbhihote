@@ -280,7 +280,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: notificationBanner.url,
     summary:
-      "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 62% to 7% and missed alerts by 87%.",
+      "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 62% to 7% and missed alerts by 84%.",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
@@ -292,7 +292,7 @@ const _caseStudies: CaseStudy[] = [
     outcome: [
       { label: "Missed deadlines", value: "-38%" },
       { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "62% \u2192 7%" },
-      { label: "Reduction in missed alerts", value: "-87%" },
+      { label: "Reduction in missed alerts", value: "-84%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+6" },
     ],
     sections: [
