@@ -1321,7 +1321,7 @@ Users needed an easy way to control and manage the notifications they want and s
               </button>
             </div>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on developer feedback.</p>
+          <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
         </section>
       )}
 
