@@ -1245,16 +1245,14 @@ Users needed an easy way to control and manage the notifications they want and s
             <li>Fabric & Trims Catalogue&nbsp;</li>
           </ul>
         )}
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          {(c.slug === "fjord2")
-            ? "\n"
-            : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "Reviewing designs with offshore developers and the CTO at an early stage makes it easy and saves time and effort in case something is not feasible, you might need to make many changes. I reviewed these with the mobile developers to confirm feasibility of the designs; it also makes them feel involved. Developers showed concern about the design according to them, nested pages inside the tabs."
-            : (c.slug === "fjord")
-            ? "The custom component built for the projects are shown below"
-            : "To understand the details to get started with the initial sketches and get some inputs from users."
-          }
-        </p>
+        {c.slug !== "fjord2" && c.slug !== "atlas" && c.slug !== "atlas2" && (
+          <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+            {c.slug === "fjord"
+              ? "The custom component built for the projects are shown below"
+              : "To understand the details to get started with the initial sketches and get some inputs from users."
+            }
+          </p>
+        )}
         {(c.slug === "fjord2") ? (
           <button
             type="button"
