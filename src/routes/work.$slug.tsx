@@ -1962,7 +1962,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 <br /><br />
                 But the harder lesson was that giving users control is not the same as reducing their burden. Preferences across that many levels can quietly become their own kind of overwhelm a settings screen as noisy as the feed it was meant to fix. So rather than hand users a blank grid of toggles, I leaned on role-based
                 <br />
-                Role Based Notification Templates{"\u00A0"}: This was designed for web version; each user group starts with a sensible default set, mapped to their job and validated against my research, and fine-tunes only if they want to. Most people get the right notifications without ever opening settings; control is there for the ones who need it.
+                Notification Templates{"\u00A0"}: This was designed for web version; each user group starts with a sensible default set, mapped to their job and validated against my research, and fine-tunes only if they want to. Most people get the right notifications without ever opening settings; control is there for the ones who need it.
               </>
             : "This was a big project and turned out to be a good selling point for the company. Apart from that,\u00a0it was a great workflow improvement, which eliminated accounting errors that happen due to manual workflow. Thanks to the libraries built,\u00a0it sped up the workflow through reuse and repurposing. Because of the editor tool, users didn't have to go outside the platform to do all the editing for the manufacturing phase. Overall, the project was a great success."}
         </p>
