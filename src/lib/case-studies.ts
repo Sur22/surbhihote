@@ -290,9 +290,9 @@ const _caseStudies: CaseStudy[] = [
       "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Fewer deadlines missed", value: "-38%" },
+      { label: "Fewer deadlines missed", value: "-38%\n" },
       { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "62% \u2192 7%" },
-      { label: "Reduction in missed alerts", value: "-87%" },
+      { label: "Reduction in missed alerts", value: "-87%\n" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+6" },
     ],
     sections: [
