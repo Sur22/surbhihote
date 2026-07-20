@@ -39,6 +39,7 @@ import wireframeImg2 from "@/assets/techpack-wireframe-2.png";
 import affiliateSitemap from "@/assets/Affiliate_website_sitemap.png.asset.json";
 import atlasTabsChanges from "@/assets/mobile_notifications_tabs_changes.png.asset.json";
 import atlasProfile from "@/assets/mobile_notifications_2.png.asset.json";
+import atlasNotificationChanges from "@/assets/mobile_notification_changes_1.png.asset.json";
 import sketchImg1 from "@/assets/techpack-sketch-1.jpg.asset.json";
 import sketchImg2 from "@/assets/techpack-sketch-2.jpg.asset.json";
 import sketchImg3 from "@/assets/techpack-sketch-3.jpg.asset.json";
@@ -1310,13 +1311,13 @@ Users needed an easy way to control and manage the notifications they want and s
             <li>To solve that problem I went back and changed few things. I converted tabs into 2 buttons and then again reached out to developers for their opinion the new option.</li>
             <li>Developers and CTO gave me a green flag and I went ahead for the usability testing with users.</li>
           </ul>
-          <div className="mt-10 max-w-[540px] mx-auto">
+          <div className="mt-10 max-w-[459px] mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
                 <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
               </button>
-              <button type="button" onClick={() => setZoomImg(atlasProfile.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
-                <img src={atlasProfile.url} alt="Mobile profile with notification settings" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+              <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
+                <img src={atlasNotificationChanges.url} alt="Mobile notification settings changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
               </button>
             </div>
           </div>
