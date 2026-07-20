@@ -1694,7 +1694,7 @@ Users needed an easy way to control and manage the notifications they want and s
           </ul>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
-            Before the release, we made sure to have the help resources ready — such as short videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
+            Before the release, we made sure to have the help resources ready such as short how to videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
           </p>
         </section>
       )}
@@ -1934,8 +1934,8 @@ Users needed an easy way to control and manage the notifications they want and s
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
           {c.slug === "fjord2" 
             ? <>
-                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years — speed, stability, broken functionality, redundancy, and the constant manual refreshing — and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
-                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.The biggest lesson wasn't about the interface — it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
+                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years; speed, stability, broken functionality, redundancy, and the constant manual refreshing{"\u00A0"} and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
+                The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.The biggest lesson wasn't about the interface; it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
                 Phase two, now in development, including a major shift in how affiliates communicate on the platform.{"\u00A0"}
               </>
 
