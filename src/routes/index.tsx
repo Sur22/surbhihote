@@ -89,7 +89,7 @@ export const Route = createFileRoute("/")({
             "User Research",
             "Human-Centered Design",
           ],
-З        }),
+}),
       },
       {
         type: "application/ld+json",
