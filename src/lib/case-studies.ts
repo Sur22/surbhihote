@@ -146,6 +146,8 @@ const _caseStudies: CaseStudy[] = [
     cover: fjord.url,
     summary:
       "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
+    keywords:
+      "affiliate portal UX, ad-tech platform design, enterprise portal redesign, TV advertising platform UX, media buying software design, affiliate ordering portal", 
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -214,6 +216,8 @@ const _caseStudies: CaseStudy[] = [
     cover: solace.url,
     summary:
       "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
+    keywords:
+      "tech pack tool design, apparel manufacturing software UX, supply chain platform design, PLM UX design, fashion tech pack software, BOM management UX", 
     problem:
       "Fashion brands were running product development on disconnected Excel sheets, PDFs, and email threads. Style details, materials, trims, and BOMs lived in separate documents, so any change had to be manually updated across multiple files. Factories were often working from outdated versions, causing production delays, accounting errors, and miscommunication between design, product development, and vendors.",
     approach: [
@@ -282,6 +286,8 @@ const _caseStudies: CaseStudy[] = [
     cover: notificationBanner.url,
     summary:
       "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 62% to 7% and missed alerts by 84%.",
+    keywords:
+      "enterprise notification system design, notification UX, mobile notification preferences, PLM notification design, iOS Android notification UX, supply chain alerts UX", 
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
@@ -334,6 +340,8 @@ const _caseStudies: CaseStudy[] = [
     cover: audienceBuilderMockup.url,
     summary:
       "Internal ad-tech web app that lets Account Executives build custom TV audience segments in minutes instead of a week — saving $400K per year.",
+    keywords:
+      "audience builder UX, audience targeting tool design, ad-tech audience segmentation, TV advertising audience builder, custom audience segment UX, media planning tool design", 
     problem:
       "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
     approach: [
@@ -402,6 +410,8 @@ const _caseStudies: CaseStudy[] = [
     cover: atlas.url,
     summary:
       "Product page redesign for a supply-chain PLM web app — restructuring layout and information density to reduce clutter and speed up findability.",
+    keywords:
+      "product page redesign UX, supply chain PLM design, enterprise product page UI, PLM web app design, information density UX, B2B product page design", 
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
