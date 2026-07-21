@@ -122,6 +122,7 @@ export const Route = createFileRoute("/work/$slug")({
       meta: [
         { title: `${s.title} — Surbhi Hote` },
         { name: "description", content: s.summary },
+        { name: "keywords", content: s.keywords },
         { property: "og:title", content: `${s.title} — Surbhi Hote` },
         { property: "og:description", content: s.summary },
         { property: "og:image", content: s.cover },
