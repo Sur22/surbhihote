@@ -39,6 +39,7 @@ export type CaseStudy = {
   tags: string[];
   cover: string;
   summary: string;
+  keywords: string;
   problem: string;
   opportunity?: string;
   approach: string[];
