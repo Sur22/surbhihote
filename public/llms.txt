@@ -1,0 +1,20 @@
+# Surbhi Hote — Lead Product Designer
+
+> Portfolio of Surbhi Hote, a product designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Focus on end-to-end, human-centered design that balances user needs, business goals, and technical feasibility.
+
+Surbhi Hote is a Lead Product Designer based in the United States. Her portfolio showcases enterprise SaaS and B2B case studies, an about page with background and experience, a UX process guide, and a gallery of visual work. Contact via LinkedIn.
+
+## Pages
+- [Home](/): Introduction and selected case studies
+- [About](/about): Background, experience, and resume
+- [UX Process](/process): Design process, methods, and principles
+- [Gallery](/gallery): Visual work and explorations
+
+## Case studies
+- [Affiliate Website Redesign (Fjord)](/work/fjord2): Redesigning an affiliate platform to reduce a projected $850K revenue loss without disrupting existing users
+- [Tech Pack Tool (Solace)](/work/solace): Enterprise tool for apparel tech pack creation — CAD library, materials, BOM, and standardized documents
+- [Notifications Management (Atlas)](/work/atlas): Mobile-first notification system with role-based templates that cut missed alerts by 84%
+
+## Optional
+- [Resume (PDF)](/resume.pdf)
+- [LinkedIn](https://www.linkedin.com/in/surbhihote/)

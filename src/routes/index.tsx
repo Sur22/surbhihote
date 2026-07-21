@@ -63,6 +63,43 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
       { property: "og:title", content: "Surbhi Hote — Lead Product Designer" },
       { property: "og:description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://surbhihote.com/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "https://surbhihote.com/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Surbhi Hote",
+          url: "https://surbhihote.com",
+          jobTitle: "Lead Product Designer",
+          description:
+            "Product designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile.",
+          sameAs: ["https://www.linkedin.com/in/surbhihote/"],
+          knowsAbout: [
+            "Product Design",
+            "UX Design",
+            "Enterprise SaaS",
+            "B2B Software",
+            "Design Systems",
+            "User Research",
+            "Human-Centered Design",
+          ],
+}),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Surbhi Hote",
+          url: "https://surbhihote.com",
+        }),
+      },
     ],
   }),
   component: IndexPage,
