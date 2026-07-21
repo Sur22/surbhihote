@@ -1740,12 +1740,12 @@ Users needed an easy way to control and manage the notifications they want and s
                 {(c.slug === "atlas" || c.slug === "atlas2") ? (
                   <>
                     <span>1)  4 out of the 5 participants confused edit icon for company list cards.
-{"\n"}2) 3 out of the 5 participants were confused with the “Expand your search” icon while searching the products.</span>
+{"\n"}2) 3 out of the 5 participants were confused with the “Expand your search” icon while searching the products.
+{"\n"}3) 3 out of the 5 participants were confused by the naming of the notification categories.
+{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had. 
+{"\n"}5) All participants felt the design was clear and intuitive.</span>
                     <div className="mt-1">
-                      <span>3) 3 out of the 5 participants were confused by the naming of the notification categories. 
-{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.
-{"\n"}5) All participants felt the design was clear and intuitive.
-</span>
+                      <span>{"\n"}</span>
                     </div>
                   </>
                 ) : (
