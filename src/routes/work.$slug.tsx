@@ -1304,7 +1304,7 @@ Users needed an easy way to control and manage the notifications they want and s
       </section>
 
       {(c.slug === "atlas" || c.slug === "atlas2") && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-24">
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-20">
           <h3 className="font-serif text-3xl mb-6 font-medium">Review with Product & Engineering Team</h3>
           <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 space-y-4">
             <li>Reviewing the initial low fidelity clickable wireframes I presented them to the users to get their feedback on functionalities and the usability aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added I went for the second Iteration and again showed it to the users.</li>
@@ -1331,7 +1331,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {/* Brainstorming */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "py-24"}`}>
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
