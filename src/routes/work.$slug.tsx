@@ -352,9 +352,9 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project\u00a0 via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
-\u00a01.Users getting so many spam notifications
-\u00a02.Important notifications for their job getting lost resulting into delays and missed deadlines
-\u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
+\u00a01. User getting so many spam notifications
+\u00a02. Important notifications for their job getting lost resulting into delays and missed deadlines
+\u00a03. User need only selective set of notifications which are important for their job responsibilities\u00a0`}
               </p>
             </div>
           )}
@@ -435,7 +435,7 @@ If AE's want to build a custom audience to for the clients would require to send
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 After I received the PRD from the product team and getting a walkthrough of PRD from product for the kickstart the design process. Other than the painpoints which I already knew, Product team had additional thing which was notifications template to create at entity level for all its user types.
 
-As Grid mobile app does not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the which user type they are assigned. The mobile designs will be both for Android and iOS version of the application.
+As Grid mobile app does not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the user type they are assigned. The mobile designs will be both for Android and iOS version of the application.
               </p>
             </div>
           )}
@@ -1204,7 +1204,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           <>
             <h3 className="font-serif text-3xl mb-6 font-medium">Mobile First Approach</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-              I always start with designing for the mobile as it really forces you to choose and prioritize the essential and core functionality .The problem here was related to one of the heuristic principle which is 'User Control and Freedom'.
+              I always start with designing for the mobile as it really forces you to choose and prioritize the essential and core functionality. The problem here was related to one of the heuristic principle which is 'User Control and Freedom'.
 Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <div className="grid grid-cols-1 gap-6">
