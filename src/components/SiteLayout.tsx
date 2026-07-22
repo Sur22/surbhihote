@@ -98,6 +98,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           {/* Nav links */}
           <div className="flex items-center gap-6 text-sm">
             <Link to="/" hash="case-studies" className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
+            <Link to="/ai" className="text-muted-foreground hover:text-foreground transition-colors">AI</Link>
             <Link to="/gallery" className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
           </div>
