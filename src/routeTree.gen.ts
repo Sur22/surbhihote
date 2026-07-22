@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProcessRouteImport } from './routes/process'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as AiRouteImport } from './routes/ai'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
@@ -38,6 +39,11 @@ const McpRoute = McpRouteImport.update({
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiRoute = AiRouteImport.update({
+  id: '/ai',
+  path: '/ai',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -77,6 +83,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ai': typeof AiRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -89,6 +96,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ai': typeof AiRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -102,6 +110,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ai': typeof AiRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -116,6 +125,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/ai'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -128,6 +138,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/ai'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -140,6 +151,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/ai'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -153,6 +165,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AiRoute: typeof AiRoute
   GalleryRoute: typeof GalleryRoute
   McpRoute: typeof McpRoute
   ProcessRoute: typeof ProcessRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai': {
+      id: '/ai'
+      path: '/ai'
+      fullPath: '/ai'
+      preLoaderRoute: typeof AiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -241,6 +261,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AiRoute: AiRoute,
   GalleryRoute: GalleryRoute,
   McpRoute: McpRoute,
   ProcessRoute: ProcessRoute,
