@@ -353,7 +353,7 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project\u00a0 via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
 \u00a01.Users getting so many spam notifications
-\u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
+\u00a02.Important notifications for their job getting lost resulting into delays and missed deadlines
 \u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
               </p>
             </div>
@@ -433,7 +433,7 @@ If AE's want to build a custom audience to for the clients would require to send
                 Product Requirement Document
               </h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                After I received the PRD from the product team and getting a walkthrough of PRD from product for the kickstart the design process. Other than the pinpoints which I already knew, Product team had additional thing which was notifications template to create at entity level for all its user types.
+                After I received the PRD from the product team and getting a walkthrough of PRD from product for the kickstart the design process. Other than the painpoints which I already knew, Product team had additional thing which was notifications template to create at entity level for all its user types.
 
 As Grid mobile app does not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the which user type they are assigned. The mobile designs will be both for Android and iOS version of the application.
               </p>
