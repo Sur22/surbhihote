@@ -62,7 +62,7 @@ const defaultMeta = {
     stakeholderInterview:
       "After I get a brief from the product team about the new feature and receive the product requirements document (PRD) and competitive analysis, I gain a holistic view of the feature and functionality we are thinking of developing.\nThe stakeholder I interviewed for this feature was the 'Head of Product Development'. It gave me a better understanding of the problem we are trying to solve.\nAs there are many phases and stages in PLM, Product Development Managers were having a hard time managing all the product-related files and data. They had to use multiple tools to manage communication with the factory and the client whenever any change or update was made to the product.",
     userInterview:
-      "I went to 5 users for a desk interviews\u00a0and asking them the set of questions; a lean sampling.\u00a0I chose guerrilla, in-context research to get signal fast without derailing a fast-moving team. Everyone gets the notifications but the Main issues was the users who handle the PLM and depend on the notifications to track the process and do the next steps\u00a0 'Product Development Managers' Product Managers, also the one who are the account manages has to keep tabs on the process form Sourcing, Pre production and prodcution.\n",
+      "I went to 5 users for a desk interviews\u00a0and asking them the set of questions; a lean sampling.\u00a0I chose guerrilla, in-context research to get signal fast without derailing a fast-moving team. Everyone gets the notifications but the main issues was the users who handle the PLM and depend on the notifications to track the process and do the next steps\u00a0 'Product Development Managers' Product Managers, also the one who are the account managers has to keep tabs on the process from Sourcing, Pre production and production.\n",
     userInterviewInsights: [
       {
         quote: "\n",
@@ -268,7 +268,7 @@ const _caseStudies: CaseStudy[] = [
           author: "Client",
         },
         {
-          quote: '"Once I missed out on an important notification and as a result the the product got delayed."',
+          quote: '"Once I missed out on an important notification and as a result the product got delayed."',
           author: "Production Manager",
         },
         {
