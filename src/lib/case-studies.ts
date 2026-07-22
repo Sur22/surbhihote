@@ -285,7 +285,7 @@ const _caseStudies: CaseStudy[] = [
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: notificationBanner.url,
     summary:
-      "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 62% to 7% and missed alerts by 84%.",
+      "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
     keywords:
       "enterprise notification system design, notification UX, mobile notification preferences, PLM notification design, iOS Android notification UX, supply chain alerts UX", 
     problem:
@@ -298,7 +298,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Missed deadlines", value: "-38%" },
-      { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "62% \u2192 7%" },
+      { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "64% \u2192 7%" },
       { label: "Reduction in missed alerts", value: "-84%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+6" },
     ],
