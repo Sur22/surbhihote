@@ -8,6 +8,7 @@ import type { ReactNode } from "react";
 
 const nav = [
   { to: "/", label: "Case Studies", hash: "case-studies" as const },
+  { to: "/ai", label: "AI" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
 ] as const;
