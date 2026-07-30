@@ -65,7 +65,7 @@ function AIProjectPage() {
           Back to AI Projects
         </Link>
 
-        <span className="eyebrow mb-8 inline-block">{project.tags.join(" · ")}</span>
+        <span className="eyebrow mb-8 block">{project.tags.join(" · ")}</span>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
           {project.title}
         </h1>
