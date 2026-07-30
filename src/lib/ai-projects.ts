@@ -53,7 +53,7 @@ export const aiProjects: AIProject[] = [
     slug: "resources",
     index: "04",
     subtitle: "A working library for designing with AI",
-    title: "Resources",
+    title: "AI Resources",
     tags: ["TOOLS", "PROMPTS", "REFERENCES", "WORKFLOWS"],
     description:
       "A curated collection of AI design tools, prompt patterns, reference reads, and workflows I use to prototype and ship faster.",
