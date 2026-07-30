@@ -66,7 +66,7 @@ function AIPage() {
             <Sparkles size={14} />
             <span>New</span>
           </div>
-          <p className="eyebrow mt-6 mb-4">A PRODUCT DESIGNER WITH A TECHNICAL EDGE</p>
+          <p className="eyebrow mt-6 mb-4 uppercase">PIONEERING THE FUTURE</p>
           <h1 className="font-serif text-[72px] leading-[1.1] text-foreground">
             AI Projects
           </h1>
