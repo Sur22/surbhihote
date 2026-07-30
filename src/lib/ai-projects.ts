@@ -5,7 +5,9 @@ import resourcesImage from "@/assets/resources.png";
 
 export type AIProject = {
   slug: string;
+  index: string;
   title: string;
+  subtitle: string;
   tags: string[];
   description: string;
   image: string;
@@ -15,6 +17,8 @@ export type AIProject = {
 export const aiProjects: AIProject[] = [
   {
     slug: "creator-hub",
+    index: "01",
+    subtitle: "Designing an AI-assisted publishing workspace",
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML", "2026"],
     description:
@@ -24,6 +28,8 @@ export const aiProjects: AIProject[] = [
   },
   {
     slug: "voyager",
+    index: "02",
+    subtitle: "An AI travel companion, end to end",
     title: "Voyager",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     description:
@@ -33,6 +39,8 @@ export const aiProjects: AIProject[] = [
   },
   {
     slug: "vibe-coded-portfolio",
+    index: "03",
+    subtitle: "Building a portfolio by prompting",
     title: "Vibe Coded Portfolio",
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
@@ -43,6 +51,8 @@ export const aiProjects: AIProject[] = [
   },
   {
     slug: "resources",
+    index: "04",
+    subtitle: "A working library for designing with AI",
     title: "Resources",
     tags: ["TOOLS", "PROMPTS", "REFERENCES", "WORKFLOWS"],
     description:
