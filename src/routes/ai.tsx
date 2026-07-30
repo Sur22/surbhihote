@@ -82,14 +82,18 @@ function AIPage() {
               key={project.title}
               className="group rounded-2xl border border-border bg-card overflow-hidden"
             >
-              <div className="overflow-hidden aspect-[4/3]">
+              <div className="overflow-hidden aspect-[4/3] flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.imageAlt}
                   width={800}
                   height={600}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  className={`object-cover transition-transform duration-700 group-hover:scale-[1.03] ${
+                    project.title === "Creator Hub" || project.title === "Voyager"
+                      ? "w-[80%] h-[80%]"
+                      : "w-full h-full"
+                  }`}
                 />
               </div>
               <div className="p-6 md:p-8">
