@@ -4,6 +4,7 @@ import { Sparkles } from "lucide-react";
 import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio.png.asset.json";
+import resourcesImage from "@/assets/resources.png.asset.json";
 
 export const Route = createFileRoute("/ai")({
   head: () => ({
