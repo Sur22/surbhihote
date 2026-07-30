@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { Sparkles, Bot, Wand2 } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
+import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
+import aiExperiments from "@/assets/ai-experiments-card.png.asset.json";
 
 export const Route = createFileRoute("/ai")({
   head: () => ({
@@ -17,6 +20,33 @@ export const Route = createFileRoute("/ai")({
   }),
   component: AIPage,
 });
+
+const projects = [
+  {
+    title: "Creator Hub",
+    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML", "2026"],
+    description:
+      "A capstone project from MIT xPRO's Designing and Building AI Products and Services — a platform to post across social media channels at once.",
+    image: creatorHubDashboard.url,
+    imageAlt: "Creator Hub dashboard mockup",
+  },
+  {
+    title: "Voyager",
+    tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
+    description:
+      "An AI travel assistant built end-to-end with generative tools — exploring conversational UI, itinerary generation, and map-based experiences.",
+    image: voyagerWelcome.url,
+    imageAlt: "Voyager AI travel assistant welcome screen",
+  },
+  {
+    title: "AI Design Experiments",
+    tags: ["EXPERIMENTS", "GENERATIVE UI", "AGENTIC FLOWS"],
+    description:
+      "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
+    image: aiExperiments.url,
+    imageAlt: "Abstract neural network visualization for AI design experiments",
+  },
+];
 
 function AIPage() {
   return (
@@ -37,24 +67,35 @@ function AIPage() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          <article className="rounded-2xl border border-border p-6 md:p-8 bg-card">
-            <Bot size={22} className="text-foreground" />
-            <h2 className="mt-4 font-serif text-2xl text-foreground">AI-assisted workflows</h2>
-            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              How I use LLMs and generative tools inside my design process — from
-              research synthesis to rapid prototyping and content generation.
-            </p>
-          </article>
-
-          <article className="rounded-2xl border border-border p-6 md:p-8 bg-card">
-            <Wand2 size={22} className="text-foreground" />
-            <h2 className="mt-4 font-serif text-2xl text-foreground">Experiments & prototypes</h2>
-            <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              Small projects exploring conversational UI, agentic flows, and the
-              patterns emerging around AI-native products.
-            </p>
-          </article>
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
+          {projects.map((project) => (
+            <article
+              key={project.title}
+              className="group rounded-2xl border border-border bg-card overflow-hidden"
+            >
+              <div className="overflow-hidden aspect-[4/3]">
+                <img
+                  src={project.image}
+                  alt={project.imageAlt}
+                  width={800}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+              </div>
+              <div className="p-6 md:p-8">
+                <span className="eyebrow text-xs">
+                  {project.tags.join(" · ")}
+                </span>
+                <h2 className="mt-3 font-serif text-2xl text-foreground">
+                  {project.title}
+                </h2>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
 
         <p className="mt-16 text-sm text-muted-foreground">
