@@ -89,7 +89,7 @@ function AIProjectPage() {
                   params={{ slug: p.slug }}
                   className="group block"
                 >
-                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors whitespace-nowrap underline-offset-4 group-hover:underline">
+                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors whitespace-nowrap">
                     {p.title}
                   </h3>
                 </Link>
