@@ -65,10 +65,7 @@ function AIProjectPage() {
           Back to AI Projects
         </Link>
 
-        <div className="flex items-baseline gap-4 mb-8">
-          <span className="font-serif text-3xl text-accent">{project.index}</span>
-          <span className="eyebrow">{project.tags.join(" · ")}</span>
-        </div>
+        <span className="eyebrow mb-8 inline-block">{project.tags.join(" · ")}</span>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
           {project.title}
         </h1>
