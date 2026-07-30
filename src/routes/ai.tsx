@@ -62,7 +62,7 @@ function AIPage() {
     <SiteLayout>
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 md:py-28">
         <div className="max-w-2xl">
-          <p className="eyebrow mt-[70px] mb-4 uppercase">PIONEERING THE FUTURE</p>
+          <p className="eyebrow mt-[-50px] mb-4 uppercase">PIONEERING THE FUTURE</p>
           <h1 className="font-serif text-[72px] leading-[1.1] text-foreground">
             AI Projects
           </h1>
