@@ -39,8 +39,8 @@ const projects = [
     imageAlt: "Voyager AI travel assistant welcome screen",
   },
   {
-    title: "AI Design Experiments",
-    tags: ["EXPERIMENTS", "GENERATIVE UI", "AGENTIC FLOWS"],
+    title: "Vibe coded Portfolio",
+    tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
       "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
     image: aiExperiments.url,
