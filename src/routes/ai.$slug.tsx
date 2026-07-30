@@ -77,6 +77,16 @@ function AIProjectPage() {
           Placeholder text — a detailed write-up of this project is coming soon.
         </p>
 
+        <figure className="mt-12 overflow-hidden rounded-xl border border-border bg-muted/30">
+          <img
+            src={project.image}
+            alt={project.imageAlt}
+            loading="lazy"
+            className="w-full h-auto object-cover"
+          />
+        </figure>
+
+
 
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
