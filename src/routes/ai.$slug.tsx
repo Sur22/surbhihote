@@ -56,40 +56,30 @@ function AIProjectPage() {
 
   return (
     <SiteLayout>
-      <article className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 md:py-24">
+      <article className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/ai"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-10"
         >
-          <ArrowLeft size={16} /> AI Projects
+          <ArrowLeft size={16} />
+          Back to AI Projects
         </Link>
 
-        <header className="mt-10 max-w-3xl">
-          <p className="eyebrow text-xs">{project.tags.join(" · ")}</p>
-          <h1 className="mt-4 font-serif text-[56px] md:text-[72px] leading-[1.1] text-foreground">
-            {project.title}
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            {project.description}
-          </p>
-        </header>
-
-        <div className="mt-12 rounded-2xl border border-border bg-card overflow-hidden">
-          <img
-            src={project.image}
-            alt={project.imageAlt}
-            width={1600}
-            height={1200}
-            className="w-full h-auto object-cover"
-          />
+        <div className="flex items-baseline gap-4 mb-8">
+          <span className="font-serif text-3xl text-accent">{project.index}</span>
+          <span className="eyebrow">{project.tags.join(" · ")}</span>
         </div>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
+          {project.title}
+        </h1>
+        <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
+          {project.subtitle}
+        </p>
 
-        <section className="mt-14 max-w-3xl">
-          <h2 className="font-serif text-2xl text-foreground">Overview</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            Placeholder text — a detailed write-up of this project is coming soon.
-          </p>
-        </section>
+        <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+          Placeholder text — a detailed write-up of this project is coming soon.
+        </p>
+
 
         <section className="mt-20 border-t border-border pt-10">
           <h2 className="font-serif text-2xl text-foreground">More AI projects</h2>
