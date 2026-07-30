@@ -81,20 +81,17 @@ function AIProjectPage() {
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
             <p className="eyebrow mb-10">More AI projects</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-              {others.map((p, i) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+              {others.map((p) => (
                 <Link
                   key={p.slug}
                   to="/ai/$slug"
                   params={{ slug: p.slug }}
-                  className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
+                  className="group block"
                 >
-                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
+                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors whitespace-nowrap underline-offset-4 group-hover:underline">
                     {p.title}
                   </h3>
-                  <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
-                    Read more →
-                  </span>
                 </Link>
               ))}
             </div>
