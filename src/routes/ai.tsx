@@ -52,7 +52,7 @@ const projects = [
     tags: ["TOOLS", "PROMPTS", "REFERENCES", "WORKFLOWS"],
     description:
       "A curated collection of AI design tools, prompt patterns, reference reads, and workflows I use to prototype and ship faster.",
-    image: resourcesImage.url,
+    image: resourcesImage,
     imageAlt: "Abstract visualization of floating documents and resources",
   },
 ];
