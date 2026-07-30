@@ -6,7 +6,7 @@ import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio.png.asset.json";
 import resourcesImage from "@/assets/resources.png";
 
-export const Route = createFileRoute("/ai")({
+export const Route = createFileRoute("/ai/")({
   head: () => ({
     meta: [
       { title: "AI — Surbhi Hote" },
