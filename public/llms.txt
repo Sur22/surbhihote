@@ -8,6 +8,7 @@ Surbhi Hote is a Lead Product Designer based in the United States. Her portfolio
 - [Home](/): Introduction and selected case studies
 - [About](/about): Background, experience, and resume
 - [UX Process](/process): Design process, methods, and principles
+- [AI](/ai): Designing with AI — approach, tools, and experiments
 - [Gallery](/gallery): Visual work and explorations
 
 ## Case studies
