@@ -43,8 +43,8 @@ const projects = [
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
       "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
-    image: aiExperiments.url,
-    imageAlt: "Abstract neural network visualization for AI design experiments",
+    image: vibeCodedPortfolio.url,
+    imageAlt: "Full-length screenshot of the portfolio home page in light and dark theme",
   },
 ];
 
