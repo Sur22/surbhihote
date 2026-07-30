@@ -40,7 +40,7 @@ const projects = [
     imageAlt: "Voyager AI travel assistant welcome screen",
   },
   {
-    title: "Vibe coded Portfolio",
+    title: "Vibe Coded Portfolio",
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
       "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
@@ -67,7 +67,7 @@ function AIPage() {
             <span>New</span>
           </div>
           <h1 className="mt-6 font-serif text-4xl md:text-6xl leading-tight text-foreground">
-            Designing with AI
+            AI Projects
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             A space for my explorations at the intersection of product design and
