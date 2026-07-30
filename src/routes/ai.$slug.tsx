@@ -78,19 +78,26 @@ function AIProjectPage() {
         </p>
 
 
-        <section className="mt-20 border-t border-border pt-10">
-          <h2 className="font-serif text-2xl text-foreground">More AI projects</h2>
-          <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3">
-            {others.map((p) => (
-              <Link
-                key={p.slug}
-                to="/ai/$slug"
-                params={{ slug: p.slug }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
-              >
-                {p.title}
-              </Link>
-            ))}
+        <section className="mt-20 border-t border-border">
+          <div className="pt-20 pb-10">
+            <p className="eyebrow mb-10">More AI projects</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+              {others.map((p, i) => (
+                <Link
+                  key={p.slug}
+                  to="/ai/$slug"
+                  params={{ slug: p.slug }}
+                  className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
+                >
+                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
+                    {p.title}
+                  </h3>
+                  <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
+                    Read more →
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       </article>
