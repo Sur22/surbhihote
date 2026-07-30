@@ -3,7 +3,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Sparkles } from "lucide-react";
 import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
-import aiExperiments from "@/assets/ai-experiments-card.png.asset.json";
+import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio.png.asset.json";
 
 export const Route = createFileRoute("/ai")({
   head: () => ({
@@ -43,8 +43,8 @@ const projects = [
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
       "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
-    image: aiExperiments.url,
-    imageAlt: "Abstract neural network visualization for AI design experiments",
+    image: vibeCodedPortfolio.url,
+    imageAlt: "Full-length screenshot of the portfolio home page in light and dark theme",
   },
 ];
 
