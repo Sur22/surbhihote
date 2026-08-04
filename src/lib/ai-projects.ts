@@ -38,6 +38,7 @@ export const aiProjects: AIProject[] = [
       "An AI travel assistant built end-to-end with generative tools — exploring conversational UI, itinerary generation, and map-based experiences.",
     image: voyagerWelcome.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
+    pdfUrl: "/ai-pdfs/voyager.pdf",
   },
   {
     slug: "vibe-coded-portfolio",
