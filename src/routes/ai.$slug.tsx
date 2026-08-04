@@ -86,7 +86,9 @@ function AIProjectPage() {
           />
         </figure>
 
-
+        <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+          More details, process notes, and outcomes for this project will be shared here soon.
+        </p>
 
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
