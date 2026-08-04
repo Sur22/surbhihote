@@ -12,6 +12,7 @@ export type AIProject = {
   description: string;
   image: string;
   imageAlt: string;
+  pdfUrl?: string;
 };
 
 export const aiProjects: AIProject[] = [
@@ -25,6 +26,7 @@ export const aiProjects: AIProject[] = [
       "A capstone project from MIT xPRO's Designing and Building AI Products and Services — a platform to post across social media channels at once.",
     image: creatorHubDashboard.url,
     imageAlt: "Creator Hub dashboard mockup",
+    pdfUrl: "/ai-pdfs/creator-hub.pdf",
   },
   {
     slug: "voyager",
@@ -36,6 +38,7 @@ export const aiProjects: AIProject[] = [
       "An AI travel assistant built end-to-end with generative tools — exploring conversational UI, itinerary generation, and map-based experiences.",
     image: voyagerWelcome.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
+    pdfUrl: "/ai-pdfs/voyager.pdf",
   },
   {
     slug: "vibe-coded-portfolio",

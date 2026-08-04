@@ -90,6 +90,27 @@ function AIProjectPage() {
           More details, process notes, and outcomes for this project will be shared here soon.
         </p>
 
+        {project.pdfUrl && (
+          <section className="mt-14">
+            <h2 className="font-serif text-2xl md:text-3xl mb-6">Case study PDF</h2>
+            <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
+              <iframe
+                src={project.pdfUrl}
+                title={`${project.title} PDF`}
+                className="w-full h-[600px] md:h-[800px]"
+              />
+            </div>
+            <a
+              href={project.pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Open PDF in new tab
+            </a>
+          </section>
+        )}
+
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
             <p className="eyebrow mb-10">More AI projects</p>
