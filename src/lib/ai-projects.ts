@@ -12,6 +12,7 @@ export type AIProject = {
   description: string;
   image: string;
   imageAlt: string;
+  pdfUrl?: string;
 };
 
 export const aiProjects: AIProject[] = [
