@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
@@ -52,6 +53,10 @@ function AIProjectNotFound() {
 
 function AIProjectPage() {
   const { project } = Route.useLoaderData();
+  const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
+  useEffect(() => {
+    setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
+  }, [project.slug]);
   const others = aiProjects.filter((p) => p.slug !== project.slug);
 
   return (
@@ -93,15 +98,34 @@ function AIProjectPage() {
         {project.pdfUrl && (
           <section className="mt-14">
             <h2 className="font-serif text-2xl md:text-3xl mb-6">Case study PDF</h2>
+            {project.pdfs && project.pdfs.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.pdfs.map((pdf: { label: string; url: string }) => (
+                  <button
+                    key={pdf.url}
+                    type="button"
+                    onClick={() => setActivePdf(pdf.url)}
+                    className={`rounded-full border px-4 py-2 text-xs md:text-sm transition-colors ${
+                      activePdf === pdf.url
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {pdf.label}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
               <iframe
-                src={project.pdfUrl}
+                key={activePdf}
+                src={activePdf}
                 title={`${project.title} PDF`}
                 className="w-full h-[600px] md:h-[800px]"
               />
             </div>
             <a
-              href={project.pdfUrl}
+              href={activePdf}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-4 text-sm text-muted-foreground hover:text-foreground transition-colors"

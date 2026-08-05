@@ -13,6 +13,7 @@ export type AIProject = {
   image: string;
   imageAlt: string;
   pdfUrl?: string;
+  pdfs?: { label: string; url: string }[];
 };
 
 export const aiProjects: AIProject[] = [
@@ -38,7 +39,13 @@ export const aiProjects: AIProject[] = [
       "An AI travel assistant built end-to-end with generative tools — exploring conversational UI, itinerary generation, and map-based experiences.",
     image: voyagerWelcome.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
-    pdfUrl: "/ai-pdfs/voyager.pdf",
+    pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
+    pdfs: [
+      { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
+      { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
+      { label: "Phase 3 — Execution & Testing", url: "/ai-pdfs/voyager-phase-3.pdf" },
+      { label: "Investor Pitch Deck", url: "/ai-pdfs/voyager-pitch-deck.pdf" },
+    ],
   },
   {
     slug: "vibe-coded-portfolio",
