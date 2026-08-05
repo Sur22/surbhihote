@@ -147,7 +147,21 @@ function GalleryPage() {
                 <h2 className="font-serif text-2xl md:text-3xl leading-tight">{it.title}</h2>
                 <span className="eyebrow">{it.tags.join(" · ")}</span>
               </div>
-              <p className="md:col-span-5 text-foreground/75 leading-relaxed">{it.body}</p>
+              <p className="md:col-span-5 text-foreground/75 leading-relaxed">
+                {it.body}
+                {(it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && (
+                  <>
+                    {" "}
+                    <Link
+                      to="/ai/$slug"
+                      params={{ slug: it.title === "Creator Hub" ? "creator-hub" : "voyager" }}
+                      className="font-bold underline underline-offset-4 hover:text-foreground transition-colors"
+                    >
+                      Read case study
+                    </Link>
+                  </>
+                )}
+              </p>
             </div>
             <div
               className={cn(
