@@ -110,7 +110,7 @@ function AIProjectPage() {
                     className={`rounded-full border px-4 py-2 text-xs md:text-sm transition-colors ${
                       activePdf === pdf.url
                         ? "border-foreground bg-foreground text-background"
-                        : "border-border text-muted-foreground hover:text-foreground"
+                        : "border-foreground/25 text-foreground/80 hover:border-foreground/60 hover:text-foreground"
                     }`}
                   >
                     {pdf.label}
