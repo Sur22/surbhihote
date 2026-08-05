@@ -121,19 +121,13 @@ function AIProjectPage() {
               </div>
             )}
             <ClientOnly fallback={<div className="w-full h-[600px] rounded-xl border border-border bg-muted/30" />}>
-              {(() => {
-                const activeLabel = project.pdfs?.find((p) => p.url === activePdf)?.label ?? "";
-                const isPitchDeck = activeLabel.toLowerCase().includes("pitch deck");
-                return (
-                  <PdfViewer
-                    key={activePdf}
-                    url={activePdf!}
-                    title={project.title}
-                    scale={isPitchDeck ? 1.4 : undefined}
-                    hideSlider={isPitchDeck}
-                  />
-                );
-              })()}
+              <PdfViewer
+                key={activePdf}
+                url={activePdf!}
+                title={project.title}
+                scale={isPitchDeck ? 1.4 : undefined}
+                hideSlider={isPitchDeck}
+              />
             </ClientOnly>
             <a
               href={activePdf}
