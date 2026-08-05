@@ -100,7 +100,7 @@ function AIProjectPage() {
             <h2 className="font-serif text-2xl md:text-3xl mb-6">Case study PDF</h2>
             {project.pdfs && project.pdfs.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.pdfs.map((pdf) => (
+                {project.pdfs.map((pdf: { label: string; url: string }) => (
                   <button
                     key={pdf.url}
                     type="button"
