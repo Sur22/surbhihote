@@ -62,7 +62,18 @@ export function PdfViewer({ url, title }: Props) {
   return (
     <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
       {status === "loading" && (
-        <p className="p-6 text-sm text-muted-foreground">Loading {title ?? "PDF"}…</p>
+        <div className="flex flex-col items-center justify-center gap-4 p-10 text-center">
+          <img
+            src="/loading.gif"
+            alt="Loading"
+            width={48}
+            height={48}
+            className="opacity-80"
+          />
+          <p className="text-sm text-muted-foreground">
+            Please wait — the file is loading. This may take a few moments.
+          </p>
+        </div>
       )}
       {status === "error" && (
         <p className="p-6 text-sm text-muted-foreground">
