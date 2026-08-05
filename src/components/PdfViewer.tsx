@@ -1,14 +1,25 @@
 import { useEffect, useRef, useState } from "react";
+import { Slider } from "@/components/ui/slider";
 
 type Props = {
   url: string;
   title?: string;
-  scale?: number; // fixed zoom scale; omit to fit page width to container
+  scale?: number; // initial zoom scale; defaults to A4 natural size (1)
 };
 
-export function PdfViewer({ url, title, scale: fixedScale }: Props) {
+const MIN_ZOOM = 0.5;
+const MAX_ZOOM = 5;
+
+export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+  const [zoom, setZoom] = useState(initialScale);
+  const [displayZoom, setDisplayZoom] = useState(initialScale);
+
+  useEffect(() => {
+    setZoom(initialScale);
+    setDisplayZoom(initialScale);
+  }, [url, initialScale]);
 
   useEffect(() => {
     let cancelled = false;
@@ -28,7 +39,6 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
         const doc = await pdfjs.getDocument({ url }).promise;
         if (cancelled) return;
 
-        const containerWidth = container.clientWidth || 900;
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
         for (let i = 1; i <= doc.numPages; i++) {
@@ -36,15 +46,8 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
 
-          let scale: number;
-          let cssWidth: number;
-          if (fixedScale) {
-            scale = fixedScale;
-            cssWidth = (base.width * scale) / dpr;
-          } else {
-            scale = (containerWidth / base.width) * dpr;
-            cssWidth = containerWidth;
-          }
+          const scale = zoom;
+          const cssWidth = (base.width * scale) / dpr;
           const viewport = page.getViewport({ scale });
 
           const canvas = document.createElement("canvas");
@@ -53,6 +56,7 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
           canvas.style.width = `${cssWidth}px`;
           canvas.style.height = "auto";
           canvas.style.display = "block";
+          canvas.style.flexShrink = "0";
           canvas.className = "border-b border-border last:border-b-0";
           container.appendChild(canvas);
 
@@ -69,12 +73,12 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [url, fixedScale]);
+  }, [url, zoom]);
 
   return (
-    <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
+    <div className="relative w-full rounded-xl border border-border overflow-hidden bg-muted/30">
       {status === "loading" && (
-        <div className="flex flex-col items-center justify-center gap-4 p-10 text-center">
+        <div className="flex flex-col items-center justify-center gap-4 p-10 text-center h-[800px]">
           <img
             src="/loading.gif"
             alt="Loading"
@@ -88,7 +92,7 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
         </div>
       )}
       {status === "error" && (
-        <p className="p-6 text-sm text-muted-foreground">
+        <p className="p-6 text-sm text-muted-foreground h-[800px]">
           Unable to display this PDF here.{" "}
           <a href={url} target="_blank" rel="noopener noreferrer" className="underline">
             Open it in a new tab
@@ -98,9 +102,24 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
       )}
       <div
         ref={containerRef}
-        className={`h-[800px] overflow-auto ${fixedScale ? "flex flex-col items-center" : ""}`}
-        style={fixedScale ? { maxWidth: "595px", margin: "0 auto" } : undefined}
+        className="h-[800px] overflow-auto flex flex-col items-center"
+        style={{ maxWidth: "595px", margin: "0 auto" }}
       />
+
+      <div className="absolute bottom-4 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
+        <span className="text-xs text-muted-foreground w-10 tabular-nums">
+          {Math.round(displayZoom * 100)}%
+        </span>
+        <Slider
+          value={[displayZoom]}
+          min={MIN_ZOOM}
+          max={MAX_ZOOM}
+          step={0.1}
+          onValueChange={(value) => setDisplayZoom(value[0])}
+          onValueCommit={(value) => setZoom(value[0])}
+          className="w-28 md:w-40"
+        />
+      </div>
     </div>
   );
 }
