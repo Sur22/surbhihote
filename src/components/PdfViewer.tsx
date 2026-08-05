@@ -49,7 +49,7 @@ export function PdfViewer({ url, title }: Props) {
           await page.render({ canvasContext: ctx, viewport, canvas }).promise;
         }
         if (!cancelled) setStatus("ready");
-      } catch {
+      } catch (e) { console.error("PDFVIEWER", e);
         if (!cancelled) setStatus("error");
       }
     })();
