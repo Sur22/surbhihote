@@ -49,8 +49,14 @@ function getSections(slug?: string): Section[] {
   return sections;
 }
 
-export function CaseStudySideNav({ slug }: { slug?: string }) {
-  const sections = getSections(slug);
+export function CaseStudySideNav({
+  slug,
+  sections: sectionsProp,
+}: {
+  slug?: string;
+  sections?: Section[];
+}) {
+  const sections = sectionsProp ?? getSections(slug);
   const [activeId, setActiveId] = useState<string>(sections[0]?.id ?? "overview");
   const [visible, setVisible] = useState(false);
 
