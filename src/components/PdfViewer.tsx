@@ -46,9 +46,9 @@ export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
 
-          const scale = zoom;
-          const cssWidth = (base.width * scale) / dpr;
-          const viewport = page.getViewport({ scale });
+          const renderScale = zoom * dpr;
+          const cssWidth = base.width * zoom;
+          const viewport = page.getViewport({ scale: renderScale });
 
           const canvas = document.createElement("canvas");
           canvas.width = viewport.width;
