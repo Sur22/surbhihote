@@ -12,6 +12,10 @@ export type AIProject = {
   description: string;
   image: string;
   imageAlt: string;
+  role?: string;
+  timeframe?: string;
+  tools?: string;
+  tasksPerformed?: string;
   pdfUrl?: string;
   /** `images` renders WebP page exports instead of the PDF for that tab. */
   pdfs?: { label: string; url: string; images?: string[] }[];
