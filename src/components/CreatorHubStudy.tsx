@@ -231,6 +231,89 @@ export function CreatorHubStudy() {
         </div>
       </Section>
 
+      <Section title="Competitive landscape">
+        <Body>
+          The creator tooling market is crowded, and its own consensus is the
+          useful part: practitioners broadly agree that no single tool does
+          everything well, so most creators run a stack of separate apps and act
+          as the glue between them. That fragmentation is the opening. I grouped
+          the landscape by what each part of the stack is actually for:
+        </Body>
+
+        <div className="overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="w-1/4 bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
+                  Category
+                </th>
+                <th className="w-1/3 bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
+                  Representative tools
+                </th>
+                <th className="bg-muted/40 text-left font-semibold text-foreground p-3">
+                  What it's actually for
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  category: "Scheduling & publishing",
+                  tools: "Buffer, Hootsuite, Later",
+                  role: "Queueing posts across platforms and keeping a calendar full — strong on distribution, thin on what to say.",
+                },
+                {
+                  category: "AI writing & ideation",
+                  tools: "ChatGPT, Jasper, Copy.ai",
+                  role: "Generating captions, hooks, and outlines — fast, but generic, with no memory of the creator's own voice or past performance.",
+                },
+                {
+                  category: "Video & clip editing",
+                  tools: "Opus Clip, Descript, CapCut",
+                  role: "Turning long-form footage into short clips — repurposing at the media layer, disconnected from strategy.",
+                },
+                {
+                  category: "Analytics & insights",
+                  tools: "Native platform dashboards, Metricool",
+                  role: "Reporting what already happened — descriptive numbers rather than a recommended next action.",
+                },
+                {
+                  category: "All-in-one suites",
+                  tools: "Sprout Social, Sprinklr",
+                  role: "Serving brands and agencies with team workflows — priced and shaped for organizations, not individual creators.",
+                },
+              ].map((row) => (
+                <tr
+                  key={row.category}
+                  className="border-b border-border last:border-b-0 align-top"
+                >
+                  <th className="bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
+                    {row.category}
+                  </th>
+                  <td className="p-3 text-foreground/80 leading-relaxed border-r border-border">
+                    {row.tools}
+                  </td>
+                  <td className="p-3 text-foreground/80 leading-relaxed">
+                    {row.role}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <Body>
+          <Label>Where Creator Hub fits.</Label> It doesn't try to beat any one
+          of these at its own game. It targets the seam between them: one
+          workspace that grounds AI in the creator's own history so suggestions
+          match their voice, turns analytics into a recommended next action, and
+          keeps the person approving what publishes. The competitor isn't a
+          single feature, it's the fragmentation itself.
+        </Body>
+      </Section>
+
+
+
       <Section title="Strategy">
         <div>
           <Sub>Product + Business Strategy</Sub>
