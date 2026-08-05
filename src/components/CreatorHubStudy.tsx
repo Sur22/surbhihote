@@ -1,4 +1,12 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  CarouselDots,
+} from "@/components/ui/carousel";
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
 
