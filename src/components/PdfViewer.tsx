@@ -30,6 +30,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
   });
 
   useEffect(() => {
+    console.log("[PdfViewer] reset effect", url, initialScale);
     setRenderZoom(initialScale);
     setDisplayZoom(initialScale);
     setZoom(initialScale);
