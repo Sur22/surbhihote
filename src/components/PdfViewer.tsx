@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 type Props = {
   url: string;
   title?: string;
+  scale?: number; // fixed zoom scale; omit to fit page width to container
 };
 
-export function PdfViewer({ url, title }: Props) {
+export function PdfViewer({ url, title, scale: fixedScale }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
 
@@ -27,18 +28,29 @@ export function PdfViewer({ url, title }: Props) {
         const doc = await pdfjs.getDocument({ url }).promise;
         if (cancelled) return;
 
-        const width = container.clientWidth || 900;
+        const containerWidth = container.clientWidth || 900;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
         for (let i = 1; i <= doc.numPages; i++) {
           const page = await doc.getPage(i);
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
-          const scale = (width / base.width) * Math.min(window.devicePixelRatio || 1, 2);
+
+          let scale: number;
+          let cssWidth: number;
+          if (fixedScale) {
+            scale = fixedScale;
+            cssWidth = (base.width * scale) / dpr;
+          } else {
+            scale = (containerWidth / base.width) * dpr;
+            cssWidth = containerWidth;
+          }
           const viewport = page.getViewport({ scale });
 
           const canvas = document.createElement("canvas");
           canvas.width = viewport.width;
           canvas.height = viewport.height;
-          canvas.style.width = "100%";
+          canvas.style.width = `${cssWidth}px`;
           canvas.style.height = "auto";
           canvas.style.display = "block";
           canvas.className = "border-b border-border last:border-b-0";
@@ -57,7 +69,7 @@ export function PdfViewer({ url, title }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [url]);
+  }, [url, fixedScale]);
 
   return (
     <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
@@ -84,7 +96,7 @@ export function PdfViewer({ url, title }: Props) {
           .
         </p>
       )}
-      <div ref={containerRef} className="max-h-[800px] overflow-y-auto" />
+      <div ref={containerRef} className="h-[800px] overflow-auto" />
     </div>
   );
 }
