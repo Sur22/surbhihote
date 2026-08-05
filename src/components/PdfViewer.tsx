@@ -11,7 +11,7 @@ type Props = {
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 5;
 
-export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
+export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [zoom, setZoom] = useState(initialScale);
@@ -108,20 +108,22 @@ export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
         />
       </div>
 
-      <div className="absolute bottom-6 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
-        <span className="text-xs text-muted-foreground w-10 tabular-nums">
-          {Math.round(displayZoom * 100)}%
-        </span>
-        <Slider
-          value={[displayZoom]}
-          min={MIN_ZOOM}
-          max={MAX_ZOOM}
-          step={0.1}
-          onValueChange={(value) => setDisplayZoom(value[0])}
-          onValueCommit={(value) => setZoom(value[0])}
-          className="w-28 md:w-40"
-        />
-      </div>
+      {!hideSlider && (
+        <div className="absolute bottom-6 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
+          <span className="text-xs text-muted-foreground w-10 tabular-nums">
+            {Math.round(displayZoom * 100)}%
+          </span>
+          <Slider
+            value={[displayZoom]}
+            min={MIN_ZOOM}
+            max={MAX_ZOOM}
+            step={0.1}
+            onValueChange={(value) => setDisplayZoom(value[0])}
+            onValueCommit={(value) => setZoom(value[0])}
+            className="w-28 md:w-40"
+          />
+        </div>
+      )}
     </div>
   );
 }
