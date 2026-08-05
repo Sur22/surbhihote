@@ -96,7 +96,11 @@ export function PdfViewer({ url, title, scale: fixedScale }: Props) {
           .
         </p>
       )}
-      <div ref={containerRef} className="h-[800px] overflow-auto" />
+      <div
+        ref={containerRef}
+        className={`h-[800px] overflow-auto ${fixedScale ? "flex flex-col items-center" : ""}`}
+        style={fixedScale ? { maxWidth: "595px", margin: "0 auto" } : undefined}
+      />
     </div>
   );
 }
