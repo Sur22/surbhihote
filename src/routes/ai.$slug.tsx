@@ -59,6 +59,8 @@ function AIProjectPage() {
   useEffect(() => {
     setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
   }, [project.slug]);
+  const activePdfLabel = project.pdfs?.find((pdf: { label: string; url: string }) => pdf.url === activePdf)?.label ?? "";
+  const zoomed = activePdfLabel.startsWith("Phase");
   const others = aiProjects.filter((p) => p.slug !== project.slug);
 
   return (
@@ -119,7 +121,7 @@ function AIProjectPage() {
               </div>
             )}
             <ClientOnly fallback={<div className="w-full h-[600px] rounded-xl border border-border bg-muted/30" />}>
-              <PdfViewer key={activePdf} url={activePdf!} title={project.title} />
+              <PdfViewer key={activePdf} url={activePdf!} title={project.title} scale={zoomed ? 1.5 : undefined} />
             </ClientOnly>
             <a
               href={activePdf}
