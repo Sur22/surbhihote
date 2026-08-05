@@ -32,6 +32,10 @@ export const aiProjects: AIProject[] = [
       "A capstone project from MIT xPRO's Designing and Building AI Products and Services — a platform to post across social media channels at once.",
     image: creatorHubDashboard.url,
     imageAlt: "Creator Hub dashboard mockup",
+    role: "Product Designer",
+    timeframe: "12 weeks",
+    tools: "Figma, ChatGPT, Miro, Python",
+    tasksPerformed: "0→1 Design, UI/UX Design, Interaction Design",
   },
   {
     slug: "voyager",
