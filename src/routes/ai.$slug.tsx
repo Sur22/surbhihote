@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
@@ -52,6 +53,10 @@ function AIProjectNotFound() {
 
 function AIProjectPage() {
   const { project } = Route.useLoaderData();
+  const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
+  useEffect(() => {
+    setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
+  }, [project.slug]);
   const others = aiProjects.filter((p) => p.slug !== project.slug);
 
   return (
