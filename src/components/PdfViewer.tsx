@@ -100,7 +100,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
           .
         </p>
       )}
-      <div className="h-[800px] overflow-auto [scrollbar-width:thin] [scrollbar-color:var(--border)_var(--muted)] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-muted-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-muted-foreground [&::-webkit-scrollbar-track]:bg-muted/50">
+      <div className="h-[800px] overflow-auto [scrollbar-width:thin] [scrollbar-color:hsl(var(--foreground)/0.35)_hsl(var(--muted))] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar]:-webkit-appearance-none [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50">
         <div
           ref={containerRef}
           className="flex flex-col items-center min-w-full"
