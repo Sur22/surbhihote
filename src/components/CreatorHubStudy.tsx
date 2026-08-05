@@ -240,64 +240,60 @@ export function CreatorHubStudy() {
           the landscape by what each part of the stack is actually for:
         </Body>
 
-        <div className="overflow-x-auto rounded-lg border border-border">
-          <table className="w-full text-sm">
+        <div className="overflow-x-auto">
+          <table className="w-full text-base text-left">
             <thead>
               <tr className="border-b border-border">
-                <th className="w-1/4 bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
-                  Category
+                <th className="w-1/4 font-semibold text-foreground py-4 pr-6">
+                  Category (examples)
                 </th>
-                <th className="w-1/3 bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
-                  Representative tools
+                <th className="w-1/3 font-semibold text-foreground py-4 pr-6">
+                  Strong at
                 </th>
-                <th className="bg-muted/40 text-left font-semibold text-foreground p-3">
-                  What it's actually for
+                <th className="font-semibold text-foreground py-4">
+                  The gap it leaves
                 </th>
               </tr>
             </thead>
             <tbody>
               {[
                 {
-                  category: "Scheduling & publishing",
-                  tools: "Buffer, Hootsuite, Later",
-                  role: "Queueing posts across platforms and keeping a calendar full — strong on distribution, thin on what to say.",
+                  category: "Scheduling suites (Buffer, Later, Hootsuite)",
+                  strong: "Cross-platform scheduling, caption assistants, basic analytics",
+                  gap: "AI is generic, not tuned to one creator's voice; analytics report data rather than a next step",
                 },
                 {
-                  category: "AI writing & ideation",
-                  tools: "ChatGPT, Jasper, Copy.ai",
-                  role: "Generating captions, hooks, and outlines — fast, but generic, with no memory of the creator's own voice or past performance.",
+                  category: "AI repurposing (Opus Clip, CapCut)",
+                  strong: "Turning one asset into many clips and formats, fast",
+                  gap: "Single-purpose; sits outside the scheduling and analytics loop",
                 },
                 {
-                  category: "Video & clip editing",
-                  tools: "Opus Clip, Descript, CapCut",
-                  role: "Turning long-form footage into short clips — repurposing at the media layer, disconnected from strategy.",
+                  category: "Analytics tools (Metricool, Sprout Social)",
+                  strong: "Deep performance data and competitor views",
+                  gap: "Insight without action; the creator still has to decide what to do with it",
                 },
                 {
-                  category: "Analytics & insights",
-                  tools: "Native platform dashboards, Metricool",
-                  role: "Reporting what already happened — descriptive numbers rather than a recommended next action.",
-                },
-                {
-                  category: "All-in-one suites",
-                  tools: "Sprout Social, Sprinklr",
-                  role: "Serving brands and agencies with team workflows — priced and shaped for organizations, not individual creators.",
+                  category: "General AI writing (ChatGPT, Jasper, Claude)",
+                  strong: "Flexible drafting and voice matching",
+                  gap: "Not connected to the creator's own accounts, data, or calendar",
                 },
               ].map((row) => (
                 <tr
                   key={row.category}
-                  className="border-b border-border last:border-b-0 align-top"
+                  className="border-b border-border align-top"
                 >
-                  <th className="bg-muted/40 text-left font-semibold text-foreground p-3 border-r border-border">
+                  <td className="py-5 pr-6 text-foreground/85 leading-relaxed">
                     {row.category}
-                  </th>
-                  <td className="p-3 text-foreground/80 leading-relaxed border-r border-border">
-                    {row.tools}
                   </td>
-                  <td className="p-3 text-foreground/80 leading-relaxed">
-                    {row.role}
+                  <td className="py-5 pr-6 text-foreground/85 leading-relaxed">
+                    {row.strong}
+                  </td>
+                  <td className="py-5 text-foreground/85 leading-relaxed">
+                    {row.gap}
                   </td>
                 </tr>
               ))}
+
             </tbody>
           </table>
         </div>
