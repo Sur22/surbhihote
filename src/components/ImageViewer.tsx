@@ -9,7 +9,7 @@ type Props = {
 };
 
 const MIN_ZOOM = 0.5;
-const MAX_ZOOM = 5;
+const MAX_ZOOM = 8;
 
 /** Renders a list of images (e.g. WebP page exports) in the same frame as PdfViewer. */
 export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider = false }: Props) {
