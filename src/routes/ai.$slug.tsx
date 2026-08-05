@@ -93,15 +93,34 @@ function AIProjectPage() {
         {project.pdfUrl && (
           <section className="mt-14">
             <h2 className="font-serif text-2xl md:text-3xl mb-6">Case study PDF</h2>
+            {project.pdfs && project.pdfs.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.pdfs.map((pdf) => (
+                  <button
+                    key={pdf.url}
+                    type="button"
+                    onClick={() => setActivePdf(pdf.url)}
+                    className={`rounded-full border px-4 py-2 text-xs md:text-sm transition-colors ${
+                      activePdf === pdf.url
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {pdf.label}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
               <iframe
-                src={project.pdfUrl}
+                key={activePdf}
+                src={activePdf}
                 title={`${project.title} PDF`}
                 className="w-full h-[600px] md:h-[800px]"
               />
             </div>
             <a
-              href={project.pdfUrl}
+              href={activePdf}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-4 text-sm text-muted-foreground hover:text-foreground transition-colors"
