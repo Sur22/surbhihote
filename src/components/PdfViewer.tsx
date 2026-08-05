@@ -18,9 +18,9 @@ export function PdfViewer({ url, title }: Props) {
 
     (async () => {
       try {
-        const pdfjs: any = await import("pdfjs-dist");
+        const pdfjs: any = await import("pdfjs-dist/legacy/build/pdf.mjs");
         const workerSrc = (
-          await import("pdfjs-dist/build/pdf.worker.min.mjs?url")
+          await import("pdfjs-dist/legacy/build/pdf.worker.min.mjs?url")
         ).default;
         pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
@@ -46,10 +46,10 @@ export function PdfViewer({ url, title }: Props) {
 
           const ctx = canvas.getContext("2d");
           if (!ctx) continue;
-          await page.render({ canvasContext: ctx, viewport, canvas }).promise;
+          await page.render({ canvasContext: ctx, viewport }).promise;
         }
         if (!cancelled) setStatus("ready");
-      } catch (e) { console.error("PDFVIEWER", e);
+      } catch {
         if (!cancelled) setStatus("error");
       }
     })();
