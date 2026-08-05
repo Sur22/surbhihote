@@ -1,18 +1,30 @@
+import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
+
+const creatorHubSections = [
+  { id: "overview", label: "Overview" },
+  { id: "research", label: "Research" },
+  { id: "landscape", label: "Landscape" },
+  { id: "strategy", label: "Strategy" },
+  { id: "design", label: "Solution" },
+  { id: "reflection", label: "Reflection" },
+];
 
 function Section({
   title,
   children,
   divider = true,
+  id,
 }: {
   title?: string;
   children: React.ReactNode;
   divider?: boolean;
+  id?: string;
 }) {
   return (
     <>
-      <section className="py-16 md:py-24">
+      <section id={id} className="py-16 md:py-24 scroll-mt-24">
         {title && (
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
             {title}
@@ -77,9 +89,10 @@ function Figure({
 export function CreatorHubStudy() {
   return (
     <div className="mt-4">
+      <CaseStudySideNav sections={creatorHubSections} />
       <div className="rule" />
 
-      <Section title="At a glance">
+      <Section id="overview" title="At a glance">
         <Bullets
           items={[
             <>
@@ -172,7 +185,7 @@ export function CreatorHubStudy() {
         </div>
       </Section>
 
-      <Section title="Research">
+      <Section id="research" title="Research">
         <div>
           <Sub>Validating the opportunity</Sub>
           <Body>
@@ -231,7 +244,7 @@ export function CreatorHubStudy() {
         </div>
       </Section>
 
-      <Section title="Competitive landscape">
+      <Section id="landscape" title="Competitive landscape">
         <Body>
           The creator tooling market is crowded, and its own consensus is the
           useful part: practitioners broadly agree that no single tool does
@@ -310,7 +323,7 @@ export function CreatorHubStudy() {
 
 
 
-      <Section title="Strategy">
+      <Section id="strategy" title="Strategy">
         <div>
           <Sub>Product + Business Strategy</Sub>
           <Body>
@@ -388,7 +401,7 @@ export function CreatorHubStudy() {
         </div>
       </Section>
 
-      <Section title="Design">
+      <Section id="design" title="Design">
         <Figure
           src={createPost.url}
           alt="Creator Hub wireframe showing the AI suggestion, review, and publish flow"
@@ -401,7 +414,7 @@ export function CreatorHubStudy() {
         />
       </Section>
 
-      <Section title="Reflection" divider={false}>
+      <Section id="reflection" title="Reflection" divider={false}>
         <div>
           <Sub>Approach to the pilot</Sub>
           <Body>
@@ -424,6 +437,8 @@ export function CreatorHubStudy() {
           </Body>
         </div>
       </Section>
+
+      <div id="case-study-end" />
     </div>
   );
 }
