@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { ClientOnly } from "@tanstack/react-router";
+import { PdfViewer } from "@/components/PdfViewer";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
