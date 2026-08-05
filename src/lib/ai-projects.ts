@@ -13,7 +13,8 @@ export type AIProject = {
   image: string;
   imageAlt: string;
   pdfUrl?: string;
-  pdfs?: { label: string; url: string }[];
+  /** `images` renders WebP page exports instead of the PDF for that tab. */
+  pdfs?: { label: string; url: string; images?: string[] }[];
 };
 
 export const aiProjects: AIProject[] = [

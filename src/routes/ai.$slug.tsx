@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ClientOnly } from "@tanstack/react-router";
 import { PdfViewer } from "@/components/PdfViewer";
+import { ImageViewer } from "@/components/ImageViewer";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
@@ -59,7 +60,9 @@ function AIProjectPage() {
   useEffect(() => {
     setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
   }, [project.slug]);
-  const activePdfLabel = project.pdfs?.find((pdf: { label: string; url: string }) => pdf.url === activePdf)?.label ?? "";
+  const activeEntry = project.pdfs?.find((pdf: { url: string }) => pdf.url === activePdf);
+  const activePdfLabel = activeEntry?.label ?? "";
+  const activeImages = activeEntry?.images;
   const isPitchDeck = activePdfLabel.toLowerCase().includes("pitch deck");
   const others = aiProjects.filter((p) => p.slug !== project.slug);
 
@@ -121,13 +124,17 @@ function AIProjectPage() {
               </div>
             )}
             <ClientOnly fallback={<div className="w-full h-[600px] rounded-xl border border-border bg-muted/30" />}>
-              <PdfViewer
-                key={activePdf}
-                url={activePdf!}
-                title={project.title}
-                scale={isPitchDeck ? 1.4 : undefined}
-                hideSlider={isPitchDeck}
-              />
+              {activeImages && activeImages.length > 0 ? (
+                <ImageViewer key={activePdf} images={activeImages} title={project.title} />
+              ) : (
+                <PdfViewer
+                  key={activePdf}
+                  url={activePdf!}
+                  title={project.title}
+                  scale={isPitchDeck ? 1.4 : undefined}
+                  hideSlider={isPitchDeck}
+                />
+              )}
             </ClientOnly>
             <a
               href={activePdf}
