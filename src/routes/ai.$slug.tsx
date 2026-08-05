@@ -59,8 +59,6 @@ function AIProjectPage() {
   useEffect(() => {
     setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
   }, [project.slug]);
-  const activePdfLabel = project.pdfs?.find((pdf: { label: string; url: string }) => pdf.url === activePdf)?.label ?? "";
-  const zoomed = activePdfLabel.startsWith("Phase");
   const others = aiProjects.filter((p) => p.slug !== project.slug);
 
   return (
