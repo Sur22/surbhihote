@@ -76,7 +76,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
   }, [url, zoom]);
 
   return (
-    <div className="relative w-full rounded-xl border border-border overflow-hidden bg-muted/30">
+    <div className="relative w-full rounded-xl border border-border bg-muted/30">
       {status === "loading" && (
         <div className="flex flex-col items-center justify-center gap-4 p-10 text-center h-[800px]">
           <img
@@ -102,7 +102,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1 }: Props) {
       )}
       <div
         ref={containerRef}
-        className="h-[800px] overflow-auto flex flex-col items-center"
+        className="h-[800px] overflow-auto flex flex-col items-center [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-track]:bg-transparent"
       />
 
       <div className="absolute bottom-4 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
