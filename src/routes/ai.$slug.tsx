@@ -88,9 +88,9 @@ function AIProjectPage() {
 
         {project.slug === "creator-hub" ? (
           <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            An AI-assisted workspace that helps social media creators plan,
-            repurpose, and optimize content across platforms, without drowning
-            in tools.
+            <strong>Creator Hub</strong> An AI-assisted workspace that helps
+            social media creators plan, repurpose, and optimize content across
+            platforms, without drowning in tools.
           </p>
         ) : (
           <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
@@ -120,7 +120,9 @@ function AIProjectPage() {
                 .map((m) => (
                   <div key={m.k}>
                     <p className="eyebrow mb-2 font-bold">{m.k}</p>
-                    <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+                    <p className="text-base leading-relaxed text-foreground/85 whitespace-pre-line">
+                      {m.v}
+                    </p>
                   </div>
                 ))}
             </div>
