@@ -5,6 +5,7 @@ type Props = {
   url: string;
   title?: string;
   scale?: number; // initial zoom scale; defaults to A4 natural size (1)
+  hideSlider?: boolean;
 };
 
 const MIN_ZOOM = 0.5;
