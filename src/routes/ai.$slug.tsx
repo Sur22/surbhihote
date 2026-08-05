@@ -120,7 +120,9 @@ function AIProjectPage() {
                 .map((m) => (
                   <div key={m.k}>
                     <p className="eyebrow mb-2 font-bold">{m.k}</p>
-                    <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+                    <p className="text-base leading-relaxed text-foreground/85 whitespace-pre-line">
+                      {m.v}
+                    </p>
                   </div>
                 ))}
             </div>
