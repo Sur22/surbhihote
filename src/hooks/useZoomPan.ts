@@ -75,38 +75,67 @@ export function useZoomPan({
     };
 
     const handlePointerDown = (e: PointerEvent) => {
+      if (e.button !== 0) return;
+      e.preventDefault();
       isDraggingRef.current = true;
       lastPointerRef.current = { x: e.clientX, y: e.clientY };
-      el.setPointerCapture(e.pointerId);
+      try { el.setPointerCapture(e.pointerId); } catch { /* ignore */ }
       el.style.cursor = "grabbing";
     };
 
     const handlePointerMove = (e: PointerEvent) => {
       if (!isDraggingRef.current) return;
+      e.preventDefault();
       const dx = e.clientX - lastPointerRef.current.x;
       const dy = e.clientY - lastPointerRef.current.y;
       lastPointerRef.current = { x: e.clientX, y: e.clientY };
-      setPan(prev => ({ x: prev.x + dx, y: prev.y + dy }));
+
+      // Prefer native scrolling when the content overflows the container.
+      const maxScrollLeft = el.scrollWidth - el.clientWidth;
+      const maxScrollTop = el.scrollHeight - el.clientHeight;
+      let restX = dx;
+      let restY = dy;
+
+      if (maxScrollLeft > 0) {
+        const before = el.scrollLeft;
+        el.scrollLeft = Math.min(Math.max(before - dx, 0), maxScrollLeft);
+        restX = dx + (el.scrollLeft - before);
+      }
+      if (maxScrollTop > 0) {
+        const before = el.scrollTop;
+        el.scrollTop = Math.min(Math.max(before - dy, 0), maxScrollTop);
+        restY = dy + (el.scrollTop - before);
+      }
+
+      if (restX !== 0 || restY !== 0) {
+        setPan(prev => ({ x: prev.x + restX, y: prev.y + restY }));
+      }
     };
 
     const handlePointerUp = (e: PointerEvent) => {
+      if (!isDraggingRef.current) return;
       isDraggingRef.current = false;
-      el.releasePointerCapture(e.pointerId);
+      try { el.releasePointerCapture(e.pointerId); } catch { /* ignore */ }
       el.style.cursor = "";
     };
 
+    const handleDragStart = (e: Event) => e.preventDefault();
+
+    el.style.cursor = "grab";
+    el.addEventListener("dragstart", handleDragStart);
     el.addEventListener("wheel", handleWheel, { passive: false });
     el.addEventListener("pointerdown", handlePointerDown);
     el.addEventListener("pointermove", handlePointerMove);
     el.addEventListener("pointerup", handlePointerUp);
-    el.addEventListener("pointerleave", handlePointerUp);
+    el.addEventListener("pointercancel", handlePointerUp);
 
     return () => {
+      el.removeEventListener("dragstart", handleDragStart);
       el.removeEventListener("wheel", handleWheel);
       el.removeEventListener("pointerdown", handlePointerDown);
       el.removeEventListener("pointermove", handlePointerMove);
       el.removeEventListener("pointerup", handlePointerUp);
-      el.removeEventListener("pointerleave", handlePointerUp);
+      el.removeEventListener("pointercancel", handlePointerUp);
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };
   }, [clamp, commit, containerRef]);
