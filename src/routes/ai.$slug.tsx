@@ -118,9 +118,13 @@ function AIProjectPage() {
           </section>
         )}
 
-        <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-          More details, process notes, and outcomes for this project will be shared here soon.
-        </p>
+        {project.slug === "creator-hub" ? (
+          <CreatorHubStudy />
+        ) : (
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+            More details, process notes, and outcomes for this project will be shared here soon.
+          </p>
+        )}
 
         {project.pdfUrl && (
           <section className="mt-14">
