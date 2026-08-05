@@ -402,16 +402,43 @@ export function CreatorHubStudy() {
       </Section>
 
       <Section id="design" title="Design">
-        <Figure
-          src={createPost.url}
-          alt="Creator Hub wireframe showing the AI suggestion, review, and publish flow"
-          caption="One workspace instead of four apps — the AI suggestion, review, and publish flow."
-        />
-        <Figure
-          src={analytics.url}
-          alt="Creator Hub screen turning content analytics into a recommended next action"
-          caption="Turning analytics into a clear next action, not another dashboard."
-        />
+        <Carousel opts={{ loop: true }} className="relative group">
+          <CarouselContent>
+            {[
+              {
+                src: createPost.url,
+                alt: "Creator Hub wireframe showing the AI suggestion, review, and publish flow",
+                caption:
+                  "One workspace instead of four apps — the AI suggestion, review, and publish flow.",
+              },
+              {
+                src: analytics.url,
+                alt: "Creator Hub screen turning content analytics into a recommended next action",
+                caption:
+                  "Turning analytics into a clear next action, not another dashboard.",
+              },
+            ].map((img) => (
+              <CarouselItem key={img.caption}>
+                <figure>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                  <figcaption className="mt-4 text-sm text-muted-foreground">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          <CarouselDots className="relative z-20 mt-6" />
+        </Carousel>
       </Section>
 
       <Section id="reflection" title="Reflection" divider={false}>
