@@ -119,7 +119,7 @@ function AIProjectPage() {
               </div>
             )}
             <ClientOnly fallback={<div className="w-full h-[600px] rounded-xl border border-border bg-muted/30" />}>
-              <PdfViewer key={activePdf} url={activePdf!} title={project.title} scale={zoomed ? 1 : undefined} />
+              <PdfViewer key={activePdf} url={activePdf!} title={project.title} />
             </ClientOnly>
             <a
               href={activePdf}
