@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { ClientOnly } from "@tanstack/react-router";
+import { PdfViewer } from "@/components/PdfViewer";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
@@ -116,14 +118,9 @@ function AIProjectPage() {
                 ))}
               </div>
             )}
-            <div className="w-full rounded-xl border border-border overflow-hidden bg-muted/30">
-              <iframe
-                key={activePdf}
-                src={activePdf}
-                title={`${project.title} PDF`}
-                className="w-full h-[600px] md:h-[800px]"
-              />
-            </div>
+            <ClientOnly fallback={<div className="w-full h-[600px] rounded-xl border border-border bg-muted/30" />}>
+              <PdfViewer key={activePdf} url={activePdf!} title={project.title} />
+            </ClientOnly>
             <a
               href={activePdf}
               target="_blank"
