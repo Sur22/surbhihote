@@ -98,6 +98,26 @@ function AIProjectPage() {
           />
         </figure>
 
+        {(project.role || project.timeframe || project.tools || project.tasksPerformed) && (
+          <section className="mt-10 pb-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
+              {[
+                { k: "Role", v: project.role },
+                { k: "Timeframe", v: project.timeframe },
+                { k: "Tools", v: project.tools },
+                { k: "Tasks Performed", v: project.tasksPerformed },
+              ]
+                .filter((m) => m.v)
+                .map((m) => (
+                  <div key={m.k}>
+                    <p className="eyebrow mb-2 font-bold">{m.k}</p>
+                    <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+                  </div>
+                ))}
+            </div>
+          </section>
+        )}
+
         <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
           More details, process notes, and outcomes for this project will be shared here soon.
         </p>
