@@ -9,7 +9,7 @@ type Props = {
 };
 
 const MIN_ZOOM = 0.5;
-const MAX_ZOOM = 8;
+const MAX_ZOOM = 10;
 
 export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
