@@ -6,6 +6,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import { getAIProject, aiProjects } from "@/lib/ai-projects";
+import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 
 export const Route = createFileRoute("/ai/$slug")({
   loader: ({ params }) => {
