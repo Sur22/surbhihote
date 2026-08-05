@@ -86,9 +86,17 @@ function AIProjectPage() {
           {project.subtitle}
         </p>
 
-        <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-          Placeholder text — a detailed write-up of this project is coming soon.
-        </p>
+        {project.slug === "creator-hub" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            An AI-assisted workspace that helps social media creators plan,
+            repurpose, and optimize content across platforms, without drowning
+            in tools.
+          </p>
+        ) : (
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+            Placeholder text — a detailed write-up of this project is coming soon.
+          </p>
+        )}
 
         <figure className="mt-12 overflow-hidden rounded-xl border border-border bg-muted/30">
           <img
