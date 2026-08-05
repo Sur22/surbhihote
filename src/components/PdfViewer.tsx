@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Slider } from "@/components/ui/slider";
+import { useZoomPan } from "@/hooks/useZoomPan";
 
 type Props = {
   url: string;
@@ -14,13 +15,31 @@ const MAX_ZOOM = 10;
 export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
-  const [zoom, setZoom] = useState(initialScale);
+  const [renderZoom, setRenderZoom] = useState(initialScale);
   const [displayZoom, setDisplayZoom] = useState(initialScale);
+  const handleZoomCommit = useCallback((next: number) => {
+    setRenderZoom(next);
+    setDisplayZoom(next);
+  }, []);
+  const { committedZoom, pan, setZoom } = useZoomPan({
+    minZoom: MIN_ZOOM,
+    maxZoom: MAX_ZOOM,
+    containerRef,
+    onZoomCommit: handleZoomCommit,
+    commitDelay: 200,
+  });
 
   useEffect(() => {
-    setZoom(initialScale);
+    setRenderZoom(initialScale);
     setDisplayZoom(initialScale);
-  }, [url, initialScale]);
+    setZoom(initialScale);
+  }, [url, initialScale, setZoom]);
+
+  const handleSliderChange = (value: number[]) => {
+    const next = value[0];
+    setDisplayZoom(next);
+    setZoom(next);
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -47,8 +66,8 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
 
-          const renderScale = zoom * dpr;
-          const cssWidth = base.width * zoom;
+          const renderScale = renderZoom * dpr;
+          const cssWidth = base.width * renderZoom;
           const viewport = page.getViewport({ scale: renderScale });
 
           const canvas = document.createElement("canvas");
@@ -74,7 +93,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
     return () => {
       cancelled = true;
     };
-  }, [url, zoom]);
+  }, [url, renderZoom]);
 
   return (
     <div className="relative w-full rounded-xl border border-border bg-muted/30">
@@ -101,10 +120,15 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
           .
         </p>
       )}
-      <div className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80">
+      <div
+        ref={containerRef}
+        className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none"
+      >
         <div
-          ref={containerRef}
-          className="flex flex-col items-center min-w-full"
+          className="flex flex-col items-center min-w-full origin-top-left"
+          style={{
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${displayZoom / renderZoom})`,
+          }}
         />
       </div>
 
@@ -119,7 +143,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
             max={MAX_ZOOM}
             step={0.1}
             onValueChange={(value) => setDisplayZoom(value[0])}
-            onValueCommit={(value) => setZoom(value[0])}
+            onValueCommit={(value) => handleSliderChange(value)}
             className="w-28 md:w-40"
           />
         </div>
