@@ -105,6 +105,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </p>
         )}
 
+        {/*
         {project.pdfUrl && (
           <section className="mt-14">
             <h2 className="font-serif text-2xl md:text-3xl mb-6">Case study PDF</h2>
@@ -149,6 +150,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             </a>
           </section>
         )}
+        */}
 
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
