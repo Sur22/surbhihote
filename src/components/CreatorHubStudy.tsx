@@ -473,8 +473,10 @@ export function CreatorHubStudy() {
             Designing this clarified how much of AI product work is judgment
             about where the model should stop. The interesting decisions weren't
             about what the system could generate, but about what it should hand
-            back to the creator to approve — and how to make that handoff feel
-            fast rather than like extra work.
+            back to the creator to approve, and how to make that handoff feel
+            fast instead of like extra work. The other half was knowing where to
+            lean in: using AI to fill the gaps where creators get stuck, turning
+            the data the platforms already collect into a clear next step.
           </Body>
         </div>
       </Section>
