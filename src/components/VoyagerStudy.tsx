@@ -1,4 +1,12 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  CarouselDots,
+} from "@/components/ui/carousel";
 import itinerary from "@/assets/voyager-itinerary.png.asset.json";
 import map from "@/assets/voyager-map.png.asset.json";
 import chat from "@/assets/voyager-chat.png.asset.json";
@@ -10,6 +18,7 @@ const sections = [
   { id: "tips", label: "Tips and tricks" },
   { id: "pros-cons", label: "Pros and cons" },
   { id: "tools", label: "Tools by stage" },
+  { id: "design", label: "Design" },
   { id: "takeaways", label: "Takeaways" },
 ];
 
@@ -246,13 +255,6 @@ export function VoyagerStudy() {
             against the pain points I had identified earlier, so the design was
             answering real problems rather than decorating a wireframe.
           </Body>
-          <div className="mt-8">
-            <Figure
-              src={itinerary.url}
-              alt="Voyager AI generated itinerary screen"
-              caption="A generated itinerary view that ties flights, stays, and daily activities into one editable plan."
-            />
-          </div>
         </div>
 
         <div>
@@ -287,13 +289,6 @@ export function VoyagerStudy() {
           and how it would sustain itself. On a small team, that overlap tends to
           be where a designer is most useful.
         </Body>
-        <div className="mt-8">
-          <Figure
-            src={map.url}
-            alt="Voyager AI map-based travel planning interface"
-            caption="Map-based exploration lets travelers see options in context rather than scrolling through lists."
-          />
-        </div>
       </Section>
 
       <Section id="tips" title="Tips and tricks">
@@ -402,13 +397,52 @@ export function VoyagerStudy() {
 
       <Section id="tools" title="Tools by stage">
         <ToolsTable />
-        <div className="mt-8">
-          <Figure
-            src={chat.url}
-            alt="Voyager AI conversational travel assistant chat interface"
-            caption="The conversational interface handles follow-up questions and refinements without restarting the search."
-          />
-        </div>
+      </Section>
+
+      <Section id="design" title="Design">
+        <Carousel opts={{ loop: true }} className="relative group">
+          <CarouselContent>
+            {[
+              {
+                src: itinerary.url,
+                alt: "Voyager AI generated itinerary screen",
+                caption:
+                  "A generated itinerary view that ties flights, stays, and daily activities into one editable plan.",
+              },
+              {
+                src: map.url,
+                alt: "Voyager AI map-based travel planning interface",
+                caption:
+                  "Map-based exploration lets travelers see options in context rather than scrolling through lists.",
+              },
+              {
+                src: chat.url,
+                alt: "Voyager AI conversational travel assistant chat interface",
+                caption:
+                  "The conversational interface handles follow-up questions and refinements without restarting the search.",
+              },
+            ].map((img) => (
+              <CarouselItem key={img.caption}>
+                <figure>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                  <figcaption className="mt-4 text-sm text-muted-foreground">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2" />
+          <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2" />
+          <CarouselDots className="relative z-20 mt-6" />
+        </Carousel>
       </Section>
 
       <Section id="takeaways" title="Takeaways" divider={false}>
