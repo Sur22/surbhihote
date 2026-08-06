@@ -7,6 +7,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import { getAIProject, aiProjects } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
+import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 
 export const Route = createFileRoute("/ai/$slug")({
   loader: ({ params }) => {
@@ -131,6 +132,8 @@ function AIProjectPage() {
 
         {project.slug === "creator-hub" ? (
           <CreatorHubStudy />
+        ) : project.slug === "vibe-coded-portfolio" ? (
+          <VibeCodedPortfolioStudy />
         ) : (
           <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
             More details, process notes, and outcomes for this project will be shared here soon.
