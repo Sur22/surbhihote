@@ -408,6 +408,7 @@ export function VoyagerStudy() {
                 alt: "Voyager AI generated itinerary screen",
                 caption:
                   "A generated itinerary view that ties flights, stays, and daily activities into one editable plan.",
+                imgClass: "w-1/2 mx-auto",
               },
               {
                 src: map.url,
@@ -429,7 +430,7 @@ export function VoyagerStudy() {
                       src={img.src}
                       alt={img.alt}
                       loading="lazy"
-                      className="w-full h-auto object-contain"
+                      className={`h-auto object-contain ${img.imgClass ?? "w-full"}`}
                     />
                   </div>
                   <figcaption className="mt-4 text-sm text-muted-foreground">
