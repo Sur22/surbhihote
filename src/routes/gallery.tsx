@@ -153,8 +153,8 @@ function GalleryPage() {
                   <>
                     {" "}
                     <Link
-                      to="/ai/$slug"
-                      params={{ slug: it.title === "Creator Hub" ? "creator-hub" : "voyager" }}
+                      to={it.title === "Creator Hub" ? "/creator-hub-ai-product-design-case-study" : "/ai/$slug"}
+                      params={it.title === "Creator Hub" ? undefined : { slug: "voyager" }}
                       className="font-bold underline underline-offset-4 hover:text-foreground transition-colors"
                     >
                       Read case study
