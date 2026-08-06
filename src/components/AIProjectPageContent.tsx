@@ -4,7 +4,7 @@ import { PdfViewer } from "@/components/PdfViewer";
 import { ImageViewer } from "@/components/ImageViewer";
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Download, FileText } from "lucide-react";
 import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
@@ -75,6 +75,40 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             }
           />
         </figure>
+
+        {project.slug === "resources" && (
+          <section className="mt-12">
+            <p className="eyebrow mb-6">Articles & Templates</p>
+            <div className="border-t border-border">
+              {[
+                "Adopting AI in the design process",
+                "Prompt Library Template",
+                "AI tools For UX Process",
+                "Tool request form",
+                "Pilot evaluation template",
+              ].map((title) => (
+                <a
+                  key={title}
+                  href="#"
+                  className="group flex items-center justify-between gap-4 border-b border-border py-5 transition-colors hover:bg-muted/30"
+                >
+                  <div className="flex items-center gap-4 min-w-0">
+                    <div className="flex h-12 w-9 shrink-0 items-center justify-center rounded bg-muted/50 border border-border">
+                      <FileText size={20} className="text-muted-foreground" />
+                    </div>
+                    <span className="font-serif text-2xl md:text-3xl text-foreground group-hover:text-accent transition-colors truncate">
+                      {title}
+                    </span>
+                  </div>
+                  <Download
+                    size={20}
+                    className="shrink-0 text-muted-foreground group-hover:text-foreground transition-colors"
+                  />
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {(project.role || project.timeframe || project.tools || project.tasksPerformed) && (
           <section className="mt-10 pb-10">
