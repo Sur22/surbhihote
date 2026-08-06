@@ -66,10 +66,10 @@ export const aiProjects: AIProject[] = [
     title: "Vibe Coded Portfolio",
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
-      "Creating my portfolio from 0 to 1 using vibe coding using Lovable, Github and Claude code.",
+      "How I designed and vibe coded my portfolio on Lovable with Claude Code, Cursor, and Claude Design. A product designer using AI across the design process, on a budget.",
     image: vibeCodedPortfolio.url,
-    imageAlt:
-      "Dark-theme portfolio home page on desktop, flanked by light-theme tablet and mobile mockups",
+    imageAlt: "AI-first product designer's portfolio, designed and vibe coded on Lovable",
+    path: "/vibe-coding-my-portfolio-lovable",
     role: "Product Designer",
     timeframe: "Ongoing",
     tools: "Lovable, ChatGPT, Claude, Figma",
