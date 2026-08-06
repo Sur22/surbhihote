@@ -397,13 +397,52 @@ export function VoyagerStudy() {
 
       <Section id="tools" title="Tools by stage">
         <ToolsTable />
-        <div className="mt-8">
-          <Figure
-            src={chat.url}
-            alt="Voyager AI conversational travel assistant chat interface"
-            caption="The conversational interface handles follow-up questions and refinements without restarting the search."
-          />
-        </div>
+      </Section>
+
+      <Section id="design" title="Design">
+        <Carousel opts={{ loop: true }} className="relative group">
+          <CarouselContent>
+            {[
+              {
+                src: itinerary.url,
+                alt: "Voyager AI generated itinerary screen",
+                caption:
+                  "A generated itinerary view that ties flights, stays, and daily activities into one editable plan.",
+              },
+              {
+                src: map.url,
+                alt: "Voyager AI map-based travel planning interface",
+                caption:
+                  "Map-based exploration lets travelers see options in context rather than scrolling through lists.",
+              },
+              {
+                src: chat.url,
+                alt: "Voyager AI conversational travel assistant chat interface",
+                caption:
+                  "The conversational interface handles follow-up questions and refinements without restarting the search.",
+              },
+            ].map((img) => (
+              <CarouselItem key={img.caption}>
+                <figure>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                  <figcaption className="mt-4 text-sm text-muted-foreground">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2" />
+          <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2" />
+          <CarouselDots className="relative z-20 mt-6" />
+        </Carousel>
       </Section>
 
       <Section id="takeaways" title="Takeaways" divider={false}>
