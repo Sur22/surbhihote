@@ -258,7 +258,7 @@ export function CreatorHubStudy() {
         </div>
       </Section>
 
-      <Section id="landscape" title="Competitive landscape">
+      <Section id="landscape" title="Competitive Landscape">
         <Body>
           The creator tooling market is crowded, and its own consensus is the
           useful part: practitioners broadly agree that no single tool does
