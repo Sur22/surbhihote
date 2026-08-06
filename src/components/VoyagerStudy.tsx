@@ -255,13 +255,6 @@ export function VoyagerStudy() {
             against the pain points I had identified earlier, so the design was
             answering real problems rather than decorating a wireframe.
           </Body>
-          <div className="mt-8">
-            <Figure
-              src={itinerary.url}
-              alt="Voyager AI generated itinerary screen"
-              caption="A generated itinerary view that ties flights, stays, and daily activities into one editable plan."
-            />
-          </div>
         </div>
 
         <div>
