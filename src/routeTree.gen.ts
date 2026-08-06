@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VibeCodingMyPortfolioLovableRouteImport } from './routes/vibe-coding-my-portfolio-lovable'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProcessRouteImport } from './routes/process'
 import { Route as McpRouteImport } from './routes/mcp'
@@ -23,6 +24,12 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
+const VibeCodingMyPortfolioLovableRoute =
+  VibeCodingMyPortfolioLovableRouteImport.update({
+    id: '/vibe-coding-my-portfolio-lovable',
+    path: '/vibe-coding-my-portfolio-lovable',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -101,6 +108,7 @@ export interface FileRoutesByFullPath {
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vibe-coding-my-portfolio-lovable': typeof VibeCodingMyPortfolioLovableRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
@@ -116,6 +124,7 @@ export interface FileRoutesByTo {
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vibe-coding-my-portfolio-lovable': typeof VibeCodingMyPortfolioLovableRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
@@ -132,6 +141,7 @@ export interface FileRoutesById {
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vibe-coding-my-portfolio-lovable': typeof VibeCodingMyPortfolioLovableRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
@@ -149,6 +159,7 @@ export interface FileRouteTypes {
     | '/mcp'
     | '/process'
     | '/sitemap.xml'
+    | '/vibe-coding-my-portfolio-lovable'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
@@ -164,6 +175,7 @@ export interface FileRouteTypes {
     | '/mcp'
     | '/process'
     | '/sitemap.xml'
+    | '/vibe-coding-my-portfolio-lovable'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
@@ -179,6 +191,7 @@ export interface FileRouteTypes {
     | '/mcp'
     | '/process'
     | '/sitemap.xml'
+    | '/vibe-coding-my-portfolio-lovable'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
@@ -195,6 +208,7 @@ export interface RootRouteChildren {
   McpRoute: typeof McpRoute
   ProcessRoute: typeof ProcessRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  VibeCodingMyPortfolioLovableRoute: typeof VibeCodingMyPortfolioLovableRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   AiSlugRoute: typeof AiSlugRoute
@@ -205,6 +219,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vibe-coding-my-portfolio-lovable': {
+      id: '/vibe-coding-my-portfolio-lovable'
+      path: '/vibe-coding-my-portfolio-lovable'
+      fullPath: '/vibe-coding-my-portfolio-lovable'
+      preLoaderRoute: typeof VibeCodingMyPortfolioLovableRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -308,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   McpRoute: McpRoute,
   ProcessRoute: ProcessRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  VibeCodingMyPortfolioLovableRoute: VibeCodingMyPortfolioLovableRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
