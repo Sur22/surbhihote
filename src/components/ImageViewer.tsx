@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { useZoomPan } from "@/hooks/useZoomPan";
 
@@ -17,10 +17,33 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoomState] = useState(initialScale);
   const [displayZoom, setDisplayZoom] = useState(initialScale);
+  // Scroll adjustment queued for after the layout re-flows at the new zoom,
+  // so the viewport keeps looking at the same point in the document.
+  const pendingScrollRef = useRef<{ k: number; cx: number; cy: number } | null>(null);
   const handleZoomCommit = useCallback((next: number) => {
-    setZoomState(next);
+    setZoomState((prev) => {
+      const el = containerRef.current;
+      if (el && prev > 0 && next !== prev) {
+        pendingScrollRef.current = {
+          k: next / prev,
+          cx: el.clientWidth / 2,
+          cy: el.clientHeight / 2,
+        };
+      }
+      return next;
+    });
     setDisplayZoom(next);
   }, []);
+
+  useLayoutEffect(() => {
+    const pending = pendingScrollRef.current;
+    const el = containerRef.current;
+    if (!pending || !el) return;
+    pendingScrollRef.current = null;
+    el.scrollLeft = (el.scrollLeft + pending.cx) * pending.k - pending.cx;
+    el.scrollTop = (el.scrollTop + pending.cy) * pending.k - pending.cy;
+  }, [zoom]);
+
   const { pan, setZoom } = useZoomPan({
     minZoom: MIN_ZOOM,
     maxZoom: MAX_ZOOM,
@@ -29,11 +52,18 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
     commitDelay: 120,
   });
 
+  // Only reset when the document itself changes, not on every re-render.
+  const lastDocRef = useRef<string | null>(null);
   useEffect(() => {
+    const docKey = `${initialScale}|${images.join("|")}`;
+    if (lastDocRef.current === docKey) return;
+    lastDocRef.current = docKey;
+    pendingScrollRef.current = null;
     setZoomState(initialScale);
     setDisplayZoom(initialScale);
     setZoom(initialScale);
   }, [initialScale, images, setZoom]);
+
 
   const handleSliderChange = (value: number[]) => {
     const next = value[0];
