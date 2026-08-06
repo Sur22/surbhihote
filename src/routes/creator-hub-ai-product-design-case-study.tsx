@@ -3,9 +3,8 @@ import { getAIProject } from "@/lib/ai-projects";
 import { AIProjectPageContent } from "@/components/AIProjectPageContent";
 
 const SLUG = "creator-hub";
-const PATH = "/creator-hub-ai-product-design-case-study";
 
-export const Route = createFileRoute(PATH)({
+export const Route = createFileRoute("/creator-hub-ai-product-design-case-study")({
   loader: () => {
     const project = getAIProject(SLUG);
     if (!project) throw notFound();
