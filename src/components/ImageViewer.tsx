@@ -78,7 +78,7 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
         className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none select-none"
       >
         <div
-          className="flex w-max min-w-full flex-col items-center origin-top-left"
+          className="flex h-max min-h-full w-max min-w-full flex-col items-center justify-center origin-top-left"
           style={{
             transform: `translate(${pan.x}px, ${pan.y}px) scale(${displayZoom / zoom})`,
           }}
