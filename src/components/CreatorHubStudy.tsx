@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
+import doubleDiamond from "@/assets/creator-hub-double-diamond.png.asset.json";
 
 const creatorHubSections = [
   { id: "overview", label: "Overview" },
@@ -249,6 +250,11 @@ export function CreatorHubStudy() {
             problem to pilot without landing in "pilot purgatory," where a
             prototype demos well and then never ships.
           </Body>
+          <Figure
+            src={doubleDiamond.url}
+            alt="Double diamond framework diagram for the Creator Hub AI product design case study"
+            caption="Mapping the concept across discover, define, develop, and deliver. What goes here: a clean double-diamond graphic in your style. I can generate this as an SVG if you want it to match your Grid strategy diagram."
+          />
         </div>
       </Section>
 
