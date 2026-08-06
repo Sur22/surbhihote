@@ -45,7 +45,7 @@ export const aiProjects: AIProject[] = [
     title: "Voyager",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     description:
-      "An AI travel assistant built end-to-end with generative tools — exploring conversational UI, itinerary generation, and map-based experiences.",
+      "An AI travel assistant built end-to-end with generative tools - exploring conversational UI, itinerary generation, and map-based experiences.",
     image: voyagerWelcome.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
     pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
@@ -63,7 +63,7 @@ export const aiProjects: AIProject[] = [
     title: "Vibe Coded Portfolio",
     tags: ["LOVABLE", "VIBE CODING", "GENERATIVE UI"],
     description:
-      "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
+      "Creating my portfolio from 0 to 1 using vibe coding using Lovable, Github and Claude code.",
     image: vibeCodedPortfolio.url,
     imageAlt:
       "Dark-theme portfolio home page on desktop, flanked by light-theme tablet and mobile mockups",
