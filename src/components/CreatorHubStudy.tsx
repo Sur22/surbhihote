@@ -109,9 +109,6 @@ export function CreatorHubStudy() {
               Hub, a cross-platform content workspace for social media creators.
             </>,
             <>
-              <Label>My role:</Label>{"\n"}
-            </>,
-            <>
               <Label>Disciplines:</Label> AI product design, UX design, product
               and business strategy.
             </>,
