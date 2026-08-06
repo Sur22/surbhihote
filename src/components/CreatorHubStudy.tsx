@@ -250,11 +250,13 @@ export function CreatorHubStudy() {
             problem to pilot without landing in "pilot purgatory," where a
             prototype demos well and then never ships.
           </Body>
-          <Figure
-            src={doubleDiamond.url}
-            alt="Double diamond framework diagram for the Creator Hub AI product design case study"
-            caption="Mapping the concept across discover, define, develop, and deliver — from problem definition through solution development."
-          />
+          <div className="w-[60%] mx-auto my-[50px]">
+            <Figure
+              src={doubleDiamond.url}
+              alt="Double diamond framework diagram for the Creator Hub AI product design case study"
+              caption="Mapping the concept across discover, define, develop, and deliver — from problem definition through solution development."
+            />
+          </div>
         </div>
       </Section>
 
