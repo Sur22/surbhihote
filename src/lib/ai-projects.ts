@@ -67,6 +67,10 @@ export const aiProjects: AIProject[] = [
     image: vibeCodedPortfolio.url,
     imageAlt:
       "Full-length screenshot of the portfolio home page in light and dark theme",
+    role: "Product Designer",
+    timeframe: "Ongoing",
+    tools: "Lovable, ChatGPT, Claude, Figma",
+    tasksPerformed: "0→1 Design, UI/UX Design, Interaction Design, Prompt Engineering",
   },
   {
     slug: "resources",
