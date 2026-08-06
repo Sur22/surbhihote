@@ -289,13 +289,6 @@ export function VoyagerStudy() {
           and how it would sustain itself. On a small team, that overlap tends to
           be where a designer is most useful.
         </Body>
-        <div className="mt-8">
-          <Figure
-            src={map.url}
-            alt="Voyager AI map-based travel planning interface"
-            caption="Map-based exploration lets travelers see options in context rather than scrolling through lists."
-          />
-        </div>
       </Section>
 
       <Section id="tips" title="Tips and tricks">
