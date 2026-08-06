@@ -1,4 +1,5 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import twoAgentsDiagram from "@/assets/two-agents-github.png.asset.json";
 
 const sections = [
   { id: "overview", label: "Overview" },
