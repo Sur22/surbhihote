@@ -1,5 +1,6 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import twoAgentsDiagram from "@/assets/two-agents-github.png.asset.json";
+import designSystemImage from "@/assets/portfolio-design-system.png.asset.json";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -139,6 +140,18 @@ export function VibeCodedPortfolioStudy() {
           walk into Lovable with a finished plan and spend credits on the build,
           not the brainstorm.
         </Body>
+        <figure className="space-y-3">
+          <img
+            src={designSystemImage.url}
+            alt="Design system sheet for the portfolio showing light and dark theme color tokens, typography in Crimson Text and Inter, buttons, inputs, tags, cards, and corner radii"
+            loading="lazy"
+            className="w-full rounded-lg border border-border"
+          />
+          <figcaption className="text-sm text-foreground/60">
+            The design system I handed to Lovable: semantic color tokens for
+            light and dark, the type scale, radii, and the core controls.
+          </figcaption>
+        </figure>
       </Section>
 
       <Section id="build" title="Building the portfolio on Lovable, step by step">
