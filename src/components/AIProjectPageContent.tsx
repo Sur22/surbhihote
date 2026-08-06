@@ -52,9 +52,8 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             end, using AI at every stage.
           </p>
         ) : (
-          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-            Placeholder text — a detailed write-up of this project is coming
-            soon.
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            AI Resources of Product Designers and UI UX Designers&nbsp;
           </p>
         )}
 
