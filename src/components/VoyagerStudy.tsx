@@ -18,6 +18,7 @@ const sections = [
   { id: "tips", label: "Tips and tricks" },
   { id: "pros-cons", label: "Pros and cons" },
   { id: "tools", label: "Tools by stage" },
+  { id: "design", label: "Design" },
   { id: "takeaways", label: "Takeaways" },
 ];
 
