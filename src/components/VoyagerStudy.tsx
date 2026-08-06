@@ -1,4 +1,12 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  CarouselDots,
+} from "@/components/ui/carousel";
 import itinerary from "@/assets/voyager-itinerary.png.asset.json";
 import map from "@/assets/voyager-map.png.asset.json";
 import chat from "@/assets/voyager-chat.png.asset.json";
