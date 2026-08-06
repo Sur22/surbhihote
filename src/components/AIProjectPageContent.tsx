@@ -51,7 +51,13 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </p>
         )}
 
-        <figure className="mt-12 overflow-hidden rounded-xl border border-border bg-muted/30">
+        <figure
+          className={
+            project.slug === "creator-hub" || project.slug === "voyager"
+              ? "mt-12 overflow-hidden rounded-xl"
+              : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
+          }
+        >
           <img
             src={project.image}
             alt={project.imageAlt}
