@@ -95,6 +95,8 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
         {project.slug === "creator-hub" ? (
           <CreatorHubStudy />
+        ) : project.slug === "voyager" ? (
+          <VoyagerStudy />
         ) : project.slug === "vibe-coded-portfolio" ? (
           <VibeCodedPortfolioStudy />
         ) : (
