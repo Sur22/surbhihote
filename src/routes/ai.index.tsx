@@ -36,10 +36,10 @@ function AIPage() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {aiProjects.map((project) => (
-            <Link
+          <Link
               key={project.title}
-              to="/ai/$slug"
-              params={{ slug: project.slug }}
+              to={project.path ?? "/ai/$slug"}
+              params={project.path ? undefined : { slug: project.slug }}
               className="group rounded-2xl border border-border bg-card overflow-hidden block"
             >
               <div className="overflow-hidden aspect-[4/3] flex items-center justify-center">

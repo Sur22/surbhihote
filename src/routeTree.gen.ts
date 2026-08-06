@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ProcessRouteImport } from './routes/process'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as CreatorHubAiProductDesignCaseStudyRouteImport } from './routes/creator-hub-ai-product-design-case-study'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AiIndexRouteImport } from './routes/ai.index'
@@ -42,6 +43,12 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CreatorHubAiProductDesignCaseStudyRoute =
+  CreatorHubAiProductDesignCaseStudyRouteImport.update({
+    id: '/creator-hub-ai-product-design-case-study',
+    path: '/creator-hub-ai-product-design-case-study',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -89,6 +96,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -103,6 +111,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -118,6 +127,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -134,6 +144,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/creator-hub-ai-product-design-case-study'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -148,6 +159,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/creator-hub-ai-product-design-case-study'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -162,6 +174,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/creator-hub-ai-product-design-case-study'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -177,6 +190,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CreatorHubAiProductDesignCaseStudyRoute: typeof CreatorHubAiProductDesignCaseStudyRoute
   GalleryRoute: typeof GalleryRoute
   McpRoute: typeof McpRoute
   ProcessRoute: typeof ProcessRoute
@@ -217,6 +231,13 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creator-hub-ai-product-design-case-study': {
+      id: '/creator-hub-ai-product-design-case-study'
+      path: '/creator-hub-ai-product-design-case-study'
+      fullPath: '/creator-hub-ai-product-design-case-study'
+      preLoaderRoute: typeof CreatorHubAiProductDesignCaseStudyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -281,6 +302,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CreatorHubAiProductDesignCaseStudyRoute:
+    CreatorHubAiProductDesignCaseStudyRoute,
   GalleryRoute: GalleryRoute,
   McpRoute: McpRoute,
   ProcessRoute: ProcessRoute,

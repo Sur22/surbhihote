@@ -17,6 +17,8 @@ export type AIProject = {
   tools?: string;
   tasksPerformed?: string;
   pdfUrl?: string;
+  /** Custom route path. When set, links use this path instead of `/ai/$slug`. */
+  path?: string;
   /** `images` renders WebP page exports instead of the PDF for that tab. */
   pdfs?: { label: string; url: string; images?: string[] }[];
 };
@@ -29,9 +31,10 @@ export const aiProjects: AIProject[] = [
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML", "2026"],
     description:
-      "A capstone project from MIT xPRO's Designing and Building AI Products and Services — a platform to post across social media channels at once.",
+      "An AI product design case study. Creator Hub is an LLM-powered content workspace for social media creators, covering product strategy, retrieval-augmented generation, and AI evaluation.",
     image: creatorHubDashboard.url,
     imageAlt: "Creator Hub dashboard mockup",
+    path: "/creator-hub-ai-product-design-case-study",
     role: "Product Designer (concept, end to end)",
     timeframe: "9 weeks",
     tools: "Google Stitch, Figma, ChatGPT, Claude, Miro ,Paython",
