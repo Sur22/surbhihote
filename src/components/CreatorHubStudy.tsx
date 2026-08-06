@@ -109,8 +109,8 @@ export function CreatorHubStudy() {
               Hub, a cross-platform content workspace for social media creators.
             </>,
             <>
-              <Label>Disciplines:</Label> AI product design, UX design, product
-              and business strategy.
+              <Label>Disciplines:</Label> AI product design, UX design, Product &
+              Business strategy, Product thinking.
             </>,
             <>
               <Label>AI approach:</Label> LLM application design using generative

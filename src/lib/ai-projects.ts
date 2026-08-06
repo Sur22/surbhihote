@@ -35,9 +35,9 @@ export const aiProjects: AIProject[] = [
     image: creatorHubDashboard.url,
     imageAlt: "Creator Hub dashboard mockup",
     path: "/creator-hub-ai-product-design-case-study",
-    role: "Product Designer , Concept, end to end,\u00a0 problem framing , AI product strategy",
+    role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
     timeframe: "9 weeks",
-    tools: "Google Stitch, Figma, ChatGPT, Claude, Miro ,Paython",
+    tools: "Google Stitch, Figma, ChatGPT, Claude, Miro,Paython",
     tasksPerformed:
       "0→1 Design, Ideation, Concept, Competitive Analysis, Double Dimond\nAI product strategy, Market Gap Identification ,\nTechnical Feasibility, & interface design",
   },
