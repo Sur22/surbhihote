@@ -46,9 +46,15 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             social media creators plan, repurpose, and optimize content across
             platforms, without drowning in tools.
           </p>
+        ) : project.slug === "voyager" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            Design lab AI for UI Project: designing a travel AI product end to
+            end, using AI at every stage.
+          </p>
         ) : (
           <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-            Placeholder text — a detailed write-up of this project is coming soon.
+            Placeholder text — a detailed write-up of this project is coming
+            soon.
           </p>
         )}
 
