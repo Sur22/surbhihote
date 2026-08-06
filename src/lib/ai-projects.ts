@@ -66,7 +66,7 @@ export const aiProjects: AIProject[] = [
       "Ongoing explorations into how LLMs and agentic interfaces change the way we research, prototype, and craft product experiences.",
     image: vibeCodedPortfolio.url,
     imageAlt:
-      "Dark-theme portfolio home page shown on desktop, with tablet and mobile mockups on either side",
+      "Dark-theme portfolio home page on desktop, flanked by light-theme tablet and mobile mockups",
     role: "Product Designer",
     timeframe: "Ongoing",
     tools: "Lovable, ChatGPT, Claude, Figma",
