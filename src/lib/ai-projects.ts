@@ -1,5 +1,5 @@
-import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
-import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
+import creatorHubDashboard from "@/assets/creator-hub-laptop.png.asset.json";
+import voyagerWelcome from "@/assets/voyager-laptop.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio-devices.png.asset.json";
 import resourcesImage from "@/assets/resources.png";
 
