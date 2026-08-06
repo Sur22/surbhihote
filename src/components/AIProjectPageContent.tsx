@@ -56,7 +56,11 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             src={project.image}
             alt={project.imageAlt}
             loading="lazy"
-            className="w-full h-auto object-cover"
+            className={
+              project.slug === "creator-hub" || project.slug === "voyager"
+                ? ""
+                : "w-full h-auto object-cover"
+            }
           />
         </figure>
 
