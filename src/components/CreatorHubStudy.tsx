@@ -253,7 +253,7 @@ export function CreatorHubStudy() {
           <Figure
             src={doubleDiamond.url}
             alt="Double diamond framework diagram for the Creator Hub AI product design case study"
-            caption="Mapping the concept across discover, define, develop, and deliver. What goes here: a clean double-diamond graphic in your style. I can generate this as an SVG if you want it to match your Grid strategy diagram."
+            caption="Mapping the concept across discover, define, develop, and deliver — from problem definition through solution development."
           />
         </div>
       </Section>
