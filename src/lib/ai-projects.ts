@@ -36,7 +36,7 @@ export const aiProjects: AIProject[] = [
     timeframe: "9 weeks",
     tools: "Google Stitch, Figma, ChatGPT, Claude, Miro ,Paython",
     tasksPerformed:
-      "0→1 Design, Ideation,Concept,\nAI product strategy, Market Gap Identification ,\nTechnical Feasibility, & interface design",
+      "0→1 Design, Ideation, Concept, Competitive Analysis, Double Dimond\nAI product strategy, Market Gap Identification ,\nTechnical Feasibility, & interface design",
   },
   {
     slug: "voyager",
