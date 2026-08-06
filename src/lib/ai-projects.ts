@@ -17,6 +17,8 @@ export type AIProject = {
   tools?: string;
   tasksPerformed?: string;
   pdfUrl?: string;
+  /** Custom route path. When set, links use this path instead of `/ai/$slug`. */
+  path?: string;
   /** `images` renders WebP page exports instead of the PDF for that tab. */
   pdfs?: { label: string; url: string; images?: string[] }[];
 };
