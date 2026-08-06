@@ -8,6 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
+import { VoyagerStudy } from "@/components/VoyagerStudy";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
@@ -94,6 +95,8 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
         {project.slug === "creator-hub" ? (
           <CreatorHubStudy />
+        ) : project.slug === "voyager" ? (
+          <VoyagerStudy />
         ) : project.slug === "vibe-coded-portfolio" ? (
           <VibeCodedPortfolioStudy />
         ) : (
