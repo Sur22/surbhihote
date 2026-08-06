@@ -99,12 +99,22 @@ function AIProjectPage() {
           </p>
         )}
 
-        <figure className="mt-12 overflow-hidden rounded-xl border border-border bg-muted/30">
+        <figure
+          className={`mt-12 overflow-hidden border border-border bg-muted/30 ${
+            project.slug === "creator-hub" || project.slug === "voyager"
+              ? "rounded-lg"
+              : "rounded-xl"
+          }`}
+        >
           <img
             src={project.image}
             alt={project.imageAlt}
             loading="lazy"
-            className="w-full h-auto object-cover"
+            className={`w-full h-auto object-cover ${
+              project.slug === "creator-hub" || project.slug === "voyager"
+                ? "rounded-lg"
+                : ""
+            }`}
           />
         </figure>
 
