@@ -1,4 +1,5 @@
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import twoAgentsDiagram from "@/assets/two-agents-github.png.asset.json";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -195,6 +196,18 @@ export function VibeCodedPortfolioStudy() {
           place. The repo is the single source of truth, so a change I make in
           one tool shows up in the other after a sync.
         </Body>
+        <figure className="space-y-3">
+          <img
+            src={twoAgentsDiagram.url}
+            alt="Diagram showing Claude Code and the Lovable agent syncing through a shared GitHub repository as the single source of truth"
+            loading="lazy"
+            className="w-full rounded-lg border border-border"
+          />
+          <figcaption className="text-sm text-foreground/60">
+            One project, two agents, shared through GitHub. Claude Code and
+            Lovable never talk directly, the repo is the single source of truth.
+          </figcaption>
+        </figure>
       </Section>
 
       <Section id="credits" title="Making your Lovable credits last on a budget">
