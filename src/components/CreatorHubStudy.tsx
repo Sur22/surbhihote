@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
-import doubleDiamond from "@/assets/creator-hub-double-diamond.png.asset.json";
+import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json";
 
 const creatorHubSections = [
   { id: "overview", label: "Overview" },
