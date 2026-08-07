@@ -155,7 +155,8 @@ export function VibeCodedPortfolioStudy() {
         </figure>
       </Section>
 
-      <Section id="build" title="Building the portfolio on Lovable, step by step">
+      <Section id="build" title="Build">
+        <Sub>Building the portfolio on Lovable, step by step</Sub>
         <Body>
           <Label>Open with one strong prompt, not ten small ones.</Label> My
           first prompt described the whole site in a single pass: the vibe, the
