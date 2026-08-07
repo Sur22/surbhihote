@@ -59,8 +59,8 @@ function AboutPage() {
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
         <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
         <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1] mb-10 md:mb-14 italic">
-          <em className="text-accent">Surbhi Hote</em><br />
-          Lead Product Designer
+          <span className="text-foreground">Surbhi Hote</span><br />
+          <em className="text-accent">Lead Product Designer</em>
         </h1>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
           <div className="md:col-span-5 order-2 md:order-1">
