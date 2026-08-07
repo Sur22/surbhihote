@@ -69,6 +69,7 @@ const items = [
   },
   {
     images: [
+      { src: voyagerWelcomeMockup.url, alt: "Voyager — Banner mockup" },
       { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
       { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
       { src: voyagerItinerary2.url, alt: "Voyager — Itinerary" },
