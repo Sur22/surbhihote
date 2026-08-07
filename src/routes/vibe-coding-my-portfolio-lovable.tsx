@@ -26,6 +26,90 @@ export const Route = createFileRoute("/vibe-coding-my-portfolio-lovable")({
     links: [
       { rel: "canonical", href: "https://surbhihote.com/vibe-coding-my-portfolio-lovable" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TechArticle",
+              headline: "Vibe Coding My Portfolio on Lovable",
+              description:
+                "How a product designer designed and vibe coded a live portfolio on Lovable with Claude Code, Cursor, and Claude Design, using AI across the design process.",
+              image:
+                "https://surbhihote.com/__l5e/assets-v1/1617daa3-ad1d-4426-99a0-02c578d4a21b/vibe-coded-portfolio-devices.png",
+              datePublished: "2026-07-30",
+              dateModified: "2026-08-07",
+              author: {
+                "@type": "Person",
+                name: "Surbhi Hote",
+                jobTitle: "Product Designer",
+                url: "https://surbhihote.com",
+                sameAs: ["https://www.linkedin.com/in/surbhihote/"],
+                knowsAbout: [
+                  "Product Design",
+                  "UX Design",
+                  "AI-assisted design",
+                  "Vibe coding",
+                  "Design systems",
+                  "Lovable",
+                  "Claude Code",
+                  "Cursor",
+                ],
+              },
+              keywords:
+                "vibe coding, AI-first product designer, designer who can vibe code, AI in the design process, Lovable portfolio, Claude Code, Cursor, Claude Design, design engineer",
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Can a product designer build a portfolio without a developer?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes. I designed and shipped my whole portfolio by vibe coding it on Lovable, then refining in Claude Code and Cursor. The design thinking stays yours while the AI handles the code you'd otherwise hand off.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What is vibe coding, and can designers do it?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Vibe coding means building software by describing what you want to an AI agent and steering it, rather than writing every line. Designers are well suited to it, because it is about clear direction and judging the result.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Which AI tools can designers use to design and vibe code?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Lovable to build and host, Claude Design to explore the look, and Claude Code and Cursor for precise control. They share one project through a GitHub repository.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How much does it cost to vibe code a portfolio on Lovable?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "I built mine inside a single month of Lovable's Pro plan, around $25, by keeping credit use tight. On the free plan you can finish one for nothing if you are patient.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What are the downsides of using Lovable?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "It is fast but not always obedient. It sometimes ignores an instruction or makes unrequested changes, and undoing those costs credits. Committing good versions and moving precise work to Claude Code or Cursor keeps it under control.",
+                  },
+                },
+              ],
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: VibeCodedPortfolioCaseStudyPage,
 });
