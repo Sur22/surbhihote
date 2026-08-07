@@ -38,6 +38,7 @@ import voyagerMap from "@/assets/voyager-map.png.asset.json";
 import voyagerMap2 from "@/assets/voyager-map-2.png.asset.json";
 import voyagerMap3 from "@/assets/voyager-map-3.png.asset.json";
 import overlay from "@/assets/overlay.png.asset.json";
+import gridMobileApp from "@/assets/grid-mobile-app.webp.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -113,6 +114,14 @@ const items = [
     tags: ["B2B", "B2C", "PLM", "ERP\u00a0 · 2018-2021"],
     body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
   },
+  {
+    images: [
+      { src: gridMobileApp.url, alt: "Grid Mobile App — PLM & ERP mobile screens" },
+    ],
+    title: "Grid Mobile App",
+    tags: ["B2B", "B2C", "PLM", "ERP", "MOBILE\u00a0 · 2018-2021"],
+    body: "A mobile-first view of the Grid platform — putting purchase orders, material libraries, product details, and notifications in the hands of factory and brand teams on the factory floor.",
+  },
 ] as const;
 
 
@@ -173,19 +182,20 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
+                it.title === "Grid Mobile App" ||
                 it.title === "Creator Hub" ||
                 it.title === "Voyager - AI Travel Assistant"
                   ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Grid Mobile App" || it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Grid Mobile App"
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
                       ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
@@ -202,6 +212,7 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
+                it.title === "Grid Mobile App" ||
                 it.title === "Creator Hub" ||
                 it.title === "Voyager - AI Travel Assistant") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
@@ -220,6 +231,7 @@ function GalleryPage() {
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
+                        it.title === "Grid Mobile App" ||
                         it.title === "Data Visualization" ||
                         it.title === "Creator Hub" ||
                         it.title === "Voyager - AI Travel Assistant"
