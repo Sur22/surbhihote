@@ -156,6 +156,37 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:image", content: ogImage },
         ],
         links: [{ rel: "canonical", href: solaceUrl }],
+        scripts: [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              name: "Tech Pack Tool — PLM UX Case Study",
+              description:
+                "A lean UX case study on designing a tech pack editor for a fashion PLM platform, moving scattered Excel-based workflows into one connected system.",
+              url: solaceUrl,
+              image: ogImage,
+              datePublished: "2026-08-07",
+              author: {
+                "@type": "Person",
+                name: "Surbhi Hote",
+                jobTitle: "Product Designer",
+                url: "https://surbhihote.com",
+                sameAs: ["https://www.linkedin.com/in/surbhihote/"],
+              },
+              about: [
+                "UX strategy",
+                "Product design",
+                "Product lifecycle management",
+                "Fashion technology",
+                "Lean UX",
+              ],
+              keywords:
+                "tech pack tool, PLM UX case study, fashion tech design, UX strategy, lean UX",
+            }),
+          },
+        ],
       };
     }
 
