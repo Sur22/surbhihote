@@ -52,6 +52,11 @@ export const aiProjects: AIProject[] = [
     image: voyagerWelcome.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
     pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
+    role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
+    timeframe: "4 weeks",
+    tools: "Perplexity, Claude, ChatGPT, Google Stitch, Figma Make",
+    tasksPerformed:
+      "0→1 Design, UI/UX Design, Interaction Design, AI product strategy, Market analysis",
     pdfs: [
       { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
       { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
