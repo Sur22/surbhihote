@@ -42,11 +42,14 @@ import overlay from "@/assets/overlay.png.asset.json";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Surbhi Hote" },
-      { name: "description", content: "Sketches, explorations, off-cuts. A loose archive from different projects , concept explorations, and the finished piece that never found a home in a case study." },
-      { property: "og:title", content: "Gallery — Surbhi Hote" },
-      { property: "og:description", content: "Sketches, explorations, off-cuts." },
+      { title: "Gallery | Surbhi Hote" },
+      { name: "description", content: "A visual collection of product design work by Surbhi Hote, Lead Product Designer, spanning enterprise platforms, dashboards, and B2B tools." },
+      { property: "og:title", content: "Gallery | Surbhi Hote" },
+      { property: "og:description", content: "A visual collection of product design work by Surbhi Hote, Lead Product Designer, spanning enterprise platforms, dashboards, and B2B tools." },
+      { name: "twitter:title", content: "Gallery | Surbhi Hote" },
+      { name: "twitter:description", content: "A visual collection of product design work by Surbhi Hote, Lead Product Designer, spanning enterprise platforms, dashboards, and B2B tools." },
     ],
+
   }),
   component: GalleryPage,
 });

@@ -59,13 +59,15 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Surbhi Hote — Lead Product Designer" },
-      { name: "description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
-      { property: "og:title", content: "Surbhi Hote — Lead Product Designer" },
-      { property: "og:description", content: "Design leader with 8+ years designing and scaling complex B2B, SaaS, & enterprise products across web & mobile. Expert in end-to-end & human-centered design." },
+      { title: "Surbhi Hote | Lead Product Designer" },
+      { name: "description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
+      { property: "og:title", content: "Surbhi Hote | Lead Product Designer" },
+      { property: "og:description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://surbhihote.com/" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Surbhi Hote | Lead Product Designer" },
+      { name: "twitter:description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
     ],
     links: [{ rel: "canonical", href: "https://surbhihote.com/" }],
     scripts: [

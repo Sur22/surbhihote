@@ -124,21 +124,21 @@ export const Route = createFileRoute("/work/$slug")({
       const ogImage = "https://surbhihote.com/og-techpack.png";
       return {
         meta: [
-          { title: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote" },
+          { title: "Tech Pack Tool | Surbhi Hote" },
           {
             name: "description",
             content:
-              "A lean UX case study: designing a tech pack editor that moved fashion PLM workflows off Excel into one platform, cutting accounting errors 64% and task time 34%.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { name: "keywords", content: s.keywords },
           {
             property: "og:title",
-            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+            content: "Tech Pack Tool | Surbhi Hote",
           },
           {
             property: "og:description",
             content:
-              "Designing a tech pack editor that moved fashion PLM off Excel into one platform — a lean UX and strategy case study.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { property: "og:image", content: ogImage },
           { property: "og:url", content: solaceUrl },
@@ -146,15 +146,16 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:card", content: "summary_large_image" },
           {
             name: "twitter:title",
-            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+            content: "Tech Pack Tool | Surbhi Hote",
           },
           {
             name: "twitter:description",
             content:
-              "Designing a tech pack editor that moved fashion PLM off Excel into one platform.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { name: "twitter:image", content: ogImage },
         ],
+
         links: [{ rel: "canonical", href: solaceUrl }],
         scripts: [
           {
@@ -194,21 +195,21 @@ export const Route = createFileRoute("/work/$slug")({
       const affiliateUrl = "https://surbhihote.com/work/affiliate-platform-redesign";
       return {
         meta: [
-          { title: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer" },
+          { title: "Affiliate Platform Redesign | Surbhi Hote" },
           {
             name: "description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { name: "keywords", content: s.keywords },
           {
             property: "og:title",
-            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+            content: "Affiliate Platform Redesign | Surbhi Hote",
           },
           {
             property: "og:description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { property: "og:image", content: s.cover },
           { property: "og:url", content: affiliateUrl },
@@ -216,15 +217,16 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:card", content: "summary_large_image" },
           {
             name: "twitter:title",
-            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+            content: "Affiliate Platform Redesign | Surbhi Hote",
           },
           {
             name: "twitter:description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { name: "twitter:image", content: s.cover },
         ],
+
         links: [{ rel: "canonical", href: affiliateUrl }],
         scripts: [
           {
@@ -250,16 +252,36 @@ export const Route = createFileRoute("/work/$slug")({
       };
     }
 
+    const overrides: Record<string, { title: string; description: string }> = {
+      fjord: {
+        title: "Audience Builder | Surbhi Hote",
+        description:
+          "Audience Builder is an internal ad-tech tool that lets Account Executives create custom TV audience segments themselves. It cut a week-long data-team turnaround down to minutes and saved $400K a year. A B2B product design case study by Surbhi Hote, Lead Product Designer.",
+      },
+      atlas: {
+        title: "Notifications Management | Surbhi Hote",
+        description:
+          "Notifications Management gives supply-chain users granular control over which alerts they receive, per module and per product. It reduced missed critical alerts by 84%. An enterprise UX case study by Surbhi Hote, Lead Product Designer.",
+      },
+    };
+    const o = overrides[params.slug];
+    const title = o?.title ?? `${s.title} — Surbhi Hote`;
+    const description = o?.description ?? s.summary;
+
     return {
       meta: [
-        { title: `${s.title} — Surbhi Hote` },
-        { name: "description", content: s.summary },
+        { title },
+        { name: "description", content: description },
         { name: "keywords", content: s.keywords },
-        { property: "og:title", content: `${s.title} — Surbhi Hote` },
-        { property: "og:description", content: s.summary },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
         { property: "og:image", content: s.cover },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+        { name: "twitter:image", content: s.cover },
       ],
       links: [{ rel: "canonical", href: url }],
     };

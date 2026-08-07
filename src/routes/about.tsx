@@ -21,10 +21,12 @@ import madLogo from "@/assets/clients/mad.png";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Surbhi Hote — Product & UX Designer" },
-      { name: "description", content: "Independent product designer. Twelve years across fintech, wellness, and consumer software. Based in Lisbon." },
-      { property: "og:title", content: "About Surbhi Hote — Product & UX Designer" },
-      { property: "og:description", content: "Independent product designer based in Lisbon." },
+      { title: "About | Surbhi Hote, Lead Product Designer" },
+      { name: "description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
+      { property: "og:title", content: "About | Surbhi Hote, Lead Product Designer" },
+      { property: "og:description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
+      { name: "twitter:title", content: "About | Surbhi Hote, Lead Product Designer" },
+      { name: "twitter:description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
     ],
   }),
   component: AboutPage,
