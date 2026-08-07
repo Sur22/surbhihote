@@ -28,6 +28,36 @@ export const Route = createFileRoute("/about")({
       { name: "twitter:title", content: "About | Surbhi Hote, Lead Product Designer" },
       { name: "twitter:description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
     ],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        mainEntity: {
+          "@type": "Person",
+          name: "Surbhi Hote",
+          jobTitle: "Lead Product Designer",
+          url: "https://surbhihote.com",
+          image: "https://surbhihote.com/assets/about-portrait-T_FOZJXe.jpg",
+          email: "surbhihote@gmail.com",
+          description: "Lead Product Designer specializing in complex B2B, enterprise, and ad-tech products, with a computer science background and a research-led, outcome-driven process.",
+          worksFor: { "@type": "Organization", name: "Ampersand" },
+          alumniOf: { "@type": "CollegeOrUniversity", name: "Texas A & M University" },
+          knowsAbout: [
+            "Product Design", "UX Design", "UI Design", "Design Systems",
+            "B2B Enterprise Software", "Ad Tech", "User Research",
+            "0-to-1 Product Design", "AI-assisted Design",
+          ],
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "New York",
+            addressRegion: "NY",
+            addressCountry: "US",
+          },
+          sameAs: ["https://www.linkedin.com/in/surbhihote/"],
+        },
+      }),
+    }],
   }),
   component: AboutPage,
 });
