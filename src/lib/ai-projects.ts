@@ -88,7 +88,7 @@ export const aiProjects: AIProject[] = [
     tags: ["TOOLS", "PROMPTS", "REFERENCES", "WORKFLOWS"],
     description:
       "A curated collection of AI design tools, prompt patterns, reference reads, and workflows I use to prototype and ship faster.",
-    image: resourcesImage,
+    image: resourcesImage.url,
     imageAlt: "Abstract visualization of floating documents and resources",
   },
 ];
