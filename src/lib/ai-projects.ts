@@ -1,4 +1,4 @@
-import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-v2.png.asset.json";
+import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v3.png.asset.json";
 import voyagerWelcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio-devices.png.asset.json";
 import resourcesImage from "@/assets/resources-banner.png.asset.json";
