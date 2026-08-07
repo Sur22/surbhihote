@@ -252,16 +252,36 @@ export const Route = createFileRoute("/work/$slug")({
       };
     }
 
+    const overrides: Record<string, { title: string; description: string }> = {
+      fjord: {
+        title: "Audience Builder | Surbhi Hote",
+        description:
+          "Audience Builder is an internal ad-tech tool that lets Account Executives create custom TV audience segments themselves. It cut a week-long data-team turnaround down to minutes and saved $400K a year. A B2B product design case study by Surbhi Hote, Lead Product Designer.",
+      },
+      atlas: {
+        title: "Notifications Management | Surbhi Hote",
+        description:
+          "Notifications Management gives supply-chain users granular control over which alerts they receive, per module and per product. It reduced missed critical alerts by 84%. An enterprise UX case study by Surbhi Hote, Lead Product Designer.",
+      },
+    };
+    const o = overrides[params.slug];
+    const title = o?.title ?? `${s.title} — Surbhi Hote`;
+    const description = o?.description ?? s.summary;
+
     return {
       meta: [
-        { title: `${s.title} — Surbhi Hote` },
-        { name: "description", content: s.summary },
+        { title },
+        { name: "description", content: description },
         { name: "keywords", content: s.keywords },
-        { property: "og:title", content: `${s.title} — Surbhi Hote` },
-        { property: "og:description", content: s.summary },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
         { property: "og:image", content: s.cover },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+        { name: "twitter:image", content: s.cover },
       ],
       links: [{ rel: "canonical", href: url }],
     };
