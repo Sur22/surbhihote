@@ -314,7 +314,8 @@ export function VibeCodedPortfolioStudy() {
         </div>
       </Section>
 
-      <Section id="performance" title="Images and performance for a fast portfolio">
+      <Section id="performance" title="Performance">
+        <Sub>Images and performance for a fast portfolio</Sub>
         <Body>
           Images are where a portfolio gets slow, and where credits get wasted
           if you let the AI handle them.
