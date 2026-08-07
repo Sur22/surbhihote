@@ -71,9 +71,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       <Link
                         to={item.to}
                         hash={"hash" in item ? item.hash : undefined}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"
                       >
                         {item.label}
+                        {item.label === "AI" && (
+                          <Sparkles size={16} className="text-accent" aria-hidden="true" />
+                        )}
                       </Link>
                     </SheetClose>
                   ))}
