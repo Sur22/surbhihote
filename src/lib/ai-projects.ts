@@ -44,7 +44,7 @@ export const aiProjects: AIProject[] = [
   {
     slug: "voyager",
     index: "02",
-    subtitle: "An AI travel companion, end to end",
+    subtitle: "An AI Travel Companion",
     title: "Voyager",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     description:
