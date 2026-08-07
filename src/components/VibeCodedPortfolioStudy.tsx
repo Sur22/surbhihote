@@ -216,7 +216,7 @@ export function VibeCodedPortfolioStudy() {
             src={twoAgentsDiagram.url}
             alt="Diagram showing Claude Code and the Lovable agent syncing through a shared GitHub repository as the single source of truth"
             loading="lazy"
-            className="w-full rounded-lg border border-border"
+            className="w-1/2 mx-auto rounded-lg border border-border"
           />
           <figcaption className="text-sm text-foreground/60">
             One project, two agents, shared through GitHub. Claude Code and
