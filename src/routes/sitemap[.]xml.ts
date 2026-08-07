@@ -16,7 +16,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/creator-hub-ai-product-design-case-study", priority: "0.9" },
           { path: "/vibe-coding-my-portfolio-lovable", priority: "0.9" },
           { path: "/work/fjord", priority: "0.9" },
-          { path: "/work/fjord2", priority: "0.9" },
+          { path: "/work/affiliate-platform-redesign", priority: "0.9" },
           { path: "/work/solace", priority: "0.9" },
           { path: "/work/atlas", priority: "0.9" },
         ];

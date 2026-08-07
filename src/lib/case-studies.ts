@@ -5,7 +5,7 @@ import notificationBanner from "@/assets/notification-banner.png.asset.json";
 import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
-  slug: "fjord" | "solace" | "atlas" | "atlas2" | "fjord2";
+  slug: "fjord" | "solace" | "atlas" | "atlas2" | "affiliate-platform-redesign";
   index: string;
   title: string;
   subtitle: string;
@@ -114,7 +114,7 @@ const defaultMeta = {
 
 const _caseStudies: CaseStudy[] = [
   {
-    slug: "fjord2",
+    slug: "affiliate-platform-redesign",
     index: "01",
     title: "Affiliate Website Redesign",
     subtitle: "Redesigning a legacy application\u00a0",

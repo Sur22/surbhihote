@@ -12,7 +12,7 @@ Surbhi Hote is a Lead Product Designer based in the United States. Her portfolio
 - [Gallery](/gallery): Visual work and explorations
 
 ## Case studies
-- [Affiliate Website Redesign (Fjord)](/work/fjord2): Redesigning an affiliate platform to reduce a projected $850K revenue loss without disrupting existing users
+- [Affiliate Website Redesign (Fjord)](/work/affiliate-platform-redesign): Redesigning an affiliate platform to reduce a projected $850K revenue loss without disrupting existing users
 - [Tech Pack Tool (Solace)](/work/solace): Enterprise tool for apparel tech pack creation — CAD library, materials, BOM, and standardized documents
 - [Notifications Management (Atlas)](/work/atlas): Mobile-first notification system with role-based templates that cut missed alerts by 84%
 

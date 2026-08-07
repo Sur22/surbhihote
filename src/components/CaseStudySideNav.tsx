@@ -9,10 +9,10 @@ const baseSections = [
   { id: "impact", label: "REFLECTION" },
 ];
 
-const slugsWithoutStrategy = new Set(["fjord", "fjord2", "atlas", "atlas2"]);
-const slugsWithWorkshop = new Set(["fjord2"]);
-const affiliateSlugs = new Set(["fjord", "fjord2"]);
-const slugsWithTopImpact = new Set(["fjord", "fjord2", "solace", "atlas", "atlas2"]);
+const slugsWithoutStrategy = new Set(["fjord", "affiliate-platform-redesign", "atlas", "atlas2"]);
+const slugsWithWorkshop = new Set(["affiliate-platform-redesign"]);
+const affiliateSlugs = new Set(["fjord", "affiliate-platform-redesign"]);
+const slugsWithTopImpact = new Set(["fjord", "affiliate-platform-redesign", "solace", "atlas", "atlas2"]);
 
 
 type Section = { id: string; label: string; anchor?: string };

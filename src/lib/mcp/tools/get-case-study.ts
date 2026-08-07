@@ -6,7 +6,7 @@ export default defineTool({
   title: "Get case study",
   description: "Fetch a single case study by its slug.",
   inputSchema: {
-    slug: z.string().min(1).describe("Case study slug, e.g. fjord, solace, atlas, fjord2."),
+    slug: z.string().min(1).describe("Case study slug, e.g. fjord, solace, atlas, affiliate-platform-redesign.")
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: async ({ slug }) => {
