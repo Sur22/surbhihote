@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import {
   Carousel,
@@ -424,10 +425,13 @@ export function VoyagerStudy() {
                 caption:
                   "The conversational interface handles follow-up questions and refinements without restarting the search.",
               },
-            ].map((img) => (
+            ].map((img, idx) => (
               <CarouselItem key={img.caption}>
                 <figure>
-                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <div className={cn(
+                    "overflow-hidden rounded-sm bg-secondary p-2",
+                    idx === 0 && "flex items-center justify-center"
+                  )}>
                     <img
                       src={img.src}
                       alt={img.alt}
