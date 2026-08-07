@@ -50,7 +50,8 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </p>
         ) : project.slug === "voyager" ? (
           <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            An AI Travel Planner & Assistant&nbsp;
+            Design lab AI for UI Project: designing a travel AI product end to
+            end, using AI at every stage.
           </p>
         ) : (
           <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
