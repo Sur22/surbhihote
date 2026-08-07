@@ -74,13 +74,18 @@ function AboutPage() {
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
             <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
-              Hi, <em className="text-accent">Again!</em>
+              Surbhi Hote<br />
+              Lead Product Designer
             </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
-                I am Surbhi Hote a Lead Designer currently working for B2B&nbsp; Enterprise Ad-Tech Company in New York.I blend tech, and design and strategy, to solve complex problems. For me, it's all about creating tangible value and outcomes that stick. I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward.
-                <br />
-                Through my work, I want to help create useful, engaging, and intuitive solutions that help people improve their lives.
+                Hi again! I am currently working for B2B&nbsp; Enterprise Ad-Tech Company in New York. I blend tech, and design and strategy, to solve complex problems. I care most about outcomes that hold up after launch, not just screens that look good in a portfolio.
+              </p>
+              <p>
+                Before Ampersand, I was the founding designer at Suuchi Inc., where I built a B2B supply-chain platform from zero to one. I hold a Master's in Computer Science and started my career as a developer, which shapes how I design: I can sit with engineering in the details and still keep the whole system in view.
+              </p>
+              <p>
+                For me, it's all about creating tangible value and outcomes that stick. I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward. Through my work, I want to help create useful, engaging, and intuitive solutions that help people improve their lives.
               </p>
             </div>
             <div className="mt-8">
