@@ -35,11 +35,11 @@ export const aiProjects: AIProject[] = [
     image: creatorHubDashboardMockup.url,
     imageAlt: "Creator Hub dashboard mockup",
     path: "/creator-hub-ai-product-design-case-study",
-    role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
+    role: "Product Design, Concept, Problem framing,Product Thinking, Business Thinking",
     timeframe: "3 weeks",
     tools: "Google Stitch, Figma, ChatGPT, Claude, Miro,Paython",
     tasksPerformed:
-      "0→1 Design, Ideation, Concept, Competitive Analysis, Double Dimond\nAI product strategy, Market Gap Identification ,\nTechnical Feasibility, & interface design",
+      "0→1 Design, Ideation, Concept, Competitive Analysis, Double Dimond\n,Market Gap Identification ,\nTechnical Feasibility, & interface design",
   },
   {
     slug: "voyager",
@@ -52,7 +52,7 @@ export const aiProjects: AIProject[] = [
     image: voyagerWelcomeMockup.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
     pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
-    role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
+    role: "Product Design, Concept, End to end, Problem Framing, AI product strategy",
     timeframe: "4 weeks",
     tools: "Perplexity, Claude, ChatGPT, Google Stitch, Figma Make",
     tasksPerformed:
