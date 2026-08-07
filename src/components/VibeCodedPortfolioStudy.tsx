@@ -424,10 +424,8 @@ export function VibeCodedPortfolioStudy() {
         </Body>
       </Section>
 
-      <Section
-        id="tips"
-        title="General tips for designers who want to use AI and vibe code"
-      >
+      <Section id="tips" title="Tips">
+        <Sub>General tips for designers who want to use AI and vibe code</Sub>
         <Bullets
           items={[
             <>
