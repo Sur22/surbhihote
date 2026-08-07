@@ -57,7 +57,11 @@ function AboutPage() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
-        <p className="eyebrow mb-8">{"\n"}</p>
+        <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
+        <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1] mb-10 md:mb-14">
+          Surbhi Hote<br />
+          Lead Product Designer
+        </h1>
         <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
           <div className="md:col-span-5 order-2 md:order-1">
             <div className="relative w-[85%] mx-auto">
@@ -72,11 +76,6 @@ function AboutPage() {
             </div>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
-            <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
-            <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1] mb-8 md:mb-10">
-              Surbhi Hote<br />
-              Lead Product Designer
-            </h1>
             <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
                 Hi again! I am currently working for B2B&nbsp; Enterprise Ad-Tech Company in New York. I blend tech, and design and strategy, to solve complex problems. I care most about outcomes that hold up after launch, not just screens that look good in a portfolio.
