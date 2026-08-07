@@ -74,7 +74,7 @@ function AIPage() {
         </div>
 
         <p className="mt-16 text-sm text-muted-foreground">
-          More coming soon. In the meantime, feel free to reach out.
+          {"\n"}
         </p>
       </section>
     </SiteLayout>
