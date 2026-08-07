@@ -226,6 +226,27 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:image", content: s.cover },
         ],
         links: [{ rel: "canonical", href: affiliateUrl }],
+        scripts: [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              name: "Affiliate Platform Redesign",
+              about: "B2B enterprise UX redesign of a legacy ad-tech affiliate platform",
+              author: {
+                "@type": "Person",
+                name: "Surbhi Hote",
+                jobTitle: "Lead Product Designer",
+                url: "https://surbhihote.com",
+                sameAs: ["https://www.linkedin.com/in/surbhihote/"],
+              },
+              keywords:
+                "B2B UX, enterprise design, ad-tech, legacy platform redesign, product design case study",
+              url: affiliateUrl,
+            }),
+          },
+        ],
       };
     }
 
