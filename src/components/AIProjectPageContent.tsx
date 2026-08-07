@@ -39,7 +39,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           {project.title}
         </h1>
         <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
-          {project.subtitle}
+          {project.slug === "voyager" ? "An AI Travel Companion" : project.subtitle}
         </p>
 
         {project.slug === "creator-hub" ? (
