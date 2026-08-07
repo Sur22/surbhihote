@@ -27,7 +27,7 @@ export const aiProjects: AIProject[] = [
   {
     slug: "creator-hub",
     index: "01",
-    subtitle: "Designing an AI-assisted publishing workspace",
+    subtitle: "Designing an AI-assisted Workspace for Content Creators",
     title: "Creator Hub",
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML", "2026"],
     description:
