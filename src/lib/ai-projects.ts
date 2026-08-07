@@ -34,7 +34,7 @@ export const aiProjects: AIProject[] = [
     tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML", "2026"],
     description:
       "An AI product design case study. Creator Hub is an LLM-powered content workspace for social media creators, covering product strategy, retrieval-augmented generation, and AI evaluation.",
-    image: creatorHubDashboard.url,
+    image: creatorHubDashboardMockup.url,
     imageAlt: "Creator Hub dashboard mockup",
     path: "/creator-hub-ai-product-design-case-study",
     role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
@@ -51,7 +51,7 @@ export const aiProjects: AIProject[] = [
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     description:
       "An AI travel assistant built end-to-end with generative tools - exploring conversational UI, itinerary generation, and map-based experiences.",
-    image: voyagerWelcome.url,
+    image: voyagerWelcomeMockup.url,
     imageAlt: "Voyager AI travel assistant welcome screen",
     pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
     role: "Product Design, Concept, End to end, Problem framing, AI product strategy",
