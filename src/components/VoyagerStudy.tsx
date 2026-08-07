@@ -473,6 +473,8 @@ export function VoyagerStudy() {
           ]}
         />
       </Section>
+      <div id="case-study-end" aria-hidden />
     </div>
+
   );
 }
