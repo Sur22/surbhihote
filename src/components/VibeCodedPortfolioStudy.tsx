@@ -225,7 +225,8 @@ export function VibeCodedPortfolioStudy() {
         </figure>
       </Section>
 
-      <Section id="credits" title="Making your Lovable credits last on a budget">
+      <Section id="credits" title="Credits">
+        <Sub>Making your Lovable credits last on a budget</Sub>
         <Body>
           This is where most people overspend, so here's how the credits
           actually work and how I stretched them.
