@@ -75,7 +75,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       >
                         {item.label}
                         {item.label === "AI" && (
-                          <Sparkles size={16} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+                          <Zap size={16} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
                         )}
                       </Link>
                     </SheetClose>
