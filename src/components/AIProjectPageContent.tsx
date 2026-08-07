@@ -4,6 +4,7 @@ import { PdfViewer } from "@/components/PdfViewer";
 import { ImageViewer } from "@/components/ImageViewer";
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { ArrowLeft, Download, FileText } from "lucide-react";
 import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
@@ -23,6 +24,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
   return (
     <SiteLayout>
+      <ScrollProgress />
       <article className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
         <Link
           to="/ai"
