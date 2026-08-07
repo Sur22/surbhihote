@@ -98,7 +98,8 @@ export function VibeCodedPortfolioStudy() {
         />
       </Section>
 
-      <Section id="design-first" title="Do the design work before you open Lovable">
+      <Section id="design-first" title="Design">
+        <Sub>Do the design work before you open Lovable</Sub>
         <Body>
           The biggest credit saver isn't a Lovable trick. It's finishing the
           thinking before the AI starts building. Every vague prompt turns into
