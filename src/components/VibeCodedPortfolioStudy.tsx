@@ -9,6 +9,7 @@ const sections = [
   { id: "credits", label: "Credits" },
   { id: "performance", label: "Performance" },
   { id: "friction", label: "Friction" },
+  { id: "findable", label: "SEO & GEO" },
   { id: "tips", label: "Tips" },
   { id: "faq", label: "FAQ" },
 ];
@@ -421,6 +422,77 @@ export function VibeCodedPortfolioStudy() {
           The honest takeaway: Lovable gets a real site standing up remarkably
           fast, but it needs supervision. Budget for the occasional cleanup,
           protect your good versions, and it stays cheap and worth it.
+        </Body>
+      </Section>
+
+      <Section id="findable" title="5. Making it findable: SEO and GEO">
+        <Sub>For search, the basics still carry most of the weight</Sub>
+        <Body>
+          Building the site is only half the job. If a recruiter or an AI
+          assistant can't find it, it may as well not exist. So I treated
+          discoverability as part of the design, for two audiences: search
+          engines (SEO) and AI answer engines like ChatGPT, Claude, and
+          Perplexity (GEO, short for generative engine optimization). They
+          overlap, but they reward slightly different things.
+        </Body>
+        <Bullets
+          items={[
+            <>
+              A clear, keyword-aware title and description on every page,
+              written for a person first and a crawler second.
+            </>,
+            <>
+              Real heading structure, one h1 and honest h2s, so the page reads
+              as an outline instead of a wall of styled divs.
+            </>,
+            <>
+              Descriptive file names and alt text on every image.
+            </>,
+            <>
+              A sitemap and a robots file, so crawlers know what exists and can
+              reach it.
+            </>,
+          ]}
+        />
+        <Sub>For GEO, the goal is to be readable and quotable by AI tools</Sub>
+        <Bullets
+          items={[
+            <>
+              I put my core claim in plain language near the top of each page,
+              since that's the line answer engines tend to lift. On this case
+              study it's the "In short" summary.
+            </>,
+            <>
+              I added structured data (schema markup) that tells machines who
+              wrote the page, what it is, and answers common questions directly.
+              A properly marked-up FAQ gives AI tools clean question-and-answer
+              pairs to pull from.
+            </>,
+            <>
+              I added an llms.txt file at the site root: a short plain-text map
+              of who I am and which pages matter, written specifically for AI
+              crawlers.
+            </>,
+          ]}
+        />
+        <Body>
+          There's one trap specific to building on Lovable, and it's worth
+          knowing. A Lovable site is a JavaScript-heavy single-page app, so a lot
+          of the content only appears after the page's scripts run. Search
+          crawlers and AI bots read JavaScript unevenly, and text that isn't in
+          the initial HTML can be missed entirely. All the keyword work in the
+          world doesn't help if the crawler never sees the words. The fix is to
+          make your content pages render their text as real HTML up front,
+          through static or server-side rendering, not only on the client. It's
+          the least glamorous part of the whole build and the one most likely to
+          decide whether any of it gets found.
+        </Body>
+        <Body>
+          If you're a designer reading this, that's the real takeaway: SEO and
+          GEO aren't a marketing task you bolt on after launch. They're
+          structure and clarity, which is design work. Decide what you want to
+          be found for, say it plainly near the top, mark it up so machines can
+          read it, and make sure it's actually in the HTML.
         </Body>
       </Section>
 
