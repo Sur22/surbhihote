@@ -31,6 +31,7 @@ import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-v2.png.asset.js
 import creatorHubCreatePostNew from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
 import voyagerWelcome from "@/assets/voyager-welcome.png.asset.json";
+import voyagerWelcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
 import voyagerChat from "@/assets/voyager-chat.png.asset.json";
 import voyagerItinerary from "@/assets/voyager-itinerary.png.asset.json";
 import voyagerItinerary2 from "@/assets/voyager-itinerary-2.png.asset.json";
@@ -68,6 +69,7 @@ const items = [
   },
   {
     images: [
+      { src: voyagerWelcomeMockup.url, alt: "Voyager — Banner mockup" },
       { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
       { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
       { src: voyagerItinerary2.url, alt: "Voyager — Itinerary" },
