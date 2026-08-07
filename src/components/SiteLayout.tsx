@@ -40,7 +40,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/ai" activeProps={{ className: "text-foreground" }} className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
-              AI <Zap size={14} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+              AI <Sparkle size={14} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
