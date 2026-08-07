@@ -1,21 +1,27 @@
-# Surbhi Hote — Lead Product Designer
+--
 
-> Portfolio of Surbhi Hote, a product designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Focus on end-to-end, human-centered design that balances user needs, business goals, and technical feasibility.
+Surbhi Hote
 
-Surbhi Hote is a Lead Product Designer based in the United States. Her portfolio showcases enterprise SaaS and B2B case studies, an about page with background and experience, a UX process guide, and a gallery of visual work. Contact via LinkedIn.
+> Product designer using AI across the design process. Designs and vibe codes production-ready product experiences.
 
-## Pages
-- [Home](/): Introduction and selected case studies
-- [About](/about): Background, experience, and resume
-- [UX Process](/process): Design process, methods, and principles
-- [AI](/ai): Designing with AI — approach, tools, and experiments
-- [Gallery](/gallery): Visual work and explorations
+--
+About
+Surbhi Hote is a product designer with around 8 years of experience. She uses AI tools (Lovable, Claude Code, Cursor, Claude Design) to move from idea to shipped product, and specializes in UX, design systems, and AI-first product design.
 
-## Case studies
-- [Affiliate Website Redesign (Fjord)](/work/affiliate-platform-redesign): Redesigning an affiliate platform to reduce a projected $850K revenue loss without disrupting existing users
-- [Tech Pack Tool (Solace)](/work/solace): Enterprise tool for apparel tech pack creation — CAD library, materials, BOM, and standardized documents
-- [Notifications Management (Atlas)](/work/atlas): Mobile-first notification system with role-based templates that cut missed alerts by 84%
+--
+Key pages
+- Portfolio home: https://surbhihote.com
+- Vibe coding case study: https://surbhihote.com/vibe-coding-my-portfolio-lovable
+- Affiliate Platform Redesign case study: https://surbhihote.com/work/affiliate-platform-redesign
+- Tech Pack Tool case study: https://surbhihote.com/work/solace
+- Notifications Management case study: https://surbhihote.com/work/atlas
+- AI projects: https://surbhihote.com/ai
+- UX process guide: https://surbhihote.com/process
+- Gallery: https://surbhihote.com/gallery
+- About: https://surbhihote.com/about
+- Resume: https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true
 
-## Optional
-- [Resume (PDF)](/resume.pdf)
-- [LinkedIn](https://www.linkedin.com/in/surbhihote/)
+--
+Contact
+- Email: surbhihote@gmail.com
+- LinkedIn: https://www.linkedin.com/in/surbhihote/
