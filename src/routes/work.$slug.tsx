@@ -195,21 +195,21 @@ export const Route = createFileRoute("/work/$slug")({
       const affiliateUrl = "https://surbhihote.com/work/affiliate-platform-redesign";
       return {
         meta: [
-          { title: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer" },
+          { title: "Affiliate Platform Redesign | Surbhi Hote" },
           {
             name: "description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { name: "keywords", content: s.keywords },
           {
             property: "og:title",
-            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+            content: "Affiliate Platform Redesign | Surbhi Hote",
           },
           {
             property: "og:description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { property: "og:image", content: s.cover },
           { property: "og:url", content: affiliateUrl },
@@ -217,15 +217,16 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:card", content: "summary_large_image" },
           {
             name: "twitter:title",
-            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+            content: "Affiliate Platform Redesign | Surbhi Hote",
           },
           {
             name: "twitter:description",
             content:
-              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, and zero business lost since launch. A B2B enterprise UX case study by Surbhi Hote.",
           },
           { name: "twitter:image", content: s.cover },
         ],
+
         links: [{ rel: "canonical", href: affiliateUrl }],
         scripts: [
           {
