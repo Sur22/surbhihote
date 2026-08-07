@@ -225,7 +225,7 @@ export const Route = createFileRoute("/work/$slug")({
   component: CaseStudyPage,
 });
 
-const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["fjord2", "fjord", "solace", "atlas", "atlas2"]);
+const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign", "fjord", "solace", "atlas", "atlas2"]);
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const showImpactHeader = topOutcomeSlugs.has(c.slug);
@@ -262,7 +262,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
               : c.slug === "solace"
               ? "This project was an upgrade from manual paperwork to a streamlined process eliminating the manual errors, delays in production deadlines and product delivery."
-              : c.slug === "fjord2"
+              : c.slug === "affiliate-platform-redesign"
               ? "Rebuilding a 25-year-old, business-critical platform for 500+ affiliates; where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
               : "When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
           </p>
@@ -322,7 +322,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={`[&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "fjord2") ? "study-fjord-bg" : ""}`}
+        className={`[&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
@@ -362,7 +362,7 @@ function CaseStudyPage() {
       {/* Cover */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="overflow-hidden rounded-sm">
-          <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "fjord2" ? "w-[72%] mx-auto" : c.slug === "solace" ? "w-[78%] mx-auto" : "w-full"}`} />
+          <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "affiliate-platform-redesign" ? "w-[72%] mx-auto" : c.slug === "solace" ? "w-[78%] mx-auto" : "w-full"}`} />
         </div>
       </section>
 
@@ -373,7 +373,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "Role", v: c.slug === "fjord2" ? "Lead Product Designer (Sole)" : c.role },
+            { k: "Role", v: c.slug === "affiliate-platform-redesign" ? "Lead Product Designer (Sole)" : c.role },
             { k: "Timeframe", v: c.timeframe },
             { k: "Tools", v: c.tools },
             { k: "Tasks Performed", v: c.tasksPerformed },
@@ -391,13 +391,13 @@ function CaseStudyPage() {
       {/* Overview + Goal */}
       <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
 
-        <div className={c.slug === "fjord2" ? "" : "space-y-16"}>
+        <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
-            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "fjord2" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
-            {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
+            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
+            {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
-            {c.slug !== "fjord2" && (
+            {c.slug !== "affiliate-platform-redesign" && (
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace" 
                   ? "The GRID is end-to-end supply chain visibility from product conception to distribution with real-time updates and analytics on sourcing, product development, production, and shipping. For companies running their supply chain on Excel sheets and point solutions, the GRID functions as the ERP and as an intuitive supply chain productivity layer. For companies that have legacy PIMs and ERPs, the GRID integrates to connect people, data, and workflows. In either role, the GRID delivers quick time to value by eliminating errors and digitizing manual processes thereby reducing OpEx and COGS and improving margins." 
@@ -405,7 +405,7 @@ function CaseStudyPage() {
               </p>
             )}
           </div>
-          {c.slug === "fjord2" && (
+          {c.slug === "affiliate-platform-redesign" && (
             <div className="space-y-8">
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
                 {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There three lines of business National, Local and Addressable.`}
@@ -457,7 +457,7 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
               </p>
             </div>
           )}
-          {c.slug !== "fjord2" && (
+          {c.slug !== "affiliate-platform-redesign" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : (c.slug === "atlas") ? "\n" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -513,7 +513,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           )}
           <div>
             <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
-              {(c.slug === "fjord2") ? "Survey" : "User Interview"}
+              {(c.slug === "affiliate-platform-redesign") ? "Survey" : "User Interview"}
             </h3>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
@@ -539,7 +539,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <br />4. Ability to see segments created by other users and copy them.
                   </p>
                 </>
-              ) : (c.slug === "fjord2") ? (
+              ) : (c.slug === "affiliate-platform-redesign") ? (
                 <p>{c.research.userInterview}</p>
               ) : (c.slug === "solace") ? (
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -619,7 +619,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
 
 
-        {(c.slug !== "fjord" && c.slug !== "fjord2") && (
+        {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign") && (
           <div className={`mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden`}>
             {c.slug === "solace" && (
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
@@ -771,7 +771,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       )}
 
       {/* Strategy / Workshop */}
-      <section id={c.slug === "fjord2" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+      <section id={c.slug === "affiliate-platform-redesign" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <h3 className="font-serif text-3xl mb-6 font-medium">{c.slug === "solace" ? "Vision" : (c.strategySectionSubtitle || "Product + Design Strategy")}</h3>
@@ -779,7 +779,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-            {c.slug === "fjord2" 
+            {c.slug === "affiliate-platform-redesign" 
               ? "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had.\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
               : (c.slug === "solace" ? "Building an efficient and automated PLM ecosystem that reduces operational expenses, builds standardized workflows, and improves margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
             }
@@ -984,7 +984,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
 
 
-        {(c.slug === "fjord2") && (
+        {(c.slug === "affiliate-platform-redesign") && (
           <div className="contents">
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
@@ -1199,7 +1199,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Define Success Metrics{"\u00a0"}<br /></h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                {c.slug === "fjord2"
+                {c.slug === "affiliate-platform-redesign"
                   ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
                   : "The final step was to define KPIs and how we would measure them. We came up with 5 KPIs which cover all aspects of the project.\u00a0"}
               </p>
@@ -1294,10 +1294,10 @@ Users needed an easy way to control and manage the notifications they want and s
           </>
         )}
         <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
-          {(c.slug === "fjord2") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
+          {(c.slug === "affiliate-platform-redesign") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-          {(c.slug === "fjord2") 
+          {(c.slug === "affiliate-platform-redesign") 
             ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild — with the limited amount of information I had from the survey data.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
@@ -1320,7 +1320,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <li>Fabric & Trims Catalogue&nbsp;</li>
           </ul>
         )}
-        {c.slug !== "fjord2" && c.slug !== "atlas" && c.slug !== "atlas2" && (
+        {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && c.slug !== "atlas2" && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-10">
             {c.slug === "fjord"
               ? "The custom component built for the projects are shown below"
@@ -1328,7 +1328,7 @@ Users needed an easy way to control and manage the notifications they want and s
             }
           </p>
         )}
-        {(c.slug === "fjord2") ? (
+        {(c.slug === "affiliate-platform-redesign") ? (
           <button
             type="button"
             onClick={() => setZoomImg(affiliateSitemap.url)}
@@ -1404,20 +1404,20 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
-        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "fjord2" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "fjord2") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
+        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "affiliate-platform-redesign" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "affiliate-platform-redesign") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
             ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
 
 
-            : (c.slug === "fjord2") 
+            : (c.slug === "affiliate-platform-redesign") 
               ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
               : (c.slug === "fjord")
                 ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
           }
         </p>
-        {(c.slug === "fjord2") ? (
+        {(c.slug === "affiliate-platform-redesign") ? (
           <button
             type="button"
             onClick={() => setZoomImg(fjord2InitialDesign.url)}
@@ -1513,7 +1513,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
 
-      {(c.slug === "fjord2") && (
+      {(c.slug === "affiliate-platform-redesign") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
@@ -1561,7 +1561,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "fjord2" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
                       <TableCell>Order Revision</TableCell>
                     </TableRow>
                     <TableRow>
@@ -1582,11 +1582,11 @@ Users needed an easy way to control and manage the notifications they want and s
                       <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "fjord2" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
                       <TableCell>Exports</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "fjord2" ? "Fix Broken Functionalities" : "\u00a0"}</TableCell>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities" : "\u00a0"}</TableCell>
                       <TableCell>Automation</TableCell>
                     </TableRow>
                   </TableBody>
@@ -1595,12 +1595,12 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
 
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "solace" && c.slug !== "fjord") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && c.slug !== "solace" && c.slug !== "fjord") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
       {/* Challenges */}
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "fjord2" && c.slug !== "fjord") && (
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && c.slug !== "fjord") && (
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-0" : "py-24"}`}>
         {c.slug !== "solace" && (
           <>
@@ -1634,7 +1634,7 @@ Users needed an easy way to control and manage the notifications they want and s
       </section>
       )}
 
-      {(c.slug !== "fjord2") && (
+      {(c.slug !== "affiliate-platform-redesign") && (
         <>
       {/* Workflow */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
@@ -1747,7 +1747,7 @@ Users needed an easy way to control and manage the notifications they want and s
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {(c.slug === "fjord2") && (
+      {(c.slug === "affiliate-platform-redesign") && (
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
@@ -1772,7 +1772,7 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
 
-      {(c.slug !== "fjord2") && (
+      {(c.slug !== "affiliate-platform-redesign") && (
         <section id="testing" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-[80px]" : "py-24"}`}>
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
 
@@ -1914,25 +1914,25 @@ Users needed an easy way to control and manage the notifications they want and s
             opts={{ loop: true }}
             className={cn(
               "relative group",
-              (c.slug === "fjord2" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat pt-28 pb-12"
+              (c.slug === "affiliate-platform-redesign" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat pt-28 pb-12"
             )}
             style={
-              c.slug === "fjord2"
+              c.slug === "affiliate-platform-redesign"
                 ? { borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }
                 : c.slug === "solace"
                   ? { borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }
                   : undefined
             }
           >
-            {(c.slug === "fjord2" || c.slug === "solace") && (
+            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && (
               <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
             )}
-            <CarouselContent className={(c.slug === "fjord2" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
+            <CarouselContent className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
               {((c.slug === "atlas" || c.slug === "atlas2")
                 ? [
                     { src: notificationsFinalScreens.url, label: "Final screens mockup" },
                   ]
-                : (c.slug === "fjord2")
+                : (c.slug === "affiliate-platform-redesign")
                 ? [
                     { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
                     { src: affiliateDashboard4.url, label: "After – orders dashboard" },
@@ -1950,7 +1950,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     { src: finalProto.url, label: "Prototype overview" },
                   ]
               ).map((img) => (
-                <CarouselItem key={img.label} className={(c.slug === "fjord2" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
+                <CarouselItem key={img.label} className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
 
                   {(c.slug === "atlas" || c.slug === "atlas2") ? (
                     <div
@@ -1966,7 +1966,7 @@ Users needed an easy way to control and manage the notifications they want and s
                         loading="lazy"
                       />
                     </div>
-                  ) : (c.slug === "fjord2") ? (
+                  ) : (c.slug === "affiliate-platform-redesign") ? (
                     <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
                   ) : (c.slug === "solace") ? (
                     <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%" }} loading="lazy" />
@@ -1980,7 +1980,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </CarouselContent>
             {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
             {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
-            {(c.slug === "fjord2" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
+            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
           </Carousel>
         )}
 
@@ -2010,7 +2010,7 @@ Users needed an easy way to control and manage the notifications they want and s
       </section>
 
 
-      {c.slug !== "fjord2" && (
+      {c.slug !== "affiliate-platform-redesign" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
@@ -2020,7 +2020,7 @@ Users needed an easy way to control and manage the notifications they want and s
           Reflection
         </h2>
         <p className="text-lg leading-relaxed text-foreground/85 mb-20">
-          {c.slug === "fjord2" 
+          {c.slug === "affiliate-platform-redesign" 
             ? <>
                 This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years; speed, stability, broken functionality, redundancy, and the constant manual refreshing{"\u00A0"} and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
                 The results I'm proudest of: a 92% task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the ~$850K the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "$0 lost since launch" result protects.The biggest lesson wasn't about the interface; it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for flat adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
@@ -2054,7 +2054,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="text-lg leading-relaxed text-foreground/85">
-          {(c.slug === "fjord" || c.slug === "fjord2" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? "\n" : (
+          {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? "\n" : (
             <>
               <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
             </>
