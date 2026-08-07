@@ -358,7 +358,8 @@ export function VibeCodedPortfolioStudy() {
         />
       </Section>
 
-      <Section id="friction" title="Where Lovable fought me, and how I handled it">
+      <Section id="friction" title="Friction">
+        <Sub>Where Lovable fought me, and how I handled it</Sub>
         <Body>
           Lovable is fast, but it isn't obedient. Being honest about that is
           part of using it well, so here's what to expect.
