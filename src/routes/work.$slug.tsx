@@ -124,21 +124,21 @@ export const Route = createFileRoute("/work/$slug")({
       const ogImage = "https://surbhihote.com/og-techpack.png";
       return {
         meta: [
-          { title: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote" },
+          { title: "Tech Pack Tool | Surbhi Hote" },
           {
             name: "description",
             content:
-              "A lean UX case study: designing a tech pack editor that moved fashion PLM workflows off Excel into one platform, cutting accounting errors 64% and task time 34%.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { name: "keywords", content: s.keywords },
           {
             property: "og:title",
-            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+            content: "Tech Pack Tool | Surbhi Hote",
           },
           {
             property: "og:description",
             content:
-              "Designing a tech pack editor that moved fashion PLM off Excel into one platform — a lean UX and strategy case study.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { property: "og:image", content: ogImage },
           { property: "og:url", content: solaceUrl },
@@ -146,15 +146,16 @@ export const Route = createFileRoute("/work/$slug")({
           { name: "twitter:card", content: "summary_large_image" },
           {
             name: "twitter:title",
-            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+            content: "Tech Pack Tool | Surbhi Hote",
           },
           {
             name: "twitter:description",
             content:
-              "Designing a tech pack editor that moved fashion PLM off Excel into one platform.",
+              "Tech Pack Tool is a 0-to-1 tech pack editor that moved fashion PLM workflows off scattered Excel files into one connected platform. It cut accounting errors 64% and task time 34%. A 0-to-1 product design case study by Surbhi Hote, Lead Product Designer.",
           },
           { name: "twitter:image", content: ogImage },
         ],
+
         links: [{ rel: "canonical", href: solaceUrl }],
         scripts: [
           {
