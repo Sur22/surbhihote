@@ -73,7 +73,7 @@ function AboutPage() {
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
             <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
-            <h1 className="display text-[clamp(2rem,6vw,5.5rem)] mb-8 md:mb-10">
+            <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1] mb-8 md:mb-10">
               Surbhi Hote<br />
               Lead Product Designer
             </h1>
