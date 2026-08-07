@@ -14,9 +14,9 @@ import chat from "@/assets/voyager-chat.png.asset.json";
 const sections = [
   { id: "overview", label: "Overview" },
   { id: "ai-process", label: "Using AI" },
-  { id: "company", label: "\u00a0DESIGNING" },
-  { id: "tips", label: "Tips and tricks" },
-  { id: "pros-cons", label: "Pros and cons" },
+  { id: "company", label: "\u00a0DESIGN" },
+  { id: "tips", label: "TIPS &\u00a0TRICKS" },
+  { id: "pros-cons", label: "PROS & CONS" },
   { id: "tools", label: "TOOLS\u00a0" },
   { id: "design", label: "END PRODUCT" },
   { id: "takeaways", label: "Takeaways" },
