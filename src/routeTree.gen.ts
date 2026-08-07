@@ -18,6 +18,7 @@ import { Route as CreatorHubAiProductDesignCaseStudyRouteImport } from './routes
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AiIndexRouteImport } from './routes/ai.index'
+import { Route as WorkFjord2RouteImport } from './routes/work.fjord2'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as AiSlugRouteImport } from './routes/ai.$slug'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
@@ -71,6 +72,11 @@ const AiIndexRoute = AiIndexRouteImport.update({
   path: '/ai/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkFjord2Route = WorkFjord2RouteImport.update({
+  id: '/work/fjord2',
+  path: '/work/fjord2',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkSlugRoute = WorkSlugRouteImport.update({
   id: '/work/$slug',
   path: '/work/$slug',
@@ -113,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/fjord2': typeof WorkFjord2Route
   '/ai/': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -129,6 +136,7 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/fjord2': typeof WorkFjord2Route
   '/ai': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -146,6 +154,7 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/fjord2': typeof WorkFjord2Route
   '/ai/': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -164,6 +173,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/fjord2'
     | '/ai/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesByTo: FileRoutesByTo
@@ -180,6 +190,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/fjord2'
     | '/ai'
     | '/.mcp/invoke-tool/$tool'
   id:
@@ -196,6 +207,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/fjord2'
     | '/ai/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesById: FileRoutesById
@@ -213,6 +225,7 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   AiSlugRoute: typeof AiSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
+  WorkFjord2Route: typeof WorkFjord2Route
   AiIndexRoute: typeof AiIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -282,6 +295,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/fjord2': {
+      id: '/work/fjord2'
+      path: '/work/fjord2'
+      fullPath: '/work/fjord2'
+      preLoaderRoute: typeof WorkFjord2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/$slug': {
       id: '/work/$slug'
       path: '/work/$slug'
@@ -335,6 +355,7 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   AiSlugRoute: AiSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
+  WorkFjord2Route: WorkFjord2Route,
   AiIndexRoute: AiIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }

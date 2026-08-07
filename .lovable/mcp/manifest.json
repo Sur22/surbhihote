@@ -44,7 +44,7 @@
             "slug": {
               "type": "string",
               "minLength": 1,
-              "description": "Case study slug, e.g. fjord, solace, atlas, fjord2."
+              "description": "Case study slug, e.g. fjord, solace, atlas, affiliate-platform-redesign."
             }
           },
           "required": [
