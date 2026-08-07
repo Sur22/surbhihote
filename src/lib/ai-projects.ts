@@ -1,7 +1,7 @@
 import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-mockup.png.asset.json";
 import voyagerWelcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio-devices.png.asset.json";
-import resourcesImage from "@/assets/resources.png";
+import resourcesImage from "@/assets/resources-banner.png.asset.json";
 
 export type AIProject = {
   slug: string;
