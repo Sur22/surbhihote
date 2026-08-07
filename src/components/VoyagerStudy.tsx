@@ -38,7 +38,7 @@ function Section({
       <section id={id} className="py-16 md:py-24 scroll-mt-24">
         {title && (
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
-            {title}
+            {"\n"}
           </h2>
         )}
         <div className="space-y-8">{children}</div>
