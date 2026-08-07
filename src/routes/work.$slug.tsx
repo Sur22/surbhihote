@@ -118,6 +118,47 @@ export const Route = createFileRoute("/work/$slug")({
     const s = loaderData?.study;
     const url = `https://surbhihote.com/work/${params.slug}`;
     if (!s) return { meta: [{ title: "Case study — Surbhi Hote" }] };
+
+    if (params.slug === "solace") {
+      const solaceUrl = "https://surbhihote.com/work/solace";
+      const ogImage = "https://surbhihote.com/og-techpack.png";
+      return {
+        meta: [
+          { title: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote" },
+          {
+            name: "description",
+            content:
+              "A lean UX case study: designing a tech pack editor that moved fashion PLM workflows off Excel into one platform, cutting accounting errors 64% and task time 34%.",
+          },
+          { name: "keywords", content: s.keywords },
+          {
+            property: "og:title",
+            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+          },
+          {
+            property: "og:description",
+            content:
+              "Designing a tech pack editor that moved fashion PLM off Excel into one platform — a lean UX and strategy case study.",
+          },
+          { property: "og:image", content: ogImage },
+          { property: "og:url", content: solaceUrl },
+          { property: "og:type", content: "article" },
+          { name: "twitter:card", content: "summary_large_image" },
+          {
+            name: "twitter:title",
+            content: "Tech Pack Tool: PLM UX Case Study — Surbhi Hote",
+          },
+          {
+            name: "twitter:description",
+            content:
+              "Designing a tech pack editor that moved fashion PLM off Excel into one platform.",
+          },
+          { name: "twitter:image", content: ogImage },
+        ],
+        links: [{ rel: "canonical", href: solaceUrl }],
+      };
+    }
+
     return {
       meta: [
         { title: `${s.title} — Surbhi Hote` },
