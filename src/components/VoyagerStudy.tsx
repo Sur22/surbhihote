@@ -17,7 +17,7 @@ const sections = [
   { id: "company", label: "DESIGN" },
   { id: "tips", label: "TIPS &\u00a0TRICKS" },
   { id: "pros-cons", label: "PROS & CONS" },
-  { id: "tools", label: "TOOLS\u00a0" },
+  { id: "tools", label: "TOOLS\u00a0BY STAGE" },
   { id: "design", label: "END PRODUCT" },
   { id: "takeaways", label: "Takeaways" },
 ];
@@ -397,7 +397,7 @@ export function VoyagerStudy() {
         </div>
       </Section>
 
-      <Section id="tools" title="Tools by stage">
+      <Section id="tools" title="Tools by Stage">
         <ToolsTable />
       </Section>
 
