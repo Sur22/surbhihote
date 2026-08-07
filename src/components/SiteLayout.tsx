@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail, Menu, Heart, UtensilsCrossed, Coffee } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu, Sparkles } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
@@ -39,7 +39,9 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">AI</Link>
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
+              AI <Sparkles size={14} className="text-accent" aria-hidden="true" />
+            </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
@@ -69,9 +71,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       <Link
                         to={item.to}
                         hash={"hash" in item ? item.hash : undefined}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"
                       >
                         {item.label}
+                        {item.label === "AI" && (
+                          <Sparkles size={16} className="text-accent" aria-hidden="true" />
+                        )}
                       </Link>
                     </SheetClose>
                   ))}
