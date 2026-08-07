@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail, Menu, Zap } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu, Sparkle } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
@@ -40,7 +40,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
             <Link to="/ai" activeProps={{ className: "text-foreground" }} className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
-              AI <Zap size={14} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+              AI <Sparkle size={14} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
@@ -75,7 +75,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       >
                         {item.label}
                         {item.label === "AI" && (
-                          <Zap size={16} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+                          <Sparkle size={16} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
                         )}
                       </Link>
                     </SheetClose>
