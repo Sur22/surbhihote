@@ -425,7 +425,7 @@ export function VibeCodedPortfolioStudy() {
         </Body>
       </Section>
 
-      <Section id="findable" title="5. Making it findable: SEO and GEO">
+      <Section id="findable" title="SEO and GEO">
         <Sub>For search, the basics still carry most of the weight</Sub>
         <Body>
           Building the site is only half the job. If a recruiter or an AI
