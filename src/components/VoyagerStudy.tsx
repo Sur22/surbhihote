@@ -273,7 +273,8 @@ export function VoyagerStudy() {
         </div>
       </Section>
 
-      <Section id="company" title="Designing it as a company, not a screen exercise">
+      <Section id="company" title="Company">
+        <Sub>Designing it as a company, not a screen exercise</Sub>
         <Body>
           I did not treat Voyager as a set of screens. I treated it as a company.
           I sized the market, chose a wedge (busy professionals who travel a few
