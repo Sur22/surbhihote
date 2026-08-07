@@ -57,26 +57,29 @@ function AboutPage() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
-        <p className="eyebrow mb-2 text-accent">The Impact-Driven Value Creator</p>
-        <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1] mb-10 md:mb-14">
-          <span className="text-foreground not-italic">Surbhi Hote</span><br />
-          <em className="text-accent italic">Lead Product Designer</em>
-        </h1>
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
+        <div className="mb-10 md:mb-14">
+          <p className="eyebrow mb-3 text-accent">The Impact-Driven Value Creator</p>
+          <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1]">
+            <span className="text-foreground not-italic">Surbhi Hote</span><br />
+            <em className="text-accent italic">Lead Product Designer</em>
+          </h1>
+        </div>
+
+        <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
           <div className="md:col-span-5 order-2 md:order-1">
-            <div className="relative w-[85%] mx-auto">
+            <div className="relative">
               <div
                 aria-hidden
                 className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
-                style={{ transform: "rotate(10deg)" }}
+                style={{ transform: "rotate(6deg)" }}
               />
-              <div className="relative overflow-hidden rounded-[5%] aspect-square border border-foreground/40">
+              <div className="relative overflow-hidden rounded-[5%] aspect-[4/5] border border-foreground/40">
                 <img src={portrait} alt="Surbhi Hote at her studio desk" width={1000} height={1300} loading="lazy" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
           <div className="md:col-span-7 order-1 md:order-2">
-            <div className="prose max-w-xl space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
+            <div className="prose max-w-none space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
                 Hi again! I am currently working for B2B&nbsp; Enterprise Ad-Tech Company in New York. I blend tech, and design and strategy, to solve complex problems. I care most about outcomes that hold up after launch, not just screens that look good in a portfolio.
               </p>
@@ -87,9 +90,10 @@ function AboutPage() {
                 For me, it's all about creating tangible value and outcomes that stick. I am a curious creative who likes to explore and learn about what could be and a critical thinker who likes to evaluate what works best for now and the applicable steps needed to move forward. Through my work, I want to help create useful, engaging, and intuitive solutions that help people improve their lives.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-10">
               <Button asChild variant="outline" size="lg">
                 <a href="https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
                   Resume
                 </a>
               </Button>
