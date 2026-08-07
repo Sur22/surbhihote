@@ -217,7 +217,8 @@ export function VoyagerStudy() {
         </Body>
       </Section>
 
-      <Section id="ai-process" title="Using AI across the design process">
+      <Section id="ai-process" title="Design">
+        <Sub>Using AI across the design process</Sub>
         <Body>
           I did not use one AI tool for everything. I used each one for the thing
           it was actually good at, and I kept the judgment for myself.
