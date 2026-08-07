@@ -238,7 +238,8 @@ function GalleryPage() {
                         it.title === "Creator Hub" ||
                         it.title === "Voyager - AI Travel Assistant"
                           ? "w-[85%] mx-auto"
-                          : "w-full"
+                          : "w-full",
+                        it.title === "Voyager - AI Travel Assistant" && idx === 0 && "w-[22%]"
                       )}
                     />
                   </CarouselItem>
