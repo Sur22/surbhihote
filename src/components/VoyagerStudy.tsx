@@ -85,7 +85,7 @@ function Figure({
 }) {
   return (
     <figure>
-      <div className="overflow-hidden rounded-sm p-2">
+      <div className="overflow-hidden rounded-sm bg-secondary p-2">
         <img
           src={src}
           alt={alt}
@@ -427,7 +427,7 @@ export function VoyagerStudy() {
             ].map((img) => (
               <CarouselItem key={img.caption}>
                 <figure>
-                  <div className="overflow-hidden rounded-sm p-2">
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img
                       src={img.src}
                       alt={img.alt}

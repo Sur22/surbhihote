@@ -85,7 +85,7 @@ function Figure({
 }) {
   return (
     <figure>
-      <div className="overflow-hidden rounded-sm p-2">
+      <div className="overflow-hidden rounded-sm bg-secondary p-2">
         <img src={src} alt={alt} loading="lazy" className="w-full h-auto object-contain" />
       </div>
       <figcaption className="mt-4 text-sm text-muted-foreground">
@@ -432,7 +432,7 @@ export function CreatorHubStudy() {
             ].map((img) => (
               <CarouselItem key={img.caption}>
                 <figure>
-                  <div className="overflow-hidden rounded-sm p-2">
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img
                       src={img.src}
                       alt={img.alt}
