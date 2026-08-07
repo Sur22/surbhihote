@@ -182,19 +182,20 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
+                it.title === "Grid Mobile App" ||
                 it.title === "Creator Hub" ||
                 it.title === "Voyager - AI Travel Assistant"
                   ? "relative bg-cover bg-center bg-no-repeat"
                   : "bg-secondary",
                 it.title === "Data Visualization" && "py-12",
                 it.title === "GSN Marketplace - A white label e-com for clients  " && "py-28",
-                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && "py-28"
+                (it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Grid Mobile App" || it.title === "Creator Hub" || it.title === "Voyager - AI Travel Assistant") && "py-28"
               )}
               style={{
                 borderRadius: "2.4%",
                 ...(it.title === "Data Visualization"
                   ? { backgroundImage: `url(${ampBg.url})` }
-                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0"
+                  : it.title === "GSN Marketplace - A white label e-com for clients  " || it.title === "Dashboard" || it.title === "Product Evolution\u00a0" || it.title === "Grid Mobile App"
                     ? { backgroundImage: `url(${gridBg.url})` }
                     : it.title === "Creator Hub"
                       ? { backgroundImage: `url(${creatorHubGradientBg.url})` }
@@ -211,6 +212,7 @@ function GalleryPage() {
                 it.title === "GSN Marketplace - A white label e-com for clients  " ||
                 it.title === "Dashboard" ||
                 it.title === "Product Evolution\u00a0" ||
+                it.title === "Grid Mobile App" ||
                 it.title === "Creator Hub" ||
                 it.title === "Voyager - AI Travel Assistant") && (
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
@@ -229,6 +231,7 @@ function GalleryPage() {
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
                         it.title === "Dashboard" ||
                         it.title === "Product Evolution\u00a0" ||
+                        it.title === "Grid Mobile App" ||
                         it.title === "Data Visualization" ||
                         it.title === "Creator Hub" ||
                         it.title === "Voyager - AI Travel Assistant"
