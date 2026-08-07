@@ -72,7 +72,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             loading="lazy"
             className={
               project.slug === "voyager"
-                ? "w-1/2 max-w-[378px] mx-auto h-auto"
+                ? "w-1/2 max-w-[265px] mx-auto h-auto"
                 : project.slug === "creator-hub"
                   ? ""
                   : "w-full h-auto object-cover"
