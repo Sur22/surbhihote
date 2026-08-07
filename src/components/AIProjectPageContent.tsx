@@ -83,7 +83,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         {project.slug === "resources" && (
           <section className="mt-12">
             <p className="eyebrow mb-6">Articles & Templates</p>
-            <div className="border-t border-border">
+            <div className="relative border-t border-border">
               {[
                 "Adopting AI in the design process",
                 "Prompt Library Template",
@@ -110,6 +110,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   />
                 </a>
               ))}
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm z-10">
+                <p className="font-serif text-3xl md:text-5xl text-foreground/90">Coming Soon</p>
+              </div>
             </div>
           </section>
         )}
