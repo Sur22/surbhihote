@@ -110,7 +110,7 @@ export function CaseStudySideNav({
   return (
     <nav
       aria-label="Case study sections"
-      className={`hidden min-[1620px]:block fixed top-24 right-[calc(50%+540px+24px)] left-auto w-[220px] z-40 transition-opacity duration-200 ${
+      className={`hidden min-[1024px]:block fixed top-24 left-4 min-[1620px]:left-[calc(50%-810px+24px)] right-auto w-[180px] min-[1620px]:w-[220px] z-40 transition-opacity duration-200 ${
         visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
