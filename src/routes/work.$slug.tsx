@@ -190,6 +190,45 @@ export const Route = createFileRoute("/work/$slug")({
       };
     }
 
+    if (params.slug === "affiliate-platform-redesign") {
+      const affiliateUrl = "https://surbhihote.com/work/affiliate-platform-redesign";
+      return {
+        meta: [
+          { title: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer" },
+          {
+            name: "description",
+            content:
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+          },
+          { name: "keywords", content: s.keywords },
+          {
+            property: "og:title",
+            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+          },
+          {
+            property: "og:description",
+            content:
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+          },
+          { property: "og:image", content: s.cover },
+          { property: "og:url", content: affiliateUrl },
+          { property: "og:type", content: "article" },
+          { name: "twitter:card", content: "summary_large_image" },
+          {
+            name: "twitter:title",
+            content: "Affiliate Platform Redesign | Surbhi Hote, Lead Product Designer",
+          },
+          {
+            name: "twitter:description",
+            content:
+              "Rebuilding a 25-year-old ad-tech platform for 500+ affiliates: 92% task success, manual workarounds eliminated, zero business lost since launch. A B2B enterprise UX case study.",
+          },
+          { name: "twitter:image", content: s.cover },
+        ],
+        links: [{ rel: "canonical", href: affiliateUrl }],
+      };
+    }
+
     return {
       meta: [
         { title: `${s.title} — Surbhi Hote` },
