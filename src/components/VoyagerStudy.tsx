@@ -14,11 +14,11 @@ import chat from "@/assets/voyager-chat.png.asset.json";
 const sections = [
   { id: "overview", label: "Overview" },
   { id: "ai-process", label: "Using AI" },
-  { id: "company", label: "Designing as a company" },
+  { id: "company", label: "\u00a0DESIGNING AS COMPANY" },
   { id: "tips", label: "Tips and tricks" },
   { id: "pros-cons", label: "Pros and cons" },
-  { id: "tools", label: "Tools by stage" },
-  { id: "design", label: "Design" },
+  { id: "tools", label: "TOOLS\u00a0" },
+  { id: "design", label: "END PRODUCT" },
   { id: "takeaways", label: "Takeaways" },
 ];
 
@@ -400,7 +400,7 @@ export function VoyagerStudy() {
         <ToolsTable />
       </Section>
 
-      <Section id="design" title="Design">
+      <Section id="design" title="End Product">
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
             {[
