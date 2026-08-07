@@ -50,13 +50,11 @@ function AIPage() {
                   height={600}
                   loading="lazy"
                   className={`transition-transform duration-700 group-hover:scale-[1.03] ${
-                    project.title === "Creator Hub"
-                      ? "object-cover w-[80%] h-[80%] rounded-lg"
-                      : project.title === "Voyager"
+                    project.title === "Creator Hub" || project.title === "Voyager"
+                      ? "object-contain w-full h-full p-4"
+                      : project.title === "Vibe Coded Portfolio"
                         ? "object-contain w-full h-full p-4"
-                        : project.title === "Vibe Coded Portfolio"
-                          ? "object-contain w-full h-full p-4"
-                          : "object-cover w-full h-full"
+                        : "object-cover w-full h-full"
                   }`}
                 />
               </div>
