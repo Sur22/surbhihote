@@ -18,6 +18,7 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
   const [renderZoom, setRenderZoom] = useState(initialScale);
   const [displayZoom, setDisplayZoom] = useState(initialScale);
   const [pageWidth, setPageWidth] = useState(595);
+  const lastUrlRef = useRef(url);
   const handleZoomCommit = useCallback((next: number) => {
     setRenderZoom(next);
     setDisplayZoom(next);
@@ -57,8 +58,10 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
     let cancelled = false;
     const container = containerRef.current;
     if (!container) return;
+    const isUrlChange = lastUrlRef.current !== url;
+    lastUrlRef.current = url;
     container.innerHTML = "";
-    setStatus("loading");
+    if (isUrlChange) setStatus("loading");
 
     (async () => {
       try {
@@ -146,7 +149,7 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
       )}
       <div
         ref={containerRef}
-        className="max-h-[70vh] overflow-y-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 select-none"
+        className="max-h-[60vh] overflow-y-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 select-none"
       />
 
       {!hideSlider && (
