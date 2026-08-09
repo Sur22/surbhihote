@@ -255,6 +255,11 @@ export function VoyagerStudy() {
             sources, and I ended up with a short list of five verified citations.
             More on why that matters below.
           </Body>
+          <DocAttachments
+            items={[
+              { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
+            ]}
+          />
         </div>
 
         <div>
@@ -264,6 +269,11 @@ export function VoyagerStudy() {
             against the pain points I had identified earlier, so the design was
             answering real problems rather than decorating a wireframe.
           </Body>
+          <DocAttachments
+            items={[
+              { label: "Phase 3 — Execution & Testing", url: "/ai-pdfs/voyager-phase-3.pdf" },
+            ]}
+          />
         </div>
 
         <div>
@@ -279,12 +289,6 @@ export function VoyagerStudy() {
             bet, your product decisions get sharper.
           </Body>
         </div>
-        <DocAttachments
-          items={[
-            { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
-            { label: "Phase 3 — Execution & Testing", url: "/ai-pdfs/voyager-phase-3.pdf" },
-          ]}
-        />
       </Section>
 
 
