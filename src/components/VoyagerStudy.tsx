@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import { DocAttachments } from "@/components/DocAttachment";
 import {
   Carousel,
   CarouselContent,
@@ -216,7 +217,13 @@ export function VoyagerStudy() {
           dozens of pages. This page is the short version. If you want the depth,
           the phase decks and the pitch deck are linked at the bottom.
         </Body>
+        <DocAttachments
+          items={[
+            { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
+          ]}
+        />
       </Section>
+
 
       <Section id="ai-process" title="Design">
         <Sub>Using AI across the design process</Sub>
@@ -272,7 +279,14 @@ export function VoyagerStudy() {
             bet, your product decisions get sharper.
           </Body>
         </div>
+        <DocAttachments
+          items={[
+            { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
+            { label: "Phase 3 — Execution & Testing", url: "/ai-pdfs/voyager-phase-3.pdf" },
+          ]}
+        />
       </Section>
+
 
       <Section id="company" title="Company">
         <Sub>Designing it as a company, not a screen exercise</Sub>
@@ -292,7 +306,13 @@ export function VoyagerStudy() {
           and how it would sustain itself. On a small team, that overlap tends to
           be where a designer is most useful.
         </Body>
+        <DocAttachments
+          items={[
+            { label: "Investor Pitch Deck", url: "/ai-pdfs/voyager-pitch-deck.pdf" },
+          ]}
+        />
       </Section>
+
 
       <Section id="tips" title="Tips and tricks">
         <Body>Things I would tell any designer picking up these tools:</Body>
