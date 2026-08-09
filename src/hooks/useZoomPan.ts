@@ -125,24 +125,28 @@ export function useZoomPan({
 
     const handleDragStart = (e: Event) => e.preventDefault();
 
-    el.style.cursor = "grab";
+    el.style.cursor = panEnabled ? "grab" : "";
     el.addEventListener("dragstart", handleDragStart);
     el.addEventListener("wheel", handleWheel, { passive: false });
-    el.addEventListener("pointerdown", handlePointerDown);
-    el.addEventListener("pointermove", handlePointerMove);
-    el.addEventListener("pointerup", handlePointerUp);
-    el.addEventListener("pointercancel", handlePointerUp);
+    if (panEnabled) {
+      el.addEventListener("pointerdown", handlePointerDown);
+      el.addEventListener("pointermove", handlePointerMove);
+      el.addEventListener("pointerup", handlePointerUp);
+      el.addEventListener("pointercancel", handlePointerUp);
+    }
 
     return () => {
       el.removeEventListener("dragstart", handleDragStart);
       el.removeEventListener("wheel", handleWheel);
-      el.removeEventListener("pointerdown", handlePointerDown);
-      el.removeEventListener("pointermove", handlePointerMove);
-      el.removeEventListener("pointerup", handlePointerUp);
-      el.removeEventListener("pointercancel", handlePointerUp);
+      if (panEnabled) {
+        el.removeEventListener("pointerdown", handlePointerDown);
+        el.removeEventListener("pointermove", handlePointerMove);
+        el.removeEventListener("pointerup", handlePointerUp);
+        el.removeEventListener("pointercancel", handlePointerUp);
+      }
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };
-  }, [clamp, commit, containerRef]);
+  }, [clamp, commit, containerRef, panEnabled]);
 
   const displayZoom = committedZoom * smoothZoom;
 
