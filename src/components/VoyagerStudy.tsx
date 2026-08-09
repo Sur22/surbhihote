@@ -272,7 +272,14 @@ export function VoyagerStudy() {
             bet, your product decisions get sharper.
           </Body>
         </div>
+        <DocAttachments
+          items={[
+            { label: "Phase 2 — Research to Ideation", url: "/ai-pdfs/voyager-phase-2.pdf" },
+            { label: "Phase 3 — Execution & Testing", url: "/ai-pdfs/voyager-phase-3.pdf" },
+          ]}
+        />
       </Section>
+
 
       <Section id="company" title="Company">
         <Sub>Designing it as a company, not a screen exercise</Sub>
