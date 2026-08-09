@@ -89,8 +89,19 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
     setZoom(next);
   };
 
+  const [loadedCount, setLoadedCount] = useState(0);
+  const isLoading = loadedCount === 0 && images.length > 0;
+
   return (
     <div className="relative w-full rounded-xl border border-border bg-muted/30">
+      {isLoading && (
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 rounded-xl bg-background/85 backdrop-blur-sm p-10 text-center">
+          <img src="/loading.gif" alt="Loading" width={48} height={48} className="opacity-80" />
+          <p className="text-sm text-muted-foreground">
+            Please wait — the file is loading. This may take a few moments.
+          </p>
+        </div>
+      )}
       <div
         ref={containerRef}
         className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none select-none"
@@ -107,6 +118,8 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
               src={src}
               alt={`${title ?? "Document"} — page ${i + 1}`}
               loading={i === 0 ? "eager" : "lazy"}
+              onLoad={() => setLoadedCount((c) => c + 1)}
+              onError={() => setLoadedCount((c) => c + 1)}
               style={{ width: `${595 * zoom}px` }}
               className="block h-auto max-w-none shrink-0 border-b border-border last:border-b-0"
             />

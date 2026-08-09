@@ -99,7 +99,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
   return (
     <div className="relative w-full rounded-xl border border-border bg-muted/30">
       {status === "loading" && (
-        <div className="flex flex-col items-center justify-center gap-4 p-10 text-center h-[800px]">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 rounded-xl bg-background/85 backdrop-blur-sm p-10 text-center">
           <img
             src="/loading.gif"
             alt="Loading"
@@ -113,7 +113,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
         </div>
       )}
       {status === "error" && (
-        <p className="p-6 text-sm text-muted-foreground h-[800px]">
+        <p className="absolute inset-0 z-20 flex items-center justify-center rounded-xl bg-background/85 p-6 text-sm text-muted-foreground">
           Unable to display this PDF here.{" "}
           <a href={url} target="_blank" rel="noopener noreferrer" className="underline">
             Open it in a new tab
