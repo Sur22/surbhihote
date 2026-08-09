@@ -8,12 +8,14 @@ export function useZoomPan({
   containerRef,
   onZoomCommit,
   commitDelay = 150,
+  panEnabled = true,
 }: {
   minZoom: number;
   maxZoom: number;
   containerRef: React.RefObject<HTMLElement | null>;
   onZoomCommit?: (zoom: number) => void;
   commitDelay?: number;
+  panEnabled?: boolean;
 }) {
   const [committedZoom, setCommittedZoom] = useState(1);
   const [smoothZoom, setSmoothZoom] = useState(1);
@@ -28,6 +30,7 @@ export function useZoomPan({
   useEffect(() => { committedRef.current = committedZoom; }, [committedZoom]);
   useEffect(() => { smoothRef.current = smoothZoom; }, [smoothZoom]);
   useEffect(() => { panRef.current = pan; }, [pan]);
+  useEffect(() => { if (!panEnabled) setPan({ x: 0, y: 0 }); }, [panEnabled]);
 
   const clamp = useCallback((v: number) => Math.min(Math.max(v, minZoom), maxZoom), [minZoom, maxZoom]);
 
@@ -42,7 +45,7 @@ export function useZoomPan({
 
   const setZoom = useCallback((nextCommitted: number, anchor?: Point) => {
     const next = clamp(nextCommitted);
-    if (anchor) {
+    if (panEnabled && anchor) {
       const k = next / committedRef.current;
       setPan(prev => ({
         x: anchor.x - (anchor.x - prev.x) * k,
@@ -52,7 +55,7 @@ export function useZoomPan({
     setCommittedZoom(next);
     setSmoothZoom(1);
     onZoomCommit?.(next);
-  }, [clamp, onZoomCommit]);
+  }, [clamp, onZoomCommit, panEnabled]);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -63,13 +66,15 @@ export function useZoomPan({
       const dy = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 100 : 1);
       const total = committedRef.current * smoothRef.current;
       const nextTotal = clamp(total * Math.exp(-dy * 0.0015));
-      const k = nextTotal / total;
-      const rect = el.getBoundingClientRect();
-      const anchor = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-      setPan(prev => ({
-        x: anchor.x - (anchor.x - prev.x) * k,
-        y: anchor.y - (anchor.y - prev.y) * k,
-      }));
+      if (panEnabled) {
+        const k = nextTotal / total;
+        const rect = el.getBoundingClientRect();
+        const anchor = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+        setPan(prev => ({
+          x: anchor.x - (anchor.x - prev.x) * k,
+          y: anchor.y - (anchor.y - prev.y) * k,
+        }));
+      }
       setSmoothZoom(nextTotal / committedRef.current);
       commit(nextTotal);
     };
@@ -121,24 +126,28 @@ export function useZoomPan({
 
     const handleDragStart = (e: Event) => e.preventDefault();
 
-    el.style.cursor = "grab";
+    el.style.cursor = panEnabled ? "grab" : "";
     el.addEventListener("dragstart", handleDragStart);
     el.addEventListener("wheel", handleWheel, { passive: false });
-    el.addEventListener("pointerdown", handlePointerDown);
-    el.addEventListener("pointermove", handlePointerMove);
-    el.addEventListener("pointerup", handlePointerUp);
-    el.addEventListener("pointercancel", handlePointerUp);
+    if (panEnabled) {
+      el.addEventListener("pointerdown", handlePointerDown);
+      el.addEventListener("pointermove", handlePointerMove);
+      el.addEventListener("pointerup", handlePointerUp);
+      el.addEventListener("pointercancel", handlePointerUp);
+    }
 
     return () => {
       el.removeEventListener("dragstart", handleDragStart);
       el.removeEventListener("wheel", handleWheel);
-      el.removeEventListener("pointerdown", handlePointerDown);
-      el.removeEventListener("pointermove", handlePointerMove);
-      el.removeEventListener("pointerup", handlePointerUp);
-      el.removeEventListener("pointercancel", handlePointerUp);
+      if (panEnabled) {
+        el.removeEventListener("pointerdown", handlePointerDown);
+        el.removeEventListener("pointermove", handlePointerMove);
+        el.removeEventListener("pointerup", handlePointerUp);
+        el.removeEventListener("pointercancel", handlePointerUp);
+      }
       if (timerRef.current) window.clearTimeout(timerRef.current);
     };
-  }, [clamp, commit, containerRef]);
+  }, [clamp, commit, containerRef, panEnabled]);
 
   const displayZoom = committedZoom * smoothZoom;
 
