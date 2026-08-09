@@ -55,15 +55,32 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
 
   // Only reset when the document itself changes, not on every re-render.
   const lastDocRef = useRef<string | null>(null);
+
+  const fitToFrame = useCallback(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    // Fit the 595pt-wide page into the visible container with a little padding,
+    // then scroll to the top of the document where the text content begins.
+    const targetWidth = el.clientWidth - 48;
+    const next = Math.min(Math.max(targetWidth / 595, MIN_ZOOM), MAX_ZOOM);
+    pendingScrollRef.current = null;
+    setZoomState(next);
+    setDisplayZoom(next);
+    setZoom(next);
+    requestAnimationFrame(() => {
+      el.scrollTop = 0;
+      el.scrollLeft = Math.max(0, (el.scrollWidth - el.clientWidth) / 2);
+    });
+  }, [setZoom]);
+
   useEffect(() => {
     const docKey = `${initialScale}|${images.join("|")}`;
     if (lastDocRef.current === docKey) return;
     lastDocRef.current = docKey;
-    pendingScrollRef.current = null;
-    setZoomState(initialScale);
-    setDisplayZoom(initialScale);
-    setZoom(initialScale);
-  }, [initialScale, images, setZoom]);
+    // Defer so the dialog/container has finished its initial layout.
+    const id = window.setTimeout(fitToFrame, 0);
+    return () => window.clearTimeout(id);
+  }, [initialScale, images, fitToFrame]);
 
 
   const handleSliderChange = (value: number[]) => {
