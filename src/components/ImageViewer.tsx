@@ -50,6 +50,7 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
     containerRef,
     onZoomCommit: handleZoomCommit,
     commitDelay: 120,
+    panEnabled: false,
   });
 
   // Only reset when the document itself changes, not on every re-render.
