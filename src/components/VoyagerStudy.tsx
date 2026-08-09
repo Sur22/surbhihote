@@ -217,11 +217,6 @@ export function VoyagerStudy() {
           dozens of pages. This page is the short version. If you want the depth,
           the phase decks and the pitch deck are linked at the bottom.
         </Body>
-        <DocAttachments
-          items={[
-            { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
-          ]}
-        />
       </Section>
 
 
@@ -241,6 +236,11 @@ export function VoyagerStudy() {
             exploration and for synthesizing scattered inputs into something I
             could react to. The taste calls were mine.
           </Body>
+          <DocAttachments
+            items={[
+              { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
+            ]}
+          />
         </div>
 
         <div>
