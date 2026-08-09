@@ -27,6 +27,7 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
     containerRef,
     onZoomCommit: handleZoomCommit,
     commitDelay: 200,
+    panEnabled: false,
   });
 
   useEffect(() => {
