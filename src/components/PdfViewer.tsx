@@ -1,58 +1,16 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Slider } from "@/components/ui/slider";
-import { useZoomPan } from "@/hooks/useZoomPan";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   url: string;
   title?: string;
-  scale?: number; // initial zoom scale; defaults to A4 natural size (1)
-  hideSlider?: boolean;
 };
 
-const MIN_ZOOM = 0.5;
-const MAX_ZOOM = 10;
+const LOCKED_ZOOM = 0.97;
 
-export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSlider = false }: Props) {
+export function PdfViewer({ url, title: _title }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
-  const [renderZoom, setRenderZoom] = useState(initialScale);
-  const [displayZoom, setDisplayZoom] = useState(initialScale);
-  const [pageWidth, setPageWidth] = useState(595);
   const lastUrlRef = useRef(url);
-  const handleZoomCommit = useCallback((next: number) => {
-    setRenderZoom(next);
-    setDisplayZoom(next);
-  }, []);
-  const { setZoom } = useZoomPan({
-    minZoom: MIN_ZOOM,
-    maxZoom: MAX_ZOOM,
-    containerRef,
-    onZoomCommit: handleZoomCommit,
-    commitDelay: 200,
-    panEnabled: false,
-  });
-
-  const fitToWidth = useCallback(() => {
-    const container = containerRef.current;
-    if (!container) return;
-    const targetWidth = container.clientWidth - 32;
-    const next = Math.min(Math.max(targetWidth / pageWidth, MIN_ZOOM), MAX_ZOOM);
-    setRenderZoom(next);
-    setDisplayZoom(next);
-    setZoom(next);
-  }, [pageWidth, setZoom]);
-
-  useEffect(() => {
-    setRenderZoom(initialScale);
-    setDisplayZoom(initialScale);
-    setZoom(initialScale);
-  }, [url, initialScale, setZoom]);
-
-  const handleSliderChange = (value: number[]) => {
-    const next = value[0];
-    setDisplayZoom(next);
-    setZoom(next);
-  };
 
   useEffect(() => {
     let cancelled = false;
@@ -80,10 +38,9 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
           const page = await doc.getPage(i);
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
-          if (i === 1) setPageWidth(base.width);
 
-          const renderScale = renderZoom * dpr;
-          const cssWidth = base.width * renderZoom;
+          const renderScale = LOCKED_ZOOM * dpr;
+          const cssWidth = base.width * LOCKED_ZOOM;
           const viewport = page.getViewport({ scale: renderScale });
 
           const wrapper = document.createElement("div");
@@ -114,13 +71,7 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
     return () => {
       cancelled = true;
     };
-  }, [url, renderZoom]);
-
-  useEffect(() => {
-    if (status !== "ready") return;
-    const id = window.setTimeout(fitToWidth, 0);
-    return () => window.clearTimeout(id);
-  }, [status, fitToWidth]);
+  }, [url]);
 
   return (
     <div className="relative w-full rounded-xl border border-border bg-muted/30">
@@ -149,25 +100,8 @@ export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSli
       )}
       <div
         ref={containerRef}
-        className="max-h-[60vh] overflow-y-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 select-none"
+        className="h-[60vh] overflow-x-auto overflow-y-scroll [scrollbar-gutter:stable] [scrollbar-width:auto] [scrollbar-color:var(--foreground)_var(--muted)] [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border-2 [&::-webkit-scrollbar-thumb]:border-muted [&::-webkit-scrollbar-thumb]:bg-foreground/70 [&::-webkit-scrollbar-thumb]:hover:bg-foreground select-none"
       />
-
-      {!hideSlider && (
-        <div className="absolute bottom-6 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
-          <span className="text-xs text-muted-foreground w-10 tabular-nums">
-            {Math.round(displayZoom * 100)}%
-          </span>
-          <Slider
-            value={[displayZoom]}
-            min={MIN_ZOOM}
-            max={MAX_ZOOM}
-            step={0.1}
-            onValueChange={(value) => setDisplayZoom(value[0])}
-            onValueCommit={(value) => handleSliderChange(value)}
-            className="w-28 md:w-40"
-          />
-        </div>
-      )}
     </div>
   );
 }
