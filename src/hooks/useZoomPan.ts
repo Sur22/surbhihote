@@ -8,12 +8,14 @@ export function useZoomPan({
   containerRef,
   onZoomCommit,
   commitDelay = 150,
+  panEnabled = true,
 }: {
   minZoom: number;
   maxZoom: number;
   containerRef: React.RefObject<HTMLElement | null>;
   onZoomCommit?: (zoom: number) => void;
   commitDelay?: number;
+  panEnabled?: boolean;
 }) {
   const [committedZoom, setCommittedZoom] = useState(1);
   const [smoothZoom, setSmoothZoom] = useState(1);
