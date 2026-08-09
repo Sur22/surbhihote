@@ -292,7 +292,13 @@ export function VoyagerStudy() {
           and how it would sustain itself. On a small team, that overlap tends to
           be where a designer is most useful.
         </Body>
+        <DocAttachments
+          items={[
+            { label: "Investor Pitch Deck", url: "/ai-pdfs/voyager-pitch-deck.pdf" },
+          ]}
+        />
       </Section>
+
 
       <Section id="tips" title="Tips and tricks">
         <Body>Things I would tell any designer picking up these tools:</Body>
