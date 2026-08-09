@@ -118,6 +118,8 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
               src={src}
               alt={`${title ?? "Document"} — page ${i + 1}`}
               loading={i === 0 ? "eager" : "lazy"}
+              onLoad={() => setLoadedCount((c) => c + 1)}
+              onError={() => setLoadedCount((c) => c + 1)}
               style={{ width: `${595 * zoom}px` }}
               className="block h-auto max-w-none shrink-0 border-b border-border last:border-b-0"
             />
