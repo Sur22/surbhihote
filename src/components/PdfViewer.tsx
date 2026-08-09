@@ -12,16 +12,17 @@ type Props = {
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 10;
 
-export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = false }: Props) {
+export function PdfViewer({ url, title: _title, scale: initialScale = 1, hideSlider = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [renderZoom, setRenderZoom] = useState(initialScale);
   const [displayZoom, setDisplayZoom] = useState(initialScale);
+  const [pageWidth, setPageWidth] = useState(595);
   const handleZoomCommit = useCallback((next: number) => {
     setRenderZoom(next);
     setDisplayZoom(next);
   }, []);
-  const { committedZoom, pan, setZoom } = useZoomPan({
+  const { setZoom } = useZoomPan({
     minZoom: MIN_ZOOM,
     maxZoom: MAX_ZOOM,
     containerRef,
@@ -29,6 +30,16 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
     commitDelay: 200,
     panEnabled: false,
   });
+
+  const fitToWidth = useCallback(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const targetWidth = container.clientWidth - 32;
+    const next = Math.min(Math.max(targetWidth / pageWidth, MIN_ZOOM), MAX_ZOOM);
+    setRenderZoom(next);
+    setDisplayZoom(next);
+    setZoom(next);
+  }, [pageWidth, setZoom]);
 
   useEffect(() => {
     setRenderZoom(initialScale);
@@ -66,10 +77,15 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
           const page = await doc.getPage(i);
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
+          if (i === 1) setPageWidth(base.width);
 
           const renderScale = renderZoom * dpr;
           const cssWidth = base.width * renderZoom;
           const viewport = page.getViewport({ scale: renderScale });
+
+          const wrapper = document.createElement("div");
+          wrapper.className = "flex justify-center border-b border-border last:border-b-0";
+          wrapper.style.minWidth = "100%";
 
           const canvas = document.createElement("canvas");
           canvas.width = viewport.width;
@@ -78,8 +94,9 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
           canvas.style.height = "auto";
           canvas.style.display = "block";
           canvas.style.flexShrink = "0";
-          canvas.className = "border-b border-border last:border-b-0";
-          container.appendChild(canvas);
+
+          wrapper.appendChild(canvas);
+          container.appendChild(wrapper);
 
           const ctx = canvas.getContext("2d");
           if (!ctx) continue;
@@ -95,6 +112,12 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
       cancelled = true;
     };
   }, [url, renderZoom]);
+
+  useEffect(() => {
+    if (status !== "ready") return;
+    const id = window.setTimeout(fitToWidth, 0);
+    return () => window.clearTimeout(id);
+  }, [status, fitToWidth]);
 
   return (
     <div className="relative w-full rounded-xl border border-border bg-muted/30">
@@ -123,15 +146,8 @@ export function PdfViewer({ url, title, scale: initialScale = 1, hideSlider = fa
       )}
       <div
         ref={containerRef}
-        className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none select-none"
-      >
-        <div
-          className="flex flex-col items-center min-w-full origin-top-left"
-          style={{
-            transform: `translate(${pan.x}px, ${pan.y}px) scale(${displayZoom / renderZoom})`,
-          }}
-        />
-      </div>
+        className="max-h-[70vh] overflow-y-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 select-none"
+      />
 
       {!hideSlider && (
         <div className="absolute bottom-6 left-4 z-10 flex items-center gap-3 rounded-full border border-border bg-background/90 backdrop-blur px-3 py-2 shadow-sm">
