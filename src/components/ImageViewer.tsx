@@ -14,7 +14,7 @@ const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 10;
 
 /** Renders a list of images (e.g. WebP page exports) with wheel zoom + pan. */
-export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider = false }: Props) {
+export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider = false, className }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoomState] = useState(initialScale);
   const [displayZoom, setDisplayZoom] = useState(initialScale);
@@ -94,7 +94,7 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
   const isLoading = loadedCount === 0 && images.length > 0;
 
   return (
-    <div className="relative w-full rounded-xl border border-border bg-muted/30">
+    <div className={`relative w-full rounded-xl border border-border bg-muted/30 ${className ?? "h-[800px]"}`}>
       {isLoading && (
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 rounded-xl bg-background/85 backdrop-blur-sm p-10 text-center">
           <img src="/loading.gif" alt="Loading" width={48} height={48} className="opacity-80" />
@@ -105,7 +105,7 @@ export function ImageViewer({ images, title, scale: initialScale = 1, hideSlider
       )}
       <div
         ref={containerRef}
-        className="h-[800px] overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none select-none"
+        className="h-full overflow-auto [scrollbar-width:thin] [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted dark:[&::-webkit-scrollbar-track]:bg-muted-foreground/20 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-foreground/35 dark:[&::-webkit-scrollbar-thumb]:bg-foreground/60 [&::-webkit-scrollbar-thumb]:hover:bg-foreground/50 dark:[&::-webkit-scrollbar-thumb]:hover:bg-foreground/80 touch-none select-none"
       >
         <div
           className="flex h-max min-h-full w-max min-w-full flex-col items-center justify-center origin-top-left"

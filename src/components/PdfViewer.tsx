@@ -8,7 +8,7 @@ type Props = {
 
 const LOCKED_ZOOM = 0.97;
 
-export function PdfViewer({ url, title: _title }: Props) {
+export function PdfViewer({ url, title: _title, className }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const lastUrlRef = useRef(url);
@@ -75,7 +75,7 @@ export function PdfViewer({ url, title: _title }: Props) {
   }, [url]);
 
   return (
-    <div className="relative w-full rounded-xl border border-border bg-muted/30">
+    <div className={`relative w-full rounded-xl border border-border bg-muted/30 ${className ?? "h-[60vh]"}`}>
       {status === "loading" && (
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 rounded-xl bg-background/85 backdrop-blur-sm p-10 text-center">
           <img
@@ -101,7 +101,7 @@ export function PdfViewer({ url, title: _title }: Props) {
       )}
       <div
         ref={containerRef}
-        className="h-[60vh] overflow-x-auto overflow-y-scroll [scrollbar-gutter:stable] [scrollbar-width:auto] [scrollbar-color:var(--foreground)_var(--muted)] [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border-2 [&::-webkit-scrollbar-thumb]:border-muted [&::-webkit-scrollbar-thumb]:bg-foreground/70 [&::-webkit-scrollbar-thumb]:hover:bg-foreground select-none"
+        className="h-full overflow-x-auto overflow-y-scroll [scrollbar-gutter:stable] [scrollbar-width:auto] [scrollbar-color:var(--foreground)_var(--muted)] [&::-webkit-scrollbar]:h-3 [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar-button]:hidden [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border-2 [&::-webkit-scrollbar-thumb]:border-muted [&::-webkit-scrollbar-thumb]:bg-foreground/70 [&::-webkit-scrollbar-thumb]:hover:bg-foreground select-none"
       />
     </div>
   );
