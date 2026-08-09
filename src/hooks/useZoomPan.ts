@@ -44,7 +44,7 @@ export function useZoomPan({
 
   const setZoom = useCallback((nextCommitted: number, anchor?: Point) => {
     const next = clamp(nextCommitted);
-    if (anchor) {
+    if (panEnabled && anchor) {
       const k = next / committedRef.current;
       setPan(prev => ({
         x: anchor.x - (anchor.x - prev.x) * k,
@@ -54,7 +54,7 @@ export function useZoomPan({
     setCommittedZoom(next);
     setSmoothZoom(1);
     onZoomCommit?.(next);
-  }, [clamp, onZoomCommit]);
+  }, [clamp, onZoomCommit, panEnabled]);
 
   useEffect(() => {
     const el = containerRef.current;
