@@ -30,6 +30,7 @@ export function useZoomPan({
   useEffect(() => { committedRef.current = committedZoom; }, [committedZoom]);
   useEffect(() => { smoothRef.current = smoothZoom; }, [smoothZoom]);
   useEffect(() => { panRef.current = pan; }, [pan]);
+  useEffect(() => { if (!panEnabled) setPan({ x: 0, y: 0 }); }, [panEnabled]);
 
   const clamp = useCallback((v: number) => Math.min(Math.max(v, minZoom), maxZoom), [minZoom, maxZoom]);
 
