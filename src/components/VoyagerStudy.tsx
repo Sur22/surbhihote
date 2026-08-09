@@ -236,6 +236,11 @@ export function VoyagerStudy() {
             exploration and for synthesizing scattered inputs into something I
             could react to. The taste calls were mine.
           </Body>
+          <DocAttachments
+            items={[
+              { label: "Phase 1 — Discovery Research", url: "/ai-pdfs/voyager-phase-1.pdf" },
+            ]}
+          />
         </div>
 
         <div>
