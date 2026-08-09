@@ -48,23 +48,25 @@ export function DocAttachments({ items }: { items: DocAttachmentItem[] }) {
       </div>
 
       <Dialog open={!!active} onOpenChange={(open) => !open && setActive(null)}>
-        <DialogContent className="max-w-[95vw] md:max-w-[1100px] p-4 md:p-6">
-          <DialogHeader>
-            <DialogTitle className="font-serif text-2xl font-normal">
+        <DialogContent className="fixed inset-0 z-50 flex h-screen max-h-screen w-screen max-w-none translate-x-0 translate-y-0 flex-col rounded-none border-0 bg-background p-0 shadow-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0">
+          <DialogHeader className="shrink-0 px-4 py-4 md:px-6 md:py-5">
+            <DialogTitle className="font-serif text-xl md:text-2xl font-normal pr-10">
               {active?.label}
             </DialogTitle>
           </DialogHeader>
           {active && (
             <ClientOnly
               fallback={
-                <div className="h-[70vh] w-full rounded-xl border border-border bg-muted/30" />
+                <div className="flex-1 w-full rounded-none bg-muted/30" />
               }
             >
-              {active.images && active.images.length > 0 ? (
-                <ImageViewer key={active.url} images={active.images} title={active.label} />
-              ) : (
-                <PdfViewer key={active.url} url={active.url} title={active.label} />
-              )}
+              <div className="flex-1 min-h-0 px-4 pb-4 md:px-6 md:pb-6">
+                {active.images && active.images.length > 0 ? (
+                  <ImageViewer key={active.url} images={active.images} title={active.label} className="h-full" />
+                ) : (
+                  <PdfViewer key={active.url} url={active.url} title={active.label} className="h-full" />
+                )}
+              </div>
             </ClientOnly>
           )}
           {active && (
@@ -72,7 +74,7 @@ export function DocAttachments({ items }: { items: DocAttachmentItem[] }) {
               href={active.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-3 md:px-6 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <ExternalLink size={14} />
               Open in new tab
