@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useHydrated } from "@/hooks/use-hydrated";
 import { Slider } from "@/components/ui/slider";
 import { useZoomPan } from "@/hooks/useZoomPan";
 
