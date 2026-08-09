@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import { DocAttachments } from "@/components/DocAttachment";
 import {
   Carousel,
   CarouselContent,
