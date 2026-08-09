@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 type Props = {
   url: string;
   title?: string;
+  className?: string;
 };
 
 const LOCKED_ZOOM = 0.97;

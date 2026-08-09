@@ -7,6 +7,7 @@ type Props = {
   title?: string;
   scale?: number;
   hideSlider?: boolean;
+  className?: string;
 };
 
 const MIN_ZOOM = 0.5;
