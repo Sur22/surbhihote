@@ -65,13 +65,15 @@ export function useZoomPan({
       const dy = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 100 : 1);
       const total = committedRef.current * smoothRef.current;
       const nextTotal = clamp(total * Math.exp(-dy * 0.0015));
-      const k = nextTotal / total;
-      const rect = el.getBoundingClientRect();
-      const anchor = { x: e.clientX - rect.left, y: e.clientY - rect.top };
-      setPan(prev => ({
-        x: anchor.x - (anchor.x - prev.x) * k,
-        y: anchor.y - (anchor.y - prev.y) * k,
-      }));
+      if (panEnabled) {
+        const k = nextTotal / total;
+        const rect = el.getBoundingClientRect();
+        const anchor = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+        setPan(prev => ({
+          x: anchor.x - (anchor.x - prev.x) * k,
+          y: anchor.y - (anchor.y - prev.y) * k,
+        }));
+      }
       setSmoothZoom(nextTotal / committedRef.current);
       commit(nextTotal);
     };
