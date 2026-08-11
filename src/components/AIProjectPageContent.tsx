@@ -10,6 +10,7 @@ import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 import { VoyagerStudy } from "@/components/VoyagerStudy";
+import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
