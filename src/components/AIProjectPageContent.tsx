@@ -110,9 +110,6 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   />
                 </a>
               ))}
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm z-10">
-                <p className="font-serif text-3xl md:text-5xl text-foreground/90">Coming Soon</p>
-              </div>
             </div>
           </section>
         )}
