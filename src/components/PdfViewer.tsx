@@ -33,14 +33,16 @@ export function PdfViewer({ url, title: _title, className }: Props) {
         const doc = await pdfjs.getDocument({ url }).promise;
         if (cancelled) return;
 
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        const MAX_TILE_PX = 4000; // stay well below browser canvas limits
-
         for (let i = 1; i <= doc.numPages; i++) {
           const page = await doc.getPage(i);
           if (cancelled) return;
           const base = page.getViewport({ scale: 1 });
 
+          // Very tall exported design boards become prohibitively large at a
+          // retina DPR. Render those at their native pixel density so every
+          // tile finishes and remains within the browser's canvas budget.
+          const deviceDpr = Math.min(window.devicePixelRatio || 1, 2);
+          const dpr = base.height > 3000 ? 1 : deviceDpr;
           const renderScale = LOCKED_ZOOM * dpr;
           const cssWidth = base.width * LOCKED_ZOOM;
           const viewport = page.getViewport({ scale: renderScale });
@@ -52,7 +54,11 @@ export function PdfViewer({ url, title: _title, className }: Props) {
 
           const totalH = Math.ceil(viewport.height);
           const totalW = Math.ceil(viewport.width);
-          const tiles = Math.max(1, Math.ceil(totalH / MAX_TILE_PX));
+          const maxTileHeight = Math.max(
+            1,
+            Math.min(3500, Math.floor(4_000_000 / totalW)),
+          );
+          const tiles = Math.max(1, Math.ceil(totalH / maxTileHeight));
           const tileH = Math.ceil(totalH / tiles);
 
           for (let t = 0; t < tiles; t++) {
@@ -77,6 +83,9 @@ export function PdfViewer({ url, title: _title, className }: Props) {
               transform: [1, 0, 0, 1, 0, -offsetY],
             }).promise;
           }
+
+          page.cleanup();
+          if (!cancelled && i === 1) setStatus("ready");
         }
 
         if (!cancelled) setStatus("ready");
