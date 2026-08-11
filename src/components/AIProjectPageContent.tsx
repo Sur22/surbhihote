@@ -86,10 +86,10 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <p className="eyebrow mb-6">Articles & Templates</p>
             <div className="relative border-t border-border">
               {[
-                { title: "Adopting AI in the design process" },
+                { title: "Adopting AI in the design process - A step by step guide" },
+                { title: "AI Bias Worksheet" },
+                { title: "AI Tools For UX Process", url: aiToolsPdf.url },
                 { title: "Prompt Library Template" },
-                { title: "AI tools For UX Process", url: aiToolsPdf.url },
-                { title: "Tool request form" },
                 { title: "Pilot evaluation template" },
               ].map(({ title, url }) => (
                 <a
