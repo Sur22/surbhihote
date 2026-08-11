@@ -54,7 +54,10 @@ export function PdfViewer({ url, title: _title, className }: Props) {
 
           const totalH = Math.ceil(viewport.height);
           const totalW = Math.ceil(viewport.width);
-          const maxTileHeight = Math.max(1, Math.floor(2_000_000 / totalW));
+          const maxTileHeight = Math.max(
+            1,
+            Math.min(3500, Math.floor(4_000_000 / totalW)),
+          );
           const tiles = Math.max(1, Math.ceil(totalH / maxTileHeight));
           const tileH = Math.ceil(totalH / tiles);
 
@@ -82,6 +85,7 @@ export function PdfViewer({ url, title: _title, className }: Props) {
           }
 
           page.cleanup();
+          if (!cancelled && i === 1) setStatus("ready");
         }
 
         if (!cancelled) setStatus("ready");
