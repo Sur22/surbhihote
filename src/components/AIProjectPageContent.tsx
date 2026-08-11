@@ -10,6 +10,7 @@ import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 import { VoyagerStudy } from "@/components/VoyagerStudy";
+import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
@@ -85,15 +86,16 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <p className="eyebrow mb-6">Articles & Templates</p>
             <div className="relative border-t border-border">
               {[
-                "Adopting AI in the design process",
-                "Prompt Library Template",
-                "AI tools For UX Process",
-                "Tool request form",
-                "Pilot evaluation template",
-              ].map((title) => (
+                { title: "Adopting AI in the design process" },
+                { title: "Prompt Library Template" },
+                { title: "AI tools For UX Process", url: aiToolsPdf.url },
+                { title: "Tool request form" },
+                { title: "Pilot evaluation template" },
+              ].map(({ title, url }) => (
                 <a
                   key={title}
-                  href="#"
+                  href={url ?? "#"}
+                  download={url ? true : undefined}
                   className="group flex items-center justify-between gap-4 border-b border-border py-5 transition-colors hover:bg-muted/30"
                 >
                   <div className="flex items-center gap-4 min-w-0">
