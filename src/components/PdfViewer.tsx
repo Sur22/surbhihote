@@ -34,6 +34,7 @@ export function PdfViewer({ url, title: _title, className }: Props) {
         if (cancelled) return;
 
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const MAX_TILE_PX = 4000; // stay well below browser canvas limits
 
         for (let i = 1; i <= doc.numPages; i++) {
           const page = await doc.getPage(i);
@@ -45,24 +46,39 @@ export function PdfViewer({ url, title: _title, className }: Props) {
           const viewport = page.getViewport({ scale: renderScale });
 
           const wrapper = document.createElement("div");
-          wrapper.className = "flex justify-center border-b border-border last:border-b-0";
+          wrapper.className = "flex flex-col items-center border-b border-border last:border-b-0";
           wrapper.style.minWidth = "100%";
-
-          const canvas = document.createElement("canvas");
-          canvas.width = viewport.width;
-          canvas.height = viewport.height;
-          canvas.style.width = `${cssWidth}px`;
-          canvas.style.height = "auto";
-          canvas.style.display = "block";
-          canvas.style.flexShrink = "0";
-
-          wrapper.appendChild(canvas);
           container.appendChild(wrapper);
 
-          const ctx = canvas.getContext("2d");
-          if (!ctx) continue;
-          await page.render({ canvasContext: ctx, viewport }).promise;
+          const totalH = Math.ceil(viewport.height);
+          const totalW = Math.ceil(viewport.width);
+          const tiles = Math.max(1, Math.ceil(totalH / MAX_TILE_PX));
+          const tileH = Math.ceil(totalH / tiles);
+
+          for (let t = 0; t < tiles; t++) {
+            if (cancelled) return;
+            const offsetY = t * tileH;
+            const h = Math.min(tileH, totalH - offsetY);
+
+            const canvas = document.createElement("canvas");
+            canvas.width = totalW;
+            canvas.height = h;
+            canvas.style.width = `${cssWidth}px`;
+            canvas.style.height = "auto";
+            canvas.style.display = "block";
+            canvas.style.flexShrink = "0";
+            wrapper.appendChild(canvas);
+
+            const ctx = canvas.getContext("2d");
+            if (!ctx) continue;
+            await page.render({
+              canvasContext: ctx,
+              viewport,
+              transform: [1, 0, 0, 1, 0, -offsetY],
+            }).promise;
+          }
         }
+
         if (!cancelled) setStatus("ready");
       } catch {
         if (!cancelled) setStatus("error");
