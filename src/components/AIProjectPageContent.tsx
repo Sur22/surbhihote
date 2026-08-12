@@ -100,31 +100,37 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <div className="relative border-t border-border">
               {[
                 { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url },
-                { title: "AI Bias Worksheet" },
-                { title: "AI Tools For UX Process", url: aiToolsPdf.url },
-                { title: "Prompt Library Template", url: promptLibraryZip.url },
-                { title: "AI Guardrails for Design\u00A0", url: aiGuardrailsDocx.url },
-                { title: "AI Governance for Design Teams", url: aiGovernanceDocx.url },
-              ].map(({ title, url }) => (
-                <a
-                  key={title}
-                  href={url ?? "#"}
-                  download={url ? true : undefined}
-                  className="group flex items-center justify-between gap-4 border-b border-border py-5 transition-colors hover:bg-muted/30"
-                >
-                  <div className="flex items-center gap-4 min-w-0">
-                    <div className="flex h-12 w-9 shrink-0 items-center justify-center rounded bg-muted/50 border border-border">
-                      <FileText size={20} className="text-muted-foreground" />
+                { title: "AI Bias Worksheet", description: "A practical worksheet for spotting and questioning bias in AI-assisted design work, from skewed research synthesis to outputs that quietly exclude parts of your audience. Use it as a checkpoint before you ship, so the tools speed you up without narrowing who you design for." },
+                { title: "AI Tools For UX Process", url: aiToolsPdf.url, description: "A reference map of the AI tools I actually use across the design process, sorted by where they help: research, ideation, prototyping, and handoff. Rather than a long list of everything available, it's the working set I've tested on real projects, with a note on what each one is good for." },
+                { title: "Prompt Library Template", url: promptLibraryZip.url, description: "A ready-to-use, copy-and-adapt prompt library so you're not writing prompts from scratch every time. It gives you a structure for organizing prompts by task and reusing the ones that work, which is the difference between AI as a novelty and AI as part of your daily workflow." },
+                { title: "AI Guardrails for Design\u00A0", url: aiGuardrailsDocx.url, description: "A framework for setting boundaries on AI use in design work, so speed doesn't come at the cost of quality or judgment. It covers where to trust AI output, where a human has to stay in the loop, and how to write guardrails your team will actually follow." },
+                { title: "AI Governance for Design Teams", url: aiGovernanceDocx.url, description: "A guide to governing AI adoption across a design team: who decides which tools are approved, how you handle data and privacy, and how to keep practice consistent as more people start using AI. Built for teams moving from ad hoc experimentation to a defined, defensible approach." },
+              ].map(({ title, url, description }) => (
+                <div key={title} className="border-b border-border py-6">
+                  <a
+                    href={url ?? "#"}
+                    download={url ? true : undefined}
+                    className="group flex items-center justify-between gap-4 transition-colors hover:bg-muted/30"
+                  >
+                    <div className="flex items-center gap-4 min-w-0">
+                      <div className="flex h-12 w-9 shrink-0 items-center justify-center rounded bg-muted/50 border border-border">
+                        <FileText size={20} className="text-muted-foreground" />
+                      </div>
+                      <span className="font-serif text-2xl md:text-3xl text-foreground group-hover:text-accent transition-colors truncate">
+                        {title}
+                      </span>
                     </div>
-                    <span className="font-serif text-2xl md:text-3xl text-foreground group-hover:text-accent transition-colors truncate">
-                      {title}
-                    </span>
-                  </div>
-                  <Download
-                    size={20}
-                    className="shrink-0 text-muted-foreground group-hover:text-foreground transition-colors"
-                  />
-                </a>
+                    <Download
+                      size={20}
+                      className="shrink-0 text-muted-foreground group-hover:text-foreground transition-colors"
+                    />
+                  </a>
+                  {description && (
+                    <p className="mt-3 text-base leading-relaxed text-foreground/70 max-w-3xl pl-[3.25rem] md:pl-[3.75rem]">
+                      {description}
+                    </p>
+                  )}
+                </div>
               ))}
             </div>
           </section>
