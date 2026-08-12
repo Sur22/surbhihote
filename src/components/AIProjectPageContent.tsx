@@ -132,15 +132,10 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   <a
                     href={url ?? "#"}
                     download={url ? true : undefined}
-                    className="inline-flex items-center gap-3 text-sm font-medium text-foreground hover:text-accent transition-colors self-start"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors self-end"
                   >
-                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted/50 border border-border">
-                      <FileText size={20} className="text-muted-foreground" />
-                    </span>
-                    <span className="inline-flex items-center gap-2">
-                      <Download size={18} />
-                      {url ? "Download" : "Download — coming soon"}
-                    </span>
+                    <Download size={18} />
+                    {url ? "Download" : "Download — coming soon"}
                   </a>
                 </div>
               ))}
