@@ -5,7 +5,7 @@ import { ImageViewer } from "@/components/ImageViewer";
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
-import { ArrowLeft, Download, FileText } from "lucide-react";
+import { ArrowLeft, Download } from "lucide-react";
 import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
