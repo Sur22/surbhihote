@@ -90,7 +90,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                 { title: "AI Bias Worksheet" },
                 { title: "AI Tools For UX Process", url: aiToolsPdf.url },
                 { title: "Prompt Library Template" },
-                { title: "Pilot evaluation template" },
+                { title: "AI Guardrails for Design\u00A0" },
               ].map(({ title, url }) => (
                 <a
                   key={title}
