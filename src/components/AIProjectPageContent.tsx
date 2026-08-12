@@ -122,12 +122,13 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   key={title}
                   className="flex flex-col rounded-xl border border-border bg-muted/20 p-6"
                 >
-                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-3">
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mt-5 mb-3">
                     {title}
                   </h3>
-                  <p className="text-base leading-relaxed text-foreground/70 mb-6 flex-1">
+                  <p className="text-base leading-relaxed text-foreground/70 mb-0 flex-1">
                     {description}
                   </p>
+                  <hr className="border-t border-border my-5" />
                   <a
                     href={url ?? "#"}
                     download={url ? true : undefined}
