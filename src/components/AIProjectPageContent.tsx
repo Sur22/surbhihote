@@ -86,6 +86,15 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         </figure>
 
         {project.slug === "resources" && (
+          <section className="mt-12 max-w-3xl">
+            <p className="eyebrow mb-4">Overview</p>
+            <p className="text-lg leading-relaxed text-foreground/85">
+              A curated collection of templates, guides, and worksheets I use to bring AI into the design process — from adopting AI in teams to building guardrails and governance.
+            </p>
+          </section>
+        )}
+
+        {project.slug === "resources" && (
           <section className="mt-12">
             <p className="eyebrow mb-6">Articles & Templates</p>
             <div className="relative border-t border-border">
