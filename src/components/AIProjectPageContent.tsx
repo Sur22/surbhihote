@@ -40,12 +40,22 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         </Link>
 
         <span className="eyebrow mb-8 block">{project.tags.join(" · ")}</span>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
-          {project.title}
+        <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal">
+          {project.slug === "resources" ? "AI Resources for Product Designers" : project.title}
         </h1>
         <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
           {project.subtitle}
         </p>
+
+        {project.slug === "resources" && (
+          <p className="mt-6 text-base text-muted-foreground">
+            By{" "}
+            <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
+              Surbhi Hote
+            </Link>
+            {" "}· Product Designer · Updated August 2026
+          </p>
+        )}
 
         {project.slug === "creator-hub" ? (
           <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
@@ -58,9 +68,13 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             Design lab AI for UI Project: designing a travel AI product end to
             end, using AI at every stage.
           </p>
-        ) : (
+        ) : project.slug === "resources" ? (
           <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            AI Resources of Product Designers and UI UX Designers&nbsp;
+            AI Resources is a working library for product and UI/UX designers who want to design with AI, not just read about it. It collects the tools, prompt patterns, and templates I use across research, ideation, and prototyping, along with guides on the parts most teams skip: guardrails, governance, and bias checks. As the sole designer in the company, I built the AI adoption approach and processes behind this collection from the ground up, and every resource comes out of that real project work. I keep the library current as my process evolves.
+          </p>
+        ) : (
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+            {"\n"}
           </p>
         )}
 
@@ -86,18 +100,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         </figure>
 
         {project.slug === "resources" && (
-          <section className="mt-12 max-w-3xl">
-            <p className="eyebrow mb-4">Overview</p>
-            <p className="text-lg leading-relaxed text-foreground/85">
-              A curated collection of templates, guides, and worksheets I use to bring AI into the design process — from adopting AI in teams to building guardrails and governance.
-            </p>
-          </section>
-        )}
-
-        {project.slug === "resources" && (
           <section className="mt-12">
             <p className="eyebrow mb-6">Articles & Templates</p>
-            <div className="relative border-t border-border">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url, description: "Adopting AI in the Design Process. A step-by-step guide for product teams bringing AI into how they work, not as a one-off experiment but as a repeatable part of the process. It walks through where AI fits across research, ideation, and delivery, and how to introduce it without disrupting what already works. Written from doing this firsthand as the sole designer defining the approach for my team." },
                 { title: "AI Bias Worksheet", description: "A practical worksheet for spotting and questioning bias in AI-assisted design work, from skewed research synthesis to outputs that quietly exclude parts of your audience. Use it as a checkpoint before you ship, so the tools speed you up without narrowing who you design for." },
@@ -106,30 +111,27 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                 { title: "AI Guardrails for Design\u00A0", url: aiGuardrailsDocx.url, description: "A framework for setting boundaries on AI use in design work, so speed doesn't come at the cost of quality or judgment. It covers where to trust AI output, where a human has to stay in the loop, and how to write guardrails your team will actually follow." },
                 { title: "AI Governance for Design Teams", url: aiGovernanceDocx.url, description: "A guide to governing AI adoption across a design team: who decides which tools are approved, how you handle data and privacy, and how to keep practice consistent as more people start using AI. Built for teams moving from ad hoc experimentation to a defined, defensible approach." },
               ].map(({ title, url, description }) => (
-                <div key={title} className="border-b border-border py-6">
+                <div
+                  key={title}
+                  className="flex flex-col rounded-xl border border-border bg-muted/20 p-6"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-muted/50 border border-border">
+                    <FileText size={22} className="text-muted-foreground" />
+                  </div>
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-3">
+                    {title}
+                  </h3>
+                  <p className="text-base leading-relaxed text-foreground/70 mb-6 flex-1">
+                    {description}
+                  </p>
                   <a
                     href={url ?? "#"}
                     download={url ? true : undefined}
-                    className="group flex items-center justify-between gap-4 transition-colors hover:bg-muted/30"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors self-start"
                   >
-                    <div className="flex items-center gap-4 min-w-0">
-                      <div className="flex h-12 w-9 shrink-0 items-center justify-center rounded bg-muted/50 border border-border">
-                        <FileText size={20} className="text-muted-foreground" />
-                      </div>
-                      <span className="font-serif text-2xl md:text-3xl text-foreground group-hover:text-accent transition-colors truncate">
-                        {title}
-                      </span>
-                    </div>
-                    <Download
-                      size={20}
-                      className="shrink-0 text-muted-foreground group-hover:text-foreground transition-colors"
-                    />
+                    <Download size={18} />
+                    {url ? "Download" : "Download — coming soon"}
                   </a>
-                  {description && (
-                    <p className="mt-3 text-base leading-relaxed text-foreground/70 max-w-3xl pl-[3.25rem] md:pl-[3.75rem]">
-                      {description}
-                    </p>
-                  )}
                 </div>
               ))}
             </div>
