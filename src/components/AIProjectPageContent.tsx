@@ -126,7 +126,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                     />
                   </a>
                   {description && (
-                    <p className="mt-3 text-base leading-relaxed text-foreground/70 max-w-3xl pl-13 md:pl-14">
+                    <p className="mt-3 text-base leading-relaxed text-foreground/70 max-w-3xl pl-[3.25rem] md:pl-[3.75rem]">
                       {description}
                     </p>
                   )}
