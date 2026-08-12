@@ -101,7 +101,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
         {project.slug === "resources" && (
           <section className="mt-12">
-            <p className="eyebrow mb-6">Articles & Templates</p>
+            <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85 mb-6">Articles & Templates</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url, description: "Adopting AI in the Design Process. A step-by-step guide for product teams bringing AI into how they work, not as a one-off experiment but as a repeatable part of the process. It walks through where AI fits across research, ideation, and delivery, and how to introduce it without disrupting what already works. Written from doing this firsthand as the sole designer defining the approach for my team." },
