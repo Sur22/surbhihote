@@ -12,6 +12,7 @@ import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 import { VoyagerStudy } from "@/components/VoyagerStudy";
 import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json";
 import adoptingAiGuidePdf from "@/assets/Adopting-AI-in-the-Design-Process-a-guide-_for_product_teams.pdf.asset.json";
+import promptLibraryZip from "@/assets/Prompt-Library-Template.zip.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
