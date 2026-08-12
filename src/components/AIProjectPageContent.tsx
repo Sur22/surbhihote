@@ -69,9 +69,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             end, using AI at every stage.
           </p>
         ) : project.slug === "resources" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            AI Resources is a working library for product and UI/UX designers who want to design with AI, not just read about it. It collects the tools, prompt patterns, and templates I use across research, ideation, and prototyping, along with guides on the parts most teams skip: guardrails, governance, and bias checks. As the sole designer in the company, I built the AI adoption approach and processes behind this collection from the ground up, and every resource comes out of that real project work. I keep the library current as my process evolves.
-          </p>
+          <></>
         ) : (
           <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
             {"\n"}
