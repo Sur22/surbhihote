@@ -91,7 +91,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                 { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url },
                 { title: "AI Bias Worksheet" },
                 { title: "AI Tools For UX Process", url: aiToolsPdf.url },
-                { title: "Prompt Library Template" },
+                { title: "Prompt Library Template", url: promptLibraryZip.url },
                 { title: "AI Guardrails for Design\u00A0" },
               ].map(({ title, url }) => (
                 <a
