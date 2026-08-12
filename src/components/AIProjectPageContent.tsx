@@ -11,6 +11,7 @@ import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 import { VoyagerStudy } from "@/components/VoyagerStudy";
 import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json";
+import adoptingAiGuidePdf from "@/assets/Adopting-AI-in-the-Design-Process-a-guide-_for_product_teams.pdf.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
@@ -86,7 +87,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <p className="eyebrow mb-6">Articles & Templates</p>
             <div className="relative border-t border-border">
               {[
-                { title: "Adopting AI in the design process - A step by step guide" },
+                { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url },
                 { title: "AI Bias Worksheet" },
                 { title: "AI Tools For UX Process", url: aiToolsPdf.url },
                 { title: "Prompt Library Template" },
