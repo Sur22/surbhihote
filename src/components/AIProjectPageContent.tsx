@@ -14,6 +14,7 @@ import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json"
 import adoptingAiGuidePdf from "@/assets/Adopting-AI-in-the-Design-Process-a-guide-_for_product_teams.pdf.asset.json";
 import promptLibraryZip from "@/assets/Prompt-Library-Template.zip.asset.json";
 import aiGuardrailsDocx from "@/assets/AI-Guardrails-for-the-Design-Process.docx.asset.json";
+import aiGovernanceDocx from "@/assets/AI-Governance-for-Design-Teams.docx.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
@@ -94,6 +95,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                 { title: "AI Tools For UX Process", url: aiToolsPdf.url },
                 { title: "Prompt Library Template", url: promptLibraryZip.url },
                 { title: "AI Guardrails for Design\u00A0", url: aiGuardrailsDocx.url },
+                { title: "AI Governance for Design Teams", url: aiGovernanceDocx.url },
               ].map(({ title, url }) => (
                 <a
                   key={title}
