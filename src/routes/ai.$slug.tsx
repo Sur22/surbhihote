@@ -22,6 +22,27 @@ export const Route = createFileRoute("/ai/$slug")({
       };
     }
     const { project } = loaderData;
+
+    if (project.slug === "resources") {
+      return {
+        meta: [
+          { title: "AI Resources for Product Designers: Tools, Prompts and Templates | Surbhi Hote" },
+          { name: "description", content: "A curated library of AI design tools, prompt patterns, templates, and workflows for product and UI/UX designers who want to prototype and ship faster." },
+          { property: "og:title", content: "AI Resources for Product Designers: Tools, Prompts and Templates" },
+          { property: "og:description", content: "A curated library of AI design tools, prompt patterns, templates, and workflows for product and UI/UX designers who want to prototype and ship faster." },
+          { property: "og:type", content: "article" },
+          { property: "og:url", content: "https://surbhihote.com/ai/resources" },
+          { property: "og:image", content: "https://surbhihote.com/ai/resources-og.png" },
+          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:title", content: "AI Resources for Product Designers" },
+          { name: "twitter:description", content: "A curated library of AI design tools, prompt patterns, templates, and workflows for product and UI/UX designers." },
+          { name: "twitter:image", content: "https://surbhihote.com/ai/resources-og.png" },
+          { name: "twitter:site", content: "@your_handle" },
+        ],
+        links: [{ rel: "canonical", href: "https://surbhihote.com/ai/resources" }],
+      };
+    }
+
     const title = `${project.title} — AI Projects — Surbhi Hote`;
     return {
       meta: [
