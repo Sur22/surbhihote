@@ -77,7 +77,7 @@ export const aiProjects: AIProject[] = [
     path: "/vibe-coding-my-portfolio-lovable",
     role: "Product Designer",
     timeframe: "Ongoing",
-    tools: "Lovable, ChatGPT, Claude, Figma",
+    tools: "Lovable, ChatGPT, Claude Code, Figma",
     tasksPerformed: "0→1 Design, UI/UX Design, Interaction Design, Prompt Engineering",
   },
   {
