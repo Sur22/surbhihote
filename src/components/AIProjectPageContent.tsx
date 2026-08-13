@@ -53,7 +53,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
               Surbhi Hote
             </Link>
-            {" "}· Product Designer · Updated August 2026
+            {"\u00a0"}- Product Designer{"\u00a0"}
           </p>
         )}
 
