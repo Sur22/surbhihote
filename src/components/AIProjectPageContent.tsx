@@ -15,6 +15,7 @@ import adoptingAiGuidePdf from "@/assets/Adopting-AI-in-the-Design-Process-a-gui
 import promptLibraryZip from "@/assets/Prompt-Library-Template.zip.asset.json";
 import aiGuardrailsDocx from "@/assets/AI-Guardrails-for-the-Design-Process.docx.asset.json";
 import aiGovernanceDocx from "@/assets/AI-Governance-for-Design-Teams.docx.asset.json";
+import aiBiasWorksheetDocx from "@/assets/AI-Bias-Audit-Worksheet.docx.asset.json";
 
 export function AIProjectPageContent({ project }: { project: AIProject }) {
   const [activePdf, setActivePdf] = useState(project.pdfs?.[0]?.url ?? project.pdfUrl);
@@ -112,7 +113,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: "Adopting AI in the design process - A step by step guide", url: adoptingAiGuidePdf.url, description: "Adopting AI in the Design Process. A step-by-step guide for product teams bringing AI into how they work, not as a one-off experiment but as a repeatable part of the process. It walks through where AI fits across research, ideation, and delivery, and how to introduce it without disrupting what already works. Written from doing this firsthand as the sole designer defining the approach for my team." },
-                { title: "AI Bias Worksheet", description: "A practical worksheet for spotting and questioning bias in AI-assisted design work, from skewed research synthesis to outputs that quietly exclude parts of your audience. Use it as a checkpoint before you ship, so the tools speed you up without narrowing who you design for." },
+                { title: "AI Bias Worksheet", url: aiBiasWorksheetDocx.url, description: "A practical worksheet for spotting and questioning bias in AI-assisted design work, from skewed research synthesis to outputs that quietly exclude parts of your audience. Use it as a checkpoint before you ship, so the tools speed you up without narrowing who you design for." },
                 { title: "AI Tools For UX Process", url: aiToolsPdf.url, description: "A reference map of the AI tools I actually use across the design process, sorted by where they help: research, ideation, prototyping, and handoff. Rather than a long list of everything available, it's the working set I've tested on real projects, with a note on what each one is good for." },
                 { title: "Prompt Library Template", url: promptLibraryZip.url, description: "A ready-to-use, copy-and-adapt prompt library so you're not writing prompts from scratch every time. It gives you a structure for organizing prompts by task and reusing the ones that work, which is the difference between AI as a novelty and AI as part of your daily workflow." },
                 { title: "AI Guardrails for Design\u00A0", url: aiGuardrailsDocx.url, description: "A framework for setting boundaries on AI use in design work, so speed doesn't come at the cost of quality or judgment. It covers where to trust AI output, where a human has to stay in the loop, and how to write guardrails your team will actually follow." },
