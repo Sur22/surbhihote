@@ -12,6 +12,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/about", priority: "0.8" },
           { path: "/gallery", priority: "0.8" },
           { path: "/ai", priority: "0.8" },
+          { path: "/ai/voyager", priority: "0.9" },
+          { path: "/ai/resources", priority: "0.9" },
           { path: "/process", priority: "0.8" },
           { path: "/creator-hub-ai-product-design-case-study", priority: "0.9" },
           { path: "/vibe-coding-my-portfolio-lovable", priority: "0.9" },
@@ -20,6 +22,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/work/solace", priority: "0.9" },
           { path: "/work/atlas", priority: "0.9" },
         ];
+        const lastmod = new Date().toISOString().slice(0, 10);
+
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
