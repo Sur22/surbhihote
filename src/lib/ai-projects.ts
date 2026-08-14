@@ -54,7 +54,7 @@ export const aiProjects: AIProject[] = [
     pdfUrl: "/ai-pdfs/voyager-phase-1.pdf",
     role: "Product Design, Concept, End to end, Problem Framing, AI product strategy",
     timeframe: "4 weeks",
-    tools: "Perplexity, Claude, ChatGPT, Google Stitch, Figma Make",
+    tools: "Perplexity, Claude, ChatGPT, Google Stitch, Figma, Figma Make",
     tasksPerformed:
       "0→1 Design, UI/UX Design, Interaction Design, AI product strategy, Market analysis",
     pdfs: [
