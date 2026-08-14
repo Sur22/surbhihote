@@ -5,16 +5,38 @@ import { aiProjects } from "@/lib/ai-projects";
 export const Route = createFileRoute("/ai/")({
   head: () => ({
     meta: [
-      { title: "AI — Surbhi Hote" },
+      { title: "AI Projects | Surbhi Hote" },
       { name: "description", content: "Explorations at the intersection of AI and product design — experiments, prototypes, and reflections on designing with intelligent systems." },
-      { property: "og:title", content: "AI — Surbhi Hote" },
+      { property: "og:title", content: "AI Projects | Surbhi Hote" },
       { property: "og:description", content: "Explorations at the intersection of AI and product design." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://surbhihote.com/ai" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "AI — Surbhi Hote" },
+      { name: "twitter:title", content: "AI Projects | Surbhi Hote" },
       { name: "twitter:description", content: "Explorations at the intersection of AI and product design." },
     ],
+    links: [{ rel: "canonical", href: "https://surbhihote.com/ai" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "AI Projects",
+          url: "https://surbhihote.com/ai",
+          description: "AI and product design explorations by Surbhi Hote.",
+          author: { "@type": "Person", name: "Surbhi Hote", url: "https://surbhihote.com/about" },
+          hasPart: aiProjects.map((p) => ({
+            "@type": "CreativeWork",
+            name: p.title,
+            description: p.description,
+            url: `https://surbhihote.com${p.path ?? `/ai/${p.slug}`}`,
+          })),
+        }),
+      },
+    ],
   }),
+
   component: AIPage,
 });
 
