@@ -142,6 +142,7 @@ export const Route = createFileRoute("/ai/$slug")({
     }
 
     const title = `${project.title} — AI Projects — Surbhi Hote`;
+    const url = `https://surbhihote.com/ai/${project.slug}`;
     return {
       meta: [
         { title },
@@ -149,11 +150,29 @@ export const Route = createFileRoute("/ai/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: project.description },
         { property: "og:type", content: "article" },
+        { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: title },
         { name: "twitter:description", content: project.description },
       ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: project.title,
+            description: project.description,
+            url,
+            author: { "@type": "Person", name: "Surbhi Hote", url: "https://surbhihote.com/about" },
+            about: project.tags,
+            mainEntityOfPage: url,
+          }),
+        },
+      ],
     };
+
   },
   notFoundComponent: AIProjectNotFound,
   component: AIProjectPage,
