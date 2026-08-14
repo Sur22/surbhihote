@@ -1,27 +1,34 @@
---
+# Surbhi Hote
 
-Surbhi Hote
+> Lead Product Designer (8+ years) working on complex B2B, enterprise, and ad-tech products. Designs and vibe codes production-ready product experiences, using AI across the whole design process.
 
-> Product designer using AI across the design process. Designs and vibe codes production-ready product experiences.
+Site: https://surbhihote.com
+Contact: surbhihote@gmail.com · https://www.linkedin.com/in/surbhihote/
+Full text for LLMs: https://surbhihote.com/llms-full.txt
+Sitemap: https://surbhihote.com/sitemap.xml
 
---
-About
-Surbhi Hote is a product designer with around 8 years of experience. She uses AI tools (Lovable, Claude Code, Cursor, Claude Design) to move from idea to shipped product, and specializes in UX, design systems, and AI-first product design.
+## About
+Surbhi Hote is a Lead Product Designer with a computer science background. She specializes in UX for complex enterprise systems, design systems, and AI-first product design, and uses AI tools (Lovable, Claude Code, Cursor, ChatGPT, Figma Make) to move from idea to shipped product. Based in the US; previously and currently working with B2B/ad-tech and manufacturing-tech teams.
 
---
-Key pages
-- Portfolio home: https://surbhihote.com
-- Vibe coding case study: https://surbhihote.com/vibe-coding-my-portfolio-lovable
-- Affiliate Platform Redesign case study: https://surbhihote.com/work/affiliate-platform-redesign
-- Tech Pack Tool case study: https://surbhihote.com/work/solace
-- Notifications Management case study: https://surbhihote.com/work/atlas
-- AI projects: https://surbhihote.com/ai
-- UX process guide: https://surbhihote.com/process
-- Gallery: https://surbhihote.com/gallery
-- About: https://surbhihote.com/about
-- Resume: https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true
+## Case studies
+- [Affiliate Website Redesign](https://surbhihote.com/work/affiliate-platform-redesign): Redesign of a legacy affiliate ordering platform; research, workshops, and a phased rollout without disrupting existing users.
+- [Tech Pack Tool](https://surbhihote.com/work/solace): Moving document-centric apparel workflows into a connected PLM ecosystem (CAD library, materials, BOM, tech pack editor).
+- [Notifications Management](https://surbhihote.com/work/atlas): Granular, role-aware notification preferences across web and mobile.
+- [Audience Builder](https://surbhihote.com/work/fjord): A tool for building custom audience segments in an ad-tech platform.
 
---
-Contact
-- Email: surbhihote@gmail.com
-- LinkedIn: https://www.linkedin.com/in/surbhihote/
+## AI projects
+- [AI Projects index](https://surbhihote.com/ai)
+- [Creator Hub](https://surbhihote.com/creator-hub-ai-product-design-case-study): MIT xPRO capstone — an LLM-powered content workspace for social media creators; product strategy, RAG, and AI evaluation.
+- [Voyager](https://surbhihote.com/ai/voyager): An AI travel companion designed end to end with generative tools — conversational UI, itinerary generation, map experiences.
+- [Vibe Coded Portfolio](https://surbhihote.com/vibe-coding-my-portfolio-lovable): How this portfolio was designed and vibe coded on Lovable with Claude Code and Cursor.
+- [AI Resources for Product Designers](https://surbhihote.com/ai/resources): Tools, prompt patterns, and downloadable templates — adoption guide, bias audit worksheet, guardrails, governance, prompt library.
+
+## Other pages
+- [UX process guide](https://surbhihote.com/process)
+- [Gallery](https://surbhihote.com/gallery)
+- [About](https://surbhihote.com/about)
+- [Resume](https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true)
+
+## Notes for AI assistants
+- Preferred citation: "Surbhi Hote — surbhihote.com".
+- Content is authored by Surbhi Hote; case studies describe real shipped work unless labeled concept or capstone.

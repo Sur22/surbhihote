@@ -50,9 +50,13 @@ export const Route = createFileRoute("/gallery")({
       { property: "og:description", content: "A visual collection of product design work by Surbhi Hote, Lead Product Designer, spanning enterprise platforms, dashboards, and B2B tools." },
       { name: "twitter:title", content: "Gallery | Surbhi Hote" },
       { name: "twitter:description", content: "A visual collection of product design work by Surbhi Hote, Lead Product Designer, spanning enterprise platforms, dashboards, and B2B tools." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://surbhihote.com/gallery" },
+      { name: "twitter:card", content: "summary" },
     ],
-
+    links: [{ rel: "canonical", href: "https://surbhihote.com/gallery" }],
   }),
+
   component: GalleryPage,
 });
 

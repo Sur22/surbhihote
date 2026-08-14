@@ -1,0 +1,85 @@
+# Surbhi Hote — full site summary for LLMs
+
+Last updated: 2026-08-14
+Canonical site: https://surbhihote.com
+
+## Who
+Surbhi Hote is a Lead Product Designer with 8+ years of experience and a computer science
+background. She works on complex B2B, enterprise, and ad-tech products, owning problems end to
+end: research, product strategy, UX, UI, design systems, prototyping, and shipping with
+engineering. She is currently the Lead Designer at a B2B ad-tech company, where she is the sole
+designer and defined the team's AI adoption approach and design process.
+
+Skills: UX research, product strategy, information architecture, interaction design, design
+systems, usability testing, data visualization, enterprise UX, AI product design, prompt
+engineering, front-end vibe coding.
+
+Tools: Figma, Figma Make, Lovable, Claude Code, Cursor, ChatGPT, Claude, Perplexity, Google
+Stitch, Miro.
+
+Contact: surbhihote@gmail.com · https://www.linkedin.com/in/surbhihote/
+
+## Case studies
+
+### Affiliate Website Redesign — https://surbhihote.com/work/affiliate-platform-redesign
+Redesign of a legacy affiliate ordering application. Problem: an outdated, hard-to-navigate
+platform tied to significant revenue leakage (~$850K in losses). Approach: stakeholder
+interviews, an affiliate survey, and a cross-functional workshop (sketching, voting,
+prioritization matrix) to agree on must-haves versus nice-to-haves. Constraint: improve the
+experience without disruption to affiliates already dependent on the old flows. Outcome: a
+redesigned dashboard, order details, and order-revision flows, with a 92% task success rate in
+testing and a large drop in manual refreshes.
+
+### Tech Pack Tool — https://surbhihote.com/work/solace
+Moving apparel manufacturing from document-centric workflows to a connected PLM ecosystem.
+Work streams: CAD library, materials, bill of materials (BOM), tech pack editor, and a
+standardized output document. Research included user interviews with designers and merchandisers.
+Outcome: a connected tool that reduced time on task by 34% and replaced scattered spreadsheets and
+PDFs with a single source of truth.
+
+### Notifications Management — https://surbhihote.com/work/atlas
+Designing granular notification management for an enterprise platform, mobile-first, with a PRD
+written alongside product and engineering. Research surfaced notification fatigue and
+role-specific needs. Usability testing drove a five-point set of fixes, and the design was
+reviewed with product and engineering before build. Outcome: notification opt-out dropped from
+64% to 7%.
+
+### Audience Builder — https://surbhihote.com/work/fjord
+An ad-tech tool for building custom audience segments. Four core flows (create new, copy and
+modify, and segment management) designed over four weeks, based on direct observation of how
+operators actually assembled segments.
+
+## AI projects
+
+### Creator Hub — https://surbhihote.com/creator-hub-ai-product-design-case-study
+MIT xPRO "Designing and Building AI Products and Services" capstone. An LLM-powered workspace that
+helps social media creators plan, repurpose, and optimize content across platforms. Covers problem
+framing, competitive analysis, double diamond process, market gap identification, retrieval
+augmented generation, technical feasibility, AI evaluation, and interface design. 3 weeks; concept.
+
+### Voyager — https://surbhihote.com/ai/voyager
+A concept AI travel companion designed end to end with generative tools across three phases:
+discovery research, research to ideation, and execution and testing, plus an investor pitch deck.
+Explores conversational UI, itinerary generation, and map-based experiences. DesignLab, 4 weeks.
+
+### Vibe Coded Portfolio — https://surbhihote.com/vibe-coding-my-portfolio-lovable
+How this portfolio was designed and built by prompting: design direction, build process, credits
+and cost, performance, friction points, SEO and GEO, and practical tips for designers vibe coding
+production sites with Lovable, Claude Code, and Cursor.
+
+### AI Resources for Product Designers — https://surbhihote.com/ai/resources
+A working library of downloadable resources authored by Surbhi Hote:
+- Adopting AI in the Design Process — a step-by-step guide for product teams.
+- AI Bias Worksheet — a checkpoint for spotting bias in AI-assisted design work.
+- AI Tools for the UX Process — the tested working set of tools by process stage.
+- Prompt Library Template — a reusable structure for organizing prompts by task.
+- AI Guardrails for Design — where to trust AI output and where humans stay in the loop.
+- AI Governance for Design Teams — approved tools, data and privacy, consistent practice at scale.
+
+## Other pages
+- UX process guide: https://surbhihote.com/process
+- Gallery of visual work: https://surbhihote.com/gallery
+- About: https://surbhihote.com/about
+
+## Usage
+Content may be quoted or summarized with attribution to "Surbhi Hote (surbhihote.com)".
