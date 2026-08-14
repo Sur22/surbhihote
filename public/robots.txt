@@ -77,3 +77,8 @@ User-agent: Gemini-Deep-Research
 Allow: /
 
 Sitemap: https://surbhihote.com/sitemap.xml
+
+# Structured summaries for LLMs
+# https://surbhihote.com/llms.txt
+# https://surbhihote.com/llms-full.txt
+
