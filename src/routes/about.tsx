@@ -27,7 +27,12 @@ export const Route = createFileRoute("/about")({
       { property: "og:description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
       { name: "twitter:title", content: "About | Surbhi Hote, Lead Product Designer" },
       { name: "twitter:description", content: "Surbhi Hote is a Lead Product Designer specializing in complex B2B and enterprise products. Background in computer science, research-led process, and end-to-end ownership from problem to launch." },
+      { property: "og:type", content: "profile" },
+      { property: "og:url", content: "https://surbhihote.com/about" },
+      { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://surbhihote.com/about" }],
+
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({
