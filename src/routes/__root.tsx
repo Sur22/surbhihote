@@ -76,6 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Surbhi Hote | Lead Product Designer" },
       { name: "description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
       { name: "author", content: "Surbhi Hote" },
+      { name: "google-site-verification", content: "0r5MDOuovIOpy3D14tL0lrLHCqovhzDznr2NxMXpmKM" },
       { property: "og:title", content: "Surbhi Hote | Lead Product Designer" },
       { property: "og:description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
       { property: "og:type", content: "website" },
