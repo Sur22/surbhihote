@@ -117,7 +117,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "affiliate-platform-redesign",
     index: "01",
     title: "Affiliate Website Redesign",
-    subtitle: "Redesigning a legacy application\u00a0",
+    subtitle: "Rebuilding a 25-year-old enterprise platform without disrupting the business.",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
