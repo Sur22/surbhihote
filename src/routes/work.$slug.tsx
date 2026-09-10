@@ -1610,8 +1610,13 @@ Users needed an easy way to control and manage the notifications they want and s
                 <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly $850K in business to orders that slipped through unnoticed{"\u00A0"} there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
                 <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them — caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
               </ul>
-              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto my-[50px]">
-                <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
+              <div className="relative overflow-hidden rounded-sm border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto my-[50px] py-10 pr-8 md:pr-12">
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-50"
+                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                />
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                <blockquote className="relative z-10 text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
                   {"\n\nRefer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, \"We like it as it is, we don't want it to change.\" Because the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website."}
                   {"\n\n"}
                   <strong>The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool — it was rejection of a better one. I designed for flat adoption over dramatic change.</strong>
