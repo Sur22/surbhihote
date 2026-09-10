@@ -164,6 +164,33 @@ function IndexPage() {
         </div>
 
       </section>
+
+      {/* How I work */}
+      <section id="how-i-work" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
+        <div className="mb-12">
+          <p className="eyebrow mb-4">Approach</p>
+          <h2 className="font-serif" style={{ fontSize: '62px' }}>How I Work</h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+          {[
+            { n: "01", t: "Frame the problem", d: "Turn ambiguous business challenges into clear product opportunities." },
+            { n: "02", t: "Find the signal", d: "Combine research, behavioral data, and business context." },
+            { n: "03", t: "Align the team", d: "Bring Product, Engineering, leadership, and users into the decision." },
+            { n: "04", t: "Design the system", d: "Create scalable workflows rather than isolated screens." },
+            { n: "05", t: "Validate and ship", d: "Test assumptions early and partner closely with engineering." },
+            { n: "06", t: "Measure the outcome", d: "Track whether the product actually improved the business or user experience." },
+          ].map((item) => (
+            <div key={item.n} className="flex gap-5">
+              <span className="font-serif text-2xl text-accent shrink-0">{item.n}</span>
+              <div>
+                <h3 className="font-serif text-2xl mb-2">{item.t}</h3>
+                <p className="text-base leading-relaxed text-foreground/75">{item.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </SiteLayout>
   );
 }
