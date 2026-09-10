@@ -1615,7 +1615,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   {"\n\nRefer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, \"We like it as it is, we don't want it to change.\" Because the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website."}
                   {"\n\n"}
                   <strong>The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool — it was rejection of a better one. I designed for flat adoption over dramatic change.</strong>
-                   {"\n"}
+                   {"\n\n\n"}
                 </blockquote>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
