@@ -23,14 +23,27 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
     setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
   }, [project.slug]);
   useEffect(() => {
-    if (project.slug !== "resources") return;
     const hash = window.location.hash;
     if (!hash) return;
-    const timer = window.setTimeout(() => {
-      document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 250);
-    return () => window.clearTimeout(timer);
+    const id = decodeURIComponent(hash.slice(1));
+    let cancelled = false;
+    let attempts = 0;
+    const tick = () => {
+      if (cancelled) return;
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 96;
+        window.scrollTo({ top, behavior: attempts === 0 ? "auto" : "smooth" });
+      }
+      attempts += 1;
+      if (attempts < 12) window.setTimeout(tick, 250);
+    };
+    tick();
+    return () => {
+      cancelled = true;
+    };
   }, [project.slug]);
+
   const activeEntry = project.pdfs?.find((pdf: { url: string }) => pdf.url === activePdf);
   const activePdfLabel = activeEntry?.label ?? "";
   const activeImages = activeEntry?.images;
