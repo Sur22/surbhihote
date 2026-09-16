@@ -108,7 +108,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         )}
 
         {project.slug === "resources" && (
-          <section className="mt-12">
+          <section id="articles-and-templates" className="mt-12 scroll-mt-24">
             <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85 mb-6">Articles & Templates</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
