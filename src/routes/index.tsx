@@ -165,8 +165,8 @@ function IndexPage() {
 
       </section>
 
-      {/* How I work */}
-      <section id="how-i-work" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
+      {/* How I work — temporarily disabled; restore by uncommenting this block */}
+      {/* <section id="how-i-work" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
         <div className="mb-12">
           <p className="eyebrow mb-4">Approach</p>
           <h2 className="font-serif" style={{ fontSize: '62px' }}>How I Work</h2>
@@ -190,7 +190,7 @@ function IndexPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </SiteLayout>
   );
 }
