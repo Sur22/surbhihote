@@ -22,6 +22,15 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
   useEffect(() => {
     setActivePdf(project.pdfs?.[0]?.url ?? project.pdfUrl);
   }, [project.slug]);
+  useEffect(() => {
+    if (project.slug !== "resources") return;
+    const hash = window.location.hash;
+    if (!hash) return;
+    const timer = window.setTimeout(() => {
+      document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 250);
+    return () => window.clearTimeout(timer);
+  }, [project.slug]);
   const activeEntry = project.pdfs?.find((pdf: { url: string }) => pdf.url === activePdf);
   const activePdfLabel = activeEntry?.label ?? "";
   const activeImages = activeEntry?.images;
