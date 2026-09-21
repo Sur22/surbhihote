@@ -130,7 +130,7 @@ function IndexPage() {
         />
         <div className="mx-auto max-w-[1100px] lg:pl-[60px]">
           <div className="font-serif md:text-5xl text-6xl">
-            <p className="eyebrow mb-4">SENIOR PRODUCT DESIGNER FOR COMPLEX B2B AND ENTERPRISE SAAS PRODUCTS</p>
+            <p className="eyebrow mb-4">DESIGNER BEHIND THE CRAFT</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
@@ -138,7 +138,7 @@ function IndexPage() {
               Identifying the equilibrium between user needs, business opportunities, and technological possibilities to create an impact.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">
-              Placeholder paragraph — replace this with your supporting copy.
+              a Lead Product Designer with 8+ years of experience shaping B2B SaaS, enterprise workflows, and data-heavy platforms. I combine product strategy, user research, and technical fluency to help teams ship scalable, high-impact experiences.
             </p>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
