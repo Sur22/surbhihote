@@ -137,7 +137,7 @@ function IndexPage() {
             <p className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80">
               Identifying the equilibrium between user needs, business opportunities, and technological possibilities to create an impact.I turn data-heavy workflows and ambiguous product problems into clear, scalable experiences.
             </p>
-            <p className="mt-6 font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
+            <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">
               Placeholder paragraph — replace this with your supporting copy.
             </p>
             <div className="mt-8">
