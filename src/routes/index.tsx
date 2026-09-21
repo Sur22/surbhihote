@@ -137,6 +137,9 @@ function IndexPage() {
             <p className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80">
               Identifying the equilibrium between user needs, business opportunities, and technological possibilities to create an impact.I turn data-heavy workflows and ambiguous product problems into clear, scalable experiences.
             </p>
+            <p className="mt-6 text-base leading-relaxed text-foreground/60">
+              Placeholder paragraph — replace this with your supporting copy.
+            </p>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
                 <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
