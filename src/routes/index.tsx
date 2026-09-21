@@ -135,7 +135,7 @@ function IndexPage() {
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
             <p className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80">
-              Identifying the equilibrium between user needs, business opportunities, and technological possibilities to create an impact.
+              Identifying the equilibrium between user needs, business opportunities, and technological possibilities to create an impact.I turn data-heavy workflows and ambiguous product problems into clear, scalable experiences.
             </p>
             <div className="mt-8">
               <Button asChild variant="outline" size="lg">
