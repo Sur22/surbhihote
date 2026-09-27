@@ -8,9 +8,9 @@ import type { ReactNode } from "react";
 
 const nav = [
   { to: "/", label: "Case Studies", hash: "case-studies" as const },
+  { to: "/about", label: "About" },
   { to: "/ai", label: "AI" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/about", label: "About" },
 ] as const;
 
 function ThemeToggle() {
@@ -39,11 +39,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <Link to="/ai" activeProps={{ className: "text-foreground" }} className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
               AI <Sparkle size={10.5} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
               <Mail size={18} />
             </a>
@@ -103,9 +103,9 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           {/* Nav links */}
           <div className="flex items-center gap-6 text-sm">
             <Link to="/" hash="case-studies" className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
+            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             <Link to="/ai" className="text-muted-foreground hover:text-foreground transition-colors">AI</Link>
             <Link to="/gallery" className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
-            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
           </div>
 
           {/* Social icons */}
