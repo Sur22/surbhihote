@@ -21,7 +21,13 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       <Link to="/work/$slug" params={{ slug: c.slug }} className="group block">
         <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
-            <div className="overflow-hidden rounded-[5%]">
+            <div className="relative">
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
+                style={{ transform: "rotate(6deg)" }}
+              />
+              <div className="relative overflow-hidden rounded-[5%]">
               <img
                 src={c.cover}
                 alt={c.title}
@@ -30,6 +36,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 loading="lazy"
                 className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" ? "" : "shadow-md"} ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
               />
+              </div>
             </div>
           </div>
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
