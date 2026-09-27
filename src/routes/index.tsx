@@ -30,6 +30,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     ? {
                         left: 0,
                         transform: "translate(-33.6px, -50%) scale(0.84)",
+                        backgroundColor: "var(--circle-fill)",
                       }
                     : i === 1
                       ? {
