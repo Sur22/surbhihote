@@ -2,6 +2,7 @@ import fjord from "@/assets/case-fjord.png.asset.json";
 import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 import notificationBanner from "@/assets/notification-banner.png.asset.json";
+import notificationBannerTilted from "@/assets/notification-banner-tilted.png";
 import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
@@ -283,7 +284,7 @@ const _caseStudies: CaseStudy[] = [
     },
     role: "Design Lead",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
-    cover: notificationBanner.url,
+    cover: notificationBannerTilted,
     summary:
       "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
     keywords:
