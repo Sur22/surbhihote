@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/portfolio-hero-bg-v2.png.asset.json";
 import heroBgDark from "@/assets/portfolio-hero-bg-dark-mode.png.asset.json";
-import solaceTilted from "@/assets/case-solace-tilted.png";
+import solaceTilted from "@/assets/techpack-mockup-tilted.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
@@ -48,7 +48,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
                   <img
-                    src={solaceTilted}
+                    src={solaceTilted.url}
                     alt={c.title}
                     width={1920}
                     height={1424}
