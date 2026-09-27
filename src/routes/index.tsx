@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/portfolio-hero-bg-v2.png.asset.json";
 import heroBgDark from "@/assets/portfolio-hero-bg-dark-mode.png.asset.json";
+import solaceTilted from "@/assets/case-solace-tilted.png";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
@@ -46,16 +47,14 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               />
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
-                  <div className="relative overflow-hidden rounded-[5%]">
-                    <img
-                      src={c.cover}
-                      alt={c.title}
-                      width={1400}
-                      height={1000}
-                      loading="lazy"
-                      className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md object-contain`}
-                    />
-                  </div>
+                  <img
+                    src={solaceTilted}
+                    alt={c.title}
+                    width={1920}
+                    height={1424}
+                    loading="lazy"
+                    className="h-[420px] w-full transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain"
+                  />
                 </div>
               )}
               {c.slug !== "solace" && (
