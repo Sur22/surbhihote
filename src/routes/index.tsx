@@ -2,8 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/portfolio-hero-bg-v2.png.asset.json";
 import heroBgDark from "@/assets/portfolio-hero-bg-dark-mode.png.asset.json";
-import techpackLibraryImg from "@/assets/techpack-library.png.asset.json";
-import materialLibraryImg from "@/assets/material-library.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
@@ -45,15 +43,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 }
               />
               {c.slug === "solace" && (
-                <div className="relative w-[69%] mx-auto">
-                  <img
-                    src={techpackLibraryImg.url}
-                    alt="Techpack Library screen"
-                    width={1010}
-                    height={1100}
-                    loading="lazy"
-                    className="absolute top-[67%] -right-[8%] z-20 w-[48%] rounded-md shadow-lg md:-right-[40%]"
-                  />
+                <div className="relative w-[90%] mx-auto">
                   <div className="relative overflow-hidden rounded-[5%]">
                     <img
                       src={c.cover}
@@ -64,14 +54,6 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                       className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md object-contain`}
                     />
                   </div>
-                  <img
-                    src={materialLibraryImg.url}
-                    alt="Material Library screen"
-                    width={1010}
-                    height={1100}
-                    loading="lazy"
-                    className="absolute top-[20%] -left-[6%] z-20 w-[46%] rounded-md shadow-lg md:-left-[26%]"
-                  />
                 </div>
               )}
               {c.slug !== "solace" && (
