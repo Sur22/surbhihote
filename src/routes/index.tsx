@@ -45,34 +45,46 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 }
               />
               {c.slug === "solace" && (
-                <img
-                  src={materialLibraryImg.url}
-                  alt="Material Library screen"
-                  width={1010}
-                  height={1100}
-                  loading="lazy"
-                  className="absolute -bottom-4 -right-2 z-0 w-[48%] rounded-md shadow-lg md:-bottom-10 md:-right-10"
-                />
+                <div className="relative w-[60%] mx-auto">
+                  <img
+                    src={techpackLibraryImg.url}
+                    alt="Techpack Library screen"
+                    width={1010}
+                    height={1100}
+                    loading="lazy"
+                    className="absolute -bottom-4 -right-2 z-0 w-[48%] rounded-md shadow-lg md:-bottom-10 md:-right-10"
+                  />
+                  <div className="relative overflow-hidden rounded-[5%]">
+                    <img
+                      src={c.cover}
+                      alt={c.title}
+                      width={1400}
+                      height={1000}
+                      loading="lazy"
+                      className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] shadow-md object-contain`}
+                    />
+                  </div>
+                  <img
+                    src={materialLibraryImg.url}
+                    alt="Material Library screen"
+                    width={1010}
+                    height={1100}
+                    loading="lazy"
+                    className="absolute -top-4 -left-2 z-20 w-[40%] rounded-md shadow-lg md:-top-10 md:-left-10"
+                  />
+                </div>
               )}
-              <div className="relative overflow-hidden rounded-[5%]">
-              <img
-                src={c.cover}
-                alt={c.title}
-                width={1400}
-                height={1000}
-                loading="lazy"
-                className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" ? "" : "shadow-md"} ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
-              />
-              </div>
-              {c.slug === "solace" && (
-                <img
-                  src={techpackLibraryImg.url}
-                  alt="Techpack Library screen"
-                  width={1010}
-                  height={1100}
-                  loading="lazy"
-                  className="absolute -top-4 -left-2 z-20 w-[40%] rounded-md shadow-lg md:-top-10 md:-left-10"
-                />
+              {c.slug !== "solace" && (
+                <div className="relative overflow-hidden rounded-[5%]">
+                  <img
+                    src={c.cover}
+                    alt={c.title}
+                    width={1400}
+                    height={1000}
+                    loading="lazy"
+                    className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" ? "" : "shadow-md"} ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
+                  />
+                </div>
               )}
             </div>
           </div>
