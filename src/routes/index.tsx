@@ -45,7 +45,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 }
               />
               {c.slug === "solace" && (
-                <div className="relative w-[60%] mx-auto">
+                <div className="relative w-[69%] mx-auto">
                   <img
                     src={techpackLibraryImg.url}
                     alt="Techpack Library screen"
