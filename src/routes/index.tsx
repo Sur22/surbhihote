@@ -24,9 +24,9 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <div className="relative">
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-full border-2 border-foreground/20"
+                className="absolute top-1/2 left-1/2 aspect-square h-full rounded-full border-2 border-foreground/20"
                 style={{
-                  transform: `scale(${i % 2 === 1 ? 0.84 : 0.7})`,
+                  transform: `translate(-50%, -50%) scale(${i % 2 === 1 ? 0.84 : 0.7})`,
                 }}
               />
               <div className="relative overflow-hidden rounded-[5%]">
