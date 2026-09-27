@@ -43,7 +43,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 }
               />
               {c.slug === "solace" && (
-                <div className="relative w-[90%] mx-auto">
+                <div className="relative w-[99%] mx-auto">
                   <div className="relative overflow-hidden rounded-[5%]">
                     <img
                       src={c.cover}
