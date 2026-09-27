@@ -71,7 +71,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                   width={1010}
                   height={1100}
                   loading="lazy"
-                  className="absolute -top-10 -left-10 z-20 w-[40%] rounded-md shadow-lg"
+                  className="absolute -top-4 -left-2 z-20 w-[40%] rounded-md shadow-lg md:-top-10 md:-left-10"
                 />
               )}
             </div>
