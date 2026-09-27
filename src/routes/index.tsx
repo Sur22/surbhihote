@@ -26,7 +26,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 aria-hidden
                 className="absolute inset-0 rounded-[5%] border-2 border-foreground/20"
                 style={{
-                  transform: `scale(0.7) rotate(${i % 2 === 1 ? "-6" : "6"}deg)`,
+                  transform: `scale(${i % 2 === 1 ? 0.84 : 0.7}) rotate(${i % 2 === 1 ? "-6" : "6"}deg)`,
                 }}
               />
               <div className="relative overflow-hidden rounded-[5%]">
