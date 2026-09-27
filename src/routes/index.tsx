@@ -52,7 +52,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     width={1010}
                     height={1100}
                     loading="lazy"
-                    className="absolute -bottom-4 -right-2 z-0 w-[48%] rounded-md shadow-lg md:-bottom-10 md:-right-10"
+                    className="absolute top-[67%] -right-[8%] z-20 w-[48%] rounded-md shadow-lg md:-right-[40%]"
                   />
                   <div className="relative overflow-hidden rounded-[5%]">
                     <img
@@ -70,7 +70,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     width={1010}
                     height={1100}
                     loading="lazy"
-                    className="absolute -top-4 -left-2 z-20 w-[46%] rounded-md shadow-lg md:-top-10 md:-left-10"
+                    className="absolute top-[20%] -left-[6%] z-20 w-[46%] rounded-md shadow-lg md:-left-[26%]"
                   />
                 </div>
               )}
