@@ -48,7 +48,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
                   <img
-                    src={solaceTilted}
+                    src={solaceTilted.url}
                     alt={c.title}
                     width={1920}
                     height={1424}
