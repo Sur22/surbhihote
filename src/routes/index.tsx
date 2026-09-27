@@ -44,6 +44,16 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                         }
                 }
               />
+              {c.slug === "solace" && (
+                <img
+                  src={materialLibraryImg.url}
+                  alt="Material Library screen"
+                  width={1010}
+                  height={1100}
+                  loading="lazy"
+                  className="absolute -bottom-10 -right-10 z-0 w-[48%] rounded-md shadow-lg"
+                />
+              )}
               <div className="relative overflow-hidden rounded-[5%]">
               <img
                 src={c.cover}
@@ -54,6 +64,16 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" ? "" : "shadow-md"} ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
               />
               </div>
+              {c.slug === "solace" && (
+                <img
+                  src={techpackLibraryImg.url}
+                  alt="Techpack Library screen"
+                  width={1010}
+                  height={1100}
+                  loading="lazy"
+                  className="absolute -top-10 -left-10 z-20 w-[40%] rounded-md shadow-lg"
+                />
+              )}
             </div>
           </div>
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
