@@ -52,7 +52,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     width={1010}
                     height={1100}
                     loading="lazy"
-                    className="absolute -bottom-4 -right-2 z-0 w-[48%] rounded-md shadow-lg md:-bottom-10 md:-right-10"
+                    className="absolute top-[2%] -left-[6%] z-20 w-[46%] rounded-md shadow-lg md:-left-[26%]"
                   />
                   <div className="relative overflow-hidden rounded-[5%]">
                     <img
