@@ -103,7 +103,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           className={
             project.slug === "creator-hub" || project.slug === "voyager"
               ? "mt-12 overflow-hidden rounded-xl"
-              : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
+              : project.slug === "vibe-coded-portfolio"
+                ? "mt-12 overflow-hidden rounded-xl"
+                : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
           }
         >
           <img
