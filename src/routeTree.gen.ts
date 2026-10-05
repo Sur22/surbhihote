@@ -9,30 +9,46 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as CreatorHubAiProductDesignCaseStudyRouteImport } from './routes/creator-hub-ai-product-design-case-study'
-import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as ProcessRouteImport } from './routes/process'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as VibeCodingMyPortfolioLovableRouteImport } from './routes/vibe-coding-my-portfolio-lovable'
-import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ProcessRouteImport } from './routes/process'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as CreatorHubAiProductDesignCaseStudyRouteImport } from './routes/creator-hub-ai-product-design-case-study'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as AiIndexRouteImport } from './routes/ai.index'
-import { Route as AiSlugRouteImport } from './routes/ai.$slug'
-import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as WorkFjord2RouteImport } from './routes/work.fjord2'
+import { Route as WorkSlugRouteImport } from './routes/work.$slug'
+import { Route as AiSlugRouteImport } from './routes/ai.$slug'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const VibeCodingMyPortfolioLovableRoute =
+  VibeCodingMyPortfolioLovableRouteImport.update({
+    id: '/vibe-coding-my-portfolio-lovable',
+    path: '/vibe-coding-my-portfolio-lovable',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+const ProcessRoute = ProcessRouteImport.update({
+  id: '/process',
+  path: '/process',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CreatorHubAiProductDesignCaseStudyRoute =
@@ -41,30 +57,40 @@ const CreatorHubAiProductDesignCaseStudyRoute =
     path: '/creator-hub-ai-product-design-case-study',
     getParentRoute: () => rootRouteImport,
   } as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProcessRoute = ProcessRouteImport.update({
-  id: '/process',
-  path: '/process',
+const AiIndexRoute = AiIndexRouteImport.update({
+  id: '/ai/',
+  path: '/ai/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
+const WorkFjord2Route = WorkFjord2RouteImport.update({
+  id: '/work/fjord2',
+  path: '/work/fjord2',
   getParentRoute: () => rootRouteImport,
 } as any)
-const VibeCodingMyPortfolioLovableRoute =
-  VibeCodingMyPortfolioLovableRouteImport.update({
-    id: '/vibe-coding-my-portfolio-lovable',
-    path: '/vibe-coding-my-portfolio-lovable',
+const WorkSlugRoute = WorkSlugRouteImport.update({
+  id: '/work/$slug',
+  path: '/work/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiSlugRoute = AiSlugRouteImport.update({
+  id: '/ai/$slug',
+  path: '/ai/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
 const Char91DotmcpChar93ListToolsRoute =
@@ -73,32 +99,6 @@ const Char91DotmcpChar93ListToolsRoute =
     path: '/.mcp/list-tools',
     getParentRoute: () => rootRouteImport,
   } as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const AiIndexRoute = AiIndexRouteImport.update({
-  id: '/ai/',
-  path: '/ai/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AiSlugRoute = AiSlugRouteImport.update({
-  id: '/ai/$slug',
-  path: '/ai/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WorkSlugRoute = WorkSlugRouteImport.update({
-  id: '/work/$slug',
-  path: '/work/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WorkFjord2Route = WorkFjord2RouteImport.update({
-  id: '/work/fjord2',
-  path: '/work/fjord2',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
   Char91DotmcpChar93InvokeToolToolRouteImport.update({
     id: '/.mcp/invoke-tool/$tool',
@@ -232,46 +232,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/creator-hub-ai-product-design-case-study': {
-      id: '/creator-hub-ai-product-design-case-study'
-      path: '/creator-hub-ai-product-design-case-study'
-      fullPath: '/creator-hub-ai-product-design-case-study'
-      preLoaderRoute: typeof CreatorHubAiProductDesignCaseStudyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/process': {
-      id: '/process'
-      path: '/process'
-      fullPath: '/process'
-      preLoaderRoute: typeof ProcessRouteImport
+    '/vibe-coding-my-portfolio-lovable': {
+      id: '/vibe-coding-my-portfolio-lovable'
+      path: '/vibe-coding-my-portfolio-lovable'
+      fullPath: '/vibe-coding-my-portfolio-lovable'
+      preLoaderRoute: typeof VibeCodingMyPortfolioLovableRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -281,25 +246,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/vibe-coding-my-portfolio-lovable': {
-      id: '/vibe-coding-my-portfolio-lovable'
-      path: '/vibe-coding-my-portfolio-lovable'
-      fullPath: '/vibe-coding-my-portfolio-lovable'
-      preLoaderRoute: typeof VibeCodingMyPortfolioLovableRouteImport
+    '/process': {
+      id: '/process'
+      path: '/process'
+      fullPath: '/process'
+      preLoaderRoute: typeof ProcessRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.mcp/list-tools': {
-      id: '/.mcp/list-tools'
-      path: '/.mcp/list-tools'
-      fullPath: '/.mcp/list-tools'
-      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creator-hub-ai-product-design-case-study': {
+      id: '/creator-hub-ai-product-design-case-study'
+      path: '/creator-hub-ai-product-design-case-study'
+      fullPath: '/creator-hub-ai-product-design-case-study'
+      preLoaderRoute: typeof CreatorHubAiProductDesignCaseStudyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ai/': {
@@ -309,11 +295,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AiIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ai/$slug': {
-      id: '/ai/$slug'
-      path: '/ai/$slug'
-      fullPath: '/ai/$slug'
-      preLoaderRoute: typeof AiSlugRouteImport
+    '/work/fjord2': {
+      id: '/work/fjord2'
+      path: '/work/fjord2'
+      fullPath: '/work/fjord2'
+      preLoaderRoute: typeof WorkFjord2RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/work/$slug': {
@@ -323,11 +309,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/work/fjord2': {
-      id: '/work/fjord2'
-      path: '/work/fjord2'
-      fullPath: '/work/fjord2'
-      preLoaderRoute: typeof WorkFjord2RouteImport
+    '/ai/$slug': {
+      id: '/ai/$slug'
+      path: '/ai/$slug'
+      fullPath: '/ai/$slug'
+      preLoaderRoute: typeof AiSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {
