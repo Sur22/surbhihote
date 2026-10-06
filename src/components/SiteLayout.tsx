@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Linkedin, Mail, Menu, Sparkle } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
-import { ShLogo } from "@/components/ShLogo";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
