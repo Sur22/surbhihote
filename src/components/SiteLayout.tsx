@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Sun, Moon, Linkedin, Mail, Menu, Sparkle } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import { ShLogo } from "@/components/ShLogo";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
@@ -35,7 +36,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
         <div className="mx-auto max-w-[1100px] px-6 md:px-10 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-serif text-2xl leading-none">SH.</span>
+            <ShLogo className="h-6 w-6 text-foreground" />
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
