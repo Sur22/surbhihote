@@ -48,7 +48,7 @@
   --clay: #006e90;
   --sage: oklch(0.55 0.05 150);
   --rule: oklch(0.82 0.02 75);
-  --circle-fill: #a2bdcc;
+  --circle-fill: #cef2f2;
 
   --background: var(--paper);
   --foreground: var(--ink);
