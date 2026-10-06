@@ -299,7 +299,7 @@ export const Route = createFileRoute("/work/$slug")({
     <SiteLayout>
       <div className="mx-auto max-w-2xl px-6 py-32 text-center">
         <h1 className="font-serif text-4xl mb-4">Something broke</h1>
-        <p className="text-muted-foreground mb-6">{error.message}</p>
+        <p className="text-muted-foreground mb-6">{error instanceof Error ? error.message : String(error)}</p>
         <button onClick={reset} className="border-b border-foreground/40 hover:border-foreground">Try again</button>
       </div>
     </SiteLayout>
