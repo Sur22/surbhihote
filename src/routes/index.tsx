@@ -55,7 +55,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     width={1920}
                     height={1920}
                     loading="lazy"
-                    className="h-full w-full object-contain opacity-75"
+                    className="h-full w-full object-contain"
                   />
                   <span className="circle-liquid__sheen" />
                   <span className="circle-liquid__glint" />
