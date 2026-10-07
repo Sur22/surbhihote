@@ -240,8 +240,9 @@
   opacity: 0.45;
 }
 
-/* Light reflection sweeping across the glass */
+/* Light reflection sweeping across the glass — disabled for now */
 .circle-liquid__sheen {
+  display: none;
   position: absolute;
   inset: -20%;
   z-index: 4;
