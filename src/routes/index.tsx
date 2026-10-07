@@ -58,6 +58,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     className="h-full w-full object-contain opacity-75"
                   />
                   <span className="circle-liquid__sheen" />
+                  <span className="circle-liquid__glint" />
                 </div>
               )}
               {c.slug === "solace" && (
