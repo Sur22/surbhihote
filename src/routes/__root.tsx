@@ -130,7 +130,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
-const themeInitScript = `(function(){try{var t=localStorage.getItem('mira-theme-choice');if(t==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){document.documentElement.classList.remove('dark');}})();`;
+const themeInitScript = `(function(){try{var t=localStorage.getItem('mira-theme-choice');if(t==='light'){document.documentElement.classList.remove('dark');}else{document.documentElement.classList.add('dark');}}catch(e){document.documentElement.classList.add('dark');}})();`;
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
