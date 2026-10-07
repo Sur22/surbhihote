@@ -37,7 +37,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <Link to="/" className="flex items-baseline gap-2" aria-label="Surbhi Hote — home">
             <svg
               viewBox="0 0 10.38 12.7"
-              className="h-5 w-auto opacity-15"
+              className="h-5 w-auto opacity-45"
               fill="currentColor"
               stroke="currentColor"
               strokeLinecap="round"
