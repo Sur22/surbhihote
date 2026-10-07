@@ -31,18 +31,18 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     ? {
                         left: 0,
                         transform: "translate(-33.6px, -50%) scale(0.84)",
-                        backgroundColor: "var(--circle-fill)",
+                        backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                       }
                     : i === 1
                       ? {
                           right: 0,
                           transform: "translate(0, -50%) scale(1)",
-                          backgroundColor: "var(--circle-fill)",
+                          backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                         }
                       : {
                           left: "50%",
                           transform: "translate(-50%, -50%) scale(0.7)",
-                          backgroundColor: "var(--circle-fill)",
+                          backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                         }
                 }
               />
