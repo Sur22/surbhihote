@@ -240,8 +240,9 @@
   opacity: 0.45;
 }
 
-/* Light reflection sweeping across the glass */
+/* Light reflection sweeping across the glass — disabled for now */
 .circle-liquid__sheen {
+  display: none;
   position: absolute;
   inset: -20%;
   z-index: 4;
@@ -252,8 +253,9 @@
   animation: circle-sheen 8s ease-in-out infinite;
 }
 
-/* Specular highlight travelling around the glass edge */
+/* Specular highlight travelling around the glass edge — disabled for now */
 .circle-liquid__glint {
+  display: none;
   position: absolute;
   inset: 0;
   z-index: 5;
