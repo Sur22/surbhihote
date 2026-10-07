@@ -171,7 +171,7 @@ function IndexPage() {
           className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
           style={{
             backgroundImage: `url(${heroBg.url})`,
-            transform: "translate(-40px, -90px) scale(0.35)",
+            transform: "scale(0.35)",
             transformOrigin: "bottom right",
           }}
         />
