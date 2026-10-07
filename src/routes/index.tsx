@@ -25,24 +25,21 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <div className="relative">
               <div
                 aria-hidden
-                className="absolute top-1/2 aspect-square h-full rounded-full border-2 border-foreground/20"
+                className="circle-glass absolute top-1/2 aspect-square h-full rounded-full border-2 border-foreground/20"
                 style={
                   i === 0
                     ? {
                         left: 0,
                         transform: "translate(-33.6px, -50%) scale(0.84)",
-                        backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                       }
                     : i === 1
                       ? {
                           right: 0,
                           transform: "translate(0, -50%) scale(1)",
-                          backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                         }
                       : {
                           left: "50%",
                           transform: "translate(-50%, -50%) scale(0.7)",
-                          backgroundColor: "color-mix(in srgb, var(--circle-fill) 85%, transparent)",
                         }
                 }
               />
