@@ -104,7 +104,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "icon",
         type: "image/png",
+        href: "/favicon-dark.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
         href: "/favicon.png",
+        media: "(prefers-color-scheme: light)",
       },
       {
         rel: "apple-touch-icon",
