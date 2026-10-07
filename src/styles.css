@@ -190,8 +190,9 @@
   z-index: 0;
 }
 
-/* Slow-drifting highlight, blurred by the glass above it */
+/* Slow-drifting highlight — disabled so the circles match the gallery surfaces */
 .circle-liquid::before {
+  display: none;
   content: "";
   position: absolute;
   inset: 0;
@@ -205,30 +206,22 @@
   pointer-events: none;
 }
 
-/* Frosted veil sitting on top of the artwork */
+/* Veil on top of the artwork — same filter as the gallery background images */
 .circle-liquid::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 2;
   border-radius: 50%;
-  background-image:
-    radial-gradient(circle at 50% 50%, transparent 90%, rgb(255 255 255 / 0.8) 96.5%, rgb(255 255 255 / 0.08) 100%),
-    radial-gradient(38% 30% at 28% 20%, rgb(255 255 255 / 0.18), transparent 70%),
-    radial-gradient(45% 38% at 74% 80%, color-mix(in srgb, var(--circle-fill) 34%, transparent), transparent 72%);
-  background-size: 100% 100%, 100% 100%, 100% 100%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  backdrop-filter: blur(20px) saturate(185%) brightness(1.02);
-  box-shadow:
-    inset 0 0 0 2px rgb(255 255 255 / 0.55),
-    inset 0 3px 5px rgb(255 255 255 / 0.6),
-    inset 0 -3px 6px rgb(255 255 255 / 0.32),
-    inset 0 -30px 52px rgb(0 0 0 / 0.22);
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgb(255 255 255 / 0.2);
   pointer-events: none;
 }
 
-/* Frosted micro-texture over the glass */
+/* Frosted micro-texture — disabled so the circles match the gallery surfaces */
 .circle-liquid__frost {
+  display: none;
   position: absolute;
   inset: 0;
   z-index: 3;
