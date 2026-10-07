@@ -29,14 +29,9 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
             <div className="relative">
               {circleArt[i] && (
-                <img
-                  src={circleArt[i].url}
-                  alt=""
+                <div
                   aria-hidden="true"
-                  width={1920}
-                  height={1920}
-                  loading="lazy"
-                  className="absolute top-1/2 aspect-square h-full object-contain"
+                  className="absolute top-1/2 aspect-square h-full overflow-hidden"
                   style={
                     i === 0
                       ? {
@@ -53,7 +48,16 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                             transform: "translate(-50%, -50%) scale(0.7)",
                           }
                   }
-                />
+                >
+                  <img
+                    src={circleArt[i].url}
+                    alt=""
+                    width={1920}
+                    height={1920}
+                    loading="lazy"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
               )}
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
