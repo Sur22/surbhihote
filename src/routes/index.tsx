@@ -3,10 +3,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBg from "@/assets/portfolio-hero-bg-v2.png.asset.json";
 import heroBgDark from "@/assets/portfolio-hero-bg-dark-mode.png.asset.json";
 import solaceTilted from "@/assets/techpack-mockup-tilted.png.asset.json";
+import circle1 from "@/assets/circle-1.png.asset.json";
+import circle2 from "@/assets/circle-2.png.asset.json";
+import circle3 from "@/assets/circle-3.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
+
+const circleArt = [circle1, circle2, circle3];
 
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
@@ -23,26 +28,37 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
         <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
             <div className="relative">
-              <div
-                aria-hidden
-                className="circle-glass absolute top-1/2 aspect-square h-full rounded-full border-2 border-foreground/20"
-                style={
-                  i === 0
-                    ? {
-                        left: 0,
-                        transform: "translate(-33.6px, -50%) scale(0.84)",
-                      }
-                    : i === 1
+              {circleArt[i] && (
+                <div
+                  aria-hidden="true"
+                  className="absolute top-1/2 aspect-square h-full overflow-hidden"
+                  style={
+                    i === 0
                       ? {
-                          right: 0,
-                          transform: "translate(0, -50%) scale(1)",
+                          left: 0,
+                          transform: "translate(-33.6px, -50%) scale(0.84)",
                         }
-                      : {
-                          left: "50%",
-                          transform: "translate(-50%, -50%) scale(0.7)",
-                        }
-                }
-              />
+                      : i === 1
+                        ? {
+                            right: 0,
+                            transform: "translate(0, -50%) scale(1)",
+                          }
+                        : {
+                            left: "50%",
+                            transform: "translate(-50%, -50%) scale(0.7)",
+                          }
+                  }
+                >
+                  <img
+                    src={circleArt[i].url}
+                    alt=""
+                    width={1920}
+                    height={1920}
+                    loading="lazy"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+              )}
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
                   <img
