@@ -83,7 +83,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
               {c.subtitle}
             </p>
-            <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground pb-0.5">
+            <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold pb-0.5">
               Read the case study
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </p>

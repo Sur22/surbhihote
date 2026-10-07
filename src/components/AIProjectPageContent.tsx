@@ -263,7 +263,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors whitespace-nowrap">
                     {p.title}
                   </h3>
-                  <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
+                  <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
                     Read the case study →
                   </span>
                 </Link>

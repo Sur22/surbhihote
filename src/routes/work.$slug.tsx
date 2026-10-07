@@ -2173,7 +2173,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
                   {o.title}
                 </h3>
-                <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground transition-colors">
+                <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
                   Read the case study →
                 </span>
               </Link>
