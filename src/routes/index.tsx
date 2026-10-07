@@ -31,7 +31,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               {circleArt[i] && (
                 <div
                   aria-hidden="true"
-                  className="absolute top-1/2 aspect-square h-full overflow-hidden"
+                  className="circle-liquid absolute top-1/2 aspect-square h-full overflow-hidden"
                   style={
                     i === 0
                       ? {
@@ -55,7 +55,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     width={1920}
                     height={1920}
                     loading="lazy"
-                    className="h-full w-full object-contain"
+                    className="h-full w-full object-contain opacity-75"
                   />
                 </div>
               )}

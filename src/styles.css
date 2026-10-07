@@ -173,5 +173,50 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .circle-glass::before { animation: none; }
+  .circle-glass::before,
+  .circle-liquid::before { animation: none; }
+}
+
+/* Liquid glass laid over the case-study circle artwork */
+.circle-liquid {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-liquid img {
+  position: relative;
+  z-index: 0;
+}
+
+/* Slow-drifting highlight, blurred by the glass above it */
+.circle-liquid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(38% 30% at 28% 20%, rgb(255 255 255 / 0.5), transparent 70%),
+    radial-gradient(45% 38% at 74% 80%, color-mix(in srgb, var(--circle-fill) 70%, transparent), transparent 72%);
+  opacity: 0.45;
+  animation: circle-liquid 16s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Frosted veil sitting on top of the artwork */
+.circle-liquid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: 50%;
+  background:
+    radial-gradient(38% 30% at 28% 20%, rgb(255 255 255 / 0.2), transparent 70%),
+    radial-gradient(45% 38% at 74% 80%, color-mix(in srgb, var(--circle-fill) 30%, transparent), transparent 72%);
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.45),
+    inset 0 -1px 1px rgb(255 255 255 / 0.18),
+    inset 0 -22px 44px rgb(0 0 0 / 0.12);
+  pointer-events: none;
 }
