@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import heroBg from "@/assets/portfolio-hero-bg-v2.png.asset.json";
-import heroBgDark from "@/assets/portfolio-hero-bg-dark-mode.png.asset.json";
+import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-mockup-tilted.png.asset.json";
 import circle1 from "@/assets/circle-1.png.asset.json";
 import circle2 from "@/assets/circle-2.png.asset.json";
@@ -169,19 +168,11 @@ function IndexPage() {
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat block dark:hidden"
+          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
           style={{
             backgroundImage: `url(${heroBg.url})`,
-            transform: 'scale(0.7)',
-            transformOrigin: 'bottom right',
-          }}
-        />
-        <div
-          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat hidden dark:block"
-          style={{
-            backgroundImage: `url(${heroBgDark.url})`,
-            transform: 'scale(0.7)',
-            transformOrigin: 'bottom right',
+            transform: "scale(0.7)",
+            transformOrigin: "bottom right",
           }}
         />
         <div className="mx-auto max-w-[1100px] lg:pl-[60px]">
