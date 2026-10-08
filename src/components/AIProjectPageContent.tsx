@@ -105,7 +105,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
               ? "mt-12 overflow-hidden rounded-xl"
               : project.slug === "vibe-coded-portfolio"
                 ? "mt-12 overflow-hidden rounded-xl"
-                : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
+                : project.slug === "resources"
+                  ? "mt-12 mx-auto w-[55%] overflow-hidden rounded-xl border border-border bg-muted/30"
+                  : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
           }
         >
           <img
