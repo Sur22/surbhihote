@@ -38,6 +38,7 @@
   --color-clay: var(--clay);
   --color-sage: var(--sage);
   --color-rule: var(--rule);
+  --color-hover: var(--hover);
 }
 
 :root {
