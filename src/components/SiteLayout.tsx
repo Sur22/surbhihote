@@ -74,7 +74,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <Sheet>
             <SheetTrigger asChild>
               <button
-                className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-hover hover:bg-secondary transition-colors md:hidden"
+                className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors md:hidden"
                 aria-label="Open menu"
               >
                 <Menu size={20} />
