@@ -56,7 +56,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group inline-flex items-center gap-1 text-muted-foreground hover:text-foreground hover:font-bold transition-colors">
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group ml-1 inline-flex items-center gap-1 text-muted-foreground hover:text-foreground hover:font-bold transition-colors">
               AI <Sparkle size={10.5} className="-mr-2 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">Gallery</Link>
