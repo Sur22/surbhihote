@@ -38,6 +38,7 @@
   --color-clay: var(--clay);
   --color-sage: var(--sage);
   --color-rule: var(--rule);
+  --color-hover: var(--hover);
 }
 
 :root {
@@ -49,6 +50,8 @@
   --sage: oklch(0.55 0.05 150);
   --rule: oklch(0.82 0.02 75);
   --circle-fill: #a2bdcc;
+  /* Mid grey used for hover states: reads on paper and on ink alike */
+  --hover: oklch(0.52 0.02 70);
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -77,6 +80,7 @@
   --clay: #5BC2E7;
   --sage: oklch(0.65 0.05 150);
   --rule: oklch(0.28 0.02 75);
+  --hover: oklch(0.72 0.02 70);
 
   --background: var(--paper);
   --foreground: var(--ink);
