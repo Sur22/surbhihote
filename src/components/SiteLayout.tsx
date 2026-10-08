@@ -21,10 +21,14 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+      className="group inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
     >
-      {mounted && resolved === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+      {mounted && resolved === "dark" ? (
+        <Sun size={16} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+      ) : (
+        <Moon size={16} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+      )}
     </button>
   );
 }
@@ -51,17 +55,17 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </svg>
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
-            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors">
-              AI <Sparkle size={10.5} className="text-accent" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">Case Studies</Link>
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group inline-flex items-center gap-1 text-muted-foreground hover:text-foreground hover:font-bold transition-colors">
+              AI <Sparkle size={10.5} className="text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
-            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
-            <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
-              <Mail size={18} />
+            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">Gallery</Link>
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">About</Link>
+            <a href="mailto:surbhihote@gmail.com" className="group text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+              <Mail size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
-            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
-              <Linkedin size={18} />
+            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <Linkedin size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
             <ThemeToggle />
           </nav>
