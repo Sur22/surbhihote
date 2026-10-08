@@ -272,3 +272,15 @@
 @keyframes circle-glint {
   to { transform: rotate(360deg); }
 }
+
+/* Frosted backdrop behind AI project card artwork. The gallery-style veil
+   needs something soft behind it to refract, since the card background is flat. */
+.ai-card-glass__backdrop {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 34% at 26% 22%, rgb(255 255 255 / 0.34), transparent 70%),
+    radial-gradient(48% 40% at 76% 78%, color-mix(in srgb, var(--circle-fill) 75%, transparent), transparent 72%);
+  opacity: 0.7;
+}
