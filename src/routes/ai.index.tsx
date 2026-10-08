@@ -86,13 +86,13 @@ function AIPage() {
                   />
                 </div>
                 <div className="p-6 md:p-8">
-                  <span className="eyebrow text-xs">
+                  <span className="eyebrow text-xs dark:text-foreground/75">
                     {project.tags.join(" · ")}
                   </span>
                   <h2 className="mt-3 font-serif text-2xl text-foreground">
                     {project.title}
                   </h2>
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed dark:text-foreground/80">
                     {project.description}
                   </p>
                 </div>
