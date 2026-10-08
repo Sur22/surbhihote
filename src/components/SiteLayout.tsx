@@ -21,7 +21,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="group inline-flex h-8 items-center justify-center rounded-md px-[1px] pt-px pb-[3px] text-muted-foreground hover:text-hover hover:bg-secondary transition-colors"
+      className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors"
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (
@@ -61,10 +61,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
-            <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 items-center justify-center rounded-md px-[1px] pt-px pb-[3px] text-muted-foreground hover:text-hover hover:bg-secondary transition-colors" aria-label="Email">
+            <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
-            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 items-center justify-center rounded-md px-[1px] pt-px pb-[3px] text-muted-foreground hover:text-hover hover:bg-secondary transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="LinkedIn">
               <Linkedin size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
             <ThemeToggle />
@@ -74,7 +74,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <Sheet>
             <SheetTrigger asChild>
               <button
-                className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-hover hover:bg-secondary transition-colors md:hidden"
+                className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors md:hidden"
                 aria-label="Open menu"
               >
                 <Menu size={20} />
