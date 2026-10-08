@@ -65,6 +65,7 @@ function AIPage() {
               className="group rounded-2xl border border-border bg-card overflow-hidden block"
             >
               <div className="relative overflow-hidden aspect-[4/3] flex items-center justify-center bg-secondary">
+                <div className="ai-card-glass__backdrop" />
                 <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
                 <img
                   src={project.image}
