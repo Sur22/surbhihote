@@ -25,9 +25,9 @@ function ThemeToggle() {
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (
-        <Sun size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+        <Sun size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
       ) : (
-        <Moon size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+        <Moon size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
       )}
     </button>
   );
@@ -62,10 +62,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
             <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="Email">
-              <Mail size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+              <Mail size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
             </a>
             <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="LinkedIn">
-              <Linkedin size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+              <Linkedin size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
             </a>
             <ThemeToggle />
           </nav>
@@ -77,7 +77,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors md:hidden"
                 aria-label="Open menu"
               >
-                <Menu size={20} />
+                <Menu size={20} strokeWidth={1.6} />
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] sm:w-[320px]">
@@ -100,10 +100,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 </div>
                 <div className="flex items-center gap-5 pt-6 border-t border-border">
                   <a href="mailto:surbhihote@gmail.com" className="group text-muted-foreground hover:text-hover transition-colors" aria-label="Email">
-                    <Mail size={20} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+                    <Mail size={20} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
                   </a>
                   <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-hover transition-colors" aria-label="LinkedIn">
-                    <Linkedin size={20} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
+                    <Linkedin size={20} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
                   </a>
                   <ThemeToggle />
                 </div>
@@ -128,10 +128,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           {/* Social icons */}
           <div className="flex items-center gap-5">
             <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-hover transition-colors" aria-label="Email">
-              <Mail size={18} />
+              <Mail size={18} strokeWidth={1.6} />
             </a>
             <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-hover transition-colors" aria-label="LinkedIn">
-              <Linkedin size={18} />
+              <Linkedin size={18} strokeWidth={1.6} />
             </a>
           </div>
 
