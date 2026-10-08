@@ -21,7 +21,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="group mr-1.5 inline-flex h-8 w-8 items-center justify-center rounded-md pr-1 pb-1 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+      className="group inline-flex h-8 items-center justify-center rounded-md px-[3px] pt-px pb-[3px] text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (
@@ -60,11 +60,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               AI <Sparkle size={10.5} className="text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="mr-1.5 text-muted-foreground hover:text-foreground hover:font-bold transition-colors">About</Link>
-            <a href="mailto:surbhihote@gmail.com" className="group -ml-1.5 inline-flex h-8 w-8 items-center justify-center rounded-md pr-1 pb-1 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors" aria-label="Email">
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors">About</Link>
+            <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 items-center justify-center rounded-md px-[3px] pt-px pb-[3px] text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
-            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 w-8 items-center justify-center rounded-md pr-1 pb-1 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 items-center justify-center rounded-md px-[3px] pt-px pb-[3px] text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors" aria-label="LinkedIn">
               <Linkedin size={18} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
             </a>
             <ThemeToggle />
