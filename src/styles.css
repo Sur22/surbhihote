@@ -273,14 +273,17 @@
   to { transform: rotate(360deg); }
 }
 
-/* Frosted backdrop behind AI project card artwork. The gallery-style veil
-   needs something soft behind it to refract, since the card background is flat. */
+/* Frosted backdrop behind AI project cards. The gallery-style veil needs
+   something soft behind it to refract, since the card background is flat.
+   The washes are broad and even so the sheen reads across the whole card
+   without a bright patch sitting under the paragraph. */
 .ai-card-glass__backdrop {
   position: absolute;
   inset: -20%;
   pointer-events: none;
   background:
     radial-gradient(42% 34% at 26% 22%, rgb(255 255 255 / 0.34), transparent 70%),
-    radial-gradient(48% 40% at 76% 78%, color-mix(in srgb, var(--circle-fill) 75%, transparent), transparent 72%);
+    radial-gradient(46% 34% at 80% 26%, color-mix(in srgb, var(--circle-fill) 75%, transparent), transparent 72%),
+    radial-gradient(56% 36% at 28% 86%, color-mix(in srgb, var(--circle-fill) 55%, transparent), transparent 74%);
   opacity: 0.7;
 }

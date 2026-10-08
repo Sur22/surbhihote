@@ -62,38 +62,40 @@ function AIPage() {
               key={project.title}
               to={project.path ?? "/ai/$slug"}
               params={project.path ? undefined : { slug: project.slug }}
-              className="group rounded-2xl border border-border bg-card overflow-hidden block"
+              className="group relative rounded-2xl border border-border bg-secondary overflow-hidden block"
             >
-              <div className="relative overflow-hidden aspect-[4/3] flex items-center justify-center bg-secondary">
-                <div className="ai-card-glass__backdrop" />
-                <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
-                <img
-                  src={project.image}
-                  alt={project.imageAlt}
-                  width={800}
-                  height={600}
-                  loading="lazy"
-                  className={`relative z-10 transition-transform duration-700 group-hover:scale-[1.03] ${
-                    project.title === "Creator Hub"
-                      ? "object-contain w-[85%] h-[85%] m-auto"
-                      : project.slug === "resources"
-                        ? "object-contain w-[70%] h-[70%] m-auto"
-                        : project.title === "Voyager" || project.title === "Vibe Coded Portfolio"
-                        ? "object-contain w-full h-full p-4"
-                        : "object-cover w-full h-full"
-                  }`}
-                />
-              </div>
-              <div className="p-6 md:p-8">
-                <span className="eyebrow text-xs">
-                  {project.tags.join(" · ")}
-                </span>
-                <h2 className="mt-3 font-serif text-2xl text-foreground">
-                  {project.title}
-                </h2>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                  {project.description}
-                </p>
+              <div className="ai-card-glass__backdrop" />
+              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
+              <div className="relative z-10">
+                <div className="overflow-hidden aspect-[4/3] flex items-center justify-center">
+                  <img
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    className={`transition-transform duration-700 group-hover:scale-[1.03] ${
+                      project.title === "Creator Hub"
+                        ? "object-contain w-[85%] h-[85%] m-auto"
+                        : project.slug === "resources"
+                          ? "object-contain w-[70%] h-[70%] m-auto"
+                          : project.title === "Voyager" || project.title === "Vibe Coded Portfolio"
+                            ? "object-contain w-full h-full p-4"
+                            : "object-cover w-full h-full"
+                    }`}
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <span className="eyebrow text-xs">
+                    {project.tags.join(" · ")}
+                  </span>
+                  <h2 className="mt-3 font-serif text-2xl text-foreground">
+                    {project.title}
+                  </h2>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
               </div>
             </Link>
           ))}
