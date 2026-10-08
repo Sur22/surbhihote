@@ -99,11 +99,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                   ))}
                 </div>
                 <div className="flex items-center gap-5 pt-6 border-t border-border">
-                  <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
-                    <Mail size={20} />
+                  <a href="mailto:surbhihote@gmail.com" className="group text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+                    <Mail size={20} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
                   </a>
-                  <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
-                    <Linkedin size={20} />
+                  <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+                    <Linkedin size={20} strokeWidth={2} className="transition-[stroke-width] group-hover:stroke-[2.6]" />
                   </a>
                   <ThemeToggle />
                 </div>
