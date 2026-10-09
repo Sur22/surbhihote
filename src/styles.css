@@ -192,6 +192,7 @@
 .circle-liquid img {
   position: relative;
   z-index: 0;
+  opacity: 0.8;
 }
 
 /* Slow-drifting highlight — disabled so the circles match the gallery surfaces */
