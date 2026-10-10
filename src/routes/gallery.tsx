@@ -91,7 +91,7 @@ const items = [
       { src: dataViz4.url, alt: "Data Visualization — mockup 4" },
     ],
     title: "Data Visualization",
-    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMANCE\u00a0"],
+    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMANCE\u00a0·2021-2026\u00a0"],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
   },
   {
