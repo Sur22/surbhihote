@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/hero-section-background.png.asset.json";
-import solaceTilted from "@/assets/techpack-mockup-tilted.png.asset.json";
+import solaceTilted from "@/assets/techpack-monitor-mockup.png.asset.json";
 import circle1 from "@/assets/circle-1.png.asset.json";
 import circle2 from "@/assets/circle-2.png.asset.json";
 import circle3 from "@/assets/circle-3.png.asset.json";
@@ -66,8 +66,8 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                   <img
                     src={solaceTilted.url}
                     alt={c.title}
-                    width={1920}
-                    height={1424}
+                    width={1460}
+                    height={1077}
                     loading="lazy"
                     className="h-[420px] w-full transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain"
                   />
