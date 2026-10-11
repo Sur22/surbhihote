@@ -2028,9 +2028,9 @@ Users needed an easy way to control and manage the notifications they want and s
                     { src: finalToolScreens.url, label: "Tool screens" },
                     { src: finalSketchSel.url, label: "Sketch selection" },
                     { src: finalDetailedSketch.url, label: "Detailed sketch" },
+                    { src: finalColorMaterialDrawer.url, label: "Color and material drawer" },
                     { src: finalBom.url, label: "Bill of Materials" },
                     { src: finalPdf.url, label: "Exported PDF" },
-                    { src: finalColorMaterialDrawer.url, label: "Color and material drawer" },
                     { src: finalProto.url, label: "Prototype overview" },
                   ]
               ).map((img) => (
