@@ -96,7 +96,7 @@ function AboutPage() {
           <p className="eyebrow mb-3 text-accent">The Impact-Driven Value Creator</p>
           <h1 className="font-serif text-[clamp(2rem,6vw,5.5rem)] leading-[1.1]">
             <span className="text-foreground not-italic">Surbhi Hote</span><br />
-            <em className="text-accent italic">Lead Product Designer</em>
+            <em className="text-accent italic">Senior Product Designer</em>
           </h1>
         </div>
 
