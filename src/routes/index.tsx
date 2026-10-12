@@ -29,16 +29,16 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                   i === 0
                     ? {
                         left: 0,
-                        transform: "translate(-33.6px, -50%) scale(1.12)",
+                        transform: "translate(-33.6px, -50%) scale(0.56)",
                       }
                     : i === 1
                       ? {
                           right: 0,
-                          transform: "translate(0, -50%) scale(1.12)",
+                          transform: "translate(0, -50%) scale(0.56)",
                         }
                       : {
                           left: "50%",
-                          transform: "translate(-50%, -50%) scale(1.15)",
+                          transform: "translate(-50%, -50%) scale(0.575)",
                         }
                 }
               />
