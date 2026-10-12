@@ -10,6 +10,23 @@ import { useReveal } from "@/hooks/use-reveal";
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
+  /* One geometry shared by the frosted disc and the hollow ring behind it, so
+     both circles stay the same size and sit in exactly the same place. */
+  const discStyle =
+    i === 0
+      ? {
+          left: 0,
+          transform: "translate(-33.6px, -50%) scale(0.91)",
+        }
+      : i === 1
+        ? {
+            right: 0,
+            transform: "translate(0, -50%) scale(0.9828)",
+          }
+        : {
+            left: "50%",
+            transform: "translate(-50%, -50%) scale(0.7475)",
+          };
   return (
     <div
       ref={ref}
@@ -24,24 +41,15 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <div className="relative">
               <div
                 aria-hidden="true"
-                className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden"
-                style={
-                  i === 0
-                    ? {
-                        left: 0,
-                        transform: "translate(-33.6px, -50%) scale(0.91)",
-                      }
-                    : i === 1
-                      ? {
-                          right: 0,
-                          transform: "translate(0, -50%) scale(0.9828)",
-                        }
-                      : {
-                          left: "50%",
-                          transform: "translate(-50%, -50%) scale(0.7475)",
-                        }
-                }
+                className="study-glass-ring absolute top-1/2 aspect-square h-full"
+                style={discStyle}
               />
+              <div
+                aria-hidden="true"
+                className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden"
+                style={discStyle}
+              />
+
               {c.slug === "solace" && (
                 <div className="relative w-[99%] mx-auto">
                   <img
