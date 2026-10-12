@@ -230,9 +230,10 @@
   border-radius: 50%;
   overflow: hidden;
   background:
-    radial-gradient(42% 34% at 26% 22%, rgb(255 255 255 / 0.34), transparent 70%),
-    radial-gradient(46% 34% at 80% 26%, color-mix(in srgb, var(--circle-fill) 75%, transparent), transparent 72%),
-    radial-gradient(56% 36% at 28% 86%, color-mix(in srgb, var(--circle-fill) 55%, transparent), transparent 74%);
+    radial-gradient(46% 40% at 30% 24%, rgb(255 255 255 / 0.6), transparent 72%),
+    radial-gradient(62% 55% at 74% 42%, color-mix(in srgb, var(--circle-fill) 92%, transparent), transparent 80%),
+    radial-gradient(72% 62% at 32% 84%, color-mix(in srgb, var(--circle-fill) 72%, transparent), transparent 82%);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 0.1);
 }
 
 .study-glass-disc::after {
@@ -243,7 +244,8 @@
   border-radius: 50%;
   background-color: rgb(255 255 255 / 0.15);
   backdrop-filter: blur(40px);
-  border: 1px solid rgb(255 255 255 / 0.2);
+  border: 1px solid rgb(255 255 255 / 0.55);
+  box-shadow: inset 0 1px 1px rgb(255 255 255 / 0.5);
   pointer-events: none;
 }
 
