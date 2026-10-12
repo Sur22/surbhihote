@@ -223,6 +223,13 @@
   pointer-events: none;
 }
 
+/* Hollow outline echoing each frosted disc: same diameter, 2px accent stroke,
+   painted behind the disc so the glass reads as sitting inside a ring. */
+.study-glass-ring {
+  border-radius: 50%;
+  border: 2px solid var(--clay);
+}
+
 /* The circle artwork is hidden; the glass veil stays as a frosted disc behind
    each case-study image. The washes give the veil something soft to refract,
    since the page background is flat. */
