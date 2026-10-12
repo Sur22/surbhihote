@@ -533,13 +533,13 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
           )}
           {c.slug === "atlas" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+              <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.opportunity}
+                {c.opportunity ?? c.goal}
               </p>
             </div>
           )}
-          {c.slug !== "affiliate-platform-redesign" && (
+          {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : (c.slug === "atlas") ? "\n" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
