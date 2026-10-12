@@ -88,8 +88,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             </div>
           </div>
           <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="font-serif text-2xl text-accent">{c.index}</span>
+            <div className="mb-4">
               <span className="eyebrow">{c.tags.join(" · ")}</span>
             </div>
             <h3 className="font-serif text-4xl md:text-5xl mb-5 whitespace-pre-line">
