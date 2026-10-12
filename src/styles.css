@@ -223,6 +223,37 @@
   pointer-events: none;
 }
 
+/* The circle artwork is hidden; the glass veil stays as a frosted disc behind
+   each case-study image. The washes give the veil something soft to refract,
+   since the page background is flat. */
+.study-glass-disc {
+  border-radius: 50%;
+  overflow: hidden;
+  background:
+    radial-gradient(46% 40% at 30% 24%, rgb(255 255 255 / 0.6), transparent 72%),
+    radial-gradient(62% 55% at 74% 42%, color-mix(in srgb, var(--circle-fill) 92%, transparent), transparent 80%),
+    radial-gradient(72% 62% at 32% 84%, color-mix(in srgb, var(--circle-fill) 72%, transparent), transparent 82%);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 0.1);
+}
+
+.study-glass-disc::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(40px);
+  /* A rim the page white can actually show: tinted with the circle colour. */
+  border: 1px solid color-mix(in srgb, var(--circle-fill) 55%, transparent);
+  background-image: radial-gradient(38% 26% at 30% 18%, rgb(255 255 255 / 0.55), transparent 70%);
+  box-shadow:
+    inset 0 1px 2px rgb(255 255 255 / 0.8),
+    inset 0 -16px 32px rgb(0 0 0 / 0.05),
+    0 18px 45px rgb(0 0 0 / 0.08);
+  pointer-events: none;
+}
+
 /* Frosted micro-texture — disabled so the circles match the gallery surfaces */
 .circle-liquid__frost {
   display: none;
