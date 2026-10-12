@@ -533,15 +533,15 @@ The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend
           )}
           {c.slug === "atlas" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
+              <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.opportunity}
+                {c.opportunity ?? c.goal}
               </p>
             </div>
           )}
-          {c.slug !== "affiliate-platform-redesign" && (
+          {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : (c.slug === "atlas") ? "\n" : "Goal"}</h2>
+              <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace"
                   ? "The goal is to create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.\u00a0\n"
