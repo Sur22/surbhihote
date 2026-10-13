@@ -71,12 +71,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </svg>
           </Link>
           <nav className="hidden md:flex items-center gap-3 text-sm">
-            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors">Case Studies</Link>
+            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>Case Studies</NavLabel></Link>
             <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center gap-1 rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors">
-              AI <Sparkle size={10.5} className="-mr-1 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+              <NavLabel>AI <Sparkle size={10.5} className="-mr-1 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" /></NavLabel>
             </Link>
-            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors">Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors">About</Link>
+            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>Gallery</NavLabel></Link>
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>About</NavLabel></Link>
             <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
             </a>
