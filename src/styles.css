@@ -223,11 +223,14 @@
   pointer-events: none;
 }
 
-/* Hollow outline echoing each frosted disc: same diameter, 2px accent stroke,
-   painted behind the disc so the glass reads as sitting inside a ring. */
+/* Hollow outline echoing each frosted disc: same diameter, 2px accent stroke.
+   It rides above the disc's frosted veil (which would otherwise blur the
+   stroke into a soft smear) and below the product image, which is lifted to
+   z-10 in the route, so the artwork still sits on top of both. */
 .study-glass-ring {
   border-radius: 50%;
   border: 2px solid var(--clay);
+  z-index: 3;
 }
 
 /* The circle artwork is hidden; the glass veil stays as a frosted disc behind
