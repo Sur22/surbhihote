@@ -13,6 +13,22 @@ const nav = [
   { to: "/about", label: "About" },
 ] as const;
 
+/* Menu labels keep the bold weight's width reserved at all times, so bolding on
+   hover never nudges the neighbouring items sideways — the same stability the
+   icons get from thickening their stroke instead of their size. */
+function NavLabel({ children }: { children: ReactNode }) {
+  return (
+    <span className="relative inline-flex items-center">
+      <span aria-hidden="true" className="invisible font-bold whitespace-nowrap">
+        {children}
+      </span>
+      <span className="absolute inset-0 flex items-center justify-center whitespace-nowrap">
+        {children}
+      </span>
+    </span>
+  );
+}
+
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
