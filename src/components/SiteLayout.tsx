@@ -13,22 +13,6 @@ const nav = [
   { to: "/about", label: "About" },
 ] as const;
 
-/* Menu labels keep the bold weight's width reserved at all times, so bolding on
-   hover never nudges the neighbouring items sideways — the same stability the
-   icons get from thickening their stroke instead of their size. */
-function NavLabel({ children }: { children: ReactNode }) {
-  return (
-    <span className="relative inline-flex items-center">
-      <span aria-hidden="true" className="invisible font-bold whitespace-nowrap">
-        {children}
-      </span>
-      <span className="absolute inset-0 flex items-center justify-center whitespace-nowrap">
-        {children}
-      </span>
-    </span>
-  );
-}
-
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -70,13 +54,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <path d="M9.82,7.74c-2.6-.81-5.2-1.61-7.8-2.42-.26-.1-.7-.32-.99-.79-.52-.83-.23-1.94.25-2.55.2-.26.52-.49,1.15-.94.33-.24.62-.42.82-.54,0,0,0,0,0,0,0,0-.77.39-1.34.69-.35.18-.82.43-1.39.75,0,1.06,0,2.12,0,3.18l6.75,2.06c.48.17,1.34.55,1.81,1.19.06.08.13.19.18.31.08.27.25.95-.03,1.65-.03.06-.14.35-.39.65-.08.1-.23.27-.7.61-.54.39-.95.61-.94.62,0,.01.35-.16.73-.38.2-.11.43-.25,1.01-.62.22-.14.52-.34.87-.57,0-.96,0-1.92,0-2.88Z" />
             </svg>
           </Link>
-          <nav className="hidden md:flex items-center gap-3 text-sm">
-            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>Case Studies</NavLabel></Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center gap-1 rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors">
-              <NavLabel>AI <Sparkle size={10.5} className="-mr-1 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" /></NavLabel>
+          <nav className="hidden md:flex items-center gap-7 text-sm">
+            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Case Studies</Link>
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group ml-1 inline-flex items-center gap-1 text-muted-foreground hover:text-hover hover:font-bold transition-colors">
+              AI <Sparkle size={10.5} className="-mr-3 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
-            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>Gallery</NavLabel></Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="group inline-flex h-8 items-center rounded-md px-2 text-muted-foreground hover:text-hover hover:bg-foreground/10 hover:font-bold transition-colors"><NavLabel>About</NavLabel></Link>
+            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
             <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
             </a>
