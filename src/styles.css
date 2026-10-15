@@ -334,6 +334,16 @@
   --border: var(--rule);
 }
 
+/* On dark paper a 20% tint lets the page show through, so the card's own
+   surface goes dark. There the pinned ink flips to light instead, keeping
+   title, paragraph, eyebrow, link and hairline all readable. */
+.dark .study-card-surface {
+  --ink: oklch(0.95 0.01 70);
+  --muted-foreground: oklch(0.82 0.01 70);
+  --rule: oklch(0.72 0.02 75);
+}
+
+
 /* Soft washes under the veil — a frosted panel needs something to refract,
    since a flat tint blurs into nothing. */
 .study-card-glass__backdrop {
