@@ -96,7 +96,7 @@ function CaseStudyArtwork({
             width={1460}
             height={1077}
             loading="lazy"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
+            className="absolute top-[calc(50%_-_5.6px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
           />
           <img
             src={solaceTilted.url}
