@@ -61,12 +61,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
-            <a href="mailto:surbhihote@gmail.com" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="Email">
-              <Mail size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
-            </a>
-            <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group inline-flex h-8 w-8 -mx-1.5 items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors" aria-label="LinkedIn">
-              <Linkedin size={18} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
-            </a>
+            <a href="/resume.pdf" className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Resume</a>
             <ThemeToggle />
           </nav>
 
@@ -97,14 +92,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       </Link>
                     </SheetClose>
                   ))}
+                  <SheetClose asChild>
+                    <a href="/resume.pdf" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-hover transition-colors">
+                      Resume
+                    </a>
+                  </SheetClose>
                 </div>
                 <div className="flex items-center gap-5 pt-6 border-t border-border">
-                  <a href="mailto:surbhihote@gmail.com" className="group text-muted-foreground hover:text-hover transition-colors" aria-label="Email">
-                    <Mail size={20} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="group text-muted-foreground hover:text-hover transition-colors" aria-label="LinkedIn">
-                    <Linkedin size={20} strokeWidth={1.6} className="transition-[stroke-width] group-hover:stroke-[2.08]" />
-                  </a>
                   <ThemeToggle />
                 </div>
               </div>
