@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/hero-section-background.png.asset.json";
-import solaceTilted from "@/assets/techpack-monitor-mockup.png.asset.json";
+import solaceTilted from "@/assets/techpack-monitor-screen.png.asset.json";
 import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
