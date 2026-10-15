@@ -375,7 +375,7 @@ function IndexPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* The artwork's right edge tracks the end of the hero copy. */}
+        {/* The artwork's right edge tracks the theme switch in the nav. */}
         <div
           className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
             artRightInset === null ? "opacity-0" : "opacity-100"
