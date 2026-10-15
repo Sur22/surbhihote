@@ -64,10 +64,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <path d="M9.82,7.74c-2.6-.81-5.2-1.61-7.8-2.42-.26-.1-.7-.32-.99-.79-.52-.83-.23-1.94.25-2.55.2-.26.52-.49,1.15-.94.33-.24.62-.42.82-.54,0,0,0,0,0,0,0,0-.77.39-1.34.69-.35.18-.82.43-1.39.75,0,1.06,0,2.12,0,3.18l6.75,2.06c.48.17,1.34.55,1.81,1.19.06.08.13.19.18.31.08.27.25.95-.03,1.65-.03.06-.14.35-.39.65-.08.1-.23.27-.7.61-.54.39-.95.61-.94.62,0,.01.35-.16.73-.38.2-.11.43-.25,1.01-.62.22-.14.52-.34.87-.57,0-.96,0-1.92,0-2.88Z" />
             </svg>
           </Link>
-          <nav className="hidden md:flex items-center gap-7 text-sm">
+          <nav className="hidden md:flex items-center gap-[44px] text-sm">
             <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className={navItemClass}>Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className={`group ml-3 inline-flex items-center gap-1 ${navItemClass}`}>
-              AI <Sparkle size={10.5} className="-mr-3 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className={`group inline-flex items-center gap-1 ${navItemClass}`}>
+              AI <Sparkle size={10.5} className="text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className={navItemClass}>Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className={navItemClass}>About</Link>
