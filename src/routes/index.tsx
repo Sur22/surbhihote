@@ -94,7 +94,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             : ""
         }`}
       >
-        <div className={wide ? "md:col-span-7" : "p-6 pb-0"}>
+        <div className={wide ? "md:col-span-7" : "study-card-panel p-6"}>
           <div className={wide ? "" : "relative h-[300px]"}>
             <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
           </div>
