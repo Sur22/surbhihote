@@ -318,24 +318,49 @@
   to { transform: rotate(360deg); }
 }
 
-/* All three case-study cards sit on white in both themes. The page's ink flips
-   to light on dark paper, so the card pins the light-paper ink to itself: the
-   title, paragraph, rule and hairline border inside stay dark on white. */
+/* Case-study cards wear the circle colour with the gallery's frosted recipe.
+   The page's ink flips to light on dark paper, so the card pins the light-paper
+   ink to itself: title, paragraph, eyebrow and hairline border stay dark. */
 .study-card-surface {
-  background-color: #fff;
+  position: relative;
+  background-color: color-mix(in srgb, var(--circle-fill) 85%, transparent);
   color: var(--ink);
   --ink: oklch(0.18 0.02 60);
   --foreground: var(--ink);
   --card-foreground: var(--ink);
-  --muted-foreground: oklch(0.45 0.02 70);
-  --rule: oklch(0.82 0.02 75);
+  --muted-foreground: oklch(0.28 0.02 70);
+  --rule: oklch(0.72 0.02 75);
   --border: var(--rule);
 }
 
-/* Artwork panel inside a compact card — flat white so panel and card read as
-   one surface; the frosted disc carries its own washes. */
+/* Soft washes under the veil — a frosted panel needs something to refract,
+   since a flat tint blurs into nothing. */
+.study-card-glass__backdrop {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 34% at 26% 22%, rgb(255 255 255 / 0.5), transparent 70%),
+    radial-gradient(46% 34% at 80% 26%, color-mix(in srgb, var(--circle-fill) 90%, transparent), transparent 72%),
+    radial-gradient(56% 36% at 28% 86%, color-mix(in srgb, var(--circle-fill) 70%, transparent), transparent 74%);
+  opacity: 0.8;
+}
+
+/* The veil: blur with a 15% white tint and a rim the tint can show. It sits
+   over the washes and under the artwork and text, so both stay sharp. */
+.study-card-glass__veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(40px) saturate(160%);
+  border: 1px solid rgb(255 255 255 / 0.35);
+}
+
+/* Artwork panel inside a compact card — clear so the card's own frosted tint
+   shows through; the disc in front carries its own washes. */
 .study-card-panel {
-  background: #fff;
+  background: transparent;
 }
 
 /* Hairline outline for the two compact case-study cards. The default rule is
