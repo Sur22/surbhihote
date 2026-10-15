@@ -404,7 +404,7 @@ function IndexPage() {
             </h1>
             <p
               ref={heroCopyRef}
-              className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80"
+              className="mt-[7px] md:mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80"
             >
               I balance user needs, business opportunities, and technological realities to create simple, scalable products.
             </p>
