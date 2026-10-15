@@ -429,8 +429,6 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
-
       {/* Bring: one line of pills, on the page's own paper. */}
       <section className="bring py-10 md:py-12">
         <div className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-8 gap-y-4 px-6 md:px-10">
@@ -447,6 +445,8 @@ function IndexPage() {
           </ul>
         </div>
       </section>
+
+      <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
 
       {/* Selected work */}
