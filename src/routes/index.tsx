@@ -323,8 +323,10 @@ export const Route = createFileRoute("/")({
   component: IndexPage,
 });
 
-/** Tracks where the hero copy ends on the right, as an inset from the section's
- *  right edge, so the artwork can be pinned to that same line. */
+/** Tracks where the theme switch ends on the right, as an inset from the
+ *  hero section's right edge, so the artwork is pinned to that same line.
+ *  On phones the theme switch lives in the hidden menu, so the artwork falls
+ *  back to the end of the hero copy, as before. */
 function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
   const [inset, setInset] = useState<number | null>(null);
 
@@ -334,12 +336,20 @@ function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
     if (!el || !section) return;
 
     const measure = () => {
-      const range = document.createRange();
-      range.selectNodeContents(el);
-      const rects = Array.from(range.getClientRects()).filter((r) => r.width > 1);
-      if (!rects.length) return;
-      const textRight = Math.max(...rects.map((r) => r.right));
-      setInset(Math.max(0, Math.round(section.getBoundingClientRect().right - textRight)));
+      const toggle = document.querySelector<HTMLElement>(
+        'header button[aria-label="Toggle theme"]'
+      );
+      let targetRight: number;
+      if (toggle && toggle.getBoundingClientRect().width > 0) {
+        targetRight = toggle.getBoundingClientRect().right;
+      } else {
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        const rects = Array.from(range.getClientRects()).filter((r) => r.width > 1);
+        if (!rects.length) return;
+        targetRight = Math.max(...rects.map((r) => r.right));
+      }
+      setInset(Math.max(0, Math.round(section.getBoundingClientRect().right - targetRight)));
     };
 
     measure();
@@ -365,7 +375,7 @@ function IndexPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* The artwork's right edge tracks the end of the hero copy. */}
+        {/* The artwork's right edge tracks the theme switch in the nav. */}
         <div
           className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
             artRightInset === null ? "opacity-0" : "opacity-100"
