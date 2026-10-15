@@ -19,21 +19,18 @@ function CaseStudyArtwork({
 }) {
   /* One geometry shared by the frosted disc and the hollow ring behind it, so
      both circles stay the same size and sit in exactly the same place. */
-  const discStyle =
-    i === 0
-      ? {
-          left: 0,
-          transform: "translate(-33.6px, -50%) scale(0.91)",
-        }
-      : i === 1
-        ? {
-            right: 0,
-            transform: "translate(0, -50%) scale(0.9828)",
-          }
-        : {
-            left: "50%",
-            transform: "translate(-50%, -50%) scale(0.7475)",
-          };
+  const compact = i !== 0;
+  /* The wide card keeps its original disc geometry; the two compact cards
+     share one centered disc so both cards read as the same size and shape. */
+  const discStyle = compact
+    ? {
+        left: "50%",
+        transform: "translate(-50%, -50%) scale(0.8)",
+      }
+    : {
+        left: 0,
+        transform: "translate(-33.6px, -50%) scale(0.91)",
+      };
   return (
     <div className="relative h-full">
       <div
