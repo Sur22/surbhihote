@@ -46,11 +46,10 @@ function CaseStudyArtwork({
      one centered disc so both cards read as the same size and shape. The
      notifications disc grew 35% from 0.8 to match the Tech Pack disc. */
   const compactScale = c.slug === "solace" || c.slug === "atlas" ? 1.08 : 0.8;
-  /* The Notifications circle drops so its own lower edge lands on the line where
-     the colour ends — the same line the phone is pinned to. The circle is 324px
-     tall (300px at 1.08) centred in the 300px artwork box, so its lower edge
-     falls 12px short of that line; 12px brings it down to it. */
-  const drop = c.slug === "atlas" ? 12 : 0;
+  /* The Notifications circle drops past the line where the colour ends: 12px
+     lands its lowest point on the line, plus a further 15px the user asked for
+     so the visible curve meets the line beside the phone. */
+  const drop = c.slug === "atlas" ? 27 : 0;
   const discStyle = compact
     ? {
         left: "50%",
@@ -68,8 +67,8 @@ function CaseStudyArtwork({
     top: `calc(50% + ${drop}px)`,
     transform: `translate(-50%, -50%) scale(${compact ? compactScale : 0.8})`,
   };
-  return (
-    <div className="relative h-full">
+  const circles = (
+    <>
       <div
         aria-hidden="true"
         className="study-glass-ring absolute top-1/2 aspect-square h-full md:hidden"
@@ -90,6 +89,21 @@ function CaseStudyArtwork({
         className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden hidden md:block"
         style={discStyle}
       />
+    </>
+  );
+  return (
+    <div className="relative h-full">
+      {c.slug === "atlas" ? (
+        /* The Notifications circle hangs below the colour line, so it is
+           trimmed exactly at that line (the panel's 24px padding edge) and
+           never spills into the text half. */
+        <div aria-hidden="true" className="pointer-events-none absolute -inset-6 overflow-hidden">
+          <div className="absolute inset-6">{circles}</div>
+        </div>
+      ) : (
+        circles
+      )}
+
 
       {c.slug === "affiliate-platform-redesign" ? (
         /* The tint runs from the card's own edge while the mockup column starts
