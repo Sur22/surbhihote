@@ -63,7 +63,9 @@ function CaseStudyArtwork({
       }
     : {
         left: 0,
-        transform: "translate(-33.6px, -50%) scale(0.91)",
+        /* The wide card's circle sits left of its picture column; 15px further
+           left than the original -33.6px, as the user asked. */
+        transform: "translate(-48.6px, -50%) scale(0.91)",
       };
   /* Below the md breakpoint all three cards share one centered disc, so the
      wide card's picture sits in the same frame as the other two. */
