@@ -60,14 +60,14 @@ function CaseStudyArtwork({
           </div>
         </div>
       ) : c.slug === "solace" ? (
-        <div className="relative z-10 w-[99%] mx-auto">
+        <div className="relative z-10 w-[99%] mx-auto flex justify-center">
           <img
             src={solaceTilted.url}
             alt={c.title}
-            width={1460}
-            height={1077}
+            width={1338}
+            height={794}
             loading="lazy"
-            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain`}
+            className={`${imageHeight} ${compact ? "w-[115%] max-w-none" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain`}
           />
         </div>
       ) : (
