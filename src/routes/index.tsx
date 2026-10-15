@@ -111,7 +111,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
           >
             {c.title}
           </h3>
-          <p className="text-lg leading-relaxed text-foreground/75">
+          <p className="text-lg leading-relaxed text-foreground/85">
             {c.subtitle}
           </p>
           <div className="rule mt-8 mb-6" />
