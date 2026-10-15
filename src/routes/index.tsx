@@ -72,18 +72,18 @@ function CaseStudyArtwork({
           />
         </div>
       ) : c.slug === "atlas" ? (
-        /* The crop removed the phone's lower quarter, so the artwork band keeps
-           its height while the picture box shrinks by the same proportion the
-           crop did (722 of 976 rows) — the phone stays exactly as large as it
-           was before the crop and sits centred on the frosted disc. */
-        <div className={`relative z-10 flex ${imageHeight} items-center justify-center`}>
+        /* The phone grows by 30% and drops to rest on the lower edge of the
+           tinted band. That edge sits 44px under the artwork band (24px card
+           padding plus the band's 20px slack), so the item is bottom-aligned
+           and pulled down by exactly that much — no magic numbers elsewhere. */
+        <div className={`relative z-10 flex ${imageHeight} ${compact ? "items-end" : "items-center"} justify-center`}>
           <img
             src={atlasCrop.url}
             alt={c.title}
             width={649}
             height={722}
             loading="lazy"
-            className={`${compact ? "h-[207px]" : "h-[296px]"} w-[85%] object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`${compact ? "h-[269.1px] w-auto max-w-full mb-[-44px]" : "h-[296px] w-[85%]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : (
