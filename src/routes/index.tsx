@@ -54,7 +54,7 @@ function CaseStudyArtwork({
      the md breakpoint up: Notifications sits 20px left, Tech Pack 45px right.
      On phones the circle is wider than the card, so shifting it would slice its
      edge flat against the trim; there both stay centred. */
-  const nudge = c.slug === "atlas" ? -20 : c.slug === "solace" ? 45 : 0;
+  const nudge = c.slug === "atlas" ? -20 : c.slug === "solace" ? 60 : 0;
   const discStyle = compact
     ? {
         left: `calc(50% + ${nudge}px)`,
