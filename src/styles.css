@@ -412,6 +412,14 @@
   background-color: color-mix(in srgb, var(--circle-fill) 20%, transparent);
 }
 
+/* The wide card's tint moves to a full-height layer behind the artwork side,
+   so its own column stays clear at desktop widths and the two never stack. */
+@media (min-width: 768px) {
+  .study-card-panel--wide {
+    background-color: transparent;
+  }
+}
+
 /* Hairline outline for the two compact case-study cards. The default rule is
    too faint against the page, so this mixes the theme's ink instead — it
    darkens on light paper and lightens on dark paper, with no extra variant. */

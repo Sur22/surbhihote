@@ -100,7 +100,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       <Link
         to="/work/$slug"
         params={{ slug: c.slug }}
-        className={`group overflow-hidden rounded-[var(--radius-xl)] border study-card-surface ${
+        className={`group relative overflow-hidden rounded-[var(--radius-xl)] border study-card-surface ${
           wide
             ? "grid md:grid-cols-12 gap-8 md:gap-12 items-center p-8 md:p-12"
             : "study-card-outline block"
@@ -108,7 +108,16 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       >
         {/* <div className="study-card-glass__backdrop" /> */}
         {/* <div className="study-card-glass__veil" /> */}
-        <div className={`relative z-10 study-card-panel ${wide ? "md:col-span-7" : "p-6"}`}>
+        {wide ? (
+          /* On the wide card the tint fills the whole artwork side — from the
+             card's own edge across the gutters to the middle of the gap — so
+             nothing behind the mockup sits on clear paper. */
+          <div
+            aria-hidden="true"
+            className="study-card-panel absolute inset-y-0 left-0 z-0 hidden w-[58%] md:block"
+          />
+        ) : null}
+        <div className={`relative z-10 study-card-panel ${wide ? "md:col-span-7 study-card-panel--wide" : "p-6"}`}>
           <div className={wide ? "" : "relative h-[300px]"}>
             <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
           </div>
