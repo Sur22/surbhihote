@@ -474,7 +474,7 @@
    instead of running past its edge. */
 .study-card-outline h3,
 .study-card-outline-mobile h3 {
-  font-size: min(32px, calc(9.2cqi - 7px));
+  font-size: min(32px, calc(9.2cqi - 8px));
 }
 
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
