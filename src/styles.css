@@ -405,10 +405,11 @@
 }
 
 
-/* Artwork panel inside a compact card — clear so the card's own frosted tint
-   shows through; the disc in front carries its own washes. */
+/* The picture half of each card wears the circle colour again; the text half
+   stays clear. On a compact card that panel is the upper band, on the wide
+   card it is the artwork column. */
 .study-card-panel {
-  background: transparent;
+  background-color: color-mix(in srgb, var(--circle-fill) 20%, transparent);
 }
 
 /* Hairline outline for the two compact case-study cards. The default rule is
