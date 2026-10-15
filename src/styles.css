@@ -476,6 +476,12 @@
   background-color: transparent;
 }
 
+/* Bring band under the strip: label plus pills. Like the strip, it wears the
+   page's own paper and ink rather than pinning its own colours. */
+.bring {
+  background-color: transparent;
+}
+
 
 /* The big line of each column: display serif, sized to the viewport so it
    stays a headline rather than a heading. */

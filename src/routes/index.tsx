@@ -18,6 +18,15 @@ const strip = [
   { figure: "MS CS", label: "ex-developer, speaks engineering" },
 ];
 
+/* The capabilities the band under the strip lists as pills. */
+const bring = [
+  "End-to-end design",
+  "AI workflows",
+  "Systems and product thinking",
+  "UX strategy",
+  "Data and outcome driven design",
+];
+
 
 
 
@@ -363,6 +372,25 @@ function IndexPage() {
               <p className="mt-2 text-sm text-foreground/70">{s.label}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
+
+      {/* Bring: one line of pills, on the page's own paper. */}
+      <section className="bring py-10 md:py-12">
+        <div className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-8 gap-y-4 px-6 md:px-10">
+          <p className="eyebrow font-semibold">What I bring</p>
+          <ul className="flex flex-wrap items-center gap-3">
+            {bring.map((b) => (
+              <li
+                key={b}
+                className="rounded-full border border-border bg-card px-5 py-2.5 text-sm text-foreground"
+              >
+                {b}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
