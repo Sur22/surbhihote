@@ -443,6 +443,16 @@
   }
 }
 
+/* The site's h3: a serif heading one step above the h4. It's a class so any
+   element can wear the h3 look without changing its own heading level. */
+.h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
 /* The site's h4: a small serif heading. It's a class so any element can wear
    the h4 look without changing its own heading level. */
 .h4 {
@@ -454,7 +464,7 @@
 }
 
 /* Compact card titles must hold one line at every width, so the text never
-   wraps; the size itself comes from the h4 scale above. */
+   wraps; the size itself comes from the h3 scale above. */
 .study-card-title {
   white-space: nowrap;
 }
