@@ -50,9 +50,12 @@ function CaseStudyArtwork({
      lands its lowest point on the line, plus a further 15px the user asked for
      so the visible curve meets the line beside the phone. */
   const drop = c.slug === "atlas" ? 27 : 0;
+  /* The Notifications circle also sits 20px left of the card's centre line, on
+     desktop and on phones alike. */
+  const nudge = c.slug === "atlas" ? 20 : 0;
   const discStyle = compact
     ? {
-        left: "50%",
+        left: `calc(50% - ${nudge}px)`,
         top: `calc(50% + ${drop}px)`,
         transform: `translate(-50%, -50%) scale(${compactScale})`,
       }
@@ -63,7 +66,7 @@ function CaseStudyArtwork({
   /* Below the md breakpoint all three cards share one centered disc, so the
      wide card's picture sits in the same frame as the other two. */
   const mobileDisc = {
-    left: "50%",
+    left: `calc(50% - ${nudge}px)`,
     top: `calc(50% + ${drop}px)`,
     transform: `translate(-50%, -50%) scale(${compact ? compactScale : 0.8})`,
   };
