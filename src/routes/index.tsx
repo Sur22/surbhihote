@@ -81,8 +81,9 @@ function CaseStudyArtwork({
            edge to the edge of the tinted band (the artwork box's lower edge plus
            the 24px card padding), so it holds that line at every width — below
            the md breakpoint the picture takes its own aspect from the width,
-           above it from the height. 349.8px filled the band top to bottom, so
-           the picture sits at 297.3px (15% smaller) to leave air above it. */
+           above it from the height. Reduced again by 15%: 349.8 -> 297.3 ->
+           252.7px, and the mobile width follows the same factor (85% -> 72.25%)
+           so the phone keeps one proportion at every screen size. */
         <div className="relative z-10 h-full">
           <img
             src={atlasCrop.url}
@@ -90,7 +91,7 @@ function CaseStudyArtwork({
             width={649}
             height={722}
             loading="lazy"
-            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[85%] h-auto ${compact ? "md:w-auto md:h-[297.3px]" : "md:h-[296px]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[72.25%] h-auto ${compact ? "md:w-auto md:h-[252.7px]" : "md:h-[296px]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : (
