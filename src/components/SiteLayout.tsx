@@ -6,6 +6,9 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
+const RESUME_URL =
+  "https://docs.google.com/document/d/18LdfBEqmdi4HAGj1VbHkW_BTY7UHecJ5/edit?usp=sharing&ouid=115603348250759583791&rtpof=true&sd=true";
+
 const nav = [
   { to: "/", label: "Case Studies", hash: "case-studies" as const },
   { to: "/ai", label: "AI" },
@@ -61,7 +64,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
             <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
-            <a href="/resume.pdf" className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Resume</a>
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Resume</a>
             <ThemeToggle />
           </nav>
 
@@ -93,7 +96,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                     </SheetClose>
                   ))}
                   <SheetClose asChild>
-                    <a href="/resume.pdf" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-hover transition-colors">
+                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-hover transition-colors">
                       Resume
                     </a>
                   </SheetClose>
