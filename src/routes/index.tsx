@@ -423,7 +423,7 @@ function IndexPage() {
       </div>
 
       {/* Strip: three facts about the practice, on the page's own paper. */}
-      <section className="strip py-12 md:py-14">
+      <section className="strip pt-12 pb-2 md:pt-14 md:pb-2">
         <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-3 md:gap-12 md:px-10">
           {strip.map((s) => (
             <div key={s.label}>
@@ -435,7 +435,7 @@ function IndexPage() {
       </section>
 
       {/* Bring pills: the label heads the strip above, only pills sit here. */}
-      <section className="bring py-10 md:py-12">
+      <section className="bring pt-5 pb-10 md:pt-9 md:pb-12">
         <ul className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-3 px-6 md:px-10">
           {bring.map((b) => (
             <li
