@@ -324,13 +324,13 @@
    ink to itself: title, paragraph, eyebrow and hairline border stay dark. */
 .study-card-surface {
   position: relative;
-  background-color: color-mix(in srgb, var(--circle-fill) 72%, transparent);
+  background-color: color-mix(in srgb, var(--circle-fill) 60%, transparent);
   color: var(--ink);
   --ink: oklch(0.18 0.02 60);
   --foreground: var(--ink);
   --card-foreground: var(--ink);
-  --muted-foreground: oklch(0.28 0.02 70);
-  --rule: oklch(0.72 0.02 75);
+  --muted-foreground: oklch(0.24 0.02 70);
+  --rule: oklch(0.48 0.02 75);
   --border: var(--rule);
 }
 
