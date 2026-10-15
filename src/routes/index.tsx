@@ -329,8 +329,8 @@ export const Route = createFileRoute("/")({
 
 /** Tracks where the theme switch ends on the right, as an inset from the
  *  hero section's right edge, so the artwork is pinned to that same line.
- *  On phones the theme switch lives in the hidden menu, so the artwork falls
- *  back to the end of the hero copy, as before. */
+ *  On phones and tablets the theme switch lives in the hidden menu, so there
+ *  the artwork goes all the way into the section's right corner (inset 0). */
 function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
   const [inset, setInset] = useState<number | null>(null);
 
@@ -340,6 +340,11 @@ function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
     if (!el || !section) return;
 
     const measure = () => {
+      /* Phones and tablets: hug the section's own right edge. */
+      if (window.innerWidth < 1024) {
+        setInset(0);
+        return;
+      }
       const toggle = document.querySelector<HTMLElement>(
         'header button[aria-label="Toggle theme"]'
       );
