@@ -469,6 +469,16 @@
   white-space: nowrap;
 }
 
+/* On phones that single line sits in a much narrower column, so the h3 title
+   scales with the card itself (both card shapes are query containers below
+   the md breakpoint) instead of running past the card's edge. */
+@media (max-width: 767px) {
+  .study-card-outline h3,
+  .study-card-outline-mobile h3 {
+    font-size: min(32px, calc(9.4cqi - 6px));
+  }
+}
+
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
    something soft behind it to refract, since the card background is flat.
    The washes are broad and even so the sheen reads across the whole card
