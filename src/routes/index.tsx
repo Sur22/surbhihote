@@ -91,12 +91,14 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             : "study-card-outline block"
         }`}
       >
-        <div className={wide ? "md:col-span-7" : "study-card-panel p-6"}>
+        <div className="study-card-glass__backdrop" />
+        <div className="study-card-glass__veil" />
+        <div className={`relative z-10 ${wide ? "md:col-span-7" : "study-card-panel p-6"}`}>
           <div className={wide ? "" : "relative h-[300px]"}>
             <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
           </div>
         </div>
-        <div className={wide ? "md:col-span-5" : "p-8"}>
+        <div className={`relative z-10 ${wide ? "md:col-span-5" : "p-8"}`}>
           <div className="mb-4">
             <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
@@ -109,7 +111,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
           >
             {c.title}
           </h3>
-          <p className="text-lg leading-relaxed text-foreground/75">
+          <p className="text-lg leading-relaxed text-foreground/85">
             {c.subtitle}
           </p>
           <div className="rule mt-8 mb-6" />
