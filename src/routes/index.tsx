@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-monitor-screen.png.asset.json";
+import solaceFull from "@/assets/techpack-monitor-mockup.png.asset.json";
 import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
 import atlasCrop from "@/assets/notification-banner-tilted-crop.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -86,15 +87,26 @@ function CaseStudyArtwork({
            on the edge of the tinted band. The band is pinned to the artwork
            box's lower edge plus the 24px card padding, so it holds at every
            width — on phones the picture drops to its own aspect instead of
-           letterboxing inside a fixed frame. */
+           letterboxing inside a fixed frame.
+           On phones the whole monitor shows, chin and stand included; the
+           tighter crop to the screen and bezels takes over from the md
+           breakpoint up, where the band is tall enough for it. */
         <div className="relative z-10 h-full">
+          <img
+            src={solaceFull.url}
+            alt={c.title}
+            width={1460}
+            height={1077}
+            loading="lazy"
+            className="absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[115%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
+          />
           <img
             src={solaceTilted.url}
             alt={c.title}
             width={1338}
             height={794}
-             loading="lazy"
-            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[115%] max-w-none h-auto ${compact ? "md:h-[280px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            loading="lazy"
+            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[115%] max-w-none h-auto hidden md:block ${compact ? "md:h-[280px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : c.slug === "atlas" ? (
