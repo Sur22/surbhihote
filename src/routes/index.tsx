@@ -48,7 +48,12 @@ function CaseStudyArtwork({
       />
 
       {c.slug === "affiliate-platform-redesign" ? (
-        <div className={`relative z-10 flex ${imageHeight} items-center`}>
+        /* The tint runs from the card's own edge while the mockup column starts
+           one card-padding (48px) in, so the mockup sits ~12px right of the
+           tint's middle line. Nudge it back by half that overlap so the mockup
+           is centred inside the coloured area; translate keeps the column, the
+           card height and the text side exactly where they are. */
+        <div className={`relative z-10 flex ${imageHeight} items-center md:-translate-x-[11.7px]`}>
           <div className="w-full overflow-hidden rounded-[0.4875rem] bg-card shadow-[0_20px_50px_-20px_color-mix(in_oklab,var(--foreground)_35%,transparent)] transition-transform duration-[1200ms] group-hover:scale-[1.02]">
             <img
               src={affiliateDashboard.url}
