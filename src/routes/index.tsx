@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-monitor-mockup.png.asset.json";
+import affiliateMockup from "@/assets/affiliate-browser-mockup.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
@@ -58,7 +59,7 @@ function CaseStudyArtwork({
       ) : (
         <div className="relative z-10 overflow-hidden rounded-[5%]">
           <img
-            src={c.cover}
+            src={c.slug === "affiliate-platform-redesign" ? affiliateMockup.url : c.cover}
             alt={c.title}
             width={1400}
             height={1000}
