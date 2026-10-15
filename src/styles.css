@@ -459,11 +459,6 @@
   white-space: nowrap;
 }
 
-/* Case-study card names wear the h4 look with a bold serif weight. */
-.study-card-name {
-  font-weight: 700;
-}
-
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
    something soft behind it to refract, since the card background is flat.
    The washes are broad and even so the sheen reads across the whole card
