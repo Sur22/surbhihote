@@ -23,10 +23,11 @@ function CaseStudyArtwork({
   const compact = i !== 0;
   /* The wide card keeps its original disc geometry; the two compact cards
      share one centered disc so both cards read as the same size and shape. */
+  const compactScale = c.slug === "solace" ? 1.08 : 0.8;
   const discStyle = compact
     ? {
         left: "50%",
-        transform: "translate(-50%, -50%) scale(0.8)",
+        transform: `translate(-50%, -50%) scale(${compactScale})`,
       }
     : {
         left: 0,
