@@ -146,7 +146,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
         params={{ slug: c.slug }}
         className={`group relative overflow-hidden rounded-[var(--radius-xl)] border study-card-surface ${
           wide
-            ? "study-card-outline-mobile md:grid md:grid-cols-12 md:gap-12 md:items-center md:p-12"
+            ? "block study-card-outline-mobile md:grid md:grid-cols-12 md:gap-12 md:items-center md:p-12"
             : "study-card-outline block"
         }`}
       >
