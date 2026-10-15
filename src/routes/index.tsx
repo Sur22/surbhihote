@@ -88,7 +88,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
         className={`group overflow-hidden rounded-[var(--radius-xl)] border bg-card ${
           wide
             ? "grid md:grid-cols-12 gap-8 md:gap-12 items-center p-8 md:p-12"
-            : ""
+            : "study-card-outline block"
         }`}
       >
         <div className={wide ? "md:col-span-7" : "study-card-panel p-6"}>
@@ -101,8 +101,10 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
           <h3
-            className={`font-serif mb-4 whitespace-pre-line ${
-              wide ? "text-4xl md:text-5xl" : "text-3xl md:text-4xl"
+            className={`font-serif mb-4 ${
+              wide
+                ? "whitespace-pre-line text-4xl md:text-5xl"
+                : "study-card-title"
             }`}
           >
             {c.title}
