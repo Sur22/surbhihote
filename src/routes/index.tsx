@@ -417,6 +417,11 @@ function IndexPage() {
 
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
+      {/* Bring label: heads the strip; its pills sit below the strip. */}
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10 pt-10 md:pt-12">
+        <p className="eyebrow font-semibold">What I bring</p>
+      </div>
+
       {/* Strip: three facts about the practice, on the page's own paper. */}
       <section className="strip py-12 md:py-14">
         <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-3 md:gap-12 md:px-10">
@@ -429,21 +434,18 @@ function IndexPage() {
         </div>
       </section>
 
-      {/* Bring: one line of pills, on the page's own paper. */}
+      {/* Bring pills: the label heads the strip above, only pills sit here. */}
       <section className="bring py-10 md:py-12">
-        <div className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-8 gap-y-4 px-6 md:px-10">
-          <p className="eyebrow font-semibold">What I bring</p>
-          <ul className="flex flex-wrap items-center gap-3">
-            {bring.map((b) => (
-              <li
-                key={b}
-                className="rounded-full border border-border px-5 py-2.5 text-sm text-foreground"
-              >
-                {b}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-3 px-6 md:px-10">
+          {bring.map((b) => (
+            <li
+              key={b}
+              className="rounded-full border border-border px-5 py-2.5 text-sm text-foreground"
+            >
+              {b}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
