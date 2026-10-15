@@ -48,11 +48,6 @@ function CaseStudyArtwork({
       {c.slug === "affiliate-platform-redesign" ? (
         <div className={`relative z-10 flex ${imageHeight} items-center`}>
           <div className="w-full overflow-hidden rounded-xl border border-border bg-card shadow-[0_20px_50px_-20px_color-mix(in_oklab,var(--foreground)_35%,transparent)] transition-transform duration-[1200ms] group-hover:scale-[1.02]">
-            <div className="flex items-center gap-1.5 border-b border-border bg-muted px-3 py-2">
-              <span className="h-2.5 w-2.5 rounded-full bg-foreground/20" />
-              <span className="h-2.5 w-2.5 rounded-full bg-foreground/20" />
-              <span className="h-2.5 w-2.5 rounded-full bg-foreground/20" />
-            </div>
             <img
               src={affiliateDashboard.url}
               alt={c.title}
