@@ -221,9 +221,14 @@ function IndexPage() {
         </div>
 
         <div className="grid gap-8">
-          {caseStudies.filter((c) => !c.hidden).map((c, i) => (
-            <CaseStudyItem key={c.slug} c={c} i={i} />
-          ))}
+          {caseStudies.filter((c) => !c.hidden).map((c, i) =>
+            i === 0 ? <CaseStudyItem key={c.slug} c={c} i={i} /> : null
+          )}
+          <div className="grid gap-8 md:grid-cols-2">
+            {caseStudies.filter((c) => !c.hidden).slice(1).map((c, idx) => (
+              <CaseStudyItem key={c.slug} c={c} i={idx + 1} />
+            ))}
+          </div>
         </div>
 
       </section>
