@@ -318,12 +318,23 @@
   to { transform: rotate(360deg); }
 }
 
-/* Soft tinted panel behind case-study card artwork — sits under the frosted
-   disc so the glass has a wash to refract inside the card. */
+/* All three case-study cards sit on white in both themes. The page's ink flips
+   to light on dark paper, so the card pins the light-paper ink to itself: the
+   title, paragraph, rule and hairline border inside stay dark on white. */
+.study-card-surface {
+  background-color: #fff;
+  --ink: oklch(0.18 0.02 60);
+  --foreground: var(--ink);
+  --card-foreground: var(--ink);
+  --muted-foreground: oklch(0.45 0.02 70);
+  --rule: oklch(0.82 0.02 75);
+  --border: var(--rule);
+}
+
+/* Artwork panel inside a compact card — flat white so panel and card read as
+   one surface; the frosted disc carries its own washes. */
 .study-card-panel {
-  background:
-    radial-gradient(46% 40% at 30% 24%, rgb(255 255 255 / 0.6), transparent 72%),
-    color-mix(in srgb, var(--circle-fill) 22%, var(--card));
+  background: #fff;
 }
 
 /* Hairline outline for the two compact case-study cards. The default rule is
