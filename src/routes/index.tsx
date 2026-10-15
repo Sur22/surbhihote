@@ -83,14 +83,12 @@ function CaseStudyArtwork({
           </div>
         </div>
       ) : c.slug === "solace" ? (
-        /* Same anchor as the Notifications card: the monitor's lower bezel rests
-           on the edge of the tinted band. The band is pinned to the artwork
-           box's lower edge plus the 24px card padding, so it holds at every
-           width — on phones the picture drops to its own aspect instead of
-           letterboxing inside a fixed frame.
-           On phones the whole monitor shows, chin and stand included; the
-           tighter crop to the screen and bezels takes over from the md
-           breakpoint up, where the band is tall enough for it. */
+        /* On phones the whole monitor shows, chin and stand included, floating
+           in the middle of the tinted band: the band is the artwork box plus
+           the 24px card padding above and below, so its middle line is the
+           artwork box's own middle line — centring on that is centring on the
+           colour. The tighter crop to the screen and bezels takes over from the
+           md breakpoint up, where it still rests on the band's lower edge. */
         <div className="relative z-10 h-full">
           <img
             src={solaceFull.url}
@@ -98,7 +96,7 @@ function CaseStudyArtwork({
             width={1460}
             height={1077}
             loading="lazy"
-            className="absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[115%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
+            className="absolute top-[calc(50%_-_2.9px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
           />
           <img
             src={solaceTilted.url}
