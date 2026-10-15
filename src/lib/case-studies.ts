@@ -1,4 +1,4 @@
-import fjord from "@/assets/case-fjord.png.asset.json";
+import affiliateBanner from "@/assets/affiliate-banner-laptop.png.asset.json";
 import solace from "@/assets/case-solace.png.asset.json";
 import atlas from "@/assets/case-atlas.png.asset.json";
 import notificationBanner from "@/assets/notification-banner.png.asset.json";
@@ -144,7 +144,7 @@ const _caseStudies: CaseStudy[] = [
     },
     role: "Lead Product Designer",
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· DATA\u00a0"],
-    cover: fjord.url,
+    cover: affiliateBanner.url,
     summary:
       "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
     keywords:
