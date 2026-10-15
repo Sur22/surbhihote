@@ -113,14 +113,14 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="border-t border-border mt-8">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:grid md:grid-cols-3 md:gap-6">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-8 flex flex-col items-center gap-y-5 lg:grid lg:grid-cols-3 lg:gap-6 lg:items-center">
           {/* Left: copyright */}
-          <p className="md:justify-self-start text-sm text-muted-foreground whitespace-pre">
+          <p className="order-last lg:order-none lg:justify-self-start text-sm text-muted-foreground whitespace-pre">
             © 2026 SH.   All rights reserved.
           </p>
 
           {/* Middle: nav links */}
-          <div className="md:justify-self-center flex items-center gap-6 text-sm">
+          <div className="order-1 lg:order-none lg:justify-self-center flex items-center gap-6 text-sm">
             <Link to="/" hash="case-studies" className="text-muted-foreground hover:text-hover transition-colors">Case Studies</Link>
             <Link to="/ai" className="text-muted-foreground hover:text-hover transition-colors">AI</Link>
             <Link to="/gallery" className="text-muted-foreground hover:text-hover transition-colors">Gallery</Link>
@@ -128,7 +128,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
 
           {/* Right: social icons */}
-          <div className="md:justify-self-end flex items-center gap-5">
+          <div className="order-2 lg:order-none lg:justify-self-end flex items-center gap-5">
             <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-hover transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={1.6} />
             </a>
