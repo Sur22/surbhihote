@@ -108,7 +108,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       >
         {/* <div className="study-card-glass__backdrop" /> */}
         {/* <div className="study-card-glass__veil" /> */}
-        <div className={`relative z-10 study-card-panel ${wide ? "md:col-span-7" : "p-6"}`}>
+        <div className={`relative z-10 study-card-panel ${wide ? "md:col-span-7 md:-my-12 md:-ml-12 md:pl-12 md:-mr-6 md:pr-6" : "p-6"}`}>
           <div className={wide ? "" : "relative h-[300px]"}>
             <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
           </div>
