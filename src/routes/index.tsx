@@ -34,16 +34,32 @@ function CaseStudyArtwork({
         left: 0,
         transform: "translate(-33.6px, -50%) scale(0.91)",
       };
+  /* Below the md breakpoint all three cards share one centered disc, so the
+     wide card's picture sits in the same frame as the other two. */
+  const mobileDisc = {
+    left: "50%",
+    transform: `translate(-50%, -50%) scale(${compact ? compactScale : 0.8})`,
+  };
   return (
     <div className="relative h-full">
       <div
         aria-hidden="true"
-        className="study-glass-ring absolute top-1/2 aspect-square h-full"
+        className="study-glass-ring absolute top-1/2 aspect-square h-full md:hidden"
+        style={mobileDisc}
+      />
+      <div
+        aria-hidden="true"
+        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden md:hidden"
+        style={mobileDisc}
+      />
+      <div
+        aria-hidden="true"
+        className="study-glass-ring absolute top-1/2 aspect-square h-full hidden md:block"
         style={discStyle}
       />
       <div
         aria-hidden="true"
-        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden"
+        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden hidden md:block"
         style={discStyle}
       />
 
@@ -130,7 +146,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
         params={{ slug: c.slug }}
         className={`group relative overflow-hidden rounded-[var(--radius-xl)] border study-card-surface ${
           wide
-            ? "grid md:grid-cols-12 gap-8 md:gap-12 items-center p-8 md:p-12"
+            ? "block study-card-outline-mobile md:grid md:grid-cols-12 md:gap-12 md:items-center md:p-12"
             : "study-card-outline block"
         }`}
       >
@@ -145,19 +161,27 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             className="study-card-panel absolute inset-y-0 left-0 z-0 hidden w-[58%] md:block"
           />
         ) : null}
-        <div className={`relative z-10 study-card-panel ${wide ? "md:col-span-7 study-card-panel--wide" : "p-6"}`}>
-          <div className={wide ? "" : "relative h-[300px]"}>
-            <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
+        <div
+          className={`relative z-10 study-card-panel p-6 ${
+            wide ? "md:col-span-7 study-card-panel--wide md:p-0" : ""
+          }`}
+        >
+          <div className={`relative h-[300px] ${wide ? "md:h-auto" : ""}`}>
+            <CaseStudyArtwork
+              c={c}
+              i={i}
+              imageHeight={wide ? "h-[280px] md:h-[400px]" : "h-[280px]"}
+            />
           </div>
         </div>
-        <div className={`relative z-10 ${wide ? "md:col-span-5" : "p-8"}`}>
+        <div className={`relative z-10 p-8 ${wide ? "md:col-span-5 md:p-0" : ""}`}>
           <div className="mb-4">
             <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
           <h3
             className={`font-serif mb-4 ${
               wide
-                ? "whitespace-pre-line text-4xl md:text-5xl"
+                ? "whitespace-nowrap leading-[1.15] text-[clamp(1.1rem,6.4cqi,2.25rem)] md:whitespace-pre-line md:text-5xl"
                 : "study-card-title"
             }`}
           >

@@ -428,6 +428,15 @@
   border-color: color-mix(in srgb, var(--ink) 26%, transparent);
 }
 
+/* On phones the wide card takes the compact cards' shape, so it needs the same
+   hairline and the same measure for its title to size against. */
+@media (max-width: 767px) {
+  .study-card-outline-mobile {
+    container-type: inline-size;
+    border-color: color-mix(in srgb, var(--ink) 26%, transparent);
+  }
+}
+
 /* Compact card titles must hold one line at every width, so the size tracks
    the card's own width rather than the viewport; the cap keeps the longest
    title inside the padded text column at the widest layout. */
