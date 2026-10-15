@@ -283,7 +283,7 @@ const _caseStudies: CaseStudy[] = [
       ],
     },
     role: "Design Lead",
-    tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
+    tags: ["MOBILE", "IOS", "ANDROID", "PLM", "SAAS"],
     cover: notificationBannerTilted,
     summary:
       "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
