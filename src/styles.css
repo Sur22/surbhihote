@@ -320,8 +320,10 @@
 }
 
 /* Case-study cards wear the circle colour with the gallery's frosted recipe.
-   The page's ink flips to light on dark paper, so the card pins the light-paper
-   ink to itself: title, paragraph, eyebrow and hairline border stay dark. */
+   The card pins its own ink rather than inheriting the page's: dark on light
+   paper, light on dark paper, so title, paragraph, eyebrow and hairline stay
+   readable however the tint lands. */
+
 .study-card-surface {
   position: relative;
   background-color: color-mix(in srgb, var(--circle-fill) 20%, transparent);
