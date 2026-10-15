@@ -364,7 +364,7 @@ function IndexPage() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative mx-auto max-w-[1400px] pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
         {/* The artwork's right edge tracks the end of the hero copy. */}
         <div
           className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
@@ -377,7 +377,7 @@ function IndexPage() {
             right: artRightInset === null ? 0 : `${artRightInset}px`,
           }}
         />
-        <div className="mx-auto max-w-[1100px] lg:pl-[60px]">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-10">
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">SENIOR PRODUCT DESIGNER · B2B&nbsp;·&nbsp;SAAS&nbsp;·&nbsp;ENTERPRISE</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
