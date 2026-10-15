@@ -453,12 +453,12 @@
 }
 
 /* Closing contact band. It pins its own ink the way the study cards do, so the
-   warm near-black and cream of the design hold in either theme instead of
-   flipping with the page. */
+   band reads the same in either theme instead of flipping with the page: white
+   paper, dark ink, and the brand's deep blue for the italic word. */
 .cta-band {
-  --background: #1a1712;
-  --foreground: #f4f1eb;
-  --accent: #91c9e3;
+  --background: #ffffff;
+  --foreground: oklch(0.18 0.02 60);
+  --accent: #006e90;
   background-color: var(--background);
   color: var(--foreground);
 }
