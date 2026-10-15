@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useRef, useState } from "react";
 
 import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-monitor-screen.png.asset.json";
@@ -263,32 +264,70 @@ export const Route = createFileRoute("/")({
   component: IndexPage,
 });
 
+/** Tracks where the hero copy ends on the right, as an inset from the section's
+ *  right edge, so the artwork can be pinned to that same line. */
+function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
+  const [inset, setInset] = useState<number | null>(null);
+
+  useEffect(() => {
+    const el = copyRef.current;
+    const section = el?.closest("section");
+    if (!el || !section) return;
+
+    const measure = () => {
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const rects = Array.from(range.getClientRects()).filter((r) => r.width > 1);
+      if (!rects.length) return;
+      const textRight = Math.max(...rects.map((r) => r.right));
+      setInset(Math.max(0, Math.round(section.getBoundingClientRect().right - textRight)));
+    };
+
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    ro.observe(section);
+    window.addEventListener("resize", measure);
+    document.fonts.ready.then(measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [copyRef]);
+
+  return inset;
+}
+
 function IndexPage() {
+  const heroCopyRef = useRef<HTMLParagraphElement>(null);
+  const artRightInset = useHeroArtRight(heroCopyRef);
+
   return (
     <SiteLayout>
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
-        {/* Artwork column mirrors the header's content column, so its right edge
-            lands on the theme toggle icon in the nav. */}
-        <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1100px] px-6 md:px-10">
-          <div className="relative flex-1">
-            <div
-              className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
-              style={{
-                backgroundImage: `url(${heroBg.url})`,
-                transform: "scale(0.35)",
-                transformOrigin: "bottom right",
-              }}
-            />
-          </div>
-        </div>
+        {/* The artwork's right edge tracks the end of the hero copy. */}
+        <div
+          className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
+            artRightInset === null ? "opacity-0" : "opacity-100"
+          }`}
+          style={{
+            backgroundImage: `url(${heroBg.url})`,
+            transform: "scale(0.35)",
+            transformOrigin: "bottom right",
+            right: artRightInset === null ? 0 : `${artRightInset}px`,
+          }}
+        />
         <div className="mx-auto max-w-[1100px] lg:pl-[60px]">
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">SENIOR PRODUCT DESIGNER · B2B&nbsp;·&nbsp;SAAS&nbsp;·&nbsp;ENTERPRISE</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
-            <p className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80">
+            <p
+              ref={heroCopyRef}
+              className="mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80"
+            >
               I balance user needs, business opportunities, and technological realities to create simple, scalable products.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
