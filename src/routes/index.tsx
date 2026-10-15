@@ -253,7 +253,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
           <h3
-            className={`h4 mb-4 ${
+            className={`h3 mb-4 ${
               wide
                 ? "whitespace-nowrap md:whitespace-pre-line"
                 : "study-card-title"
