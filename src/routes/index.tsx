@@ -50,9 +50,13 @@ function CaseStudyArtwork({
      lands its lowest point on the line, plus a further 15px the user asked for
      so the visible curve meets the line beside the phone. */
   const drop = c.slug === "atlas" ? 27 : 0;
+  /* The Notifications circle sits 20px left of the card's centre line from the
+     md breakpoint up. On phones the circle is wider than the card, so shifting
+     it would slice its left edge flat against the trim; there it stays centred. */
+  const nudge = c.slug === "atlas" ? 20 : 0;
   const discStyle = compact
     ? {
-        left: "50%",
+        left: `calc(50% - ${nudge}px)`,
         top: `calc(50% + ${drop}px)`,
         transform: `translate(-50%, -50%) scale(${compactScale})`,
       }
