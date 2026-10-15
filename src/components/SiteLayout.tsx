@@ -16,6 +16,13 @@ const nav = [
   { to: "/about", label: "About" },
 ] as const;
 
+/* Nav items borrow the theme button's hover: a soft rounded tint behind the
+   word and a lift in its colour, instead of the text thickening. The padding
+   that makes the tint room to breathe is offset by an equal negative margin,
+   so the words themselves never shift. */
+const navItemClass =
+  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors";
+
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -58,13 +65,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </svg>
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">
-            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className="group ml-1 inline-flex items-center gap-1 text-muted-foreground hover:text-hover hover:font-bold transition-colors">
+            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className={navItemClass}>Case Studies</Link>
+            <Link to="/ai" activeProps={{ className: "text-foreground" }} className={`group ml-3 inline-flex items-center gap-1 ${navItemClass}`}>
               AI <Sparkle size={10.5} className="-mr-3 text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
-            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">About</Link>
-            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-hover hover:font-bold transition-colors">Resume</a>
+            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className={navItemClass}>Gallery</Link>
+            <Link to="/about" activeProps={{ className: "text-foreground" }} className={navItemClass}>About</Link>
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={navItemClass}>Resume</a>
             <ThemeToggle />
           </nav>
 
@@ -86,7 +93,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       <Link
                         to={item.to}
                         hash={"hash" in item ? item.hash : undefined}
-                        className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-hover transition-colors"
+                        className={`inline-flex items-center gap-1.5 ${navItemClass}`}
                       >
                         {item.label}
                         {item.label === "AI" && (
@@ -96,7 +103,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                     </SheetClose>
                   ))}
                   <SheetClose asChild>
-                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-hover transition-colors">
+                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1.5 ${navItemClass}`}>
                       Resume
                     </a>
                   </SheetClose>
