@@ -61,17 +61,19 @@ function CaseStudyArtwork({
           </div>
         </div>
       ) : c.slug === "solace" ? (
-        /* Same anchor as the Notifications card: the monitor drops 44px so its
-           lower bezel rests on the edge of the tinted band (24px card padding
-           plus the band's 20px slack). Size and crop stay exactly as they were. */
-        <div className="relative z-10 w-[99%] mx-auto flex justify-center">
+        /* Same anchor as the Notifications card: the monitor's lower bezel rests
+           on the edge of the tinted band. The band is pinned to the artwork
+           box's lower edge plus the 24px card padding, so it holds at every
+           width — on phones the picture drops to its own aspect instead of
+           letterboxing inside a fixed frame. */
+        <div className="relative z-10 h-full">
           <img
             src={solaceTilted.url}
             alt={c.title}
             width={1338}
             height={794}
              loading="lazy"
-            className={`${imageHeight} ${compact ? "w-[115%] max-w-none mt-[44px]" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain`}
+            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[115%] max-w-none h-auto ${compact ? "md:h-[280px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : c.slug === "atlas" ? (
