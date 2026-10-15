@@ -468,38 +468,6 @@
   background-color: transparent;
 }
 
-/* Two pills under the headline: one filled with the band's own ink, one
-   outlined with a hairline of it. Both fully round. */
-.cta-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 3rem;
-  padding: 0 1.5rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  line-height: 1;
-  white-space: nowrap;
-  transition: background-color 200ms ease, border-color 200ms ease;
-}
-
-.cta-pill--solid {
-  background-color: var(--foreground);
-  color: var(--background);
-}
-
-.cta-pill--solid:hover {
-  background-color: color-mix(in srgb, var(--foreground) 86%, var(--background));
-}
-
-.cta-pill--outline {
-  border: 1px solid color-mix(in srgb, var(--foreground) 24%, transparent);
-  color: var(--foreground);
-}
-
-.cta-pill--outline:hover {
-  border-color: var(--foreground);
-}
 
 /* Strip above the case studies: three facts. It wears the page's own paper and
    ink rather than pinning its own, so it reads the same as the rest of the

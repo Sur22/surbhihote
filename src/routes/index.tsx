@@ -387,7 +387,8 @@ function IndexPage() {
 
       </section>
 
-      {/* Closing contact band — dark, left-aligned, with the two ways in. */}
+      {/* Closing contact band — left-aligned, with the two ways in, wearing the
+          same buttons as the rest of the site. */}
       <section className="cta-band py-20 md:py-24">
         <div className="mx-auto max-w-[1100px] px-6 md:px-10">
           <h2 className="font-serif text-[32px] leading-[1.18] md:text-[54px]">
@@ -396,17 +397,18 @@ function IndexPage() {
             {" "}that needs to feel <em className="text-accent">simple</em>?
           </h2>
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <a href="mailto:surbhihote@gmail.com" className="cta-pill cta-pill--solid">
-              surbhihote@gmail.com
-            </a>
-            <a
-              href="https://www.linkedin.com/in/surbhihote/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-pill cta-pill--outline"
-            >
-              LinkedIn
-            </a>
+            <Button asChild size="lg">
+              <a href="mailto:surbhihote@gmail.com">surbhihote@gmail.com</a>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a
+                href="https://www.linkedin.com/in/surbhihote/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </Button>
           </div>
         </div>
       </section>
