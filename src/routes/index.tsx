@@ -353,7 +353,7 @@ function IndexPage() {
 
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
-      {/* Strip: three facts about the practice, on white paper. */}
+      {/* Strip: three facts about the practice, on the page's own paper. */}
       <section className="strip py-12 md:py-14">
         <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-3 md:gap-12 md:px-10">
           {strip.map((s) => (
@@ -364,6 +364,8 @@ function IndexPage() {
           ))}
         </div>
       </section>
+
+      <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
       {/* Selected work */}
       <section id="case-studies" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">

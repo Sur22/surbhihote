@@ -505,14 +505,13 @@
   border-color: var(--foreground);
 }
 
-/* Strip above the case studies: three facts on white paper. It pins its own
-   ink the way the contact band does, so it reads the same in either theme. */
+/* Strip above the case studies: three facts. It wears the page's own paper and
+   ink rather than pinning its own, so it reads the same as the rest of the
+   page in either theme. */
 .strip {
-  --background: #ffffff;
-  --foreground: oklch(0.18 0.02 60);
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: transparent;
 }
+
 
 /* The big line of each column: display serif, sized to the viewport so it
    stays a headline rather than a heading. */
