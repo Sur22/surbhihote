@@ -110,17 +110,22 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="border-t border-border mt-8">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-10 flex flex-col items-center gap-5">
-          {/* Nav links */}
-          <div className="flex items-center gap-6 text-sm">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-10 py-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:grid md:grid-cols-3 md:gap-6">
+          {/* Left: copyright */}
+          <p className="md:justify-self-start text-sm text-muted-foreground whitespace-pre">
+            © 2026 SH.   All rights reserved.
+          </p>
+
+          {/* Middle: nav links */}
+          <div className="md:justify-self-center flex items-center gap-6 text-sm">
             <Link to="/" hash="case-studies" className="text-muted-foreground hover:text-hover transition-colors">Case Studies</Link>
             <Link to="/ai" className="text-muted-foreground hover:text-hover transition-colors">AI</Link>
             <Link to="/gallery" className="text-muted-foreground hover:text-hover transition-colors">Gallery</Link>
             <Link to="/about" className="text-muted-foreground hover:text-hover transition-colors">About</Link>
           </div>
 
-          {/* Social icons */}
-          <div className="flex items-center gap-5">
+          {/* Right: social icons */}
+          <div className="md:justify-self-end flex items-center gap-5">
             <a href="mailto:surbhihote@gmail.com" className="text-muted-foreground hover:text-hover transition-colors" aria-label="Email">
               <Mail size={18} strokeWidth={1.6} />
             </a>
@@ -132,10 +137,6 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           {/* Vibe line — hidden at user request */}
           <p className="hidden p text-accent flex items-center gap-1.5">
             Made with <span className="text-red-500">❤️</span> <span className="text-amber-600">🍜</span> <span className="text-emerald-600">🍵</span> and vibe coding
-          </p>
-
-          <p className="text-sm text-muted-foreground whitespace-pre">
-            © 2026 SH.   All rights reserved.
           </p>
         </div>
       </footer>
