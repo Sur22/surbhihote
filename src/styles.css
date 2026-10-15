@@ -451,3 +451,47 @@
     radial-gradient(56% 36% at 28% 86%, color-mix(in srgb, var(--circle-fill) 55%, transparent), transparent 74%);
   opacity: 0.7;
 }
+
+/* Closing contact band. It pins its own ink the way the study cards do, so the
+   warm near-black and cream of the design hold in either theme instead of
+   flipping with the page. */
+.cta-band {
+  --background: #1a1712;
+  --foreground: #f4f1eb;
+  --accent: #91c9e3;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Two pills under the headline: one filled with the band's own ink, one
+   outlined with a hairline of it. Both fully round. */
+.cta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
+.cta-pill--solid {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.cta-pill--solid:hover {
+  background-color: color-mix(in srgb, var(--foreground) 86%, var(--background));
+}
+
+.cta-pill--outline {
+  border: 1px solid color-mix(in srgb, var(--foreground) 24%, transparent);
+  color: var(--foreground);
+}
+
+.cta-pill--outline:hover {
+  border-color: var(--foreground);
+}
