@@ -318,6 +318,14 @@
   to { transform: rotate(360deg); }
 }
 
+/* Soft tinted panel behind case-study card artwork — sits under the frosted
+   disc so the glass has a wash to refract inside the card. */
+.study-card-panel {
+  background:
+    radial-gradient(46% 40% at 30% 24%, rgb(255 255 255 / 0.6), transparent 72%),
+    color-mix(in srgb, var(--circle-fill) 22%, var(--card));
+}
+
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
    something soft behind it to refract, since the card background is flat.
    The washes are broad and even so the sheen reads across the whole card
