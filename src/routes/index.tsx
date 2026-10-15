@@ -268,14 +268,20 @@ function IndexPage() {
     <SiteLayout>
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
-          style={{
-            backgroundImage: `url(${heroBg.url})`,
-            transform: "scale(0.35)",
-            transformOrigin: "bottom right",
-          }}
-        />
+        {/* Artwork column mirrors the header's content column, so its right edge
+            ends on the theme toggle (which overhangs that edge by 6px). */}
+        <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1100px] pl-6 pr-[18px] md:pl-10 md:pr-[34px]">
+          <div className="relative flex-1">
+            <div
+              className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
+              style={{
+                backgroundImage: `url(${heroBg.url})`,
+                transform: "scale(0.35)",
+                transformOrigin: "bottom right",
+              }}
+            />
+          </div>
+        </div>
         <div className="mx-auto max-w-[1100px] lg:pl-[60px]">
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow mb-4">SENIOR PRODUCT DESIGNER · B2B&nbsp;·&nbsp;SAAS&nbsp;·&nbsp;ENTERPRISE</p>
