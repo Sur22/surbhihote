@@ -326,6 +326,23 @@
     color-mix(in srgb, var(--circle-fill) 22%, var(--card));
 }
 
+/* Hairline outline for the two compact case-study cards. The default rule is
+   too faint against the page, so this mixes the theme's ink instead — it
+   darkens on light paper and lightens on dark paper, with no extra variant. */
+.study-card-outline {
+  container-type: inline-size;
+  border-color: color-mix(in srgb, var(--ink) 26%, transparent);
+}
+
+/* Compact card titles must hold one line at every width, so the size tracks
+   the card's own width rather than the viewport; the cap keeps the longest
+   title inside the padded text column at the widest layout. */
+.study-card-title {
+  font-size: clamp(1.5rem, 7.4cqi, 2.25rem);
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
    something soft behind it to refract, since the card background is flat.
    The washes are broad and even so the sheen reads across the whole card
