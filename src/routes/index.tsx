@@ -253,9 +253,9 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
           <h3
-            className={`font-serif mb-4 ${
+            className={`h4 mb-4 ${
               wide
-                ? "whitespace-nowrap leading-[1.15] text-[clamp(1.1rem,6.4cqi,2.25rem)] md:whitespace-pre-line md:text-5xl"
+                ? "whitespace-nowrap md:whitespace-pre-line"
                 : "study-card-title"
             }`}
           >
