@@ -213,7 +213,7 @@ const _caseStudies: CaseStudy[] = [
       ],
     },
     role: "Lead UI UX Designer ",
-    tags: [" SaaS ", " B2B ", " PLM ", " ERP ", "Enterprise ", " Web"],
+    tags: ["SAAS", "B2B", "PLM\u00a0", "ENTERPRISE", "WEB"],
     cover: solace.url,
     summary:
       "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
