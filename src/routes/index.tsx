@@ -82,7 +82,7 @@ function CaseStudyArtwork({
             width={1400}
             height={1000}
             loading="lazy"
-            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "affiliate-platform-redesign" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
+            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${(c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
           />
         </div>
       )}
