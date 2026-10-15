@@ -269,8 +269,8 @@ function IndexPage() {
       {/* Hero */}
       <section className="relative mx-auto max-w-[1400px] px-6 md:px-10 pt-0 md:pt-4 pb-24 min-h-screen flex flex-col justify-center overflow-hidden">
         {/* Artwork column mirrors the header's content column, so its right edge
-            ends on the theme toggle (which overhangs that edge by 6px). */}
-        <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1100px] pl-6 pr-[18px] md:pl-10 md:pr-[34px]">
+            lands on the theme toggle icon in the nav. */}
+        <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-[1100px] px-6 md:px-10">
           <div className="relative flex-1">
             <div
               className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
