@@ -61,10 +61,14 @@ function CaseStudyArtwork({
         top: `calc(50% + ${drop}px)`,
         transform: `translate(-50%, -50%) scale(${compactScale})`,
         ...(c.slug === "solace" ? {
-          top: "auto",
-          bottom: "-24px",
-          transform: `translateX(-50%) scale(${compactScale})`,
-          transformOrigin: "bottom center",
+          /* The Tech Pack circle is pinned to the tinted band's top-right
+             corner: its right edge touches the band's right edge and its top
+             edge the band's top edge; the overflow trim clips whatever hangs
+             past the band's other edges. */
+          left: "100%",
+          top: 0,
+          transform: `translate(-100%, 0) scale(${compactScale})`,
+          transformOrigin: "top right",
         } : {}),
       }
     : {
