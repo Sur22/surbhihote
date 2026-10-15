@@ -326,7 +326,7 @@
 
 .study-card-surface {
   position: relative;
-  /* background-color: color-mix(in srgb, var(--circle-fill) 20%, transparent); */
+  background-color: transparent;
   color: var(--ink);
   --ink: oklch(0.18 0.02 60);
   --foreground: var(--ink);
