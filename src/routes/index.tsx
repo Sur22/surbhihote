@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-monitor-screen.png.asset.json";
 import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
+import atlasCrop from "@/assets/notification-banner-tilted-crop.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
@@ -70,6 +71,21 @@ function CaseStudyArtwork({
             className={`${imageHeight} ${compact ? "w-[115%] max-w-none" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain`}
           />
         </div>
+      ) : c.slug === "atlas" ? (
+        /* The crop removed the phone's lower quarter, so the artwork band keeps
+           its height while the picture box shrinks by the same proportion the
+           crop did (722 of 976 rows) — the phone stays exactly as large as it
+           was before the crop and sits centred on the frosted disc. */
+        <div className={`relative z-10 flex ${imageHeight} items-center justify-center`}>
+          <img
+            src={atlasCrop.url}
+            alt={c.title}
+            width={649}
+            height={722}
+            loading="lazy"
+            className={`${compact ? "h-[207px]" : "h-[296px]"} w-[85%] object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+          />
+        </div>
       ) : (
         <div className="relative z-10 overflow-hidden rounded-[5%]">
           <img
@@ -78,7 +94,7 @@ function CaseStudyArtwork({
             width={1400}
             height={1000}
             loading="lazy"
-            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${(c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
+            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "atlas2" ? "object-contain" : "object-cover"}`}
           />
         </div>
       )}
