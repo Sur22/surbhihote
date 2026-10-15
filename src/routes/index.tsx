@@ -33,9 +33,10 @@ function CaseStudyArtwork({
   /* One geometry shared by the frosted disc and the hollow ring behind it, so
      both circles stay the same size and sit in exactly the same place. */
   const compact = i !== 0;
-  /* The wide card keeps its original disc geometry; the two compact cards
-     share one centered disc so both cards read as the same size and shape. */
-  const compactScale = c.slug === "solace" ? 1.08 : 0.8;
+  /* The wide card keeps its original disc geometry; the two compact cards share
+     one centered disc so both cards read as the same size and shape. The
+     notifications disc grew 35% from 0.8 to match the Tech Pack disc. */
+  const compactScale = c.slug === "solace" || c.slug === "atlas" ? 1.08 : 0.8;
   const discStyle = compact
     ? {
         left: "50%",
