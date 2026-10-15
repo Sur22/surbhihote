@@ -11,6 +11,15 @@ import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
 
+/* The three facts the strip above the case studies spells out. */
+const strip = [
+  { figure: "8+", label: "years in product design" },
+  { figure: "0 → 1 → N", label: "founding designer, B2B SaaS" },
+  { figure: "MS CS", label: "ex-developer, speaks engineering" },
+];
+
+
+
 
 function CaseStudyArtwork({
   c,
@@ -343,6 +352,18 @@ function IndexPage() {
       </section>
 
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
+
+      {/* Strip: three facts about the practice, on white paper. */}
+      <section className="strip py-12 md:py-14">
+        <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-3 md:gap-12 md:px-10">
+          {strip.map((s) => (
+            <div key={s.label}>
+              <p className="strip-figure font-serif">{s.figure}</p>
+              <p className="mt-2 text-sm text-foreground/70">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Selected work */}
       <section id="case-studies" className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 scroll-mt-20">
