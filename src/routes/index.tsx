@@ -45,7 +45,7 @@ function CaseStudyArtwork({
   /* The wide card keeps its original disc geometry; the two compact cards share
      one centered disc so both cards read as the same size and shape. The
      notifications disc grew 35% from 0.8 to match the Tech Pack disc. */
-  const compactScale = c.slug === "solace" || c.slug === "atlas" ? 1.08 : 0.8;
+  const compactScale = c.slug === "solace" ? 1.242 : c.slug === "atlas" ? 1.08 : 0.8;
   /* The Notifications circle drops past the line where the colour ends: 12px
      lands its lowest point on the line, plus a further 15px the user asked for
      so the visible curve meets the line beside the phone. */
@@ -60,6 +60,12 @@ function CaseStudyArtwork({
         left: `calc(50% + ${nudge}px)`,
         top: `calc(50% + ${drop}px)`,
         transform: `translate(-50%, -50%) scale(${compactScale})`,
+        ...(c.slug === "solace" ? {
+          top: "auto",
+          bottom: "-24px",
+          transform: `translateX(-50%) scale(${compactScale})`,
+          transformOrigin: "bottom center",
+        } : {}),
       }
     : {
         left: 0,
@@ -73,6 +79,12 @@ function CaseStudyArtwork({
     left: "50%",
     top: `calc(50% + ${drop}px)`,
     transform: `translate(-50%, -50%) scale(${compact ? compactScale : 0.8})`,
+    ...(c.slug === "solace" ? {
+      top: "auto",
+      bottom: "-24px",
+      transform: `translateX(-50%) scale(${compactScale})`,
+      transformOrigin: "bottom center",
+    } : {}),
   };
   const circles = (
     <>
@@ -100,7 +112,7 @@ function CaseStudyArtwork({
   );
   return (
     <div className="relative h-full">
-      {c.slug === "atlas" ? (
+      {c.slug === "atlas" || c.slug === "solace" ? (
         /* The Notifications circle hangs below the colour line, so it is
            trimmed exactly at that line (the panel's 24px padding edge) and
            never spills into the text half. */
