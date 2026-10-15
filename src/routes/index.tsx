@@ -8,8 +8,15 @@ import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
 
 
-function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
-  const { ref, visible } = useReveal<HTMLDivElement>();
+function CaseStudyArtwork({
+  c,
+  i,
+  imageHeight,
+}: {
+  c: (typeof caseStudies)[number];
+  i: number;
+  imageHeight: string;
+}) {
   /* One geometry shared by the frosted disc and the hollow ring behind it, so
      both circles stay the same size and sit in exactly the same place. */
   const discStyle =
@@ -28,6 +35,49 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             transform: "translate(-50%, -50%) scale(0.7475)",
           };
   return (
+    <div className="relative h-full">
+      <div
+        aria-hidden="true"
+        className="study-glass-ring absolute top-1/2 aspect-square h-full"
+        style={discStyle}
+      />
+      <div
+        aria-hidden="true"
+        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden"
+        style={discStyle}
+      />
+
+      {c.slug === "solace" ? (
+        <div className="relative z-10 w-[99%] mx-auto">
+          <img
+            src={solaceTilted.url}
+            alt={c.title}
+            width={1460}
+            height={1077}
+            loading="lazy"
+            className={`${imageHeight} w-full transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain`}
+          />
+        </div>
+      ) : (
+        <div className="relative z-10 overflow-hidden rounded-[5%]">
+          <img
+            src={c.cover}
+            alt={c.title}
+            width={1400}
+            height={1000}
+            loading="lazy"
+            className={`${imageHeight} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
+  const { ref, visible } = useReveal<HTMLDivElement>();
+  const wide = i === 0;
+  return (
     <div
       ref={ref}
       style={{ transitionDelay: visible ? `${(i % 2) * 80}ms` : "0ms" }}
@@ -35,62 +85,39 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <Link to="/work/$slug" params={{ slug: c.slug }} className="group block">
-        <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-          <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-2" : ""}`}>
-            <div className="relative">
-              <div
-                aria-hidden="true"
-                className="study-glass-ring absolute top-1/2 aspect-square h-full"
-                style={discStyle}
-              />
-              <div
-                aria-hidden="true"
-                className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden"
-                style={discStyle}
-              />
-
-              {c.slug === "solace" && (
-                <div className="relative z-10 w-[99%] mx-auto">
-                  <img
-                    src={solaceTilted.url}
-                    alt={c.title}
-                    width={1460}
-                    height={1077}
-                    loading="lazy"
-                    className="h-[420px] w-full transition-transform duration-[1200ms] group-hover:scale-[1.02] object-contain"
-                  />
-                </div>
-              )}
-              {c.slug !== "solace" && (
-                <div className="relative z-10 overflow-hidden rounded-[5%]">
-                  <img
-                    src={c.cover}
-                    alt={c.title}
-                    width={1400}
-                    height={1000}
-                    loading="lazy"
-                    className={`h-[420px] transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "fjord" || c.slug === "atlas" ? "" : "shadow-md"} ${c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} ${c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || (c.slug === "atlas" || c.slug === "atlas2") ? "object-contain" : "object-cover"}`}
-                  />
-                </div>
-              )}
-            </div>
+      <Link
+        to="/work/$slug"
+        params={{ slug: c.slug }}
+        className={`group overflow-hidden rounded-[var(--radius-xl)] border bg-card ${
+          wide
+            ? "grid md:grid-cols-12 gap-8 md:gap-12 items-center p-8 md:p-12"
+            : ""
+        }`}
+      >
+        <div className={wide ? "md:col-span-7" : "p-6 pb-0"}>
+          <div className={wide ? "" : "relative h-[300px]"}>
+            <CaseStudyArtwork c={c} i={i} imageHeight={wide ? "h-[400px]" : "h-[280px]"} />
           </div>
-          <div className={`md:col-span-6 ${i % 2 === 1 ? "md:order-1" : ""}`}>
-            <div className="mb-4">
-              <span className="eyebrow">{c.tags.join(" · ")}</span>
-            </div>
-            <h3 className="font-serif text-4xl md:text-5xl mb-5 whitespace-pre-line">
-              {c.title}
-            </h3>
-            <p className="text-lg leading-relaxed text-foreground/75 max-w-md">
-              {c.subtitle}
-            </p>
-            <p className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold pb-0.5">
-              Read the case study
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </p>
+        </div>
+        <div className={wide ? "md:col-span-5" : "p-8"}>
+          <div className="mb-4">
+            <span className="eyebrow">{c.tags.join(" · ")}</span>
           </div>
+          <h3
+            className={`font-serif mb-4 whitespace-pre-line ${
+              wide ? "text-4xl md:text-5xl" : "text-3xl md:text-4xl"
+            }`}
+          >
+            {c.title}
+          </h3>
+          <p className="text-lg leading-relaxed text-foreground/75">
+            {c.subtitle}
+          </p>
+          <div className="rule mt-8 mb-6" />
+          <p className="inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold pb-0.5">
+            Read the case study
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </p>
         </div>
       </Link>
     </div>
@@ -193,7 +220,7 @@ function IndexPage() {
           <h2 className="font-serif" style={{ fontSize: '62px' }}>Case Studies</h2>
         </div>
 
-        <div className="space-y-24">
+        <div className="grid gap-8">
           {caseStudies.filter((c) => !c.hidden).map((c, i) => (
             <CaseStudyItem key={c.slug} c={c} i={i} />
           ))}
