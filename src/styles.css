@@ -323,6 +323,7 @@
    title, paragraph, rule and hairline border inside stay dark on white. */
 .study-card-surface {
   background-color: #fff;
+  color: var(--ink);
   --ink: oklch(0.18 0.02 60);
   --foreground: var(--ink);
   --card-foreground: var(--ink);
