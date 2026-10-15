@@ -469,14 +469,12 @@
   white-space: nowrap;
 }
 
-/* On phones that single line sits in a much narrower column, so the h3 title
-   scales with the card itself (both card shapes are query containers below
-   the md breakpoint) instead of running past the card's edge. */
-@media (max-width: 767px) {
-  .study-card-outline h3,
-  .study-card-outline-mobile h3 {
-    font-size: min(32px, calc(9.4cqi - 6px));
-  }
+/* Card titles hold one line, so the h3 size follows the card's own width: both
+   card shapes are query containers, and the title scales down with the card
+   instead of running past its edge. */
+.study-card-outline h3,
+.study-card-outline-mobile h3 {
+  font-size: min(32px, calc(9.4cqi - 6px));
 }
 
 /* Frosted backdrop behind AI project cards. The gallery-style veil needs
