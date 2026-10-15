@@ -46,9 +46,15 @@ function CaseStudyArtwork({
      one centered disc so both cards read as the same size and shape. The
      notifications disc grew 35% from 0.8 to match the Tech Pack disc. */
   const compactScale = c.slug === "solace" || c.slug === "atlas" ? 1.08 : 0.8;
+  /* The Notifications circle drops so its own lower edge lands on the line where
+     the colour ends — the same line the phone is pinned to. The circle is 324px
+     tall (300px at 1.08) centred in the 300px artwork box, so its lower edge
+     falls 12px short of that line; 12px brings it down to it. */
+  const drop = c.slug === "atlas" ? 12 : 0;
   const discStyle = compact
     ? {
         left: "50%",
+        top: `calc(50% + ${drop}px)`,
         transform: `translate(-50%, -50%) scale(${compactScale})`,
       }
     : {
@@ -59,6 +65,7 @@ function CaseStudyArtwork({
      wide card's picture sits in the same frame as the other two. */
   const mobileDisc = {
     left: "50%",
+    top: `calc(50% + ${drop}px)`,
     transform: `translate(-50%, -50%) scale(${compact ? compactScale : 0.8})`,
   };
   return (
