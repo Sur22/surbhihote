@@ -85,7 +85,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
       <Link
         to="/work/$slug"
         params={{ slug: c.slug }}
-        className={`group overflow-hidden rounded-[var(--radius-xl)] border bg-card ${
+        className={`group block overflow-hidden rounded-[var(--radius-xl)] border bg-card ${
           wide
             ? "grid md:grid-cols-12 gap-8 md:gap-12 items-center p-8 md:p-12"
             : "study-card-outline"
