@@ -77,18 +77,19 @@ function CaseStudyArtwork({
           />
         </div>
       ) : c.slug === "atlas" ? (
-        /* The phone grows by 30% and drops to rest on the lower edge of the
-           tinted band. That edge sits 44px under the artwork band (24px card
-           padding plus the band's 20px slack), so the item is bottom-aligned
-           and pulled down by exactly that much — no magic numbers elsewhere. */
-        <div className={`relative z-10 flex ${imageHeight} ${compact ? "items-end" : "items-center"} justify-center`}>
+        /* Same anchor as the Tech Pack card: the phone is pinned by its lower
+           edge to the edge of the tinted band (the artwork box's lower edge plus
+           the 24px card padding), so it holds that line at every width — below
+           the md breakpoint the picture takes its own aspect from the width,
+           above it from the 30%-larger height. */
+        <div className="relative z-10 h-full">
           <img
             src={atlasCrop.url}
             alt={c.title}
             width={649}
             height={722}
             loading="lazy"
-            className={`${compact ? "h-[269.1px] w-auto max-w-full mb-[-44px]" : "h-[296px] w-[85%]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[85%] h-auto ${compact ? "md:w-auto md:h-[349.8px]" : "md:h-[296px]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : (
