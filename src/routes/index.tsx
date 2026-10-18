@@ -14,7 +14,7 @@ import { useReveal } from "@/hooks/use-reveal";
 /* The three facts the strip above the case studies spells out. */
 const strip = [
   { figure: "8+", label: "years in product design" },
-  { figure: "0 → 1 → N", label: "founding designer, B2B SaaS" },
+  { figure: "0 → 1 → Scale", label: "founding designer, B2B SaaS" },
   { figure: "MS CS", label: "ex-developer, speaks engineering, vibe coder" },
 ];
 
