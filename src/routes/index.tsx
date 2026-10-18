@@ -15,7 +15,7 @@ import { useReveal } from "@/hooks/use-reveal";
 const strip = [
   { figure: "8+", label: "years in product design" },
   { figure: "0 → 1 → N", label: "founding designer, B2B SaaS" },
-  { figure: "MS CS", label: "ex-developer, speaks engineering, vibe code" },
+  { figure: "MS CS", label: "ex-developer, speaks engineering, vibe coder" },
 ];
 
 /* The capabilities the band under the strip lists as pills. */
