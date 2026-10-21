@@ -77,7 +77,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
       { name: "author", content: "Surbhi Hote" },
       { name: "google-site-verification", content: "0r5MDOuovIOpy3D14tL0lrLHCqovhzDznr2NxMXpmKM" },
-      { name: "google-site-verification", content: "hGwtOhNyQ49ZUnadvvJD5mci3lMxySR7_W3ZbheyqXQ" },
       { property: "og:title", content: "Surbhi Hote | Lead Product Designer" },
       { property: "og:description", content: "Lead Product Designer with 8+ years designing and scaling complex B2B, SaaS, and enterprise products across web and mobile. Selected case studies in end-to-end, human-centered design." },
       { property: "og:type", content: "website" },
@@ -137,6 +136,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="hGwtOhNyQ49ZUnadvvJD5mci3lMxySR7_W3ZbheyqXQ" />
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
