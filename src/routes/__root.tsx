@@ -136,6 +136,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="hGwtOhNyQ49ZUnadvvJD5mci3lMxySR7_W3ZbheyqXQ" />
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
