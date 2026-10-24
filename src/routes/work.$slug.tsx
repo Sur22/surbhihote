@@ -844,8 +844,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           <div className="mt-16">
             <h3 className="font-serif text-2xl md:text-3xl mb-3 font-normal">User Journey</h3>
             <p className="flex flex-wrap items-baseline gap-x-8 gap-y-1 mb-6 text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">Product Development Manager</span>
-              <span>From scattered product information to a production-ready Tech Pack</span>
+              <span className="font-medium text-foreground">{"\n"}</span>
+              <span>{"\n"}</span>
             </p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">
               [Placeholder] Every tech pack starts as a search. Before a single field is filled,
@@ -853,7 +853,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               emails, spreadsheets and shared folders, then reassembles the same information again
               for costing, stakeholder review and the factory. This map follows that path end to
               end: what they are trying to achieve at each stage, how they do it today, where the
-              work breaks down, how it feels, and the opportunity each gap points to.
+              work breaks down, how it feels, and the opportunity each gap points to.Product Development Manager -From scattered product information to a production-ready Tech Pack
             </p>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[820px] text-left border-collapse [&_tr]:border-b [&_tr]:border-border [&_tr:last-child]:border-0">
