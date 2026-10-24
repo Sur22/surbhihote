@@ -88,7 +88,6 @@ import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
-import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import audienceFlowCreateNew from "@/assets/audience-flow-create-new.png.asset.json";
 import audienceFlowCopyModify from "@/assets/audience-flow-copy-modify.png.asset.json";
