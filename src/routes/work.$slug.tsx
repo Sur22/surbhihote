@@ -1667,9 +1667,40 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Design Principle</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-              {"01 — Give users control\n\nUsers should decide what they receive and where.\n\n02 — Reduce cognitive load\n\nSurface relevant notifications without forcing users through a long list.\n\n03 — Match notifications to responsibility\n\nDifferent roles need different information."}
-            </p>
+            {/* Three principles side by side, using the same shared-Table format as
+                the User Journey tables: bordered rounded wrapper, bold header cells,
+                foreground/90 body text. */}
+            <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
+              <Table className="min-w-[820px]">
+                <TableHeader>
+                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                    {[
+                      "01 — Give users control",
+                      "02 — Reduce cognitive load",
+                      "03 — Match notifications to responsibility",
+                    ].map((title) => (
+                      <TableHead key={title} className="text-foreground font-semibold">
+                        {title}
+                      </TableHead>
+                    ))}
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow className="hover:bg-foreground/5">
+                    {[
+                      "Users should decide what they receive and where.",
+                      "Surface relevant notifications without forcing users through a long list.",
+                      "Different roles need different information.",
+                    ].map((cell) => (
+                      <TableCell key={cell} className="text-foreground/90 align-top">
+                        {cell}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </div>
+
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
                 <img src={userControlBanner.url} alt="Give control to user banner" className="w-full max-w-[1123px] h-auto rounded-[8px]" />
