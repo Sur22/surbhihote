@@ -882,17 +882,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         ],
                       },
                       {
-                        label: "Current experience",
-                        cells: [
-                          "Search files, emails & folders",
-                          "Combine information manually",
-                          "Enter materials & pricing",
-                          "Email stakeholders",
-                          "Send PDFs/files",
-                          "Update multiple documents",
-                        ],
-                      },
-                      {
                         label: "Pain",
                         dots: true,
                         cells: [
