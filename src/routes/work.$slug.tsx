@@ -931,7 +931,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         >
                           {row.dots ? (
                             <>
-                              <span aria-hidden>🔴</span>{" "}
+                              <span aria-hidden className="text-[0.5em]">
+                                🔴
+                              </span>{" "}
                               {cell}
                             </>
                           ) : (
