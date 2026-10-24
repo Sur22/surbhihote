@@ -848,12 +848,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <span>{"\n"}</span>
             </p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-              [Placeholder] Every tech pack starts as a search. Before a single field is filled,
-              the Product Development Manager gathers product details from old tech packs, vendor
-              emails, spreadsheets and shared folders, then reassembles the same information again
-              for costing, stakeholder review and the factory. This map follows that path end to
-              end: what they are trying to achieve at each stage, how they do it today, where the
-              work breaks down, how it feels, and the opportunity each gap points to.Product Development Manager -From scattered product information to a production-ready Tech Pack
+              Product Development Manager - From scattered product information to a production-ready Tech Pack
             </p>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[820px] text-left border-collapse [&_tr]:border-b [&_tr]:border-border [&_tr:last-child]:border-0">
