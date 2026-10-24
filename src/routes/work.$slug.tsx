@@ -1667,12 +1667,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Design Principle</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-              [Placeholder] The design principle behind this work: put the user in
-              control of their notifications, surface only what matters in the
-              moment, and keep the path from seeing a notification to acting on it
-              as short as possible. Describe here how this principle shaped the
-              layout, hierarchy, and controls.
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
+              {"01 — Give users control\n\nUsers should decide what they receive and where.\n\n02 — Reduce cognitive load\n\nSurface relevant notifications without forcing users through a long list.\n\n03 — Match notifications to responsibility\n\nDifferent roles need different information."}
             </p>
             <div className="grid grid-cols-1 gap-6">
               <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
