@@ -88,7 +88,6 @@ import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
-import userControlBanner from "@/assets/user-control-banner.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import audienceFlowCreateNew from "@/assets/audience-flow-create-new.png.asset.json";
 import audienceFlowCopyModify from "@/assets/audience-flow-copy-modify.png.asset.json";
@@ -1700,8 +1699,11 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-              <div className="overflow-hidden rounded-[8px] flex items-center justify-center">
-                <img src={userControlBanner.url} alt="Give control to user banner" className="w-full max-w-[1123px] h-auto rounded-[8px]" />
+              <div className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5 overflow-hidden">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <p className="relative z-10 text-center font-semibold text-lg md:text-xl text-card-foreground">
+                  {"Give Control to User = Make User Feel Empowered = Better User Experience"}
+                </p>
               </div>
               <div className="rounded-[8px] p-4 flex items-center justify-center">
                 <img
