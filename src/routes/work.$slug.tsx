@@ -853,7 +853,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
               </p>
               <p className="mt-[80px]">
-                {"Development Manager - From scattered product information to a production-ready Tech Pack"}
+                <span className="font-semibold text-foreground">{"Development Manager"}</span>
+                {" - From scattered product information to a production-ready Tech Pack"}
               </p>
             </div>
             <div className="overflow-hidden rounded-sm border border-foreground/20">
