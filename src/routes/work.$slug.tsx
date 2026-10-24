@@ -930,32 +930,44 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
                   ).map((row, rowIdx, rows) => {
                     // The highlighted row wears the persona card's own surface and
-                    // outline. Its top edge shares a border with the row above, so
-                    // that row drops its hairline here — otherwise the two collapse
-                    // into one and the hairline wins the shared edge.
+                    // outline. A row's own border is dropped by the shared table
+                    // styling and loses to cell borders where they collapse, so the
+                    // outline is drawn on the cells: top and bottom on every cell,
+                    // then the outer edges on the first and last ones.
+                    const outline = "border-y border-[#ffa348] dark:border-border";
                     const nextIsStrong = rows[rowIdx + 1]?.strong === true;
+                    const last = row.cells.length - 1;
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "border border-[#ffa348] bg-card hover:bg-card dark:border-border"
+                            ? "bg-card hover:bg-card"
                             : nextIsStrong
                               ? "border-b-0 hover:bg-foreground/5"
                               : "border-b border-foreground/10 hover:bg-foreground/5"
                         }
                       >
-                        <TableHead className="text-foreground font-semibold whitespace-pre-line">
+                        <TableHead
+                          className={cn(
+                            "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && cn(outline, "border-l"),
+                          )}
+                        >
                           {row.label}
                         </TableHead>
                         {row.cells.map((cell, i) => (
                           <TableCell
                             key={i}
-                            className={
-                              row.strong
-                                ? "text-foreground/90 font-semibold"
-                                : "text-foreground/90"
-                            }
+                            className={cn(
+                              "text-foreground/90",
+                              row.strong &&
+                                cn(
+                                  "font-semibold",
+                                  outline,
+                                  i === 0 ? "border-l" : i === last ? "border-r" : "",
+                                ),
+                            )}
                           >
                             {row.dots ? (
                               <>
