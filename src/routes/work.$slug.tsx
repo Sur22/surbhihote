@@ -441,8 +441,16 @@ function CaseStudyPage() {
       </section>
 
       {/* Cover */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="overflow-hidden rounded-sm">
+      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
+        {/* The same frosted disc and hollow ring that sit behind each mockup on
+            the homepage case-study cards, here behind the banner image. The disc
+            is a little wider than the banner is tall, so its curve reads above
+            and below the artwork instead of hiding behind it. */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="study-glass-ring absolute left-1/2 top-1/2 aspect-square h-[135%] -translate-x-1/2 -translate-y-1/2" />
+          <div className="study-glass-disc absolute left-1/2 top-1/2 aspect-square h-[135%] overflow-hidden -translate-x-1/2 -translate-y-1/2" />
+        </div>
+        <div className="relative z-10 overflow-hidden rounded-sm">
           <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "affiliate-platform-redesign" ? "w-[72%] mx-auto" : c.slug === "solace" ? "w-[78%] mx-auto" : "w-full"}`} />
         </div>
       </section>
