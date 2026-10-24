@@ -1701,7 +1701,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="grid grid-cols-1 gap-6">
               <div className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5 overflow-hidden">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <p className="relative z-10 text-center font-semibold text-lg md:text-xl text-card-foreground">
+                <p className="relative z-10 text-center font-semibold text-lg text-card-foreground">
                   {"Give Control to User = Make User Feel Empowered = Better User Experience"}
                 </p>
               </div>
