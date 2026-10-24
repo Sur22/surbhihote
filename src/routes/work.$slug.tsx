@@ -2139,17 +2139,20 @@ Users needed an easy way to control and manage the notifications they want and s
                 <p className="font-sans text-base font-semibold text-foreground">
                   {row.label}
                 </p>
-                <div className="mt-2 inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-full bg-secondary px-5 py-3 font-mono text-sm text-secondary-foreground">
-                  {row.steps.map((step, i) => (
-                    <span key={step} className="flex items-center gap-x-3">
-                      {i > 0 && (
-                        <span aria-hidden className="text-muted-foreground">
-                          →
-                        </span>
-                      )}
-                      <span>{step}</span>
-                    </span>
-                  ))}
+                <div className="relative mt-2 inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
+                    {row.steps.map((step, i) => (
+                      <span key={step} className="flex items-center gap-x-3">
+                        {i > 0 && (
+                          <span aria-hidden className="text-muted-foreground">
+                            →
+                          </span>
+                        )}
+                        <span>{step}</span>
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
