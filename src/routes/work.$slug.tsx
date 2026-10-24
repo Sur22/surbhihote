@@ -901,7 +901,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                       {
                         label: "Emotion",
-                        cells: ["😔", "😖", "😩", "😟", "😌", "😫"],
+                        cells: [
+                          "Overwhelmed 😔",
+                          "Frustrated 😖",
+                          "Drained 😩",
+                          "Uncertain 😟",
+                          "Relieved 😌",
+                          "Exhausted 😫",
+                        ],
                       },
                       {
                         label: "Opportunity",
