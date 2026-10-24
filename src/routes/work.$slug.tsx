@@ -849,12 +849,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">
               {`Current workflow
-
-Scattered information → Manual work → Repeated updates → Version confusion
-
-
-
-Product Development Manager - From scattered product information to a production-ready Tech Pack`}
+Scattered information → Manual work → Repeated updates → Version confusion Product Development Manager - From scattered product information to a production-ready Tech Pack`}
             </p>
             <div className="overflow-hidden rounded-sm border border-foreground/20">
               <Table className="min-w-[820px]">
