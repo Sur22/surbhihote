@@ -902,12 +902,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       {
                         label: "Emotion",
                         cells: [
-                          "Overwhelmed 😔",
-                          "Frustrated 😖",
-                          "Drained 😩",
-                          "Uncertain 😟",
-                          "Relieved 😌",
-                          "Exhausted 😫",
+                          "😔 Overwhelmed",
+                          "😖 Frustrated",
+                          "😩 Drained",
+                          "😟 Uncertain",
+                          "😌 Relieved",
+                          "😫 Exhausted",
                         ],
                       },
                       {
