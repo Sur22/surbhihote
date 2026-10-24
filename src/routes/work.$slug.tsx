@@ -931,7 +931,11 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ).map((row) => (
                     <TableRow
                       key={row.label}
-                      className="border-b border-foreground/10 hover:bg-foreground/5"
+                      className={
+                        row.strong
+                          ? "border-b border-foreground/10 bg-tint/20 hover:bg-tint/30"
+                          : "border-b border-foreground/10 hover:bg-foreground/5"
+                      }
                     >
                       <TableHead className="text-foreground font-semibold whitespace-pre-line">
                         {row.label}
