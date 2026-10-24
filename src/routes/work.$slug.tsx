@@ -847,7 +847,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <span className="font-medium text-foreground">Product Development Manager</span>
               <span>From scattered product information to a production-ready Tech Pack</span>
             </p>
-            <p className="mb-8 max-w-[70ch] text-[15px] leading-relaxed text-muted-foreground">
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
               [Placeholder] Every tech pack starts as a search. Before a single field is filled,
               the Product Development Manager gathers product details from old tech packs, vendor
               emails, spreadsheets and shared folders, then reassembles the same information again
