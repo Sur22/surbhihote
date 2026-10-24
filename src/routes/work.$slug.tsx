@@ -840,6 +840,105 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </div>
           </div>
         )}
+        {c.slug === "solace" && (
+          <div className="mt-16">
+            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[820px] text-left border-collapse [&_tr]:border-b [&_tr]:border-border [&_tr:last-child]:border-0">
+                <thead>
+                  <tr>
+                    <th className="py-4 pr-4 align-bottom w-[150px]"></th>
+                    {["Gather", "Build", "Cost", "Review", "Share", "Update"].map((stage) => (
+                      <th
+                        key={stage}
+                        className="py-4 pr-4 align-bottom text-base md:text-lg font-bold text-foreground"
+                      >
+                        {stage}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {(
+                    [
+                      {
+                        label: "Goal",
+                        cells: [
+                          "Find product details",
+                          "Create Tech Pack",
+                          "Add BOM + costs",
+                          "Align stakeholders",
+                          "Send to factory",
+                          "Manage changes",
+                        ],
+                      },
+                      {
+                        label: "Current experience",
+                        cells: [
+                          "Search files, emails & folders",
+                          "Combine information manually",
+                          "Enter materials & pricing",
+                          "Email stakeholders",
+                          "Send PDFs/files",
+                          "Update multiple documents",
+                        ],
+                      },
+                      {
+                        label: "Pain",
+                        dots: true,
+                        cells: [
+                          "Scattered data",
+                          "Duplicate work",
+                          "Errors + rework",
+                          "Communication gaps",
+                          "Version confusion",
+                          "Repeated updates",
+                        ],
+                      },
+                      {
+                        label: "Emotion",
+                        cells: ["😔", "😖", "😩", "😟", "😌", "😫"],
+                      },
+                      {
+                        label: "Opportunity",
+                        strong: true,
+                        cells: [
+                          "Centralize",
+                          "Connect",
+                          "Automate",
+                          "Collaborate",
+                          "Standardize",
+                          "Version",
+                        ],
+                      },
+                    ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
+                  ).map((row) => (
+                    <tr key={row.label}>
+                      <th className="py-4 pr-4 align-top text-base md:text-lg font-bold text-foreground whitespace-pre-line">
+                        {row.label}
+                      </th>
+                      {row.cells.map((cell, i) => (
+                        <td
+                          key={i}
+                          className="py-4 pr-4 align-top text-base md:text-lg leading-relaxed text-foreground/85"
+                        >
+                          {row.dots ? (
+                            <>
+                              <span aria-hidden>🔴</span>{" "}
+                              {cell}
+                            </>
+                          ) : (
+                            cell
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </section>
 
       <Dialog open={!!zoomImg} onOpenChange={(o) => !o && setZoomImg(null)}>
