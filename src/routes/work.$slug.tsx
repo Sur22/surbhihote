@@ -865,11 +865,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {["Gather", "Build", "Cost", "Review", "Share", "Update"].map((stage) => (
                       <TableHead key={stage} className="text-foreground font-semibold">
                         {stage}
-                        {stage === "Gather" || stage === "Update" ? (
-                          <span className="font-normal text-foreground/60">
-                            {"\u00a0"}({stage === "Gather" ? "start" : "end"})
-                          </span>
-                        ) : null}
                       </TableHead>
                     ))}
                   </TableRow>
