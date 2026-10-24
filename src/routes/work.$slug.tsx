@@ -1667,38 +1667,36 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Design Principle</h3>
-            {/* Three principles side by side, using the same shared-Table format as
-                the User Journey tables: bordered rounded wrapper, bold header cells,
-                foreground/90 body text. */}
-            <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
-              <Table className="min-w-[820px]">
-                <TableHeader>
-                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
-                    {[
-                      "01 — Give users control",
-                      "02 — Reduce cognitive load",
-                      "03 — Match notifications to responsibility",
-                    ].map((title) => (
-                      <TableHead key={title} className="text-foreground font-semibold">
-                        {title}
-                      </TableHead>
-                    ))}
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  <TableRow className="hover:bg-foreground/5">
-                    {[
-                      "Users should decide what they receive and where.",
-                      "Surface relevant notifications without forcing users through a long list.",
-                      "Different roles need different information.",
-                    ].map((cell) => (
-                      <TableCell key={cell} className="text-foreground/90 align-top">
-                        {cell}
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                </TableBody>
-              </Table>
+            {/* Three principles as persona-style cards: card fill, white/10 blurred
+                veil and thin amber outline on light paper (theme border on dark). */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              {[
+                {
+                  title: "01 — Give users control",
+                  body: "Users should decide what they receive and where.",
+                },
+                {
+                  title: "02 — Reduce cognitive load",
+                  body: "Surface relevant notifications without forcing users through a long list.",
+                },
+                {
+                  title: "03 — Match notifications to responsibility",
+                  body: "Different roles need different information.",
+                },
+              ].map((principle) => (
+                <div
+                  key={principle.title}
+                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="relative z-10">
+                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      {principle.title}
+                    </h4>
+                    <p className="text-sm text-card-foreground">{principle.body}</p>
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className="grid grid-cols-1 gap-6">
