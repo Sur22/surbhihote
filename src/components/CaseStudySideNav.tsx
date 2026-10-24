@@ -29,6 +29,13 @@ function getSections(slug?: string): Section[] {
     }
   }
 
+  if (slug === "solace") {
+    const solutionIdx = sections.findIndex((s) => s.id === "final-designs");
+    if (solutionIdx !== -1) {
+      sections.splice(solutionIdx, 0, { id: "design-process", label: "Design" });
+    }
+  }
+
   if (slug && affiliateSlugs.has(slug)) {
     sections = sections.map((s) => {
       if (s.id === "impact") return { ...s, label: "REFLECTION" };
