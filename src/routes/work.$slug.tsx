@@ -2310,7 +2310,7 @@ Users needed an easy way to control and manage the notifications they want and s
           <div className="mb-10">
             <div className="relative inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
               <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-              <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-[9.1px] font-bold text-card-foreground">
+              <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
                 {[
                   "Role",
                   "Notification Template",
