@@ -39,6 +39,9 @@
   --color-sage: var(--sage);
   --color-rule: var(--rule);
   --color-hover: var(--hover);
+  /* The soft blue-gray wash the homepage cards already use, exposed as a
+     utility so table highlights land on the same tint. */
+  --color-tint: var(--circle-fill);
 }
 
 :root {
