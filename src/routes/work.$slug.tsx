@@ -850,22 +850,19 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">
               Product Development Manager - From scattered product information to a production-ready Tech Pack
             </p>
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[820px] text-left border-collapse [&_tr]:border-b [&_tr]:border-border [&_tr:last-child]:border-0">
-                <thead>
-                  <tr>
-                    <th className="py-4 pr-4 align-bottom w-[150px]"></th>
+            <div className="overflow-hidden rounded-sm border border-foreground/20">
+              <Table className="min-w-[820px]">
+                <TableHeader>
+                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                    <TableHead className="w-[140px] text-foreground font-semibold">{"\u00a0"}</TableHead>
                     {["Gather", "Build", "Cost", "Review", "Share", "Update"].map((stage) => (
-                      <th
-                        key={stage}
-                        className="py-4 pr-4 align-bottom text-base md:text-lg font-bold text-foreground"
-                      >
+                      <TableHead key={stage} className="text-foreground font-semibold">
                         {stage}
-                      </th>
+                      </TableHead>
                     ))}
-                  </tr>
-                </thead>
-                <tbody>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
                   {(
                     [
                       {
@@ -920,14 +917,19 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
                   ).map((row) => (
-                    <tr key={row.label}>
-                      <th className="py-4 pr-4 align-top text-base md:text-lg font-bold text-foreground whitespace-pre-line">
+                    <TableRow
+                      key={row.label}
+                      className="border-b border-foreground/10 hover:bg-foreground/5"
+                    >
+                      <TableHead className="text-foreground font-semibold whitespace-pre-line">
                         {row.label}
-                      </th>
+                      </TableHead>
                       {row.cells.map((cell, i) => (
-                        <td
+                        <TableCell
                           key={i}
-                          className="py-4 pr-4 align-top text-base md:text-lg leading-relaxed text-foreground/85"
+                          className={
+                            row.strong ? "text-foreground/90 font-semibold" : "text-foreground/90"
+                          }
                         >
                           {row.dots ? (
                             <>
@@ -940,12 +942,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                           ) : (
                             cell
                           )}
-                        </td>
+                        </TableCell>
                       ))}
-                    </tr>
+                    </TableRow>
                   ))}
-                </tbody>
-              </table>
+                </TableBody>
+              </Table>
             </div>
           </div>
         )}
