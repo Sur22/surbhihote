@@ -1671,15 +1671,15 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               {[
                 {
-                  title: "01 — Give users control",
+                  title: "1  Give users control",
                   body: "Users should decide what they receive and where.",
                 },
                 {
-                  title: "02 — Reduce cognitive load",
+                  title: "2  Reduce cognitive load",
                   body: "Surface relevant notifications without forcing users through a long list.",
                 },
                 {
-                  title: "03 — Match notifications to responsibility",
+                  title: "3  Match notifications to responsibility",
                   body: "Different roles need different information.",
                 },
               ].map((principle) => (
