@@ -928,40 +928,51 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         ],
                       },
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
-                  ).map((row) => (
-                    <TableRow
-                      key={row.label}
-                      className={
-                        row.strong
-                          ? "border-b border-foreground/10 bg-tint/20 hover:bg-tint/30"
-                          : "border-b border-foreground/10 hover:bg-foreground/5"
-                      }
-                    >
-                      <TableHead className="text-foreground font-semibold whitespace-pre-line">
-                        {row.label}
-                      </TableHead>
-                      {row.cells.map((cell, i) => (
-                        <TableCell
-                          key={i}
-                          className={
-                            row.strong ? "text-foreground/90 font-semibold" : "text-foreground/90"
-                          }
-                        >
-                          {row.dots ? (
-                            <>
-                              <span aria-hidden className="text-[0.5em]">
-                                🔴
-                              </span>
-                              {"\u00a0"}
-                              {cell}
-                            </>
-                          ) : (
-                            cell
-                          )}
-                        </TableCell>
-                      ))}
-                    </TableRow>
-                  ))}
+                  ).map((row, rowIdx, rows) => {
+                    // The highlighted row wears the persona card's own surface and
+                    // outline. Its top edge shares a border with the row above, so
+                    // that row drops its hairline here — otherwise the two collapse
+                    // into one and the hairline wins the shared edge.
+                    const nextIsStrong = rows[rowIdx + 1]?.strong === true;
+                    return (
+                      <TableRow
+                        key={row.label}
+                        className={
+                          row.strong
+                            ? "border border-[#ffa348] bg-card hover:bg-card dark:border-border"
+                            : nextIsStrong
+                              ? "border-b-0 hover:bg-foreground/5"
+                              : "border-b border-foreground/10 hover:bg-foreground/5"
+                        }
+                      >
+                        <TableHead className="text-foreground font-semibold whitespace-pre-line">
+                          {row.label}
+                        </TableHead>
+                        {row.cells.map((cell, i) => (
+                          <TableCell
+                            key={i}
+                            className={
+                              row.strong
+                                ? "text-foreground/90 font-semibold"
+                                : "text-foreground/90"
+                            }
+                          >
+                            {row.dots ? (
+                              <>
+                                <span aria-hidden className="text-[0.5em]">
+                                  🔴
+                                </span>
+                                {"\u00a0"}
+                                {cell}
+                              </>
+                            ) : (
+                              cell
+                            )}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </div>
