@@ -931,10 +931,11 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ).map((row, rowIdx, rows) => {
                     // The highlighted row wears the persona card's own surface and
                     // outline. A row's own border is dropped by the shared table
-                    // styling and loses to cell borders where they collapse, so the
-                    // outline is drawn on the cells: top and bottom on every cell,
-                    // then the outer edges on the first and last ones.
-                    const outline = "border-y border-[#ffa348] dark:border-border";
+                    // styling and loses to cell borders where they collapse, so both
+                    // are drawn on the cells: the outline top and bottom on every
+                    // cell, its outer edges on the first and last, the veil as a fill.
+                    const outline = "border-y border-[#ffa348] dark:border-border",
+                      fill = "bg-white/10";
                     const nextIsStrong = rows[rowIdx + 1]?.strong === true;
                     const last = row.cells.length - 1;
                     return (
@@ -951,7 +952,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && cn(outline, "border-l"),
+                            row.strong && cn(outline, fill, "border-l"),
                           )}
                         >
                           {row.label}
@@ -964,7 +965,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                               row.strong &&
                                 cn(
                                   "font-semibold",
-                                  outline,
+                                  outline, fill,
                                   i === 0 ? "border-l" : i === last ? "border-r" : "",
                                 ),
                             )}
