@@ -2305,6 +2305,31 @@ Users needed an easy way to control and manage the notifications they want and s
       {/* Final Designs */}
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : "py-24"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
+        {c.slug === "atlas" && (
+          // Same pill treatment as the Design opportunity flow above.
+          <div className="mb-10">
+            <div className="relative inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
+              <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+              <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
+                {[
+                  "Role",
+                  "Notification Template",
+                  "User Preferences",
+                  "Delivery Channel",
+                ].map((step, i) => (
+                  <span key={step} className="flex items-center gap-x-3">
+                    {i > 0 && (
+                      <span aria-hidden className="text-muted-foreground">
+                        →
+                      </span>
+                    )}
+                    <span>{step}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
         {c.slug === "solace" && (
           // Before/after flows: each row is a bold label over a pill holding the
           // steps, so the shift from the old workflow to the new one reads at a glance.
