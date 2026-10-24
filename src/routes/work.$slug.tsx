@@ -842,7 +842,11 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
+            <h3 className="font-serif text-2xl md:text-3xl mb-3 font-normal">User Journey</h3>
+            <p className="flex flex-wrap items-baseline gap-x-8 gap-y-1 mb-6 text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Product Development Manager</span>
+              <span>From scattered product information to a production-ready Tech Pack</span>
+            </p>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[820px] text-left border-collapse [&_tr]:border-b [&_tr]:border-border [&_tr:last-child]:border-0">
                 <thead>
