@@ -928,40 +928,65 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         ],
                       },
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
-                  ).map((row) => (
-                    <TableRow
-                      key={row.label}
-                      className={
-                        row.strong
-                          ? "border-b border-foreground/10 bg-tint/20 hover:bg-tint/30"
-                          : "border-b border-foreground/10 hover:bg-foreground/5"
-                      }
-                    >
-                      <TableHead className="text-foreground font-semibold whitespace-pre-line">
-                        {row.label}
-                      </TableHead>
-                      {row.cells.map((cell, i) => (
-                        <TableCell
-                          key={i}
-                          className={
-                            row.strong ? "text-foreground/90 font-semibold" : "text-foreground/90"
-                          }
-                        >
-                          {row.dots ? (
-                            <>
-                              <span aria-hidden className="text-[0.5em]">
-                                🔴
-                              </span>
-                              {"\u00a0"}
-                              {cell}
-                            </>
-                          ) : (
-                            cell
+                  ).map((row, rowIdx, rows) => {
+                    // The highlighted row wears the persona card's own surface and
+                    // outline. A row's own border is dropped by the shared table
+                    // styling and loses to cell borders where they collapse, so both
+                    // are drawn on the cells: the outline top and bottom on every
+                    // cell, its outer edges on the first and last, the veil as a fill.
+                    const outline = "border-y border-[#ffa348] dark:border-border",
+                      fill = "bg-white/10";
+                    const nextIsStrong = rows[rowIdx + 1]?.strong === true;
+                    const last = row.cells.length - 1;
+                    return (
+                      <TableRow
+                        key={row.label}
+                        className={
+                          row.strong
+                            ? "bg-card hover:bg-card"
+                            : nextIsStrong
+                              ? "border-b-0 hover:bg-foreground/5"
+                              : "border-b border-foreground/10 hover:bg-foreground/5"
+                        }
+                      >
+                        <TableHead
+                          className={cn(
+                            "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && cn(outline, fill, "border-l"),
                           )}
-                        </TableCell>
-                      ))}
-                    </TableRow>
-                  ))}
+                        >
+                          {row.label}
+                        </TableHead>
+                        {row.cells.map((cell, i) => (
+                          <TableCell
+                            key={i}
+                            className={cn(
+                              "text-foreground/90",
+                              row.strong &&
+                                cn(
+                                  "font-semibold",
+                                  outline,
+                                  fill,
+                                  i === 0 ? "border-l" : i === last ? "border-r" : "",
+                                ),
+                            )}
+                          >
+                            {row.dots ? (
+                              <>
+                                <span aria-hidden className="text-[0.5em]">
+                                  🔴
+                                </span>
+                                {"\u00a0"}
+                                {cell}
+                              </>
+                            ) : (
+                              cell
+                            )}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </div>
