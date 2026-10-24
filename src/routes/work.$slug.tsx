@@ -1848,13 +1848,38 @@ Users needed an easy way to control and manage the notifications they want and s
             <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
           </button>
         ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
-          <button
-            type="button"
-            onClick={() => setZoomImg(atlasTaskFlow.url)}
-            className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
-          >
-            <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={() => setZoomImg(atlasTaskFlow.url)}
+              className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
+            >
+              <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+            </button>
+            {/* Same pill treatment as the Design opportunity flow. */}
+            <div className="mt-10">
+              <div className="relative inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
+                  {[
+                    "Role",
+                    "Notification Template",
+                    "User Preferences",
+                    "Delivery Channel",
+                  ].map((step, i) => (
+                    <span key={step} className="flex items-center gap-x-3">
+                      {i > 0 && (
+                        <span aria-hidden className="text-muted-foreground">
+                          →
+                        </span>
+                      )}
+                      <span>{step}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </>
         ) : (
           <>
             {c.slug !== "fjord" && (
