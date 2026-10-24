@@ -741,6 +741,137 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           </div>
         )}
 
+        {/* User Journey — Notifications Management only, mirroring the Tech Pack
+            Tool journey table: same shared-Table structure, small pain dots,
+            persona-card highlight on the Opportunity row. */}
+        {c.slug === "atlas" && (
+          <div className="mt-16">
+            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
+            <div className="overflow-hidden rounded-sm border border-foreground/20">
+              <Table className="min-w-[820px]">
+                <TableHeader>
+                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                    <TableHead className="w-[140px] text-foreground font-semibold">{"\u00a0"}</TableHead>
+                    {["Receive", "Find", "Decide", "Act", "Follow up"].map((stage) => (
+                      <TableHead key={stage} className="text-foreground font-semibold">
+                        {stage}
+                      </TableHead>
+                    ))}
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {(
+                    [
+                      {
+                        label: "Goal",
+                        cells: [
+                          "Stay informed",
+                          "Find relevant alert",
+                          "Identify priority",
+                          "Take action",
+                          "Track progress",
+                        ],
+                      },
+                      {
+                        label: "Action",
+                        cells: [
+                          "Receive many notifications",
+                          "Scroll/search",
+                          "Determine importance",
+                          "Open product/task",
+                          "Monitor next steps",
+                        ],
+                      },
+                      {
+                        label: "Pain",
+                        dots: true,
+                        cells: [
+                          "Notification overload",
+                          "Important alerts buried",
+                          "No prioritization",
+                          "Missed alerts",
+                          "Repeated checking",
+                        ],
+                      },
+                      {
+                        label: "Emotion",
+                        cells: ["😕", "😖", "😟", "😫", "😐"],
+                      },
+                      {
+                        label: "Opportunity",
+                        strong: true,
+                        cells: [
+                          "Filter",
+                          "Organize",
+                          "Prioritize",
+                          "Control",
+                          "Personalize",
+                        ],
+                      },
+                    ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
+                  ).map((row, rowIdx, rows) => {
+                    // Same highlighted-row treatment as the Tech Pack journey: the
+                    // persona card's surface and outline, drawn on the cells because
+                    // the shared table styling drops a row's own border.
+                    const outline = "border-y border-[#ffa348] dark:border-border",
+                      fill = "bg-white/10";
+                    const nextIsStrong = rows[rowIdx + 1]?.strong === true;
+                    const last = row.cells.length - 1;
+                    return (
+                      <TableRow
+                        key={row.label}
+                        className={
+                          row.strong
+                            ? "bg-card hover:bg-card"
+                            : nextIsStrong
+                              ? "border-b-0 hover:bg-foreground/5"
+                              : "border-b border-foreground/10 hover:bg-foreground/5"
+                        }
+                      >
+                        <TableHead
+                          className={cn(
+                            "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && cn(outline, fill, "border-l"),
+                          )}
+                        >
+                          {row.label}
+                        </TableHead>
+                        {row.cells.map((cell, i) => (
+                          <TableCell
+                            key={i}
+                            className={cn(
+                              "text-foreground/90",
+                              row.strong &&
+                                cn(
+                                  "font-semibold",
+                                  outline,
+                                  fill,
+                                  i === 0 ? "border-l" : i === last ? "border-r" : "",
+                                ),
+                            )}
+                          >
+                            {row.dots ? (
+                              <>
+                                <span aria-hidden className="text-[0.5em]">
+                                  🔴
+                                </span>
+                                {"\u00a0"}
+                                {cell}
+                              </>
+                            ) : (
+                              cell
+                            )}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            </div>
+          </div>
+        )}
+
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
         )}
