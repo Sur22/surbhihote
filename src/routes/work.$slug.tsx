@@ -965,7 +965,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                               row.strong &&
                                 cn(
                                   "font-semibold",
-                                  outline, fill,
+                                  outline,
+                                  fill,
                                   i === 0 ? "border-l" : i === last ? "border-r" : "",
                                 ),
                             )}
