@@ -314,7 +314,7 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
    banner does the same with the cover picture's box:
      · Affiliate: 91% of the picture's height, its centre 29% across and halfway
        down, so a rim of circle shows past the screenshot's left edge.
-     · Notifications: 108%, its centre 45.5% across and 59% down — a touch left
+     · Notifications: 59.4%, its centre 45.5% across and 59% down — a touch left
        of the phone and dropped below its middle.
      · Tech Pack: 124.2%, pinned by its top-right corner to the picture's
        top-right corner, the way it sits in the card's tinted band.
@@ -329,7 +329,7 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
     ? { left: "29.2%", top: "50%", transform: "translate(-50%, -50%) scale(0.91)" }
     : slug === "atlas"
-      ? { left: "45.5%", top: "59%", transform: "translate(-50%, -50%) scale(1.08)" }
+      ? { left: "45.5%", top: "59%", transform: "translate(-50%, -50%) scale(0.594)" }
       : slug === "solace"
         ? {
             left: "100%",
