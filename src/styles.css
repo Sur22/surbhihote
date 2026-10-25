@@ -771,8 +771,12 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   }
 }
 
-/* The User Journey tables breathe: every row stands 40% taller than a default
-   table row (40px → 56px), so the stage grid reads as a chart, not a list. */
+/* The User Journey tables: every row stands 40% taller than a default table row
+   (40px → 56px), and the frame curves at 8px like the site's rounded images. */
+.journey-table {
+  border-radius: 8px;
+}
+
 .journey-table :is(th, td) {
-  padding-block: 16px;
+  padding-block: 17.5px;
 }
