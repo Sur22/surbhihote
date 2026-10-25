@@ -408,6 +408,27 @@
     inset 0 -1px 1px rgb(255 255 255 / 0.22);
 }
 
+/* The Solution carousel's frost, laid on top of the veil so a card reads as
+   the same glass as the carousel: its blur, its white tint, its rim. It rides
+   just inside the veil's own edge so the two rims don't land on one pixel, and
+   stays under the card's content, which keeps its own sharp layer. */
+.study-card-glass__veil::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgb(255 255 255 / 0.2);
+  pointer-events: none;
+}
+
+/* On dark paper the full-strength frost would lift the card to a mid grey, so
+   there it keeps the same blur with a much thinner white tint. */
+.dark .study-card-glass__veil::after {
+  background-color: rgb(255 255 255 / 0.05);
+  border-color: rgb(255 255 255 / 0.12);
+}
+
 /* The same washes on dark paper would lift the surface to a mid grey that
    neither dark nor light ink can clear, so there they fade back and the card
    stays close to the page. */
