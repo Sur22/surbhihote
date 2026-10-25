@@ -2446,7 +2446,11 @@ Users needed an easy way to control and manage the notifications they want and s
                   key={s.label}
                   className="rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center"
                 >
-                  <p className="text-lg font-bold text-foreground">
+                  <p
+                    className={`text-lg font-bold text-foreground ${
+                      c.slug === "atlas" || c.slug === "atlas2" ? "font-serif" : ""
+                    }`}
+                  >
                     {s.label}: <span>{s.value}</span>
                   </p>
                 </div>
