@@ -5,3 +5,4 @@
 
 - A highlighted table row's outline is drawn on its cells, not on the row: the shared Table drops a row's own border on the last row, and cell borders win where they collapse.
 - The site's highlight surface is the persona card's own treatment — card fill, a white/10 blurred veil, and a thin amber `#ffa348` outline on light paper (the theme border colour on dark). Reuse it verbatim instead of inventing another tint when something must read as highlighted.
+- A surface whose colour must stay the same in both themes gets its own token pair in `src/styles.css` (values in `:root`, published through `@theme inline`, used as `bg-*` / `text-*`) instead of `bg-foreground` / `text-background`, which invert with the theme and would flip such a surface to the opposite colour.
