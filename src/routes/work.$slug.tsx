@@ -2372,6 +2372,64 @@ Users needed an easy way to control and manage the notifications they want and s
             </li>
           </ul>
 
+          {/* Notifications Management: usability findings as a Finding / Impact /
+              Design response table, wearing the shared table treatment. */}
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
+            <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
+              <Table className="min-w-[820px]">
+                <TableHeader>
+                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                    {["Finding", "Impact", "Design response"].map((h) => (
+                      <TableHead key={h} className="text-foreground font-semibold">
+                        {h}
+                      </TableHead>
+                    ))}
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {[
+                    {
+                      finding: "4/5 confused by edit icon",
+                      impact: "High",
+                      response: "Clarified interaction",
+                    },
+                    {
+                      finding: "3/5 confused by search icon",
+                      impact: "Medium",
+                      response: "Improved search affordance",
+                    },
+                    {
+                      finding: "3/5 confused by categories",
+                      impact: "High",
+                      response: "Refined naming",
+                    },
+                    {
+                      finding: "5/5 found solution useful",
+                      impact: "\u2014",
+                      response: "Validated core concept",
+                    },
+                  ].map((row) => (
+                    <TableRow
+                      key={row.finding}
+                      className="border-b border-foreground/10 hover:bg-foreground/5"
+                    >
+                      <TableCell className="text-foreground/90">
+                        {row.finding}
+                      </TableCell>
+                      <TableCell className="text-foreground/90">
+                        {row.impact}
+                      </TableCell>
+                      <TableCell className="text-foreground/90">
+                        {row.response}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          )}
+
+
 
           {c.slug === "fjord" && (
             <p className="text-lg leading-relaxed text-foreground/85 mb-16">
