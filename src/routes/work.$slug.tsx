@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Check, TrendingUp, Play } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowDown, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -1615,6 +1615,54 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
                 Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
+
+              <div className="mt-[100px]">
+                <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for research</h3>
+                <div className="overflow-hidden rounded-sm border border-foreground/20">
+                  {[
+                    {
+                      icon: FileText,
+                      title: "Input",
+                      subtitle: "128 affiliate survey responses",
+                      body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
+                    },
+                    {
+                      icon: BrainCircuit,
+                      title: "AI-assisted synthesis",
+                      subtitle: "If performed during the project",
+                      body: "Cluster responses into candidate themes and identify patterns for further investigation.",
+                    },
+                    {
+                      icon: CheckCheck,
+                      title: "Designer validation",
+                      subtitle: "",
+                      body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
+                    },
+                  ].map((step, idx) => (
+                    <div key={step.title}>
+                      <div className="flex items-start gap-4 px-6 py-6">
+                        <div className="w-6 shrink-0 flex justify-center pt-0.5">
+                          <step.icon className="h-5 w-5" aria-hidden="true" />
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="text-base font-semibold leading-snug">{step.title}</h4>
+                          {step.subtitle ? (
+                            <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                          ) : null}
+                          <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
+                        </div>
+                      </div>
+                      {idx < 2 ? (
+                        <div className="flex pl-6 -my-3" aria-hidden="true">
+                          <div className="w-6 flex justify-center">
+                            <ArrowDown className="h-4 w-4 text-foreground/60" />
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="mt-16">
