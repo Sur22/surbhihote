@@ -446,6 +446,9 @@ function CaseStudyPage() {
   const { study: c } = Route.useLoaderData() as { study: CaseStudy };
   const others = caseStudies.filter((x) => x.slug !== c.slug && !x.hidden);
   const [zoomImg, setZoomImg] = useState<string | null>(null);
+  /* The back link hides until the banner picture is hovered, so the cover reads
+     on its own. Phones have no hover, so there the link stays put. */
+  const [bannerHover, setBannerHover] = useState(false);
   const surveyImages = [
     { src: surveyImg1, alt: "Which tool you currently use for creating a Tech pack — survey results" },
     { src: surveyImg3, alt: "Which tool you use for material details — survey results" },
@@ -465,7 +468,11 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
+    <div
+      className={`relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}
+      onMouseEnter={() => setBannerHover(true)}
+      onMouseLeave={() => setBannerHover(false)}
+    >
       <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
     </div>
   );
@@ -496,7 +503,7 @@ function CaseStudyPage() {
         <Link
           to="/"
           hash="case-studies"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className={`inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-[color,opacity] duration-200 ${bannerHover ? "opacity-100" : "opacity-100 md:opacity-0 md:pointer-events-none md:focus-visible:opacity-100 md:focus-visible:pointer-events-auto"}`}
         >
           <ArrowLeft size={16} />
           Back To Protfolio
