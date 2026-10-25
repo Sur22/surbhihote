@@ -5,4 +5,3 @@
 
 - A highlighted table row's outline is drawn on its cells, not on the row: the shared Table drops a row's own border on the last row, and cell borders win where they collapse.
 - The site's highlight surface is the persona card's own treatment — card fill, a white/10 blurred veil, and a thin amber `#ffa348` outline on light paper (the theme border colour on dark). Reuse it verbatim instead of inventing another tint when something must read as highlighted.
-- Case-study cards and banners that must read as glass use the shared `.case-glass__backdrop` + `.case-glass__veil` layers from `src/styles.css` rather than a per-card tint, so the frosted surface and its amber-outside-frosted-rim layering stay identical everywhere they appear.
