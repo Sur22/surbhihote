@@ -1095,12 +1095,15 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <span className="font-medium text-foreground">{"\n"}</span>
               <span>{"\n"}</span>
             </p>
-            <div className="text-lg leading-relaxed text-foreground/85 mb-8">
-              <p>{"Current workflow"}</p>
-              <p className="mt-1 font-semibold text-foreground">
-                {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
-              </p>
-              <p className="mt-[80px]">
+            <div className="mb-8">
+              <h4 className="h4">{"Current workflow"}</h4>
+              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <p className="statement-line relative z-10 text-center text-card-foreground">
+                  {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
+                </p>
+              </div>
+              <p className="mt-[80px] text-lg leading-relaxed text-foreground/85">
                 <span className="font-semibold text-foreground">{"Development Manager"}</span>
                 {" - From scattered product information to a production-ready Tech Pack"}
               </p>
