@@ -948,7 +948,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {cell}
+                            {row.tones ? (
+                              <span className="inline-flex items-center gap-2">
+                                <span
+                                  aria-hidden
+                                  className={cn(
+                                    "inline-block h-[11px] w-[11px] shrink-0 rounded-full",
+                                    row.tones[i],
+                                  )}
+                                />
+                                {cell}
+                              </span>
+                            ) : (
+                              cell
+                            )}
                           </TableCell>
                         ))}
                       </TableRow>
@@ -1214,7 +1227,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {cell}
+                            {row.tones ? (
+                              <span className="inline-flex items-center gap-2">
+                                <span
+                                  aria-hidden
+                                  className={cn(
+                                    "inline-block h-[11px] w-[11px] shrink-0 rounded-full",
+                                    row.tones[i],
+                                  )}
+                                />
+                                {cell}
+                              </span>
+                            ) : (
+                              cell
+                            )}
                           </TableCell>
                         ))}
                       </TableRow>
