@@ -4,13 +4,13 @@ const steps = [
   {
     icon: FileText,
     title: "Input",
-    subtitle: "AI Tools -  Claude ",
+    subtitle: "128 affiliate survey responses",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "128 affiliate survey responses",
+    subtitle: "AI Tools -  Claude ",
     body: "Cluster responses into candidate themes and identify patterns for further investigation.",
   },
   {
