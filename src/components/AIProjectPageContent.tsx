@@ -136,6 +136,28 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           {project.subtitle}
         </p>
 
+        {/* Study intro — sits below the cover picture so the header above it
+            holds only the centred tagline and title, as on the design case
+            studies. */}
+        {project.slug === "creator-hub" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            <strong>Creator Hub</strong> An AI-assisted workspace that helps
+            social media creators plan, repurpose, and optimize content across
+            platforms, without drowning in tools.
+          </p>
+        ) : project.slug === "voyager" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            Design lab AI for UI Project: designing a travel AI product end to
+            end, using AI at every stage.
+          </p>
+        ) : project.slug === "resources" ? (
+          <></>
+        ) : (
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+            {"\n"}
+          </p>
+        )}
+
         {project.slug === "resources" && (
           <section className="mt-12">
             <h2 className="font-serif text-2xl md:text-4xl leading-[1.15] text-foreground/85 mb-4">Overview</h2>
