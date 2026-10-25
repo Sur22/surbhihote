@@ -17,7 +17,7 @@ const stages = [
    line keeps its size and slides sideways instead of wrapping. */
 export function AiTestingFlowDiagram() {
   return (
-    <div className="mt-10 -mx-6 overflow-x-auto px-6 pb-2 md:-mx-10 md:px-10">
+    <div className="overflow-x-auto px-6 pb-6">
       <ul
         role="list"
         aria-label="Testing flow from custom events to retest"

@@ -50,6 +50,7 @@ export function AiPanelTesting() {
             ) : null}
           </div>
         ))}
+        <AiTestingFlowDiagram />
       </div>
     </div>
   );
