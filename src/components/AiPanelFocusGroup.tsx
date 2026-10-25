@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Video,
     title: "Input",
-    subtitle: "Microsoft Co-pilot + Claude",
+    subtitle: "AI Tools - Microsoft Co-pilot + Claude",
     body: "Focus group recordings and a structured set of questions used across five affiliate groups to understand their current workflows, pain points, behaviors, and preferences.",
   },
   {
