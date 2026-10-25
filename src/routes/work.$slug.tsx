@@ -2425,6 +2425,13 @@ Users needed an easy way to control and manage the notifications they want and s
                 </TableBody>
               </Table>
             </div>
+
+            <ul className="space-y-6 text-lg leading-relaxed text-foreground/85 mt-10">
+              <li className="flex gap-4">
+                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+                <span>Based on the test result data some changes were made to fix issues faced by the users.</span>
+              </li>
+            </ul>
           )}
 
 
