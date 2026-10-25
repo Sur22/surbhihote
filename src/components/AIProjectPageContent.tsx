@@ -86,25 +86,6 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </p>
         )}
 
-        {project.slug === "creator-hub" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            <strong>Creator Hub</strong> An AI-assisted workspace that helps
-            social media creators plan, repurpose, and optimize content across
-            platforms, without drowning in tools.
-          </p>
-        ) : project.slug === "voyager" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            Design lab AI for UI Project: designing a travel AI product end to
-            end, using AI at every stage.
-          </p>
-        ) : project.slug === "resources" ? (
-          <></>
-        ) : (
-          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-            {"\n"}
-          </p>
-        )}
-
         <figure
           className={
             project.slug === "creator-hub" || project.slug === "voyager"
