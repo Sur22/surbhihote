@@ -1938,29 +1938,6 @@ Users needed an easy way to control and manage the notifications they want and s
             >
               <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
             </button>
-            {/* Same pill treatment as the Design opportunity flow. */}
-            <div className="mt-10">
-              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
-                  {[
-                    "Role",
-                    "Notification Template",
-                    "User Preferences",
-                    "Delivery Channel",
-                  ].map((step, i) => (
-                    <span key={step} className="flex items-center gap-x-3">
-                      {i > 0 && (
-                        <span aria-hidden className="text-muted-foreground">
-                          →
-                        </span>
-                      )}
-                      <span>{step}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
 
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
             {/* Three levels as persona-style cards, matching the Design Principle
@@ -1993,6 +1970,30 @@ Users needed an easy way to control and manage the notifications they want and s
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Same pill treatment as the Design opportunity flow. */}
+            <div className="mt-10">
+              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
+                  {[
+                    "Role",
+                    "Notification Template",
+                    "User Preferences",
+                    "Delivery Channel",
+                  ].map((step, i) => (
+                    <span key={step} className="flex items-center gap-x-3">
+                      {i > 0 && (
+                        <span aria-hidden className="text-muted-foreground">
+                          →
+                        </span>
+                      )}
+                      <span>{step}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </>
         ) : (
