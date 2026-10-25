@@ -491,23 +491,24 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-      {/* Title block — the back arrow leads the tagline row (arrow first, keyword
-          tags right after it) with 30px of air above it, then the title. The
-          subtitle sits centred under the banner. The block's bottom padding is
-          kept tight so the title sits closer to the cover picture. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
-        <div className="mt-[30px] flex items-center gap-4 mb-8">
-          <Link
-            to="/"
-            hash="case-studies"
-            aria-label="Back to portfolio"
-            className="back-to-portfolio inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft size={16} />
-          </Link>
+       {/* Title block — the keyword tagline and the title are centred, while the
+          back arrow is pinned to the left corner of the content column so it
+          never pushes the centred text off axis. 30px of air sits above the
+          tagline row. The block's bottom padding is kept tight so the title
+          sits closer to the cover picture. */}
+      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
+        <Link
+          to="/"
+          hash="case-studies"
+          aria-label="Back to portfolio"
+          className="back-to-portfolio absolute left-6 md:left-10 top-[30px] inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ArrowLeft size={16} />
+        </Link>
+        <div className="mt-[30px] flex items-center justify-center mb-8">
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-left">{c.title}</h1>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
       </section>
 
       {/* Cover */}
