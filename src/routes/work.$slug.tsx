@@ -1617,7 +1617,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               </p>
 
               <div className="mt-[100px]">
-                <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for research</h3>
+                <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
                 <div className="overflow-hidden rounded-sm border border-foreground/20">
                   {[
                     {
