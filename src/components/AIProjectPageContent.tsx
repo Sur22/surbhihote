@@ -117,6 +117,19 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           {project.subtitle}
         </p>
 
+        {/* Byline — sits below the cover with the other intro copy, centred
+            under the subtitle, so the header above the picture holds only the
+            centred tagline and title. */}
+        {project.slug === "resources" && (
+          <p className="mt-6 text-center text-base text-muted-foreground">
+            By{" "}
+            <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
+              Surbhi Hote
+            </Link>
+            {"\u00a0"}- Product Designer{"\u00a0"}
+          </p>
+        )}
+
         {/* Study intro — sits below the cover picture so the header above it
             holds only the centred tagline and title, as on the design case
             studies. */}
