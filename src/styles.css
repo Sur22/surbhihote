@@ -252,9 +252,9 @@
     radial-gradient(46% 40% at 30% 24%, rgb(255 255 255 / 0.8), transparent 72%),
     radial-gradient(62% 55% at 74% 42%, color-mix(in srgb, var(--circle-fill) 92%, transparent), transparent 80%),
     radial-gradient(72% 62% at 32% 84%, color-mix(in srgb, var(--circle-fill) 72%, transparent), transparent 82%);
-  /* Tightened and darkened again so the disc sits on the page with a hard,
-     close edge rather than a soft halo. */
-  box-shadow: 0 20px 12px rgb(0 0 0 / 0.22);
+  /* Dark and tight: a short blur so the disc reads as sitting on the page, not
+     floating in a haze. */
+  box-shadow: 0 14px 8px rgb(0 0 0 / 0.32);
 }
 
 .study-glass-disc::after {
@@ -272,7 +272,7 @@
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 0.8),
     inset 0 -16px 32px rgb(0 0 0 / 0.05),
-    0 15px 10px rgb(0 0 0 / 0.16);
+    0 10px 6px rgb(0 0 0 / 0.22);
   pointer-events: none;
 }
 
