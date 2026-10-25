@@ -491,10 +491,11 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-      {/* Title block — the back arrow leads the tagline row: arrow first, keyword
-          tags right after it, and the title and subtitle left-aligned beneath. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10 pt-2">
-        <div className="flex items-center gap-4 mb-8">
+      {/* Title block — the back arrow leads the tagline row (arrow first, keyword
+          tags right after it) with 15px of air above it, then the title. The
+          subtitle sits centred under the banner. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
+        <div className="mt-[15px] flex items-center gap-4 mb-8">
           <Link
             to="/"
             hash="case-studies"
@@ -506,9 +507,6 @@ function CaseStudyPage() {
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-left">{c.title}</h1>
-        <p className="h3 max-w-4xl text-left text-foreground/85">
-          {c.subtitle}
-        </p>
       </section>
 
       {/* Cover */}
@@ -540,6 +538,13 @@ function CaseStudyPage() {
             {coverPicture}
           </div>
         )}
+      </section>
+
+      {/* Subtitle — sits below the banner, centred. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
+        <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
+          {c.subtitle}
+        </p>
       </section>
 
       {/* Outcome for case studies 02-04 */}
