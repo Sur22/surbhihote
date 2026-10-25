@@ -50,6 +50,8 @@
   /* The AI for Research panel's outline stays this blue in both themes, so it
      carries its own token instead of a colour written into the component. */
   --color-azure: var(--azure);
+  /* The icons sitting on those azure discs likewise stay light in both themes. */
+  --color-azure-foreground: var(--azure-foreground);
 }
 
 :root {
@@ -72,6 +74,8 @@
   /* The AI for Research panel's outline blue. Held in :root only, so a theme
      flip can never shift it. */
   --azure: #0068ff;
+  /* Its icon colour, likewise fixed: white on the blue disc in either theme. */
+  --azure-foreground: #ffffff;
 
   --background: var(--paper);
   --foreground: var(--ink);

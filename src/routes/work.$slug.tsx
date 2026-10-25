@@ -1634,8 +1634,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ].map((step, idx) => (
                     <div key={step.title}>
                       <div className="flex items-start gap-4 px-6 py-6">
-                        <div className="w-6 shrink-0 flex justify-center pt-0.5">
-                          <step.icon className="h-5 w-5" aria-hidden="true" />
+                        <div className="w-9 shrink-0 flex justify-center pt-0.5">
+                          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-azure/85">
+                            <step.icon className="h-5 w-5 text-azure-foreground" aria-hidden="true" />
+                          </span>
                         </div>
                         <div className="min-w-0">
                           <h4 className="text-base font-semibold leading-snug">{step.title}</h4>
@@ -1647,7 +1649,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       </div>
                       {idx < 2 ? (
                         <div className="flex pl-6 -my-3" aria-hidden="true">
-                          <div className="w-6 flex justify-center">
+                          <div className="w-9 flex justify-center">
                             <ArrowDown className="h-4 w-4 text-foreground/60" />
                           </div>
                         </div>
