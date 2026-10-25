@@ -1909,10 +1909,6 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
 
-      {c.slug !== "solace" && c.slug !== "fjord" && c.slug !== "atlas" && c.slug !== "atlas2" && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
       {/* AI for Ideation sits directly above Initial Design, Affiliate only. */}
       {c.slug === "affiliate-platform-redesign" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24">
