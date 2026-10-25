@@ -1099,7 +1099,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </p>
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
-              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow px-6 py-5">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <div className="study-card-glass__backdrop" />
                   <div className="study-card-glass__veil" />
