@@ -1609,13 +1609,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ))}
                 </div>
 
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
-              </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
-              </p>
-
               <div className="mt-[100px]">
                 <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
                 <div className="overflow-hidden rounded-sm border border-foreground/20">
@@ -1663,6 +1656,13 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ))}
                 </div>
               </div>
+
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
+              </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
+                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
+              </p>
             </div>
 
             <div className="mt-16">
