@@ -1629,7 +1629,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {
                       icon: BrainCircuit,
                       title: "AI-assisted synthesis",
-                      subtitle: "If performed during the project",
+                      subtitle: "\n",
                       body: "Cluster responses into candidate themes and identify patterns for further investigation.",
                     },
                     {
