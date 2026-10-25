@@ -25,7 +25,7 @@ export function AiTestingFlowDiagram() {
       >
         {stages.map((stage, idx) => (
           <Fragment key={stage}>
-            <li className="flex min-h-[76px] min-w-[92px] basis-0 flex-1 items-center justify-center rounded-md border border-border px-2 py-2 text-center text-[11px] font-medium leading-tight text-foreground">
+            <li className="flex min-h-[76px] min-w-[92px] basis-0 flex-1 items-center justify-center rounded-md border border-azure px-2 py-2 text-center text-[11px] font-medium leading-tight text-foreground">
               {stage}
             </li>
             {idx < stages.length - 1 ? (
