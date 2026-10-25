@@ -926,7 +926,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach study-row-glass hover:bg-flow-band"
+                            ? "study-peach shadow-amber-band"
                             : "hover:bg-table-hover"
                         }
                       >
@@ -1191,7 +1191,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach study-row-glass hover:bg-flow-band"
+                            ? "study-peach shadow-amber-band"
                             : "hover:bg-table-hover"
                         }
                       >

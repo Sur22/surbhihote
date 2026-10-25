@@ -512,19 +512,9 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 }
 
 /* The journey table's highlighted Opportunity row wears the same flat peach as
-   the cards and banners — see .study-peach, which paints the row and pins its
-   ink dark. Only the drop lives here, drawn once for the whole row so no cell
-   boundary can break it: a per-cell drop spills sideways and those spills show
-   through the next cell's translucent fill as a vertical seam. The row sits
-   flush with the bottom of the table's frame, which clips the drop there, so
-   the row's own lower rim is what carries that edge. */
-.study-row-glass {
-  box-shadow:
-    0 2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
-    0 -2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
-    0 1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
-    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent);
-}
+   the cards and banners — see .study-peach — and the very same amber drop they
+   wear: .shadow-amber-band is applied to the row itself, so the two can never
+   drift apart. Its fill and corner curve live with the .journey-table rules. */
 
 
 
@@ -737,20 +727,19 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border-spacing: 0;
 }
 
-.journey-table tr.study-row-glass,
-.journey-table tr.study-row-glass:hover {
+.journey-table tr.study-peach {
   background-color: transparent;
 }
 
-.journey-table .study-row-glass :is(th, td) {
+.journey-table tr.study-peach :is(th, td) {
   background-color: var(--flow-band);
 }
 
-.journey-table .study-row-glass :is(th, td):first-child {
+.journey-table tr.study-peach :is(th, td):first-child {
   border-radius: 8px 0 0 8px;
 }
 
-.journey-table .study-row-glass :is(th, td):last-child {
+.journey-table tr.study-peach :is(th, td):last-child {
   border-radius: 0 8px 8px 0;
 }
 
