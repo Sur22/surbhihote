@@ -437,6 +437,19 @@
   border-color: rgb(255 255 255 / 0.12);
 }
 
+/* The Solution carousel's frost on its own, for a surface that has to stay
+   black underneath. The full veil carries its own white base, which would
+   lift black to grey, so only this top layer rides on the band: the same
+   blur, tint and rim as the carousel's glass. */
+.study-band-glass {
+  position: absolute;
+  inset: 1px;
+  pointer-events: none;
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgb(255 255 255 / 0.2);
+}
+
 /* The same washes on dark paper would lift the surface to a mid grey that
    neither dark nor light ink can clear, so there they fade back and the card
    stays close to the page. */
