@@ -462,6 +462,56 @@
     0 1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent);
 }
 
+/* The journey table's highlighted Opportunity row wears the same glass as the
+   cards and banners. A <tr> can only hold cells, so the frost rides on the row's
+   own cells instead of on one panel stretched across it: every layer that has to
+   read as a single surface — the tint, the warm wash, the sheen — is flat or runs
+   straight down the cell, so two neighbouring cells line up where they meet
+   instead of showing a seam, and the drop is drawn top and bottom only for the
+   same reason. The blur is the Solution carousel's, over the row's own fill. */
+.study-cell-glass {
+  background-color: rgb(255 255 255 / 0.14);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.3) 0%,
+      rgb(255 255 255 / 0.06) 42%,
+      rgb(255 255 255 / 0.18) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--amber) 22%, transparent) 0%,
+      color-mix(in srgb, var(--amber) 8%, transparent) 100%
+    );
+  backdrop-filter: blur(24px) saturate(150%);
+  box-shadow:
+    inset 0 1px 1px rgb(255 255 255 / 0.6),
+    inset 0 -1px 1px rgb(255 255 255 / 0.22),
+    0 1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
+    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
+    0 1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent),
+    0 -1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent);
+}
+
+/* On dark paper the full-strength tint would lift the row to a mid grey, so
+   there the frost keeps its blur with a much thinner white tint and wash. */
+.dark .study-cell-glass {
+  background-color: rgb(255 255 255 / 0.05);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.1) 0%,
+      rgb(255 255 255 / 0.02) 42%,
+      rgb(255 255 255 / 0.06) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--amber) 12%, transparent) 0%,
+      color-mix(in srgb, var(--amber) 5%, transparent) 100%
+    );
+}
+
+
 
 /* The same washes on dark paper would lift the surface to a mid grey that
    neither dark nor light ink can clear, so there they fade back and the card
