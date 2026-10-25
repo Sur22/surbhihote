@@ -524,7 +524,7 @@ function CaseStudyPage() {
             <div className="relative">
               <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
                 <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
-                <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={coverDiscStyle(c.slug)} />
+                <div className={`study-glass-disc absolute aspect-square h-full overflow-hidden${c.slug === "solace" ? " study-glass-disc--inner" : ""}`} style={coverDiscStyle(c.slug)} />
               </div>
               {coverPicture}
             </div>
