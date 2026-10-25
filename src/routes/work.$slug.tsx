@@ -2240,56 +2240,6 @@ Users needed an easy way to control and manage the notifications they want and s
             )}
           </Carousel>
         )}
-        {c.slug === "solace" && (
-          // Before/after flows: each row is a bold label over a pill holding the
-          // steps, so the shift from the old workflow to the new one reads at a glance.
-          <div className="mt-10 space-y-6">
-            {[
-              {
-                label: "Before",
-                steps: [
-                  "Scattered files",
-                  "Manual entry",
-                  "Manual costing",
-                  "Email updates",
-                  "Version confusion",
-                ],
-              },
-              {
-                label: "After",
-                steps: [
-                  "Centralize",
-                  "Connect",
-                  "Automate",
-                  "Collaborate",
-                  "Standardize",
-                  "Track",
-                ],
-              },
-            ].map((row) => (
-              <div key={row.label}>
-                <p className="font-sans text-base font-semibold text-foreground">
-                  {row.label}
-                </p>
-                <div className="relative mt-2 inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                  <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
-                    {row.steps.map((step, i) => (
-                      <span key={step} className="flex items-center gap-x-3">
-                        {i > 0 && (
-                          <span aria-hidden className="text-muted-foreground">
-                            →
-                          </span>
-                        )}
-                        <span>{step}</span>
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
       </section>
       {(c.slug !== "atlas" && c.slug !== "atlas2") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
