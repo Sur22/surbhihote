@@ -63,6 +63,9 @@
   /* The User Interview band: black in light and dark alike, cream text on it. */
   --band: #000000;
   --band-foreground: #ffffff;
+  /* The site's highlight amber — the persona card's outline colour — exposed
+     as a token so other surfaces can borrow the same warmth. */
+  --amber: #ffa348;
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -448,6 +451,15 @@
   background-color: rgb(255 255 255 / 0.15);
   backdrop-filter: blur(24px);
   border: 1px solid rgb(255 255 255 / 0.2);
+}
+
+/* A drop drawn in the site's amber instead of black, for a banner whose outline
+   has been taken off. It keeps the standard shadow's shape and weight, so only
+   the colour changes. */
+.shadow-amber-band {
+  box-shadow:
+    0 1px 3px 0 color-mix(in srgb, var(--amber) 38%, transparent),
+    0 1px 2px -1px color-mix(in srgb, var(--amber) 28%, transparent);
 }
 
 /* The same washes on dark paper would lift the surface to a mid grey that
