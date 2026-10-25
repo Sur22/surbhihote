@@ -1661,7 +1661,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                Based on the survey data we came up with themes which are important for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
+                AI helped in creating clusters based on the survey data it was evaluated by the team we made sure it was covering everything and added and merged few of them together. At the end we made sure we have all the important clusters for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
             </div>
 
