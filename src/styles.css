@@ -176,6 +176,14 @@
   background-color: #EDEDED;
 }
 
+/* Notifications & Tech Pack: the panels behind their images wear a flat
+   neutral grey instead of the theme's warm cream secondary surface. Held to
+   the light theme — on dark paper those panels keep their own near-black
+   fill, which the cream never applied to in the first place. */
+html:not(.dark) .study-neutral-img-bg .bg-secondary {
+  background-color: #EDEDED;
+}
+
 /* Liquid glass treatment for the case-study circles */
 .circle-glass {
   background-color: color-mix(in srgb, var(--circle-fill) 85%, transparent);
