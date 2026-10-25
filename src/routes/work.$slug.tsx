@@ -2163,6 +2163,10 @@ Users needed an easy way to control and manage the notifications they want and s
                   </TableBody>
                 </Table>
               </div>
+              <p className="mt-8 text-lg leading-relaxed text-foreground/85">
+                Placeholder paragraph — write here how the Phase 1 and Phase 2 scope
+                was decided and what each phase was meant to prove.
+              </p>
         </section>
       )}
 
