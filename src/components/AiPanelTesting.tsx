@@ -4,8 +4,8 @@ const steps = [
   {
     icon: Video,
     title: "Input",
-    subtitle: "Focus group recordings",
-    body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
+    subtitle: "Microsoft Clarity +Microsoft app insights + Power BI Data",
+    body: "Session recordings and Microsoft Clarity automatically detects common user actions,I set up custom code-free events in your Clarity dashboard to track specific micro-tasks and interactions. Some of the events / clicks were tracked using Microsoft app insights which is being connected and visualized using Power BI.",
   },
   {
     icon: BrainCircuit,
