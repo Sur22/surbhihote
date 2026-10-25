@@ -964,9 +964,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 before/after flows: bold label over a persona-card-surface pill. */}
             <div className="mt-8">
               <h4 className="h4">Design opportunity</h4>
-              <div className="relative mt-3 inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
+              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
+                <div className="relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-semibold text-lg text-card-foreground">
                   {[
                     "Right notification",
                     "Right user",
