@@ -24,7 +24,7 @@ const steps = [
 export function AiResearchPanel() {
   return (
     <div className="mt-[100px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Testing </h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
           <div key={step.title} className="relative">
