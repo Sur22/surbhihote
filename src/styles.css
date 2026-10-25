@@ -405,9 +405,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 /* Soft washes under the veil — a frosted panel needs something to refract,
    since a flat tint blurs into nothing. The cards and banners on the
    Notifications and Tech Pack case studies carry the same background image as
-   the Solution carousel, blurred by the veil above them. That image is amber
-   through and through, so it is drained of colour here: the panel keeps the
-   grid it refracts, but the wash it throws reads neutral instead of amber. */
+   the Solution carousel, unfiltered, blurred only by the veil above them. */
 .study-card-glass__backdrop {
   position: absolute;
   inset: -20%;
@@ -416,7 +414,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(1) brightness(1.35);
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
