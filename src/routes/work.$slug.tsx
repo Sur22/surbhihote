@@ -966,7 +966,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <h4 className="h4">Design opportunity</h4>
               <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <div className="relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-semibold text-lg text-card-foreground">
+                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
                   {[
                     "Right notification",
                     "Right user",
@@ -1783,7 +1783,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="grid grid-cols-1 gap-6">
               <div className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5 overflow-hidden">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <p className="relative z-10 text-center font-semibold text-lg text-card-foreground">
+                <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Give Control to User = Make User Feel Empowered = Better User Experience"}
                 </p>
               </div>

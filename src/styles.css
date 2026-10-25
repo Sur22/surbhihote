@@ -482,6 +482,16 @@
   line-height: 1.15;
 }
 
+/* A statement line: one sentence carrying the point, set in the site's Crimson
+   Text serif at the banner size. Shared so every line wearing it reads alike
+   (the Notifications strategy banner and the Design opportunity flow). */
+.statement-line {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
 /* Compact card titles must hold one line at every width, so the text never
    wraps; the size itself comes from the h3 scale above. */
 .study-card-title {
