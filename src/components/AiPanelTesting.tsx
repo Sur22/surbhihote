@@ -1,4 +1,4 @@
-import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
+import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
 
 const steps = [
   {
