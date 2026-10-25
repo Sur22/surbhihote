@@ -10,7 +10,7 @@ const steps = [
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "\n",
+    subtitle: "5 focus group session recordings ",
     body: "AI was used to analyze session transcripts and notes across all five focus groups to identify recurring themes, common pain points, and other relevant patterns. The findings were consolidated into a list of key issues and cross-referenced with the survey data to identify patterns across both qualitative and quantitative research.",
   },
   {
