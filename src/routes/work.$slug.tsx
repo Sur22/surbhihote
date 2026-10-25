@@ -791,8 +791,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign") && (
           <div className={`mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden`}>
-            {c.slug === "solace" && (
-              <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+            {(c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
+              <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
             )}
             <div className="relative z-10">
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">{(c.slug === "solace") ? "User Interview Insights" : "User Interview Insights\u00a0"}</h3>
@@ -963,7 +963,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="mt-8">
               <h4 className="h4">Design opportunity</h4>
               <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                 <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
                   {[
                     "Right notification",
@@ -1070,7 +1070,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   key={persona.name}
                   className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                       {persona.name}
@@ -1096,7 +1096,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
               <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                 <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
                 </p>
@@ -1770,7 +1770,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   key={principle.title}
                   className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                       {principle.title}
@@ -1783,7 +1783,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
             <div className="grid grid-cols-1 gap-6">
               <div className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5 overflow-hidden">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                 <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Give Control to User = Make User Feel Empowered = Better User Experience"}
                 </p>
@@ -1934,7 +1934,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   key={level.title}
                   className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                       {level.title}
@@ -1948,7 +1948,7 @@ Users needed an easy way to control and manage the notifications they want and s
             {/* Same pill treatment as the Design opportunity flow. */}
             <div className="mt-[10px] mb-[30px]">
               <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
                 <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
                   {[
                     "Role",
@@ -2479,10 +2479,13 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center"
+                  className="relative overflow-hidden rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center"
                 >
+                  {(c.slug === "atlas" || c.slug === "atlas2") && (
+                    <div className="absolute inset-0 bg-white/15 backdrop-blur-2xl border border-white/20 pointer-events-none" />
+                  )}
                   <p
-                    className={`text-lg font-bold text-foreground ${
+                    className={`relative z-10 text-lg font-bold text-foreground ${
                       c.slug === "atlas" || c.slug === "atlas2" ? "font-serif" : ""
                     }`}
                   >
