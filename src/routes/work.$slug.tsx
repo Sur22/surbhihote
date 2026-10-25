@@ -492,10 +492,11 @@ function CaseStudyPage() {
 
 
       {/* Title block — the back arrow leads the tagline row (arrow first, keyword
-          tags right after it) with 15px of air above it, then the title. The
-          subtitle sits centred under the banner. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
-        <div className="mt-[15px] flex items-center gap-4 mb-8">
+          tags right after it) with 30px of air above it, then the title. The
+          subtitle sits centred under the banner. The block's bottom padding is
+          kept tight so the title sits closer to the cover picture. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
+        <div className="mt-[30px] flex items-center gap-4 mb-8">
           <Link
             to="/"
             hash="case-studies"
