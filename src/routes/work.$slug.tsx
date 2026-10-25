@@ -881,7 +881,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                       {
                         label: "Emotion",
-                        cells: ["😕", "😖", "😟", "😫", "😐"],
+                        cells: ["😕", "😖 Frustrated", "😟 Uncertain", "😫 Exhausted", "😐"],
                       },
                       {
                         label: "Opportunity",
