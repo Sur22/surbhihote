@@ -1425,12 +1425,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               />
             </div>
           </div>
-        ) : c.strategy.productGoals.intro.trim() ? (
+        ) : c.slug === "affiliate-platform-redesign" ? null : (
           <p
             className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
             dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
           />
-        ) : null}
+        )}
 
         {c.slug === "fjord" && (
           <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
