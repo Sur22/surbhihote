@@ -18,7 +18,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "ask success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction.\n\nI then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
+    body: "Task success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction. I then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
   },
 ];
 
