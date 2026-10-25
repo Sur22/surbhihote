@@ -891,7 +891,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                       {
                         label: "Emotion",
-                        cells: ["😕 Mildly Frustrated", "😖 Frustrated", "😟 Uncertain", "😫 Exhausted", "😐 Neutral /Unimpressed"],
+                        cells: [
+                          "Mildly Frustrated",
+                          "Frustrated",
+                          "Uncertain",
+                          "Exhausted",
+                          "Neutral /Unimpressed",
+                        ],
+                        tones: [
+                          "bg-emotion-amber",
+                          "bg-emotion-orange",
+                          "bg-emotion-yellow",
+                          "bg-emotion-crimson",
+                          "bg-emotion-lime",
+                        ],
                       },
                       {
                         label: "Opportunity",
@@ -904,7 +917,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                           "Personalize",
                         ],
                       },
-                    ] as { label: string; cells: string[]; strong?: boolean }[]
+                    ] as { label: string; cells: string[]; strong?: boolean; tones?: string[] }[]
                   ).map((row) => {
                     // The highlighted row wears the same glass as the cards and
                     // banners: the frost sits on the row's own cells, since a <tr>
@@ -1142,12 +1155,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       {
                         label: "Emotion",
                         cells: [
-                          "😔 Overwhelmed",
-                          "😖 Frustrated",
-                          "😩 Drained",
-                          "😟 Uncertain",
-                          "😌 Relieved",
-                          "😫 Exhausted",
+                          "Overwhelmed",
+                          "Frustrated",
+                          "Drained",
+                          "Uncertain",
+                          "Relieved",
+                          "Exhausted",
+                        ],
+                        tones: [
+                          "bg-emotion-amber",
+                          "bg-emotion-orange",
+                          "bg-emotion-vermilion",
+                          "bg-emotion-yellow",
+                          "bg-emotion-green",
+                          "bg-emotion-crimson",
                         ],
                       },
                       {
@@ -1162,7 +1183,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                           "Version",
                         ],
                       },
-                    ] as { label: string; cells: string[]; strong?: boolean }[]
+                    ] as { label: string; cells: string[]; strong?: boolean; tones?: string[] }[]
                   ).map((row) => {
                     // The highlighted row wears the same glass as the cards and
                     // banners: the frost sits on the row's own cells, since a <tr>
