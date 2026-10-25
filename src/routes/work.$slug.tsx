@@ -491,8 +491,11 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
         {/* Back to portfolio — the cover picture follows it directly, with the
-            title and subtitle held below the picture. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-10">
+            title and subtitle held below the picture. The band stays only as
+            tall as the link itself: on hover-capable devices the link is
+            invisible until the banner is hovered, so a taller band would read
+            as dead space above the picture. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-4">
         <Link
           to="/"
           hash="case-studies"
