@@ -491,9 +491,9 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
         {/* Back to portfolio — an arrow alone, always visible (no hover to wait
-            on), with the cover picture following it directly and the title and
-            subtitle held below the picture. The band stays only as tall as the
-            arrow itself, so it never reads as dead space above the picture. */}
+            on), with the title block and then the cover picture following it.
+            The band stays only as tall as the arrow itself, so it never reads
+            as dead space above the picture. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-4">
         <Link
           to="/"
@@ -503,6 +503,17 @@ function CaseStudyPage() {
         >
           <ArrowLeft size={16} />
         </Link>
+      </section>
+
+      {/* Title block */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
+        <div className="flex items-baseline justify-center mb-8">
+          <span className="eyebrow">{c.tags.join(" · ")}</span>
+        </div>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
+        <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
+          {c.subtitle}
+        </p>
       </section>
 
       {/* Cover */}
@@ -534,17 +545,6 @@ function CaseStudyPage() {
             {coverPicture}
           </div>
         )}
-      </section>
-
-      {/* Title block */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="flex items-baseline justify-center mb-8">
-          <span className="eyebrow">{c.tags.join(" · ")}</span>
-        </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
-        <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
-          {c.subtitle}
-        </p>
       </section>
 
       {/* Outcome for case studies 02-04 */}
