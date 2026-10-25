@@ -11,7 +11,7 @@ const steps = [
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
     subtitle: "\n",
-    body: "Cluster responses into candidate themes and identify patterns for further investigation.",
+    body: "Notes of all the sessions and common points and other important informationacross all the focus groups.",
   },
   {
     icon: CheckCheck,
