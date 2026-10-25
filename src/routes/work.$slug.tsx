@@ -336,7 +336,7 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
         ? {
-            left: "calc(100% - min(200px, 37%))",
+            left: "calc(100% - min(200px, 33%))",
              top: "-35px",
             transform: "translate(-100%, 0) scale(1.0412064)",
             transformOrigin: "top right",
