@@ -784,3 +784,12 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 .journey-table :is(th, td) {
   padding-block: 17.5px;
 }
+
+/* The flow band: the sampled peach, with its ink pinned dark. The page's own
+   ink flips to light on dark paper, which would leave white steps floating on
+   pale peach, so the band holds its own text and arrow colours in both themes. */
+.flow-band {
+  background-color: var(--flow-band);
+  --card-foreground: oklch(0.18 0.02 60);
+  --muted-foreground: oklch(0.34 0.02 60);
+}
