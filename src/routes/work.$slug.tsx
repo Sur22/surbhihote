@@ -350,6 +350,7 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
       : "pt-[8px] pb-[12px]";
+
 /* The cover picture's own box — the frame both circles are measured off. The
    circle layer wears the same width class as the picture, so the two boxes line
    up exactly and the card's percentages mean the same thing here as there. */
