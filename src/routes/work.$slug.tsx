@@ -317,8 +317,8 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
      · Notifications: 77.2%, its centre 45.5% across and 59% down, then nudged a
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
-     · Tech Pack: 107.1%, pinned by its top-right corner to a point 150px left of
-       the picture's top-right corner then lifted a fixed 30px, the way it sits
+    · Tech Pack: 96.4%, pinned by its top-right corner to a point 150px left of
+      the picture's top-right corner then lifted a fixed 65px, the way it sits
        in the card's tinted band. The shift is capped at 28% of the picture's
        width, so on a phone — where 150px would push the curve past the stage's
        edge and slice it — the circle slides only as far as the stage allows.
@@ -337,8 +337,8 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       : slug === "solace"
         ? {
             left: "calc(100% - min(150px, 28%))",
-            top: "-30px",
-            transform: "translate(-100%, 0) scale(1.0712)",
+            top: "-65px",
+            transform: "translate(-100%, 0) scale(0.96408)",
             transformOrigin: "top right",
           }
         : { left: "50%", top: "50%", transform: "translate(-50%, -50%)" };
@@ -361,7 +361,7 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
 
 const coverPad = (slug: CaseStudy["slug"]) =>
   slug === "solace"
-    ? "pt-[calc(9%_+_30px)] pb-[calc(16%_+_52px)]"
+    ? "pt-[calc(9%_+_65px)] pb-[calc(16%_+_52px)]"
     : slug === "atlas"
       ? "pt-[9%] pb-[calc(9%_+_52px)]"
       : "pt-[9%] pb-[calc(5%_+_52px)]";
