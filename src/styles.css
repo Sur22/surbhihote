@@ -414,6 +414,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.25;
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
@@ -428,6 +429,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
     transparent 34%,
     transparent 62%,
     rgb(255 255 255 / 0.16) 100%);
+  opacity: 0.25;
   backdrop-filter: blur(40px) saturate(165%);
   border: 1px solid rgb(255 255 255 / 0.5);
   box-shadow:
@@ -569,7 +571,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
    neither dark nor light ink can clear, so there it fades back and the card
    stays close to the page. */
 .dark .study-card-glass__backdrop {
-  opacity: 0.45;
+  opacity: 0.11;
 }
 
 .dark .study-card-glass__veil {
@@ -583,6 +585,14 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   box-shadow:
     inset 0 1px 1px rgb(255 255 255 / 0.18),
     inset 0 -1px 1px rgb(255 255 255 / 0.08);
+}
+
+/* The card and banner fill drops with the frost: at a quarter strength the
+   paper shows through the panel instead of the panel sitting solid on it. The
+   amber drop stays at full weight — it is the surface's outline, not its fill
+   — and so does the text, which rides above the glass on its own layer. */
+.shadow-amber-band {
+  background-color: color-mix(in srgb, var(--card) 25%, transparent);
 }
 
 
