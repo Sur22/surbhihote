@@ -79,12 +79,12 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         <figure
           className={
             project.slug === "creator-hub" || project.slug === "voyager"
-              ? "mt-12 overflow-hidden rounded-xl"
+              ? "mt-[18px] overflow-hidden rounded-xl"
               : project.slug === "vibe-coded-portfolio"
-                ? "mt-12 overflow-hidden rounded-xl"
+                ? "mt-[18px] overflow-hidden rounded-xl"
                 : project.slug === "resources"
-                  ? "mt-12 mx-auto w-[55%] overflow-hidden rounded-xl border border-border bg-muted/30"
-                  : "mt-12 overflow-hidden rounded-xl border border-border bg-muted/30"
+                  ? "mt-[18px] mx-auto w-[55%] overflow-hidden rounded-xl border border-border bg-muted/30"
+                  : "mt-[18px] overflow-hidden rounded-xl border border-border bg-muted/30"
           }
         >
           <img
@@ -124,20 +124,20 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             holds only the centred tagline and title, as on the design case
             studies. */}
         {project.slug === "creator-hub" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl mx-auto text-center">
             <strong>Creator Hub</strong> An AI-assisted workspace that helps
             social media creators plan, repurpose, and optimize content across
             platforms, without drowning in tools.
           </p>
         ) : project.slug === "voyager" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl mx-auto text-center">
             Design lab AI for UI Project: designing a travel AI product end to
             end, using AI at every stage.
           </p>
         ) : project.slug === "resources" ? (
           <></>
         ) : (
-          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center">
             {"\n"}
           </p>
         )}
