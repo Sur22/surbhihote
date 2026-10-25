@@ -684,7 +684,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </div>
           )}
           <div>
-            <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
+            <h3 className={`font-serif text-3xl font-medium text-foreground/85 ${c.slug === "solace" ? "mb-[30px]" : "mb-4"}`}>
               {(c.slug === "affiliate-platform-redesign") ? "Survey" : "User Interview"}
             </h3>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -715,9 +715,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <p>{c.research.userInterview}</p>
               ) : (c.slug === "solace") ? (
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                  <p className="mb-2">
-                    {"\n"}
-                  </p>
                   <p>
                     Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users — enough signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
                   </p>
