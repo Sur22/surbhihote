@@ -10,7 +10,7 @@ const steps = [
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "",
+    subtitle: "128 affiliate survey responses",
     body: "Cluster responses into candidate themes and identify patterns for further investigation.",
   },
   {
