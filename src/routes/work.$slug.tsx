@@ -2361,7 +2361,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
           {/* Notifications Management: usability findings as a Finding / Impact /
               Design response table, wearing the shared table treatment. */}
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
+          {(c.slug === "atlas" || c.slug === "atlas2") && (<>
             <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
               <Table className="min-w-[820px]">
                 <TableHeader>
@@ -2421,7 +2421,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 <span>Based on the test result data some changes were made to fix issues faced by the users.</span>
               </li>
             </ul>
-          )}
+          </>)}
 
 
 
