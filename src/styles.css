@@ -403,21 +403,17 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 
 /* Soft washes under the veil — a frosted panel needs something to refract,
-   since a flat tint blurs into nothing. */
+   since a flat tint blurs into nothing. The cards and banners on the
+   Notifications and Tech Pack case studies now carry the same background
+   image as the Solution carousel, blurred by the veil above them. */
 .study-card-glass__backdrop {
-  /* The washes carry the amber of the card's outline instead of the circle's
-     blue-gray, so the glass reads warm on the Notifications and Tech Pack
-     cards and banners. */
-  --glass-amber: #ffa348;
   position: absolute;
   inset: -20%;
   pointer-events: none;
-  background:
-    radial-gradient(46% 38% at 24% 18%, rgb(255 255 255 / 0.28), transparent 70%),
-    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 58%, transparent), transparent 74%),
-    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 45%, transparent), transparent 78%),
-    radial-gradient(40% 30% at 70% 78%, rgb(0 0 0 / 0.04), transparent 72%);
-  opacity: 0.9;
+  background-image: url("/__l5e/assets-v1/c80c9fe2-9587-47bb-acb8-ad5cd0bc9fb2/grid-mockup-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
@@ -569,16 +565,11 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 
 
-/* The same washes on dark paper would lift the surface to a mid grey that
-   neither dark nor light ink can clear, so there they fade back and the card
+/* The same image on dark paper would lift the surface to a mid grey that
+   neither dark nor light ink can clear, so there it fades back and the card
    stays close to the page. */
 .dark .study-card-glass__backdrop {
   opacity: 0.45;
-  background:
-    radial-gradient(46% 38% at 24% 18%, rgb(255 255 255 / 0.06), transparent 70%),
-    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 40%, transparent), transparent 74%),
-    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 33%, transparent), transparent 78%),
-    radial-gradient(40% 30% at 70% 78%, rgb(0 0 0 / 0.25), transparent 72%);
 }
 
 .dark .study-card-glass__veil {
