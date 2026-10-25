@@ -847,7 +847,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="journey-table overflow-hidden">
               <Table className="min-w-[820px]">
                 <TableHeader>
-                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                  <TableRow className="hover:bg-transparent">
                     <TableHead className="w-[140px] text-foreground font-semibold">{"\u00a0"}</TableHead>
                     {["Receive", "Find", "Decide", "Act", "Follow up"].map((stage) => (
                       <TableHead key={stage} className="text-foreground font-semibold">
@@ -927,7 +927,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         className={
                           row.strong
                             ? "study-peach study-row-glass hover:bg-flow-band"
-                            : "border-b border-foreground/10 hover:bg-table-hover"
+                            : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
@@ -1117,7 +1117,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="journey-table overflow-hidden">
               <Table className="min-w-[820px]">
                 <TableHeader>
-                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                  <TableRow className="hover:bg-transparent">
                     <TableHead className="w-[140px] text-foreground font-semibold">{"\u00a0"}</TableHead>
                     {["Gather", "Build", "Cost", "Review", "Share", "Update"].map((stage) => (
                       <TableHead key={stage} className="text-foreground font-semibold">
@@ -1192,7 +1192,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         className={
                           row.strong
                             ? "study-peach study-row-glass hover:bg-flow-band"
-                            : "border-b border-foreground/10 hover:bg-table-hover"
+                            : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
