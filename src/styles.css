@@ -253,8 +253,9 @@
     radial-gradient(62% 55% at 74% 42%, color-mix(in srgb, var(--circle-fill) 92%, transparent), transparent 80%),
     radial-gradient(72% 62% at 32% 84%, color-mix(in srgb, var(--circle-fill) 72%, transparent), transparent 82%);
   /* Dark, tight and hugging the rim: a short drop so the shadow sits right
-     against the disc instead of hanging below it. */
-  box-shadow: 0 6px 5px rgb(0 0 0 / 0.42);
+     against the disc instead of hanging below it. Coloured with the site's
+     teal blue so the drop reads as a tint of the page, not a grey smudge. */
+  box-shadow: 0 6px 5px color-mix(in srgb, var(--clay) 42%, transparent);
 }
 
 .study-glass-disc::after {
@@ -272,7 +273,7 @@
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 0.8),
     inset 0 -16px 32px rgb(0 0 0 / 0.05),
-    0 4px 4px rgb(0 0 0 / 0.28);
+    0 4px 4px color-mix(in srgb, var(--clay) 28%, transparent);
   pointer-events: none;
 }
 
