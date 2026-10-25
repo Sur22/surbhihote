@@ -975,11 +975,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 before/after flows: bold label over a persona-card-surface pill. */}
             <div className="mt-8">
               <h4 className="h4">Design opportunity</h4>
-              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5">
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <div className="study-card-glass__backdrop" />
-                  <div className="study-card-glass__veil" />
-                </div>
+              <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
                 <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
                   {[
                     "Right notification",
@@ -1084,12 +1080,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               ].map((persona) => (
                 <div
                   key={persona.name}
-                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="study-card-glass__backdrop" />
-                    <div className="study-card-glass__veil" />
-                  </div>
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
                       {persona.name}
@@ -1114,11 +1106,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </p>
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
-              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5">
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <div className="study-card-glass__backdrop" />
-                  <div className="study-card-glass__veil" />
-                </div>
+              <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
                 <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
                 </p>
@@ -1789,12 +1777,8 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((principle) => (
                 <div
                   key={principle.title}
-                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="study-card-glass__backdrop" />
-                    <div className="study-card-glass__veil" />
-                  </div>
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                       {principle.title}
@@ -1806,11 +1790,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-              <div className="relative rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5 overflow-hidden">
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <div className="study-card-glass__backdrop" />
-                  <div className="study-card-glass__veil" />
-                </div>
+              <div className="study-peach relative rounded-xl text-card-foreground shadow-amber-band px-6 py-5 overflow-hidden">
                 <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Give Control to User = Make User Feel Empowered = Better User Experience"}
                 </p>
@@ -1959,12 +1939,8 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((level) => (
                 <div
                   key={level.title}
-                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="study-card-glass__backdrop" />
-                    <div className="study-card-glass__veil" />
-                  </div>
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
                       {level.title}
@@ -2516,14 +2492,10 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="relative overflow-hidden rounded-lg bg-card px-8 py-10 text-center shadow-amber-band flex items-center justify-center"
+                  className={`relative overflow-hidden rounded-lg px-8 py-10 text-center shadow-amber-band flex items-center justify-center ${
+                    c.slug === "atlas" || c.slug === "atlas2" ? "study-peach" : "bg-card"
+                  }`}
                 >
-                  {(c.slug === "atlas" || c.slug === "atlas2") && (
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <div className="study-card-glass__backdrop" />
-                      <div className="study-card-glass__veil" />
-                    </div>
-                  )}
                   <p
                     className={`relative z-10 text-lg font-bold text-foreground ${
                       c.slug === "atlas" || c.slug === "atlas2" ? "font-serif" : ""
