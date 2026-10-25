@@ -318,7 +318,8 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
      · Tech Pack: 107.1%, pinned by its top-right corner to the picture's
-       top-right corner, the way it sits in the card's tinted band.
+       top-right corner then lifted a fixed 30px, the way it sits in the card's
+       tinted band.
    Percentages of that box, so the placement holds at every width. */
 const cardDiscSlugs = new Set<CaseStudy["slug"]>([
   "solace",
@@ -334,7 +335,7 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       : slug === "solace"
         ? {
             left: "100%",
-            top: "0%",
+            top: "-30px",
             transform: "translate(-100%, 0) scale(1.0712)",
             transformOrigin: "top right",
           }
@@ -358,7 +359,7 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
 
 const coverPad = (slug: CaseStudy["slug"]) =>
   slug === "solace"
-    ? "pt-[9%] pb-[calc(16%_+_52px)]"
+    ? "pt-[calc(9%_+_30px)] pb-[calc(16%_+_52px)]"
     : slug === "atlas"
       ? "pt-[9%] pb-[calc(9%_+_52px)]"
       : "pt-[9%] pb-[calc(5%_+_52px)]";
