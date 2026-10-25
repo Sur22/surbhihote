@@ -43,14 +43,14 @@ function getSections(slug?: string): Section[] {
       sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });
       sections.splice(testingIdx + 1, 0, {
         id: "qualitative-research",
-        label: "Qualitative\nResearch",
+        label: "Focus Group",
       });
     }
   }
 
   if (slug && slugsWithQualitativeResearch.has(slug)) {
     sections = sections.map((s) =>
-      s.id === "research" ? { ...s, label: "Quantitative\nResearch" } : s,
+      s.id === "research" ? { ...s, label: "Survey" } : s,
     );
   }
 
