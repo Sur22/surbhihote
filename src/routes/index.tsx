@@ -99,7 +99,7 @@ function CaseStudyArtwork({
       />
       <div
         aria-hidden="true"
-        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden md:hidden"
+        className={`study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden md:hidden${c.slug === "solace" ? " study-glass-disc--inner" : ""}`}
         style={mobileDisc}
       />
       <div
@@ -109,7 +109,7 @@ function CaseStudyArtwork({
       />
       <div
         aria-hidden="true"
-        className="study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden hidden md:block"
+        className={`study-glass-disc absolute top-1/2 aspect-square h-full overflow-hidden hidden md:block${c.slug === "solace" ? " study-glass-disc--inner" : ""}`}
         style={discStyle}
       />
     </>
