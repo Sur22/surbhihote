@@ -442,10 +442,14 @@ function CaseStudyPage() {
     { src: affSurveyQ6.url, alt: "Would you join future affiliate site enhancement feedback sessions?" },
   ];
 
-  /* The banner picture, shared by both cover layouts in the section below. */
+  /* The banner picture, shared by both cover layouts in the section below. The
+     width class sits on the wrapper rather than the picture, so the wrapper's
+     own box is exactly the picture's box — and that box is the frame the cover
+     circles are measured off, the same frame the homepage card measures its
+     circle off. */
   const coverPicture = (
-    <div className="relative z-10 overflow-hidden rounded-sm">
-      <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "affiliate-platform-redesign" ? "w-[72%] mx-auto" : c.slug === "solace" ? "w-[78%] mx-auto" : "w-full"}`} />
+    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%]" : c.slug === "affiliate-platform-redesign" ? "w-[72%]" : c.slug === "solace" ? "w-[78%]" : "w-full"}`}>
+      <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
     </div>
   );
 
