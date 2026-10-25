@@ -340,10 +340,16 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
           }
         : { left: "50%", top: "50%", transform: "translate(-50%, -50%)" };
 
-/* Vertical room for the disc's whole curve plus its shadow, so neither is
-   sliced flat at the stage's edge. What hangs below the picture grows with the
-   picture (a share of its width); the shadow's reach does not, so each study's
-   allowance mixes a percentage with a fixed pad. */
+/* The least vertical room the disc needs: its overhang past the picture's own
+   box (a fixed 25px above for Tech Pack; none for the other two) plus a small
+   pad for the shadow's reach, so the curve is never sliced flat at the
+   stage's edge — and no more room than that, keeping the banner tight. */
+const coverPad = (slug: CaseStudy["slug"]) =>
+  slug === "solace"
+    ? "pt-[36px] pb-[14px]"
+    : slug === "atlas"
+      ? "pt-[8px] pb-[18px]"
+      : "pt-[8px] pb-[12px]";
 /* The cover picture's own box — the frame both circles are measured off. The
    circle layer wears the same width class as the picture, so the two boxes line
    up exactly and the card's percentages mean the same thing here as there. */
