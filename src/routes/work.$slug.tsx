@@ -539,8 +539,7 @@ function CaseStudyPage() {
 
       {/* Title block */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="flex items-baseline justify-center gap-4 mb-8">
-          <span className="font-serif text-3xl text-accent">{c.index}</span>
+        <div className="flex items-baseline justify-center mb-8">
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
