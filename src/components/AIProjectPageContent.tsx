@@ -78,8 +78,10 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
         <figure
           className={
-            project.slug === "creator-hub" || project.slug === "voyager"
-              ? "mt-[18px] overflow-hidden rounded-xl"
+            project.slug === "creator-hub"
+              ? "mt-[18px] mx-auto w-[80%] overflow-hidden rounded-xl"
+              : project.slug === "voyager"
+                ? "mt-[18px] overflow-hidden rounded-xl"
               : project.slug === "vibe-coded-portfolio"
                 ? "mt-[18px] overflow-hidden rounded-xl"
                 : project.slug === "resources"
@@ -94,8 +96,8 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             className={
               project.slug === "voyager"
                 ? "w-1/2 max-w-[265px] mx-auto h-auto"
-                : project.slug === "creator-hub"
-                  ? ""
+                  : project.slug === "creator-hub"
+                    ? "w-full h-auto"
                   : "w-full h-auto object-cover"
             }
           />
