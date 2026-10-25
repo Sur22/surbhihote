@@ -1,4 +1,5 @@
 import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
+import { AiResearchQualitativeFlowDiagram } from "@/components/AiResearchQualitativeFlowDiagram";
 
 const steps = [
   {
