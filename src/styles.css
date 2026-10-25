@@ -256,42 +256,6 @@
   box-shadow: 0 24px 24px rgb(0 0 0 / 0.1);
 }
 
-/* The thick-lens edge that makes the disc read as poured glass instead of a
-   flat tint: a bright specular hairline riding the outer edge, a darker
-   refraction groove behind it (the glass wall), and a lit inner lip where that
-   wall meets the flat middle. The layer is masked down to the rim band so the
-   disc's own frosted fill is untouched, and every stop is a share of the
-   radius, so the bevel keeps its proportions as the disc grows or shrinks. */
-.study-glass-disc::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  border-radius: 50%;
-  pointer-events: none;
-  mask-image: radial-gradient(circle closest-side at 50% 50%,
-    transparent 83%,
-    black 85%);
-  background-image:
-    /* the wall: lit where it turns in, dark where it turns away, lit again at
-       the outer lip */
-    radial-gradient(circle closest-side at 50% 50%,
-      transparent 85%,
-      rgb(255 255 255 / 0.35) 86% 89%,
-      rgb(0 0 0 / 0.12) 90% 94%,
-      rgb(255 255 255 / 0.18) 94.5% 96%,
-      transparent 96.5%),
-    /* the specular hairline */
-    radial-gradient(circle closest-side at 50% 50%,
-      transparent 96.5%,
-      rgb(255 255 255 / 0.9) 97.5% 99%,
-      transparent 99.5%),
-    /* light gathering along the top and bottom curves, where the wall faces
-       the light and the bounce beneath it */
-    radial-gradient(52% 22% at 50% 8%, rgb(255 255 255 / 0.5), transparent 70%),
-    radial-gradient(58% 26% at 50% 92%, rgb(255 255 255 / 0.55), transparent 72%);
-}
-
 .study-glass-disc::after {
   content: "";
   position: absolute;
@@ -299,7 +263,7 @@
   z-index: 2;
   border-radius: 50%;
   background-color: rgb(255 255 255 / 0.15);
-  backdrop-filter: blur(40px) saturate(155%);
+  backdrop-filter: blur(40px);
   /* The disc now sits on a card of the same tint, so the rim goes light to
      separate the two. */
   border: 1px solid rgb(255 255 255 / 0.55);
