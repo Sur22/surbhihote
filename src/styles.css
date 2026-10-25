@@ -17,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-flow-band: var(--flow-band);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -106,6 +107,9 @@
   --background: var(--paper);
   --foreground: var(--ink);
   --card: oklch(0.985 0.012 80);
+  /* The flow band's peach, sampled from Surbhi's swatch. It stays put in the
+     dark theme too, so it is set once here and never overridden below. */
+  --flow-band: #f7e6d8;
   --card-foreground: var(--ink);
   --popover: var(--card);
   --popover-foreground: var(--ink);
@@ -779,4 +783,13 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 .journey-table :is(th, td) {
   padding-block: 17.5px;
+}
+
+/* The flow band: the sampled peach, with its ink pinned dark. The page's own
+   ink flips to light on dark paper, which would leave white steps floating on
+   pale peach, so the band holds its own text and arrow colours in both themes. */
+.flow-band {
+  background-color: var(--flow-band);
+  --card-foreground: oklch(0.18 0.02 60);
+  --muted-foreground: oklch(0.34 0.02 60);
 }

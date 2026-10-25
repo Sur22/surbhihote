@@ -1975,13 +1975,11 @@ Users needed an easy way to control and manage the notifications they want and s
               ))}
             </div>
 
-            {/* Same pill treatment as the Design opportunity flow. */}
+            {/* The flow band wears the flat peach sampled from the swatch, so the
+                surface reads as one colour: no frosted backdrop or veil under the
+                ink, just the amber rim the sample carries. */}
             <div className="mt-[10px] mb-[30px]">
-              <div className="relative max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5">
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <div className="study-card-glass__backdrop" />
-                  <div className="study-card-glass__veil" />
-                </div>
+              <div className="flow-band relative max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
                 <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
                   {[
                     "Role",
