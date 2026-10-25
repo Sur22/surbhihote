@@ -414,9 +414,9 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Held neutral, as the user asked: the grid stays for the frost to refract,
-     but its amber does not wash the card interior. */
-  filter: grayscale(1) brightness(1.35);
+  /* Keep the requested neutral image, without brightening it into the page.
+     Its original midtone remains visible even at quarter opacity. */
+  filter: grayscale(1);
   opacity: 0.25;
 }
 
@@ -570,11 +570,10 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 
 
-/* The same image on dark paper would lift the surface to a mid grey that
-   neither dark nor light ink can clear, so there it fades back and the card
-   stays close to the page. */
+/* Keep the requested image at quarter strength in both themes; dimming it a
+   second time made it disappear on dark paper. */
 .dark .study-card-glass__backdrop {
-  opacity: 0.11;
+  opacity: 0.25;
 }
 
 .dark .study-card-glass__veil {
