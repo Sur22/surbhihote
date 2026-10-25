@@ -462,6 +462,92 @@
     0 1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent);
 }
 
+/* The journey table's highlighted Opportunity row wears the same glass as the
+   cards and banners. A <tr> can only hold cells, so the frost rides on the row's
+   own cells instead of on one panel stretched across it: every layer that has to
+   read as a single surface — the tint, the warm wash, the sheen — is flat or runs
+   straight down the cell, so two neighbouring cells line up where they meet
+   instead of showing a seam. The drop is deliberately not here: a per-cell drop
+   spills sideways and those spills show through the next cell's translucent
+   fill as a vertical seam, so the row carries it as one box instead. The blur is
+   the Solution carousel's, over the row's own fill. The two rims are 1px bands
+   that run straight across the cell rather than inset shadows: a shadow rim
+   spreads inward from the cell's own sides as well and would draw a hairline
+   where two cells meet. */
+.study-cell-glass {
+  background-color: rgb(255 255 255 / 0.14);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.6) 0,
+      rgb(255 255 255 / 0.6) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to top,
+      rgb(255 255 255 / 0.22) 0,
+      rgb(255 255 255 / 0.22) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.3) 0%,
+      rgb(255 255 255 / 0.06) 42%,
+      rgb(255 255 255 / 0.18) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--amber) 22%, transparent) 0%,
+      color-mix(in srgb, var(--amber) 8%, transparent) 100%
+    );
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+
+/* The row's drop, drawn once for the whole row so no cell boundary can break it.
+   The row sits flush with the bottom of the table's frame, which clips the drop
+   there, so the row's own lower rim is what carries that edge. */
+.study-row-glass {
+  box-shadow:
+    0 2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
+    0 -2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
+    0 1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
+    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent);
+}
+
+/* On dark paper the full-strength tint would lift the row to a mid grey, so
+   there the frost keeps its blur with a much thinner white tint, wash and rims. */
+.dark .study-cell-glass {
+  background-color: rgb(255 255 255 / 0.05);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.3) 0,
+      rgb(255 255 255 / 0.3) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to top,
+      rgb(255 255 255 / 0.12) 0,
+      rgb(255 255 255 / 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.1) 0%,
+      rgb(255 255 255 / 0.02) 42%,
+      rgb(255 255 255 / 0.06) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--amber) 12%, transparent) 0%,
+      color-mix(in srgb, var(--amber) 5%, transparent) 100%
+    );
+}
+
+
+
+
 
 /* The same washes on dark paper would lift the surface to a mid grey that
    neither dark nor light ink can clear, so there they fade back and the card

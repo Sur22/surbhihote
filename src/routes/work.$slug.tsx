@@ -895,29 +895,23 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         ],
                       },
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
-                  ).map((row, rowIdx, rows) => {
-                    // Same highlighted-row treatment as the Tech Pack journey: the
-                    // persona card's surface and outline, drawn on the cells because
-                    // the shared table styling drops a row's own border.
-                    const outline = "border-y border-[#ffa348] dark:border-border",
-                      fill = "bg-white/10";
-                    const nextIsStrong = rows[rowIdx + 1]?.strong === true;
-                    const last = row.cells.length - 1;
+                  ).map((row) => {
+                    // The highlighted row wears the same glass as the cards and
+                    // banners: the frost sits on the row's own cells, since a <tr>
+                    // can only hold cells, with an amber drop and no outline.
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "bg-card hover:bg-card"
-                            : nextIsStrong
-                              ? "border-b-0 hover:bg-foreground/5"
-                              : "border-b border-foreground/10 hover:bg-foreground/5"
+                            ? "bg-card hover:bg-card study-row-glass"
+                            : "border-b border-foreground/10 hover:bg-foreground/5"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && cn(outline, fill, "border-l"),
+                            row.strong && "study-cell-glass",
                           )}
                         >
                           {row.label}
@@ -927,14 +921,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong &&
-                                cn(
-                                  "font-semibold",
-                                  outline,
-                                  fill,
-                                  i === 0 ? "border-l" : i === last ? "border-r" : "",
-                                ),
+                              row.strong && "font-semibold study-cell-glass",
                             )}
+
                           >
                             {row.dots ? (
                               <>
@@ -1175,31 +1164,23 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         ],
                       },
                     ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
-                  ).map((row, rowIdx, rows) => {
-                    // The highlighted row wears the persona card's own surface and
-                    // outline. A row's own border is dropped by the shared table
-                    // styling and loses to cell borders where they collapse, so both
-                    // are drawn on the cells: the outline top and bottom on every
-                    // cell, its outer edges on the first and last, the veil as a fill.
-                    const outline = "border-y border-[#ffa348] dark:border-border",
-                      fill = "bg-white/10";
-                    const nextIsStrong = rows[rowIdx + 1]?.strong === true;
-                    const last = row.cells.length - 1;
+                  ).map((row) => {
+                    // The highlighted row wears the same glass as the cards and
+                    // banners: the frost sits on the row's own cells, since a <tr>
+                    // can only hold cells, with an amber drop and no outline.
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "bg-card hover:bg-card"
-                            : nextIsStrong
-                              ? "border-b-0 hover:bg-foreground/5"
-                              : "border-b border-foreground/10 hover:bg-foreground/5"
+                            ? "bg-card hover:bg-card study-row-glass"
+                            : "border-b border-foreground/10 hover:bg-foreground/5"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && cn(outline, fill, "border-l"),
+                            row.strong && "study-cell-glass",
                           )}
                         >
                           {row.label}
@@ -1209,14 +1190,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong &&
-                                cn(
-                                  "font-semibold",
-                                  outline,
-                                  fill,
-                                  i === 0 ? "border-l" : i === last ? "border-r" : "",
-                                ),
+                              row.strong && "font-semibold study-cell-glass",
                             )}
+
                           >
                             {row.dots ? (
                               <>
