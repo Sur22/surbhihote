@@ -383,8 +383,8 @@
   pointer-events: none;
   background:
     radial-gradient(46% 38% at 24% 18%, rgb(255 255 255 / 0.28), transparent 70%),
-    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 72%, transparent), transparent 74%),
-    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 58%, transparent), transparent 78%),
+    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 58%, transparent), transparent 74%),
+    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 45%, transparent), transparent 78%),
     radial-gradient(40% 30% at 70% 78%, rgb(0 0 0 / 0.04), transparent 72%);
   opacity: 0.9;
 }
@@ -415,8 +415,8 @@
   opacity: 0.45;
   background:
     radial-gradient(46% 38% at 24% 18%, rgb(255 255 255 / 0.06), transparent 70%),
-    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 48%, transparent), transparent 74%),
-    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 40%, transparent), transparent 78%),
+    radial-gradient(52% 40% at 84% 30%, color-mix(in srgb, var(--glass-amber) 40%, transparent), transparent 74%),
+    radial-gradient(64% 44% at 26% 92%, color-mix(in srgb, var(--glass-amber) 33%, transparent), transparent 78%),
     radial-gradient(40% 30% at 70% 78%, rgb(0 0 0 / 0.25), transparent 72%);
 }
 
