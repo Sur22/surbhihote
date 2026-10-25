@@ -462,17 +462,6 @@
     0 1px 2px -1px color-mix(in srgb, var(--amber) 35%, transparent);
 }
 
-/* The pressed-in rim the Tech Pack card's circle carries, drawn on its own
-   layer above the frosted fill so the veil cannot paint over it. Tinted the
-   amber of the drop outside so the banner's inside and outside read as one
-   treatment, and scaled down because this is a short strip rather than a disc. */
-.study-banner-inner {
-  box-shadow:
-    inset 0 1px 2px rgb(255 255 255 / 0.7),
-    inset 0 0 10px color-mix(in srgb, var(--amber) 18%, transparent),
-    inset 0 6px 14px color-mix(in srgb, var(--amber) 24%, transparent),
-    inset 0 -5px 12px color-mix(in srgb, var(--amber) 16%, transparent);
-}
 
 /* The same washes on dark paper would lift the surface to a mid grey that
    neither dark nor light ink can clear, so there they fade back and the card

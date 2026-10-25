@@ -1104,7 +1104,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <div className="study-card-glass__backdrop" />
                   <div className="study-card-glass__veil" />
                 </div>
-                <div className="study-banner-inner pointer-events-none absolute inset-0 rounded-xl" />
                 <p className="statement-line relative z-10 text-center text-card-foreground">
                   {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
                 </p>
