@@ -1,17 +1,17 @@
-import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
+import { ArrowDown, BrainCircuit, CheckCheck, FileText } from "lucide-react";
 
 const steps = [
   {
-    icon: Video,
+    icon: FileText,
     title: "Input",
-    subtitle: "Focus group recordings",
+    subtitle: "128 affiliate survey responses",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "\n",
-    body: "Notes of all the sessions and common points and other important informationacross all the focus groups.",
+    subtitle: "",
+    body: "Cluster responses into candidate themes and identify patterns for further investigation.",
   },
   {
     icon: CheckCheck,
@@ -24,7 +24,7 @@ const steps = [
 export function AiPanelSurvey() {
   return (
     <div className="mt-[100px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Testing </h3>
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
           <div key={step.title} className="relative">
