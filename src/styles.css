@@ -721,7 +721,8 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
    already zeroed above) and the peach paints on the cells instead of the row:
    the row's first and last cells carry the curve on their outer corners, while
    the row itself stays clear — even under the cursor — so no square corner
-   peeks out behind them. The amber drop still lives on the row. */
+   peeks out behind them. The amber drop is the cards' own .shadow-amber-band,
+   worn by the row's cells, since a table row can't paint one. */
 .journey-table table {
   border-collapse: separate;
   border-spacing: 0;
