@@ -414,10 +414,8 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Keep the requested neutral image, without brightening it into the page.
-     Its original midtone remains visible even at quarter opacity. */
+  /* Keep the image neutral, without brightening it into the page. */
   filter: grayscale(1);
-  opacity: 0.25;
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
@@ -432,7 +430,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
     transparent 34%,
     transparent 62%,
     rgb(255 255 255 / 0.16) 100%);
-  opacity: 0.25;
   backdrop-filter: blur(40px) saturate(165%);
   border: 1px solid rgb(255 255 255 / 0.5);
   box-shadow:
@@ -570,11 +567,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 
 
-/* Keep the requested image at quarter strength in both themes; dimming it a
-   second time made it disappear on dark paper. */
-.dark .study-card-glass__backdrop {
-  opacity: 0.25;
-}
 
 .dark .study-card-glass__veil {
   background-color: rgb(255 255 255 / 0.04);
@@ -589,13 +581,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
     inset 0 -1px 1px rgb(255 255 255 / 0.08);
 }
 
-/* The card and banner fill drops with the frost: at a quarter strength the
-   paper shows through the panel instead of the panel sitting solid on it. The
-   amber drop stays at full weight — it is the surface's outline, not its fill
-   — and so does the text, which rides above the glass on its own layer. */
-.shadow-amber-band {
-  background-color: color-mix(in srgb, var(--card) 25%, transparent);
-}
 
 
 /* The picture half of each card wears the circle colour again; the text half
