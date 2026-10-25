@@ -50,6 +50,7 @@ export function AiPanelFocusGroup() {
             ) : null}
           </div>
         ))}
+        <AiResearchQualitativeFlowDiagram />
       </div>
     </div>
   );
