@@ -542,6 +542,47 @@
   background-color: transparent;
 }
 
+/* Gallery-carousel glass on the case-study cards and banners: a soft, uniform
+   blue-gray gradient sits behind the gallery's own veil recipe (backdrop-blur-2xl,
+   15% white tint, thin white/20 rim), so the blur has something image-like to
+   refract and the panel reads like the gallery surfaces. The panel is light in
+   both themes — like the gallery — so the ink on it is pinned dark. */
+.glass-panel__backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(90% 70% at 14% 6%, rgb(255 255 255 / 0.9), transparent 62%),
+    radial-gradient(80% 65% at 86% 94%, color-mix(in srgb, var(--circle-fill) 72%, #ffffff), transparent 80%),
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--circle-fill) 34%, #ffffff) 0%,
+      color-mix(in srgb, var(--circle-fill) 60%, #86a9ba) 52%,
+      color-mix(in srgb, var(--circle-fill) 40%, #ffffff) 100%);
+}
+
+/* The veil itself is the gallery recipe verbatim: blur, 15% white, thin
+   white/20 rim. No sheen, no saturate, no inset shadows. */
+.glass-panel-veil {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgb(255 255 255 / 0.2);
+  pointer-events: none;
+}
+
+/* Ink pins for content sitting on the always-light panel. Pinning --background
+   also flips the interview banner's text-background quote text and its
+   background/40 hairline to ink, since the panel no longer reads dark. */
+.glass-panel {
+  color: oklch(0.18 0.02 60);
+  --foreground: oklch(0.18 0.02 60);
+  --card-foreground: oklch(0.18 0.02 60);
+  --muted-foreground: oklch(0.38 0.02 70);
+  --background: oklch(0.18 0.02 60);
+  --rule: oklch(0.6 0.02 75);
+  --border: var(--rule);
+}
+
 
 /* The big line of each column: display serif, sized to the viewport so it
    stays a headline rather than a heading. */
