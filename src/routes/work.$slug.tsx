@@ -963,10 +963,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             {/* Design opportunity — same pill treatment as the Tech Pack Tool
                 before/after flows: bold label over a persona-card-surface pill. */}
             <div className="mt-8">
-              <p className="font-sans text-base font-semibold text-foreground">
-                Design opportunity
-              </p>
-              <div className="relative mt-2 inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
+              <h4 className="h4">Design opportunity</h4>
+              <div className="relative mt-3 inline-flex max-w-full overflow-hidden rounded-full border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
                 <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 font-mono text-sm text-card-foreground">
                   {[
