@@ -790,16 +790,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
 
         {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign") && (
-          <div className={`mt-16 rounded-sm bg-foreground text-background px-6 md:px-16 py-16 relative overflow-hidden`}>
-            {(c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
-              <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="study-card-glass__backdrop" />
-                <div className="study-card-glass__veil" />
-              </div>
-            )}
+          <div className="mt-16 rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 md:px-16 py-16 relative overflow-hidden">
             <div className="relative z-10">
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">{(c.slug === "solace") ? "User Interview Insights" : "User Interview Insights\u00a0"}</h3>
-              <div className="border-l border-background/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
+              <div className="border-l border-band-foreground/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
                 {c.slug === "solace" ? (
                   <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
                     <p>

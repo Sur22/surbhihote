@@ -42,6 +42,11 @@
   /* The soft blue-gray wash the homepage cards already use, exposed as a
      utility so table highlights land on the same tint. */
   --color-tint: var(--circle-fill);
+  /* The User Interview band keeps its own black surface and cream text in
+     both themes, so a theme flip can never lighten the band or darken its
+     quotes. */
+  --color-band: var(--band);
+  --color-band-foreground: var(--band-foreground);
 }
 
 :root {
@@ -55,6 +60,9 @@
   --circle-fill: #a2bdcc;
   /* Mid grey used for hover states: reads on paper and on ink alike */
   --hover: oklch(0.52 0.02 70);
+  /* The User Interview band: black in light and dark alike, cream text on it. */
+  --band: #000000;
+  --band-foreground: #ffffff;
 
   --background: var(--paper);
   --foreground: var(--ink);
