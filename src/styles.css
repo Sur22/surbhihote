@@ -414,6 +414,9 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* Held neutral, as the user asked: the grid stays for the frost to refract,
+     but its amber does not wash the card interior. */
+  filter: grayscale(1) brightness(1.35);
   opacity: 0.25;
 }
 
