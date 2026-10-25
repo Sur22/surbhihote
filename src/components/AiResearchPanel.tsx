@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Video,
     title: "Input",
-    subtitle: "128 affiliate survey responses",
+    subtitle: "Focus group recordings",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
   },
   {
