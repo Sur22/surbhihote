@@ -1408,7 +1408,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           </>
         )}
 
-        {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
+        {c.strategy.productGoals.workshopAttendees?.trim() && c.strategy.productGoals.workshopSchedule?.trim() ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
@@ -1425,12 +1425,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               />
             </div>
           </div>
-        ) : (
+        ) : c.strategy.productGoals.intro.trim() ? (
           <p
             className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
             dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
           />
-        )}
+        ) : null}
 
         {c.slug === "fjord" && (
           <div className="bg-secondary rounded-sm p-6 md:p-10 flex justify-center">
