@@ -144,10 +144,10 @@ export function CaseStudySideNav({
           const targetId = s.anchor ?? s.id;
           const active = activeId === s.id;
           return (
-            <li key={s.id} className="flex items-center gap-3">
+            <li key={s.id} className={`flex gap-3 ${s.label.includes("\n") ? "items-start" : "items-center"}`}>
               <span
                 aria-hidden
-                className={`h-2 w-2 rounded-full transition-colors ${
+                className={`h-2 w-2 rounded-full transition-colors ${s.label.includes("\n") ? "mt-[6px]" : ""} ${
                   active ? "bg-accent" : "bg-transparent"
                 }`}
               />
