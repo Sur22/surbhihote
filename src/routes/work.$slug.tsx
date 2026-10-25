@@ -926,13 +926,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach shadow-amber-band"
+                            ? "study-peach"
                             : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && "shadow-amber-band",
                           )}
                         >
                           {row.label}
@@ -942,7 +943,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold",
+                              row.strong && "font-semibold shadow-amber-band",
                             )}
 
                           >
@@ -1191,13 +1192,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach shadow-amber-band"
+                            ? "study-peach"
                             : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && "shadow-amber-band",
                           )}
                         >
                           {row.label}
@@ -1207,7 +1209,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold",
+                              row.strong && "font-semibold shadow-amber-band",
                             )}
 
                           >

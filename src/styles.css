@@ -743,6 +743,23 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border-radius: 0 8px 8px 0;
 }
 
+/* The band's drop is the cards' own .shadow-amber-band, worn by the band's cells
+   because a table row can't paint one in this browser. Each cell clips that drop
+   to its own width so it cannot smear sideways onto its neighbour — a smear
+   there would read as a vertical seam inside the band — while the row's first
+   and last cells let the drop spill past their outer edge, where it belongs. */
+.journey-table tr.study-peach :is(th, td) {
+  clip-path: inset(-14px 0);
+}
+
+.journey-table tr.study-peach :is(th, td):first-child {
+  clip-path: inset(-14px);
+}
+
+.journey-table tr.study-peach :is(th, td):last-child {
+  clip-path: inset(-14px -14px -14px 0);
+}
+
 /* The sampled peach, held identical in both themes. The Notifications flow band
    wears it, and now the Notifications and Tech Pack cards and banners match it,
    so those two pages read as one surface. The colour never flips with the theme,
