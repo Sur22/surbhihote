@@ -570,66 +570,6 @@ function CaseStudyPage() {
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
             {c.slug !== "affiliate-platform-redesign" && (
-        {(c.slug === "atlas" || c.slug === "atlas2") && (
-          <>
-            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
-            {/* Three levels as persona-style cards, matching the Design Principle
-                cards: card fill, white/10 blurred veil and thin amber outline. */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              {[
-                {
-                  title: "Company",
-                  body: "Control notifications across an organization.",
-                },
-                {
-                  title: "Product",
-                  body: "Subscribe to notifications for specific products.",
-                },
-                {
-                  title: "Lifecycle",
-                  body: "Control notifications by phase/stage.",
-                },
-              ].map((level) => (
-                <div
-                  key={level.title}
-                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                  <div className="relative z-10">
-                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
-                      {level.title}
-                    </h4>
-                    <p className="text-sm text-card-foreground">{level.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Same pill treatment as the Design opportunity flow. */}
-            <div className="mt-10">
-              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
-                  {[
-                    "Role",
-                    "Notification Template",
-                    "User Preferences",
-                    "Delivery Channel",
-                  ].map((step, i) => (
-                    <span key={step} className="flex items-center gap-x-3">
-                      {i > 0 && (
-                        <span aria-hidden className="text-muted-foreground">
-                          →
-                        </span>
-                      )}
-                      <span>{step}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </>
-        )}
 
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace" 
@@ -1970,6 +1910,67 @@ Users needed an easy way to control and manage the notifications they want and s
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "affiliate-platform-redesign" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "affiliate-platform-redesign") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
+        {(c.slug === "atlas" || c.slug === "atlas2") && (
+          <>
+            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
+            {/* Three levels as persona-style cards, matching the Design Principle
+                cards: card fill, white/10 blurred veil and thin amber outline. */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              {[
+                {
+                  title: "Company",
+                  body: "Control notifications across an organization.",
+                },
+                {
+                  title: "Product",
+                  body: "Subscribe to notifications for specific products.",
+                },
+                {
+                  title: "Lifecycle",
+                  body: "Control notifications by phase/stage.",
+                },
+              ].map((level) => (
+                <div
+                  key={level.title}
+                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="relative z-10">
+                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      {level.title}
+                    </h4>
+                    <p className="text-sm text-card-foreground">{level.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Same pill treatment as the Design opportunity flow. */}
+            <div className="mt-10">
+              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
+                  {[
+                    "Role",
+                    "Notification Template",
+                    "User Preferences",
+                    "Delivery Channel",
+                  ].map((step, i) => (
+                    <span key={step} className="flex items-center gap-x-3">
+                      {i > 0 && (
+                        <span aria-hidden className="text-muted-foreground">
+                          →
+                        </span>
+                      )}
+                      <span>{step}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
         <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
           {(c.slug === "atlas" || c.slug === "atlas2") 
             ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
