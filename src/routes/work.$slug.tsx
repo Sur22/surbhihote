@@ -4,7 +4,9 @@ import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
-import { AiResearchPanel } from "@/components/AiResearchPanel";
+import { AiPanelSurvey } from "@/components/AiPanelSurvey";
+import { AiPanelFocusGroup } from "@/components/AiPanelFocusGroup";
+import { AiPanelTesting } from "@/components/AiPanelTesting";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -1610,7 +1612,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ))}
                 </div>
 
-              <AiResearchPanel />
+              <AiPanelSurvey />
 
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
@@ -2112,7 +2114,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
-              <AiResearchPanel />
+              <AiPanelFocusGroup />
               <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
@@ -2334,7 +2336,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <span>The feedback we got was positive, and I&nbsp;watched some sessions using Microsoft Clarity to check if it was being used as we expected. The results seemed satisfactory.</span>
             </li>
           </ul>
-          <AiResearchPanel />
+          <AiPanelTesting />
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
             Before the release, we made sure to have the help resources ready such as short how to videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;

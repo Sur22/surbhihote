@@ -21,7 +21,7 @@ const steps = [
   },
 ];
 
-export function AiResearchPanel() {
+export function AiPanelTesting() {
   return (
     <div className="mt-[100px]">
       <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Testing </h3>
