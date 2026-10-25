@@ -678,24 +678,8 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   transform: translateY(-50%);
 }
 
-/* The back link on a case study stays out of the cover's way: it appears only
-   while the banner picture is hovered. Touch screens have no hover to wait on,
-   so the hover media query leaves the link exactly as it was there. */
-@media (hover: hover) {
-  .back-to-portfolio {
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      opacity 200ms ease,
-      color 150ms ease;
-  }
-
-  .study-shell:has(.cover-picture:hover) .back-to-portfolio,
-  .back-to-portfolio:focus-visible {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
+/* The back link on a case study is an arrow alone and stays visible: nothing
+   waits on a hover any more, so there is no reveal rule here at all. */
 
 /* The User Journey tables: every row stands 40% taller than a default table row
    (40px → 56px), and the frame curves at 8px like the site's rounded images. */
