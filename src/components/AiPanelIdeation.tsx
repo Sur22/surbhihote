@@ -26,7 +26,7 @@ const steps = [
 
 export function AiPanelIdeation() {
   return (
-    <div className="mb-[30px]">
+    <div>
       <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Ideation</h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
