@@ -5,19 +5,19 @@ const steps = [
     icon: Video,
     title: "Input",
     subtitle: "Microsoft Clarity +Microsoft app insights + Power BI Data",
-    body: "Session recordings and Microsoft Clarity automatically detects common user actions,I set up custom code-free events in your Clarity dashboard to track specific micro-tasks and interactions. Some of the events / clicks were tracked using Microsoft app insights which is being connected and visualized using Power BI.",
+    body: "Session recordings and Clarity automatically captured common user behaviors, while I set up code-free custom events in Clarity to track specific micro-tasks and interactions. Additional events and clicks were tracked through Microsoft App Insights and connected to Power BI for analysis and visualization",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
     subtitle: "\n",
-    body: "Notes of all the sessions and common points and other important informationacross all the focus groups.",
+    body: "AI was used to analyze behavioral patterns across session recordings, custom events, interaction data, and usability metrics. It helped identify recurring behaviors, friction points, and potential usability issues across key workflows.\n\nFor defined micro-tasks, the interaction data was used to measure Task Success Rate—whether users completed the intended task and reached the defined success event. AI helped analyze successful and unsuccessful interaction patterns, compare task performance, and surface behaviors associated with task failure or friction.",
   },
   {
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
+    body: "ask success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction.\n\nI then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
   },
 ];
 
