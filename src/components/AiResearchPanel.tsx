@@ -1,8 +1,8 @@
-import { ArrowDown, BrainCircuit, CheckCheck, FileText } from "lucide-react";
+import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
 
 const steps = [
   {
-    icon: FileText,
+    icon: Video,
     title: "Input",
     subtitle: "128 affiliate survey responses",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
