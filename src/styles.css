@@ -404,8 +404,10 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 /* Soft washes under the veil — a frosted panel needs something to refract,
    since a flat tint blurs into nothing. The cards and banners on the
-   Notifications and Tech Pack case studies now carry the same background
-   image as the Solution carousel, blurred by the veil above them. */
+   Notifications and Tech Pack case studies carry the same background image as
+   the Solution carousel, blurred by the veil above them. That image is amber
+   through and through, so it is drained of colour here: the panel keeps the
+   grid it refracts, but the wash it throws reads neutral instead of amber. */
 .study-card-glass__backdrop {
   position: absolute;
   inset: -20%;
@@ -414,8 +416,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Keep the image neutral, without brightening it into the page. */
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(1.35);
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
@@ -567,6 +568,12 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 
 
+/* The same image on dark paper would lift the surface to a mid grey that
+   neither dark nor light ink can clear, so there it fades back and the card
+   stays close to the page. */
+.dark .study-card-glass__backdrop {
+  opacity: 0.45;
+}
 
 .dark .study-card-glass__veil {
   background-color: rgb(255 255 255 / 0.04);
@@ -580,7 +587,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
     inset 0 1px 1px rgb(255 255 255 / 0.18),
     inset 0 -1px 1px rgb(255 255 255 / 0.08);
 }
-
 
 
 /* The picture half of each card wears the circle colour again; the text half
