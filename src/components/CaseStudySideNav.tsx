@@ -11,6 +11,7 @@ const baseSections = [
 
 const slugsWithoutStrategy = new Set(["fjord", "affiliate-platform-redesign", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["affiliate-platform-redesign"]);
+const slugsWithQualitativeResearch = new Set(["affiliate-platform-redesign"]);
 const affiliateSlugs = new Set(["fjord", "affiliate-platform-redesign"]);
 const slugsWithTopImpact = new Set(["fjord", "affiliate-platform-redesign", "solace", "atlas", "atlas2"]);
 
