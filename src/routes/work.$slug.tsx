@@ -935,17 +935,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {row.dots ? (
-                              <>
-                                <span aria-hidden className="text-[0.5em]">
-                                  🔴
-                                </span>
-                                {"\u00a0"}
-                                {cell}
-                              </>
-                            ) : (
-                              cell
-                            )}
+                            {cell}
                           </TableCell>
                         ))}
                       </TableRow>
@@ -1203,17 +1193,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {row.dots ? (
-                              <>
-                                <span aria-hidden className="text-[0.5em]">
-                                  🔴
-                                </span>
-                                {"\u00a0"}
-                                {cell}
-                              </>
-                            ) : (
-                              cell
-                            )}
+                            {cell}
                           </TableCell>
                         ))}
                       </TableRow>
