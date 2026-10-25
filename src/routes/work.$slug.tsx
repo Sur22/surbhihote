@@ -960,7 +960,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 before/after flows: bold label over a persona-card-surface pill. */}
             <div className="mt-8">
               <h4 className="h4">Design opportunity</h4>
-              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <div className="study-card-glass__backdrop" />
                   <div className="study-card-glass__veil" />
@@ -1069,7 +1069,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               ].map((persona) => (
                 <div
                   key={persona.name}
-                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="study-card-glass__backdrop" />
@@ -1775,7 +1775,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((principle) => (
                 <div
                   key={principle.title}
-                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="study-card-glass__backdrop" />
@@ -1792,7 +1792,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-              <div className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5 overflow-hidden">
+              <div className="relative rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <div className="study-card-glass__backdrop" />
                   <div className="study-card-glass__veil" />
@@ -1945,7 +1945,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((level) => (
                 <div
                   key={level.title}
-                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                  className="relative rounded-xl bg-card text-card-foreground shadow-amber-band p-6 overflow-hidden"
                 >
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="study-card-glass__backdrop" />
@@ -1963,7 +1963,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
             {/* Same pill treatment as the Design opportunity flow. */}
             <div className="mt-[10px] mb-[30px]">
-              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+              <div className="relative max-w-full overflow-hidden rounded-xl bg-card text-card-foreground shadow-amber-band px-6 py-5">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                   <div className="study-card-glass__backdrop" />
                   <div className="study-card-glass__veil" />
@@ -2498,7 +2498,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="relative overflow-hidden rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center"
+                  className="relative overflow-hidden rounded-lg bg-card px-8 py-10 text-center shadow-amber-band flex items-center justify-center"
                 >
                   {(c.slug === "atlas" || c.slug === "atlas2") && (
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
