@@ -454,12 +454,12 @@
 }
 
 /* A drop drawn in the site's amber instead of black, for a banner whose outline
-   has been taken off. It keeps the standard shadow's shape and weight, so only
-   the colour changes. */
+   has been taken off. Offsets, blur and weight are the standard `shadow`
+   utility's own values — only the colour differs from it. */
 .shadow-amber-band {
   box-shadow:
-    0 4px 12px 0 color-mix(in srgb, var(--amber) 38%, transparent),
-    0 1px 3px 0 color-mix(in srgb, var(--amber) 28%, transparent);
+    0 1px 3px 0 color-mix(in srgb, var(--amber) 10%, transparent),
+    0 1px 2px -1px color-mix(in srgb, var(--amber) 10%, transparent);
 }
 
 /* The same washes on dark paper would lift the surface to a mid grey that
