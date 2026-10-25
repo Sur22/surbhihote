@@ -55,6 +55,16 @@
   /* The grey a table row takes on hover, published so components use bg-* with
      it instead of writing a colour into the markup. */
   --color-table-hover: var(--table-hover);
+  /* The emotion row's discs keep their sentiment colours through a theme flip —
+     a red disc must stay red on ink too — so every step of the scale carries its
+     own token instead of a colour written into the markup. */
+  --color-emotion-crimson: var(--emotion-crimson);
+  --color-emotion-vermilion: var(--emotion-vermilion);
+  --color-emotion-orange: var(--emotion-orange);
+  --color-emotion-amber: var(--emotion-amber);
+  --color-emotion-yellow: var(--emotion-yellow);
+  --color-emotion-lime: var(--emotion-lime);
+  --color-emotion-green: var(--emotion-green);
 }
 
 :root {
@@ -82,6 +92,16 @@
   --azure: #0068ff;
   /* Its icon colour, likewise fixed: white on the blue disc in either theme. */
   --azure-foreground: #ffffff;
+  /* The emotional-journey scale the Emotion row's discs borrow: crimson at the
+     frustrated end, green at the happy one. Held in :root only, so a theme flip
+     can never recolour an emotion. */
+  --emotion-crimson: #c7302d;
+  --emotion-vermilion: #d44f2e;
+  --emotion-orange: #de6e33;
+  --emotion-amber: #dba63b;
+  --emotion-yellow: #dfd543;
+  --emotion-lime: #bbd840;
+  --emotion-green: #50a638;
 
   --background: var(--paper);
   --foreground: var(--ink);
