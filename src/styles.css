@@ -785,11 +785,15 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   padding-block: 17.5px;
 }
 
-/* The flow band: the sampled peach, with its ink pinned dark. The page's own
-   ink flips to light on dark paper, which would leave white steps floating on
-   pale peach, so the band holds its own text and arrow colours in both themes. */
-.flow-band {
+/* The sampled peach, held identical in both themes. The Notifications flow band
+   wears it, and now the Notifications and Tech Pack cards and banners match it,
+   so those two pages read as one surface. The colour never flips with the theme,
+   so its ink is pinned dark here too: left to the theme, dark paper would hand
+   it white text on pale peach. */
+.flow-band,
+.study-peach {
   background-color: var(--flow-band);
+  --foreground: oklch(0.18 0.02 60);
   --card-foreground: oklch(0.18 0.02 60);
   --muted-foreground: oklch(0.34 0.02 60);
 }
