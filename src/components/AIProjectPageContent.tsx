@@ -130,6 +130,12 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           />
         </figure>
 
+        {/* Subtitle — sits below the cover picture, centred on the shared h3
+            look, exactly as on the design case study pages. */}
+        <p className="h3 max-w-4xl mx-auto mt-10 text-center text-foreground/85">
+          {project.subtitle}
+        </p>
+
         {project.slug === "resources" && (
           <section className="mt-12">
             <h2 className="font-serif text-2xl md:text-4xl leading-[1.15] text-foreground/85 mb-4">Overview</h2>
