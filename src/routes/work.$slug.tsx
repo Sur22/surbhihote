@@ -317,11 +317,8 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
      · Notifications: 77.2%, its centre 45.5% across and 59% down, then nudged a
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
-    · Tech Pack: 96.4%, pinned by its top-right corner to a point 150px left of
-      the picture's top-right corner then lifted a fixed 65px, the way it sits
-       in the card's tinted band. The shift is capped at 28% of the picture's
-       width, so on a phone — where 150px would push the curve past the stage's
-       edge and slice it — the circle slides only as far as the stage allows.
+    · Tech Pack: 93.7%, horizontally centred behind the monitor and lifted
+       35px, balancing the visible upper arc with the monitor's full width.
    Percentages of that box, so the placement holds at every width. */
 const cardDiscSlugs = new Set<CaseStudy["slug"]>([
   "solace",
@@ -336,10 +333,10 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
         ? {
-            left: "calc(100% - min(250px, 40%))",
+            left: "50%",
              top: "-35px",
-            transform: "translate(-100%, 0) scale(0.93708576)",
-            transformOrigin: "top right",
+            transform: "translate(-50%, 0) scale(0.93708576)",
+            transformOrigin: "top center",
           }
         : { left: "50%", top: "50%", transform: "translate(-50%, -50%)" };
 
