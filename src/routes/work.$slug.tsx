@@ -1408,7 +1408,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           </>
         )}
 
-        {c.strategy.productGoals.workshopAttendees && c.strategy.productGoals.workshopSchedule ? (
+        {c.strategy.productGoals.workshopAttendees?.trim() && c.strategy.productGoals.workshopSchedule?.trim() ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
@@ -1425,7 +1425,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               />
             </div>
           </div>
-        ) : (
+        ) : c.slug === "affiliate-platform-redesign" ? null : (
           <p
             className="text-lg leading-relaxed text-foreground/85 mb-12 [&_strong]:font-semibold [&_strong]:text-foreground whitespace-pre-line"
             dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.intro }}
@@ -1446,7 +1446,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {(c.slug === "affiliate-platform-redesign") && (
           <div className="contents">
-            <div className="mt-16">
+            <div className="mt-[50px]">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
