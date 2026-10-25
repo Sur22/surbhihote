@@ -9,7 +9,6 @@ const steps = [
     title: "Input",
     subtitle: "",
     body: "Placeholder — send the wording for this step.",
-    // placeholder
   },
   {
     icon: BrainCircuit,
