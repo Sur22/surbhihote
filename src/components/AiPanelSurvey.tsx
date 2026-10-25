@@ -23,7 +23,7 @@ const steps = [
 
 export function AiPanelSurvey() {
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] mb-[30px]">
       <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
