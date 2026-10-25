@@ -5,26 +5,26 @@ const steps = [
     icon: Video,
     title: "Input",
     subtitle: "Focus group recordings",
-    body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
+    body: "Focus group recordings and a structured set of questions used across five affiliate groups to understand their current workflows, pain points, behaviors, and preferences.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
     subtitle: "\n",
-    body: "Notes of all the sessions and common points and other important informationacross all the focus groups.",
+    body: "AI was used to analyze session transcripts and notes across all five focus groups to identify recurring themes, common pain points, and other relevant patterns. The findings were consolidated into a list of key issues and cross-referenced with the survey data to identify patterns across both qualitative and quantitative research.",
   },
   {
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
+    body: "The AI-generated findings were reviewed against my personal focus group notes, stakeholder input, and supporting research evidence. I validated and refined the findings before prioritizing the key issues in collaboration with the Product Manager.",
   },
 ];
 
 export function AiPanelFocusGroup() {
   return (
     <div className="mt-[100px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Testing </h3>
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research </h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
           <div key={step.title} className="relative">
