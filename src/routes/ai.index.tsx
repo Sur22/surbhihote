@@ -62,7 +62,7 @@ function AIPage() {
               key={project.title}
               to={project.path ?? "/ai/$slug"}
               params={project.path ? undefined : { slug: project.slug }}
-              className="group relative rounded-2xl border border-border bg-secondary overflow-hidden block"
+              className="group relative rounded-2xl border border-border bg-secondary ai-card overflow-hidden block"
             >
               <div className="ai-card-glass__backdrop" />
               <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
