@@ -20,8 +20,8 @@ const stages = [
   },
 ];
 
-/* Affiliate AI-for-Research (Qualitative): the same one-line flow used by the
-   AI-for-Testing panel — small unfilled cards with azure outlines joined by
+/* Affiliate AI for Testing: the behavioural-data flow, shown below the
+   AI-for-Testing flow — small unfilled cards with azure outlines joined by
    arrows, each carrying a stage name and its detail. On phones the line keeps
    its size and slides sideways instead of wrapping. */
 export function AiResearchQualitativeFlowDiagram() {

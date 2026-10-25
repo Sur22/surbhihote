@@ -1,5 +1,4 @@
 import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
-import { AiResearchQualitativeFlowDiagram } from "@/components/AiResearchQualitativeFlowDiagram";
 
 const steps = [
   {
@@ -50,7 +49,6 @@ export function AiPanelFocusGroup() {
             ) : null}
           </div>
         ))}
-        <AiResearchQualitativeFlowDiagram />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
+import { AiResearchQualitativeFlowDiagram } from "@/components/AiResearchQualitativeFlowDiagram";
 import { AiTestingFlowDiagram } from "@/components/AiTestingFlowDiagram";
 
 const steps = [
@@ -51,6 +52,7 @@ export function AiPanelTesting() {
           </div>
         ))}
         <AiTestingFlowDiagram />
+        <AiResearchQualitativeFlowDiagram />
       </div>
     </div>
   );
