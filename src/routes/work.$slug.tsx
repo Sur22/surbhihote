@@ -318,7 +318,7 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
      · Tech Pack: 101.2%, horizontally centred behind the monitor and lifted
-       5px, balancing the visible upper arc with the monitor's full width.
+       25px, balancing the visible upper arc with the monitor's full width.
    Percentages of that box, so the placement holds at every width. */
 const cardDiscSlugs = new Set<CaseStudy["slug"]>([
   "solace",
@@ -334,7 +334,7 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       : slug === "solace"
         ? {
             left: "50%",
-             top: "-5px",
+             top: "-25px",
             transform: "translate(-50%, 0) scale(1.01205262)",
             transformOrigin: "top center",
           }
