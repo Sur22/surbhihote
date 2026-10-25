@@ -1915,7 +1915,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
             {/* Three levels as persona-style cards, matching the Design Principle
                 cards: card fill, white/10 blurred veil and thin amber outline. */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
               {[
                 {
                   title: "Company",
@@ -1946,7 +1946,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
 
             {/* Same pill treatment as the Design opportunity flow. */}
-            <div className="mt-10 mb-[30px]">
+            <div className="mt-[10px] mb-[30px]">
               <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
                 <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
