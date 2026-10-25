@@ -490,24 +490,17 @@ function CaseStudyPage() {
         <ScrollProgress />
         <CaseStudySideNav slug={c.slug} />
 
-        {/* Title block */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+        {/* Back to portfolio — the cover picture follows it directly, with the
+            title and subtitle held below the picture. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-10">
         <Link
           to="/"
           hash="case-studies"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-10"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft size={16} />
           Back to portfolio
         </Link>
-        <div className="flex items-baseline gap-4 mb-8">
-          <span className="font-serif text-3xl text-accent">{c.index}</span>
-          <span className="eyebrow">{c.tags.join(" · ")}</span>
-        </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
-        <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
-          {c.subtitle}
-        </p>
       </section>
 
       {/* Cover */}
@@ -539,6 +532,18 @@ function CaseStudyPage() {
             {coverPicture}
           </div>
         )}
+      </section>
+
+      {/* Title block */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
+        <div className="flex items-baseline gap-4 mb-8">
+          <span className="font-serif text-3xl text-accent">{c.index}</span>
+          <span className="eyebrow">{c.tags.join(" · ")}</span>
+        </div>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
+        <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
+          {c.subtitle}
+        </p>
       </section>
 
       {/* Outcome for case studies 02-04 */}
