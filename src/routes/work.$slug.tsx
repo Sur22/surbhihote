@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, TrendingUp, Play } from "lucide-react";
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
@@ -308,6 +308,60 @@ export const Route = createFileRoute("/work/$slug")({
 
 const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign", "fjord", "solace", "atlas", "atlas2"]);
 
+/* The three studies the homepage links as cards wear the frosted disc exactly
+   where the card puts it. The card measures its circle off the mockup's own box
+   — that box's height sets the diameter, its edges set the anchor — so the
+   banner does the same with the cover picture's box:
+     · Affiliate: 91% of the picture's height, its centre 29% across and halfway
+       down, so a rim of circle shows past the screenshot's left edge.
+     · Notifications: 108%, its centre 45.5% across and 59% down — a touch left
+       of the phone and dropped below its middle.
+     · Tech Pack: 124.2%, pinned by its top-right corner to the picture's
+       top-right corner, the way it sits in the card's tinted band.
+   Percentages of that box, so the placement holds at every width. */
+const cardDiscSlugs = new Set<CaseStudy["slug"]>([
+  "solace",
+  "atlas",
+  "affiliate-platform-redesign",
+]);
+
+const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
+  slug === "affiliate-platform-redesign"
+    ? { left: "29.2%", top: "50%", transform: "translate(-50%, -50%) scale(0.91)" }
+    : slug === "atlas"
+      ? { left: "45.5%", top: "59%", transform: "translate(-50%, -50%) scale(1.08)" }
+      : slug === "solace"
+        ? {
+            left: "100%",
+            top: "0%",
+            transform: "translate(-100%, 0) scale(1.242)",
+            transformOrigin: "top right",
+          }
+        : { left: "50%", top: "50%", transform: "translate(-50%, -50%)" };
+
+/* Vertical room for the disc's whole curve plus its shadow, so neither is
+   sliced flat at the stage's edge. What hangs below the picture grows with the
+   picture (a share of its width); the shadow's reach does not, so each study's
+   allowance mixes a percentage with a fixed pad. */
+/* The cover picture's own box — the frame both circles are measured off. The
+   circle layer wears the same width class as the picture, so the two boxes line
+   up exactly and the card's percentages mean the same thing here as there. */
+const coverWidth = (slug: CaseStudy["slug"]) =>
+  slug === "atlas" || slug === "atlas2"
+    ? "w-[35%]"
+    : slug === "affiliate-platform-redesign"
+      ? "w-[72%]"
+      : slug === "solace"
+        ? "w-[78%]"
+        : "w-full";
+
+const coverPad = (slug: CaseStudy["slug"]) =>
+  slug === "solace"
+    ? "pt-[9%] pb-[calc(16%_+_52px)]"
+    : slug === "atlas"
+      ? "pt-[9%] pb-[calc(9%_+_52px)]"
+      : "pt-[9%] pb-[calc(5%_+_52px)]";
+
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const showImpactHeader = topOutcomeSlugs.has(c.slug);
   return (
@@ -400,6 +454,17 @@ function CaseStudyPage() {
     { src: affSurveyQ6.url, alt: "Would you join future affiliate site enhancement feedback sessions?" },
   ];
 
+  /* The banner picture, shared by both cover layouts in the section below. The
+     width class sits on the wrapper rather than the picture, so the wrapper's
+     own box is exactly the picture's box — and that box is the frame the cover
+     circles are measured off, the same frame the homepage card measures its
+     circle off. */
+  const coverPicture = (
+    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
+      <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
+    </div>
+  );
+
   return (
     <SiteLayout>
       <div
@@ -443,18 +508,32 @@ function CaseStudyPage() {
       {/* Cover */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         {/* The same frosted disc and hollow ring that sit behind each mockup on
-            the homepage case-study cards. The stage's own padding gives the
-            circle room to finish its curve above and below the banner instead of
-            being sliced off at the section's edges. */}
-        <div className="relative py-[9%]">
-          <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="study-glass-ring absolute left-1/2 top-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="study-glass-disc absolute left-1/2 top-1/2 aspect-square h-full overflow-hidden -translate-x-1/2 -translate-y-1/2" />
+            the homepage case-study cards, worn in the same place: for the three
+            studies the homepage links, both circles are measured off the cover
+            picture's own box — the frame the card measures off — so the disc
+            keeps the card's anchor and diameter at every width. The stage's
+            padding then gives the curve and its shadow room to finish inside the
+            stage rather than being sliced off at its edge. A study with no card
+            to echo keeps the disc centred on the whole stage, as before. */}
+        {cardDiscSlugs.has(c.slug) ? (
+          <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
+            <div className="relative">
+              <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
+                <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
+                <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={coverDiscStyle(c.slug)} />
+              </div>
+              {coverPicture}
+            </div>
           </div>
-          <div className="relative z-10 overflow-hidden rounded-sm">
-            <img src={c.cover} alt={c.title} width={1400} height={1000} className={`h-auto ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%] mx-auto" : c.slug === "affiliate-platform-redesign" ? "w-[72%] mx-auto" : c.slug === "solace" ? "w-[78%] mx-auto" : "w-full"}`} />
+        ) : (
+          <div className="relative overflow-hidden py-[9%]">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div className="study-glass-ring absolute left-1/2 top-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2" />
+              <div className="study-glass-disc absolute left-1/2 top-1/2 aspect-square h-full overflow-hidden -translate-x-1/2 -translate-y-1/2" />
+            </div>
+            {coverPicture}
           </div>
-        </div>
+        )}
       </section>
 
       {/* Outcome for case studies 02-04 */}
