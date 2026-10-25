@@ -2503,7 +2503,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((s) => (
                 <div
                   key={s.label}
-                  className={`${c.slug === "atlas" || c.slug === "atlas2" ? "glass-panel " : ""}relative overflow-hidden rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center`
+                  className={`${c.slug === "atlas" || c.slug === "atlas2" ? "glass-panel " : ""}relative overflow-hidden rounded-lg border border-orange-500 bg-card px-8 py-10 text-center shadow-sm flex items-center justify-center`}
                 >
                   {(c.slug === "atlas" || c.slug === "atlas2") && (
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
