@@ -1736,15 +1736,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
       </section>
 
-      {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+      {/* Hairline above the Design section on every case study. */}
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
-      {/* Notifications Management: no rule above the Design section, so the
-          Design opportunity pill has no line under it. */}
-      {c.slug === "atlas2" && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
 
       {/* Initial Sketches */}
       <section id="design-process" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-0" : "py-24"}`}>
