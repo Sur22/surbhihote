@@ -343,6 +343,18 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
    sliced flat at the stage's edge. What hangs below the picture grows with the
    picture (a share of its width); the shadow's reach does not, so each study's
    allowance mixes a percentage with a fixed pad. */
+/* The cover picture's own box — the frame both circles are measured off. The
+   circle layer wears the same width class as the picture, so the two boxes line
+   up exactly and the card's percentages mean the same thing here as there. */
+const coverWidth = (slug: CaseStudy["slug"]) =>
+  slug === "atlas" || slug === "atlas2"
+    ? "w-[35%]"
+    : slug === "affiliate-platform-redesign"
+      ? "w-[72%]"
+      : slug === "solace"
+        ? "w-[78%]"
+        : "w-full";
+
 const coverPad = (slug: CaseStudy["slug"]) =>
   slug === "solace"
     ? "pt-[9%] pb-[calc(16%_+_52px)]"
@@ -448,7 +460,7 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${(c.slug === "atlas" || c.slug === "atlas2") ? "w-[35%]" : c.slug === "affiliate-platform-redesign" ? "w-[72%]" : c.slug === "solace" ? "w-[78%]" : "w-full"}`}>
+    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
       <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
     </div>
   );
@@ -506,7 +518,7 @@ function CaseStudyPage() {
         {cardDiscSlugs.has(c.slug) ? (
           <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
             <div className="relative">
-              <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0">
+              <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
                 <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
                 <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={coverDiscStyle(c.slug)} />
               </div>
