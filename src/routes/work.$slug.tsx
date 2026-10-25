@@ -908,7 +908,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         className={
                           row.strong
                             ? "bg-card hover:bg-card study-row-glass"
-                            : "border-b border-foreground/10 hover:bg-foreground/5"
+                            : "border-b border-foreground/10 hover:bg-table-hover"
                         }
                       >
                         <TableHead
@@ -1177,7 +1177,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         className={
                           row.strong
                             ? "bg-card hover:bg-card study-row-glass"
-                            : "border-b border-foreground/10 hover:bg-foreground/5"
+                            : "border-b border-foreground/10 hover:bg-table-hover"
                         }
                       >
                         <TableHead
@@ -1270,37 +1270,37 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Stop hunting for details across scattered files.</TableCell>
                       <TableCell className="text-foreground/90">Reduce rework and manual error/data entry</TableCell>
                       <TableCell className="text-foreground/90">Lower accounting errors, automation</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Change something once, not in ten documents.</TableCell>
                       <TableCell className="text-foreground/90">Cut cycle time.</TableCell>
                       <TableCell className="text-foreground/90">Reduced time on task,{"\n"}automation</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Keep clients/factories current in real time.</TableCell>
                       <TableCell className="text-foreground/90">Real-time collaboration, communication & updates</TableCell>
                       <TableCell className="text-foreground/90">Increased speed{"\n"}& workflow efficiency</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Repurpose & reuse existing designs (CAD, tech pack files)&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Reduce OpEx and time.</TableCell>
                       <TableCell className="text-foreground/90">Increased speed,{"\n"}reduced expenses&nbsp;</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Track all changes easily&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Provide transparency and traceability in PLM&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Trust, User satisfaction&nbsp;</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Share finalized product documents with factories and clients</TableCell>
                       <TableCell className="text-foreground/90">Standardize the process&nbsp;&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">User satisfaction, Client retention{"\u00a0"}</TableCell>
                     </TableRow>
-                    <TableRow className="border-b border-foreground/10 hover:bg-foreground/5">
+                    <TableRow className="border-b border-foreground/10 hover:bg-table-hover">
                       <TableCell className="text-foreground/90">Modify CAD and tech pack files in the platform&nbsp;&nbsp;</TableCell>
                       <TableCell className="text-foreground/90">Users don't leave the platform, Differentiator from the competitors</TableCell>
                       <TableCell className="text-foreground/90">Time spent on the platform,{"\n"}retain & attract new clients{"\u00a0"}</TableCell>
@@ -2443,7 +2443,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   ].map((row) => (
                     <TableRow
                       key={row.finding}
-                      className="border-b border-foreground/10 hover:bg-foreground/5"
+                      className="border-b border-foreground/10 hover:bg-table-hover"
                     >
                       <TableCell className="text-foreground/90">
                         {row.finding}
