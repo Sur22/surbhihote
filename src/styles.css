@@ -415,9 +415,11 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   background-position: center;
   background-repeat: no-repeat;
   /* Held neutral, as the user asked: the grid stays for the frost to refract,
-     but its amber does not wash the card interior. */
+     but its amber does not wash the card interior. The picture keeps full
+     strength — the 25% the user asked for belongs to the card's own fill and
+     frost, not to the artwork behind them, which would vanish at a quarter. */
   filter: grayscale(1) brightness(1.35);
-  opacity: 0.25;
+  opacity: 1;
 }
 
 /* The veil: blur with a 15% white tint and a rim the tint can show. It sits
@@ -574,7 +576,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
    neither dark nor light ink can clear, so there it fades back and the card
    stays close to the page. */
 .dark .study-card-glass__backdrop {
-  opacity: 0.11;
+  opacity: 0.45;
 }
 
 .dark .study-card-glass__veil {
