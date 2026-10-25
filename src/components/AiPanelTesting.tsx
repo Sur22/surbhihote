@@ -2,7 +2,7 @@ import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
 
 const steps = [
   {
-    icon: Video,
+    icon: BarChart3,
     title: "Input",
     subtitle: "Microsoft Clarity +Microsoft app insights + Power BI Data",
     body: "Session recordings and Clarity automatically captured common user behaviors, while I set up code-free custom events in Clarity to track specific micro-tasks and interactions. Additional events and clicks were tracked through Microsoft App Insights and connected to Power BI for analysis and visualization",
