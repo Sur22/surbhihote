@@ -2157,6 +2157,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <AiResearchPanel />
               <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
