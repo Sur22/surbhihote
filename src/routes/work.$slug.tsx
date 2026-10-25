@@ -2541,7 +2541,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     { src: finalPdf.url, label: "Exported PDF" },
                     { src: finalProto.url, label: "Prototype overview" },
                   ]
-              ).map((img) => (
+              ).map((img, i) => (
                 <CarouselItem key={img.label} className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
 
                   {(c.slug === "atlas" || c.slug === "atlas2") ? (
@@ -2561,7 +2561,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   ) : (c.slug === "affiliate-platform-redesign") ? (
                     <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
                   ) : (c.slug === "solace") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%" }} loading="lazy" />
+                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%", borderRadius: i > 0 ? 8 : undefined }} loading="lazy" />
                   ) : (
                     <div className="overflow-hidden rounded-sm border border-border bg-secondary">
                       <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
