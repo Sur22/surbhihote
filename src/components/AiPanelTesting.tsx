@@ -11,7 +11,7 @@ const steps = [
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "\n",
+    subtitle: "Microsoft Clarity +Microsoft app insights + Power BI Data",
     body: "AI was used to analyze behavioral patterns across session recordings, custom events, interaction data, and usability metrics. It helped identify recurring behaviors, friction points, and potential usability issues across key workflows.\n\nFor defined micro-tasks, the interaction data was used to measure Task Success Rate—whether users completed the intended task and reached the defined success event. AI helped analyze successful and unsuccessful interaction patterns, compare task performance, and surface behaviors associated with task failure or friction.",
   },
   {
