@@ -4,7 +4,7 @@ const steps = [
   {
     icon: FileText,
     title: "Input",
-    subtitle: "128 affiliate survey responses",
+    subtitle: "AI Tools -  Claude ",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
   },
   {

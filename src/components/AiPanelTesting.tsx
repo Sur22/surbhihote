@@ -6,13 +6,13 @@ const steps = [
   {
     icon: BarChart3,
     title: "Input",
-    subtitle: "AI Tools - Microsoft Co-pilot + Claude ",
+    subtitle: "Microsoft Clarity + Microsoft App Insights + Power BI ",
     body: "Session recordings and Clarity automatically captured common user behaviors, while I set up code-free custom events in Clarity to track specific micro-tasks and interactions. Additional events and clicks were tracked through Microsoft App Insights and connected to Power BI for analysis and visualization",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "Microsoft Clarity +Microsoft app insights + Power BI Data",
+    subtitle: "AI Tools - Microsoft Co-pilot + ClaudeMicrosoft Clarity",
     body: "AI was used to analyze behavioral patterns across session recordings, custom events, interaction data, and usability metrics. It helped identify recurring behaviors, friction points, and potential usability issues across key workflows.\n\nFor defined micro-tasks, the interaction data was used to measure Task Success Rate—whether users completed the intended task and reached the defined success event. AI helped analyze successful and unsuccessful interaction patterns, compare task performance, and surface behaviors associated with task failure or friction.",
   },
   {

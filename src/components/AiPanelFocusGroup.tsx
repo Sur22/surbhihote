@@ -4,13 +4,13 @@ const steps = [
   {
     icon: Video,
     title: "Input",
-    subtitle: "AI Tools - Microsoft Co-pilot + Claude",
+    subtitle: "5 focus group session recordings ",
     body: "Focus group recordings and a structured set of questions used across five affiliate groups to understand their current workflows, pain points, behaviors, and preferences.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "5 focus group session recordings ",
+    subtitle: "AI Tools - Microsoft Co-pilot + Claude",
     body: "AI was used to analyze session transcripts and notes across all five focus groups to identify recurring themes, common pain points, and other relevant patterns. The findings were consolidated into a list of key issues and cross-referenced with the survey data to identify patterns across both qualitative and quantitative research.",
   },
   {
