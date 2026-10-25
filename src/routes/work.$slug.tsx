@@ -1758,8 +1758,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 Users needed an easy way to control and manage the notifications they want and should also be able to select which way they prefer to get the notifications is text or the email. 
             </p>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Design Principle</h3>
-            {/* Three principles as persona-style cards: card fill, white/10 blurred
-                veil and thin amber outline on light paper (theme border on dark). */}
+            {/* Three principles as persona-style cards: the flat peach surface
+                the flow band wears, with the site's amber drop. */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
               {[
                 {
