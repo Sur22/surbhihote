@@ -54,50 +54,27 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
     <SiteLayout>
       <ScrollProgress />
       <article className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
-        <Link
-          to="/ai"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-10"
-        >
-          <ArrowLeft size={16} />
-          Back to AI Projects
-        </Link>
-
-        <span className="eyebrow mb-8 block">{project.tags.join(" · ")}</span>
-        <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal">
-          {project.slug === "resources" ? "AI Resources for Product Designers" : project.title}
-        </h1>
-        <p className="font-serif text-2xl md:text-4xl leading-[1.15] max-w-4xl text-foreground/85">
-          {project.subtitle}
-        </p>
-
-        {project.slug === "resources" && (
-          <p className="mt-6 text-base text-muted-foreground">
-            By{" "}
-            <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
-              Surbhi Hote
-            </Link>
-            {"\u00a0"}- Product Designer{"\u00a0"}
-          </p>
-        )}
-
-        {project.slug === "creator-hub" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            <strong>Creator Hub</strong> An AI-assisted workspace that helps
-            social media creators plan, repurpose, and optimize content across
-            platforms, without drowning in tools.
-          </p>
-        ) : project.slug === "voyager" ? (
-          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
-            Design lab AI for UI Project: designing a travel AI product end to
-            end, using AI at every stage.
-          </p>
-        ) : project.slug === "resources" ? (
-          <></>
-        ) : (
-          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
-            {"\n"}
-          </p>
-        )}
+        {/* Header — the keyword tagline and the title are centred while the back
+            arrow is pinned to the left corner of the content column, the same
+            treatment the design case studies wear above their covers. On phones
+            the arrow returns to the flow as its own line so a wrapped tagline
+            cannot run under it. The subtitle is NOT here: it sits below the
+            cover picture, centred. */}
+        <section className="relative pb-[10px]">
+          <Link
+            to="/ai"
+            aria-label="Back to AI projects"
+            className="back-to-portfolio mb-[30px] inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors sm:absolute sm:left-0 sm:top-0 sm:mb-0"
+          >
+            <ArrowLeft size={16} />
+          </Link>
+          <div className="flex items-center justify-center mb-8 sm:mt-[30px]">
+            <span className="eyebrow">{project.tags.join(" · ")}</span>
+          </div>
+          <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal text-center">
+            {project.slug === "resources" ? "AI Resources for Product Designers" : project.title}
+          </h1>
+        </section>
 
         <figure
           className={
@@ -123,6 +100,47 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             }
           />
         </figure>
+
+        {/* Subtitle — sits below the cover picture, centred on the shared h3
+            look, exactly as on the design case study pages. */}
+        <p className="h3 max-w-4xl mx-auto mt-10 text-center text-foreground/85">
+          {project.subtitle}
+        </p>
+
+        {/* Byline — sits below the cover with the other intro copy, centred
+            under the subtitle, so the header above the picture holds only the
+            centred tagline and title. */}
+        {project.slug === "resources" && (
+          <p className="mt-6 text-center text-base text-muted-foreground">
+            By{" "}
+            <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
+              Surbhi Hote
+            </Link>
+            {"\u00a0"}- Product Designer{"\u00a0"}
+          </p>
+        )}
+
+        {/* Study intro — sits below the cover picture so the header above it
+            holds only the centred tagline and title, as on the design case
+            studies. */}
+        {project.slug === "creator-hub" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            <strong>Creator Hub</strong> An AI-assisted workspace that helps
+            social media creators plan, repurpose, and optimize content across
+            platforms, without drowning in tools.
+          </p>
+        ) : project.slug === "voyager" ? (
+          <p className="mt-10 text-lg leading-relaxed text-foreground/85 max-w-3xl">
+            Design lab AI for UI Project: designing a travel AI product end to
+            end, using AI at every stage.
+          </p>
+        ) : project.slug === "resources" ? (
+          <></>
+        ) : (
+          <p className="mt-10 text-muted-foreground leading-relaxed max-w-3xl">
+            {"\n"}
+          </p>
+        )}
 
         {project.slug === "resources" && (
           <section className="mt-12">
