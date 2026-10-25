@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Video,
     title: "Input",
-    subtitle: "5 focus group session recordings ",
+    subtitle: "Microsoft Co-pilot + Claude",
     body: "Focus group recordings and a structured set of questions used across five affiliate groups to understand their current workflows, pain points, behaviors, and preferences.",
   },
   {
