@@ -35,7 +35,7 @@ export function AiPanelFocusGroup() {
                 </span>
               </div>
               <div className="min-w-0">
-                <h4 className="text-base font-semibold leading-snug">{step.title}</h4>
+                <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
                 ) : null}
