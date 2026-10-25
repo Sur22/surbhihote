@@ -840,7 +840,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {/* User Journey — Notifications Management only, mirroring the Tech Pack
             Tool journey table: same shared-Table structure,
-            persona-card highlight on the Opportunity row. */}
+            the flat peach highlight on the Opportunity row. */}
         {c.slug === "atlas" && (
           <div className="mt-16">
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
@@ -919,22 +919,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                     ] as { label: string; cells: string[]; strong?: boolean; tones?: string[] }[]
                   ).map((row) => {
-                    // The highlighted row wears the same glass as the cards and
-                    // banners: the frost sits on the row's own cells, since a <tr>
-                    // can only hold cells, with an amber drop and no outline.
+                    // The highlighted row wears the same flat peach as the cards
+                    // and banners, with the site's amber drop and no outline.
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "bg-card hover:bg-card study-row-glass"
+                            ? "study-peach study-row-glass hover:bg-flow-band"
                             : "border-b border-foreground/10 hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && "study-cell-glass",
                           )}
                         >
                           {row.label}
@@ -944,7 +942,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold study-cell-glass",
+                              row.strong && "font-semibold",
                             )}
 
                           >
@@ -1186,22 +1184,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                     ] as { label: string; cells: string[]; strong?: boolean; tones?: string[] }[]
                   ).map((row) => {
-                    // The highlighted row wears the same glass as the cards and
-                    // banners: the frost sits on the row's own cells, since a <tr>
-                    // can only hold cells, with an amber drop and no outline.
+                    // The highlighted row wears the same flat peach as the cards
+                    // and banners, with the site's amber drop and no outline.
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "bg-card hover:bg-card study-row-glass"
+                            ? "study-peach study-row-glass hover:bg-flow-band"
                             : "border-b border-foreground/10 hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && "study-cell-glass",
                           )}
                         >
                           {row.label}
@@ -1211,7 +1207,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold study-cell-glass",
+                              row.strong && "font-semibold",
                             )}
 
                           >
