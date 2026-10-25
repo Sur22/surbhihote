@@ -706,3 +706,19 @@
   letter-spacing: -0.01em;
 }
 
+/* The AI for Research connector arrow. Its disc is top-aligned in a row whose
+   height is set by the text beneath it, so an arrow left in the flow lands
+   against the next disc instead of midway between the two. Pinning it to the
+   row's midpoint plus half the disc stack centres it exactly: the disc runs
+   26px→62px from the row's top edge (24px padding + 2px nudge + 36px disc), so
+   the midway point sits at 50% + (62 + 26) / 2 = 50% + 44px. */
+.step-connector {
+  position: absolute;
+  left: 24px; /* the row's px-6 ... */
+  width: 36px; /* ... plus its w-9 icon column */
+  top: calc(50% + 44px);
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+

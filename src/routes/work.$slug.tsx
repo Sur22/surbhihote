@@ -1632,7 +1632,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
                     },
                   ].map((step, idx) => (
-                    <div key={step.title}>
+                    <div key={step.title} className="relative">
                       <div className="flex items-start gap-4 px-6 py-6">
                         <div className="w-9 shrink-0 flex justify-center pt-0.5">
                           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-azure/85">
@@ -1648,10 +1648,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         </div>
                       </div>
                       {idx < 2 ? (
-                        <div className="flex pl-6 -my-3" aria-hidden="true">
-                          <div className="w-9 flex justify-center">
-                            <ArrowDown className="h-4 w-4 text-foreground/60" />
-                          </div>
+                        <div className="step-connector" aria-hidden="true">
+                          <ArrowDown className="h-4 w-4 text-foreground/60" />
                         </div>
                       ) : null}
                     </div>
