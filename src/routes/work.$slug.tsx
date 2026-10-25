@@ -501,7 +501,7 @@ function CaseStudyPage() {
           to="/"
           hash="case-studies"
           aria-label="Back to portfolio"
-          className="back-to-portfolio absolute left-6 md:left-10 top-[30px] inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+          className="back-to-portfolio mb-[30px] inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors sm:absolute sm:left-6 sm:top-0 sm:mb-0 md:left-10"
         >
           <ArrowLeft size={16} />
         </Link>
