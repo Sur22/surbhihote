@@ -4,6 +4,7 @@ import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import { AiResearchPanel } from "@/components/AiResearchPanel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -1609,53 +1610,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ))}
                 </div>
 
-              <div className="mt-[100px]">
-                <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Research</h3>
-                <div className="overflow-hidden rounded-xl border border-azure">
-                  {[
-                    {
-                      icon: FileText,
-                      title: "Input",
-                      subtitle: "128 affiliate survey responses",
-                      body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
-                    },
-                    {
-                      icon: BrainCircuit,
-                      title: "AI-assisted synthesis",
-                      subtitle: "\n",
-                      body: "Cluster responses into candidate themes and identify patterns for further investigation.",
-                    },
-                    {
-                      icon: CheckCheck,
-                      title: "Designer validation",
-                      subtitle: "",
-                      body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
-                    },
-                  ].map((step, idx) => (
-                    <div key={step.title} className="relative">
-                      <div className="flex items-start gap-4 px-6 py-6">
-                        <div className="w-9 shrink-0 flex justify-center pt-0.5">
-                          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-azure/85">
-                            <step.icon className="h-5 w-5 text-azure-foreground" aria-hidden="true" />
-                          </span>
-                        </div>
-                        <div className="min-w-0">
-                          <h4 className="text-base font-semibold leading-snug">{step.title}</h4>
-                          {step.subtitle ? (
-                            <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
-                          ) : null}
-                          <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
-                        </div>
-                      </div>
-                      {idx < 2 ? (
-                        <div className="step-connector" aria-hidden="true">
-                          <ArrowDown className="h-4 w-4 text-foreground/60" />
-                        </div>
-                      ) : null}
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <AiResearchPanel />
 
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
@@ -2157,6 +2112,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <AiResearchPanel />
               <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
