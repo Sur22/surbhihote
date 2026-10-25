@@ -490,28 +490,24 @@ function CaseStudyPage() {
         <ScrollProgress />
         <CaseStudySideNav slug={c.slug} />
 
-        {/* Back to portfolio — an arrow alone, always visible (no hover to wait
-            on), with the title block and then the cover picture following it.
-            The band stays only as tall as the arrow itself, so it never reads
-            as dead space above the picture. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-4">
-        <Link
-          to="/"
-          hash="case-studies"
-          aria-label="Back to portfolio"
-          className="back-to-portfolio inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft size={16} />
-        </Link>
-      </section>
 
-      {/* Title block */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
-        <div className="flex items-baseline justify-center mb-8">
-          <span className="eyebrow">{c.tags.join(" · ")}</span>
+      {/* Title block — the back arrow leads the tagline row: arrow flush left,
+          keyword tags flush right, and the title and subtitle sit flush right
+          beneath it. */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10 pt-2">
+        <div className="flex items-center justify-between gap-6 mb-8">
+          <Link
+            to="/"
+            hash="case-studies"
+            aria-label="Back to portfolio"
+            className="back-to-portfolio inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft size={16} />
+          </Link>
+          <span className="eyebrow text-right">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
-        <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-right">{c.title}</h1>
+        <p className="h3 max-w-4xl ml-auto text-right text-foreground/85">
           {c.subtitle}
         </p>
       </section>
