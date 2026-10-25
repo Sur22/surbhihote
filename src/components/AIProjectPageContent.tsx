@@ -53,7 +53,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
   return (
     <SiteLayout>
       <ScrollProgress />
-      <article className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 md:pt-24 pb-16">
+      <article className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-16">
         {/* Header — the keyword tagline and the title are centred while the back
             arrow is pinned to the left corner of the content column, the same
             treatment the design case studies wear above their covers. On phones
