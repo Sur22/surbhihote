@@ -37,6 +37,23 @@ function getSections(slug?: string): Section[] {
     }
   }
 
+  if (slug && slugsWithQualitativeResearch.has(slug)) {
+    const testingIdx = sections.findIndex((s) => s.id === "testing");
+    if (testingIdx !== -1) {
+      sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });
+      sections.splice(testingIdx + 1, 0, {
+        id: "qualitative-research",
+        label: "Qualitative\nResearch",
+      });
+    }
+  }
+
+  if (slug && slugsWithQualitativeResearch.has(slug)) {
+    sections = sections.map((s) =>
+      s.id === "research" ? { ...s, label: "Quantitative\nResearch" } : s,
+    );
+  }
+
   if (slug && affiliateSlugs.has(slug)) {
     sections = sections.map((s) => {
       if (s.id === "impact") return { ...s, label: "REFLECTION" };
@@ -142,7 +159,9 @@ export function CaseStudySideNav({
                     .getElementById(targetId)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`whitespace-nowrap text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                className={`text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                  s.label.includes("\n") ? "whitespace-pre-line" : "whitespace-nowrap"
+                } ${
                   active
                     ? "text-accent"
                     : "text-muted-foreground hover:text-foreground"
