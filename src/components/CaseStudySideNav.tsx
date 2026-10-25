@@ -11,6 +11,7 @@ const baseSections = [
 
 const slugsWithoutStrategy = new Set(["fjord", "affiliate-platform-redesign", "atlas", "atlas2"]);
 const slugsWithWorkshop = new Set(["affiliate-platform-redesign"]);
+const slugsWithQualitativeResearch = new Set(["affiliate-platform-redesign"]);
 const affiliateSlugs = new Set(["fjord", "affiliate-platform-redesign"]);
 const slugsWithTopImpact = new Set(["fjord", "affiliate-platform-redesign", "solace", "atlas", "atlas2"]);
 
@@ -34,6 +35,23 @@ function getSections(slug?: string): Section[] {
     if (testingIdx !== -1) {
       sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });
     }
+  }
+
+  if (slug && slugsWithQualitativeResearch.has(slug)) {
+    const testingIdx = sections.findIndex((s) => s.id === "testing");
+    if (testingIdx !== -1) {
+      sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });
+      sections.splice(testingIdx + 1, 0, {
+        id: "qualitative-research",
+        label: "Qualitative\nResearch",
+      });
+    }
+  }
+
+  if (slug && slugsWithQualitativeResearch.has(slug)) {
+    sections = sections.map((s) =>
+      s.id === "research" ? { ...s, label: "Quantitative\nResearch" } : s,
+    );
   }
 
   if (slug && affiliateSlugs.has(slug)) {
@@ -126,10 +144,10 @@ export function CaseStudySideNav({
           const targetId = s.anchor ?? s.id;
           const active = activeId === s.id;
           return (
-            <li key={s.id} className="flex items-center gap-3">
+            <li key={s.id} className={`flex gap-3 ${s.label.includes("\n") ? "items-start" : "items-center"}`}>
               <span
                 aria-hidden
-                className={`h-2 w-2 rounded-full transition-colors ${
+                className={`h-2 w-2 rounded-full transition-colors ${s.label.includes("\n") ? "mt-[6px]" : ""} ${
                   active ? "bg-accent" : "bg-transparent"
                 }`}
               />
@@ -141,7 +159,9 @@ export function CaseStudySideNav({
                     .getElementById(targetId)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`whitespace-nowrap text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                className={`text-xs tracking-[0.18em] uppercase font-semibold transition-colors ${
+                  s.label.includes("\n") ? "whitespace-pre-line" : "whitespace-nowrap"
+                } ${
                   active
                     ? "text-accent"
                     : "text-muted-foreground hover:text-foreground"

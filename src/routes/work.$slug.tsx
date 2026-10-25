@@ -2125,7 +2125,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
 
       {(c.slug === "affiliate-platform-redesign") && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+        <section id="qualitative-research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
                 I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
