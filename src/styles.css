@@ -576,7 +576,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
    neither dark nor light ink can clear, so there it fades back and the card
    stays close to the page. */
 .dark .study-card-glass__backdrop {
-  opacity: 0.11;
+  opacity: 0.45;
 }
 
 .dark .study-card-glass__veil {
