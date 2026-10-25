@@ -251,7 +251,7 @@ function AboutPage() {
           Whether you have a role in mind, a collaboration idea, or just want to talk design — I'd love to hear from you.
         </p>
         <div className="rule mb-12" />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 contact-discs">
           <a href="tel:+17134807041" className="group border border-border rounded-sm p-6 md:p-8 hover:border-foreground transition-colors">
             <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-8">
               <Phone size={18} className="text-muted-foreground" />

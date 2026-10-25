@@ -180,8 +180,9 @@
    neutral grey instead of the theme's warm cream secondary surface. Held to
    the light theme — on dark paper those panels keep their own near-black
    fill, which the cream never applied to in the first place. The AI Projects
-   cards borrow the same grey for the same reason. */
-html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary) {
+   cards and the About page's Get in Touch icon discs borrow the same grey for
+   the same reason. */
+html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, .contact-discs .bg-secondary) {
   background-color: #EDEDED;
 }
 
