@@ -725,6 +725,35 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border: 0;
 }
 
+/* The Opportunity row's peach band curves at 8px, the same corner as the
+   table's frame. A table row's own corners can't be rounded, so the journey
+   tables lay their cells out separately (no spacing, and every border is
+   already zeroed above) and the peach paints on the cells instead of the row:
+   the row's first and last cells carry the curve on their outer corners, while
+   the row itself stays clear — even under the cursor — so no square corner
+   peeks out behind them. The amber drop still lives on the row. */
+.journey-table table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.journey-table tr.study-row-glass,
+.journey-table tr.study-row-glass:hover {
+  background-color: transparent;
+}
+
+.journey-table .study-row-glass :is(th, td) {
+  background-color: var(--flow-band);
+}
+
+.journey-table .study-row-glass :is(th, td):first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.journey-table .study-row-glass :is(th, td):last-child {
+  border-radius: 0 8px 8px 0;
+}
+
 /* The sampled peach, held identical in both themes. The Notifications flow band
    wears it, and now the Notifications and Tech Pack cards and banners match it,
    so those two pages read as one surface. The colour never flips with the theme,
