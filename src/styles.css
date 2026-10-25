@@ -739,6 +739,13 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border-radius: 8px 0 0 8px;
 }
 
+/* The shared Table wraps itself in a scroll box, and a scroll box clips whatever
+   falls outside it — so the band's drop needs ground of its own to land on, the
+   same breathing room a card has where it sits on the page. */
+.journey-table > div {
+  padding-bottom: 8px;
+}
+
 .journey-table tr.study-peach :is(th, td):last-child {
   border-radius: 0 8px 8px 0;
 }
