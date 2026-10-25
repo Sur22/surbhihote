@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ArrowRight } from "lucide-react";
 
 const stages = [
@@ -11,32 +12,29 @@ const stages = [
   "Retest",
 ];
 
-/* Affiliate Testing: the AI-for-Testing flow as small cards joined by arrows.
-   Layout and the arrow rules live in .flow-diagram in src/styles.css. */
+/* Affiliate Testing: the AI-for-Testing flow as one line of small, unfilled
+   cards joined by arrows. The cards share the width on desktop; on phones the
+   line keeps its size and slides sideways instead of wrapping. */
 export function AiTestingFlowDiagram() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 -mx-6 overflow-x-auto px-6 pb-2 md:-mx-10 md:px-10">
       <ul
         role="list"
         aria-label="Testing flow from custom events to retest"
-        className="flow-diagram list-none rounded-xl border border-border bg-card px-6 py-8"
+        className="flex list-none flex-nowrap items-center gap-x-1.5"
       >
         {stages.map((stage, idx) => (
-          <li
-            key={stage}
-            className="relative flex min-h-[84px] items-center justify-center rounded-lg border border-border bg-background px-4 py-3 text-center text-sm font-medium leading-snug text-foreground"
-          >
-            <span
-              aria-hidden="true"
-              className="absolute left-3 top-2 text-[11px] font-semibold tabular-nums text-muted-foreground"
-            >
-              {idx + 1}
-            </span>
-            {stage}
-            <span className="flow-arrow" aria-hidden="true">
-              <ArrowRight className="h-4 w-4 text-muted-foreground" />
-            </span>
-          </li>
+          <Fragment key={stage}>
+            <li className="flex min-h-[76px] min-w-[92px] basis-0 flex-1 items-center justify-center rounded-md border border-border px-2 py-2 text-center text-[11px] font-medium leading-tight text-foreground">
+              {stage}
+            </li>
+            {idx < stages.length - 1 ? (
+              <ArrowRight
+                className="h-3.5 w-3.5 shrink-0 text-muted-foreground"
+                aria-hidden="true"
+              />
+            ) : null}
+          </Fragment>
         ))}
       </ul>
     </div>
