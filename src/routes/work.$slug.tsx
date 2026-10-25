@@ -844,7 +844,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {c.slug === "atlas" && (
           <div className="mt-16">
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
-            <div className="overflow-hidden rounded-sm border border-foreground/20">
+            <div className="overflow-hidden rounded-sm">
               <Table className="min-w-[820px]">
                 <TableHeader>
                   <TableRow className="border-b border-foreground/20 hover:bg-transparent">
@@ -1128,7 +1128,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 {"From scattered product information to a production-ready Tech Pack"}
               </p>
             </div>
-            <div className="overflow-hidden rounded-sm border border-foreground/20">
+            <div className="overflow-hidden rounded-sm">
               <Table className="min-w-[820px]">
                 <TableHeader>
                   <TableRow className="border-b border-foreground/20 hover:bg-transparent">
