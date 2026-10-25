@@ -1446,7 +1446,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {(c.slug === "affiliate-platform-redesign") && (
           <div className="contents">
-            <div className="mt-16">
+            <div className="mt-[50px]">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
