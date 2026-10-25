@@ -467,8 +467,10 @@
    own cells instead of on one panel stretched across it: every layer that has to
    read as a single surface — the tint, the warm wash, the sheen — is flat or runs
    straight down the cell, so two neighbouring cells line up where they meet
-   instead of showing a seam, and the drop is drawn top and bottom only for the
-   same reason. The blur is the Solution carousel's, over the row's own fill. */
+   instead of showing a seam. The drop is deliberately not here: a per-cell drop
+   spills sideways and those spills show through the next cell's translucent
+   fill as a vertical seam, so the row carries it as one box instead. The blur is
+   the Solution carousel's, over the row's own fill. */
 .study-cell-glass {
   background-color: rgb(255 255 255 / 0.14);
   background-image:
@@ -486,11 +488,18 @@
   backdrop-filter: blur(24px) saturate(150%);
   box-shadow:
     inset 0 1px 1px rgb(255 255 255 / 0.6),
-    inset 0 -1px 1px rgb(255 255 255 / 0.22),
+    inset 0 -1px 1px rgb(255 255 255 / 0.22);
+}
+
+/* The row's drop, drawn once for the whole row so no cell boundary can break it.
+   The row sits flush with the bottom of the table's frame, so the warm edge
+   below is carried by the cells' own inset base and this drop does the top. */
+.study-row-glass {
+  box-shadow:
+    0 2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
+    0 -2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
     0 1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
-    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
-    0 1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent),
-    0 -1px 2px -1px color-mix(in srgb, var(--amber) 40%, transparent);
+    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent);
 }
 
 /* On dark paper the full-strength tint would lift the row to a mid grey, so
@@ -510,6 +519,7 @@
       color-mix(in srgb, var(--amber) 5%, transparent) 100%
     );
 }
+
 
 
 
