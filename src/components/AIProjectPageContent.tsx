@@ -76,16 +76,6 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </h1>
         </section>
 
-        {project.slug === "resources" && (
-          <p className="mt-6 text-base text-muted-foreground">
-            By{" "}
-            <Link to="/about" className="text-foreground underline-offset-4 hover:underline">
-              Surbhi Hote
-            </Link>
-            {"\u00a0"}- Product Designer{"\u00a0"}
-          </p>
-        )}
-
         <figure
           className={
             project.slug === "creator-hub" || project.slug === "voyager"
