@@ -723,3 +723,56 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   transform: translateY(-50%);
 }
 
+/* Affiliate Testing flow: small cards joined by short arrows. The grid fixes how
+   many cards sit in a row (one on phones, two on tablets, four on desktop), and
+   the card that closes a row loses its arrow so none ever points at empty space.
+   The arrow itself floats in the gap — to the right of its card, or below it
+   when the cards are stacked — and turns to point down on phones. */
+.flow-diagram {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.flow-arrow {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: calc(100% + 7px); /* centred in the 30px row gap */
+  transform: translateX(-50%);
+}
+.flow-arrow svg {
+  transform: rotate(90deg); /* pointing down while the cards are stacked */
+}
+.flow-diagram > li:last-child .flow-arrow {
+  display: none;
+}
+@media (min-width: 640px) {
+  .flow-diagram {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flow-arrow {
+    left: calc(100% + 7px); /* centred in the 30px column gap */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .flow-arrow svg {
+    transform: none;
+  }
+  .flow-diagram > li:nth-child(2n) .flow-arrow {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .flow-diagram {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .flow-diagram > li:nth-child(2n) .flow-arrow {
+    display: flex;
+  }
+  .flow-diagram > li:nth-child(4n) .flow-arrow {
+    display: none;
+  }
+}
+
+
