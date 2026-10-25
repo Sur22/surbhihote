@@ -317,9 +317,9 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
      · Notifications: 77.2%, its centre 45.5% across and 59% down, then nudged a
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
-     · Tech Pack: 107.1%, pinned by its top-right corner to the picture's
-       top-right corner then lifted a fixed 30px, the way it sits in the card's
-       tinted band.
+     · Tech Pack: 107.1%, pinned by its top-right corner to a point 150px left of
+       the picture's top-right corner then lifted a fixed 30px, the way it sits
+       in the card's tinted band.
    Percentages of that box, so the placement holds at every width. */
 const cardDiscSlugs = new Set<CaseStudy["slug"]>([
   "solace",
