@@ -1173,7 +1173,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "bg-card hover:bg-card"
+                            ? "bg-card hover:bg-card study-row-glass"
                             : "border-b border-foreground/10 hover:bg-foreground/5"
                         }
                       >
