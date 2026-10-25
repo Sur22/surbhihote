@@ -505,7 +505,7 @@ function CaseStudyPage() {
         >
           <ArrowLeft size={16} />
         </Link>
-        <div className="mt-[30px] flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-8 sm:mt-[30px]">
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
