@@ -465,7 +465,7 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
+    <div className={`cover-picture relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
       <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
     </div>
   );
@@ -473,7 +473,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={`[&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
+        className={`study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
@@ -496,7 +496,7 @@ function CaseStudyPage() {
         <Link
           to="/"
           hash="case-studies"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          className="back-to-portfolio inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft size={16} />
           Back To Protfolio
