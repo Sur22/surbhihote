@@ -85,7 +85,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
               : project.slug === "vibe-coded-portfolio"
                 ? "mt-[18px] overflow-hidden rounded-xl"
                 : project.slug === "resources"
-                  ? "mt-[18px] mx-auto w-[55%] overflow-hidden rounded-xl border border-border bg-muted/30"
+                  ? "mt-[18px] mx-auto w-[45.1%] overflow-hidden rounded-xl border border-border bg-muted/30"
                   : "mt-[18px] overflow-hidden rounded-xl border border-border bg-muted/30"
           }
         >
