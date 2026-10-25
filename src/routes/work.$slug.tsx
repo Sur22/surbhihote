@@ -2339,20 +2339,8 @@ Users needed an easy way to control and manage the notifications they want and s
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
-            {c.slug !== "fjord" && (
+            {c.slug !== "fjord" && c.slug !== "atlas" && c.slug !== "atlas2" && (
               <div className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
-                {(c.slug === "atlas" || c.slug === "atlas2") ? (
-                  <>
-                    <span>1)  4 out of the 5 participants confused edit icon for company list cards.
-{"\n"}2) 3 out of the 5 participants were confused with the “Expand your search” icon while searching the products.
-{"\n"}3) 3 out of the 5 participants were confused by the naming of the notification categories.
-{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had. 
-{"\n"}5) All participants felt the design was clear and intuitive.</span>
-                    <div className="mt-1">
-                      <span>{"\n"}</span>
-                    </div>
-                  </>
-                ) : (
                   <>
                     <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
 {"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to navigate to the  another part of the application. </span>
@@ -2361,18 +2349,19 @@ Users needed an easy way to control and manage the notifications they want and s
 {"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
                     </div>
                   </>
-                )}
               </div>
             )}
+            {c.slug !== "atlas" && c.slug !== "atlas2" && (
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>{c.slug === "fjord" ? "Based on the test result data, not all users had knowledge of AND/OR logic, so I added a help section to help them understand how it works, so they can create segments with a clear understanding and more precisely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
+            )}
           </ul>
 
           {/* Notifications Management: usability findings as a Finding / Impact /
               Design response table, wearing the shared table treatment. */}
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
+          {(c.slug === "atlas" || c.slug === "atlas2") && (<>
             <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
               <Table className="min-w-[820px]">
                 <TableHeader>
@@ -2425,7 +2414,14 @@ Users needed an easy way to control and manage the notifications they want and s
                 </TableBody>
               </Table>
             </div>
-          )}
+
+            <ul className="space-y-6 text-lg leading-relaxed text-foreground/85 mt-10">
+              <li className="flex gap-4">
+                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+                <span>Based on the test result data some changes were made to fix issues faced by the users.</span>
+              </li>
+            </ul>
+          </>)}
 
 
 
