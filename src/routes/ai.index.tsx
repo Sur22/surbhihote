@@ -78,7 +78,7 @@ function AIPage() {
                       project.title === "Creator Hub"
                         ? "object-contain w-[85%] h-[85%] m-auto"
                         : project.slug === "resources"
-                          ? "object-contain w-[70%] h-[70%] m-auto"
+                          ? "object-contain w-[70%] h-[70%] m-auto rounded-[8px]"
                           : project.title === "Voyager" || project.title === "Vibe Coded Portfolio"
                             ? "object-contain w-full h-full p-4"
                             : "object-cover w-full h-full"
