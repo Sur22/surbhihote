@@ -2334,6 +2334,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <span>The feedback we got was positive, and I&nbsp;watched some sessions using Microsoft Clarity to check if it was being used as we expected. The results seemed satisfactory.</span>
             </li>
           </ul>
+          <AiResearchPanel />
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
             Before the release, we made sure to have the help resources ready such as short how to videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
