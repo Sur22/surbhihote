@@ -971,8 +971,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               </Table>
             </div>
 
-            {/* Design opportunity — same pill treatment as the Tech Pack Tool
-                before/after flows: bold label over a persona-card-surface pill. */}
+            {/* Design opportunity — the same flat peach surface the Notifications
+                flow band wears, with the site's amber drop. */}
             <div className="mt-8">
               <h4 className="h4">Design opportunity</h4>
               <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
@@ -1921,7 +1921,7 @@ Users needed an easy way to control and manage the notifications they want and s
           <>
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
             {/* Three levels as persona-style cards, matching the Design Principle
-                cards: card fill, white/10 blurred veil and thin amber outline. */}
+                cards: the flat peach surface and the site's amber drop. */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
               {[
                 {
