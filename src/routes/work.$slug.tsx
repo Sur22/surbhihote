@@ -844,7 +844,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {c.slug === "atlas" && (
           <div className="mt-16">
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
-            <div className="journey-table overflow-hidden">
+            <div className="journey-table">
               <Table className="min-w-[820px]">
                 <TableHeader>
                   <TableRow className="hover:bg-transparent">
@@ -926,13 +926,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach study-row-glass hover:bg-flow-band"
+                            ? "study-peach"
                             : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && "shadow-amber-band",
                           )}
                         >
                           {row.label}
@@ -942,7 +943,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold",
+                              row.strong && "font-semibold shadow-amber-band",
                             )}
 
                           >
@@ -1114,7 +1115,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 {"From scattered product information to a production-ready Tech Pack"}
               </p>
             </div>
-            <div className="journey-table overflow-hidden">
+            <div className="journey-table">
               <Table className="min-w-[820px]">
                 <TableHeader>
                   <TableRow className="hover:bg-transparent">
@@ -1191,13 +1192,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach study-row-glass hover:bg-flow-band"
+                            ? "study-peach"
                             : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
+                            row.strong && "shadow-amber-band",
                           )}
                         >
                           {row.label}
@@ -1207,7 +1209,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold",
+                              row.strong && "font-semibold shadow-amber-band",
                             )}
 
                           >

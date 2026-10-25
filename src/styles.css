@@ -512,19 +512,9 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 }
 
 /* The journey table's highlighted Opportunity row wears the same flat peach as
-   the cards and banners — see .study-peach, which paints the row and pins its
-   ink dark. Only the drop lives here, drawn once for the whole row so no cell
-   boundary can break it: a per-cell drop spills sideways and those spills show
-   through the next cell's translucent fill as a vertical seam. The row sits
-   flush with the bottom of the table's frame, which clips the drop there, so
-   the row's own lower rim is what carries that edge. */
-.study-row-glass {
-  box-shadow:
-    0 2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
-    0 -2px 6px 0 color-mix(in srgb, var(--amber) 30%, transparent),
-    0 1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent),
-    0 -1px 3px 0 color-mix(in srgb, var(--amber) 55%, transparent);
-}
+   the cards and banners — see .study-peach — and the very same amber drop they
+   wear: .shadow-amber-band is applied to the row itself, so the two can never
+   drift apart. Its fill and corner curve live with the .journey-table rules. */
 
 
 
@@ -731,27 +721,51 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
    already zeroed above) and the peach paints on the cells instead of the row:
    the row's first and last cells carry the curve on their outer corners, while
    the row itself stays clear — even under the cursor — so no square corner
-   peeks out behind them. The amber drop still lives on the row. */
+   peeks out behind them. The amber drop is the cards' own .shadow-amber-band,
+   worn by the row's cells, since a table row can't paint one. */
 .journey-table table {
   border-collapse: separate;
   border-spacing: 0;
 }
 
-.journey-table tr.study-row-glass,
-.journey-table tr.study-row-glass:hover {
+.journey-table tr.study-peach {
   background-color: transparent;
 }
 
-.journey-table .study-row-glass :is(th, td) {
+.journey-table tr.study-peach :is(th, td) {
   background-color: var(--flow-band);
 }
 
-.journey-table .study-row-glass :is(th, td):first-child {
+.journey-table tr.study-peach :is(th, td):first-child {
   border-radius: 8px 0 0 8px;
 }
 
-.journey-table .study-row-glass :is(th, td):last-child {
+/* The shared Table wraps itself in a scroll box, and a scroll box clips whatever
+   falls outside it — so the band's drop needs ground of its own to land on, the
+   same breathing room a card has where it sits on the page. */
+.journey-table > div {
+  padding-bottom: 8px;
+}
+
+.journey-table tr.study-peach :is(th, td):last-child {
   border-radius: 0 8px 8px 0;
+}
+
+/* The band's drop is the cards' own .shadow-amber-band, worn by the band's cells
+   because a table row can't paint one in this browser. Each cell clips that drop
+   to its own width so it cannot smear sideways onto its neighbour — a smear
+   there would read as a vertical seam inside the band — while the row's first
+   and last cells let the drop spill past their outer edge, where it belongs. */
+.journey-table tr.study-peach :is(th, td) {
+  clip-path: inset(-14px 0);
+}
+
+.journey-table tr.study-peach :is(th, td):first-child {
+  clip-path: inset(-14px);
+}
+
+.journey-table tr.study-peach :is(th, td):last-child {
+  clip-path: inset(-14px -14px -14px 0);
 }
 
 /* The sampled peach, held identical in both themes. The Notifications flow band
