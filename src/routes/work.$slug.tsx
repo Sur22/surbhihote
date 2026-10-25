@@ -1961,6 +1961,39 @@ Users needed an easy way to control and manage the notifications they want and s
                 </div>
               </div>
             </div>
+
+            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
+            {/* Three levels as persona-style cards, matching the Design Principle
+                cards: card fill, white/10 blurred veil and thin amber outline. */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              {[
+                {
+                  title: "Company",
+                  body: "Control notifications across an organization.",
+                },
+                {
+                  title: "Product",
+                  body: "Subscribe to notifications for specific products.",
+                },
+                {
+                  title: "Lifecycle",
+                  body: "Control notifications by phase/stage.",
+                },
+              ].map((level) => (
+                <div
+                  key={level.title}
+                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="relative z-10">
+                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      {level.title}
+                    </h4>
+                    <p className="text-sm text-card-foreground">{level.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </>
         ) : (
           <>
