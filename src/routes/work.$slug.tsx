@@ -570,6 +570,7 @@ function CaseStudyPage() {
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
             {c.slug !== "affiliate-platform-redesign" && (
+
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace" 
                   ? "The GRID is end-to-end supply chain visibility from product conception to distribution with real-time updates and analytics on sourcing, product development, production, and shipping. For companies running their supply chain on Excel sheets and point solutions, the GRID functions as the ERP and as an intuitive supply chain productivity layer. For companies that have legacy PIMs and ERPs, the GRID integrates to connect people, data, and workflows. In either role, the GRID delivers quick time to value by eliminating errors and digitizing manual processes thereby reducing OpEx and COGS and improving margins." 
@@ -1909,36 +1910,8 @@ Users needed an easy way to control and manage the notifications they want and s
       {/* Brainstorming */}
       <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "affiliate-platform-redesign" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "affiliate-platform-redesign") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-          {(c.slug === "atlas" || c.slug === "atlas2") 
-            ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
-
-
-            : (c.slug === "affiliate-platform-redesign") 
-              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
-              : (c.slug === "fjord")
-                ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
-                : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
-          }
-        </p>
-        {(c.slug === "affiliate-platform-redesign") ? (
-          <button
-            type="button"
-            onClick={() => setZoomImg(fjord2InitialDesign.url)}
-            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
-          >
-            <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-          </button>
-        ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
+        {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
-            <button
-              type="button"
-              onClick={() => setZoomImg(atlasTaskFlow.url)}
-              className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
-            >
-              <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
-
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
             {/* Three levels as persona-style cards, matching the Design Principle
                 cards: card fill, white/10 blurred veil and thin amber outline. */}
@@ -1995,6 +1968,38 @@ Users needed an easy way to control and manage the notifications they want and s
                 </div>
               </div>
             </div>
+          </>
+        )}
+
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
+          {(c.slug === "atlas" || c.slug === "atlas2") 
+            ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
+
+
+            : (c.slug === "affiliate-platform-redesign") 
+              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users — what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
+              : (c.slug === "fjord")
+                ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
+                : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
+          }
+        </p>
+        {(c.slug === "affiliate-platform-redesign") ? (
+          <button
+            type="button"
+            onClick={() => setZoomImg(fjord2InitialDesign.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
+          >
+            <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+          </button>
+        ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
+          <>
+            <button
+              type="button"
+              onClick={() => setZoomImg(atlasTaskFlow.url)}
+              className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
+            >
+              <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+            </button>
           </>
         ) : (
           <>
