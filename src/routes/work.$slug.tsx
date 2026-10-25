@@ -1751,7 +1751,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Design Principle</h3>
             {/* Three principles as persona-style cards: card fill, white/10 blurred
                 veil and thin amber outline on light paper (theme border on dark). */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
               {[
                 {
                   title: "1  Give users control",
