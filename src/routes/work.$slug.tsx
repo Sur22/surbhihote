@@ -839,7 +839,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
 
         {/* User Journey — Notifications Management only, mirroring the Tech Pack
-            Tool journey table: same shared-Table structure, small pain dots,
+            Tool journey table: same shared-Table structure,
             persona-card highlight on the Opportunity row. */}
         {c.slug === "atlas" && (
           <div className="mt-16">
@@ -881,7 +881,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                       {
                         label: "Pain",
-                        dots: true,
                         cells: [
                           "Notification overload",
                           "Important alerts buried",
@@ -905,7 +904,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                           "Personalize",
                         ],
                       },
-                    ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
+                    ] as { label: string; cells: string[]; strong?: boolean }[]
                   ).map((row) => {
                     // The highlighted row wears the same glass as the cards and
                     // banners: the frost sits on the row's own cells, since a <tr>
@@ -936,17 +935,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {row.dots ? (
-                              <>
-                                <span aria-hidden className="text-[0.5em]">
-                                  🔴
-                                </span>
-                                {"\u00a0"}
-                                {cell}
-                              </>
-                            ) : (
-                              cell
-                            )}
+                            {cell}
                           </TableCell>
                         ))}
                       </TableRow>
@@ -1141,7 +1130,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                       {
                         label: "Pain",
-                        dots: true,
                         cells: [
                           "Scattered data",
                           "Duplicate work",
@@ -1174,7 +1162,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                           "Version",
                         ],
                       },
-                    ] as { label: string; cells: string[]; dots?: boolean; strong?: boolean }[]
+                    ] as { label: string; cells: string[]; strong?: boolean }[]
                   ).map((row) => {
                     // The highlighted row wears the same glass as the cards and
                     // banners: the frost sits on the row's own cells, since a <tr>
@@ -1205,17 +1193,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             )}
 
                           >
-                            {row.dots ? (
-                              <>
-                                <span aria-hidden className="text-[0.5em]">
-                                  🔴
-                                </span>
-                                {"\u00a0"}
-                                {cell}
-                              </>
-                            ) : (
-                              cell
-                            )}
+                            {cell}
                           </TableCell>
                         ))}
                       </TableRow>
