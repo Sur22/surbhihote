@@ -337,8 +337,8 @@ const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       : slug === "solace"
         ? {
             left: "calc(100% - min(150px, 28%))",
-            top: "-65px",
-            transform: "translate(-100%, 0) scale(0.96408)",
+             top: "5px",
+            transform: "translate(-100%, 0) scale(1.0412064)",
             transformOrigin: "top right",
           }
         : { left: "50%", top: "50%", transform: "translate(-50%, -50%)" };
@@ -361,7 +361,7 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
 
 const coverPad = (slug: CaseStudy["slug"]) =>
   slug === "solace"
-    ? "pt-[calc(9%_+_65px)] pb-[calc(16%_+_52px)]"
+    ? "pt-[calc(9%_+_5px)] pb-[calc(16%_+_52px)]"
     : slug === "atlas"
       ? "pt-[9%] pb-[calc(9%_+_52px)]"
       : "pt-[9%] pb-[calc(5%_+_52px)]";
