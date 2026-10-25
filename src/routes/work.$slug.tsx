@@ -361,7 +361,7 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
 
 const coverPad = (slug: CaseStudy["slug"]) =>
   slug === "solace"
-    ? "pt-[calc(9%_+_65px)] pb-[calc(16%_+_52px)]"
+    ? "pt-[calc(9%_+_5px)] pb-[calc(16%_+_52px)]"
     : slug === "atlas"
       ? "pt-[9%] pb-[calc(9%_+_52px)]"
       : "pt-[9%] pb-[calc(5%_+_52px)]";
