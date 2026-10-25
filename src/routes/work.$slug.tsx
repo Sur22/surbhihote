@@ -1909,12 +1909,6 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
 
-      {/* Affiliate drops this divider: AI for Ideation follows the Design
-          section directly, with no rule between them. */}
-      {c.slug !== "solace" && c.slug !== "fjord" && c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
       {/* AI for Ideation sits directly above Initial Design, Affiliate only. */}
       {c.slug === "affiliate-platform-redesign" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24">
