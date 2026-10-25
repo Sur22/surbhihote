@@ -277,6 +277,19 @@
   pointer-events: none;
 }
 
+/* The Tech Pack card's circle carries an inner shadow so its rim reads as
+   pressed into the card instead of floating on it. It is drawn on the veil
+   layer, which paints above the frosted fill, and tinted the same teal as the
+   drop outside so the two halves of the circle read as one treatment. */
+.study-glass-disc--inner::after {
+  box-shadow:
+    inset 0 1px 2px rgb(255 255 255 / 0.8),
+    inset 0 -16px 32px rgb(0 0 0 / 0.05),
+    inset 0 14px 26px color-mix(in srgb, var(--clay) 34%, transparent),
+    inset 0 -12px 22px color-mix(in srgb, var(--clay) 22%, transparent),
+    0 4px 4px color-mix(in srgb, var(--clay) 28%, transparent);
+}
+
 /* Frosted micro-texture — disabled so the circles match the gallery surfaces */
 .circle-liquid__frost {
   display: none;
