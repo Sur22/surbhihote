@@ -403,67 +403,6 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "Rebuilding a 25-year-old, business-critical platform for 500+ affiliates; where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
               : "When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
           </p>
-
-        {(c.slug === "atlas" || c.slug === "atlas2") && (
-          <>
-            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
-            {/* Three levels as persona-style cards, matching the Design Principle
-                cards: card fill, white/10 blurred veil and thin amber outline. */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              {[
-                {
-                  title: "Company",
-                  body: "Control notifications across an organization.",
-                },
-                {
-                  title: "Product",
-                  body: "Subscribe to notifications for specific products.",
-                },
-                {
-                  title: "Lifecycle",
-                  body: "Control notifications by phase/stage.",
-                },
-              ].map((level) => (
-                <div
-                  key={level.title}
-                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                  <div className="relative z-10">
-                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
-                      {level.title}
-                    </h4>
-                    <p className="text-sm text-card-foreground">{level.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Same pill treatment as the Design opportunity flow. */}
-            <div className="mt-10">
-              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
-                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
-                  {[
-                    "Role",
-                    "Notification Template",
-                    "User Preferences",
-                    "Delivery Channel",
-                  ].map((step, i) => (
-                    <span key={step} className="flex items-center gap-x-3">
-                      {i > 0 && (
-                        <span aria-hidden className="text-muted-foreground">
-                          →
-                        </span>
-                      )}
-                      <span>{step}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </>
-        )}
         </>
       )}
       <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
@@ -1982,6 +1921,67 @@ Users needed an easy way to control and manage the notifications they want and s
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
           }
         </p>
+
+        {(c.slug === "atlas" || c.slug === "atlas2") && (
+          <>
+            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
+            {/* Three levels as persona-style cards, matching the Design Principle
+                cards: card fill, white/10 blurred veil and thin amber outline. */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              {[
+                {
+                  title: "Company",
+                  body: "Control notifications across an organization.",
+                },
+                {
+                  title: "Product",
+                  body: "Subscribe to notifications for specific products.",
+                },
+                {
+                  title: "Lifecycle",
+                  body: "Control notifications by phase/stage.",
+                },
+              ].map((level) => (
+                <div
+                  key={level.title}
+                  className="relative rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow p-6 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                  <div className="relative z-10">
+                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      {level.title}
+                    </h4>
+                    <p className="text-sm text-card-foreground">{level.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Same pill treatment as the Design opportunity flow. */}
+            <div className="mt-10">
+              <div className="relative max-w-full overflow-hidden rounded-xl border border-[#ffa348] dark:border-border bg-card text-card-foreground shadow px-6 py-5">
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md pointer-events-none" />
+                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
+                  {[
+                    "Role",
+                    "Notification Template",
+                    "User Preferences",
+                    "Delivery Channel",
+                  ].map((step, i) => (
+                    <span key={step} className="flex items-center gap-x-3">
+                      {i > 0 && (
+                        <span aria-hidden className="text-muted-foreground">
+                          →
+                        </span>
+                      )}
+                      <span>{step}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
         {(c.slug === "affiliate-platform-redesign") ? (
           <button
             type="button"
