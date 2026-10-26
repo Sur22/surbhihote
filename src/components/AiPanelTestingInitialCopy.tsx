@@ -1,4 +1,4 @@
-import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
+import { ArrowDown, BrainCircuit, CheckCheck, PenLine } from "lucide-react";
 
 /* Independent copy of the AI for Testing panel for its placement below the
    Affiliate Initial Design image. Nothing is shared with the Testing-section
@@ -12,7 +12,7 @@ const uxWritingValidationLead =
 
 const steps = [
   {
-    icon: BarChart3,
+    icon: PenLine,
     title: "Input",
     subtitle: "Context + tone + user need ",
     body: "For microcopy such as CTAs, error messages, tooltips, and placeholder text, I define the context, user task, intended tone, and communication goal in the prompt. I also provide relevant product and user context so the copy remains clear, user-centered, empathetic, and appropriate to the situation.",
