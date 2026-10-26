@@ -26,7 +26,7 @@ const steps = [
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
     lead: ideationValidationLead,
-    body: "I reviewed the generated concepts, identified patterns and ideas that were relevant to the problem, and selectively incorporated useful elements into my designs. I then refined and adapted those ideas based on the user needs, existing product patterns, and overall design direction.",
+    body: "AI-generated concepts were treated as design inputs, not solutions. I evaluated them against user needs, product constraints, and the existing design system before incorporating and refining relevant ideas into the final experience.",
   },
 ];
 
