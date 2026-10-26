@@ -9,7 +9,7 @@ const steps = [
   {
     icon: FileText,
     title: "Input",
-    subtitle: "128 affiliate survey responses",
+    subtitle: "128 affiliate survey responses +Survey Monkey data",
     body: "Open-ended feedback about speed, order revisions, broken functionality, and manual workarounds.",
   },
   {
