@@ -10,20 +10,20 @@ const steps = [
   {
     icon: BarChart3,
     title: "Input",
-    subtitle: "Context + Tone defined in the prompt ",
-    body: "For microcopy (CTA's, error messeges, tooltips, placholder text) you need to define clear parameters for instance describe a specific task for which the microcopy is being generated. Keep it user centered to show empathy and reassurance builds user trust for the system.",
+    subtitle: "Context + tone + user need ",
+    body: "For microcopy such as CTAs, error messages, tooltips, and placeholder text, I define the context, user task, intended tone, and communication goal in the prompt. I also provide relevant product and user context so the copy remains clear, user-centered, empathetic, and appropriate to the situation.",
   },
   {
     icon: BrainCircuit,
     title: "AI-generated microcopy",
     subtitle: "AI Tools - Chat GPT + Claude",
-    body: "AI was used to analyze the tone understand the context and generate the options. ",
+    body: "AI was used to generate and explore multiple microcopy options based on the defined context, tone, user task, and communication requirements. This helped me quickly explore different ways to communicate the same message while maintaining consistency in tone and intent. ",
   },
   {
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "Check the tone and if it user ceneterd, empathetic and able to build the trust for user to feel ",
+    body: "I evaluated the generated options for clarity, tone, empathy, accessibility, and alignment with the user's context. I refined or rewrote the copy to ensure it reduced uncertainty, communicated clearly, and helped build trust with the user. ",
   },
 ];
 
