@@ -2173,8 +2173,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 </Table>
               </div>
               <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-                Placeholder paragraph — write here how the Phase 1 and Phase 2 scope
-                was decided and what each phase was meant to prove.
+                Based on focus group data few changes were made in the priortization.
               </p>
         </section>
       )}
