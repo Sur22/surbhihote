@@ -48,7 +48,7 @@ export function AffiliateProblemsOpportunityCards() {
           role="listitem"
           className="flex flex-col rounded-md border border-azure px-3 py-2.5"
         >
-          <p className="flex min-h-[36px] items-center text-[13px] font-bold leading-snug text-foreground">
+          <p className="flex min-h-[36px] items-center text-[16px] font-bold leading-snug text-foreground">
             {pair.problem}
           </p>
           <div
