@@ -284,6 +284,32 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               ))}
             </div>
           ) : null}
+          {c.slug === "solace" || c.slug === "atlas" ? (
+            /* Two headline numbers under the description, wearing the same
+               treatment as the Affiliate card's row: serif value in the theme's
+               clay blue, label under it in the body sans. Scoped to these two
+               cards only, with their own copy. */
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4">
+              {(c.slug === "solace"
+                ? [
+                    ["–64%", "calculation errors"],
+                    ["–34%", "time on task"],
+                  ]
+                : [
+                    ["64% → 7%", "irrelevant notifications"],
+                    ["–84%", "missed alerts"],
+                  ]
+              ).map(([value, label]) => (
+                <div key={value}>
+                  <div className="study-stat whitespace-nowrap">{value}</div>
+                  <div className="mt-1 text-xs leading-snug text-foreground/85 sm:text-sm">
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
+
           <p className="mt-[33.6px] inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold pb-0.5">
             Read the case study
             <span className="transition-transform group-hover:translate-x-1">→</span>
