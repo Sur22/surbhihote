@@ -1,6 +1,6 @@
 import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
-import { AiResearchQualitativeFlowDiagramInitialCopy } from "@/components/AiResearchQualitativeFlowDiagramInitialCopy";
-import { AiTestingFlowDiagramInitialCopy } from "@/components/AiTestingFlowDiagramInitialCopy";
+import { AiResearchQualitativeFlowDiagram } from "@/components/AiResearchQualitativeFlowDiagram";
+import { AiTestingFlowDiagram } from "@/components/AiTestingFlowDiagram";
 
 /* Independent copy of the AI for Testing panel for its placement below the
    Affiliate Initial Design image, so edits here never affect the panel in the
@@ -55,8 +55,8 @@ export function AiPanelTestingInitialCopy() {
             ) : null}
           </div>
         ))}
-        <AiTestingFlowDiagramInitialCopy />
-        <AiResearchQualitativeFlowDiagramInitialCopy />
+        <AiTestingFlowDiagram />
+        <AiResearchQualitativeFlowDiagram />
       </div>
     </div>
   );
