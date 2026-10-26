@@ -19,7 +19,6 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "Task success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction. I then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
   },
 ];
@@ -43,9 +42,6 @@ export function AiPanelTesting() {
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
-                {step.lead ? (
-                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
-                ) : null}
               </div>
             </div>
             {idx < 2 ? (
