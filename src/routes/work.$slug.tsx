@@ -493,21 +493,21 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-       {/* Title block — the keyword tagline and the title are left aligned with
-          the content column, and the back arrow sits above them in the same
-          left corner. 30px of air sits above the tagline row. The block's
+      {/* Title block — the keyword tagline and the title are left aligned with
+          the content column, and the back arrow sits in the same row as the
+          tagline, at its left. 30px of air sits above the row. The block's
           bottom padding is kept tight so the title sits closer to the cover
           picture. */}
       <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
-        <Link
-          to="/"
-          hash="case-studies"
-          aria-label="Back to portfolio"
-          className="back-to-portfolio mb-[30px] inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors sm:absolute sm:left-6 sm:top-0 sm:mb-0 md:left-10"
-        >
-          <ArrowLeft size={16} />
-        </Link>
-        <div className="flex items-center mb-8 sm:mt-[30px] sm:pt-[30px]">
+        <div className="flex items-center gap-4 mt-[30px] mb-8">
+          <Link
+            to="/"
+            hash="case-studies"
+            aria-label="Back to portfolio"
+            className="inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft size={16} />
+          </Link>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
         <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
