@@ -16,7 +16,7 @@ export function AffiliateRealProblemCards() {
         role="listitem"
         className="flex-1 self-stretch rounded-md border border-azure px-3 py-2.5 text-[13px] leading-snug text-foreground"
       >
-        <span className="block font-semibold">The real question wasn&rsquo;t{"\n\n"}</span>
+        <span className="block font-semibold">The real question wasn&rsquo;t</span>
         <span className="block text-[16px] font-bold">&ldquo;How do we make the product better?&rdquo;</span>
       </div>
       <ArrowRight
@@ -31,7 +31,7 @@ export function AffiliateRealProblemCards() {
         role="listitem"
         className="flex-1 self-stretch rounded-md border border-azure px-3 py-2.5 text-[13px] leading-snug text-foreground"
       >
-        <span className="block font-semibold">It was:{"\n\n"}</span>
+        <span className="block font-semibold">It was:</span>
         <span className="block text-[16px] font-bold">
           &ldquo;How do we make the product better without breaking the behavior that keeps the
           business running?&rdquo;
