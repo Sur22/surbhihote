@@ -20,6 +20,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "I reviewed the generated concepts, identified patterns and ideas that were relevant to the problem, and selectively incorporated useful elements into my designs. I then refined and adapted those ideas based on the user needs, existing product patterns, and overall design direction.",
   },
 ];

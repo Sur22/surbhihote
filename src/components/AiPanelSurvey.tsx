@@ -17,6 +17,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
   },
 ];

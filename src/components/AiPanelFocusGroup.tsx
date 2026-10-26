@@ -17,6 +17,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "The AI-generated findings were reviewed against my personal focus group notes, stakeholder input, and supporting research evidence. I validated and refined the findings before prioritizing the key issues in collaboration with the Product Manager.",
   },
 ];

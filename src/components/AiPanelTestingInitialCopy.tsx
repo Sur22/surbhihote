@@ -23,6 +23,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "I evaluated the generated options for clarity, tone, empathy, accessibility, and alignment with the user's context. I refined or rewrote the copy to ensure it reduced uncertainty, communicated clearly, and helped build trust with the user. ",
   },
 ];
