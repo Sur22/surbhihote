@@ -8,7 +8,7 @@ const steps = [
     icon: Lightbulb,
     title: "Input",
     subtitle: "",
-    body: "Placeholder — send the wording for this step.",
+    body: "Sketches from the workshop, the screenshots of the existing software, my ideas.",
   },
   {
     icon: BrainCircuit,
@@ -27,7 +27,7 @@ const steps = [
 export function AiPanelIdeation() {
   return (
     <div>
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Ideation</h3>
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Ideation & UX Writing </h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
           <div key={step.title} className="relative">
