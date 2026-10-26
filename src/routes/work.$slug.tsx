@@ -8,6 +8,7 @@ import { AiPanelSurvey } from "@/components/AiPanelSurvey";
 import { AiPanelFocusGroup } from "@/components/AiPanelFocusGroup";
 import { AiPanelTesting } from "@/components/AiPanelTesting";
 import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
+import { AffiliateProblemsOpportunityCards } from "@/components/AffiliateProblemsOpportunityCards";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -1514,21 +1515,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                     <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
-                      {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild let us tackle six things at once:\n\n"}
-                      <strong>A codebase that couldn't take new functionality</strong>
-                      {" → a foundation built to extend, so the platform can grow instead of freeze again.\n"}
-                      <strong>Manual refreshing to catch order updates</strong>
-                      {" → the sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live, turning a constant manual chore into a system that tells users when something moves.\n"}
-                      <strong>Dated UI/UX</strong>
-                      {" → rebuild the experience around how affiliates actually work today, not the conventions of 2005.\n"}
-                      <strong>Slow and clunky performance</strong>
-                      {" → a modern stack fast enough that the tool gets out of the user's way.\n"}
-                      <strong>Broken functionalities</strong>
-                      {" → restore the capabilities affiliates had learned to work around and live without.\n"}
-                      <strong>Dead features nobody used</strong>
-                      {" → cut them, and reclaim the space and attention for what matters.\u00a0"}
+                      {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild let us tackle six things at once:"}
                     </blockquote>
                   </div>
+                  <AffiliateProblemsOpportunityCards />
                 </div>
               </div>
 
