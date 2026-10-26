@@ -795,3 +795,10 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --card-foreground: oklch(0.18 0.02 60);
   --muted-foreground: oklch(0.34 0.02 60);
 }
+
+/* The h4 look worn bold — for a line that needs the h4 size carrying real
+   weight (the homepage bio). Written as .h4.h4-bold so it beats the plain .h4
+   rule, and placed here so a utility class can't lose to it by layer order. */
+.h4.h4-bold {
+  font-weight: 700;
+}
