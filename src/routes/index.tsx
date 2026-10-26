@@ -269,7 +269,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                site's serif in the theme's clay blue, the label sits under it in
                the body sans. Scoped to this card alone so no other study picks
                it up. */
-            <div className="mt-8 grid grid-cols-3 gap-4">
+            <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
               {[
                 ["92%", "task success"],
                 ["2×", "faster load"],
@@ -277,7 +277,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               ].map(([value, label]) => (
                 <div key={value}>
                   <div className="study-stat">{value}</div>
-                  <div className="mt-1 text-sm leading-snug text-foreground/85">
+                  <div className="mt-1 text-xs leading-snug text-foreground/85 sm:text-sm">
                     {label}
                   </div>
                 </div>
