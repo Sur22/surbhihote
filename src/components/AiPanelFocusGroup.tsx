@@ -40,10 +40,10 @@ export function AiPanelFocusGroup() {
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
                 ) : null}
+                <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
                 {step.lead ? (
                   <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
                 ) : null}
-                <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
               </div>
             </div>
             {idx < 2 ? (
