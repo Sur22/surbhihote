@@ -450,7 +450,7 @@ function IndexPage() {
             </h1>
             <p
               ref={heroCopyRef}
-              className="h4 mt-4 font-bold text-foreground/80"
+              className="h4 h4-bold mt-4 text-foreground/80"
             >
               Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products. Engineer turned designer, I integrate AI across the design process while keeping human judgment at the center.
             </p>
