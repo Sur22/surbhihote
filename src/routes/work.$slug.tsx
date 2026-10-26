@@ -2166,7 +2166,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">Placeholder paragraph. Replace this copy with the text for this section.</p>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">Research directly drove these decisions.</p>
               <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
                 <Table className="min-w-[820px]">
                   <TableHeader>
