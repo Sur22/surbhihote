@@ -259,6 +259,7 @@ const _caseStudies: CaseStudy[] = [
     index: "03",
     title: "Notifications Management\u00a0",
     subtitle: "\n",
+    cardSubtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
