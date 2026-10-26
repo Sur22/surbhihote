@@ -465,8 +465,8 @@ function IndexPage() {
               </Button>
             */}
               <Button asChild variant="outline" size="lg">
-                <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
-                  Let's Connect
+                <a href="#case-studies">
+                  Explore My Work
                 </a>
               </Button>
             </div>
