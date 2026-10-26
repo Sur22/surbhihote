@@ -456,11 +456,14 @@ function IndexPage() {
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
+            {/* The hero's primary button, hidden on request — kept here so a
+                restore is just removing this comment.
               <Button asChild size="lg">
                 <a href="#case-studies">
                   View Case Studies
                 </a>
               </Button>
+            */}
               <Button asChild variant="outline" size="lg">
                 <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
                   Let's Connect
