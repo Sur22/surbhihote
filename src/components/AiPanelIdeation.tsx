@@ -12,15 +12,15 @@ const steps = [
   },
   {
     icon: BrainCircuit,
-    title: "AI-assisted synthesis",
-    subtitle: "AI Tools -\u00a0 Claude , Chat GPT",
+    title: "AI-assisted Ideation",
+    subtitle: "AI Tools -\u00a0 Figma Make",
     body: "Feeding the images and the other context and requirements. ",
   },
   {
     icon: CheckCheck,
-    title: "Designer validation",
+    title: "Designing\u00a0",
     subtitle: "",
-    body: "I use few things which I like from the ideas created by AI ",
+    body: "I use few things which I like from the ideas created by AI and then use it in my design.",
   },
 ];
 
