@@ -621,7 +621,7 @@ function CaseStudyPage() {
                 {`Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.
 The portal was 25 years old, and its codebase was frozen, no fix could ship without a full rebuild.
 Over the years, workarounds had hardened into the way affiliates worked.
-The Goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend on daily, without disrupting a single day of their work in the transition.`}
+The goal is to\u00a0rebuild a business-critical tool that 500+ affiliates depend on daily, without disrupting a single day of their work in the transition.`}
               </p>
             </div>
           )}
