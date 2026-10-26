@@ -134,7 +134,7 @@ const _caseStudies: CaseStudy[] = [
       }
     },
     timeframe: "3 Months",
-    tools: "Survey Monkey,\u00a0Claude, Chat GPT, Microsoft Clarity, Power BI, Microsoft Azure,Microsoft Teams, Adobe XD",
+    tools: "Survey Monkey,\u00a0Claude, Chat GPT, Microsoft Clarity,\u00a0Microsoft App insights ,\u00a0Power BI, Microsoft Azure,Microsoft Teams, Adobe XD, Figma Make",
     tasksPerformed: "End-to-End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping,User Testing, Stakeholder buy-in, Collaboration with PM, Engineering team and\u00a0\u00a0QA.\u00a0",
     overview: "Affiliates — the partner networks who buy and transact against that inventory — run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\n\n\n\nThe portal was 25 years old, and its codebase was frozen — no fix could ship without a full rebuild.\nOver the years, workarounds had hardened into the way affiliates worked.\nI led the end-to-end redesign as Lead Product Designer (sole).\nThe goal: rebuild a business-critical tool that 500+ affiliates depend on daily — without disrupting a single day of their work in the transition.",
     goal: "\n",
