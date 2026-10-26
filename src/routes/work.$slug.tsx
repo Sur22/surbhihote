@@ -2005,7 +2005,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
 
             : (c.slug === "affiliate-platform-redesign") 
-              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users regarding what is crucial for them to perform their day-to-day jobs on the website. The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them." 
+              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users regarding what is crucial for them to perform their day-to-day jobs on the website.\u00a0" 
               : (c.slug === "fjord")
                 ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
                 : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
@@ -2019,10 +2019,10 @@ Users needed an easy way to control and manage the notifications they want and s
             />
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Section heading</h3>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Pushing stakeholder for the focus group</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"Placeholder paragraph. Replace this copy with the text for this section."}
+                  {"The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
                 </blockquote>
               </div>
             </div>
