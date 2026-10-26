@@ -30,7 +30,7 @@ const steps = [
 export function AiPanelTestingInitialCopy() {
   return (
     <div className="mt-[100px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for UX Writing&nbsp;</h3>
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">AI for Testing&nbsp;</h3>
       <div className="overflow-hidden rounded-xl border border-azure">
         {steps.map((step, idx) => (
           <div key={step.title} className="relative">
