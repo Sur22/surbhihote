@@ -262,7 +262,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             {c.title}
           </h3>
           <p className="text-lg leading-relaxed text-foreground/85">
-            {c.subtitle}
+            {c.cardSubtitle ?? c.subtitle}
           </p>
           {c.slug === "affiliate-platform-redesign" ? (
             /* Three headline numbers under the description: the value wears the
