@@ -1520,7 +1520,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                     <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
-                      {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild let us tackle six things at once:"}
+                      {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
                     </blockquote>
                   </div>
                   <AffiliateProblemsOpportunityCards />
