@@ -2134,9 +2134,11 @@ Users needed an easy way to control and manage the notifications they want and s
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <blockquote className="relative z-10 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
+                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12">
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n"}<strong><em>&quot;We like it as it is, we don't want it to change.</em></strong>{"\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n"}<span className="block font-serif text-3xl mb-[30px] font-medium">The Real Problem</span>{"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
-                    <AffiliateRealProblemCards />
-                    <strong>So, I designed for flat adoption rather than dramatic change.</strong>
+                  </div>
+                  <AffiliateRealProblemCards />
+                  <strong className="block pl-8 md:pl-12">So, I designed for flat adoption rather than dramatic change.</strong>
                 </blockquote>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
