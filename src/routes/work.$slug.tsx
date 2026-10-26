@@ -9,6 +9,7 @@ import { AiPanelFocusGroup } from "@/components/AiPanelFocusGroup";
 import { AiPanelTesting } from "@/components/AiPanelTesting";
 import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
 import { AffiliateProblemsOpportunityCards } from "@/components/AffiliateProblemsOpportunityCards";
+import { AffiliateRealProblemCards } from "@/components/AffiliateRealProblemCards";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
