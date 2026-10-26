@@ -357,10 +357,10 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
       : slug === "affiliate-platform-redesign"
-        ? /* The banner's disc now sits fully inside the picture's own box, so
-             the stage only pads for the picture shadow's reach below and a
-             breath above. */
-          "pt-[12px] pb-[26px]"
+        ? /* The disc overhangs the picture by ~9% of its height top and bottom
+             (its diameter is 117.7% of it), so the stage pads for that overhang
+             plus the picture shadow's reach below — no arc or shadow sliced. */
+          "pt-[calc(9%+12px)] pb-[calc(9%+26px)]"
         : "pt-[8px] pb-[12px]";
 
 /* The cover picture's own box — the frame both circles are measured off. The
