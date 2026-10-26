@@ -1,5 +1,10 @@
 import { ArrowDown, BrainCircuit, CheckCheck, FileText } from "lucide-react";
 
+// Belongs to AI for Research - Quantitative only. Never share or reuse this
+// string in another AI panel: each panel keeps its own validation line.
+const surveyValidationLead =
+  "AI generated the options. I defined what was appropriate for the user.";
+
 const steps = [
   {
     icon: FileText,
@@ -17,7 +22,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    lead: "AI generated the options. I defined what was appropriate for the user.",
+    lead: surveyValidationLead,
     body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
   },
 ];

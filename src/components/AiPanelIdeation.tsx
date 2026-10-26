@@ -3,6 +3,11 @@ import { ArrowDown, BrainCircuit, CheckCheck, Lightbulb } from "lucide-react";
 // Same three-step treatment as the other AI panels (Survey, Focus Group,
 // Testing), so a new AI section always reads as part of the same family.
 // The wording below is placeholder until the real copy arrives.
+// Belongs to AI for Ideation only. Never share or reuse this string in
+// another AI panel: each panel keeps its own validation line.
+const ideationValidationLead =
+  "AI explored the possibilities. I made the design decisions.";
+
 const steps = [
   {
     icon: Lightbulb,
@@ -20,7 +25,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
-    lead: "AI explored the possibilities. I made the design decisions.",
+    lead: ideationValidationLead,
     body: "I reviewed the generated concepts, identified patterns and ideas that were relevant to the problem, and selectively incorporated useful elements into my designs. I then refined and adapted those ideas based on the user needs, existing product patterns, and overall design direction.",
   },
 ];
