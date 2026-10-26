@@ -68,7 +68,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           >
             <ArrowLeft size={16} />
           </Link>
-          <div className="flex items-center mb-8 sm:mt-[30px]">
+          <div className="flex items-center mb-8 sm:mt-[30px] sm:pt-[30px]">
             <span className="eyebrow">{project.tags.join(" · ")}</span>
           </div>
           <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
