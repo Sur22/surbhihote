@@ -420,14 +420,19 @@ function IndexPage() {
         </div>
       </section>
 
+{/*
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
+*/}
 
       {/* Bring label: heads the strip; its pills sit below the strip. */}
+{/*
       <div className="mx-auto max-w-[1100px] px-6 md:px-10 pt-10 md:pt-12">
         <p className="eyebrow font-semibold">What I bring</p>
       </div>
+*/}
 
       {/* Strip: three facts about the practice, on the page's own paper. */}
+{/*
       <section className="strip pt-12 pb-2 md:pt-14 md:pb-2">
         <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-3 md:gap-12 md:px-10">
           {strip.map((s) => (
@@ -438,8 +443,10 @@ function IndexPage() {
           ))}
         </div>
       </section>
+*/}
 
       {/* Bring pills: the label heads the strip above, only pills sit here. */}
+{/*
       <section className="bring pt-5 pb-10 md:pt-9 md:pb-12">
         <ul className="mx-auto flex max-w-[1100px] flex-wrap items-center gap-3 px-6 md:px-10">
           {bring.map((b) => (
@@ -452,6 +459,7 @@ function IndexPage() {
           ))}
         </ul>
       </section>
+*/}
 
       <div className="rule mx-auto max-w-[1100px] px-6 md:px-10" />
 
