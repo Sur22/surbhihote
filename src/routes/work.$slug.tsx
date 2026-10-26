@@ -2166,6 +2166,49 @@ Users needed an easy way to control and manage the notifications they want and s
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">Placeholder paragraph. Replace this copy with the text for this section.</p>
+              <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
+                <Table className="min-w-[820px]">
+                  <TableHeader>
+                    <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                      <TableHead className="text-foreground font-semibold">What we learned</TableHead>
+                      <TableHead className="text-foreground font-semibold">Design implication</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      {
+                        learned: "Users had normalized workarounds",
+                        implication: "Fix the highest-impact broken workflows first",
+                      },
+                      {
+                        learned: "D/V/P/C indicators were important",
+                        implication: "Preserve familiar status cues",
+                      },
+                      {
+                        learned: "Affiliates manually refreshed constantly",
+                        implication: "Introduce live updates",
+                      },
+                      {
+                        learned: "Order revisions were difficult to track",
+                        implication: "Improve revision visibility",
+                      },
+                      {
+                        learned: "Users were resistant to major change",
+                        implication: "Design for gradual adoption",
+                      },
+                    ].map((row) => (
+                      <TableRow
+                        key={row.learned}
+                        className="border-b border-foreground/10 hover:bg-table-hover"
+                      >
+                        <TableCell className="text-foreground/90">{row.learned}</TableCell>
+                        <TableCell className="text-foreground/90">{row.implication}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
               <AiPanelFocusGroup />
               <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
