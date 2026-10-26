@@ -264,6 +264,26 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
           <p className="text-lg leading-relaxed text-foreground/85">
             {c.subtitle}
           </p>
+          {c.slug === "affiliate-platform-redesign" ? (
+            /* Three headline numbers under the description: the value wears the
+               site's serif in the theme's clay blue, the label sits under it in
+               the body sans. Scoped to this card alone so no other study picks
+               it up. */
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {[
+                ["92%", "task success"],
+                ["2×", "faster load"],
+                ["$0", "business lost at launch"],
+              ].map(([value, label]) => (
+                <div key={value}>
+                  <div className="study-stat">{value}</div>
+                  <div className="mt-1 text-sm leading-snug text-foreground/85">
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <p className="mt-[33.6px] inline-flex items-center gap-2 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold pb-0.5">
             Read the case study
             <span className="transition-transform group-hover:translate-x-1">→</span>
