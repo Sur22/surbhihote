@@ -14,13 +14,13 @@ const steps = [
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
     subtitle: "",
-    body: "Placeholder — send the wording for this step.",
+    body: "Feeding the images and the other context and requirements. ",
   },
   {
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "Placeholder — send the wording for this step.",
+    body: "I use few things which I like from the ideas created by AI ",
   },
 ];
 

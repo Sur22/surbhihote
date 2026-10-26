@@ -10,7 +10,7 @@ const steps = [
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "AI Tools -  Claude ",
+    subtitle: "AI Tools -  Claude , Chat GPT",
     body: "Cluster responses into candidate themes and identify patterns for further investigation.",
   },
   {
