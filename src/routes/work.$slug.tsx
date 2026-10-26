@@ -333,7 +333,7 @@ const cardDiscSlugs = new Set<CaseStudy["slug"]>([
 
 const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { left: "29.2%", top: "50%", transform: "translate(-50%, -50%) scale(0.91)" }
+    ? { left: "50%", top: "50%", transform: "translate(-50%, -50%) scale(1.25)" }
     : slug === "atlas"
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
@@ -354,7 +354,12 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     ? "pt-[36px] pb-[14px]"
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
-      : "pt-[8px] pb-[12px]";
+      : slug === "affiliate-platform-redesign"
+        ? /* The disc now sits centred behind the screenshot and grows past its
+             top and bottom edges, so the stage gives room for that overhang
+             (a share of the picture's height) plus the shadow's fixed reach. */
+          "pt-[calc(6%+12px)] pb-[calc(6%+12px)]"
+        : "pt-[8px] pb-[12px]";
 
 /* The cover picture's own box — the frame both circles are measured off. The
    circle layer wears the same width class as the picture, so the two boxes line
@@ -368,6 +373,13 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
         ? "w-[78%]"
         : "w-full";
 
+/* The banner picture's own corner curve and drop: the site's 8px corner curve
+   with a short teal-tinted shadow, so the screenshot reads as a card lifted off
+   the disc behind it. Only the Affiliate banner wears it for now. */
+const coverImageStyle = (slug: CaseStudy["slug"]): CSSProperties =>
+  slug === "affiliate-platform-redesign"
+    ? { borderRadius: 8, boxShadow: "0 18px 40px -18px color-mix(in srgb, var(--clay) 45%, transparent)" }
+    : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const showImpactHeader = topOutcomeSlugs.has(c.slug);
@@ -467,8 +479,8 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`cover-picture relative z-10 mx-auto overflow-hidden rounded-sm ${coverWidth(c.slug)}`}>
-      <img src={c.cover} alt={c.title} width={1400} height={1000} className="block h-auto w-full" />
+    <div className={`cover-picture relative z-10 mx-auto overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`}>
+      <img src={c.cover} alt={c.title} width={1400} height={1000} style={coverImageStyle(c.slug)} className="block h-auto w-full" />
     </div>
   );
 
