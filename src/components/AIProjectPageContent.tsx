@@ -71,7 +71,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           <div className="flex items-center mb-8 sm:mt-[30px]">
             <span className="eyebrow">{project.tags.join(" · ")}</span>
           </div>
-          <h1 className="font-serif text-4xl mb-8 md:text-5xl">
+          <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal">
             {project.slug === "resources" ? "AI Resources for Product Designers" : project.title}
           </h1>
         </section>
