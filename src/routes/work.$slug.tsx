@@ -374,12 +374,16 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
         ? "w-[78%]"
         : "w-full";
 
-/* The banner picture's own corner curve and drop: the site's 8px corner curve
-   with a short teal-tinted shadow, so the screenshot reads as a card lifted off
-   the disc behind it. Only the Affiliate banner wears it for now. */
+/* The banner picture's own corner curve, and the drop it casts: the site's 8px
+   corner curve sits on the picture, the shadow on the wrapper — the wrapper
+   clips the picture, so a shadow drawn by the picture would be clipped away
+   with it. Only the Affiliate banner wears them for now. */
 const coverImageStyle = (slug: CaseStudy["slug"]): CSSProperties =>
+  slug === "affiliate-platform-redesign" ? { borderRadius: 8 } : {};
+
+const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { borderRadius: 8, boxShadow: "0 18px 40px -18px color-mix(in srgb, var(--clay) 45%, transparent)" }
+    ? { boxShadow: "0 18px 40px -18px color-mix(in srgb, var(--clay) 45%, transparent)" }
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
