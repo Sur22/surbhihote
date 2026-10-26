@@ -2365,7 +2365,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after 3 months of live use.</span>
+              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
