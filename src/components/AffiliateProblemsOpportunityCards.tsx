@@ -40,7 +40,7 @@ export function AffiliateProblemsOpportunityCards() {
     <div
       role="list"
       aria-label="Problems to opportunity"
-      className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
+      className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto"
     >
       {pairs.map((pair) => (
         <div
