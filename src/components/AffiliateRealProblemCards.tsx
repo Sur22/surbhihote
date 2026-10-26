@@ -17,7 +17,7 @@ export function AffiliateRealProblemCards() {
         className="flex-1 self-stretch rounded-md border border-azure px-3 py-2.5 text-[13px] leading-snug text-foreground"
       >
         <span className="block font-semibold">The real question wasn&rsquo;t</span>
-        <span className="block text-[16px] font-medium">&ldquo;How do we make the product better?&rdquo;</span>
+        <span className="block text-[16px] font-bold">&ldquo;How do we make the product better?&rdquo;</span>
       </div>
       <ArrowRight
         className="hidden h-3.5 w-3.5 shrink-0 text-muted-foreground md:block"
@@ -32,7 +32,7 @@ export function AffiliateRealProblemCards() {
         className="flex-1 self-stretch rounded-md border border-azure px-3 py-2.5 text-[13px] leading-snug text-foreground"
       >
         <span className="block font-semibold">It was:</span>
-        <span className="block text-[16px] font-medium">
+        <span className="block text-[16px] font-bold">
           &ldquo;How do we make the product better without breaking the behavior that keeps the
           business running?&rdquo;
         </span>
