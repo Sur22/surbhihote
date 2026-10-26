@@ -123,7 +123,7 @@ const _caseStudies: CaseStudy[] = [
     title: "Affiliate Portal Redesign",
     subtitle: "\n",
     cardSubtitle:
-      "Rebuilding a 25-year-old enterprise platform without disrupting the business & 500+ affiliates.",
+      "Rebuilding a 25-year-old enterprise platform without disrupting the business & 1k+ affiliates.",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
