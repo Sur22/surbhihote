@@ -2382,7 +2382,7 @@ Users needed an easy way to control and manage the notifications they want and s
       {(c.slug === "affiliate-platform-redesign") && (
         <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
-          <h4 className="h4 mb-6">Impact of AI In design process</h4>
+          <h4 className="h4 mb-6">{"\n"}</h4>
           <p className="text-lg leading-relaxed text-foreground/85 mb-8">
             AI reduced repetitive work and accelerated exploration, allowing me to spend more time on validation, design judgment, and higher-value product decisions.
           </p>
