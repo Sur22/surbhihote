@@ -91,7 +91,9 @@ export function AiPanelIdeation() {
           ))}
         </div>
       ) : (
-        <p className="text-[15px] font-bold leading-relaxed">{ideationValidationLead}</p>
+        <div className="rounded-xl border border-azure px-6 py-6">
+          <p className="text-[15px] font-bold leading-relaxed">{ideationValidationLead}</p>
+        </div>
       )}
     </div>
   );
