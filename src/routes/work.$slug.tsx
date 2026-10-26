@@ -1666,7 +1666,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="mt-16">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Ideate</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                The Second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
+                The second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
               </p>
               <div className="grid grid-cols-1 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
