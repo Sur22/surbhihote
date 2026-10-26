@@ -7,20 +7,20 @@ const steps = [
   {
     icon: Lightbulb,
     title: "Input",
-    subtitle: "Sketches, screenshots, my ideas",
-    body: "Sketches from the workshop, the screenshots of the existing software, my ideas.",
+    subtitle: "Workshop sketches + existing interface + design context",
+    body: "I used sketches from the workshop, screenshots of the existing software, my initial design ideas, and the project requirements as inputs.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted Ideation",
     subtitle: "AI Tools -\u00a0 Figma Make",
-    body: "Feeding the images and the other context and requirements. ",
+    body: "provided the visual references along with the product context, user needs, requirements, and design constraints. Figma Make helped generate and explore multiple interface concepts and interaction approaches based on the provided context. ",
   },
   {
     icon: CheckCheck,
-    title: "Designing\u00a0",
+    title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
-    body: "I use few things which I like from the ideas created by AI and then use it in my design.",
+    body: "I reviewed the generated concepts, identified patterns and ideas that were relevant to the problem, and selectively incorporated useful elements into my designs. I then refined and adapted those ideas based on the user needs, existing product patterns, and overall design direction.",
   },
 ];
 
