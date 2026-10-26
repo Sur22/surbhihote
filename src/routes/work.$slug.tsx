@@ -317,8 +317,10 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
    where the card puts it. The card measures its circle off the mockup's own box
    — that box's height sets the diameter, its edges set the anchor — so the
    banner does the same with the cover picture's box:
-     · Affiliate: 91% of the picture's height, its centre 29% across and halfway
-       down, so a rim of circle shows past the screenshot's left edge.
+     · Affiliate (banner): 117.7% of the picture's height, its centre 29% across
+       and halfway down, overhanging the screenshot's top, bottom and left —
+       the circle's placement and sizing from Surbhi's reference mockup,
+       measured off the mockup itself.
      · Notifications: 77.2%, its centre 45.5% across and 59% down, then nudged a
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
@@ -333,7 +335,7 @@ const cardDiscSlugs = new Set<CaseStudy["slug"]>([
 
 const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { left: "50%", top: "50%", transform: "translate(-50%, -50%) scale(1.45)" }
+    ? { left: "29.4%", top: "50%", transform: "translate(-50%, -50%) scale(1.1765)" }
     : slug === "atlas"
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
@@ -355,11 +357,10 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
       : slug === "affiliate-platform-redesign"
-        ? /* The disc sits centred behind the screenshot and grows past its top
-             and bottom edges by a share of the picture's own height, so the
-             stage gives room for that overhang plus the shadows' fixed reach —
-             enough that no arc is ever sliced flat at the stage's edge. */
-          "pt-[calc(10%+14px)] pb-[calc(10%+14px)]"
+        ? /* The disc overhangs the picture by ~9% of its height top and bottom
+             (its diameter is 117.7% of it), so the stage pads for that overhang
+             plus the picture shadow's reach below — no arc or shadow sliced. */
+          "pt-[calc(9%+12px)] pb-[calc(9%+26px)]"
         : "pt-[8px] pb-[12px]";
 
 /* The cover picture's own box — the frame both circles are measured off. The
@@ -383,7 +384,8 @@ const coverImageStyle = (slug: CaseStudy["slug"]): CSSProperties =>
 
 const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { boxShadow: "0 18px 40px -18px color-mix(in srgb, var(--clay) 45%, transparent)" }
+    ? /* Grey drop, half the previous blur (40px -> 20px). */
+      { boxShadow: "0 18px 20px -18px color-mix(in srgb, var(--foreground) 30%, transparent)" }
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
