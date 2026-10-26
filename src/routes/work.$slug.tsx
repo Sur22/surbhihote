@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, ArrowDown, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowDown, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -1520,7 +1520,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <div className="relative z-10">
-                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems to Opportunity</h3>
+                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                     <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                       {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
