@@ -5,6 +5,11 @@ import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
    panel: its own step copy, its own flow diagrams, so an edit to either
    placement never affects the other. */
 
+// Belongs to AI for UX Writing only. Never share or reuse this string in
+// another AI panel: each panel keeps its own validation line.
+const uxWritingValidationLead =
+  "AI generated the options. I defined what was appropriate for the user.";
+
 const steps = [
   {
     icon: BarChart3,
@@ -22,7 +27,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    lead: "AI generated the options. I defined what was appropriate for the user.",
+    lead: uxWritingValidationLead,
     body: "I evaluated the generated options for clarity, tone, empathy, accessibility, and alignment with the user's context. I refined or rewrote the copy to ensure it reduced uncertainty, communicated clearly, and helped build trust with the user. ",
   },
 ];

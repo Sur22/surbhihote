@@ -1,5 +1,10 @@
 import { ArrowDown, BrainCircuit, CheckCheck, Video } from "lucide-react";
 
+// Belongs to AI for Research - Qualitative only. Never share or reuse this
+// string in another AI panel: each panel keeps its own validation line.
+const focusGroupValidationLead =
+  "AI generated the options. I defined what was appropriate for the user.";
+
 const steps = [
   {
     icon: Video,
@@ -17,7 +22,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    lead: "AI generated the options. I defined what was appropriate for the user.",
+    lead: focusGroupValidationLead,
     body: "The AI-generated findings were reviewed against my personal focus group notes, stakeholder input, and supporting research evidence. I validated and refined the findings before prioritizing the key issues in collaboration with the Product Manager.",
   },
 ];
