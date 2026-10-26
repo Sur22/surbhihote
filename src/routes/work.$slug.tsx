@@ -428,7 +428,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               : c.slug === "solace"
               ? "Document-Centric Workflows to a Connected PLM Ecosystem.This project was an upgrade from manual paperwork to a streamlined process eliminating the manual errors, delays in production deadlines and product delivery."
               : c.slug === "affiliate-platform-redesign"
-              ? "Rebuilding a 25-year-old enterprise platform without disrupting the business & 500+ affiliates. Where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
+              ? "Rebuilding a 25-year-old enterprise platform without disrupting the business & 1000+ affiliates. Where the real challenge wasn't a better tool, but adoption from users who'd normalized every workaround."
               : "Organizing and managing notifications to granular level.When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
           </p>
         </>
