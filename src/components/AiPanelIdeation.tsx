@@ -20,6 +20,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "I reviewed the generated concepts, identified patterns and ideas that were relevant to the problem, and selectively incorporated useful elements into my designs. I then refined and adapted those ideas based on the user needs, existing product patterns, and overall design direction.",
   },
 ];
@@ -41,6 +42,9 @@ export function AiPanelIdeation() {
                 <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                ) : null}
+                {step.lead ? (
+                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
               </div>

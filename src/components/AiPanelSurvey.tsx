@@ -17,6 +17,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "Compare the suggested themes with source responses, focus-group findings, and stakeholder evidence before deciding what to prioritize.",
   },
 ];
@@ -38,6 +39,9 @@ export function AiPanelSurvey() {
                 <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                ) : null}
+                {step.lead ? (
+                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
               </div>

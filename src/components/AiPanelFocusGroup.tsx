@@ -17,6 +17,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "The AI-generated findings were reviewed against my personal focus group notes, stakeholder input, and supporting research evidence. I validated and refined the findings before prioritizing the key issues in collaboration with the Product Manager.",
   },
 ];
@@ -38,6 +39,9 @@ export function AiPanelFocusGroup() {
                 <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                ) : null}
+                {step.lead ? (
+                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
               </div>

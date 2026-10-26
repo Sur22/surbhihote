@@ -23,6 +23,7 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: "AI generated the options. I defined what was appropriate for the user.",
     body: "I evaluated the generated options for clarity, tone, empathy, accessibility, and alignment with the user's context. I refined or rewrote the copy to ensure it reduced uncertainty, communicated clearly, and helped build trust with the user. ",
   },
 ];
@@ -44,6 +45,9 @@ export function AiPanelTestingInitialCopy() {
                 <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
                 {step.subtitle ? (
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                ) : null}
+                {step.lead ? (
+                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
               </div>
