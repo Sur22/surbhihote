@@ -1522,7 +1522,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <div className="relative z-10">
                   <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3">Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                    <blockquote className="text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
+                    <blockquote className="text-[16px] leading-relaxed text-left whitespace-pre-line">
                       {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
                     </blockquote>
                   </div>
@@ -2133,7 +2133,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   style={{ backgroundImage: `url(${ampBgPersona.url})` }}
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                <blockquote className="relative z-10 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed text-left whitespace-pre-line">
+                <blockquote className="relative z-10 max-w-3xl mx-auto text-[16px] leading-relaxed text-left whitespace-pre-line">
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12">
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n"}<strong><em>&quot;We like it as it is, we don't want it to change.</em></strong>{"\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n"}<span className="block font-serif text-3xl mb-[30px] font-medium">The Real Problem</span>{"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
                   </div>
