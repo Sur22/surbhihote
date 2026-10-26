@@ -165,7 +165,7 @@ const _caseStudies: CaseStudy[] = [
     outcome: [
       { label: "Task Success Rate", value: "92%" },
       { label: "reduction in manual refreshes", value: "78%" },
-      { label: "in lost business since launch", value: "$0" },
+      { label: "lost in business since launch", value: "$0" },
       { label: "Broken or limited workflows restored", value: "8" },
       { label: "Faster page loading", value: "2x ↑" },
     ],
