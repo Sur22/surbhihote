@@ -3,7 +3,7 @@ import { ArrowDown, BrainCircuit, CheckCheck, FileText } from "lucide-react";
 // Belongs to AI for Research - Quantitative only. Never share or reuse this
 // string in another AI panel: each panel keeps its own validation line.
 const surveyValidationLead =
-  "AI generated the options. I defined what was appropriate for the user.";
+  "\n";
 
 const steps = [
   {
