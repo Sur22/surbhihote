@@ -575,7 +575,26 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 
 /* The site's h3: a serif heading one step above the h4. It's a class so any
    element can wear the h3 look without changing its own heading level. */
+/* The site's h2: the step above the h3. It matches the h2s used across the
+   case-study pages (serif, 36px on phones and 48px from the md breakpoint up),
+   and it's a class so any element can wear the h2 look without changing its own
+   heading level. */
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+@media (min-width: 768px) {
+  .h2 {
+    font-size: 48px;
+  }
+}
+
 .h3 {
+
   font-family: var(--font-serif);
   font-weight: 400;
   letter-spacing: -0.01em;
