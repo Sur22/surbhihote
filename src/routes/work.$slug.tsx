@@ -2139,6 +2139,73 @@ Users needed an easy way to control and manage the notifications they want and s
                     {"Refer to the Survey Results section, you will find that we asked a question to rate the current experience of the affiliate site. The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said, "}<strong><em>&quot;We like it as it is, we don't want it to change.</em></strong>{"\" Because the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="block font-serif text-3xl mb-[30px] font-medium">The Real Problem</span>{"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one.\nThe real question wasn't\u00a0\n“How do we make the product better?”\n\nIt was:\n“How do we make the product better without breaking the behavior that keeps the business running?”\n\n"}<strong>So, I designed for flat adoption rather than dramatic change.</strong>{"\n\n\n"}
                 </blockquote>
               </div>
+              <h4 className="h4 mt-16 mb-6">Impact of AI In design process</h4>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+                Placeholder — send the wording for this section.
+              </p>
+              <div className="overflow-hidden rounded-sm border border-foreground/20">
+                <Table className="min-w-[820px]">
+                  <TableHeader>
+                    <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                      <TableHead className="text-foreground font-semibold" />
+                      {["Research", "Ideation", "UX Writing", "Testing"].map((h) => (
+                        <TableHead key={h} className="text-foreground font-semibold">
+                          {h}
+                        </TableHead>
+                      ))}
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      {
+                        label: "AI contribution",
+                        cells: [
+                          "Synthesize & identify patterns",
+                          "Explore possibilities",
+                          "Generate variations",
+                          "Surface behavioral patterns",
+                        ],
+                      },
+                      {
+                        label: "Human contribution",
+                        cells: [
+                          "Validate & prioritize",
+                          "Evaluate & refine",
+                          "Select & refine",
+                          "Verify against evidence",
+                        ],
+                      },
+                      {
+                        label: "Impact",
+                        cells: [
+                          "Faster synthesis",
+                          "More concepts explored",
+                          "Faster iteration",
+                          "More focused analysis",
+                        ],
+                      },
+                      {
+                        label: "Time saved*",
+                        cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
+                      },
+                    ].map((row) => (
+                      <TableRow
+                        key={row.label}
+                        className="border-b border-foreground/10 hover:bg-table-hover"
+                      >
+                        <TableCell className="font-semibold text-foreground">
+                          {row.label}
+                        </TableCell>
+                        {row.cells.map((cell, i) => (
+                          <TableCell key={i} className="text-foreground/90">
+                            {cell}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
