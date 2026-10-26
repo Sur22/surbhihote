@@ -7,6 +7,7 @@ import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import { AiPanelSurvey } from "@/components/AiPanelSurvey";
 import { AiPanelFocusGroup } from "@/components/AiPanelFocusGroup";
 import { AiPanelTesting } from "@/components/AiPanelTesting";
+import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
