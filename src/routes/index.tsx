@@ -406,7 +406,7 @@ function IndexPage() {
               ref={heroCopyRef}
               className="h3 mt-[7px] md:mt-8 text-foreground/80"
             >
-              Product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products. Engineer turned designer, I integrate AI across the design process while keeping human judgment at the center.
+              Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products. Engineer turned designer, I integrate AI across the design process while keeping human judgment at the center.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
             <div className="mt-8">
