@@ -59,7 +59,7 @@ export function AffiliateProblemsOpportunityCards() {
               className="h-3.5 w-3.5 shrink-0 self-center text-muted-foreground md:hidden"
               aria-hidden="true"
             />
-            <div className="flex-[1.4] rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground">
+            <div className="flex-1 rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground">
               {pair.opportunity}
             </div>
           </div>
