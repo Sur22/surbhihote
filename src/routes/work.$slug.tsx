@@ -1519,7 +1519,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     </blockquote>
                   </div>
                   <AffiliateProblemsOpportunityCards />
-                  </div>
                 </div>
               </div>
 
