@@ -64,7 +64,7 @@ export function AffiliateProblemsOpportunityCards() {
             aria-hidden="true"
             className="my-2 h-px w-full shrink-0 bg-azure/30"
           />
-          <p className="text-[13px] font-medium leading-snug text-foreground">
+          <p className="text-[16px] font-medium leading-snug text-foreground">
             {pair.opportunity}
           </p>
         </div>
