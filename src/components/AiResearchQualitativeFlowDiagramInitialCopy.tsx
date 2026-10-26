@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 const stages = [
   {
-    title: "Behavioral Data",
+    title: " Define Clear\nParameters",
     detail: "Clarity + App Insights + Power BI",
   },
   {
@@ -16,11 +16,11 @@ const stages = [
   },
   {
     title: "Human Validation",
-    detail: "Session review → Data verification → Stakeholder context",
+    detail: "Verify tone  → Trust → Accuracy",
   },
   {
-    title: "Design Decision",
-    detail: "Prioritize → Iterate → Retest",
+    title: "Final Copy",
+    detail: " → Iterate → U",
   },
 ];
 

@@ -10,20 +10,20 @@ const steps = [
   {
     icon: BarChart3,
     title: "Input",
-    subtitle: "Microsoft Clarity + Microsoft App Insights + Power BI ",
-    body: "Session recordings and Clarity automatically captured common user behaviors, while I set up code-free custom events in Clarity to track specific micro-tasks and interactions. Additional events and clicks were tracked through Microsoft App Insights and connected to Power BI for analysis and visualization",
+    subtitle: "Context + Tone defined in the prompt ",
+    body: "For microcopy (CTA's, error messeges, tooltips, placholder text) you need to define clear parameters for instance describe a specific task for which the microcopy is being generated. Keep it user centered to show empathy and reassurance builds user trust for the system.",
   },
   {
     icon: BrainCircuit,
-    title: "AI-assisted synthesis",
-    subtitle: "AI Tools - Microsoft Co-pilot + Claude",
-    body: "AI was used to analyze behavioral patterns across session recordings, custom events, interaction data, and usability metrics. It helped identify recurring behaviors, friction points, and potential usability issues across key workflows.\n\nFor defined micro-tasks, the interaction data was used to measure Task Success Rate—whether users completed the intended task and reached the defined success event. AI helped analyze successful and unsuccessful interaction patterns, compare task performance, and surface behaviors associated with task failure or friction.",
+    title: "AI-generated microcopy",
+    subtitle: "AI Tools - Chat GPT + Claude",
+    body: "AI was used to analyze the tone understand the context and generate the options. ",
   },
   {
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
-    body: "Task success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction. I then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
+    body: "Check the tone and if it user ceneterd, empathetic and able to build the trust for user to feel ",
   },
 ];
 
