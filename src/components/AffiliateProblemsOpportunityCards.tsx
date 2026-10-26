@@ -1,10 +1,7 @@
-import { Fragment } from "react";
-import { ArrowDown, ArrowRight } from "lucide-react";
-
-/* Affiliate only: the six "Problems to Opportunity" pairs rendered as small
-   azure-bordered cards in the same style as the AI-for-Testing flow diagram —
-   problem card, arrow, opportunity card. Desktop lays each pair on one line;
-   on phones the pair stacks with a downward arrow. */
+/* Affiliate only: the six "Problems to Opportunity" pairs. Each pair now lives
+   inside one azure-bordered card — the problem on top, a thin line, then the
+   opportunity below — and the cards run three to a row on wide screens, two on
+   tablets, one on phones. */
 const pairs = [
   {
     problem: "A codebase that couldn't take new functionality",
@@ -43,27 +40,25 @@ export function AffiliateProblemsOpportunityCards() {
     <div
       role="list"
       aria-label="Problems to opportunity"
-      className="mt-8 flex flex-col gap-y-2.5 max-w-3xl mx-auto"
+      className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto"
     >
       {pairs.map((pair) => (
-        <Fragment key={pair.problem}>
-          <div role="listitem" className="flex flex-col items-stretch gap-y-1 md:flex-row md:items-center md:gap-x-1.5">
-            <div className="flex-1 rounded-md border border-azure px-3 py-2.5 text-[13px] font-semibold leading-snug text-foreground">
-              {pair.problem}
-            </div>
-            <ArrowRight
-              className="hidden h-3.5 w-3.5 shrink-0 text-muted-foreground md:block"
-              aria-hidden="true"
-            />
-            <ArrowDown
-              className="h-3.5 w-3.5 shrink-0 self-center text-muted-foreground md:hidden"
-              aria-hidden="true"
-            />
-            <div className="flex-1 rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground">
-              {pair.opportunity}
-            </div>
-          </div>
-        </Fragment>
+        <div
+          key={pair.problem}
+          role="listitem"
+          className="flex flex-col rounded-md border border-azure px-3 py-2.5"
+        >
+          <p className="text-[13px] font-semibold leading-snug text-foreground">
+            {pair.problem}
+          </p>
+          <div
+            aria-hidden="true"
+            className="my-2 h-px w-full shrink-0 bg-azure/30"
+          />
+          <p className="text-[13px] font-medium leading-snug text-foreground">
+            {pair.opportunity}
+          </p>
+        </div>
       ))}
     </div>
   );
