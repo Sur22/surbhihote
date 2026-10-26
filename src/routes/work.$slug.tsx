@@ -621,7 +621,10 @@ function CaseStudyPage() {
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`The portal was 25 years old, used by\u00a01000+ affiliates who depend on it daily which gets the annual revenue is $550 Million and\u00a01 Billion Dollars During political years.The Its codebase was frozen, no fix could ship without a full rebuild.Over the years, workarounds had hardened into the way affiliates worked.The goal is to\u00a0rebuild a business-critical tool\u00a0\u00a0without disrupting a single day of their work in the transition.
+                {`The portal was `}<strong className="font-bold">25</strong>{` years old, used by\u00a0`}
+                <strong className="font-bold">1000+</strong>{` affiliates who depend on it daily which gets the annual revenue is `}
+                <strong className="font-bold">$550 Million</strong>{` and\u00a0`}
+                <strong className="font-bold">1 Billion Dollars</strong>{` During political years.The Its codebase was frozen, no fix could ship without a full rebuild.Over the years, workarounds had hardened into the way affiliates worked.The goal is to\u00a0rebuild a business-critical tool\u00a0\u00a0without disrupting a single day of their work in the transition.
 Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\u00a0
 
 `}
