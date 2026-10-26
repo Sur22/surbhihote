@@ -406,7 +406,7 @@ function IndexPage() {
               ref={heroCopyRef}
               className="mt-[7px] md:mt-8 font-serif text-3xl md:text-4xl leading-[1.2] text-foreground/80"
             >
-              I balance user needs, business opportunities, and technological realities to create simple, scalable products.
+              Engineer turned designer, I integrate AI across the design process while keeping human judgment at the center.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
             <div className="mt-8">
