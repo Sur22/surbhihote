@@ -614,11 +614,13 @@ function CaseStudyPage() {
           {c.slug === "affiliate-platform-redesign" && (
             <div className="space-y-8">
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There are three lines of business National, Local and Addressable.Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.`}
+                {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There are three lines of business National, Local and Addressable.`}
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
                 {`The portal was 25 years old, used by\u00a01000+ affiliates who depend on it daily.Its codebase was frozen, no fix could ship without a full rebuild.Over the years, workarounds had hardened into the way affiliates worked.The goal is to\u00a0rebuild a business-critical tool\u00a0\u00a0without disrupting a single day of their work in the transition.
+Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\u00a0
+
 `}
               </p>
             </div>
