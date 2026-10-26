@@ -356,11 +356,10 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
       : slug === "affiliate-platform-redesign"
-        ? /* The disc sits centred behind the screenshot and grows past its top
-             and bottom edges by a share of the picture's own height, so the
-             stage gives room for that overhang plus the shadows' fixed reach —
-             enough that no arc is ever sliced flat at the stage's edge. */
-          "pt-[calc(10%+14px)] pb-[calc(10%+14px)]"
+        ? /* The banner's disc now sits fully inside the picture's own box, so
+             the stage only pads for the picture shadow's reach below and a
+             breath above. */
+          "pt-[12px] pb-[26px]"
         : "pt-[8px] pb-[12px]";
 
 /* The cover picture's own box — the frame both circles are measured off. The
@@ -384,7 +383,8 @@ const coverImageStyle = (slug: CaseStudy["slug"]): CSSProperties =>
 
 const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { boxShadow: "0 18px 40px -18px color-mix(in srgb, var(--clay) 45%, transparent)" }
+    ? /* Grey drop, half the previous blur (40px -> 20px). */
+      { boxShadow: "0 18px 20px -18px color-mix(in srgb, var(--foreground) 30%, transparent)" }
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
