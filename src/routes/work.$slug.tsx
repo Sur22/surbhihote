@@ -493,11 +493,11 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-       {/* Title block — the keyword tagline and the title are centred, while the
-          back arrow is pinned to the left corner of the content column so it
-          never pushes the centred text off axis. 30px of air sits above the
-          tagline row. The block's bottom padding is kept tight so the title
-          sits closer to the cover picture. */}
+       {/* Title block — the keyword tagline and the title are left aligned with
+          the content column, and the back arrow sits above them in the same
+          left corner. 30px of air sits above the tagline row. The block's
+          bottom padding is kept tight so the title sits closer to the cover
+          picture. */}
       <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
         <Link
           to="/"
@@ -507,10 +507,10 @@ function CaseStudyPage() {
         >
           <ArrowLeft size={16} />
         </Link>
-        <div className="flex items-center justify-center mb-8 sm:mt-[30px]">
+        <div className="flex items-center mb-8 sm:mt-[30px]">
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
       </section>
 
       {/* Cover */}
