@@ -2042,6 +2042,9 @@ Users needed an easy way to control and manage the notifications they want and s
             )}
           </>
         )}
+        {c.slug === "affiliate-platform-redesign" && (
+          <AiPanelTestingInitialCopy />
+        )}
         {c.slug === "solace" && (
           <>
             <h3 className="font-serif text-3xl mt-[100px] mb-6 font-medium">Low Fidelity Wireframes</h3>
