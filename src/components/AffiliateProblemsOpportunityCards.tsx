@@ -48,12 +48,12 @@ export function AffiliateProblemsOpportunityCards() {
           role="listitem"
           className="flex flex-col rounded-md border border-azure px-3 py-2.5"
         >
-          <p className="min-h-[36px] text-[13px] font-semibold leading-snug text-foreground">
+          <p className="min-h-[54px] text-[13px] font-semibold leading-snug text-foreground">
             {pair.problem}
           </p>
           <div
             aria-hidden="true"
-            className="mb-2 mt-auto h-px w-full shrink-0 bg-azure/30"
+            className="my-2 h-px w-full shrink-0 bg-azure/30"
           />
           <p className="text-[13px] font-medium leading-snug text-foreground">
             {pair.opportunity}
