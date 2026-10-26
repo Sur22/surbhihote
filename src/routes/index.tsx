@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import heroBg from "@/assets/hero-section-background.png.asset.json";
 import solaceTilted from "@/assets/techpack-monitor-screen.png.asset.json";
 import solaceFull from "@/assets/techpack-monitor-mockup.png.asset.json";
+import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
 import atlasCrop from "@/assets/notification-banner-tilted-crop.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
@@ -136,10 +137,10 @@ function CaseStudyArtwork({
         <div className={`relative z-10 flex ${imageHeight} items-center md:-translate-x-[11.7px]`}>
           <div className="w-full overflow-hidden rounded-[0.4875rem] bg-card shadow-[0_20px_50px_-20px_color-mix(in_oklab,var(--foreground)_35%,transparent)] transition-transform duration-[1200ms] group-hover:scale-[1.02]">
             <img
-              src={c.cover}
+              src={affiliateDashboard.url}
               alt={c.title}
               width={1920}
-              height={1374}
+              height={1080}
               loading="lazy"
               className="block w-full h-auto"
             />
