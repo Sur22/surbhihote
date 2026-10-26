@@ -333,7 +333,7 @@ const cardDiscSlugs = new Set<CaseStudy["slug"]>([
 
 const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { left: "50%", top: "50%", transform: "translate(-50%, -50%) scale(1.25)" }
+    ? { left: "50%", top: "50%", transform: "translate(-50%, -50%) scale(1.45)" }
     : slug === "atlas"
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
@@ -355,10 +355,11 @@ const coverPad = (slug: CaseStudy["slug"]) =>
     : slug === "atlas"
       ? "pt-[8px] pb-[18px]"
       : slug === "affiliate-platform-redesign"
-        ? /* The disc now sits centred behind the screenshot and grows past its
-             top and bottom edges, so the stage gives room for that overhang
-             (a share of the picture's height) plus the shadow's fixed reach. */
-          "pt-[calc(6%+12px)] pb-[calc(6%+12px)]"
+        ? /* The disc sits centred behind the screenshot and grows past its top
+             and bottom edges by a share of the picture's own height, so the
+             stage gives room for that overhang plus the shadows' fixed reach —
+             enough that no arc is ever sliced flat at the stage's edge. */
+          "pt-[calc(10%+14px)] pb-[calc(10%+14px)]"
         : "pt-[8px] pb-[12px]";
 
 /* The cover picture's own box — the frame both circles are measured off. The
