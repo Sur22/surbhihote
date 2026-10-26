@@ -1,6 +1,6 @@
 # AGENTS.md
 
-- Site heading looks are applied as classes defined in `src/styles.css` (`.display`, `.eyebrow`, `.h3`, `.h4`) rather than ad-hoc text-size utilities, so a heading level stays consistent wherever it is used. The subtitle line under each case study's title wears `.h3`.
+- Site heading looks are applied as classes defined in `src/styles.css` (`.display`, `.eyebrow`, `.h2`, `.h3`, `.h4`) rather than ad-hoc text-size utilities, so a heading level stays consistent wherever it is used. The subtitle line under each case study's title wears `.h3`.
 - Tabular content reuses the shared Table components inside a rounded wrapper with bold header cells and `text-foreground/90` body cells, so new tables on any case study read as the same table. Most tables keep the outline (`overflow-hidden rounded-sm border border-foreground/20` around `<Table className="min-w-[820px]">`); the User Journey tables drop the outline and every internal rule — the `.journey-table` class in `src/styles.css` zeroes all borders — so their rows read as plain bands rather than a boxed grid.
 
 - A highlighted table row's outline is drawn on its cells, not on the row: the shared Table drops a row's own border on the last row, and cell borders win where they collapse.
