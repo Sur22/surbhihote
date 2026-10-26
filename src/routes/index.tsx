@@ -273,7 +273,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
               {[
                 ["92%", "task success"],
                 ["2×", "faster load"],
-                ["$0", "business lost at launch"],
+                ["$0", "business lost after launch"],
               ].map(([value, label]) => (
                 <div key={value}>
                   <div className="study-stat">{value}</div>
