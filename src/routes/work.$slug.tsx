@@ -317,8 +317,9 @@ const topOutcomeSlugs = new Set<CaseStudy["slug"]>(["affiliate-platform-redesign
    where the card puts it. The card measures its circle off the mockup's own box
    — that box's height sets the diameter, its edges set the anchor — so the
    banner does the same with the cover picture's box:
-     · Affiliate: 91% of the picture's height, its centre 29% across and halfway
-       down, so a rim of circle shows past the screenshot's left edge.
+     · Affiliate (banner): 88.6% of the picture's height, its centre 38% across
+       and 55% down — the placement and sizing of the circle in Surbhi's
+       reference mockup, left of centre with the picture overhanging it.
      · Notifications: 77.2%, its centre 45.5% across and 59% down, then nudged a
        fixed 15px right and 5px down — a touch left of the phone and dropped
        below its middle.
@@ -333,7 +334,7 @@ const cardDiscSlugs = new Set<CaseStudy["slug"]>([
 
 const coverDiscStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
-    ? { left: "50%", top: "50%", transform: "translate(-50%, -50%) scale(1.45)" }
+    ? { left: "38.1%", top: "55.1%", transform: "translate(-50%, -50%) scale(0.886)" }
     : slug === "atlas"
       ? { left: "calc(45.5% + 15px)", top: "calc(59% + 5px)", transform: "translate(-50%, -50%) scale(0.772)" }
       : slug === "solace"
