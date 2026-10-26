@@ -2143,7 +2143,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 Placeholder — send the wording for this section.
               </p>
-              <div className="overflow-hidden rounded-sm border border-foreground/20">
+              <div className="mb-10 overflow-hidden rounded-sm border border-foreground/20">
                 <Table className="min-w-[820px]">
                   <TableHeader>
                     <TableRow className="border-b border-foreground/20 hover:bg-transparent">
