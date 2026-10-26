@@ -10,6 +10,9 @@ export type CaseStudy = {
   index: string;
   title: string;
   subtitle: string;
+  /* Homepage card copy. Falls back to `subtitle` when absent, so a study whose
+     page subtitle is intentionally blank can still carry its own card line. */
+  cardSubtitle?: string;
   client: string;
   year: string;
   role: string;
@@ -119,6 +122,8 @@ const _caseStudies: CaseStudy[] = [
     index: "01",
     title: "Affiliate Portal Redesign",
     subtitle: "\n",
+    cardSubtitle:
+      "Rebuilding a 25-year-old enterprise platform without disrupting the business & 500+ affiliates.",
     client: "Fjord, Oslo",
     year: "2025",
     ...defaultMeta,
@@ -184,6 +189,7 @@ const _caseStudies: CaseStudy[] = [
     index: "02",
     title: "Tech Pack Tool",
     subtitle: "\n",
+    cardSubtitle: "Document-Centric Workflows to a Connected PLM Ecosystem.",
     client: "Solace Health",
     year: "2024",
     ...defaultMeta,
