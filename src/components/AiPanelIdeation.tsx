@@ -7,13 +7,13 @@ const steps = [
   {
     icon: Lightbulb,
     title: "Input",
-    subtitle: "",
+    subtitle: "Sketches, screenshots, my ideas",
     body: "Sketches from the workshop, the screenshots of the existing software, my ideas.",
   },
   {
     icon: BrainCircuit,
     title: "AI-assisted synthesis",
-    subtitle: "",
+    subtitle: "AI Tools -\u00a0 Claude , Chat GPT",
     body: "Feeding the images and the other context and requirements. ",
   },
   {
