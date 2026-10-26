@@ -10,6 +10,7 @@ import { AiPanelTesting } from "@/components/AiPanelTesting";
 import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
 import { AffiliateProblemsOpportunityCards } from "@/components/AffiliateProblemsOpportunityCards";
 import { AffiliateRealProblemCards } from "@/components/AffiliateRealProblemCards";
+import { AffiliateSurveyIssuesCards } from "@/components/AffiliateSurveyIssuesCards";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -748,7 +749,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   </p>
                 </>
               ) : (c.slug === "affiliate-platform-redesign") ? (
-                <p>{c.research.userInterview}</p>
+                <>
+                  <p>{c.research.userInterview}</p>
+                  <AffiliateSurveyIssuesCards />
+                </>
               ) : (c.slug === "solace") ? (
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                   <p>
