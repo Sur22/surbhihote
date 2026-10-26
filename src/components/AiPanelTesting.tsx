@@ -2,6 +2,12 @@ import { ArrowDown, BarChart3, BrainCircuit, CheckCheck } from "lucide-react";
 import { AiResearchQualitativeFlowDiagram } from "@/components/AiResearchQualitativeFlowDiagram";
 import { AiTestingFlowDiagram } from "@/components/AiTestingFlowDiagram";
 
+// Belongs to AI for Testing only. Never share or reuse this string in another
+// AI panel: each panel keeps its own validation line.
+const testingValidationLead =
+  "Behavioral evidence → AI-assisted pattern analysis → your validation against event definitions and user feedback.";
+
+
 const steps = [
   {
     icon: BarChart3,
@@ -19,6 +25,8 @@ const steps = [
     icon: CheckCheck,
     title: "Designer validation",
     subtitle: "",
+    lead: testingValidationLead,
+
     body: "Task success findings and AI-generated patterns were validated against the underlying Clarity session recordings, App Insights events, and Power BI data. I reviewed individual sessions to confirm whether the tracked events represented genuine task completion rather than simply a click or interaction. I then compared the behavioral evidence with usability observations and stakeholder context to prioritize validated issues and design improvements.",
   },
 ];
@@ -42,7 +50,11 @@ export function AiPanelTesting() {
                   <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
                 ) : null}
                 <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
+                {step.lead ? (
+                  <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
+                ) : null}
               </div>
+
             </div>
             {idx < 2 ? (
               <div className="step-connector" aria-hidden="true">
