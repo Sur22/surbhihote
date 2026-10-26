@@ -493,11 +493,12 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-       {/* Back arrow — pinned to the left corner above the cover picture. On
-          phones it returns to the flow as its own line with 30px below it; on
-          wider screens it floats at the corner, and the section's own top
-          padding keeps it clear of the cover. */}
-      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px] sm:pt-[30px]">
+       {/* Title block — the keyword tagline and the title are centred, while the
+          back arrow is pinned to the left corner of the content column so it
+          never pushes the centred text off axis. 30px of air sits above the
+          tagline row. The block's bottom padding is kept tight so the title
+          sits closer to the cover picture. */}
+      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
         <Link
           to="/"
           hash="case-studies"
@@ -506,6 +507,10 @@ function CaseStudyPage() {
         >
           <ArrowLeft size={16} />
         </Link>
+        <div className="flex items-center justify-center mb-8 sm:mt-[30px]">
+          <span className="eyebrow">{c.tags.join(" · ")}</span>
+        </div>
+        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
       </section>
 
       {/* Cover */}
@@ -539,17 +544,7 @@ function CaseStudyPage() {
         )}
       </section>
 
-      {/* Title block — the keyword tagline and the title sit below the banner,
-          centred. The block's bottom spacing is kept tight so the title sits
-          closer to the subtitle. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10">
-        <div className="flex items-center justify-center mb-8">
-          <span className="eyebrow">{c.tags.join(" · ")}</span>
-        </div>
-        <h1 className="font-serif text-4xl mb-[10px] md:text-5xl font-normal whitespace-pre-line text-center">{c.title}</h1>
-      </section>
-
-      {/* Subtitle — sits below the title, centred. */}
+      {/* Subtitle — sits below the banner, centred. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
           {c.subtitle}
