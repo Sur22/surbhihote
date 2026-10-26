@@ -609,6 +609,18 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   white-space: nowrap;
 }
 
+/* A headline number in a card: the site's serif at display size, held in the
+   theme's clay blue so a stat reads as part of the card rather than as an
+   ad-hoc size and colour. */
+.study-stat {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
 /* Card titles hold one line, so the h3 size follows the card's own width: both
    card shapes are query containers, and the title scales down with the card
    instead of running past its edge. */
