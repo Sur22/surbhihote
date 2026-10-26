@@ -159,10 +159,10 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Task Success Rate", value: "92%" },
-      { label: "Manual refresh dropped significantly", value: "78%" },
-      { label: "No business lost till the date since the release", value: "$0" },
-      { label: "Functionalities Fixed\nNo More Workarounds", value: "8" },
-      { label: "Faster loading time than earlier", value: "2x ↑" },
+      { label: "reduction in manual refreshes", value: "78%" },
+      { label: "in lost business since launch", value: "$0" },
+      { label: "Broken or limited workflows restored", value: "8" },
+      { label: "Faster page loading", value: "2x ↑" },
     ],
     sections: [
       {
