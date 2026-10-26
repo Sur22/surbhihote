@@ -33,7 +33,7 @@ const steps = [
 ];
 
 export function AiPanelIdeation() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -46,13 +46,16 @@ export function AiPanelIdeation() {
           className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
         >
           <span>AI for Ideation </span>
-          <ChevronDown
-            className={cn(
-              "h-5 w-5 shrink-0 text-foreground/50 transition-transform duration-200",
-              open && "rotate-180",
-            )}
-            aria-hidden="true"
-          />
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground/10">
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 text-foreground/70 transition-transform duration-200",
+                open && "rotate-180",
+              )}
+              strokeWidth={2.8}
+              aria-hidden="true"
+            />
+          </span>
         </button>
       </h3>
       {open ? (
