@@ -409,7 +409,12 @@ function IndexPage() {
               Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products. Engineer turned designer, I integrate AI across the design process while keeping human judgment at the center.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Button asChild size="lg">
+                <a href="#case-studies">
+                  View Case Studies
+                </a>
+              </Button>
               <Button asChild variant="outline" size="lg">
                 <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer">
                   Let's Connect
