@@ -2271,7 +2271,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 </Table>
               </div>
               <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-                Based on focus group data few changes were made in the priortization.
+                Based on focus group data few changes were made in the prioritization as highlighted int he table.
               </p>
         </section>
       )}
