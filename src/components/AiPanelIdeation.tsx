@@ -21,7 +21,7 @@ const steps = [
     icon: BrainCircuit,
     title: "AI-assisted Ideation",
     subtitle: "AI Tools -\u00a0 Figma Make",
-    body: "provided the visual references along with the product context, user needs, requirements, and design constraints. Figma Make helped generate and explore multiple interface concepts and interaction approaches based on the provided context. \nUsed AI as an additional accessibility review layer to identify potential issues with contrast, readability, interaction states, ",
+    body: "provided the visual references along with the product context, user needs, requirements, and design constraints. Figma Make helped generate and explore multiple interface concepts and interaction approaches based on the provided context.  Used AI as an additional accessibility review layer to identify potential issues with contrast, readability, interaction states etc with WCGA guideline.",
   },
   {
     icon: CheckCheck,
