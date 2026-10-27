@@ -243,7 +243,13 @@ function GalleryPage() {
                         it.title === "Voyager - AI Travel Assistant"
                           ? "w-[85%] mx-auto"
                           : "w-full",
-                        it.title === "Voyager - AI Travel Assistant" && idx === 0 && "w-[22%]"
+                        it.title === "Voyager - AI Travel Assistant" && idx === 0 && "w-[22%]",
+                        it.title === "Creator Hub" ||
+                        it.title === "Data Visualization" ||
+                        it.title === "GSN Marketplace - A white label e-com for clients  " ||
+                        it.title === "Product Evolution\u00a0"
+                          ? "rounded-[8px]"
+                          : ""
                       )}
                     />
                   </CarouselItem>
