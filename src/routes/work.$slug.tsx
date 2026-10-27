@@ -2429,7 +2429,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {(c.slug === "affiliate-platform-redesign") && (
-        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 pb-0 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
           <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
@@ -2472,7 +2472,7 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
       {(c.slug === "affiliate-platform-redesign") && (
-        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
           <h4 className="h4 mb-6">{"\n"}</h4>
           <p className="text-lg leading-relaxed text-foreground/85 mb-8">
