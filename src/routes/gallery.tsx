@@ -152,6 +152,12 @@ const CAROUSEL_CLIP: Record<string, [number, number, number, number]> = {
 
 
 
+function carouselClipStyle(alt: string) {
+  const q = CAROUSEL_CLIP[alt];
+  if (!q) return undefined;
+  return { clipPath: `inset(${q[0]}% ${q[1]}% ${q[2]}% ${q[3]}% round 8px)` };
+}
+
 function GalleryPage() {
   return (
     <SiteLayout>
