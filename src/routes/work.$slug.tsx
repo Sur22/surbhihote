@@ -2527,6 +2527,15 @@ Users needed an easy way to control and manage the notifications they want and s
                     ],
                   },
                   {
+                    label: "Capacity unlocked",
+                    cells: [
+                      "More time for research interpretation",
+                      "More iterations before converging",
+                      "More time for content refinement",
+                      "More time for deeper validation",
+                    ],
+                  },
+                  {
                     label: "Time saved*",
                     cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
                   },
