@@ -168,7 +168,7 @@ function CaseStudyArtwork({
             width={1338}
             height={794}
             loading="lazy"
-            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[252px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[6px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[252px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : c.slug === "atlas" ? (
