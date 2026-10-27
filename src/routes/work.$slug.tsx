@@ -2435,15 +2435,19 @@ Users needed an easy way to control and manage the notifications they want and s
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.</span>
+              <span>I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>So, I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
+              <span>Why this approach: It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>The feedback we got was positive, and I&nbsp;watched some sessions using Microsoft Clarity to check if it was being used as we expected. The results seemed satisfactory.</span>
+              <span>
+                I used Microsoft Clarity session analysis and in-product feedback after the first three months of live use to observe whether affiliates were using the redesigned workflows as intended and to identify any remaining friction.
+                <p>{"\n"}</p>
+                <p>Outcome: Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.</p>
+              </span>
             </li>
           </ul>
           <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
@@ -2456,7 +2460,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Section heading</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"Placeholder paragraph. Replace this copy with the text for this section."}
+                  {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n\n\n"}
                 </blockquote>
               </div>
             </div>
