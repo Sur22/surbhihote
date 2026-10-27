@@ -163,12 +163,12 @@ function CaseStudyArtwork({
             className="absolute top-[calc(50%_-_2.9px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[103.5%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
           />
           <img
-            src={solaceTilted.url}
+            src={solaceFull.url}
             alt={c.title}
-            width={1338}
-            height={794}
+            width={1460}
+            height={1077}
             loading="lazy"
-            className={`absolute bottom-[6px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[252px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[-18px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[342px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : c.slug === "atlas" ? (
