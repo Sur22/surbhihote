@@ -2456,12 +2456,16 @@ Users needed an easy way to control and manage the notifications they want and s
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Why this approach: It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.</span>
+              <span>
+                <strong>Why this approach:</strong> It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.
+              </span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>
-                <p>Outcome: Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.</p>
+                <p>
+                  <strong>Outcome:</strong> Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.
+                </p>
               </span>
             </li>
           </ul>
