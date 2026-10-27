@@ -56,6 +56,9 @@
   /* The grey a table row takes on hover, published so components use bg-* with
      it instead of writing a colour into the markup. */
   --color-table-hover: var(--table-hover);
+  /* The light blue a table cell wears when it must read as highlighted — the
+     same wash the Real Problem band paints behind its copy. */
+  --color-cell-highlight: var(--cell-highlight);
   /* The emotion row's discs keep their sentiment colours through a theme flip —
      a red disc must stay red on ink too — so every step of the scale carries its
      own token instead of a colour written into the markup. */
@@ -82,6 +85,9 @@
   /* Table rows highlight with this flat neutral grey on paper — the same grey
      the image panels and AI cards wear, rather than the theme's warm cream. */
   --table-hover: #ededed;
+  /* The Real Problem band's pale icy blue on paper, sampled off the rendered
+     band so a highlighted cell matches it exactly. */
+  --cell-highlight: #e4eeff;
   /* The User Interview band: black in light and dark alike, cream text on it. */
   --band: #000000;
   --band-foreground: #ffffff;
@@ -138,6 +144,9 @@
   /* On dark paper a table row lifts with the same faint ink wash it always
      had — the flat light grey below would flash against a near-black page. */
   --table-hover: color-mix(in srgb, var(--foreground) 5%, transparent);
+  /* On ink the highlight takes the band's own dark blue-slate instead of the
+     pale wash, so light cell text keeps its contrast. */
+  --cell-highlight: #222734;
 
   --background: var(--paper);
   --foreground: var(--ink);
