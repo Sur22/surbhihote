@@ -23,7 +23,7 @@ export function AffiliateSurveyIssuesCards() {
       {issues.map((issue) => (
         <li
           key={issue}
-          className="flex items-center rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground"
+          className="flex items-center rounded-md border border-azure px-3 py-2.5 text-[16px] font-bold leading-snug text-foreground"
         >
           <span>{issue}</span>
         </li>
