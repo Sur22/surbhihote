@@ -597,7 +597,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${(c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
+      <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${c.slug === "affiliate-platform-redesign" ? "pb-20" : (c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
 
         <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
@@ -620,14 +620,12 @@ function CaseStudyPage() {
                 {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There are three lines of business National, Local and Addressable.`}
               </p>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
+              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-0">
                 {`The portal was `}<strong className="font-bold italic">25</strong>{` years old, used by\u00a0`}
                 <strong className="font-bold italic">1000+</strong>{` affiliates who depend on it daily which gets the annual revenue is `}
                 <strong className="font-bold italic">$550 Million</strong>{` and\u00a0`}
                 <strong className="font-bold italic">1 Billion Dollars</strong>{` During political years.The codebase was frozen, no fix could ship without a full rebuild.Over the years, workarounds had hardened into the way affiliates worked.The goal is to\u00a0rebuild a business-critical tool without disrupting a single day of their work in the transition.
-Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\u00a0
-
-`}
+Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\u00a0`}
               </p>
             </div>
           )}
