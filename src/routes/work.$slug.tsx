@@ -2432,22 +2432,6 @@ Users needed an easy way to control and manage the notifications they want and s
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
-          <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Why this approach: It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>
-                <p>Outcome: Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.</p>
-              </span>
-            </li>
-          </ul>
           <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
             <div
               className="absolute inset-0 bg-cover bg-center opacity-50"
@@ -2463,6 +2447,22 @@ Users needed an easy way to control and manage the notifications they want and s
               </div>
             </div>
           </div>
+          <ul className="mb-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>Why this approach: It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>
+                <p>Outcome: Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.</p>
+              </span>
+            </li>
+          </ul>
           <AiPanelTesting />
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
