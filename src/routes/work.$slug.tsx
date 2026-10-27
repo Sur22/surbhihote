@@ -2446,6 +2446,21 @@ Users needed an easy way to control and manage the notifications they want and s
               <span>The feedback we got was positive, and I&nbsp;watched some sessions using Microsoft Clarity to check if it was being used as we expected. The results seemed satisfactory.</span>
             </li>
           </ul>
+          <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-50"
+              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+            />
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+            <div className="relative z-10">
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Section heading</h3>
+              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
+                  {"Placeholder paragraph. Replace this copy with the text for this section."}
+                </blockquote>
+              </div>
+            </div>
+          </div>
           <AiPanelTesting />
           <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
