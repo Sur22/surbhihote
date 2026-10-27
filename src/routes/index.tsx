@@ -152,7 +152,8 @@ function CaseStudyArtwork({
            the 24px card padding above and below, so its middle line is the
            artwork box's own middle line — centring on that is centring on the
            colour. From the md breakpoint up the same full monitor is used,
-           scaled so the screen keeps its size and the stand fills the band. */
+           scaled so the screen keeps its size and the stand's base sits
+           right on the band's lower edge. */
         <div className="relative z-10 h-full">
           <img
             src={solaceFull.url}
@@ -168,7 +169,7 @@ function CaseStudyArtwork({
             width={1460}
             height={1077}
             loading="lazy"
-            className={`absolute bottom-[-18px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[342px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[-35.6px] left-1/2 -translate-x-1/2 w-[103.5%] max-w-none h-auto hidden md:block ${compact ? "md:h-[342px]" : ""} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : c.slug === "atlas" ? (
