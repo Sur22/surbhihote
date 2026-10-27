@@ -145,6 +145,10 @@ const CAROUSEL_CLIP: Record<string, [number, number, number, number]> = {
   "Data Visualization — mockup 4": [0.84, 1.04, 1.77, 0.52],
   "GSN Marketplace — Suuchi mockup": [0, 0, 0, 0],
   "GSN Marketplace — list view": [0, 0, 0, 0],
+  "Voyager — Welcome": [2.32, 3.02, 3.73, 1.88],
+  "Voyager — Conversational AI": [2.31, 2.86, 3.53, 1.77],
+  "Voyager — Itinerary": [2.29, 4.57, 3.7, 2.87],
+  "Voyager — Map View": [3.02, 3.02, 3.72, 2.29],
 };
 
 
