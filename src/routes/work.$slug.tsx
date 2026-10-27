@@ -2022,7 +2022,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Pushing stakeholder for the focus group</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"The stakeholders did not have answers to most of my questions, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
+                  {"The stakeholders did not have answers to many of my questions as well as they had some of their own question, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
                 </blockquote>
               </div>
             </div>
