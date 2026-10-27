@@ -2458,7 +2458,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n\n\n"}
+                  {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n"}
                 </blockquote>
               </div>
             </div>
