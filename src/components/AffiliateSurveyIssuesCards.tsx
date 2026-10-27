@@ -3,7 +3,7 @@
    Problems-to-Opportunity and AI-for-Testing flow cards — four per row on
    desktop (two rows), two per row on tablets, one per row on phones. */
 const issues = [
-  "Speed & stability — platform speed, and speed for processing large orders (known issue).",
+  "Speed & stability - platform speed, and speed for processing large orders (known issue).",
   "Makegood processing and synchronization.",
   "Order revisions history.",
   "Searching and filtering not holding.",
