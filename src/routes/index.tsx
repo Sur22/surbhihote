@@ -151,8 +151,8 @@ function CaseStudyArtwork({
            in the middle of the tinted band: the band is the artwork box plus
            the 24px card padding above and below, so its middle line is the
            artwork box's own middle line — centring on that is centring on the
-           colour. The tighter crop to the screen and bezels takes over from the
-           md breakpoint up, where it still rests on the band's lower edge. */
+           colour. From the md breakpoint up the same full monitor is used,
+           scaled so the screen keeps its size and the stand fills the band. */
         <div className="relative z-10 h-full">
           <img
             src={solaceFull.url}
