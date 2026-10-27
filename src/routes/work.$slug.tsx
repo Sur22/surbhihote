@@ -2399,7 +2399,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>After the second iteration, I reviewed the wireframes with the VP of Product to confirm they met all requirements. I communicated user needs and observations from interviews — including items I had added that were not in the product requirements document — and updated the team to keep Engineering in the loop.</span>
+              <span>After the second iteration, I reviewed the wireframes with the VP of Product to confirm they met all requirements. I communicated user needs and observations from interviews including items I had added that were not in the product requirements document and updated the team to keep Engineering in the loop.</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
