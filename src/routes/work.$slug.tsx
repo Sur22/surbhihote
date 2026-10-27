@@ -2480,6 +2480,8 @@ Users needed an easy way to control and manage the notifications they want and s
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
           <h4 className="h4 mb-6">{"\n"}</h4>
           <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+            As the only designer on the product, I had to move between research, synthesis, ideation, UX writing, prototyping, testing, and stakeholder collaboration. AI helped reduce the repetitive parts of that workload so I could maintain depth across the process without adding another layer of overhead.
+            <br /><br />
             AI reduced repetitive work and accelerated exploration, allowing me to spend more time on validation, design judgment, and higher-value product decisions.
             <br /><br /><strong>AI assists → Human validates → Evidence informs → Designer decides</strong>
           </p>
