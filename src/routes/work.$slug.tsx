@@ -2178,6 +2178,10 @@ Users needed an easy way to control and manage the notifications they want and s
                   <TableBody>
                     {[
                       {
+                        learned: "Placeholder text",
+                        implication: "Placeholder text",
+                      },
+                      {
                         learned: "Users had normalized workarounds",
                         implication: "Fix the highest-impact broken workflows first",
                       },
