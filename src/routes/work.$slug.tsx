@@ -2807,7 +2807,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       />
                     </div>
                   ) : (c.slug === "affiliate-platform-redesign") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none" }} loading="lazy" />
+                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none", borderRadius: i === 3 ? 8 : undefined }} loading="lazy" />
                   ) : (c.slug === "solace") ? (
                     <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%", borderRadius: i > 0 ? 8 : undefined }} loading="lazy" />
                   ) : (
