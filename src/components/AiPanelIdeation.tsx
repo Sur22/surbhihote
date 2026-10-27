@@ -21,14 +21,14 @@ const steps = [
     icon: BrainCircuit,
     title: "AI-assisted Ideation",
     subtitle: "AI Tools -\u00a0 Figma Make",
-    body: "provided the visual references along with the product context, user needs, requirements, and design constraints. Figma Make helped generate and explore multiple interface concepts and interaction approaches based on the provided context. ",
+    body: "provided the visual references along with the product context, user needs, requirements, and design constraints. Figma Make helped generate and explore multiple interface concepts and interaction approaches based on the provided context. \nUsed AI as an additional accessibility review layer to identify potential issues with contrast, readability, interaction states, ",
   },
   {
     icon: CheckCheck,
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
     lead: ideationValidationLead,
-    body: "AI-generated concepts were treated as design inputs, not solutions. I evaluated them against user needs, product constraints, and the existing design system before incorporating and refining relevant ideas into the final experience.",
+    body: "AI-generated concepts were treated as design inputs, not solutions. I evaluated them against user needs, product constraints, and the existing design system before incorporating and refining relevant ideas into the final experience.I validated the findings against accessibility guidelines and the actual interface before making design decisions.\n\n\n\n",
   },
 ];
 
