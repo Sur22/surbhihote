@@ -2713,7 +2713,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {/* Final Designs */}
-      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : "py-24"}`}>
+      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
 
         {c.slug === "fjord" ? (
@@ -2820,7 +2820,7 @@ Users needed an easy way to control and manage the notifications they want and s
         )}
 
 
-        <p className="text-lg leading-relaxed text-foreground/85 mt-10">
+        <p className={cn("text-lg leading-relaxed text-foreground/85", c.slug === "affiliate-platform-redesign" ? "mt-0" : "mt-10")}>
           {(c.slug === "atlas" || c.slug === "atlas2") && (
             <a
               href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
@@ -2850,7 +2850,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {/* Reflection */}
-      <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
+      <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-[80px]" : "pt-24")}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
           Reflection
         </h2>
