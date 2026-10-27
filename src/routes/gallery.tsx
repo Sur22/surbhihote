@@ -130,6 +130,27 @@ const items = [
   },
 ] as const;
 
+/* Several carousel artworks were exported with a transparent margin around the
+   screenshot, so a corner radius on the <img> alone curves only empty space and
+   reads as square. Each entry trims that margin (top, right, bottom, left as a
+   percentage of the artwork) and curves the screenshot's own corners at 8px.
+   Insets were measured off each PNG's fully opaque bounds. */
+const CAROUSEL_CLIP: Record<string, [number, number, number, number]> = {
+  "Creator Hub — Dashboard": [1.39, 2.29, 2.77, 1.2],
+  "Creator Hub — Analytics": [1.07, 1.67, 1.96, 1.2],
+  "Creator Hub — Create Post": [1.73, 2.34, 2.57, 1.41],
+  "Data Visualization — mockup 1": [1.19, 1.77, 2.31, 0.83],
+  "Data Visualization — mockup 2": [1.77, 1.67, 3.33, 0.83],
+  "Data Visualization — mockup 3": [0.9, 1.09, 1.72, 0.57],
+  "Data Visualization — mockup 4": [0.84, 1.04, 1.77, 0.52],
+  "GSN Marketplace — Suuchi mockup": [0, 0, 0, 0],
+  "GSN Marketplace — list view": [0, 0, 0, 0],
+  "Product Page — Before": [0.53, 1.77, 3.74, 1.09],
+  "Product Page — After": [0.43, 1.67, 2.84, 0.99],
+};
+
+
+
 
 function GalleryPage() {
   return (
