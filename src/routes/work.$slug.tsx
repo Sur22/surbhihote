@@ -2226,7 +2226,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
               <div className="mt-8">
-                <Table>
+                <Table className="table-fixed">
                   <TableHeader>
                     <TableRow>
                       <TableHead>Phase 1</TableHead>
