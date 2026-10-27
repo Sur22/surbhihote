@@ -2477,6 +2477,7 @@ Users needed an easy way to control and manage the notifications they want and s
           <h4 className="h4 mb-6">{"\n"}</h4>
           <p className="text-lg leading-relaxed text-foreground/85 mb-8">
             AI reduced repetitive work and accelerated exploration, allowing me to spend more time on validation, design judgment, and higher-value product decisions.
+            <br /><br /><br /><br />AI assists → Human validates → Evidence informs → Designer decides
           </p>
           <div className="overflow-hidden rounded-sm border border-foreground/20">
             <Table className="min-w-[820px]">
