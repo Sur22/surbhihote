@@ -145,8 +145,6 @@ const CAROUSEL_CLIP: Record<string, [number, number, number, number]> = {
   "Data Visualization — mockup 4": [0.84, 1.04, 1.77, 0.52],
   "GSN Marketplace — Suuchi mockup": [0, 0, 0, 0],
   "GSN Marketplace — list view": [0, 0, 0, 0],
-  "Product Page — Before": [0.53, 1.77, 3.74, 1.09],
-  "Product Page — After": [0.43, 1.67, 2.84, 0.99],
 };
 
 
@@ -274,8 +272,7 @@ function GalleryPage() {
                         it.title === "Voyager - AI Travel Assistant" && idx === 0 && "w-[22%]",
                         it.title === "Creator Hub" ||
                         it.title === "Data Visualization" ||
-                        it.title === "GSN Marketplace - A white label e-com for clients  " ||
-                        it.title === "Product Evolution\u00a0"
+                        it.title === "GSN Marketplace - A white label e-com for clients  "
                           ? "rounded-[8px]"
                           : ""
                       )}
