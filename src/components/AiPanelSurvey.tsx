@@ -35,15 +35,21 @@ export function AiPanelSurvey() {
   return (
     <div className="mt-[100px] mb-[30px]">
       <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="ai-research-quantitative-panel"
-          className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
+        <span>AI for Research - Quantitative </span>
+      </h3>
+      {open ? (
+        <div
+          id="ai-research-quantitative-panel"
+          className="relative overflow-hidden rounded-xl border border-azure"
         >
-          <span>AI for Research - Quantitative </span>
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground/10">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="ai-research-quantitative-panel"
+            aria-label="Collapse AI for Research - Quantitative"
+            className="absolute right-4 top-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-foreground/10"
+          >
             <ChevronDown
               className={cn(
                 "h-4 w-4 text-foreground/70 transition-transform duration-200",
@@ -52,14 +58,7 @@ export function AiPanelSurvey() {
               strokeWidth={2.8}
               aria-hidden="true"
             />
-          </span>
-        </button>
-      </h3>
-      {open ? (
-        <div
-          id="ai-research-quantitative-panel"
-          className="overflow-hidden rounded-xl border border-azure"
-        >
+          </button>
           {steps.map((step, idx) => (
             <div key={step.title} className="relative">
               <div className="flex items-start gap-4 px-6 py-6">
@@ -88,9 +87,24 @@ export function AiPanelSurvey() {
           ))}
         </div>
       ) : (
-        <div className="rounded-xl border border-azure px-6 py-6">
-          <p className="text-[15px] font-bold leading-relaxed">{surveyValidationLead}</p>
-        </div>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="ai-research-quantitative-panel"
+          className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-azure px-6 py-6 text-left"
+        >
+          <span className="block text-[15px] font-bold leading-relaxed">
+            {surveyValidationLead}
+          </span>
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground/10">
+            <ChevronDown
+              className="h-4 w-4 text-foreground/70"
+              strokeWidth={2.8}
+              aria-hidden="true"
+            />
+          </span>
+        </button>
       )}
     </div>
   );
