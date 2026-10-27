@@ -2198,16 +2198,16 @@ Users needed an easy way to control and manage the notifications they want and s
                         implication: "Design for gradual adoption",
                       },
                       {
-                        learned: "Placeholder text",
-                        implication: "Placeholder text",
+                        learned: "Users don't want to see time with 12 hour clock",
+                        implication: "Keep the military time as it is\u00a0",
                       },
                       {
-                        learned: "Placeholder text",
-                        implication: "Placeholder text",
+                        learned: "Filters are not holding after they go to search results\u00a0",
+                        implication: "Search results needs to hold",
                       },
                       {
-                        learned: "Placeholder text",
-                        implication: "Placeholder text",
+                        learned: "Language and naming is confusing\u00a0",
+                        implication: "Clear naming for CTA's, Pages,Sections etc.\u00a0",
                       },
                     ].map((row, i) => (
                       <TableRow
