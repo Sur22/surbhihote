@@ -2178,8 +2178,8 @@ Users needed an easy way to control and manage the notifications they want and s
                   <TableBody>
                     {[
                       {
-                        learned: "Placeholder text",
-                        implication: "Placeholder text",
+                        learned: "Dollars lost due to missed orders\u00a0",
+                        implication: "Visually indicate the last touched date\u00a0\u00a0",
                       },
                       {
                         learned: "Users had normalized workarounds",
