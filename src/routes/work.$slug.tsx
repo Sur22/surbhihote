@@ -2266,8 +2266,8 @@ Users needed an easy way to control and manage the notifications they want and s
                       <TableCell>Exports</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities" : "\u00a0"}</TableCell>
-                      <TableCell>Automation</TableCell>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities\u00a0" : "\u00a0"}</TableCell>
+                      <TableCell>Automation{"\u00a0"}</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
