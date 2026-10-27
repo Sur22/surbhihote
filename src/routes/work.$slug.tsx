@@ -2231,7 +2231,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       <TableCell>Order Revision</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Compare Order Version</TableCell>
+                      <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
                       <TableCell>Platform Notifications</TableCell>
                     </TableRow>
                     <TableRow>
@@ -2244,7 +2244,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       <TableCell>Messaging</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell>Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
+                      <TableCell className="bg-cell-highlight">Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
                       <TableCell>Collaterals{"\u00a0"}</TableCell>
                     </TableRow>
                     <TableRow>
