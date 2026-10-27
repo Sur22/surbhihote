@@ -1520,7 +1520,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <div className="relative z-10">
-                  <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Problems to Opportunity</h3>
+                  <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Problems to Opportunity</h3>
                   <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                     <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                       {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
@@ -2019,7 +2019,7 @@ Users needed an easy way to control and manage the notifications they want and s
             />
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Pushing stakeholder for the focus group</h3>
+              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Pushing stakeholder for the focus group</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                   {"The stakeholders did not have answers to many of my questions as well as they had some of their own question, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
@@ -2439,7 +2439,7 @@ Users needed an easy way to control and manage the notifications they want and s
             />
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
+              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                   {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n"}
