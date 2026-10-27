@@ -253,6 +253,7 @@ function GalleryPage() {
                       src={img.src}
                       alt={img.alt}
                       loading="lazy"
+                      style={carouselClipStyle(img.alt)}
                       className={cn(
                         "h-auto object-contain",
                         it.title === "GSN Marketplace - A white label e-com for clients  " ||
