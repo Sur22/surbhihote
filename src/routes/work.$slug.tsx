@@ -2228,7 +2228,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     </TableRow>
                     <TableRow>
                       <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
-                      <TableCell>Order Revision</TableCell>
+                      <TableCell className="bg-cell-highlight">Order Revision</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
