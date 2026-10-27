@@ -1,6 +1,6 @@
 /* Affiliate only: the eight issues that emerged from the survey's open-ended
    responses, rendered as small azure-bordered cards in the same style as the
-   Problems-to-Opportunity and AI-for-Testing flow cards — numbered, two per
+   Problems-to-Opportunity and AI-for-Testing flow cards — two per
    row on desktop, one per row on phones. */
 const issues = [
   "Speed & stability — platform speed, and speed for processing large orders (known issue).",
@@ -20,12 +20,11 @@ export function AffiliateSurveyIssuesCards() {
       aria-label="Major issues from the survey's open-ended responses"
       className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-2 max-w-3xl mx-auto"
     >
-      {issues.map((issue, idx) => (
+      {issues.map((issue) => (
         <li
           key={issue}
-          className="flex items-start gap-2 rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground"
+          className="flex items-start rounded-md border border-azure px-3 py-2.5 text-[13px] font-medium leading-snug text-foreground"
         >
-          <span className="font-semibold tabular-nums text-azure">{idx + 1}.</span>
           <span>{issue}</span>
         </li>
       ))}
