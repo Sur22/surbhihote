@@ -2444,8 +2444,6 @@ Users needed an easy way to control and manage the notifications they want and s
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>
-                I used Microsoft Clarity session analysis and in-product feedback after the first three months of live use to observe whether affiliates were using the redesigned workflows as intended and to identify any remaining friction.
-                <p>{"\n"}</p>
                 <p>Outcome: Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.</p>
               </span>
             </li>
