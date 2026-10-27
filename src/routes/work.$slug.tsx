@@ -2197,9 +2197,21 @@ Users needed an easy way to control and manage the notifications they want and s
                         learned: "Users were resistant to major change",
                         implication: "Design for gradual adoption",
                       },
-                    ].map((row) => (
+                      {
+                        learned: "Placeholder text",
+                        implication: "Placeholder text",
+                      },
+                      {
+                        learned: "Placeholder text",
+                        implication: "Placeholder text",
+                      },
+                      {
+                        learned: "Placeholder text",
+                        implication: "Placeholder text",
+                      },
+                    ].map((row, i) => (
                       <TableRow
-                        key={row.learned}
+                        key={`${row.learned}-${i}`}
                         className="border-b border-foreground/10 hover:bg-table-hover"
                       >
                         <TableCell className="text-foreground/90">{row.learned}</TableCell>
