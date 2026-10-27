@@ -94,8 +94,15 @@ export function AiPanelTesting() {
           <AiResearchQualitativeFlowDiagram />
         </div>
       ) : (
-        <div className="rounded-xl border border-azure px-6 py-6">
-          <p className="text-[15px] font-bold leading-relaxed">{testingValidationLead}</p>
+        <div
+          id="ai-testing-panel"
+          className="overflow-hidden rounded-xl border border-azure"
+        >
+          <div className="px-6 py-6">
+            <p className="text-[15px] font-bold leading-relaxed">{testingValidationLead}</p>
+          </div>
+          <AiTestingFlowDiagram />
+          <AiResearchQualitativeFlowDiagram />
         </div>
       )}
     </div>
