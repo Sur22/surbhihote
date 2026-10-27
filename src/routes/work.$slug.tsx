@@ -2205,7 +2205,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       },
                       {
                         learned: "Filters are not holding after they go to search results\u00a0",
-                        implication: "Search results needs to hold",
+                        implication: "Create views, search results needs to hold",
                       },
                       {
                         learned: "Language and naming is confusing\u00a0",
