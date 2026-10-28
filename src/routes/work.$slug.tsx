@@ -1542,7 +1542,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {
                       name: "Political Campaign Manager\n/ Support Specialist\u200b",
                       usage: 3,
-                      dependency: 2,
+                      dependency: 3,
                       goals: [
                         "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
@@ -1568,7 +1568,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {
                       name: "Markets Campaign Manager",
                       usage: 4,
-                      dependency: 3,
+                      dependency: 4,
                       goals: [
                         "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\n",
                         "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
