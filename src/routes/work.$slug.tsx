@@ -2599,25 +2599,85 @@ Users needed an easy way to control and manage the notifications they want and s
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
-            {c.slug !== "fjord" && c.slug !== "atlas" && c.slug !== "atlas2" && (
-              <div className="text-lg leading-relaxed text-foreground/85 mt-2 mb-2 whitespace-pre-line">
-                  <>
-                    <span>1)  2 out of the 5 participants felt the need to add labels on the Detailed Sketch page.
-{"\n"}2) 3 out of the 5 participants wanted a Save button in case they wanted to leave halfway and needed to navigate to the  another part of the application. </span>
-                    <div className="mt-1">
-                      <span>3) 3 out of the 5 participants were confused by the details drawer not opening on the Bill of Material page
-{"\n"}4) All participants felt the design served its purpose and addressed the pain points they had.{"\n\n"}</span>
-                    </div>
-                  </>
-              </div>
-            )}
-            {c.slug !== "atlas" && c.slug !== "atlas2" && (
+            {c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace" && (
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>{c.slug === "fjord" ? "Based on the test result data, not all users had knowledge of AND/OR logic, so I added a help section to help them understand how it works, so they can create segments with a clear understanding and more precisely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
             )}
           </ul>
+
+          {/* Tech Pack Tool: the usability findings now read as a Usability
+              finding / Evidence / Design decision / Intended impact table,
+              wearing the shared table treatment. */}
+          {c.slug === "solace" && (<>
+            <div className="mt-6 overflow-hidden rounded-sm border border-foreground/20">
+              <Table className="min-w-[820px]">
+                <TableHeader>
+                  <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                    {["Usability finding", "Evidence", "Design decision", "Intended impact"].map((h) => (
+                      <TableHead key={h} className="text-foreground font-semibold">
+                        {h}
+                      </TableHead>
+                    ))}
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {[
+                    {
+                      finding: "Users wanted labels on the Detailed Sketch page.",
+                      evidence: "2 of 5 participants (40%)",
+                      decision: "Improve labeling and information clarity.",
+                      impact: "Help users identify details more easily.",
+                    },
+                    {
+                      finding: "Users wanted to save progress before navigating elsewhere.",
+                      evidence: "3 of 5 participants (60%)",
+                      decision: "Introduce a Save option to preserve work in progress.",
+                      impact: "Reduce the risk of losing work and support interrupted workflows.",
+                    },
+                    {
+                      finding: "Users expected the details drawer to open on the Bill of Material page.",
+                      evidence: "3 of 5 participants (60%)",
+                      decision: "Clarify the drawer's interaction and make it easier to discover.",
+                      impact: "Reduce confusion and make the interaction more predictable.",
+                    },
+                    {
+                      finding: "Participants felt the design addressed their pain points.",
+                      evidence: "5 of 5 participants (100%)",
+                      decision: "Retain the core direction while addressing the usability issues identified.",
+                      impact: "Preserve what worked while refining specific friction points.",
+                    },
+                  ].map((row) => (
+                    <TableRow
+                      key={row.finding}
+                      className="border-b border-foreground/10 hover:bg-table-hover"
+                    >
+                      <TableCell className="text-foreground/90">
+                        {row.finding}
+                      </TableCell>
+                      <TableCell className="text-foreground/90">
+                        {row.evidence}
+                      </TableCell>
+                      <TableCell className="text-foreground/90">
+                        {row.decision}
+                      </TableCell>
+                      <TableCell className="text-foreground/90">
+                        {row.impact}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+
+            <ul className="space-y-6 text-lg leading-relaxed text-foreground/85 mt-10">
+              <li className="flex gap-4">
+                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+                <span>Based on the test result data some changes were made to fix issues faced by the users.</span>
+              </li>
+            </ul>
+          </>)}
 
           {/* Notifications Management: usability findings as a Finding / Impact /
               Design response table, wearing the shared table treatment. */}
