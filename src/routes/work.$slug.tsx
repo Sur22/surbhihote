@@ -1542,7 +1542,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {
                       name: "Political Campaign Manager\n/ Support Specialist\u200b",
                       usage: 3,
-                      dependency: 2,
+                      dependency: 3,
                       goals: [
                         "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
                       ],
