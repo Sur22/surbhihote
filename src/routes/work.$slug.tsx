@@ -2139,7 +2139,7 @@ Users needed an easy way to control and manage the notifications they want and s
               </p>
               <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
                 <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
-                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost <strong>roughly around $2.5M in business to orders that slipped through unnoticed</strong>{"\u00A0"}there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
+                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly <strong>around $2.5M in business to orders that slipped through unnoticed</strong>{"\u00A0"}there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
                 <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
               </ul>
               <div className="relative overflow-hidden rounded-sm px-6 md:px-16 py-16 text-foreground dark:text-primary mx-auto my-[50px]">
