@@ -1568,7 +1568,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                     {
                       name: "Markets Campaign Manager",
                       usage: 4,
-                      dependency: 3,
+                      dependency: 4,
                       goals: [
                         "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\n",
                         "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
