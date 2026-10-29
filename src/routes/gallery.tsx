@@ -63,16 +63,6 @@ export const Route = createFileRoute("/gallery")({
 const items = [
   {
     images: [
-      { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
-      { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
-      { src: creatorHubCreatePostNew.url, alt: "Creator Hub — Create Post" },
-    ],
-    title: "Creator Hub",
-    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML\u00a0", "2026"],
-    body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
-  },
-  {
-    images: [
       { src: voyagerWelcomeMockup.url, alt: "Voyager — Banner mockup" },
       { src: voyagerWelcome.url, alt: "Voyager — Welcome" },
       { src: voyagerChat.url, alt: "Voyager — Conversational AI" },
@@ -82,6 +72,16 @@ const items = [
     title: "Voyager - AI Travel Assistant",
     tags: ["AI TRAVEL TOOL", "CONCEPT", "AI FOR UX", "DESIGNLAB 2026"],
     body: "Integrating AI in UX workflow is a must. Using AI as a companion to speed up the workflow and the end result.This project is executed end to end by using AI tools.\u00a0",
+  },
+  {
+    images: [
+      { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
+      { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
+      { src: creatorHubCreatePostNew.url, alt: "Creator Hub — Create Post" },
+    ],
+    title: "Creator Hub",
+    tags: ["CAPSTONE PROJECT", "MIT", "CONCEPT", "AI", "ML\u00a0", "2026"],
+    body: "I recently completed a certification of 'Designing and Building AI Products and Services' by MIT XPRO. The  capstone project I worked on was designing a platform to post across all the social media channels at once.",
   },
   {
     images: [
