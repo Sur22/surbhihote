@@ -2153,7 +2153,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
                   </div>
                   <AffiliateRealProblemCards />
-                  <strong className="block pl-8 md:pl-12">So, I designed for gradual adoption rather than dramatic change.</strong>
+                  <strong className="block pl-8 md:pl-12">So, I designed for flat adoption rather than dramatic change.</strong>
                 </blockquote>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
