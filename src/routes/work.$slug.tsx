@@ -1853,13 +1853,20 @@ Users needed an easy way to control and manage the notifications they want and s
           </p>
         )}
         {(c.slug === "affiliate-platform-redesign") && (
-          <div className="mt-10 mb-10">
-            <p className="text-lg font-bold leading-relaxed text-foreground">
-              Design decision: Make the starting point useful
-            </p>
-            <p className="text-lg leading-relaxed text-foreground/85 mt-4">
-              The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows.
-            </p>
+          <div className="mt-10 mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-50"
+              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+            />
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+            <div className="relative z-10">
+              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Design decision: Make the starting point useful</h3>
+              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
+                  {"The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows."}
+                </blockquote>
+              </div>
+            </div>
           </div>
         )}
         {(c.slug === "affiliate-platform-redesign") ? (
