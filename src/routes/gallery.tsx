@@ -27,6 +27,8 @@ import productBefore from "@/assets/product-before.png.asset.json";
 import productAfter from "@/assets/product-after.png.asset.json";
 import gsnListView from "@/assets/gsn_list_view.png.asset.json";
 import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
+import creatorHubAnalyticsDashboard from "@/assets/creator-hub-analytics-dashboard.png.asset.json";
+import creatorHubAiGrowthDashboard from "@/assets/creator-hub-ai-growth-dashboard.png.asset.json";
 import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import creatorHubCreatePostNew from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
@@ -75,6 +77,8 @@ const items = [
   },
   {
     images: [
+      { src: creatorHubAnalyticsDashboard.url, alt: "Creator Hub — Analytics Dashboard" },
+      { src: creatorHubAiGrowthDashboard.url, alt: "Creator Hub — AI Growth Dashboard" },
       { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
       { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
       { src: creatorHubCreatePostNew.url, alt: "Creator Hub — Create Post" },
@@ -274,6 +278,8 @@ function GalleryPage() {
                           ? "w-[85%] mx-auto"
                           : "w-full",
                         it.title === "Voyager - AI Travel Assistant" && idx === 0 && "w-[22%]",
+                        it.title === "Creator Hub" && idx === 0 && "w-[28%]",
+                        it.title === "Creator Hub" && idx === 1 && "w-[50%]",
                         it.title === "Creator Hub" ||
                         it.title === "Data Visualization" ||
                         it.title === "GSN Marketplace - A white label e-com for clients  "
