@@ -1577,12 +1577,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ].map((persona, idx) => (
                     <div
                       key={`${persona.name}-${idx}`}
-                      className="relative rounded-xl shadow overflow-hidden"
+                      className="relative rounded-xl border border-azure shadow overflow-hidden"
                     >
-                      <div
-                        className="absolute inset-0 bg-cover bg-center opacity-50"
-                        style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-                      />
                       <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                       <div className="relative p-6 text-foreground dark:text-primary">
                         <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
