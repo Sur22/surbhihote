@@ -1852,6 +1852,16 @@ Users needed an easy way to control and manage the notifications they want and s
             }
           </p>
         )}
+        {(c.slug === "affiliate-platform-redesign") && (
+          <div className="mt-10 mb-10">
+            <p className="text-lg font-bold leading-relaxed text-foreground">
+              Design decision: Make the starting point useful
+            </p>
+            <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+              The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows.
+            </p>
+          </div>
+        )}
         {(c.slug === "affiliate-platform-redesign") ? (
           <button
             type="button"
