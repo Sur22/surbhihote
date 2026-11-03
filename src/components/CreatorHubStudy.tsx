@@ -419,7 +419,7 @@ export function CreatorHubStudy() {
       <Section id="design" title="Design">
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
-            {([] as { src: string; alt: string; caption: string; width?: number }[])[
+            {([
               {
                 src: galleryAnalyticsDashboard.url,
                 alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
