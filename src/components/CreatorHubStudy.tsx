@@ -448,7 +448,7 @@ export function CreatorHubStudy() {
                 caption:
                   "Turning analytics into a clear next action, not another dashboard.",
               },
-            ].map((img) => (
+            ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
               <CarouselItem
                 key={img.caption}
                 className="basis-auto"
