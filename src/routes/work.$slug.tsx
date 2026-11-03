@@ -2210,24 +2210,9 @@ Users needed an easy way to control and manage the notifications they want and s
                         why: "Help affiliates identify orders needing attention",
                       },
                       {
-                        learned: "Users had normalized workarounds",
-                        implication: "Fix the highest-impact broken workflows first",
-                        why: "",
-                      },
-                      {
                         learned: "D/V/P/C indicators were important",
                         implication: "Preserve familiar status cues",
                         why: "Retain signals affiliates used to understand order activity",
-                      },
-                      {
-                        learned: "Affiliates manually refreshed constantly",
-                        implication: "Introduce live updates",
-                        why: "",
-                      },
-                      {
-                        learned: "Order revisions were difficult to track",
-                        implication: "Improve revision visibility",
-                        why: "",
                       },
                       {
                         learned: "Users were resistant to major change",
@@ -2243,6 +2228,21 @@ Users needed an easy way to control and manage the notifications they want and s
                         learned: "Filters are not holding after they go to search results\u00a0",
                         implication: "Create views, search results needs to hold",
                         why: "Avoid repeatedly rebuilding the same working context",
+                      },
+                      {
+                        learned: "Users had normalized workarounds",
+                        implication: "Fix the highest-impact broken workflows first",
+                        why: "",
+                      },
+                      {
+                        learned: "Affiliates manually refreshed constantly",
+                        implication: "Introduce live updates",
+                        why: "",
+                      },
+                      {
+                        learned: "Order revisions were difficult to track",
+                        implication: "Improve revision visibility",
+                        why: "",
                       },
                       {
                         learned: "Language and naming is confusing\u00a0",
