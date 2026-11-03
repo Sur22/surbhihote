@@ -419,11 +419,12 @@ export function CreatorHubStudy() {
       <Section id="design" title="Design">
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
-            {[
+            {([
               {
                 src: galleryAnalyticsDashboard.url,
                 alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
                 caption: "Analytics overview on mobile — audience metrics at a glance.",
+                width: 30,
               },
               {
                 src: galleryAiGrowthDashboard.url,
@@ -447,7 +448,7 @@ export function CreatorHubStudy() {
                 caption:
                   "Turning analytics into a clear next action, not another dashboard.",
               },
-            ].map((img) => (
+            ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
               <CarouselItem key={img.caption}>
                 <figure>
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
@@ -455,7 +456,8 @@ export function CreatorHubStudy() {
                       src={img.src}
                       alt={img.alt}
                       loading="lazy"
-                      className="w-full h-auto object-contain"
+                      style={img.width ? { width: `${img.width}%` } : undefined}
+                      className={img.width ? "mx-auto h-auto object-contain" : "w-full h-auto object-contain"}
                     />
                   </div>
                   <figcaption className="mt-4 text-sm text-muted-foreground">
