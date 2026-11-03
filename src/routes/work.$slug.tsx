@@ -2199,6 +2199,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     <TableRow className="border-b border-foreground/20 hover:bg-transparent">
                       <TableHead className="text-foreground font-semibold">What we learned</TableHead>
                       <TableHead className="text-foreground font-semibold">Design implication</TableHead>
+                      <TableHead className="text-foreground font-semibold">Why this mattered</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -2206,38 +2207,47 @@ Users needed an easy way to control and manage the notifications they want and s
                       {
                         learned: "Dollars lost due to missed orders\u00a0",
                         implication: "Visually indicate the last touched date\u00a0\u00a0",
+                        why: "Help affiliates identify orders needing attention",
                       },
                       {
                         learned: "Users had normalized workarounds",
                         implication: "Fix the highest-impact broken workflows first",
+                        why: "",
                       },
                       {
                         learned: "D/V/P/C indicators were important",
                         implication: "Preserve familiar status cues",
+                        why: "Retain signals affiliates used to understand order activity",
                       },
                       {
                         learned: "Affiliates manually refreshed constantly",
                         implication: "Introduce live updates",
+                        why: "",
                       },
                       {
                         learned: "Order revisions were difficult to track",
                         implication: "Improve revision visibility",
+                        why: "",
                       },
                       {
                         learned: "Users were resistant to major change",
                         implication: "Design for gradual adoption",
+                        why: "Reduce relearning during business-critical work",
                       },
                       {
                         learned: "Users don't want to see time with 12 hour clock",
                         implication: "Keep the military time as it is\u00a0",
+                        why: "Respect an established workflow preference",
                       },
                       {
                         learned: "Filters are not holding after they go to search results\u00a0",
                         implication: "Create views, search results needs to hold",
+                        why: "Avoid repeatedly rebuilding the same working context",
                       },
                       {
                         learned: "Language and naming is confusing\u00a0",
                         implication: "Clear naming for CTA's, Pages,Sections etc.\u00a0",
+                        why: "",
                       },
                     ].map((row, i) => (
                       <TableRow
@@ -2246,6 +2256,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       >
                         <TableCell className="text-foreground/90">{row.learned}</TableCell>
                         <TableCell className="text-foreground/90">{row.implication}</TableCell>
+                        <TableCell className="text-foreground/90">{row.why}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
