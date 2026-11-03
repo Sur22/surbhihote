@@ -2256,7 +2256,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       >
                         <TableCell className="text-foreground/90">{row.learned}</TableCell>
                         <TableCell className="text-foreground/90">{row.implication}</TableCell>
-                        <TableCell className="text-foreground/90">{row.why}</TableCell>
+                        <TableCell className="text-foreground/90">{row.why ? row.why : <span className="text-foreground/40">—</span>}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
