@@ -450,7 +450,7 @@ export function CreatorHubStudy() {
                   "Turning analytics into a clear next action, not another dashboard.",
               },
             ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
-              <CarouselItem key={img.caption}>
+              <CarouselItem key={img.caption} className="flex items-center">
                 <figure>
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img
