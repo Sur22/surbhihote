@@ -449,18 +449,15 @@ export function CreatorHubStudy() {
                   "Turning analytics into a clear next action, not another dashboard.",
               },
             ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
-              <CarouselItem
-                key={img.caption}
-                className="basis-auto"
-                style={img.width ? { width: `${img.width}%` } : undefined}
-              >
+              <CarouselItem key={img.caption}>
                 <figure>
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img
                       src={img.src}
                       alt={img.alt}
                       loading="lazy"
-                      className="w-full h-auto object-contain"
+                      style={img.width ? { width: `${img.width}%` } : undefined}
+                      className={img.width ? "mx-auto h-auto object-contain" : "w-full h-auto object-contain"}
                     />
                   </div>
                   <figcaption className="mt-4 text-sm text-muted-foreground">
