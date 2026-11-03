@@ -10,6 +10,9 @@ import {
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json";
+import galleryAnalyticsDashboard from "@/assets/creator-hub-analytics-dashboard.png.asset.json";
+import galleryAiGrowthDashboard from "@/assets/creator-hub-ai-growth-dashboard.png.asset.json";
+import galleryDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 
 const creatorHubSections = [
   { id: "overview", label: "Overview" },
