@@ -424,6 +424,7 @@ export function CreatorHubStudy() {
                 src: galleryAnalyticsDashboard.url,
                 alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
                 caption: "Analytics overview on mobile — audience metrics at a glance.",
+                width: 30,
               },
               {
                 src: galleryAiGrowthDashboard.url,
@@ -448,7 +449,11 @@ export function CreatorHubStudy() {
                   "Turning analytics into a clear next action, not another dashboard.",
               },
             ].map((img) => (
-              <CarouselItem key={img.caption}>
+              <CarouselItem
+                key={img.caption}
+                className="basis-auto"
+                style={img.width ? { width: `${img.width}%` } : undefined}
+              >
                 <figure>
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img
