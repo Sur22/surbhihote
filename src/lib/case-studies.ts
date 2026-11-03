@@ -145,7 +145,7 @@ const _caseStudies: CaseStudy[] = [
     goal: "\n",
     research: {
       ...defaultMeta.research,
-      userInterview: "To get an idea of the users a survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.\nOpen-Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable?\n3. Please share your feedback, additional comments, or suggestions.\n\nThe total number of responses we got for the survey was 128.\n\nThe major issues that emerged from the open-ended question responses are as follows:",
+      userInterview: "To get an idea of the users a survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.We got for the survey was 128 responses.\u00a0\nOpen-Ended Questions\n1. Do you use workarounds to get your job done?\n2. What new features would make the site more valuable?\n3. Please share your feedback, additional comments, or suggestions.\n\nThe major issues that emerged from the open-ended question responses are as follows:",
     },
     role: "Lead Product Designer",
     tags: ["AD-TECH · ADVERTISING · ENTERPRISE · MEDIA\u00a0· AI WORKFLOW\u00a0"],
