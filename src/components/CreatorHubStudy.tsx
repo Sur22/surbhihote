@@ -421,6 +421,21 @@ export function CreatorHubStudy() {
           <CarouselContent>
             {[
               {
+                src: galleryAnalyticsDashboard.url,
+                alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
+                caption: "Analytics overview on mobile — audience metrics at a glance.",
+              },
+              {
+                src: galleryAiGrowthDashboard.url,
+                alt: "Creator Hub publishing form and AI growth dashboard on two smartphone screens",
+                caption: "Publishing and AI growth readiness, side by side on mobile.",
+              },
+              {
+                src: galleryDashboard.url,
+                alt: "Creator Hub dashboard",
+                caption: "The Creator Hub dashboard.",
+              },
+              {
                 src: createPost.url,
                 alt: "Creator Hub wireframe showing the AI suggestion, review, and publish flow",
                 caption:
