@@ -430,6 +430,7 @@ export function CreatorHubStudy() {
                 src: galleryAiGrowthDashboard.url,
                 alt: "Creator Hub publishing form and AI growth dashboard on two smartphone screens",
                 caption: "Publishing and AI growth readiness, side by side on mobile.",
+                width: 85,
               },
               {
                 src: galleryDashboard.url,
