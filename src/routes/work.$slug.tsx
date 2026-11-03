@@ -2232,22 +2232,22 @@ Users needed an easy way to control and manage the notifications they want and s
                       {
                         learned: "Users had normalized workarounds",
                         implication: "Fix the highest-impact broken workflows first",
-                        why: "",
+                        why: "Address critical pain points without disrupting established workflows.",
                       },
                       {
                         learned: "Affiliates manually refreshed constantly",
                         implication: "Introduce live updates",
-                        why: "",
+                        why: "Reduce repetitive effort and ensure timely visibility into order changes.",
                       },
                       {
                         learned: "Order revisions were difficult to track",
                         implication: "Improve revision visibility",
-                        why: "",
+                        why: "Help affiliates identify changes quickly and avoid missed or incorrect updates.",
                       },
                       {
                         learned: "Language and naming is confusing\u00a0",
                         implication: "Clear naming for CTA's, Pages,Sections etc.\u00a0",
-                        why: "",
+                        why: "Reduce ambiguity and help users navigate and complete tasks confidently.",
                       },
                     ].map((row, i) => (
                       <TableRow
