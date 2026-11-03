@@ -10,6 +10,9 @@ import {
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json";
+import galleryAnalyticsDashboard from "@/assets/creator-hub-analytics-dashboard.png.asset.json";
+import galleryAiGrowthDashboard from "@/assets/creator-hub-ai-growth-dashboard.png.asset.json";
+import galleryDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 
 const creatorHubSections = [
   { id: "overview", label: "Overview" },
@@ -417,6 +420,21 @@ export function CreatorHubStudy() {
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
             {[
+              {
+                src: galleryAnalyticsDashboard.url,
+                alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
+                caption: "Analytics overview on mobile — audience metrics at a glance.",
+              },
+              {
+                src: galleryAiGrowthDashboard.url,
+                alt: "Creator Hub publishing form and AI growth dashboard on two smartphone screens",
+                caption: "Publishing and AI growth readiness, side by side on mobile.",
+              },
+              {
+                src: galleryDashboard.url,
+                alt: "Creator Hub dashboard",
+                caption: "The Creator Hub dashboard.",
+              },
               {
                 src: createPost.url,
                 alt: "Creator Hub wireframe showing the AI suggestion, review, and publish flow",
