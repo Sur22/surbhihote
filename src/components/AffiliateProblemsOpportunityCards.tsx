@@ -5,15 +5,15 @@
    match its row with `stretch: true`. */
 const pairs = [
   {
-    problem: "A codebase that couldn't take new functionality",
-    opportunity:
-      "A foundation built to extend, so the platform can grow instead of freeze again.",
-    stretch: false,
-  },
-  {
     problem: "Manual refreshing to catch order updates",
     opportunity:
       "The sharpest pain point. Affiliates were reloading the page every few minutes so they wouldn't miss an order or revision. The redesign surfaces changes live, turning a constant manual chore into a system that tells users when something moves.",
+    stretch: false,
+  },
+  {
+    problem: "A codebase that couldn't take new functionality",
+    opportunity:
+      "A foundation built to extend, so the platform can grow instead of freeze again.",
     stretch: false,
   },
   {
