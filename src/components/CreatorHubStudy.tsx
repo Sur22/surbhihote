@@ -10,8 +10,8 @@ import {
 import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json";
-import galleryAnalyticsDashboard from "@/assets/creator-hub-analytics-dashboard.png.asset.json";
-import galleryAiGrowthDashboard from "@/assets/creator-hub-ai-growth-dashboard.png.asset.json";
+import galleryDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v4.png.asset.json";
+import galleryCreateDraftsInsights from "@/assets/creator-hub-create-drafts-insights.png.asset.json";
 import galleryDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 
 const creatorHubSections = [
@@ -421,15 +421,15 @@ export function CreatorHubStudy() {
           <CarouselContent>
             {([
               {
-                src: galleryAnalyticsDashboard.url,
-                alt: "Creator Hub analytics overview on a smartphone mockup, with audience metrics and post-performance stats",
-                caption: "Analytics overview on mobile — audience metrics at a glance.",
+                src: galleryDashboardMockup.url,
+                alt: "Creator Hub dashboard on a smartphone mockup, showing the overview with subscriber, reach, views and engagement metrics plus latest post performance",
+                caption: "Dashboard overview on mobile — audience metrics and latest post performance at a glance.",
                 width: 30,
               },
               {
-                src: galleryAiGrowthDashboard.url,
-                alt: "Creator Hub publishing form and AI growth dashboard on two smartphone screens",
-                caption: "Publishing and AI growth readiness, side by side on mobile.",
+                src: galleryCreateDraftsInsights.url,
+                alt: "Three Creator Hub smartphone screens side by side: the Create flow with channel and media pickers, the Drafts list, and the AI Insights growth engine with a viral readiness score",
+                caption: "Create, Drafts, and AI Insights — the three states of one posting workflow.",
                 width: 85,
               },
               {
