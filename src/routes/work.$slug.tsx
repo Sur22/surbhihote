@@ -647,8 +647,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                     key={point}
                     className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                   >
-                    <div className="relative z-10">
-                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                    <div className="relative z-10 flex items-baseline gap-3">
+                      <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
                         {idx + 1}
                       </h4>
                       <p className="text-sm text-card-foreground">{point}</p>
@@ -696,8 +696,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       key={point}
                       className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                     >
-                      <div className="relative z-10">
-                        <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                      <div className="relative z-10 flex items-baseline gap-3">
+                        <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
                           {idx + 1}
                         </h4>
                         <p className="text-sm text-card-foreground">{point}</p>
