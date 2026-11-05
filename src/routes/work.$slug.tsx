@@ -633,11 +633,29 @@ Affiliates - the partner networks who buy and transact against that inventory ru
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project\u00a0 via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
-\u00a01. Users getting so many spam notifications
-\u00a02. Important notifications for their job getting lost resulting into delays and missed deadlines
-\u00a03. Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
+                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project\u00a0 via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications`}
               </p>
+              {/* The three problem points as Design Principle cards: the same
+                  peach surface, amber drop and rounded-xl, bold heading over body. */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
+                {[
+                  "Users getting so many spam notifications",
+                  "Important notifications for their job getting lost resulting into delays and missed deadlines",
+                  "Users need only selective set of notifications which are important for their job responsibilities",
+                ].map((point, idx) => (
+                  <div
+                    key={point}
+                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  >
+                    <div className="relative z-10">
+                      <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                        {idx + 1}
+                      </h4>
+                      <p className="text-sm text-card-foreground">{point}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {c.slug === "atlas2" && (
@@ -663,8 +681,30 @@ Affiliates - the partner networks who buy and transact against that inventory ru
             <div>
               <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.opportunity ?? c.goal}
+                {(c.opportunity ?? c.goal).split("\n")[0]}
               </p>
+              {/* The numbered goal points as Design Principle cards: the same
+                  peach surface, amber drop and rounded-xl, bold heading over body. */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
+                {(c.opportunity ?? c.goal)
+                  .split("\n")
+                  .slice(1)
+                  .map((line) => line.replace(/^\s*\u00a0*\d+\.\s*/, "").trim())
+                  .filter(Boolean)
+                  .map((point, idx) => (
+                    <div
+                      key={point}
+                      className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                    >
+                      <div className="relative z-10">
+                        <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
+                          {idx + 1}
+                        </h4>
+                        <p className="text-sm text-card-foreground">{point}</p>
+                      </div>
+                    </div>
+                  ))}
+              </div>
             </div>
           )}
           {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && (
