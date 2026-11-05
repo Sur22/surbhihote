@@ -27,8 +27,8 @@ import productBefore from "@/assets/product-before.png.asset.json";
 import productAfter from "@/assets/product-after.png.asset.json";
 import gsnListView from "@/assets/gsn_list_view.png.asset.json";
 import creatorHubDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
-import creatorHubAnalyticsDashboard from "@/assets/creator-hub-analytics-dashboard.png.asset.json";
-import creatorHubAiGrowthDashboard from "@/assets/creator-hub-ai-growth-dashboard.png.asset.json";
+import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v4.png.asset.json";
+import creatorHubCreateDraftsInsights from "@/assets/creator-hub-create-drafts-insights.png.asset.json";
 import creatorHubAnalytics1 from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import creatorHubCreatePostNew from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import creatorHubGradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
@@ -77,8 +77,8 @@ const items = [
   },
   {
     images: [
-      { src: creatorHubAnalyticsDashboard.url, alt: "Creator Hub — Analytics Dashboard" },
-      { src: creatorHubAiGrowthDashboard.url, alt: "Creator Hub — AI Growth Dashboard" },
+      { src: creatorHubDashboardMockup.url, alt: "Creator Hub — Dashboard Mockup" },
+      { src: creatorHubCreateDraftsInsights.url, alt: "Creator Hub — Create, Drafts, AI Insights" },
       { src: creatorHubDashboard.url, alt: "Creator Hub — Dashboard" },
       { src: creatorHubAnalytics1.url, alt: "Creator Hub — Analytics" },
       { src: creatorHubCreatePostNew.url, alt: "Creator Hub — Create Post" },
@@ -140,6 +140,8 @@ const items = [
    percentage of the artwork) and curves the screenshot's own corners at 8px.
    Insets were measured off each PNG's fully opaque bounds. */
 const CAROUSEL_CLIP: Record<string, [number, number, number, number]> = {
+  "Creator Hub — Dashboard Mockup": [1.35, 1.8, 1.8, 2.14],
+  "Creator Hub — Create, Drafts, AI Insights": [1.27, 2.02, 0.98, 2.41],
   "Creator Hub — Dashboard": [1.39, 2.29, 2.77, 1.2],
   "Creator Hub — Analytics": [1.07, 1.67, 1.96, 1.2],
   "Creator Hub — Create Post": [1.73, 2.34, 2.57, 1.41],
