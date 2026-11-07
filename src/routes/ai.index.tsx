@@ -76,6 +76,26 @@ function AIPage() {
               <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
               <div className="relative z-10">
                 <div className="overflow-hidden aspect-[4/3] flex items-center justify-center">
+                  {project.slug === "designing-ai-for-real-work" ? (
+                    <div className="relative w-full h-full transition-transform duration-700 group-hover:scale-[1.03]">
+                      <img
+                        src={advancedTvAgentImage.url}
+                        alt="Advanced TV Agent campaign data chat with visual summary"
+                        width={800}
+                        height={600}
+                        loading="lazy"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 w-[78%] rounded-[8px] shadow-lg object-cover"
+                      />
+                      <img
+                        src={rfpAssistantImage.url}
+                        alt={project.imageAlt}
+                        width={800}
+                        height={600}
+                        loading="lazy"
+                        className="absolute left-[4%] top-1/2 -translate-y-1/2 h-[88%] w-auto rounded-[8px] shadow-xl object-cover"
+                      />
+                    </div>
+                  ) : (
                   <img
                     src={project.image}
                     alt={project.imageAlt}
@@ -92,6 +112,7 @@ function AIPage() {
                             : "object-cover w-full h-full"
                     }`}
                   />
+                  )}
                 </div>
                 <div className="p-6 md:p-8">
                   <span className="eyebrow text-xs dark:text-foreground/75">
