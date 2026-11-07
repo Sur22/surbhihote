@@ -41,6 +41,12 @@ export const Route = createFileRoute("/ai/")({
 });
 
 function AIPage() {
+  const projects = [...aiProjects];
+  const portfolioIndex = projects.findIndex((project) => project.slug === "vibe-coded-portfolio");
+  if (portfolioIndex >= 0) {
+    const [portfolio] = projects.splice(portfolioIndex, 1);
+    if (portfolio) projects.splice(1, 0, portfolio);
+  }
   return (
     <SiteLayout>
       <section className="mx-auto max-w-[1100px] px-6 md:px-10 py-20 md:py-28">
@@ -57,7 +63,7 @@ function AIPage() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {aiProjects.map((project) => (
+          {projects.map((project) => (
           <Link
               key={project.title}
               to={project.path ?? "/ai/$slug"}
