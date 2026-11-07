@@ -19,7 +19,7 @@ While the use cases were different, both required thinking beyond a traditional 
 
 ---
 
-## Project 01 — AI Knowledge Assistant
+## Project 01 - AI Knowledge Assistant
 
 ### Making AI-generated answers easier to verify
 
@@ -63,7 +63,7 @@ Designing trustworthy AI means helping users evaluate its responses, not simply 
 
 ---
 
-## Project 02 — Campaign & Viewership Data Agent
+## Project 02 - Campaign & Viewership Data Agent
 
 ### Making complex data accessible through natural language
 
