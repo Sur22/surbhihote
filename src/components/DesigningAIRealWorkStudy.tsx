@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import document from "@/content/designing-ai-for-real-work.md?raw";
+import campaignDataAgentDashboard from "@/assets/advanced-tv-agent-dashboard.png.asset.json";
 
 const sectionIds = ["overview", "knowledge-assistant", "campaign-data-agent", "reflection", "looking-ahead"];
 const sections = document.split(/^## /m).slice(1).map((part, index) => {
@@ -16,6 +17,14 @@ export function DesigningAIRealWorkStudy() {
       <div className="rule" />
       {sections.map((section, index) => (
         <section key={section.id} id={section.id} className={`py-16 md:py-24 scroll-mt-24 ${index < sections.length - 1 ? "border-b border-border" : ""}`}>
+          {section.id === "campaign-data-agent" && (
+            <img
+              src={campaignDataAgentDashboard.url}
+              alt="Advanced TV Agent dashboard showing a campaign data chat with a database table and doughnut chart visual summary"
+              loading="lazy"
+              className="mb-8 w-full rounded-xl border border-border"
+            />
+          )}
           <h2 className="h2 mb-8">{section.title}</h2>
           <div className="space-y-6">
             <ReactMarkdown components={{
