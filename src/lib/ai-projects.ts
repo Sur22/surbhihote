@@ -2,6 +2,7 @@ import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v3.
 import voyagerWelcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio-devices.png.asset.json";
 import resourcesImage from "@/assets/resources-banner.jpg.asset.json";
+import realWorkCover from "@/assets/designing-ai-real-work-cover.jpg";
 
 export type AIProject = {
   slug: string;
@@ -13,6 +14,8 @@ export type AIProject = {
   image: string;
   imageAlt: string;
   role?: string;
+  company?: string;
+  focus?: string;
   timeframe?: string;
   tools?: string;
   tasksPerformed?: string;
@@ -24,6 +27,20 @@ export type AIProject = {
 };
 
 export const aiProjects: AIProject[] = [
+  {
+    slug: "designing-ai-for-real-work",
+    index: "00",
+    title: "Designing AI for Real Work",
+    subtitle: "Two internal AI experiences focused on trust, clarity, and making complex information actionable.",
+    tags: ["AI PRODUCT DESIGN", "CONVERSATIONAL INTERFACES", "HUMAN-AI INTERACTION", "DATA VISUALIZATION"],
+    description: "Two internal AI experiences focused on trust, clarity, and making complex information actionable.",
+    image: realWorkCover,
+    imageAlt: "Conceptual illustration of document-grounded AI answers and conversational campaign data exploration",
+    path: "/designing-ai-for-real-work",
+    company: "Ampersand",
+    role: "Product Designer, collaborating with Engineering",
+    focus: "AI Product Design · Conversational Interfaces · Human-AI Interaction · Data Visualization",
+  },
   {
     slug: "creator-hub",
     index: "01",

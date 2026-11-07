@@ -10,6 +10,7 @@ import { aiProjects, type AIProject } from "@/lib/ai-projects";
 import { CreatorHubStudy } from "@/components/CreatorHubStudy";
 import { VibeCodedPortfolioStudy } from "@/components/VibeCodedPortfolioStudy";
 import { VoyagerStudy } from "@/components/VoyagerStudy";
+import { DesigningAIRealWorkStudy } from "@/components/DesigningAIRealWorkStudy";
 import aiToolsPdf from "@/assets/AI-Tools-for-the-Design-Process.pdf.asset.json";
 import adoptingAiGuidePdf from "@/assets/Adopting-AI-in-the-Design-Process-a-guide-_for_product_teams.pdf.asset.json";
 import promptLibraryZip from "@/assets/Prompt-Library-Template.zip.asset.json";
@@ -90,7 +91,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           <img
             src={project.image}
             alt={project.imageAlt}
-            loading="lazy"
+            loading={project.slug === "designing-ai-for-real-work" ? "eager" : "lazy"}
+            width={project.slug === "designing-ai-for-real-work" ? 1536 : undefined}
+            height={project.slug === "designing-ai-for-real-work" ? 1024 : undefined}
             className={
               project.slug === "voyager"
                 ? "w-1/2 max-w-[265px] mx-auto h-auto"
@@ -190,13 +193,17 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
 
         {(project.role || project.timeframe || project.tools || project.tasksPerformed) && (
           <section className="mt-10 pb-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
-              {[
+            <div className={`grid grid-cols-1 sm:grid-cols-2 ${project.slug === "designing-ai-for-real-work" ? "md:grid-cols-3" : "md:grid-cols-4"} gap-8 border-t border-border pt-8`}>
+              {(project.slug === "designing-ai-for-real-work" ? [
+                { k: "Company", v: project.company },
+                { k: "Role", v: project.role },
+                { k: "Focus", v: project.focus },
+              ] : [
                 { k: "Role", v: project.role },
                 { k: "Timeframe", v: project.timeframe },
                 { k: "Tools", v: project.tools },
                 { k: "Tasks Performed", v: project.tasksPerformed },
-              ]
+              ])
                 .filter((m) => m.v)
                 .map((m) => (
                   <div key={m.k}>
@@ -210,7 +217,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
           </section>
         )}
 
-        {project.slug === "creator-hub" ? (
+        {project.slug === "designing-ai-for-real-work" ? (
+          <DesigningAIRealWorkStudy />
+        ) : project.slug === "creator-hub" ? (
           <CreatorHubStudy />
         ) : project.slug === "voyager" ? (
           <VoyagerStudy />
@@ -272,7 +281,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
         <section className="mt-20 border-t border-border">
           <div className="pt-20 pb-10">
             <p className="eyebrow mb-10">More AI projects</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
               {others.map((p) => (
                 <Link
                   key={p.slug}
@@ -280,7 +289,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   params={p.path ? undefined : { slug: p.slug }}
                   className="group block"
                 >
-                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors whitespace-nowrap">
+                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors break-words">
                     {p.title}
                   </h3>
                   <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
