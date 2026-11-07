@@ -17,6 +17,14 @@ export function DesigningAIRealWorkStudy() {
       <div className="rule" />
       {sections.map((section, index) => (
         <section key={section.id} id={section.id} className={`py-16 md:py-24 scroll-mt-24 ${index < sections.length - 1 ? "border-b border-border" : ""}`}>
+          {section.id === "campaign-data-agent" && (
+            <img
+              src={campaignDataAgentDashboard.url}
+              alt="Advanced TV Agent dashboard showing a campaign data chat with a database table and doughnut chart visual summary"
+              loading="lazy"
+              className="mb-8 w-full rounded-xl border border-border"
+            />
+          )}
           <h2 className="h2 mb-8">{section.title}</h2>
           <div className="space-y-6">
             <ReactMarkdown components={{
