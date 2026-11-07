@@ -34,7 +34,7 @@ export const aiProjects: AIProject[] = [
     subtitle: "Two internal AI experiences focused on trust, clarity, and making complex information actionable.",
     tags: ["AI PRODUCT DESIGN", "CONVERSATIONAL INTERFACES", "HUMAN-AI INTERACTION", "DATA VISUALIZATION"],
     description: "Two internal AI experiences focused on trust, clarity, and making complex information actionable.",
-    image: realWorkCover,
+    image: realWorkCover.url,
     imageAlt: "Conceptual illustration of document-grounded AI answers and conversational campaign data exploration",
     path: "/designing-ai-for-real-work",
     company: "Ampersand",
