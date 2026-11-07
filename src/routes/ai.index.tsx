@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { aiProjects } from "@/lib/ai-projects";
+import rfpAssistantImage from "@/assets/rfp-response-assistant.png.asset.json";
+import advancedTvAgentImage from "@/assets/advanced-tv-agent.png.asset.json";
 
 export const Route = createFileRoute("/ai/")({
   head: () => ({
