@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import document from "@/content/designing-ai-for-real-work.md?raw";
+import campaignDataAgentDashboard from "@/assets/advanced-tv-agent-dashboard.png.asset.json";
 
 const sectionIds = ["overview", "knowledge-assistant", "campaign-data-agent", "reflection", "looking-ahead"];
 const sections = document.split(/^## /m).slice(1).map((part, index) => {
