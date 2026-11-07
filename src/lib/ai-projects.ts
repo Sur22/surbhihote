@@ -2,7 +2,7 @@ import creatorHubDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v3.
 import voyagerWelcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
 import vibeCodedPortfolio from "@/assets/vibe-coded-portfolio-devices.png.asset.json";
 import resourcesImage from "@/assets/resources-banner.jpg.asset.json";
-import realWorkCover from "@/assets/designing-ai-real-work-cover.jpg";
+import realWorkCover from "@/assets/rfp-response-assistant.png.asset.json";
 
 export type AIProject = {
   slug: string;
