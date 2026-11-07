@@ -85,7 +85,9 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                 ? "mt-[18px] overflow-hidden rounded-xl"
                 : project.slug === "resources"
                   ? "mt-[18px] mx-auto w-[45.1%] overflow-hidden rounded-xl border border-border bg-muted/30"
-                  : "mt-[18px] overflow-hidden rounded-xl border border-border bg-muted/30"
+                  : project.slug === "designing-ai-for-real-work"
+                    ? "mt-[18px] mx-auto w-[40%] overflow-hidden rounded-xl border border-border bg-muted/30"
+                    : "mt-[18px] overflow-hidden rounded-xl border border-border bg-muted/30"
           }
         >
           <img
