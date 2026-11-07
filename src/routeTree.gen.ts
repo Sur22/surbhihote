@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as CreatorHubAiProductDesignCaseStudyRouteImport } from './routes/creator-hub-ai-product-design-case-study'
+import { Route as DesigningAiForRealWorkRouteImport } from './routes/designing-ai-for-real-work'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as ProcessRouteImport } from './routes/process'
@@ -41,6 +42,11 @@ const CreatorHubAiProductDesignCaseStudyRoute =
     path: '/creator-hub-ai-product-design-case-study',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DesigningAiForRealWorkRoute = DesigningAiForRealWorkRouteImport.update({
+  id: '/designing-ai-for-real-work',
+  path: '/designing-ai-for-real-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
+  '/designing-ai-for-real-work': typeof DesigningAiForRealWorkRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -127,6 +134,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
+  '/designing-ai-for-real-work': typeof DesigningAiForRealWorkRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -145,6 +153,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/creator-hub-ai-product-design-case-study': typeof CreatorHubAiProductDesignCaseStudyRoute
+  '/designing-ai-for-real-work': typeof DesigningAiForRealWorkRoute
   '/gallery': typeof GalleryRoute
   '/mcp': typeof McpRoute
   '/process': typeof ProcessRoute
@@ -164,6 +173,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/creator-hub-ai-product-design-case-study'
+    | '/designing-ai-for-real-work'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -181,6 +191,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/creator-hub-ai-product-design-case-study'
+    | '/designing-ai-for-real-work'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -198,6 +209,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/creator-hub-ai-product-design-case-study'
+    | '/designing-ai-for-real-work'
     | '/gallery'
     | '/mcp'
     | '/process'
@@ -216,6 +228,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   CreatorHubAiProductDesignCaseStudyRoute: typeof CreatorHubAiProductDesignCaseStudyRoute
+  DesigningAiForRealWorkRoute: typeof DesigningAiForRealWorkRoute
   GalleryRoute: typeof GalleryRoute
   McpRoute: typeof McpRoute
   ProcessRoute: typeof ProcessRoute
@@ -251,6 +264,13 @@ declare module '@tanstack/react-router' {
       path: '/creator-hub-ai-product-design-case-study'
       fullPath: '/creator-hub-ai-product-design-case-study'
       preLoaderRoute: typeof CreatorHubAiProductDesignCaseStudyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/designing-ai-for-real-work': {
+      id: '/designing-ai-for-real-work'
+      path: '/designing-ai-for-real-work'
+      fullPath: '/designing-ai-for-real-work'
+      preLoaderRoute: typeof DesigningAiForRealWorkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -345,6 +365,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   CreatorHubAiProductDesignCaseStudyRoute:
     CreatorHubAiProductDesignCaseStudyRoute,
+  DesigningAiForRealWorkRoute: DesigningAiForRealWorkRoute,
   GalleryRoute: GalleryRoute,
   McpRoute: McpRoute,
   ProcessRoute: ProcessRoute,
