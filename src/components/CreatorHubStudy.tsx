@@ -11,7 +11,7 @@ import analytics from "@/assets/creator-hub-analytics-v2.png.asset.json";
 import createPost from "@/assets/creator-hub-create-post-v2.png.asset.json";
 import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json";
 import galleryDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v4.png.asset.json";
-import galleryCreateDraftsInsights from "@/assets/creator-hub-create-drafts-insights.png.asset.json";
+import galleryCreateDraftsInsights from "@/assets/creator-hub-create-drafts-insights-updated.png.asset.json";
 import galleryDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
 
 const creatorHubSections = [
