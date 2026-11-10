@@ -451,7 +451,7 @@ function IndexPage() {
             </h1>
             <p
               ref={heroCopyRef}
-              className="mt-4 font-serif text-[32px] leading-[1.18] md:text-[54px] text-foreground/80"
+              className="h3 mt-4 text-foreground/80"
             >
               Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products.
             </p>
