@@ -453,7 +453,7 @@ function IndexPage() {
               ref={heroCopyRef}
               className="mt-4 font-serif text-[32px] leading-[1.18] md:text-[54px] text-foreground/80"
             >
-              Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products
+              Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, and data-heavy products.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
