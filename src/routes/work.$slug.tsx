@@ -1903,7 +1903,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Make the starting point useful</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows."}
+                  {"The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows.\u00a0I replaced the legacy navigation menu with a dashboard that surfaced order summaries at a glance. I mapped the existing screens to preserve access to the workflows affiliates relied on.\u00a0"}
                 </blockquote>
               </div>
             </div>
@@ -2070,7 +2070,7 @@ Users needed an easy way to control and manage the notifications they want and s
             />
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Pushing stakeholder for the focus group</h3>
+              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Making the case for affiliate focus groups</h3>
               <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                   {"The stakeholders did not have answers to many of my questions as well as they had some of their own question, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
@@ -2182,7 +2182,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {(c.slug === "affiliate-platform-redesign") && (
         <section id="qualitative-research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research - Focus Group</h3>
+              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research – Focus Groups</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
                 I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
@@ -2206,7 +2206,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
                   </div>
                   <AffiliateRealProblemCards />
-                  <strong className="block pl-8 md:pl-12">So, I designed for a flat adoption rather than dramatic change.</strong>
+                  <strong className="block pl-8 md:pl-12">So, I designed for a gradual adoption rather than dramatic change.</strong>
                 </blockquote>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -2260,7 +2260,7 @@ Users needed an easy way to control and manage the notifications they want and s
                         why: "Reduce relearning during business-critical work",
                       },
                       {
-                        learned: "Users don't want to see time with 12 hour clock",
+                        learned: "Affiliates preferred the 24-hour clock",
                         implication: "Keep the military time as it is\u00a0",
                         why: "Respect an established workflow preference",
                       },
@@ -2352,7 +2352,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 </Table>
               </div>
               <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-                Based on focus group data few changes were made in the prioritization as highlighted int he table.
+                After the focus groups, I reprioritized the rollout. Phase 1 restored core order workflows and introduced auto-refresh. Phase 2 deferred larger changes such as messaging and in-platform notifications
               </p>
         </section>
       )}
