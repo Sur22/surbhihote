@@ -3016,7 +3016,7 @@ Users needed an easy way to control and manage the notifications they want and s
             ? <>
                 This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years; speed, stability, broken functionality, redundancy, and the constant manual refreshing{"\u00A0"} and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
                 The results I'm proudest of: a <strong>92%</strong> task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the <strong>~$2.5 Million</strong> the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "<strong>$0</strong> lost since launch" result protects.The biggest lesson wasn't about the interface; it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for gradual adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
-                The redesign taught me to preserve the cues people relied on and phase in changes that required them to learn new ways of working.{"\u00A0"}
+                <strong>The redesign taught me to preserve the cues people relied on and phase in changes that required them to learn new ways of working.</strong>{"\u00A0"}
                 Phase two, now in development, including a major shift in how affiliates communicate on the platform.
               </>
 
