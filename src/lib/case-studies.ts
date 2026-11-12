@@ -148,7 +148,7 @@ const _caseStudies: CaseStudy[] = [
       userInterview: "To get an idea of the users a survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.\nWe got 128 responses  for the survey.\n\nThe major issues that emerged from the 3 open-ended question responses are as follows:",
     },
     role: "Lead Product Designer",
-    tags: ["AMPERSAND ·AD-TECH · ADVERTISING · ENTERPRISE · SOLE DESIGNER · AI WORKFLOW\u00a0"],
+    tags: ["AMPERSAND · AD-TECH · ADVERTISING · ENTERPRISE · SOLE DESIGNER · AI WORKFLOW\u00a0"],
     cover: affiliateDashboard.url,
     summary:
       "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
@@ -219,7 +219,7 @@ const _caseStudies: CaseStudy[] = [
       ],
     },
     role: "Lead UI UX Designer ",
-    tags: ["SUUCHI", "SUUPLY CHAIN\u00a0", "PLM\u00a0", "B2B\u00a0SAAS\u00a0", "WEB\u00a0", "FOUNDING & SOLE DESIGNER"],
+    tags: ["SUUCHI", "SUUPLY CHAIN", "PLM", "B2B\u00a0SAAS", "WEB", "FOUNDING & SOLE DESIGNER"],
     cover: solace.url,
     summary:
       "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
@@ -290,7 +290,7 @@ const _caseStudies: CaseStudy[] = [
       ],
     },
     role: "Design Lead",
-    tags: ["SUUCHI\u00a0", "SUUPLY CHAIN", "PLM\u00a0", "\u00a0MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
+    tags: ["SUUCHI", "SUUPLY CHAIN", "PLM", "MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
     cover: notificationBannerTilted,
     summary:
       "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
