@@ -135,7 +135,7 @@ function CaseStudyArtwork({
            is centred inside the coloured area; translate keeps the column, the
            card height and the text side exactly where they are. */
         <div className={`relative z-10 flex ${imageHeight} items-center md:-translate-x-[11.7px]`}>
-          <div className="w-full overflow-hidden rounded-[0.4875rem] bg-card shadow-[0_20px_50px_-20px_color-mix(in_oklab,var(--foreground)_35%,transparent)] transition-transform duration-[1200ms] group-hover:scale-[1.02]">
+          <div className="w-full overflow-hidden rounded-[0.4875rem] border border-foreground/20 bg-card shadow-[0_20px_50px_-20px_color-mix(in_oklab,var(--foreground)_35%,transparent)] transition-transform duration-[1200ms] group-hover:scale-[1.02]">
             <img
               src={affiliateDashboard.url}
               alt={c.title}
