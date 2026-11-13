@@ -469,7 +469,7 @@ export function VoyagerStudy() {
                     <img
                       src={img.src}
                       alt={img.alt}
-                      loading="lazy"
+                      loading="eager"
                       className={`h-auto object-contain ${img.imgClass ?? "w-full"}`}
                     />
                   </div>
