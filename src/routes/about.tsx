@@ -101,7 +101,7 @@ function AboutPage() {
         </div>
 
         <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
-          <div className="md:col-span-5 order-2 md:order-1">
+          <div className="md:col-span-5 order-1">
             <div className="relative">
               <div
                 aria-hidden
@@ -113,7 +113,7 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-7 order-1 md:order-2">
+          <div className="md:col-span-7 order-2">
             <div className="prose max-w-none space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
                 Hi again! I am currently working for B2B&nbsp; Enterprise Ad-Tech Company in New York. I blend tech, and design and strategy, to solve complex problems. I care most about outcomes that hold up after launch, not just screens that look good in a portfolio.
