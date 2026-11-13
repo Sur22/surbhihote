@@ -478,6 +478,7 @@ export function CreatorHubStudy() {
           <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2" />
           <CarouselDots className="relative z-20 mt-6" />
         </Carousel>
+        </div>
       </Section>
 
       <Section id="reflection" title="Reflection" divider={false}>
