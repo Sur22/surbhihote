@@ -483,7 +483,7 @@ export function VoyagerStudy() {
                       src={img.src}
                       alt={img.alt}
                       loading="eager"
-                      className={`h-auto object-contain ${img.imgClass ?? "w-full"}`}
+                      className={`h-auto object-contain ${idx >= 1 ? "rounded-lg" : ""} ${img.imgClass ?? "w-full"}`}
                     />
                   </div>
                   <figcaption className="mt-4 text-sm text-muted-foreground text-center">
