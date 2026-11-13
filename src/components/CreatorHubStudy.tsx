@@ -13,6 +13,7 @@ import doubleDiamond from "@/assets/creator-hub-double-diamond-v2.png.asset.json
 import galleryDashboardMockup from "@/assets/creator-hub-dashboard-mockup-v4.png.asset.json";
 import galleryCreateDraftsInsights from "@/assets/creator-hub-create-drafts-insights-updated.png.asset.json";
 import galleryDashboard from "@/assets/creator-hub-dashboard-v2.png.asset.json";
+import gradientBg from "@/assets/creator-hub-gradient-bg.png.asset.json";
 
 const creatorHubSections = [
   { id: "overview", label: "Overview" },
@@ -417,6 +418,11 @@ export function CreatorHubStudy() {
       </Section>
 
       <Section id="design" title="Design">
+        <div
+          className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 shadow-xl"
+          style={{ borderRadius: "2.4%", backgroundImage: `url(${gradientBg.url})` }}
+        >
+          <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
             {([
@@ -472,6 +478,7 @@ export function CreatorHubStudy() {
           <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2" />
           <CarouselDots className="relative z-20 mt-6" />
         </Carousel>
+        </div>
       </Section>
 
       <Section id="reflection" title="Reflection" divider={false}>
