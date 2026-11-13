@@ -445,7 +445,7 @@ export function VoyagerStudy() {
               {
                 src: welcomeMockup.url,
                 alt: "Voyager banner mockup",
-                imgClass: "w-[35%] mx-auto",
+                imgClass: "w-[30%] mx-auto",
                 caption: "Voyager AI, a conversational travel planner.",
               },
               {
