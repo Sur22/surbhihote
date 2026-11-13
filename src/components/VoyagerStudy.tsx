@@ -445,6 +445,7 @@ export function VoyagerStudy() {
               {
                 src: welcomeMockup.url,
                 alt: "Voyager banner mockup",
+                imgClass: "w-[35%] mx-auto",
                 caption: "Voyager AI, a conversational travel planner.",
               },
               {
@@ -476,7 +477,7 @@ export function VoyagerStudy() {
                 <figure>
                   <div className={cn(
                     "overflow-hidden rounded-sm p-2",
-                    idx === 2 && "flex items-center justify-center"
+                    (idx === 0 || idx === 2) && "flex items-center justify-center"
                   )}>
                     <img
                       src={img.src}
