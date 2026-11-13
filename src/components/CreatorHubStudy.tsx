@@ -418,6 +418,11 @@ export function CreatorHubStudy() {
       </Section>
 
       <Section id="design" title="Design">
+        <div
+          className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 shadow-xl"
+          style={{ borderRadius: "2.4%", backgroundImage: `url(${gradientBg.url})` }}
+        >
+          <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
             {([
