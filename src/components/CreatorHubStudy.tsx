@@ -442,18 +442,21 @@ export function CreatorHubStudy() {
                 src: galleryDashboard.url,
                 alt: "Creator Hub dashboard",
                 caption: "The Creator Hub dashboard.",
+                width: 82,
               },
               {
                 src: createPost.url,
                 alt: "Creator Hub wireframe showing the AI suggestion, review, and publish flow",
                 caption:
                   "One workspace instead of four apps — the AI suggestion, review, and publish flow.",
+                width: 82,
               },
               {
                 src: analytics.url,
                 alt: "Creator Hub screen turning content analytics into a recommended next action",
                 caption:
                   "Turning analytics into a clear next action, not another dashboard.",
+                width: 82,
               },
             ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
               <CarouselItem key={img.caption} className="flex items-center">
