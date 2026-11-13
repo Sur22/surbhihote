@@ -445,7 +445,7 @@ export function VoyagerStudy() {
                 alt: "Voyager AI generated itinerary screen",
                 caption:
                   "A generated itinerary view that ties flights, stays, and daily activities into one editable plan.",
-                imgClass: "w-1/2 mx-auto",
+                imgClass: "w-[60%] mx-auto",
               },
               {
                 src: map.url,
