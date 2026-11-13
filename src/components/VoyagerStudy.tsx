@@ -473,7 +473,7 @@ export function VoyagerStudy() {
                       className={`h-auto object-contain ${img.imgClass ?? "w-full"}`}
                     />
                   </div>
-                  <figcaption className="mt-4 text-sm text-muted-foreground">
+                  <figcaption className="mt-4 text-sm text-muted-foreground text-center">
                     {img.caption}
                   </figcaption>
                 </figure>
