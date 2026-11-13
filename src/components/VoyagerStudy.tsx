@@ -12,6 +12,7 @@ import {
 import itinerary from "@/assets/voyager-itinerary.png.asset.json";
 import map from "@/assets/voyager-map.png.asset.json";
 import chat from "@/assets/voyager-chat.png.asset.json";
+import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -427,6 +428,15 @@ export function VoyagerStudy() {
       </Section>
 
       <Section id="design" title="End Product">
+        <div
+          className="relative overflow-hidden shadow-xl py-28"
+          style={{ borderRadius: "2.4%" }}
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${travelAiBg.url})`, opacity: 0.7 }}
+          />
+          <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" />
         <Carousel opts={{ loop: true }} className="relative group">
           <CarouselContent>
             {[
@@ -453,7 +463,7 @@ export function VoyagerStudy() {
               <CarouselItem key={img.caption}>
                 <figure>
                   <div className={cn(
-                    "overflow-hidden rounded-sm bg-secondary p-2",
+                    "overflow-hidden rounded-sm p-2",
                     idx === 0 && "flex items-center justify-center"
                   )}>
                     <img
@@ -474,6 +484,7 @@ export function VoyagerStudy() {
           <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2" />
           <CarouselDots className="relative z-20 mt-6" />
         </Carousel>
+        </div>
       </Section>
 
       <Section id="takeaways" title="Takeaways" divider={false}>
