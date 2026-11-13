@@ -467,7 +467,7 @@ export function CreatorHubStudy() {
                       className={img.width ? "mx-auto h-auto object-contain" : "w-full h-auto object-contain"}
                     />
                   </div>
-                  <figcaption className="mt-4 text-sm text-muted-foreground">
+                  <figcaption className="mt-4 text-sm text-muted-foreground text-center">
                     {img.caption}
                   </figcaption>
                 </figure>
