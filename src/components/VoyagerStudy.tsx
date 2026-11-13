@@ -12,6 +12,8 @@ import {
 import itinerary from "@/assets/voyager-itinerary.png.asset.json";
 import map from "@/assets/voyager-map.png.asset.json";
 import chat from "@/assets/voyager-chat.png.asset.json";
+import welcomeMockup from "@/assets/voyager-welcome-mockup.png.asset.json";
+import welcome from "@/assets/voyager-welcome.png.asset.json";
 import travelAiBg from "@/assets/travel-ai-bg.png.asset.json";
 
 const sections = [
@@ -441,6 +443,16 @@ export function VoyagerStudy() {
           <CarouselContent>
             {[
               {
+                src: welcomeMockup.url,
+                alt: "Voyager banner mockup",
+                caption: "Voyager AI, a conversational travel planner.",
+              },
+              {
+                src: welcome.url,
+                alt: "Voyager welcome screen",
+                caption: "The welcome screen invites travelers to describe their trip in plain language.",
+              },
+              {
                 src: itinerary.url,
                 alt: "Voyager AI generated itinerary screen",
                 caption:
@@ -464,7 +476,7 @@ export function VoyagerStudy() {
                 <figure>
                   <div className={cn(
                     "overflow-hidden rounded-sm p-2",
-                    idx === 0 && "flex items-center justify-center"
+                    idx === 2 && "flex items-center justify-center"
                   )}>
                     <img
                       src={img.src}
