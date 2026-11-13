@@ -457,7 +457,7 @@ export function CreatorHubStudy() {
               },
             ] as { src: string; alt: string; caption: string; width?: number }[]).map((img) => (
               <CarouselItem key={img.caption} className="flex items-center">
-                <figure>
+                <figure className="w-full">
                   <div className="overflow-hidden rounded-sm p-2">
                     <img
                       src={img.src}
