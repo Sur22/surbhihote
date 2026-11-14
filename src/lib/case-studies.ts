@@ -413,7 +413,7 @@ const _caseStudies: CaseStudy[] = [
         },
       ],
     },
-    role: "Design Lead",
+    role: "Founding UI UX Designer (Sole)",
     tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
     cover: atlas.url,
     summary:
