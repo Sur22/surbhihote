@@ -289,7 +289,7 @@ const _caseStudies: CaseStudy[] = [
         },
       ],
     },
-    role: "Design Lead",
+    role: "Founding UI UX Designer (Sole)\n\n\n\n",
     tags: ["SUUCHI", "SUUPLY CHAIN", "PLM", "MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
     cover: notificationBannerTilted,
     summary:
