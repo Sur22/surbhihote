@@ -290,7 +290,7 @@ const _caseStudies: CaseStudy[] = [
       ],
     },
     role: "Founding UI UX Designer (Sole)\n\n\n\n",
-    tags: ["SUUCHI", "SUUPLY CHAIN", "PLM", "MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
+    tags: ["SUUCHI", "PLM", "MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
     cover: notificationBannerTilted,
     summary:
       "Mobile notifications redesign for a supply-chain PLM on iOS and Android — granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
