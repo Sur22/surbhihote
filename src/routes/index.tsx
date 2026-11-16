@@ -445,7 +445,15 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     let tiltY = 0;
     let driftX = 0;
     let driftY = 0;
+    let scrollFade = 1;
     let raf = 0;
+
+    const onScroll = () => {
+      /* Fade and shrink the artwork over the first screenful of scroll, so
+         it steps aside as the case studies arrive. */
+      const range = window.innerHeight * 0.9;
+      scrollFade = Math.max(0, 1 - window.scrollY / range);
+    };
 
     const onMove = (e: MouseEvent) => {
       const nx = (e.clientX / window.innerWidth) * 2 - 1;
@@ -456,6 +464,8 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
       targetDriftY = -ny * MAX_DRIFT;
     };
 
+    const start = performance.now();
+
     const tick = (now: number) => {
       /* Ease toward the cursor so the motion glides instead of snapping. */
       tiltX += (targetTiltX - tiltX) * 0.06;
@@ -463,19 +473,25 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
       driftX += (targetDriftX - driftX) * 0.06;
       driftY += (targetDriftY - driftY) * 0.06;
       const bob = Math.sin((now / FLOAT_PERIOD) * Math.PI * 2) * FLOAT_AMPLITUDE;
+      /* The artwork fades in over its first half second on the page. */
+      const reveal = Math.min(1, (now - start) / 500);
       const el = artRef.current;
       if (el) {
+        el.style.opacity = (scrollFade * reveal).toFixed(3);
         el.style.transform =
           `perspective(1200px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) ` +
-          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(0.35)`;
+          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(${(0.35 * (1 - (1 - scrollFade) * 0.15)).toFixed(4)})`;
       }
       raf = requestAnimationFrame(tick);
     };
 
     window.addEventListener("mousemove", onMove);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     raf = requestAnimationFrame(tick);
     return () => {
       window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf);
     };
   }, [artRef]);
@@ -494,14 +510,15 @@ function IndexPage() {
         {/* The artwork's right edge tracks the theme switch in the nav. */}
         <div
           ref={heroArtRef}
-          className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
-            artRightInset === null ? "opacity-0" : "opacity-100"
+          className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat ${
+            artRightInset === null ? "invisible" : ""
           }`}
           style={{
             backgroundImage: `url(${heroBg.url})`,
             transform: "scale(0.35)",
             transformOrigin: "bottom right",
             right: artRightInset === null ? 0 : `${artRightInset}px`,
+            willChange: "transform, opacity",
           }}
         />
         <div className="mx-auto max-w-[1100px] px-6 md:px-10">
