@@ -423,33 +423,51 @@ function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
   return inset;
 }
 
-/** Tilts the hero artwork a few degrees toward the cursor. Desktop pointers
- *  only, and off entirely when the visitor prefers reduced motion. */
+/** Gives the hero artwork three calm motions: a slight tilt toward the
+ *  cursor, a small drift away from it (parallax), and a slow idle float so
+ *  it breathes even when the mouse is still. Desktop pointers only, and off
+ *  entirely when the visitor prefers reduced motion. */
 function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
   useEffect(() => {
     const fine = window.matchMedia("(pointer: fine)").matches;
     const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!fine || calm) return;
 
-    const MAX = 3; // degrees
-    let targetX = 0;
-    let targetY = 0;
-    let currentX = 0;
-    let currentY = 0;
+    const MAX_TILT = 3; // degrees
+    const MAX_DRIFT = 12; // px, opposite the cursor
+    const FLOAT_AMPLITUDE = 8; // px
+    const FLOAT_PERIOD = 6000; // ms per breath
+    let targetTiltX = 0;
+    let targetTiltY = 0;
+    let targetDriftX = 0;
+    let targetDriftY = 0;
+    let tiltX = 0;
+    let tiltY = 0;
+    let driftX = 0;
+    let driftY = 0;
     let raf = 0;
 
     const onMove = (e: MouseEvent) => {
-      targetY = ((e.clientX / window.innerWidth) * 2 - 1) * MAX;
-      targetX = -((e.clientY / window.innerHeight) * 2 - 1) * MAX;
+      const nx = (e.clientX / window.innerWidth) * 2 - 1;
+      const ny = (e.clientY / window.innerHeight) * 2 - 1;
+      targetTiltY = nx * MAX_TILT;
+      targetTiltX = -ny * MAX_TILT;
+      targetDriftX = -nx * MAX_DRIFT;
+      targetDriftY = -ny * MAX_DRIFT;
     };
 
-    const tick = () => {
-      /* Ease toward the cursor so the tilt glides instead of snapping. */
-      currentX += (targetX - currentX) * 0.06;
-      currentY += (targetY - currentY) * 0.06;
+    const tick = (now: number) => {
+      /* Ease toward the cursor so the motion glides instead of snapping. */
+      tiltX += (targetTiltX - tiltX) * 0.06;
+      tiltY += (targetTiltY - tiltY) * 0.06;
+      driftX += (targetDriftX - driftX) * 0.06;
+      driftY += (targetDriftY - driftY) * 0.06;
+      const bob = Math.sin((now / FLOAT_PERIOD) * Math.PI * 2) * FLOAT_AMPLITUDE;
       const el = artRef.current;
       if (el) {
-        el.style.transform = `perspective(1200px) rotateX(${currentX.toFixed(2)}deg) rotateY(${currentY.toFixed(2)}deg) scale(0.35)`;
+        el.style.transform =
+          `perspective(1200px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) ` +
+          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(0.35)`;
       }
       raf = requestAnimationFrame(tick);
     };
