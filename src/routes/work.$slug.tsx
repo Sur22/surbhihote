@@ -1735,7 +1735,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <h3 className="font-serif text-3xl mb-6 font-medium">Define Success Metrics{"\u00a0"}<br /></h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 {c.slug === "affiliate-platform-redesign"
-                  ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and — critically — agreed on 5 success metrics before design started, so 'done' was defined up front."
+                  ? "The final step was to define KPIs and how we would measure them. We converted themes into a prioritized, effort-vs-impact backlog and critically agreed on 5 success metrics before design started, so 'done' was defined up front."
                   : "The final step was to define KPIs and how we would measure them. We came up with 5 KPIs which cover all aspects of the project.\u00a0"}
               </p>
               <div className="flex justify-center">
