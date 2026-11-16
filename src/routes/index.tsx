@@ -445,7 +445,16 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     let tiltY = 0;
     let driftX = 0;
     let driftY = 0;
+    let spinStart: number | null = null;
     let raf = 0;
+
+    /* One full spin per hover, eased so it glides rather than snaps. */
+    const SPIN_DURATION = 1600; // ms
+    const host = artRef.current?.parentElement ?? null;
+    const onHover = () => {
+      if (spinStart === null) spinStart = performance.now();
+    };
+    host?.addEventListener("mouseenter", onHover);
 
     const onMove = (e: MouseEvent) => {
       const nx = (e.clientX / window.innerWidth) * 2 - 1;
