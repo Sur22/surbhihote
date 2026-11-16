@@ -423,9 +423,51 @@ function useHeroArtRight(copyRef: { current: HTMLParagraphElement | null }) {
   return inset;
 }
 
+/** Tilts the hero artwork a few degrees toward the cursor. Desktop pointers
+ *  only, and off entirely when the visitor prefers reduced motion. */
+function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
+  useEffect(() => {
+    const fine = window.matchMedia("(pointer: fine)").matches;
+    const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!fine || calm) return;
+
+    const MAX = 3; // degrees
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let raf = 0;
+
+    const onMove = (e: MouseEvent) => {
+      targetY = ((e.clientX / window.innerWidth) * 2 - 1) * MAX;
+      targetX = -((e.clientY / window.innerHeight) * 2 - 1) * MAX;
+    };
+
+    const tick = () => {
+      /* Ease toward the cursor so the tilt glides instead of snapping. */
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
+      const el = artRef.current;
+      if (el) {
+        el.style.transform = `perspective(1200px) rotateX(${currentX.toFixed(2)}deg) rotateY(${currentY.toFixed(2)}deg) scale(0.35)`;
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    window.addEventListener("mousemove", onMove);
+    raf = requestAnimationFrame(tick);
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(raf);
+    };
+  }, [artRef]);
+}
+
 function IndexPage() {
   const heroCopyRef = useRef<HTMLParagraphElement>(null);
+  const heroArtRef = useRef<HTMLDivElement>(null);
   const artRightInset = useHeroArtRight(heroCopyRef);
+  useHeroArtTilt(heroArtRef);
 
   return (
     <SiteLayout>
