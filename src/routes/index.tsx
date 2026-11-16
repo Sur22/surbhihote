@@ -445,7 +445,16 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     let tiltY = 0;
     let driftX = 0;
     let driftY = 0;
+    let spin = 0;
+    let targetSpin = 0;
     let raf = 0;
+
+    /* Hovering the hero spins the artwork 90° in place; leaving eases it
+       back. The section is the hover target because the artwork itself is
+       pointer-events-none. */
+    const section = artRef.current?.closest("section");
+    const onEnter = () => { targetSpin = 90; };
+    const onLeave = () => { targetSpin = 0; };
 
     const onMove = (e: MouseEvent) => {
       const nx = (e.clientX / window.innerWidth) * 2 - 1;
