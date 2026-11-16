@@ -472,11 +472,18 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
       driftX += (targetDriftX - driftX) * 0.06;
       driftY += (targetDriftY - driftY) * 0.06;
       const bob = Math.sin((now / FLOAT_PERIOD) * Math.PI * 2) * FLOAT_AMPLITUDE;
+      let spin = 0;
+      if (spinStart !== null) {
+        const p = Math.min((now - spinStart) / SPIN_DURATION, 1);
+        const eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+        spin = eased * 360;
+        if (p >= 1) spinStart = null;
+      }
       const el = artRef.current;
       if (el) {
         el.style.transform =
           `perspective(1200px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) ` +
-          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(0.35)`;
+          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) rotate(${spin.toFixed(2)}deg) scale(0.35)`;
       }
       raf = requestAnimationFrame(tick);
     };
@@ -485,6 +492,7 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     raf = requestAnimationFrame(tick);
     return () => {
       window.removeEventListener("mousemove", onMove);
+      host?.removeEventListener("mouseenter", onHover);
       cancelAnimationFrame(raf);
     };
   }, [artRef]);
