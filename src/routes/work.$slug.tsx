@@ -389,7 +389,7 @@ const coverImageStyle = (slug: CaseStudy["slug"]): CSSProperties =>
 const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
   slug === "affiliate-platform-redesign"
     ? /* Grey drop, half the previous blur (40px -> 20px). */
-      { boxShadow: "0 18px 20px -18px color-mix(in srgb, var(--foreground) 30%, transparent)" }
+      { boxShadow: "0 18px 20px -18px color-mix(in srgb, var(--foreground) 30%, transparent)", border: "0.5px solid color-mix(in srgb, var(--foreground) 12%, transparent)" }
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
@@ -490,7 +490,7 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`cover-picture relative z-10 mx-auto overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px] border border-foreground/20" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
+    <div className={`cover-picture relative z-10 mx-auto overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
       <img key={c.slug} src={c.cover} alt={c.title} width={1400} height={1000} style={coverImageStyle(c.slug)} className="block h-auto w-full" />
     </div>
   );
