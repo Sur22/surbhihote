@@ -445,7 +445,15 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     let tiltY = 0;
     let driftX = 0;
     let driftY = 0;
+    let scrollFade = 1;
     let raf = 0;
+
+    const onScroll = () => {
+      /* Fade and shrink the artwork over the first screenful of scroll, so
+         it steps aside as the case studies arrive. */
+      const range = window.innerHeight * 0.9;
+      scrollFade = Math.max(0, 1 - window.scrollY / range);
+    };
 
     const onMove = (e: MouseEvent) => {
       const nx = (e.clientX / window.innerWidth) * 2 - 1;
