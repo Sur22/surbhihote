@@ -445,7 +445,16 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     let tiltY = 0;
     let driftX = 0;
     let driftY = 0;
+    let spinStart: number | null = null;
     let raf = 0;
+
+    /* One full spin per hover, eased so it glides rather than snaps. */
+    const SPIN_DURATION = 1600; // ms
+    const host = artRef.current?.parentElement ?? null;
+    const onHover = () => {
+      if (spinStart === null) spinStart = performance.now();
+    };
+    host?.addEventListener("mouseenter", onHover);
 
     const onMove = (e: MouseEvent) => {
       const nx = (e.clientX / window.innerWidth) * 2 - 1;
@@ -463,11 +472,18 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
       driftX += (targetDriftX - driftX) * 0.06;
       driftY += (targetDriftY - driftY) * 0.06;
       const bob = Math.sin((now / FLOAT_PERIOD) * Math.PI * 2) * FLOAT_AMPLITUDE;
+      let spin = 0;
+      if (spinStart !== null) {
+        const p = Math.min((now - spinStart) / SPIN_DURATION, 1);
+        const eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+        spin = eased * 360;
+        if (p >= 1) spinStart = null;
+      }
       const el = artRef.current;
       if (el) {
         el.style.transform =
           `perspective(1200px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) ` +
-          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(0.35)`;
+          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) rotate(${spin.toFixed(2)}deg) scale(0.35)`;
       }
       raf = requestAnimationFrame(tick);
     };
@@ -476,6 +492,7 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
     raf = requestAnimationFrame(tick);
     return () => {
       window.removeEventListener("mousemove", onMove);
+      host?.removeEventListener("mouseenter", onHover);
       cancelAnimationFrame(raf);
     };
   }, [artRef]);
