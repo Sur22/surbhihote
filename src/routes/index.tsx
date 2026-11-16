@@ -473,17 +473,21 @@ function useHeroArtTilt(artRef: { current: HTMLDivElement | null }) {
       const bob = Math.sin((now / FLOAT_PERIOD) * Math.PI * 2) * FLOAT_AMPLITUDE;
       const el = artRef.current;
       if (el) {
+        el.style.opacity = scrollFade.toFixed(3);
         el.style.transform =
           `perspective(1200px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg) ` +
-          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(0.35)`;
+          `translate(${driftX.toFixed(1)}px, ${(driftY + bob).toFixed(1)}px) scale(${(0.35 * (1 - (1 - scrollFade) * 0.15)).toFixed(4)})`;
       }
       raf = requestAnimationFrame(tick);
     };
 
     window.addEventListener("mousemove", onMove);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     raf = requestAnimationFrame(tick);
     return () => {
       window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf);
     };
   }, [artRef]);
