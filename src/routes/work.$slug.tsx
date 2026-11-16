@@ -1862,7 +1862,7 @@ Users needed an easy way to control and manage the notifications they want and s
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "affiliate-platform-redesign") 
-            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild — with the limited amount of information I had from the survey data.\u00a0"
+            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild with the limited amount of information I had from the survey data.\u00a0"
             : (c.slug === "atlas" || c.slug === "atlas2")
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
