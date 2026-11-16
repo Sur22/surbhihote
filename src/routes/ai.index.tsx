@@ -58,7 +58,7 @@ function AIPage() {
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             A space for my explorations at the intersection of product design and
-            artificial intelligence — experiments, prototypes, and reflections on
+            artificial intelligence, experiments, prototypes, and reflections on
             what it means to design with intelligent systems.
           </p>
         </div>
