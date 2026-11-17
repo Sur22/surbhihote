@@ -130,7 +130,7 @@ const items = [
     ],
     title: "Grid Mobile App",
     tags: ["B2B", "B2C", "PLM", "ERP", "MOBILE\u00a0 · 2018-2021"],
-    body: "A mobile-first view of the Grid platform — putting purchase orders, material libraries, product details, and notifications in the hands of factory and brand teams on the factory floor.",
+    body: "A mobile-first view of the Grid platform putting purchase orders, material libraries, product details, and notifications in the hands of factory and brand teams on the factory floor.",
   },
 ] as const;
 
