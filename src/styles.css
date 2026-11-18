@@ -76,7 +76,7 @@
   /* Warm paper / ink editorial palette */
   --paper: #ffffff;
   --ink: oklch(0.18 0.02 60);
-  --clay: #006e90;
+  --clay: #00526b;
   --sage: oklch(0.55 0.05 150);
   --rule: oklch(0.82 0.02 75);
   --circle-fill: #a2bdcc;
@@ -137,7 +137,7 @@
 .dark {
   --paper: oklch(0.12 0.02 60);
   --ink: oklch(0.93 0.018 80);
-  --clay: #5BC2E7;
+  --clay: #2f9cc4;
   --sage: oklch(0.65 0.05 150);
   --rule: oklch(0.28 0.02 75);
   --hover: oklch(0.72 0.02 70);
