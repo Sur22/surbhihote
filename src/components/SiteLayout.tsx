@@ -23,6 +23,11 @@ const nav = [
 const navItemClass =
   "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors";
 
+/* The selected page's nav item wears the hover treatment permanently: the
+   soft rounded tint plus the lifted colour, so the current page reads in
+   the bar. */
+const navActiveProps = { className: "text-hover bg-foreground/10" } as const;
+
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -65,12 +70,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </svg>
           </Link>
           <nav className="hidden md:flex items-center gap-[35px] text-sm">
-            <Link to="/" hash="case-studies" activeProps={{ className: "text-foreground" }} className={navItemClass}>Case Studies</Link>
-            <Link to="/ai" activeProps={{ className: "text-foreground" }} className={`group inline-flex items-center gap-1 ${navItemClass}`}>
+            <Link to="/" hash="case-studies" activeOptions={{ exact: true }} activeProps={navActiveProps} className={navItemClass}>Case Studies</Link>
+            <Link to="/ai" activeProps={navActiveProps} className={`group inline-flex items-center gap-1 ${navItemClass}`}>
               AI <Sparkle size={10.5} className="text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
-            <Link to="/gallery" activeProps={{ className: "text-foreground" }} className={navItemClass}>Gallery</Link>
-            <Link to="/about" activeProps={{ className: "text-foreground" }} className={navItemClass}>About</Link>
+            <Link to="/gallery" activeProps={navActiveProps} className={navItemClass}>Gallery</Link>
+            <Link to="/about" activeProps={navActiveProps} className={navItemClass}>About</Link>
             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={navItemClass}>Resume</a>
             <ThemeToggle />
           </nav>
@@ -93,6 +98,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       <Link
                         to={item.to}
                         hash={"hash" in item ? item.hash : undefined}
+                        activeOptions={item.to === "/" ? { exact: true } : undefined}
+                        activeProps={navActiveProps}
                         className={`inline-flex items-center gap-1.5 ${navItemClass}`}
                       >
                         {item.label}
