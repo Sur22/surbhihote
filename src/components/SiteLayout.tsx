@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Sun, Moon, Linkedin, Mail, Menu, Sparkle } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -31,6 +31,26 @@ const navActiveProps = {
   className: "text-accent bg-accent/10 shadow-[inset_1px_0_0_0_var(--accent)]",
 } as const;
 
+/* The three design case studies live under /work/... and the AI studies
+   under /ai/... plus a few top-level AI study pages; a nav item counts as
+   selected on any of those pages, not just its own exact path. */
+const AI_STUDY_PATHS = [
+  "/creator-hub-ai-product-design-case-study",
+  "/designing-ai-for-real-work",
+  "/vibe-coding-my-portfolio-lovable",
+];
+
+function navIsActive(to: string, pathname: string): boolean {
+  if (to === "/") return pathname === "/" || pathname.startsWith("/work");
+  if (to === "/ai")
+    return (
+      pathname === "/ai" ||
+      pathname.startsWith("/ai/") ||
+      AI_STUDY_PATHS.some((p) => pathname.startsWith(p))
+    );
+  return pathname === to || pathname.startsWith(`${to}/`);
+}
+
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -52,6 +72,9 @@ function ThemeToggle() {
 }
 
 export function SiteLayout({ children }: { children: ReactNode }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const itemClass = (to: string) =>
+    `${navItemClass}${navIsActive(to, pathname) ? ` ${navActiveProps.className}` : ""}`;
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
@@ -73,12 +96,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </svg>
           </Link>
           <nav className="hidden md:flex items-center gap-[35px] text-sm">
-            <Link to="/" hash="case-studies" activeOptions={{ exact: true }} activeProps={navActiveProps} className={navItemClass}>Case Studies</Link>
-            <Link to="/ai" activeProps={navActiveProps} className={`group inline-flex items-center gap-1 ${navItemClass}`}>
+            <Link to="/" hash="case-studies" className={itemClass("/")}>Case Studies</Link>
+            <Link to="/ai" className={`group inline-flex items-center gap-1 ${itemClass("/ai")}`}>
               AI <Sparkle size={10.5} className="text-accent transition-opacity group-hover:opacity-100" fill="currentColor" strokeWidth={0} aria-hidden="true" />
             </Link>
-            <Link to="/gallery" activeProps={navActiveProps} className={navItemClass}>Gallery</Link>
-            <Link to="/about" activeProps={navActiveProps} className={navItemClass}>About</Link>
+            <Link to="/gallery" className={itemClass("/gallery")}>Gallery</Link>
+            <Link to="/about" className={itemClass("/about")}>About</Link>
             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={navItemClass}>Resume</a>
             <ThemeToggle />
           </nav>
@@ -101,9 +124,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                       <Link
                         to={item.to}
                         hash={"hash" in item ? item.hash : undefined}
-                        activeOptions={item.to === "/" ? { exact: true } : undefined}
-                        activeProps={navActiveProps}
-                        className={`inline-flex items-center gap-1.5 ${navItemClass}`}
+                        className={`inline-flex items-center gap-1.5 ${itemClass(item.to)}`}
                       >
                         {item.label}
                         {item.label === "AI" && (
