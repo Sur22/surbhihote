@@ -175,7 +175,7 @@ function GalleryPage() {
           <img
             src={g1}
             alt="Gallery hero — studio archive"
-            className="w-full h-[20vh] md:h-[30vh] object-cover opacity-50"
+            className="w-full h-[20vh] md:h-[30vh] object-cover"
           />
           <img
             src={overlay.url}
