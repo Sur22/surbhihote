@@ -39,7 +39,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors"
+      className="group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (
