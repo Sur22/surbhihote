@@ -23,10 +23,9 @@ const nav = [
 const navItemClass =
   "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors";
 
-/* The selected page's nav item wears the hover treatment permanently: the
-   soft rounded tint plus the lifted colour, so the current page reads in
-   the bar. */
-const navActiveProps = { className: "text-hover bg-foreground/10" } as const;
+/* The selected page's nav item wears a soft blue tint (the site's clay
+   accent at low strength) so it reads apart from the grey hover state. */
+const navActiveProps = { className: "text-accent bg-accent/10" } as const;
 
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
