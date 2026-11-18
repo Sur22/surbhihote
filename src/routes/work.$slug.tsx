@@ -581,7 +581,7 @@ function CaseStudyPage() {
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "Role", v: c.slug === "affiliate-platform-redesign" ? "Lead Product Designer (Sole)" : c.role },
+            { k: c.slug === "affiliate-platform-redesign" ? "MY ROLE" : "Role", v: c.slug === "affiliate-platform-redesign" ? "Lead Product Designer (Sole)" : c.role },
             { k: "Timeframe", v: c.timeframe },
             { k: "Tools", v: c.tools },
             { k: "Tasks Performed", v: c.tasksPerformed },
