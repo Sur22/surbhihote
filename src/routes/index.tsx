@@ -162,7 +162,7 @@ function CaseStudyArtwork({
             width={1460}
             height={1077}
             loading="lazy"
-            className="absolute top-[calc(50%_-_2.9px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[103.5%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] md:hidden"
+            className="absolute top-[calc(50%_-_2.9px)] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[103.5%] max-w-none h-auto object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02] sm:w-[77.6%] md:hidden"
           />
           <img
             src={solaceFull.url}
@@ -187,7 +187,7 @@ function CaseStudyArtwork({
             width={649}
             height={722}
             loading="lazy"
-            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[85%] h-auto ${compact ? "md:w-auto md:h-[297.3px]" : "md:h-[296px]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
+            className={`absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[85%] h-auto sm:w-[64%] ${compact ? "md:w-auto md:h-[297.3px]" : "md:h-[296px]"} object-contain transition-transform duration-[1200ms] group-hover:scale-[1.02]`}
           />
         </div>
       ) : (
@@ -198,7 +198,7 @@ function CaseStudyArtwork({
             width={1400}
             height={1000}
             loading="lazy"
-            className={`${imageHeight} ${compact ? "w-[85%] mx-auto" : c.slug === "fjord" ? "w-[90%] mx-auto" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "atlas2" ? "object-contain" : "object-cover"}`}
+            className={`${imageHeight} ${compact ? "w-[85%] mx-auto sm:w-[64%] md:w-[85%]" : c.slug === "fjord" ? "w-[90%] mx-auto sm:w-[68%] md:w-[90%]" : "w-full"} transition-transform duration-[1200ms] group-hover:scale-[1.02] rounded-[5%] ${c.slug === "atlas2" ? "object-contain" : "object-cover"}`}
           />
         </div>
       )}
@@ -246,7 +246,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <CaseStudyArtwork
               c={c}
               i={i}
-              imageHeight={wide ? "h-[280px] md:h-[400px]" : "h-[280px]"}
+              imageHeight={wide ? "h-[280px] sm:h-[210px] md:h-[400px]" : "h-[280px] sm:h-[210px] md:h-[280px]"}
             />
           </div>
         </div>
