@@ -13,6 +13,9 @@ export type CaseStudy = {
   /* Homepage card copy. Falls back to `subtitle` when absent, so a study whose
      page subtitle is intentionally blank can still carry its own card line. */
   cardSubtitle?: string;
+  /* Homepage card heading. Falls back to `title` when absent, so a study can
+     carry a longer page heading without it reaching the card. */
+  cardTitle?: string;
   client: string;
   year: string;
   role: string;
@@ -257,7 +260,8 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "atlas",
     index: "03",
-    title: "Notifications Management\u00a0",
+    title: "Notifications Management - Less Noise More Signals\u00a0",
+    cardTitle: "Notifications Management\u00a0",
     subtitle: "\n",
     cardSubtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",

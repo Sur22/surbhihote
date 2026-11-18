@@ -261,7 +261,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                 : "study-card-title"
             }`}
           >
-            {c.title}
+            {c.cardTitle ?? c.title}
           </h3>
           <p className="text-lg leading-relaxed text-foreground/85">
             {c.cardSubtitle ?? c.subtitle}
