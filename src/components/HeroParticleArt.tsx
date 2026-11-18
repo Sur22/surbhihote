@@ -65,10 +65,9 @@ export function HeroParticleArt({ src }: { src: string }) {
       octx.drawImage(img, offX, offY, drawW, drawH);
       const data = octx.getImageData(0, 0, off.width, off.height).data;
 
-      /* Rings are sampled densely with overlapping dots so their stroke
-         reads as a solid, even line; the wedge fill keeps a looser grid. */
+      /* Everything is sampled on a fine grid with tiny overlapping dots
+         so the rings stay solid and the wedge's borders come out even. */
       const STRIDE = 2;
-      const FILL_STRIDE = 6;
       const next: Particle[] = [];
       for (let y = 0; y < off.height; y += STRIDE) {
         for (let x = 0; x < off.width; x += STRIDE) {
@@ -77,13 +76,12 @@ export function HeroParticleArt({ src }: { src: string }) {
             let r = data[i];
             let g = data[i + 1];
             let b = data[i + 2];
-            let size = 3.4;
+            let size = 1.1;
             /* The teal wedge reads washed out as tiny dots on paper, so
                push its pixels toward the vivid blue of the original
-               gradient. The beige circle outlines get bigger, darker,
+               gradient. The beige circle outlines get slightly darker,
                tightly packed dots so the rings read as solid strokes. */
             if (b > r + 30 && g > r + 20) {
-              if (x % FILL_STRIDE !== 0 || y % FILL_STRIDE !== 0) continue;
               r = Math.max(0, Math.round(r * 0.45));
               g = Math.min(255, Math.round(g * 1.05));
               b = Math.min(255, Math.round(b * 1.08));
@@ -91,7 +89,7 @@ export function HeroParticleArt({ src }: { src: string }) {
               r = Math.round(r * 0.72);
               g = Math.round(g * 0.72);
               b = Math.round(b * 0.72);
-              size = 2.8;
+              size = 0.9;
             }
             next.push({
               hx: x,
