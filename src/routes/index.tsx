@@ -7,6 +7,7 @@ import solaceFull from "@/assets/techpack-monitor-mockup.png.asset.json";
 import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
 import atlasCrop from "@/assets/notification-banner-tilted-crop.png.asset.json";
 import { SiteLayout } from "@/components/SiteLayout";
+import { HeroParticleArt } from "@/components/HeroParticleArt";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/case-studies";
 import { useReveal } from "@/hooks/use-reveal";
@@ -486,6 +487,14 @@ function IndexPage() {
   const heroArtRef = useRef<HTMLDivElement>(null);
   const artRightInset = useHeroArtRight(heroCopyRef);
   useHeroArtTilt(heroArtRef);
+  /* The artwork becomes interactive particles after mount; visitors who
+     prefer reduced motion keep the plain picture. */
+  const [heroParticles, setHeroParticles] = useState(false);
+  useEffect(() => {
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setHeroParticles(true);
+    }
+  }, []);
 
   return (
     <SiteLayout>
@@ -494,16 +503,24 @@ function IndexPage() {
         {/* The artwork's right edge tracks the theme switch in the nav. */}
         <div
           ref={heroArtRef}
-          className={`pointer-events-none absolute inset-y-0 left-0 bg-contain bg-right-bottom bg-no-repeat transition-opacity duration-500 ${
+          className={`pointer-events-none absolute inset-y-0 left-0 transition-opacity duration-500 ${
             artRightInset === null ? "opacity-0" : "opacity-100"
           }`}
           style={{
-            backgroundImage: `url(${heroBg.url})`,
             transform: "scale(0.35)",
             transformOrigin: "bottom right",
             right: artRightInset === null ? 0 : `${artRightInset}px`,
           }}
-        />
+        >
+          {heroParticles ? (
+            <HeroParticleArt src={heroBg.url} />
+          ) : (
+            <div
+              className="absolute inset-0 bg-contain bg-right-bottom bg-no-repeat"
+              style={{ backgroundImage: `url(${heroBg.url})` }}
+            />
+          )}
+        </div>
         <div className="mx-auto max-w-[1100px] px-6 md:px-10">
           <div className="font-serif md:text-5xl text-6xl">
             <p className="eyebrow hero-eyebrow mb-4">0 → 1 → SCALE · END TO END · DEVELOPER → DESIGNER</p>
