@@ -298,7 +298,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
                     ["–34%", "time on task"],
                   ]
                 : [
-                    ["64% → 7%", "irrelevant notifications"],
+                    ["68% → 7%", "irrelevant notifications"],
                     ["–84%", "missed alerts"],
                   ]
               ).map(([value, label]) => (
