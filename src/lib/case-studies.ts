@@ -257,7 +257,7 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "atlas",
     index: "03",
-    title: "Notifications Management\u00a0",
+    title: "Notifications Management - Less Noise More Signals\u00a0",
     subtitle: "\n",
     cardSubtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",
@@ -306,7 +306,7 @@ const _caseStudies: CaseStudy[] = [
     ],
     outcome: [
       { label: "Missed deadlines", value: "-38%" },
-      { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "64% \u2192 7%" },
+      { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "68% \u2192 7%" },
       { label: "Reduction in missed alerts", value: "-84%" },
       { label: "User Satisfaction\u00a0\u00a0", value: "+6" },
     ],
