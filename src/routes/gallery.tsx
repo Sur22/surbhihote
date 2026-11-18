@@ -95,7 +95,7 @@ const items = [
       { src: dataViz4.url, alt: "Data Visualization — mockup 4" },
     ],
     title: "Data Visualization",
-    tags: ["ANALYTICS", "AD TECH", "CAMPAIGN PERFORMANCE\u00a0·2021-2026\u00a0"],
+    tags: ["AMPERSAND", "ANALYTICS", "AD TECH", "2021-2026\u00a0"],
     body: "For enterprise clients the most important part is to see how their campaigns\u00a0 performed and the outcome of the money they spent.\u00a0",
   },
   {
@@ -104,7 +104,7 @@ const items = [
       { src: gsnListView.url, alt: "GSN Marketplace — list view" },
     ],
     title: "GSN Marketplace - A white label e-com for clients  ",
-    tags: ["B2B", "E-COMMERCE", "MARKETPLACE", "2021"],
+    tags: ["SUUCHI", "B2B", "E-COMMERCE", "MARKETPLACE", "2021"],
     body: "GSN (Global Sourcing Network) Marketplace - Was a market place where the network of factories offering a ready product for clients to pick and add their brand label and ready to hit the stores.",
   },
   {
@@ -112,7 +112,7 @@ const items = [
       { src: g5.url, alt: "Dashboard- PLM & ERP" },
     ],
     title: "Dashboard",
-    tags: ["B2B", "B2C", "PLM", "ERP\u00a0 · 2018-2021"],
+    tags: ["SUUCHI", "B2B", "SUPPLY CHAIN", "PLM", "ERP · 2018-2021"],
     body: "An exploration of information density for an internal analytics tool — finding the balance between glanceable summaries and the depth power users need.",
   },
   {
@@ -121,7 +121,7 @@ const items = [
       { src: productAfter.url, alt: "Product Page — After" },
     ],
     title: "Product Evolution\u00a0",
-    tags: ["B2B", "B2C", "PLM", "ERP\u00a0 · 2018-2021"],
+    tags: ["SUUCHI", "B2B", "B2C", "PLM", "ERP\u00a0 · 2018-2021"],
     body: "Transformation of the product Details Page of the Grid when I joined as a founding designer and how it evolved to a modern & modular product tool to handle all kinds of product lifecycle.\u00a0 \u00a0",
   },
   {
