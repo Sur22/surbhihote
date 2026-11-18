@@ -531,7 +531,7 @@ function IndexPage() {
               ref={heroCopyRef}
               className="h3 mt-4 text-foreground/80"
             >
-              Senior product designer with 8+ years of experience across B2B SaaS, enterprise platforms, complex and data-heavy products.
+              Senior product designer with 8+ years of experience simplifying complex, data-heavy B2B SaaS and enterprise platforms. I combine systems thinking with user insights to design scalable, data-driven solutions.
             </p>
             <p className="mt-6 font-sans text-lg leading-relaxed max-w-4xl text-foreground/85">{"\n"}</p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
