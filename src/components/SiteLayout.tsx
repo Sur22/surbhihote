@@ -25,12 +25,10 @@ const navItemClass =
 
 /* The selected page's nav item wears a soft blue tint (the site's clay
    accent at low strength) plus a 1px accent line down its left edge, so it
-   reads apart from the grey hover state. The line is a straight bar inset
-   by the corner radius, so it stops where the rounded corners begin to bend
-   instead of curving with them. */
+   reads apart from the grey hover state. The line is an inset shadow so it
+   never shifts the layout. */
 const navActiveProps = {
-  className:
-    "relative text-accent bg-accent/10 before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-px before:bg-accent before:content-['']",
+  className: "text-accent bg-accent/10 shadow-[inset_1px_0_0_0_var(--accent)]",
 } as const;
 
 function ThemeToggle() {
