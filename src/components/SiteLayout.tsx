@@ -24,8 +24,12 @@ const navItemClass =
   "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors";
 
 /* The selected page's nav item wears a soft blue tint (the site's clay
-   accent at low strength) so it reads apart from the grey hover state. */
-const navActiveProps = { className: "text-accent bg-accent/10" } as const;
+   accent at low strength) plus a 1px accent underline, so it reads apart
+   from the grey hover state. The underline is an inset shadow so it never
+   shifts the layout. */
+const navActiveProps = {
+  className: "text-accent bg-accent/10 shadow-[inset_0_-1px_0_0_var(--accent)]",
+} as const;
 
 function ThemeToggle() {
   const { resolved, toggle } = useTheme();
