@@ -797,7 +797,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               ) : (c.slug === "solace") ? (
                 <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                   <p>
-                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users — enough signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
+                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users which are enough to signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
                   </p>
                 </div>
               ) : (
