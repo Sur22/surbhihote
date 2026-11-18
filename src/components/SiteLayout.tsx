@@ -16,12 +16,12 @@ const nav = [
   { to: "/about", label: "About" },
 ] as const;
 
-/* Nav items borrow the theme button's hover: a soft rounded tint behind the
-   word and a lift in its colour, instead of the text thickening. The padding
+/* Nav items hover in the accent colour: a soft blue tint behind the word and
+   the accent colour on the text, instead of the text thickening. The padding
    that makes the tint room to breathe is offset by an equal negative margin,
    so the words themselves never shift. */
 const navItemClass =
-  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-hover hover:bg-foreground/10 transition-colors";
+  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors";
 
 /* The selected page's nav item wears a soft blue tint (the site's clay
    accent at low strength) plus a 1px accent line down its left edge, so it
