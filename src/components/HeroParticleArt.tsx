@@ -66,8 +66,8 @@ export function HeroParticleArt({ src }: { src: string }) {
       const data = octx.getImageData(0, 0, off.width, off.height).data;
 
       /* Rings are sampled densely with overlapping dots so their stroke
-         reads as a solid line; the wedge fill keeps a looser grid. */
-      const STRIDE = 3;
+         reads as a solid, even line; the wedge fill keeps a looser grid. */
+      const STRIDE = 2;
       const FILL_STRIDE = 6;
       const next: Particle[] = [];
       for (let y = 0; y < off.height; y += STRIDE) {
@@ -91,7 +91,7 @@ export function HeroParticleArt({ src }: { src: string }) {
               r = Math.round(r * 0.72);
               g = Math.round(g * 0.72);
               b = Math.round(b * 0.72);
-              size = 4.6;
+              size = 2.8;
             }
             next.push({
               hx: x,
