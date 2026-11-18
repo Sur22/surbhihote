@@ -198,10 +198,10 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
             <div className={`grid grid-cols-1 sm:grid-cols-2 ${project.slug === "designing-ai-for-real-work" ? "md:grid-cols-3" : "md:grid-cols-4"} gap-8 border-t border-border pt-8`}>
               {(project.slug === "designing-ai-for-real-work" ? [
                 { k: "Company", v: project.company },
-                { k: "Role", v: project.role },
+                { k: "My Role", v: project.role },
                 { k: "Focus", v: project.focus },
               ] : [
-                { k: "Role", v: project.role },
+                { k: "My Role", v: project.role },
                 { k: "Timeframe", v: project.timeframe },
                 { k: "Tools", v: project.tools },
                 { k: "Tasks Performed", v: project.tasksPerformed },
