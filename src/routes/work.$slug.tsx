@@ -422,7 +422,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               </Link>
             </Button>
           </div>
-          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl mx-auto whitespace-pre-line">
+          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
             {c.slug === "fjord" 
               ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
               : c.slug === "solace"
