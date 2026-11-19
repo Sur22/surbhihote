@@ -3071,7 +3071,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
               >
                 <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
-                  {o.title}
+                  {o.cardTitle ?? o.title}
                 </h3>
                 <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
                   Read the case study →
