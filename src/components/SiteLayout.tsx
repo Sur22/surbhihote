@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Sun, Moon, Linkedin, Mail, Menu, Sparkle } from "lucide-react";
+import { Sun, Moon, Linkedin, Mail, Menu, Sparkle, Github } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
@@ -172,6 +172,9 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </a>
             <a href="https://www.linkedin.com/in/surbhihote/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-hover transition-colors" aria-label="LinkedIn">
               <Linkedin size={18} strokeWidth={1.6} />
+            </a>
+            <a href="https://github.com/Sur22" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-hover transition-colors" aria-label="GitHub">
+              <Github size={18} strokeWidth={1.6} />
             </a>
           </div>
 
