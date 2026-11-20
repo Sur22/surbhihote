@@ -523,7 +523,7 @@ function IndexPage() {
         </div>
         <div className="mx-auto max-w-[1100px] px-6 md:px-10">
           <div className="font-serif md:text-5xl text-6xl">
-            <p className="eyebrow hero-eyebrow mb-4">0 → 1 → SCALE · END TO END · DEVELOPER → DESIGNER</p>
+            <p className="eyebrow hero-eyebrow mb-4">DEVELOPER → DESIGNER · END TO END · 0 → 1 → SCALE</p>
             <h1 className="font-serif text-[72px] leading-[1.1]">
               Hi, I'm <em className="text-accent">Surbhi</em>.
             </h1>
