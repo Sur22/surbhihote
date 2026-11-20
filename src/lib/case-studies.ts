@@ -124,6 +124,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "affiliate-platform-redesign",
     index: "01",
     title: "Affiliate Portal Redesign-Rebuilding a 25-year-old ad-tech portal without breaking a single workflow",
+    cardTitle: "Affiliate Portal Redesign",
     subtitle: "\n",
     cardSubtitle:
       "Rebuilding a 25-year-old enterprise platform without disrupting the business & 1k+ affiliates.",
