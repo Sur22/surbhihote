@@ -1328,7 +1328,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
             {c.slug === "affiliate-platform-redesign" 
-              ? "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had.\nI designed and facilitated a 1.5-day workshop with 8 stakeholders across leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
+              ? "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had.\nI designed and facilitated a 1.5-day workshop with 2 stakeholders and leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
               : (c.slug === "solace" ? "Building an efficient and automated PLM ecosystem that reduces operational expenses, builds standardized workflows, and improves margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
             }
           </p>
