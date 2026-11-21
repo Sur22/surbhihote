@@ -307,28 +307,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
       {showImpactHeader && (
         <>
           <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-6">At a glance</h3>
-          <div className="flex justify-center mb-10">
-            <Button
-              variant="outline"
-              size="lg"
-              asChild
-            >
-              <Link
-                to="."
-                hash="final-designs"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById("final-designs");
-                  if (el) {
-                    history.replaceState(null, "", "#final-designs");
-                    el.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }
-                }}
-              >
-                See the solution
-              </Link>
-            </Button>
-          </div>
+          {/* The "See the solution" button moved up into the hero, beside the
+              title. */}
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
             {c.slug === "fjord" 
               ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
@@ -423,55 +403,69 @@ function CaseStudyPage() {
         <CaseStudySideNav slug={c.slug} />
 
 
-      {/* Title block — the keyword tagline and the title are left aligned with
-          the content column, and the back arrow sits in the same row as the
-          tagline, at its left. 30px of air sits above the row. The block's
-          bottom padding is kept tight so the title sits closer to the cover
-          picture. */}
-      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
-        <div className="flex items-center gap-4 mt-[30px] mb-8">
-          <Link
-            to="/"
-            hash="case-studies"
-            aria-label="Back to portfolio"
-            className="inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft size={16} />
-          </Link>
-          <span className="eyebrow">{c.tags.join(" · ")}</span>
-        </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
-      </section>
+      {/* Hero — title block on the left (back arrow + tagline row, title, then
+          the "See the solution" button), cover mockup on the right, both in the
+          same row on desktop; they stack title-first on narrow screens. 30px of
+          air sits above the row. */}
+      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
+        <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
+          <div className="md:w-[42%] md:shrink-0">
+            <div className="flex items-center gap-4 mt-[30px] mb-8">
+              <Link
+                to="/"
+                hash="case-studies"
+                aria-label="Back to portfolio"
+                className="inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <ArrowLeft size={16} />
+              </Link>
+              <span className="eyebrow">{c.tags.join(" · ")}</span>
+            </div>
+            <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
+            <Button variant="outline" size="lg" asChild>
+              <Link
+                to="."
+                hash="final-designs"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById("final-designs");
+                  if (el) {
+                    history.replaceState(null, "", "#final-designs");
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+              >
+                See the solution
+              </Link>
+            </Button>
+          </div>
 
-      {/* Cover */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        {/* The same frosted disc and hollow ring that sit behind each mockup on
-            the homepage case-study cards, worn in the same place: for the three
-            studies the homepage links, both circles are measured off the cover
-            picture's own box — the frame the card measures off — so the disc
-            keeps the card's anchor and diameter at every width. The stage's
-            padding then gives the curve and its shadow room to finish inside the
-            stage rather than being sliced off at its edge. A study with no card
-            to echo keeps the disc centred on the whole stage, as before. */}
-        {cardDiscSlugs.has(c.slug) ? (
-          <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
-            <div className="relative">
-              <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
-                <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
-                <div className={`study-glass-disc absolute aspect-square h-full overflow-hidden${c.slug === "solace" ? " study-glass-disc--inner" : ""}`} style={coverDiscStyle(c.slug)} />
+          {/* Cover — the same frosted disc and hollow ring that sit behind each
+              mockup on the homepage case-study cards, measured off the cover
+              picture's own box so the disc keeps the card's anchor and diameter
+              at every width. */}
+          <div className="md:flex-1 md:min-w-0">
+            {cardDiscSlugs.has(c.slug) ? (
+              <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
+                <div className="relative">
+                  <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
+                    <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
+                    <div className={`study-glass-disc absolute aspect-square h-full overflow-hidden${c.slug === "solace" ? " study-glass-disc--inner" : ""}`} style={coverDiscStyle(c.slug)} />
+                  </div>
+                  {coverPicture}
+                </div>
               </div>
-              {coverPicture}
-            </div>
+            ) : (
+              <div className="relative overflow-hidden py-[9%]">
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+                  <div className="study-glass-ring absolute left-1/2 top-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2" />
+                  <div className="study-glass-disc absolute left-1/2 top-1/2 aspect-square h-full overflow-hidden -translate-x-1/2 -translate-y-1/2" />
+                </div>
+                {coverPicture}
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="relative overflow-hidden py-[9%]">
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-              <div className="study-glass-ring absolute left-1/2 top-1/2 aspect-square h-full -translate-x-1/2 -translate-y-1/2" />
-              <div className="study-glass-disc absolute left-1/2 top-1/2 aspect-square h-full overflow-hidden -translate-x-1/2 -translate-y-1/2" />
-            </div>
-            {coverPicture}
-          </div>
-        )}
+        </div>
       </section>
 
       {/* Subtitle — sits below the banner, centred. */}
