@@ -292,39 +292,49 @@ const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   void c;
-  /* "What shipped" band — a dark rounded card that stays dark in both
-     themes: eyebrow, four stats parted by thin vertical rules, then a full
-     rule with the fifth stat below. Stats pair two per row on narrow
-     screens. */
+  /* "The outcome" band — same format as the Tech Pack copy: intro block on
+     the left (eyebrow, serif line and a jump link to the testing section
+     that holds the numbers), then the stats parted by thin vertical rules,
+     each with a bold label. Stats wrap three per row on desktop and stack
+     with top rules on narrow screens. */
   const stats = [
-    { value: "92%", label: "Task success rate" },
-    { value: "78% ↓", label: "Manual refreshing" },
-    { value: "$0", label: "Business lost since launch" },
-    { value: "8", label: "Broken workflows restored" },
+    { value: "92%", label: "Task success rate", down: false },
+    { value: "78%", label: "Manual refreshing", down: true },
+    { value: "$0", label: "Business lost since launch", down: false },
+    { value: "8", label: "Broken workflows restored", down: false },
+    { value: "2×", label: "Faster page loading", down: false },
   ];
-  const divider = (i: number) =>
-    i === 0 ? "" : i === 2 ? "md:border-l md:border-white/15" : "border-l border-white/15";
   return (
     <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
-      <h3 className="font-serif text-4xl md:text-5xl font-normal mb-10 flex items-baseline gap-4">
-        <span className="text-accent text-lg md:text-xl font-sans">01</span>
-        What shipped, and what it changed
-      </h3>
-      <div className="bg-ship-band rounded-2xl px-8 py-12 md:px-14 md:py-16">
-        <p className="eyebrow text-ship-muted mb-12">Three months after launch</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12">
-          {stats.map((s, i) => (
-            <div key={s.label} className={`text-center px-4 ${divider(i)}`}>
-              <p className="display text-4xl md:text-5xl text-ship-ink mb-3 whitespace-nowrap">{s.value}</p>
-              <p className="text-ship-muted">{s.label}</p>
+      <div className="grid gap-10 md:grid-cols-[1.35fr_3fr] md:gap-0">
+        <div className="md:pr-10">
+          <p className="eyebrow mb-4">The outcome</p>
+          <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"What shipped,\nand what it changed"}</h3>
+          <p className="text-sm text-muted-foreground mb-6">Three months after launch</p>
+          <a
+            href="#testing"
+            className="inline-flex items-center gap-1 text-accent hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("testing");
+              if (el) {
+                history.replaceState(null, "", "#testing");
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
+          >
+            How this was measured <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-0 gap-y-10">
+          {stats.map((s) => (
+            <div key={s.label} className="border-t border-border pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-10">
+              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-nowrap">
+                {s.value}{s.down && <span className="text-[70%] ml-1">↓</span>}
+              </p>
+              <p className="font-semibold text-foreground mb-1">{s.label}</p>
             </div>
           ))}
-        </div>
-        <div className="mt-12 border-t border-white/15 pt-12 grid grid-cols-2 md:grid-cols-4">
-          <div className="text-center px-4">
-            <p className="display text-4xl md:text-5xl text-ship-ink mb-3 whitespace-nowrap">2×</p>
-            <p className="text-ship-muted">Faster page loading</p>
-          </div>
         </div>
       </div>
     </section>
@@ -460,31 +470,42 @@ function CaseStudyPage() {
       {/* Outcome for case studies 02-04 */}
       {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
-      {/* Facts — two cream cards of label/value rows, holding the same warm
-          tone in both themes like the flow band. */}
+      {/* Meta grid — same format as the Tech Pack copy: four facts on the
+          first row; the longer facts drop to rows below, each stretching
+          across two columns. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="grid gap-6 md:grid-cols-2">
-          {([
-            [
-              { k: "Role", v: "Lead Product Designer (sole designer)" },
-              { k: "Timeframe", v: "3 months, end to end" },
-              { k: "Scope", v: "Full rebuild of a business-critical B2B portal used by 1,000+ affiliates" },
-              { k: "Constraints", v: "Frozen legacy codebase; external users with no obligation to test; entrenchment risk — the tool runs ~$550M in annual revenue ($1B in political years)" },
-              { k: "Tools", v: "Figma, Adobe XD, SurveyMonkey, Microsoft Clarity, App Insights, Power BI, Azure" },
-            ],
-            [
-              { k: "What I owned", v: "User research, workshop facilitation, wireframing, prototyping, UX writing, testing, stakeholder buy-in, and collaboration with PM, engineering, and QA" },
-              { k: "Who it served", v: "Affiliates — the partner networks who buy and transact against Ampersand's TV inventory, pulling rate cards, placing orders, and tracking yield through this portal daily" },
-              { k: "What made it hard", v: "The people who needed the redesign most were the most resistant to it" },
-            ],
-          ] as { k: string; v: string }[][]).map((rows, i) => (
-            <div key={i} className="bg-fact-card text-fact-ink rounded-xl border border-black/10 p-8 md:p-10">
-              {rows.map((m, j) => (
-                <div key={m.k} className={`grid gap-2 md:grid-cols-[150px_1fr] md:gap-6 py-5 ${j > 0 ? "border-t border-black/10" : ""} ${j === 0 ? "pt-0" : ""} ${j === rows.length - 1 ? "pb-0" : ""}`}>
-                  <p className="eyebrow font-bold text-fact-ink/60">{m.k}</p>
-                  <p className="text-base leading-relaxed">{m.v}</p>
-                </div>
-              ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
+          {[
+            { k: "My Role", v: "Lead Product Designer (sole designer)" },
+            { k: "Timeframe", v: "3 months, end to end" },
+            { k: "Scope", v: "Full rebuild of a business-critical B2B portal used by 1,000+ affiliates" },
+            { k: "Constraints", v: "Frozen legacy codebase; external users with no obligation to test; entrenchment risk — the tool runs ~$550M in annual revenue ($1B in political years)" },
+          ].map((m) => (
+            <div key={m.k}>
+              <p className="eyebrow mb-2 font-bold">{m.k}</p>
+              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+          {[
+            { k: "Tools", v: "Figma, Adobe XD, SurveyMonkey, Microsoft Clarity, App Insights, Power BI, Azure" },
+            { k: "What I owned", v: "User research, workshop facilitation, wireframing, prototyping, UX writing, testing, stakeholder buy-in, and collaboration with PM, engineering, and QA" },
+          ].map((m) => (
+            <div key={m.k} className="md:col-span-2">
+              <p className="eyebrow mb-2 font-bold">{m.k}</p>
+              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+          {[
+            { k: "Who it served", v: "Affiliates — the partner networks who buy and transact against Ampersand's TV inventory, pulling rate cards, placing orders, and tracking yield through this portal daily" },
+            { k: "What made it hard", v: "The people who needed the redesign most were the most resistant to it" },
+          ].map((m) => (
+            <div key={m.k} className="md:col-span-2">
+              <p className="eyebrow mb-2 font-bold">{m.k}</p>
+              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
             </div>
           ))}
         </div>
