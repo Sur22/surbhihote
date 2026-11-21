@@ -116,10 +116,12 @@ import affiliateOrderPage3 from "@/assets/Affiliate_site_mockup_order_page-3.png
 import ampMockupBg3 from "@/assets/amp-mockup-bg-3.png.asset.json";
 
 export const Route = createFileRoute("/work/solace2")({
-  loader: ({ params }) => {
-    const c = getCaseStudy("solace");
+  loader: () => {
+    const c = getCaseStudy("solace2");
     if (!c) throw notFound();
-    return { study: c };
+    /* The page body branches on c.slug === "solace"; keep that slug so the
+       copied markup renders identically while the data stays independent. */
+    return { study: { ...c, slug: "solace" as const } };
   },
   head: ({ loaderData, params }) => {
     const s = loaderData?.study;

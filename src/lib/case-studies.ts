@@ -6,7 +6,7 @@ import notificationBannerTilted from "@/assets/notification-banner-tilted.png";
 import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
-  slug: "fjord" | "solace" | "atlas" | "atlas2" | "affiliate-platform-redesign";
+  slug: "fjord" | "solace" | "solace2" | "atlas" | "atlas2" | "affiliate-platform-redesign";
   index: string;
   title: string;
   subtitle: string;
@@ -191,6 +191,78 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "solace",
     index: "02",
+    title: "Tech Pack Tool - Scattered files into production ready tech packs",
+    cardTitle: "Tech Pack Tool",
+    subtitle: "\n",
+    cardSubtitle: "Document-Centric Workflows to a Connected PLM Ecosystem.",
+    client: "Solace Health",
+    year: "2024",
+    ...defaultMeta,
+    overview:
+      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
+    goal:
+      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the Data Team.\n2.\u00a0 Cut the waiting time for Account Executives & Account Directors\n\u00a0 \u00a0 \u00a0-The Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off the Data team shoulders.\n4. Cut down the cost of the external tool used to build custom audiences.\u00a0",
+    research: {
+      ...defaultMeta.research,
+    userInterviewInsights: [
+        {
+          quote: '"It\'s difficult to put together all the details about the style in one place as different detail are in different files."',
+          author: "Technical Designer",
+        },
+        {
+          quote: '"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"',
+          author: "\u00a0Fashion Designer",
+        },
+        {
+          quote: '"Every time there are changes we have to keep factories updated with that and provide them the updated project related files"',
+          author: "\u00a0Product Development Manager",
+        },
+        {
+          quote: '"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files"',
+          author: "\u00a0Product Development Manager",
+        },
+      ],
+    },
+    role: "Founding UI UX Designer (Sole)",
+    tags: ["SUUCHI", "SUUPLY CHAIN", "PLM", "B2B\u00a0SAAS", "WEB", "FOUNDING & SOLE DESIGNER"],
+    cover: solace.url,
+    summary:
+      "SaaS PLM tech pack tool for fashion brands — replacing scattered Excel and PDF workflows with a connected library, cutting accounting errors 64%.",
+    keywords:
+      "tech pack tool design, apparel manufacturing software UX, supply chain platform design, PLM UX design, fashion tech pack software, BOM management UX", 
+    problem:
+      "Fashion brands were running product development on disconnected Excel sheets, PDFs, and email threads. Style details, materials, trims, and BOMs lived in separate documents, so any change had to be manually updated across multiple files. Factories were often working from outdated versions, causing production delays, accounting errors, and miscommunication between design, product development, and vendors.",
+    approach: [
+      "Wrote the product principles before opening Figma — 'finishable', 'quiet', 'honest'.",
+      "Designed a single onboarding question: 'How much time do you have today?'",
+      "Built a content shelf, not a library — 21 sessions, hand-curated, no algorithm.",
+      "Partnered with the writers on tone-of-voice so the copy and the UI shipped as one thing.",
+    ],
+    outcome: [
+      { label: "Reduced calculation mistakes\nby automation replaced manual entry. ", value: "-64% " },
+      { label: "The workflow came in-platform by eliminating tools outside the platform.", value: "2 \u2192 0" },
+      { label: "Time on Task by using bringing data on the platform. ", value: "-34%" },
+      { label: "Workflow Errors went down by standardization and versioning ", value: "-27%" },
+    ],
+    sections: [
+      {
+        heading: "Principles",
+        body: "We agreed on three words before drawing anything: finishable, quiet, honest. They became the test for every decision — if a screen had a streak counter, it failed 'honest'. If it had three CTAs, it failed 'quiet'. The principles did the editing for us.",
+      },
+      {
+        heading: "The single question",
+        body: "Onboarding is one screen, one question, three answers. The app knows enough after that to give you something useful. Everything else — preferences, history, payment — happens later, in context, when you've already felt the value.",
+      },
+      {
+        heading: "The shelf",
+        body: "21 sessions, organized like a small bookshop. You can read every spine in 30 seconds. The constraint forced us to make each one matter — and forced the editorial team to defend every addition.",
+      },
+    ],
+  },
+  {
+    slug: "solace2",
+    index: "02",
+    hidden: true,
     title: "Tech Pack Tool - Scattered files into production ready tech packs",
     cardTitle: "Tech Pack Tool",
     subtitle: "\n",
