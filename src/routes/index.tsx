@@ -615,6 +615,23 @@ function IndexPage() {
           </div>
         </div>
 
+        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <Link
+            to="/work/$slug"
+            params={{ slug: "solace2" }}
+            className="text-accent underline-offset-4 hover:underline"
+          >
+            Tech Pack Tool (copy)
+          </Link>
+          <Link
+            to="/work/$slug"
+            params={{ slug: "affiliate2" }}
+            className="text-accent underline-offset-4 hover:underline"
+          >
+            Affiliate Portal Redesign (copy)
+          </Link>
+        </div>
+
       </section>
 
       {/* Closing contact band — left-aligned, with the two ways in, wearing the
