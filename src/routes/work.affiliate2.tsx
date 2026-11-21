@@ -291,55 +291,41 @@ const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
-  const showImpactHeader = topOutcomeSlugs.has(c.slug);
+  void c;
+  /* "What shipped" band — a dark rounded card that stays dark in both
+     themes: eyebrow, four stats parted by thin vertical rules, then a full
+     rule with the fifth stat below. Stats pair two per row on narrow
+     screens. */
+  const stats = [
+    { value: "92%", label: "Task success rate" },
+    { value: "78% ↓", label: "Manual refreshing" },
+    { value: "$0", label: "Business lost since launch" },
+    { value: "8", label: "Broken workflows restored" },
+  ];
+  const divider = (i: number) =>
+    i === 0 ? "" : i === 2 ? "md:border-l md:border-white/15" : "border-l border-white/15";
   return (
-    <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${showImpactHeader ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
-      <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
-      {showImpactHeader && (
-        <>
-          <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-6">At a glance</h3>
-          {/* The "See the solution" button moved up into the hero, beside the
-              title. */}
-          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-            {c.slug === "fjord" 
-              ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
-              : c.slug === "solace"
-              ? "As Suuchi’s founding and sole designer, I led end-to-end design of a new Tech Pack capability within GRID. It connected design files, materials, trims, costing, and production documentation, helping teams move from scattered documents to a coordinated workflow within one platform.This project streamlined the process eliminating the manual errors, delays in production deadlines and product delivery."
-              : c.slug === "affiliate-platform-redesign"
-              ? "Rebuilding a 25-year-old enterprise platform used by 1000+ affiliates. The challenge wasn't simply making it better; it was improving it without disrupting the workflows users had built around years of workarounds"
-              : "Notification management for the people\nkeeping production moving.Organizing and managing notifications to granular level.When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
-          </p>
-        </>
-      )}
-      <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
-        {c.outcome.map((o) => (
-          <div key={o.label} className="border-t border-border pt-6">
-            {o.value && (
-              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">
-                {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0\u2192\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
-                  <span className="whitespace-nowrap flex items-center gap-2">
-                    {o.value === "~$850K\u00A0\u2192\u00A0$0" ? (
-                      <>
-                        ~$850K <span className="text-[70%]">\u2192</span> $0
-                      </>
-                    ) : o.value === "1 week - 5 min" ? (
-                      <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
-                    ) : (
-                      <>{o.value}</>
-                    )}
-                  </span>
-                ) : (
-                  <>{o.value}</>
-                )}
-                {o.label.includes("Usability Improved") || o.value === "17%" ? <TrendingUp className="inline-block ml-2 w-8 h-8 md:w-10 md:h-10" /> : null}
-                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("84%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && (
-                  <span className="text-[70%] ml-1">↓</span>
-                )}
-              </p>
-            )}
-            <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
+    <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
+      <h3 className="font-serif text-4xl md:text-5xl font-normal mb-10 flex items-baseline gap-4">
+        <span className="text-accent text-lg md:text-xl font-sans">01</span>
+        What shipped, and what it changed
+      </h3>
+      <div className="bg-ship-band rounded-2xl px-8 py-12 md:px-14 md:py-16">
+        <p className="eyebrow text-ship-muted mb-12">Three months after launch</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12">
+          {stats.map((s, i) => (
+            <div key={s.label} className={`text-center px-4 ${divider(i)}`}>
+              <p className="display text-4xl md:text-5xl text-ship-ink mb-3 whitespace-nowrap">{s.value}</p>
+              <p className="text-ship-muted">{s.label}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-12 border-t border-white/15 pt-12 grid grid-cols-2 md:grid-cols-4">
+          <div className="text-center px-4">
+            <p className="display text-4xl md:text-5xl text-ship-ink mb-3 whitespace-nowrap">2×</p>
+            <p className="text-ship-muted">Faster page loading</p>
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
@@ -474,18 +460,31 @@ function CaseStudyPage() {
       {/* Outcome for case studies 02-04 */}
       {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
-      {/* Meta grid */}
+      {/* Facts — two cream cards of label/value rows, holding the same warm
+          tone in both themes like the flow band. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
-          {[
-            { k: "My Role", v: c.slug === "affiliate-platform-redesign" ? "Lead Product Designer (Sole)" : c.role },
-            { k: "Timeframe", v: c.timeframe },
-            { k: "Tools", v: c.tools },
-            { k: "Tasks Performed", v: c.tasksPerformed },
-          ].map((m) => (
-            <div key={m.k}>
-              <p className="eyebrow mb-2 font-bold">{m.k}</p>
-              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+        <div className="grid gap-6 md:grid-cols-2">
+          {([
+            [
+              { k: "Role", v: "Lead Product Designer (sole designer)" },
+              { k: "Timeframe", v: "3 months, end to end" },
+              { k: "Scope", v: "Full rebuild of a business-critical B2B portal used by 1,000+ affiliates" },
+              { k: "Constraints", v: "Frozen legacy codebase; external users with no obligation to test; entrenchment risk — the tool runs ~$550M in annual revenue ($1B in political years)" },
+              { k: "Tools", v: "Figma, Adobe XD, SurveyMonkey, Microsoft Clarity, App Insights, Power BI, Azure" },
+            ],
+            [
+              { k: "What I owned", v: "User research, workshop facilitation, wireframing, prototyping, UX writing, testing, stakeholder buy-in, and collaboration with PM, engineering, and QA" },
+              { k: "Who it served", v: "Affiliates — the partner networks who buy and transact against Ampersand's TV inventory, pulling rate cards, placing orders, and tracking yield through this portal daily" },
+              { k: "What made it hard", v: "The people who needed the redesign most were the most resistant to it" },
+            ],
+          ] as { k: string; v: string }[][]).map((rows, i) => (
+            <div key={i} className="bg-fact-card text-fact-ink rounded-xl border border-black/10 p-8 md:p-10">
+              {rows.map((m, j) => (
+                <div key={m.k} className={`grid gap-2 md:grid-cols-[150px_1fr] md:gap-6 py-5 ${j > 0 ? "border-t border-black/10" : ""} ${j === 0 ? "pt-0" : ""} ${j === rows.length - 1 ? "pb-0" : ""}`}>
+                  <p className="eyebrow font-bold text-fact-ink/60">{m.k}</p>
+                  <p className="text-base leading-relaxed">{m.v}</p>
+                </div>
+              ))}
             </div>
           ))}
         </div>

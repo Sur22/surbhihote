@@ -18,6 +18,11 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-flow-band: var(--flow-band);
+  --color-ship-band: var(--ship-band);
+  --color-ship-ink: var(--ship-ink);
+  --color-ship-muted: var(--ship-muted);
+  --color-fact-card: var(--fact-card);
+  --color-fact-ink: var(--fact-ink);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -116,6 +121,14 @@
   /* The flow band's peach, sampled from Surbhi's swatch. It stays put in the
      dark theme too, so it is set once here and never overridden below. */
   --flow-band: #f7e6d8;
+  /* The Affiliate copy page's "What shipped" band and fact cards keep these
+     tones in both themes, so like the flow band they are set once here and
+     never overridden in the dark block below. */
+  --ship-band: #1c1610;
+  --ship-ink: #f5efe6;
+  --ship-muted: #b3aa9c;
+  --fact-card: #faf5ec;
+  --fact-ink: #241d15;
   --card-foreground: var(--ink);
   --popover: var(--card);
   --popover-foreground: var(--ink);
