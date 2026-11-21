@@ -24,6 +24,7 @@ import { Route as AiIndexRouteImport } from './routes/ai.index'
 import { Route as AiSlugRouteImport } from './routes/ai.$slug'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as WorkFjord2RouteImport } from './routes/work.fjord2'
+import { Route as WorkSolace2RouteImport } from './routes/work.solace2'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
 const IndexRoute = IndexRouteImport.update({
@@ -105,6 +106,11 @@ const WorkFjord2Route = WorkFjord2RouteImport.update({
   path: '/work/fjord2',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkSolace2Route = WorkSolace2RouteImport.update({
+  id: '/work/solace2',
+  path: '/work/solace2',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
   Char91DotmcpChar93InvokeToolToolRouteImport.update({
     id: '/.mcp/invoke-tool/$tool',
@@ -127,6 +133,7 @@ export interface FileRoutesByFullPath {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/fjord2': typeof WorkFjord2Route
+  '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -145,6 +152,7 @@ export interface FileRoutesByTo {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/fjord2': typeof WorkFjord2Route
+  '/work/solace2': typeof WorkSolace2Route
   '/ai': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -164,6 +172,7 @@ export interface FileRoutesById {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/fjord2': typeof WorkFjord2Route
+  '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -184,6 +193,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/fjord2'
+    | '/work/solace2'
     | '/ai/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesByTo: FileRoutesByTo
@@ -202,6 +212,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/fjord2'
+    | '/work/solace2'
     | '/ai'
     | '/.mcp/invoke-tool/$tool'
   id:
@@ -220,6 +231,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/fjord2'
+    | '/work/solace2'
     | '/ai/'
     | '/.mcp/invoke-tool/$tool'
   fileRoutesById: FileRoutesById
@@ -239,6 +251,7 @@ export interface RootRouteChildren {
   AiSlugRoute: typeof AiSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
   WorkFjord2Route: typeof WorkFjord2Route
+  WorkSolace2Route: typeof WorkSolace2Route
   AiIndexRoute: typeof AiIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
@@ -350,6 +363,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkFjord2RouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/solace2': {
+      id: '/work/solace2'
+      path: '/work/solace2'
+      fullPath: '/work/solace2'
+      preLoaderRoute: typeof WorkSolace2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/.mcp/invoke-tool/$tool': {
       id: '/.mcp/invoke-tool/$tool'
       path: '/.mcp/invoke-tool/$tool'
@@ -377,6 +397,7 @@ const rootRouteChildren: RootRouteChildren = {
   AiSlugRoute: AiSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
   WorkFjord2Route: WorkFjord2Route,
+  WorkSolace2Route: WorkSolace2Route,
   AiIndexRoute: AiIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
