@@ -283,7 +283,8 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
     : slug === "affiliate-platform-redesign"
       ? "w-[72%]"
       : slug === "solace"
-        ? "w-[78%]"
+        ? /* 20% larger than the original 78% cover width. */
+          "w-[94%]"
         : "w-full";
 
 /* The banner picture's own corner curve, and the drop it casts: the site's 8px
@@ -419,16 +420,14 @@ function CaseStudyPage() {
           >
             <ArrowLeft size={16} />
           </Link>
-          <span className="eyebrow flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-1">
-            {c.tags.flatMap((t, i) => [
-              <span key={t}>{t}</span>,
-              ...(i < c.tags.length - 1 ? [<span key={`${t}-dot`} aria-hidden="true">·</span>] : []),
-            ])}
-          </span>
+          <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
         <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
           <div className="md:w-[42%] md:shrink-0">
-            <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
+            <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+              One material change meant updating multiple documents. I brought design, materials, and costing into one connected workflow—so teams could get back to making clothes.
+            </p>
             <Button variant="outline" size="lg" asChild>
               <Link
                 to="."
