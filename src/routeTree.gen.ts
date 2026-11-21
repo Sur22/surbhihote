@@ -23,6 +23,7 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 import { Route as AiIndexRouteImport } from './routes/ai.index'
 import { Route as AiSlugRouteImport } from './routes/ai.$slug'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
+import { Route as WorkAffiliate2RouteImport } from './routes/work.affiliate2'
 import { Route as WorkFjord2RouteImport } from './routes/work.fjord2'
 import { Route as WorkSolace2RouteImport } from './routes/work.solace2'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
@@ -101,6 +102,11 @@ const WorkSlugRoute = WorkSlugRouteImport.update({
   path: '/work/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkAffiliate2Route = WorkAffiliate2RouteImport.update({
+  id: '/work/affiliate2',
+  path: '/work/affiliate2',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkFjord2Route = WorkFjord2RouteImport.update({
   id: '/work/fjord2',
   path: '/work/fjord2',
@@ -132,6 +138,7 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/affiliate2': typeof WorkAffiliate2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
@@ -151,6 +158,7 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/affiliate2': typeof WorkAffiliate2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai': typeof AiIndexRoute
@@ -171,6 +179,7 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/work/affiliate2': typeof WorkAffiliate2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
@@ -192,6 +201,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/affiliate2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai/'
@@ -211,6 +221,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/affiliate2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai'
@@ -230,6 +241,7 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/ai/$slug'
     | '/work/$slug'
+    | '/work/affiliate2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai/'
@@ -250,6 +262,7 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   AiSlugRoute: typeof AiSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
+  WorkAffiliate2Route: typeof WorkAffiliate2Route
   WorkFjord2Route: typeof WorkFjord2Route
   WorkSolace2Route: typeof WorkSolace2Route
   AiIndexRoute: typeof AiIndexRoute
@@ -356,6 +369,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/affiliate2': {
+      id: '/work/affiliate2'
+      path: '/work/affiliate2'
+      fullPath: '/work/affiliate2'
+      preLoaderRoute: typeof WorkAffiliate2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/fjord2': {
       id: '/work/fjord2'
       path: '/work/fjord2'
@@ -396,6 +416,7 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   AiSlugRoute: AiSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
+  WorkAffiliate2Route: WorkAffiliate2Route,
   WorkFjord2Route: WorkFjord2Route,
   WorkSolace2Route: WorkSolace2Route,
   AiIndexRoute: AiIndexRoute,

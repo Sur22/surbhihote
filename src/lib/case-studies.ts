@@ -6,7 +6,7 @@ import notificationBannerTilted from "@/assets/notification-banner-tilted.png";
 import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
 
 export type CaseStudy = {
-  slug: "fjord" | "solace" | "solace2" | "atlas" | "atlas2" | "affiliate-platform-redesign";
+  slug: "fjord" | "solace" | "solace2" | "atlas" | "atlas2" | "affiliate-platform-redesign" | "affiliate2";
   index: string;
   title: string;
   subtitle: string;
@@ -123,6 +123,75 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "affiliate-platform-redesign",
     index: "01",
+    title: "Affiliate Portal Redesign-Rebuilding a 25-year-old ad-tech portal without breaking a single workflow",
+    cardTitle: "Affiliate Portal Redesign",
+    subtitle: "\n",
+    cardSubtitle:
+      "Rebuilding a 25-year-old enterprise platform without disrupting the business & 1k+ affiliates.",
+    client: "Fjord, Oslo",
+    year: "2025",
+    ...defaultMeta,
+    strategySectionTitle: "Design Thinking Workshop",
+    strategySectionSubtitle: "Planning",
+    strategy: {
+      ...defaultMeta.strategy,
+      productGoals: {
+        ...defaultMeta.strategy.productGoals,
+        intro: "",
+        workshopAttendees: "\n",
+        workshopSchedule: "\n"
+      }
+    },
+    timeframe: "3 Months",
+    tools: "Survey Monkey,\u00a0Claude, Chat GPT, Microsoft Clarity,\u00a0Microsoft App insights ,\u00a0Power BI, Microsoft Azure,Microsoft Teams, Adobe XD, Figma Make",
+    tasksPerformed: "End-to-End Design, User Research, Workshop Facilitation, Wire-framing, Prototyping,User Testing, Stakeholder buy-in, Collaboration with PM, Engineering team and\u00a0\u00a0QA.\u00a0",
+    overview: "Affiliates — the partner networks who buy and transact against that inventory — run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\n\n\n\nThe portal was 25 years old, and its codebase was frozen — no fix could ship without a full rebuild.\nOver the years, workarounds had hardened into the way affiliates worked.\nI led the end-to-end redesign as Lead Product Designer (sole).\nThe goal: rebuild a business-critical tool that 500+ affiliates depend on daily — without disrupting a single day of their work in the transition.",
+    goal: "\n",
+    research: {
+      ...defaultMeta.research,
+      userInterview: "To get an idea of the users a survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.\nWe got 128 responses  for the survey.\n\nThe major issues that emerged from the 3 open-ended question responses are as follows:",
+    },
+    role: "Lead Product Designer",
+    tags: ["AMPERSAND · AD-TECH · ADVERTISING · ENTERPRISE · SOLE DESIGNER · AI WORKFLOW\u00a0"],
+    cover: affiliateDashboard.url,
+    summary:
+      "Enterprise web redesign of a 25-year-old affiliate ordering portal used by 500+ media partners — 92% task success and zero business lost at launch.",
+    keywords:
+      "affiliate portal UX, ad-tech platform design, enterprise portal redesign, TV advertising platform UX, media buying software design, affiliate ordering portal", 
+    problem:
+      "Fjord had grown a feature graveyard. The home screen hid the user's balance behind four taps; settings buried bill-pay; and the brand voice — warm in print, cold on screen — never carried into the product.",
+    approach: [
+      "30 in-context interviews across three customer segments to map the real Sunday-morning use cases.",
+      "Stripped the IA from 11 tabs to 3, defending the cut in a workshop with leadership and compliance.",
+      "Authored a 64-token design system in Figma — type, spacing, motion, and a single primary action per screen.",
+      "Shipped iteratively behind a feature flag; ran a 6-week A/B against the legacy app before flipping the switch.",
+    ],
+    outcome: [
+      { label: "Task Success Rate", value: "92%" },
+      { label: "reduction in manual refreshes", value: "78%" },
+      { label: "lost in business since launch", value: "$0" },
+      { label: "Broken or limited workflows restored", value: "8" },
+      { label: "Faster page loading", value: "2x ↑" },
+    ],
+    sections: [
+      {
+        heading: "Discovery",
+        body: "We spent four weeks with real customers — at kitchen tables, not in labs. The pattern was immediate: people opened the app to do one of three things, and every one of them took too long. We catalogued every screen, every tap, every dead end, and built a 'minutes-of-friction' map that became the team's north star.",
+      },
+      {
+        heading: "Foundations",
+        body: "Before pixels, tokens. We rebuilt the system from a single 8-point grid, three type sizes, and a motion language tuned to the rhythm of pulling out a wallet. Every component was documented with a 'why', not just a 'how' — so the next designer wouldn't have to guess.",
+      },
+      {
+        heading: "Launch",
+        body: "We rolled out to 5% of users on a Tuesday morning. By Friday, the support team noticed something strange: silence. The new home screen — balance, recent activity, and a single 'Send' button — had absorbed the noise. We expanded to 100% three weeks later.",
+      },
+    ],
+  },
+  {
+    slug: "affiliate2",
+    index: "01",
+    hidden: true,
     title: "Affiliate Portal Redesign-Rebuilding a 25-year-old ad-tech portal without breaking a single workflow",
     cardTitle: "Affiliate Portal Redesign",
     subtitle: "\n",

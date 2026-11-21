@@ -1,0 +1,116 @@
+import { useState } from "react";
+import { ArrowDown, BrainCircuit, CheckCheck, ChevronDown, PenLine } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+/* Independent copy of the AI for Testing panel for its placement below the
+   Affiliate Initial Design image. Nothing is shared with the Testing-section
+   panel: its own step copy, its own flow diagrams, so an edit to either
+   placement never affects the other. */
+
+// Belongs to AI for UX Writing only. Never share or reuse this string in
+// another AI panel: each panel keeps its own validation line.
+const uxWritingValidationLead =
+  "AI generated the options. I defined what was appropriate for the user.";
+
+const steps = [
+  {
+    icon: PenLine,
+    title: "Input",
+    subtitle: "Context + tone + user need ",
+    body: "For microcopy such as CTAs, error messages, tooltips, and placeholder text, I define the context, user task, intended tone, and communication goal in the prompt. I also provide relevant product and user context so the copy remains clear, user-centered, empathetic, and appropriate to the situation.",
+  },
+  {
+    icon: BrainCircuit,
+    title: "AI-generated microcopy",
+    subtitle: "AI Tools - Chat GPT + Claude",
+    body: "AI was used to generate and explore multiple microcopy options based on the defined context, tone, user task, and communication requirements. This helped me quickly explore different ways to communicate the same message while maintaining consistency in tone and intent. ",
+  },
+  {
+    icon: CheckCheck,
+    title: "Validation",
+    subtitle: "",
+    lead: uxWritingValidationLead,
+    body: "I evaluated the generated options for clarity, tone, empathy, accessibility, and alignment with the user's context. I refined or rewrote the copy to ensure it reduced uncertainty, communicated clearly, and helped build trust with the user. ",
+  },
+];
+
+export function AiPanelTestingInitialCopyCopy() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="mt-[100px]">
+      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">
+        <span>AI for UX Writing&nbsp;</span>
+      </h3>
+      {open ? (
+        <div
+          id="ai-ux-writing-panel"
+          className="relative overflow-hidden rounded-xl border border-azure"
+        >
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="ai-ux-writing-panel"
+            aria-label="Collapse AI for UX Writing"
+            className="absolute right-4 top-4 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-foreground/10"
+          >
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 text-foreground/70 transition-transform duration-200",
+                open && "rotate-180",
+              )}
+              strokeWidth={2.8}
+              aria-hidden="true"
+            />
+          </button>
+          {steps.map((step, idx) => (
+            <div key={step.title} className="relative">
+              <div className="flex items-start gap-4 px-6 py-6">
+                <div className="w-9 shrink-0 flex justify-center pt-0.5">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-azure/85">
+                    <step.icon className="h-5 w-5 text-azure-foreground" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-[18px] font-bold leading-snug">{step.title}</h4>
+                  {step.subtitle ? (
+                    <p className="mt-1 text-sm text-muted-foreground">{step.subtitle}</p>
+                  ) : null}
+                  <p className="mt-3 text-[15px] leading-relaxed text-foreground/85">{step.body}</p>
+                  {step.lead ? (
+                    <p className="mt-3 text-[15px] font-bold leading-relaxed">{step.lead}</p>
+                  ) : null}
+                </div>
+              </div>
+              {idx < 2 ? (
+                <div className="step-connector" aria-hidden="true">
+                  <ArrowDown className="h-4 w-4 text-foreground/60" />
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="ai-ux-writing-panel"
+          className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-azure px-6 py-6 text-left"
+        >
+          <span className="block text-[15px] font-bold leading-relaxed">
+            {uxWritingValidationLead}
+          </span>
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-foreground/10">
+            <ChevronDown
+              className="h-4 w-4 text-foreground/70"
+              strokeWidth={2.8}
+              aria-hidden="true"
+            />
+          </span>
+        </button>
+      )}
+    </div>
+  );
+}
