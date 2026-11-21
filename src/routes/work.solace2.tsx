@@ -301,53 +301,44 @@ const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
     : {};
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
-  const showImpactHeader = topOutcomeSlugs.has(c.slug);
+  void c;
+  /* "The outcome" band — intro block on the left (eyebrow, serif line and a
+     jump link to the testing section that holds the numbers), then three
+     stats parted by thin vertical rules, each with a bold label and a quiet
+     sub-label. Stats stack with top rules on narrow screens. */
+  const stats = [
+    { value: "64%", label: "Calculation mistakes", sub: "Connected material & cost data" },
+    { value: "34%", label: "Time on task", sub: "Reuse instead of re-entry" },
+    { value: "27%", label: "Workflow errors", sub: "Standardized, versioned handoffs" },
+  ];
   return (
-    <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${showImpactHeader ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
-      <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
-      {showImpactHeader && (
-        <>
-          <h3 className="text-center font-serif text-4xl md:text-5xl font-normal mb-6">At a glance</h3>
-          {/* The "See the solution" button moved up into the hero, beside the
-              title. */}
-          <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-            {c.slug === "fjord" 
-              ? "Built an in-house tool which is helping the staff to serve the clients faster and use the audience for multiple workflows within the platform resulting increase in workflow efficiency.\u00a0\u00a0"
-              : c.slug === "solace"
-              ? "As Suuchi’s founding and sole designer, I led end-to-end design of a new Tech Pack capability within GRID. It connected design files, materials, trims, costing, and production documentation, helping teams move from scattered documents to a coordinated workflow within one platform.This project streamlined the process eliminating the manual errors, delays in production deadlines and product delivery."
-              : c.slug === "affiliate-platform-redesign"
-              ? "Rebuilding a 25-year-old enterprise platform used by 1000+ affiliates. The challenge wasn't simply making it better; it was improving it without disrupting the workflows users had built around years of workarounds"
-              : "Notification management for the people\nkeeping production moving.Organizing and managing notifications to granular level.When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
-          </p>
-        </>
-      )}
-      <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
-        {c.outcome.map((o) => (
-          <div key={o.label} className="border-t border-border pt-6">
-            {o.value && (
-              <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">
-                {o.value === "1 week - 5 min" || o.value === "~$850K\u00A0\u2192\u00A0$0" || o.value === "\u00a0 \u00a0 \u00a0 \u00a0 $0" ? (
-                  <span className="whitespace-nowrap flex items-center gap-2">
-                    {o.value === "~$850K\u00A0\u2192\u00A0$0" ? (
-                      <>
-                        ~$850K <span className="text-[70%]">\u2192</span> $0
-                      </>
-                    ) : o.value === "1 week - 5 min" ? (
-                      <>1 <span className="text-2xl">week</span> <span className="text-[70%]">→</span> 5 <span className="text-2xl">min</span></>
-                    ) : (
-                      <>{o.value}</>
-                    )}
-                  </span>
-                ) : (
-                  <>{o.value}</>
-                )}
-                {o.label.includes("Usability Improved") || o.value === "17%" ? <TrendingUp className="inline-block ml-2 w-8 h-8 md:w-10 md:h-10" /> : null}
-                {(o.label.includes("Manual refresh eliminated") || o.label.includes("Manual refresh dropped significantly") || o.label.includes("No business lost till the date since the release") || o.value.includes("78%") || o.value.includes("64%") || o.value.includes("34%") || o.value.includes("27%") || o.value.includes("38%") || o.value.includes("84%") || o.label.includes("Delivery deadlines missed") || o.label.includes("Critical alerts missed") || o.label.includes("Irrelevant\u00a0Notifications Reduced")) && (
-                  <span className="text-[70%] ml-1">↓</span>
-                )}
-              </p>
-            )}
-            <p className="text-sm text-muted-foreground whitespace-pre-line">{o.label}</p>
+    <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
+      <div className="grid gap-10 md:grid-cols-[1.35fr_1fr_1fr_1fr] md:gap-0">
+        <div className="md:pr-10">
+          <p className="eyebrow mb-4">The outcome</p>
+          <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less rework.\nMore making."}</h3>
+          <a
+            href="#testing"
+            className="inline-flex items-center gap-1 text-accent hover:underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("testing");
+              if (el) {
+                history.replaceState(null, "", "#testing");
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
+          >
+            How this was measured <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        {stats.map((s) => (
+          <div key={s.label} className="border-t border-border pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-10">
+            <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-nowrap">
+              {s.value}<span className="text-[70%] ml-1">↓</span>
+            </p>
+            <p className="font-semibold text-foreground mb-1">{s.label}</p>
+            <p className="text-sm text-muted-foreground">{s.sub}</p>
           </div>
         ))}
       </div>
@@ -484,16 +475,28 @@ function CaseStudyPage() {
       {/* Outcome for case studies 02-04 */}
       {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
-      {/* Meta grid */}
+      {/* Meta grid — four facts on the first row; Tools and Tasks Performed
+          drop to a second row, each stretching across two columns. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
-            { k: "My Role", v: c.slug === "affiliate-platform-redesign" ? "Lead Product Designer (Sole)" : c.role },
-            { k: "Timeframe", v: c.timeframe },
+            { k: "My Role", v: "Founding & sole UI/UX designer" },
+            { k: "Scope", v: "0 → 1 capability · Web · B2B SaaS" },
+            { k: "Timeframe", v: "2 months · overlapping design & build" },
+            { k: "Partners", v: "Product, Engineering & QA" },
+          ].map((m) => (
+            <div key={m.k}>
+              <p className="eyebrow mb-2 font-bold">{m.k}</p>
+              <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+          {[
             { k: "Tools", v: c.tools },
             { k: "Tasks Performed", v: c.tasksPerformed },
           ].map((m) => (
-            <div key={m.k}>
+            <div key={m.k} className="md:col-span-2">
               <p className="eyebrow mb-2 font-bold">{m.k}</p>
               <p className="text-base leading-relaxed text-foreground/85">{m.v}</p>
             </div>
