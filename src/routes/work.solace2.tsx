@@ -426,7 +426,7 @@ function CaseStudyPage() {
           <div className="md:w-[42%] md:shrink-0">
             <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-              One material change meant updating multiple documents. I brought design, materials, and costing into one connected workflow—so teams could get back to making clothes.
+              One material change meant updating multiple documents. I brought design, materials, and costing into one connected workflow so teams could get back to making clothes.
             </p>
             <Button variant="outline" size="lg" asChild>
               <Link
