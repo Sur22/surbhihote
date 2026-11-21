@@ -271,7 +271,8 @@ const coverWidth = (slug: CaseStudy["slug"]) =>
   slug === "atlas" || slug === "atlas2"
     ? "w-[35%]"
     : slug === "affiliate-platform-redesign"
-      ? "w-[72%]"
+      ? /* 72% × 1.45 — the hero mockup enlarged 45%. */
+        "w-[104.4%]"
       : slug === "solace"
         ? "w-[78%]"
         : "w-full";
@@ -441,7 +442,7 @@ function CaseStudyPage() {
               at every width. */}
           <div className="md:flex-1 md:min-w-0">
             {cardDiscSlugs.has(c.slug) ? (
-              <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
+              <div className={`relative ${c.slug === "affiliate-platform-redesign" ? "overflow-visible" : "overflow-hidden"} ${coverPad(c.slug)}`}>
                 <div className="relative">
                   <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
                     <div className="study-glass-ring absolute aspect-square h-full" style={coverDiscStyle(c.slug)} />
