@@ -408,19 +408,26 @@ function CaseStudyPage() {
           same row on desktop; they stack title-first on narrow screens. 30px of
           air sits above the row. */}
       <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
+        {/* Tagline row — spans the full line width, the back arrow at its left
+            and the keyword tags spread edge to edge across the rest. */}
+        <div className="flex items-center gap-4 mt-[30px] mb-8">
+          <Link
+            to="/"
+            hash="case-studies"
+            aria-label="Back to portfolio"
+            className="inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft size={16} />
+          </Link>
+          <span className="eyebrow flex flex-1 flex-wrap items-center justify-between gap-x-3 gap-y-1">
+            {c.tags.flatMap((t, i) => [
+              <span key={t}>{t}</span>,
+              ...(i < c.tags.length - 1 ? [<span key={`${t}-dot`} aria-hidden="true">·</span>] : []),
+            ])}
+          </span>
+        </div>
         <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
           <div className="md:w-[42%] md:shrink-0">
-            <div className="flex items-center gap-4 mt-[30px] mb-8">
-              <Link
-                to="/"
-                hash="case-studies"
-                aria-label="Back to portfolio"
-                className="inline-flex shrink-0 items-center text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <ArrowLeft size={16} />
-              </Link>
-              <span className="eyebrow">{c.tags.join(" · ")}</span>
-            </div>
             <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
             <Button variant="outline" size="lg" asChild>
               <Link
