@@ -2640,13 +2640,15 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             { n: "03", t: "Let users save unfinished work" },
             { n: "04", t: "Standardize the factory handoff" },
           ].map((d) => (
-            <div key={d.n} className="flex items-start justify-between gap-4 px-6 py-8">
+            <Button key={d.n} asChild variant="ghost" className="h-auto rounded-none p-0 whitespace-normal font-normal dark:border-0 hover:bg-decision-accent/5">
+            <a href={`#decision-${d.n}`} className="flex items-start justify-between gap-4 px-6 py-8">
               <div className="flex items-baseline gap-3">
                 <span className="text-sm font-bold text-decision-accent">{d.n}</span>
                 <p className="text-sm font-bold text-foreground">{d.t}</p>
               </div>
               <span aria-hidden className="text-decision-accent text-sm leading-none mt-0.5">&#8600;</span>
-            </div>
+            </a>
+            </Button>
           ))}
         </div>
         <Solace2KeyDecisionDetails onZoom={setZoomImg} brainstorming={brainstormingImg} materials={finalBom.url} document={finalPdf.url} />
