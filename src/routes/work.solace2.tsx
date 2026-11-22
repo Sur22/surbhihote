@@ -734,7 +734,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <p className="text-sm tracking-wide text-foreground/60 mb-4">Stakeholder interview</p>
                 <h3 className="h3 mb-4">Head of Product Development</h3>
                 <p className="text-lg leading-relaxed text-foreground/70 mb-8">Clarified the problem we were trying to solve.</p>
-                <div className="rounded-xl bg-[#ededed] dark:bg-white/10 p-6">
+                <div className="rounded-xl border border-[#ffa348] dark:border-foreground/25 p-6">
                   <p className="text-sm font-medium text-foreground/60 mb-2">The problem</p>
                   <p className="text-lg leading-relaxed text-foreground/85">PLM has many phases and stages. Product Development Managers struggled to manage product files and data, and used multiple tools to talk to the factory and the client every time a product changed.</p>
                 </div>
@@ -747,7 +747,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
               </div>
             </div>
-            <div className="rounded-2xl border border-foreground/15 p-8 md:p-10 mt-6">
+            <div className="rounded-2xl border border-[#ffa348] dark:border-foreground/25 p-8 md:p-10 mt-6">
               <p className="text-sm tracking-wide text-foreground/60 mb-8">Questions targeted at the functionality we planned to build</p>
               <div className="grid gap-8 md:grid-cols-3">
                 {[
