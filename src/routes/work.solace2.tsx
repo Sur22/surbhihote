@@ -615,9 +615,9 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           {true && (
             <div id="the-problem" className="scroll-mt-24">
               <p className="eyebrow mb-6">01 / The Challenge</p>
-              <h2 className="h2 max-w-2xl mb-12">
+              <h3 className="h3 max-w-2xl mb-12">
                 A small change could create a lot of expensive rework.
-              </h2>
+              </h3>
               <div className="grid gap-10 md:grid-cols-2 md:gap-16">
                 <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
                   <p>
