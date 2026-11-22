@@ -629,7 +629,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   </p>
                   <div className="space-y-[30px]">
                     <p>
-                      <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
+                      <strong className="font-bold text-foreground">The Challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
                     </p>
                     <p>
                       <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
