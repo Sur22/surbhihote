@@ -10,7 +10,6 @@ import { AiPanelTesting } from "@/components/AiPanelTesting";
 import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
 import { AffiliateProblemsOpportunityCards } from "@/components/AffiliateProblemsOpportunityCards";
 import { AffiliateRealProblemCards } from "@/components/AffiliateRealProblemCards";
-import { AffiliateSurveyIssuesCards } from "@/components/AffiliateSurveyIssuesCards";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -766,14 +765,6 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           </div>
         )}
         <div className="space-y-12">
-          {c.slug === "solace" && (
-            <div>
-              <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Stakeholder Interview</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.research.stakeholderInterview}
-              </p>
-            </div>
-          )}
           {c.slug === "atlas" && (
             <div className="mb-12">
               <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
@@ -786,50 +777,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               </p>
             </div>
           )}
-          <div>
-            <h3 className={`font-serif text-3xl font-medium text-foreground/85 ${c.slug === "solace" ? "mb-[30px]" : "mb-4"}`}>
-              {(c.slug === "affiliate-platform-redesign") ? "Survey" : "Stakeholder Interview"}
-            </h3>
-            <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              {c.slug === "fjord" ? (
-                <>
-                  <p>
-                  Ampersand has a tool to create custom segments, but its UI was complicated and not intuitive. To understand the user's needs, frustrations, and pain points, I conducted user interviews with 5 different users.
-                  <br /><br />
-                  I talked with both of the user groups who were going to use this tool. I asked users with access to the tool to give me a walk me through the tool and observed how they use it and all the functionalities they are using.At the same time I asked them to tell any pain points and shortcomings with the current tool,&nbsp;what they like and don't like about it
-                  <br /><br />
-                  I gathered 3 users with no access to the tool and asked them to create custom audience by using think out loud method as they try to use it for the first time. This way I&nbsp;made sure to understand friction points to address while designing.
-                  <br /><br />
-                  Observations for the new users were
-                  <br />1. Users had difficulty in how grouping of the segments work
-                  <br />2. There were 2 searches for the audience on left and right side which were confusing
-                  <br />3. The screen was very busy due to the way UI was designer
-                  <br />4. If you want to include an excluded segment and vice versa it was 3 to 4 clicks process.
-                  <br /><br />
-                  I also studied the existing tool to understand all the functionalities it performs and made sure I did not miss any part of the tool.
-                  which we needed to build, plus a few more things to enhance the functionality and make it easy for users.
-                  <br />1.&nbsp; Not very intuitive for.
-                  <br />2. Copy the whole segment logic once it is built.
-                  <br />3. Copy and modify an existing segment.
-                  <br />4. Ability to see segments created by other users and copy them.
-                  </p>
-                </>
-              ) : (c.slug === "affiliate-platform-redesign") ? (
-                <>
-                  <p>{c.research.userInterview}</p>
-                  <AffiliateSurveyIssuesCards />
-                </>
-              ) : (c.slug === "solace") ? (
-                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                  <p>
-                    Main users of this tool were 'Textile Product Designers' and 'Product Development Managers' who would create styles based on client requirements. With the team moving fast, I chose guerrilla, in-context desk interviews with 5 users which are enough to signal to direct design without stalling the sprint. I asked them questions specifically targeted to the functionality we wanted to build. Trying to understand what problems are being faced and why & how can we provide the solution for it.&nbsp;
-                  </p>
-                </div>
-              ) : (
-                <p>{c.research.userInterview}</p>
-              )}
-            </div>
-          </div>
           </div>
           {(c.slug === "fjord") && (
             <div className="mt-16">
@@ -893,44 +840,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           )}
 
 
-
-        {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign") && (
-          <div className="mt-16 rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 md:px-16 py-16 relative overflow-hidden">
-            <div className="study-band-glass" />
-            <div className="relative z-10">
-              <h3 className="font-serif text-3xl md:text-4xl mb-6 font-normal">{(c.slug === "solace") ? "User Interview Insights" : "User Interview Insights\u00a0"}</h3>
-              <div className="border-l border-band-foreground/40 pl-8 md:pl-12 space-y-10 max-w-3xl mx-auto">
-                {c.slug === "solace" ? (
-                  <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    <p>
-                      <em className="italic">"It's difficult to put together all the details about the style in one place as different detail are in different files."</em>
-                      {"\n"}- Technical Designer
-                      {"\n\u200d\n"}
-                      <em className="italic">"If there is any change in the style details or material we have to make the change in all the documents/files related to it which is difficult"</em>
-                      {"\n"}- Fashion Designer
-                      {"\n\u200d\n"}
-                      <em className="italic">"Every time there are changes we have to keep factories updated with that and provide them the updated project related files"</em>
-                      {"\n"}- Product Development Manager
-                      {"\n\n"}
-                      <em className="italic">"We have to search the material , trims and labels information and pricing and then add their price manually to the document/files "</em>
-                      {"\n"}- Product Development Manager
-                      {"\n\u200d"}
-                    </p>
-                  </div>
-                ) : (
-                  <div className="text-lg md:text-xl leading-relaxed whitespace-pre-line space-y-10">
-                    {c.research.userInterviewInsights.map((insight, idx) => (
-                      <p key={idx}>
-                        <em className="italic">{insight.quote}</em>
-                        {"\n"}-{insight.author}
-                      </p>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* User Journey — Notifications Management only, mirroring the Tech Pack
             Tool journey table: same shared-Table structure,
