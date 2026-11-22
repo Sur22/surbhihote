@@ -579,14 +579,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </p>
             </div>
           )}
-          {c.slug === "solace" && (
-            <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.problem}
-              </p>
-            </div>
-          )}
+          {/* Problem and Goal blocks removed from the Overview section on this
+              copy page; the Goal text lives in the Challenge section below. */}
           {c.slug === "atlas" && (
             <div>
               <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
@@ -614,25 +608,6 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       </div>
                     </div>
                   ))}
-              </div>
-            </div>
-          )}
-          {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && (
-            <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
-              <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {c.slug === "solace"
-                  ? <p className="whitespace-pre-line">
-                      <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
-                    </p>
-                  : c.slug === "fjord"
-                  ? <p className="whitespace-pre-line">
-                      {`When clients want to run their ads on TV or a streaming platform, they \x03have to define the target audience they want their ads to reach, including or excluding certain types of audience for their campaigns.\x03Ampersand AEs build the custom audience according to their needs, so \x03the number of audience can be calculated to meet the client's expectation in terms of reach and impressions, for the campaign to be successful \x03for the clients.
-Limited number of users having access to an expensive tool where they can create custom audience.
-If AE's want to build a custom audience to for the clients would require to send a request\x03to the data team and the turn around time was at least a week as the team is small. \x03AE's had to wait for getting their coustom audience for the campaign.`}
-                    </p>
-                  : <p className="whitespace-pre-line">{c.goal}</p>
-                }
               </div>
             </div>
           )}
