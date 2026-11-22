@@ -694,19 +694,19 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           <div className="mt-16 grid gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-foreground/20 px-6 py-5">
               <h4 className="h4">Before</h4>
-              <p className="statement-line mt-3 text-center">
+              <p className="statement-line mt-3 text-left">
                 {"Find scattered files → Re-enter & calculate → Email & repeat"}
               </p>
-              <p className="mt-2 text-center text-sm text-foreground/60">
+              <p className="mt-2 text-left text-sm text-foreground/60">
                 Repeated work at every change
               </p>
             </div>
             <div className="rounded-xl border border-foreground/20 px-6 py-5">
               <h4 className="h4">After</h4>
-              <p className="statement-line mt-3 text-center">
+              <p className="statement-line mt-3 text-left">
                 {"Reuse library data → Connect design & costs → Share a version"}
               </p>
-              <p className="mt-2 text-center text-sm text-foreground/60">
+              <p className="mt-2 text-left text-sm text-foreground/60">
                 One coordinated workflow
               </p>
             </div>
