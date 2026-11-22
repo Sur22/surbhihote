@@ -1045,10 +1045,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Personas</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            <h3 className="h2 mb-3">Personas across the product lifecycle</h3>
+            <p className="text-lg leading-relaxed text-foreground/70 mb-10">Four role-based profiles, with different responsibilities in the same workflow</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12 mb-10">
               {[
                 {
+                  role: "Coordinate",
                   name: "Product Development Manager",
                   goals: [
                     "Manage end-to-end product lifecycle from design to production",
@@ -1073,6 +1075,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ],
                 },
                 {
+                  role: "Manufacture",
                   name: "Manufacturing Factory User",
                   goals: [
                     "Receive complete and accurate techpacks for production",
@@ -1081,20 +1084,16 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ],
                 },
               ].map((persona) => (
-                <div
-                  key={persona.name}
-                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
-                >
-                  <div className="relative z-10">
-                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
-                      {persona.name}
-                    </h4>
-                    <ul className="list-disc list-inside text-sm text-card-foreground space-y-2">
-                      {persona.goals.map((goal, idx) => (
-                        <li key={idx}>{goal}</li>
-                      ))}
-                    </ul>
-                  </div>
+                <div key={persona.name} className="border-t border-foreground/15 pt-6">
+                  <p className="eyebrow mb-3">{persona.role}</p>
+                  <h4 className="font-serif text-2xl md:text-3xl font-normal mb-5 whitespace-pre-line">
+                    {persona.name}
+                  </h4>
+                  <ul className="list-disc list-inside text-[15px] leading-relaxed text-foreground/80 space-y-2.5">
+                    {persona.goals.map((goal, idx) => (
+                      <li key={idx}>{goal}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
