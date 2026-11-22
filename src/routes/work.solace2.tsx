@@ -701,7 +701,7 @@ If AE's want to build a custom audience to for the clients would require to send
                         </div>
                       </CarouselItem>
                     </CarouselContent>
-                    <CarouselDots className="mt-10" />
+                    <CarouselDots className="mt-10 [&_button]:bg-band-foreground/40 [&_button:hover]:bg-band-foreground/70" />
                   </Carousel>
                 </div>
               </div>
