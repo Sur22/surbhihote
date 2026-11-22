@@ -3146,7 +3146,7 @@ function Solace2SolutionWalkthrough() {
           </button>
         ))}
       </div>
-      <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-start">
+      <div className="grid gap-10 lg:grid-cols-[2.32fr_1fr] lg:items-start">
         <div className="overflow-hidden rounded-sm border border-foreground/15 shadow-sm">
           <img src={step.image} alt={step.imageAlt} className="w-full h-auto" loading="lazy" />
         </div>
