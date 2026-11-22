@@ -3127,7 +3127,7 @@ function Solace2SolutionWalkthrough() {
     <div className="mb-16">
       <p className="eyebrow mb-6">02 / The solution, in use</p>
       <div className="mb-14">
-        <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight md:whitespace-nowrap">
+        <h3 className="h3">
           From a design idea to a shared production document.
         </h3>
         <p className="mt-6 text-lg leading-relaxed text-foreground/70">
