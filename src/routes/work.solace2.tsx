@@ -654,8 +654,9 @@ If AE's want to build a custom audience to for the clients would require to send
                     <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
                   </p>
                 </div>
-                <div className="md:border-l md:border-foreground/15 md:pl-12">
-                  <Carousel opts={{ align: "start" }} className="w-full">
+                <div className="relative overflow-hidden rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 py-10 md:px-12 md:py-12">
+                  <div className="study-band-glass" />
+                  <Carousel opts={{ align: "start" }} className="relative z-10 w-full">
                     <CarouselContent>
                       <CarouselItem>
                         <div className="space-y-12">
@@ -664,7 +665,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               If there is any change in the style details or material we have to make the change in all the documents/files related to it.
                             </blockquote>
-                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                            <figcaption className="mt-6 text-sm text-band-foreground/60">
                               Fashion Designer · User interview
                             </figcaption>
                           </figure>
@@ -672,7 +673,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
                               It&rsquo;s difficult to put together all the details about the style in one place as different detail are in different files.
                             </blockquote>
-                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                            <figcaption className="mt-6 text-sm text-band-foreground/60">
                               Technical Designer · User interview
                             </figcaption>
                           </figure>
@@ -685,7 +686,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
                             </blockquote>
-                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                            <figcaption className="mt-6 text-sm text-band-foreground/60">
                               Product Development Manager · User interview
                             </figcaption>
                           </figure>
@@ -693,7 +694,7 @@ If AE's want to build a custom audience to for the clients would require to send
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
                               We have to search the material, trims and labels information and pricing and then add their price manually to the document/files.
                             </blockquote>
-                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                            <figcaption className="mt-6 text-sm text-band-foreground/60">
                               Product Development Manager · User interview
                             </figcaption>
                           </figure>
