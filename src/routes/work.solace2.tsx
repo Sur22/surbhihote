@@ -1103,11 +1103,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="font-serif text-2xl md:text-3xl mb-3 font-normal">User Journey</h3>
-            <p className="flex flex-wrap items-baseline gap-x-8 gap-y-1 mb-6 text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">{"\n"}</span>
-              <span>{"\n"}</span>
-            </p>
+            <h3 className="h3 mb-3">User journey: preparing a production-ready Tech Pack</h3>
+            <p className="text-lg leading-relaxed text-foreground/70 mb-6">Current journey for a Product Development Manager or Technical / Fashion Designer</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-2">The journey exposed repeated effort from gathering information through sharing and updating the production documents.</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">The opportunity was to centralize information and connect each stage.</p>
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
               <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
@@ -1115,10 +1114,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
                 </p>
               </div>
-              <h4 className="h4 mt-[80px]">{"Development Manager / Technical Fashion Designer"}</h4>
-              <p className="mt-3 text-lg leading-relaxed text-foreground/85">
-                {"From scattered product information to a production-ready Tech Pack"}
-              </p>
             </div>
             <div className="journey-table">
               <Table className="min-w-[820px]">
