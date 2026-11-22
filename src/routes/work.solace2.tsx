@@ -1334,14 +1334,13 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
             <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               <strong>1. Centralize</strong>{"\n"}
-              <strong>Building Libraries (Quick Win) -</strong>{"\u00a0"}To show the collection of all the Tech Pack and CAD files which get added to individual products already available on the platform,{"\u00a0"}Build the Material & Trims library so it can be added to products directly and eliminate related manual data entry and paperwork.{"\n"}
+              Bring CAD and tech pack files already attached to products into shared libraries. Add a materials and trims library so teams can reuse information without repeated data entry.{"\n"}
               {"\u00a0"}{"\n"}
-              <strong>2. Connect</strong>{"\u00a0"}{"\u00a0"}{"\n"}
-              <strong>Automation -</strong> Transition from pre-production to production stage came with a lot of manual work entering the material and trims details manually. In addition to that, you have to add the costs for the product and create a bill of materials, which was a time-consuming task and calculation errors occurred frequently.{"\u00a0"}{"\u00a0"}{"\u00a0"}{"\n"}
-              Connecting all the different parts of the platform to talk to each other and connect the workflow from pre-production to production stage, enabling ease of handling the process, documents, cost sheet, changes in product, and collaboration with clients, factories, and internally to make the workflow better and efficient.{"\n"}
-              {"\u00a0"}{"\u00a0"}{"\n"}
-              <strong>3. Collaboration</strong>{"\u00a0"}{"\n"}
-              <strong>Standardization -</strong> Bridge the gap between pre-production and production stage of a product lifecycle. There is a need for a standardized document that will contain all the details of the product, like designs, materials, trims, and detailed instructions, which can be sent to the manufacturing factory. If there are modifications to the details, then a new version of the document will be created and sent to the factories, making it easier to track changes and communicate them to the factories.{"\u00a0"}
+              <strong>2. Connect</strong>{"\n"}
+              Link material and trim details to the bill of materials and cost sheet. Bring pre-production information into the editor so teams can prepare for production in one workflow.{"\n"}
+              {"\u00a0"}{"\n"}
+              <strong>3. Collaborate</strong>{"\n"}
+              Create a standardized document with designs, materials, and production instructions. Version revisions and use existing platform comments to support communication with clients and factories.{"\u00a0"}
               {"\n\n"}
               Design ran ahead of engineering. Each work stream was researched, designed, and reviewed to sign-off, then handed to development{"\u00a0"} and while it was being built, I designed the next one. The eight weeks below are a single pipeline, not sequential phases; design and build overlap throughout.Following is the Build & release sequence.
             </p>
