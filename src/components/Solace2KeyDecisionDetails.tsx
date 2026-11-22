@@ -102,10 +102,10 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
           <p className="text-sm leading-relaxed text-foreground/70"><strong className="text-foreground">The design implication:</strong> saving progress and completing the document are different needs. The flow had to make room for both.</p>
           <p className="text-sm leading-relaxed text-foreground/70 mt-5">The test identified the issue and informed the revision. A separate result for the revised Save interaction was not documented.</p>
         </div>
-        <div className="border border-foreground/15 bg-decision-accent/5 p-8">
+        <div className="border border-foreground/15 p-8">
           <p className="eyebrow text-decision-accent mb-6">Prototype testing</p>
           <div aria-label="3 of 5 participants" className="flex gap-2 mb-6">{[0, 1, 2, 3, 4].map(i => <span key={i} className={`h-3.5 w-3.5 rounded-full border border-decision-accent ${i < 3 ? "bg-decision-accent" : ""}`} />)}</div>
-          <p className="font-serif text-6xl text-decision-accent">3 <span className="text-2xl italic">of</span> 5</p>
+          <p className="font-serif text-6xl text-foreground">3 <span className="text-2xl italic">of</span> 5</p>
           <p className="h3 mt-3 pb-6 border-b border-foreground/15">wanted to save before leaving.</p>
           <p className="eyebrow mt-7 mb-3">Test signal</p><p className="text-sm">Users expected to preserve unfinished work.</p>
           <p className="eyebrow mt-7 mb-3">Design response</p><p className="text-sm">Added an explicit Save option.</p>
