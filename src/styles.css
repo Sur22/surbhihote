@@ -151,6 +151,7 @@
 }
 
 .dark {
+  --copy-orange-text: var(--amber);
   --paper: oklch(0.12 0.02 60);
   --ink: oklch(0.93 0.018 80);
   --clay: #2f9cc4;
