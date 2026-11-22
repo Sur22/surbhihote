@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, ArrowDown, ArrowUpRight, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Solace2KeyDecisionDetails } from "@/components/Solace2KeyDecisionDetails";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import { AiPanelSurvey } from "@/components/AiPanelSurvey";
@@ -2833,13 +2834,14 @@ Users needed an easy way to control and manage the notifications they want and s
           ].map((d) => (
             <div key={d.n} className="flex items-start justify-between gap-4 px-6 py-8">
               <div className="flex items-baseline gap-3">
-                <span className="text-sm font-bold text-[#ffa348]">{d.n}</span>
+                <span className="text-sm font-bold text-decision-accent">{d.n}</span>
                 <p className="text-sm font-bold text-foreground">{d.t}</p>
               </div>
-              <span aria-hidden className="text-[#ffa348] text-sm leading-none mt-0.5">&#8600;</span>
+              <span aria-hidden className="text-decision-accent text-sm leading-none mt-0.5">&#8600;</span>
             </div>
           ))}
         </div>
+        <Solace2KeyDecisionDetails onZoom={setZoomImg} brainstorming={brainstormingImg} materials={finalBom.url} document={finalPdf.url} />
       </section>
 
       {(c.slug === "atlas" || c.slug === "atlas2") && (

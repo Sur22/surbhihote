@@ -56,6 +56,7 @@
   /* The AI for Research panel's outline stays this blue in both themes, so it
      carries its own token instead of a colour written into the component. */
   --color-azure: var(--azure);
+  --color-decision-accent: var(--amber);
   /* The icons sitting on those azure discs likewise stay light in both themes. */
   --color-azure-foreground: var(--azure-foreground);
   /* The grey a table row takes on hover, published so components use bg-* with

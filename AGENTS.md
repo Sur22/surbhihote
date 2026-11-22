@@ -9,3 +9,4 @@
 - Repeated case-study panels the user edits independently (e.g. the Affiliate AI panels) get one component file per placement, including copies of any nested parts they render (e.g. flow diagrams), so a visual edit to one never changes the others.
 - A picture whose frame clips its own corners (`overflow-hidden` wrapper sized to the picture) wears its drop shadow on that wrapper, never on the picture itself — the wrapper clips a shadow drawn by its own child, so the drop disappears.
 - Document-based AI case studies keep supplied Markdown in src/content and render it through a dedicated study component within AIProjectPageContent, so source wording and emphasis remain intact while sharing the site's page format.
+- Tech Pack copy decision details live in a copy-only component with images supplied by its route, so the original study remains independent.
