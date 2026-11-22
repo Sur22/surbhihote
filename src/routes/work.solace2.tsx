@@ -1106,7 +1106,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <h3 className="h3 mb-3">User journey: preparing a production-ready Tech Pack</h3>
             <p className="text-lg leading-relaxed text-foreground/70 mb-6">Current journey for a Product Development Manager or Technical / Fashion Designer</p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-2">The journey exposed repeated effort from gathering information through sharing and updating the production documents.</p>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-8">The opportunity was to centralize information and connect each stage.</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">{"\n"}</p>
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
               <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
