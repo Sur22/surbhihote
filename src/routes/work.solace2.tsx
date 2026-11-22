@@ -622,7 +622,9 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {c.slug === "solace"
-                  ? "The Goal: Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.\u00a0"
+                  ? <p className="whitespace-pre-line">
+                      <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
+                    </p>
                   : c.slug === "fjord"
                   ? <p className="whitespace-pre-line">
                       {`When clients want to run their ads on TV or a streaming platform, they \x03have to define the target audience they want their ads to reach, including or excluding certain types of audience for their campaigns.\x03Ampersand AEs build the custom audience according to their needs, so \x03the number of audience can be calculated to meet the client's expectation in terms of reach and impressions, for the campaign to be successful \x03for the clients.
@@ -652,7 +654,9 @@ If AE's want to build a custom audience to for the clients would require to send
                   </p>
                   <p>
                     <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
-                    {"\n\n\nThe Goal: Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.\u00a0\n\n\n\n"}
+                    {"\n\n\n"}
+                    <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
+                    {"\n\n\n\n"}
                   </p>
                 </div>
                 <div className="relative overflow-hidden rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 py-10 md:px-12 md:py-12">
