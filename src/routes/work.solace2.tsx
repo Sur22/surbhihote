@@ -2817,6 +2817,31 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
 
+      {/* Key Decisions */}
+      <section id="key-decisions" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
+        <p className="eyebrow mb-6">03 / The decisions behind the screens</p>
+        <h2 className="h2 mb-6">Four choices that shaped the experience.</h2>
+        <p className="text-lg leading-relaxed text-foreground/70 max-w-[560px] mb-14">
+          The work was as much about sequencing dependencies and protecting users&rsquo; effort as it was about designing an editor.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-4 border-y border-foreground/20 divide-y md:divide-y-0 md:divide-x divide-foreground/20">
+          {[
+            { n: "01", t: "Libraries before the editor" },
+            { n: "02", t: "Connect costs to material data" },
+            { n: "03", t: "Let users save unfinished work" },
+            { n: "04", t: "Standardize the factory handoff" },
+          ].map((d) => (
+            <div key={d.n} className="flex items-start justify-between gap-4 px-6 py-8">
+              <div className="flex gap-4">
+                <span className="text-sm font-semibold text-[#ffa348]">{d.n}</span>
+                <p className="font-serif text-2xl leading-snug">{d.t}</p>
+              </div>
+              <span aria-hidden className="text-[#ffa348] text-lg leading-none mt-1">&#8600;</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {(c.slug === "atlas" || c.slug === "atlas2") && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}

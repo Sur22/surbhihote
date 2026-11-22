@@ -43,6 +43,10 @@ function getSections(slug?: string): Section[] {
     if (overviewIdx !== -1) {
       sections.splice(overviewIdx + 1, 0, { id: "the-problem", label: "The Problem" });
     }
+    const testingIdx = sections.findIndex((s) => s.id === "testing");
+    if (testingIdx !== -1) {
+      sections.splice(testingIdx + 1, 0, { id: "key-decisions", label: "Key Decisions" });
+    }
   }
 
   if (slug && slugsWithQualitativeResearch.has(slug)) {
