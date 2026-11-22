@@ -681,7 +681,8 @@ If AE's want to build a custom audience to for the clients would require to send
                       <CarouselItem>
                         <div className="space-y-12">
                           <figure>
-                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
+                            <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
                             </blockquote>
                             <figcaption className="mt-6 text-sm text-muted-foreground">
