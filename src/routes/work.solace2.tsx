@@ -634,6 +634,38 @@ If AE's want to build a custom audience to for the clients would require to send
               </div>
             </div>
           )}
+          {/* This route only serves the solace2 copy; the loader forces
+              c.slug to "solace", so this section renders unconditionally. */}
+          {true && (
+            <div>
+              <p className="eyebrow mb-6">01 / The Challenge</p>
+              <h2 className="font-serif text-4xl md:text-5xl font-normal leading-tight max-w-2xl mb-12">
+                A small change could create a lot of expensive rework.
+              </h2>
+              <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+                <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
+                  <p>
+                    Fashion designers and product development managers were piecing together tech packs from Excel sheets, PDFs, and email. A tech pack is the set of instructions a factory needs to manufacture a garment.
+                  </p>
+                  <p>
+                    When a style or material changed, the team had to update several files, recalculate costs, and send the latest documents to the factory. Outdated versions meant miscommunication, accounting errors, and production delays.
+                  </p>
+                  <p>
+                    <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
+                  </p>
+                </div>
+                <figure className="md:border-l md:border-foreground/15 md:pl-12">
+                  <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
+                  <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
+                    If there is any change in the style details or material we have to make the change in all the documents/files related to it.
+                  </blockquote>
+                  <figcaption className="mt-6 text-sm text-muted-foreground">
+                    Fashion Designer · User interview
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          )}
           {c.slug === "fjord" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
