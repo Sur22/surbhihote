@@ -13,14 +13,11 @@ type Props = {
 function Decision({ number, label, title, children }: { number: string; label: string; title: ReactNode; children: ReactNode }) {
   return (
     <article id={`decision-${number}`} className="relative border-b border-foreground/15 py-16 scroll-mt-24">
-      <div className="flex items-start gap-5 mb-9">
-        <span className="font-serif text-4xl text-decision-accent leading-none shrink-0">{number}</span>
-        <div className="min-w-0">
-          <p className="eyebrow mb-3">{label}</p>
-          <h3 className="h3 max-w-[760px]">{title}</h3>
-        </div>
+      <div className="mb-9">
+        <p className="eyebrow mb-3 flex items-baseline gap-3"><span className="font-serif text-4xl text-decision-accent leading-none">{number}</span>{label}</p>
+        <h3 className="h3 max-w-[760px]">{title}</h3>
       </div>
-      <div className="md:pl-16">{children}</div>
+      <div>{children}</div>
     </article>
   );
 }
