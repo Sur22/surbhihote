@@ -654,43 +654,53 @@ If AE's want to build a custom audience to for the clients would require to send
                     <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
                   </p>
                 </div>
-                <div className="space-y-12 md:border-l md:border-foreground/15 md:pl-12">
-                  <figure>
-                    <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                    <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
-                      If there is any change in the style details or material we have to make the change in all the documents/files related to it.
-                    </blockquote>
-                    <figcaption className="mt-6 text-sm text-muted-foreground">
-                      Fashion Designer · User interview
-                    </figcaption>
-                  </figure>
-                  <figure>
-                    <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                    <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
-                      It&rsquo;s difficult to put together all the details about the style in one place as different detail are in different files.
-                    </blockquote>
-                    <figcaption className="mt-6 text-sm text-muted-foreground">
-                      Technical Designer · User interview
-                    </figcaption>
-                  </figure>
-                  <figure>
-                    <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                    <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
-                      Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
-                    </blockquote>
-                    <figcaption className="mt-6 text-sm text-muted-foreground">
-                      Product Development Manager · User interview
-                    </figcaption>
-                  </figure>
-                  <figure>
-                    <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                    <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
-                      We have to search the material, trims and labels information and pricing and then add their price manually to the document/files.
-                    </blockquote>
-                    <figcaption className="mt-6 text-sm text-muted-foreground">
-                      Product Development Manager · User interview
-                    </figcaption>
-                  </figure>
+                <div className="md:border-l md:border-foreground/15 md:pl-12">
+                  <Carousel opts={{ align: "start" }} className="w-full">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <div className="space-y-12">
+                          <figure>
+                            <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
+                              If there is any change in the style details or material we have to make the change in all the documents/files related to it.
+                            </blockquote>
+                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                              Fashion Designer · User interview
+                            </figcaption>
+                          </figure>
+                          <figure>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
+                              It&rsquo;s difficult to put together all the details about the style in one place as different detail are in different files.
+                            </blockquote>
+                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                              Technical Designer · User interview
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="space-y-12">
+                          <figure>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
+                              Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
+                            </blockquote>
+                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                              Product Development Manager · User interview
+                            </figcaption>
+                          </figure>
+                          <figure>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
+                              We have to search the material, trims and labels information and pricing and then add their price manually to the document/files.
+                            </blockquote>
+                            <figcaption className="mt-6 text-sm text-muted-foreground">
+                              Product Development Manager · User interview
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselDots className="mt-10" />
+                  </Carousel>
                 </div>
               </div>
             </div>
