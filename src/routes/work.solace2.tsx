@@ -2807,6 +2807,8 @@ Users needed an easy way to control and manage the notifications they want and s
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
 
+        {c.slug === "solace" && <Solace2SolutionWalkthrough />}
+
         {c.slug === "fjord" ? (
           <>
             <div
@@ -3051,5 +3053,123 @@ Users needed an easy way to control and manage the notifications they want and s
       </section>
       </div>
     </SiteLayout>
+  );
+}
+
+/* "The solution, in use" walkthrough — solace2 copy only. Tabbed stepper below
+   the Solution heading; orange accent (#ffa348) on white, per Surbhi's reference. */
+const solace2WalkthroughSteps = [
+  {
+    tab: "Start with a design",
+    eyebrow: "01 / REUSE, THEN REFINE",
+    quote: "“I shouldn’t have to start from scratch.”",
+    body: "The designer needs a starting point they can reuse. Bringing existing CAD and tech pack files together makes prior work available in the same workflow.",
+    caption: "Illustrative user intent, based on the research",
+    image: finalSketchSel.url,
+    imageAlt: "Choosing an existing sketch in the tech pack tool",
+    points: [
+      { title: "Choose an existing sketch", detail: "Reuse the design information already on the platform." },
+      { title: "Continue in the editor", detail: "Carry the chosen design forward into the tech pack." },
+    ],
+  },
+  {
+    tab: "Add materials",
+    eyebrow: "02 / MATERIALS IN ONE PLACE",
+    quote: "“I shouldn’t have to hunt for prices.”",
+    body: "Materials, trims and labels sit next to the design instead of in separate spreadsheets, so the details stay attached to the style they belong to.",
+    caption: "Illustrative user intent, based on the research",
+    image: finalColorMaterialDrawer.url,
+    imageAlt: "Adding colors and materials to a tech pack",
+    points: [
+      { title: "Pick from the library", detail: "Pull in materials and trims already on file." },
+      { title: "Attach them to the style", detail: "Keep every detail linked to the design it belongs to." },
+    ],
+  },
+  {
+    tab: "Review costs",
+    eyebrow: "03 / COSTS THAT ADD THEMSELVES",
+    quote: "“I shouldn’t have to calculate by hand.”",
+    body: "The bill of materials rolls material and trim prices up automatically, removing the manual math that caused errors in the old documents.",
+    caption: "Illustrative user intent, based on the research",
+    image: finalBom.url,
+    imageAlt: "Bill of materials with costs in the tech pack tool",
+    points: [
+      { title: "Review the bill of materials", detail: "See every material, trim and label in one list." },
+      { title: "See costs roll up", detail: "Totals update as details change, with no re-entry." },
+    ],
+  },
+  {
+    tab: "Share a version",
+    eyebrow: "04 / ONE SHARED VERSION",
+    quote: "“Everyone should see the same file.”",
+    body: "The finished tech pack exports as a single document, so the factory and the client always work from the latest version instead of email threads.",
+    caption: "Illustrative user intent, based on the research",
+    image: finalPdf.url,
+    imageAlt: "Exported tech pack PDF ready to share",
+    points: [
+      { title: "Export the tech pack", detail: "Generate one document with every detail included." },
+      { title: "Share it with the factory", detail: "Everyone works from the same, current version." },
+    ],
+  },
+];
+
+function Solace2SolutionWalkthrough() {
+  const [active, setActive] = useState(0);
+  const step = solace2WalkthroughSteps[active] ?? solace2WalkthroughSteps[0]!;
+  return (
+    <div className="mb-16">
+      <p className="eyebrow mb-6">02 / The solution, in use</p>
+      <div className="grid gap-8 md:grid-cols-2 md:items-end mb-14">
+        <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight">
+          From a design idea to a shared production document.
+        </h3>
+        <p className="text-lg leading-relaxed text-foreground/70 md:pl-10">
+          Follow a designer preparing a garment for manufacturing. Each step connects information that previously lived in separate files.
+        </p>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 border-b border-foreground/15 mb-12">
+        {solace2WalkthroughSteps.map((s, i) => (
+          <button
+            key={s.tab}
+            type="button"
+            onClick={() => setActive(i)}
+            className={`flex items-baseline gap-3 pb-4 pr-4 text-left border-b-2 -mb-px transition-colors ${
+              i === active
+                ? "border-[#ffa348] text-foreground"
+                : "border-transparent text-foreground/50 hover:text-foreground/80"
+            }`}
+          >
+            <span className={`text-sm ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span className="text-base md:text-lg font-medium">{s.tab}</span>
+          </button>
+        ))}
+      </div>
+      <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-start">
+        <div className="overflow-hidden rounded-sm border border-foreground/15 shadow-sm">
+          <img src={step.image} alt={step.imageAlt} className="w-full h-auto" loading="lazy" />
+        </div>
+        <div>
+          <p className="eyebrow mb-5">{step.eyebrow}</p>
+          <p className="font-serif text-3xl md:text-4xl font-normal leading-snug mb-6">{step.quote}</p>
+          <p className="text-lg leading-relaxed text-foreground/80 mb-3">{step.body}</p>
+          <p className="text-sm text-foreground/50 mb-8">{step.caption}</p>
+          <div className="space-y-6">
+            {step.points.map((point, i) => (
+              <div key={point.title} className="flex gap-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#ffa348] text-sm font-medium text-[#ffa348]">
+                  {i + 1}
+                </span>
+                <div>
+                  <p className="font-semibold text-foreground">{point.title}</p>
+                  <p className="text-foreground/70 leading-relaxed">{point.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
