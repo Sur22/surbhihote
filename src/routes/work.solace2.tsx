@@ -3154,7 +3154,7 @@ function Solace2SolutionWalkthrough() {
           <p className="eyebrow mb-5">{step.eyebrow}</p>
           <p className="text-lg leading-relaxed font-bold text-foreground mb-6">{step.quote}</p>
           <p className="text-lg leading-relaxed text-foreground/80 mb-3">{step.body}</p>
-          <p className="text-sm text-foreground/50">{step.caption}</p>
+          <p className="text-sm text-foreground/70">{step.caption}</p>
         </div>
       </div>
       <div className="mt-10 grid gap-8 sm:grid-cols-2">
