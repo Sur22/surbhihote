@@ -3139,10 +3139,10 @@ function Solace2SolutionWalkthrough() {
                 : "border-transparent text-foreground/50 hover:text-foreground/80"
             }`}
           >
-            <span className={`text-sm ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
+            <span className={`text-lg font-bold ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
               {String(i + 1).padStart(2, "0")}
             </span>
-            <span className="text-base md:text-lg font-medium">{s.tab}</span>
+            <span className="text-lg font-bold">{s.tab}</span>
           </button>
         ))}
       </div>
