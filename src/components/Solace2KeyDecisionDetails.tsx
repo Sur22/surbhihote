@@ -70,7 +70,7 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
         </div>
       </div>
       <Accordion type="single" collapsible defaultValue="alignment" className="mt-10">
-        <AccordionItem value="alignment">
+        <AccordionItem value="alignment" className="border-b-0">
           <AccordionTrigger className="text-sm font-medium">How I aligned Product and Engineering</AccordionTrigger>
           <AccordionContent>
             <p className="text-base leading-relaxed text-foreground/70 mb-5">I reviewed early sketches with Product, iterated with users, and confirmed requirements with the VP of Product. Reviews with the CTO and developers covered architecture, feasibility, new UI components, and development effort before handoff. This kept the next design workstream moving while Engineering built the previous one.</p>
