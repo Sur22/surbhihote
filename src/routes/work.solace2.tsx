@@ -652,12 +652,14 @@ If AE's want to build a custom audience to for the clients would require to send
                   <p>
                     When a style or material changed, the team had to update several files, recalculate costs, and send the latest documents to the factory. Outdated versions meant miscommunication, accounting errors, and production delays.
                   </p>
-                  <p>
-                    <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
-                    {"\n\n\n"}
-                    <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
-                    {"\n\n\n\n"}
-                  </p>
+                  <div className="space-y-[30px]">
+                    <p>
+                      <strong className="font-bold text-foreground">The challenge:</strong> connect pre-production to production inside GRID, while designing and delivering the capability in eight weeks.
+                    </p>
+                    <p>
+                      <strong className="font-bold text-foreground">The Goal:</strong> Create a system for all the files, documents and costing involved in the process and a standardized workflow where users don't have to add data manually and also eliminate the human error part for adding costs of materials, trims etc.{"\u00a0"}
+                    </p>
+                  </div>
                 </div>
                 <div className="relative overflow-hidden rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 py-10 md:px-12 md:py-12">
                   <div className="study-band-glass" />
