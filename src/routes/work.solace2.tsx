@@ -643,8 +643,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       <CarouselItem>
                         <div className="space-y-12">
                           <figure>
-                            <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-decision-accent mt-4">
+                            <span className="font-serif text-5xl leading-none" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               If there is any change in the style details or material we have to make the change in all the documents/files related to it.
                             </blockquote>
                             <figcaption className="mt-6 text-sm text-band-foreground/60">
@@ -652,7 +652,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                             </figcaption>
                           </figure>
                           <figure>
-                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-decision-accent">
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
                               It&rsquo;s difficult to put together all the details about the style in one place as different detail are in different files.
                             </blockquote>
                             <figcaption className="mt-6 text-sm text-band-foreground/60">
@@ -664,8 +664,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       <CarouselItem>
                         <div className="space-y-12">
                           <figure>
-                            <span className="font-serif text-5xl leading-none text-accent" aria-hidden="true">&ldquo;</span>
-                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-decision-accent mt-4">
+                            <span className="font-serif text-5xl leading-none" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
                             </blockquote>
                             <figcaption className="mt-6 text-sm text-band-foreground/60">
@@ -673,7 +673,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                             </figcaption>
                           </figure>
                           <figure>
-                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-decision-accent">
+                            <blockquote className="font-serif text-2xl md:text-3xl leading-snug">
                               We have to search the material, trims and labels information and pricing and then add their price manually to the document/files.
                             </blockquote>
                             <figcaption className="mt-6 text-sm text-band-foreground/60">
