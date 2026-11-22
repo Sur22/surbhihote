@@ -3153,7 +3153,7 @@ function Solace2SolutionWalkthrough() {
         </div>
         <div>
           <p className="eyebrow mb-5">{step.eyebrow}</p>
-          <p className={step.quoteSmall ? "text-lg leading-relaxed text-foreground/80 mb-6" : "font-serif text-3xl md:text-4xl font-normal leading-snug mb-6"}>{step.quote}</p>
+          <p className={step.quoteSmall ? "text-lg leading-relaxed font-bold text-foreground mb-6" : "font-serif text-3xl md:text-4xl font-bold leading-snug mb-6"}>{step.quote}</p>
           <p className="text-lg leading-relaxed text-foreground/80 mb-3">{step.body}</p>
           <p className="text-sm text-foreground/50">{step.caption}</p>
         </div>
