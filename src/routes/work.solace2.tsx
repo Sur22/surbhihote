@@ -3102,6 +3102,7 @@ const solace2WalkthroughSteps = [
     tab: "Share a version",
     eyebrow: "04 / ONE SHARED VERSION",
     quote: "“Everyone should see the same file.”",
+    quoteSmall: true,
     body: "The finished tech pack exports as a single document, so the factory and the client always work from the latest version instead of email threads.",
     caption: "Illustrative user intent, based on the research",
     image: finalPdf.url,
@@ -3152,7 +3153,7 @@ function Solace2SolutionWalkthrough() {
         </div>
         <div>
           <p className="eyebrow mb-5">{step.eyebrow}</p>
-          <p className="font-serif text-3xl md:text-4xl font-normal leading-snug mb-6">{step.quote}</p>
+          <p className={step.quoteSmall ? "text-lg leading-relaxed text-foreground/80 mb-6" : "font-serif text-3xl md:text-4xl font-normal leading-snug mb-6"}>{step.quote}</p>
           <p className="text-lg leading-relaxed text-foreground/80 mb-3">{step.body}</p>
           <p className="text-sm text-foreground/50">{step.caption}</p>
         </div>
