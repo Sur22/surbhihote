@@ -727,6 +727,47 @@ Affiliates - the partner networks who buy and transact against that inventory ru
       {/* Research */}
       <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
+        {c.slug === "solace" && (
+          <div className="mb-16">
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-2xl border border-foreground/15 p-8 md:p-10">
+                <p className="text-sm tracking-wide text-foreground/60 mb-4">Stakeholder interview</p>
+                <h3 className="font-serif text-3xl md:text-4xl font-normal leading-tight mb-4">Head of Product Development</h3>
+                <p className="text-lg leading-relaxed text-foreground/70 mb-8">Clarified the problem we were trying to solve.</p>
+                <div className="rounded-xl bg-[#ededed] dark:bg-white/10 p-6">
+                  <p className="text-base font-medium text-foreground/60 mb-2">The problem</p>
+                  <p className="text-lg leading-relaxed text-foreground/85">PLM has many phases and stages. Product Development Managers struggled to manage product files and data, and used multiple tools to talk to the factory and the client every time a product changed.</p>
+                </div>
+              </div>
+              <div className="rounded-2xl border border-foreground/15 p-8 md:p-10">
+                <p className="text-sm tracking-wide text-foreground/60 mb-4">User interviews</p>
+                <p className="font-serif text-3xl md:text-4xl font-normal leading-tight mb-6"><span className="text-5xl md:text-6xl text-foreground/60 align-middle">5</span> users interviewed</p>
+                <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Who:</strong> Textile Product Designers and Product Development Managers, who create styles from client requirements</p>
+                <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Method:</strong> guerrilla, in-context desk interviews</p>
+                <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
+              </div>
+            </div>
+            <div className="flex justify-center py-6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-foreground/50"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
+            </div>
+            <div className="rounded-2xl border border-foreground/15 p-8 md:p-10">
+              <p className="text-lg tracking-wide text-foreground/60 mb-8">Questions targeted at the functionality we planned to build</p>
+              <div className="grid gap-8 md:grid-cols-3">
+                {[
+                  { q: "What", a: "problems are users facing?" },
+                  { q: "Why", a: "do those problems happen?" },
+                  { q: "How", a: "can the tool solve them?" },
+                ].map((item) => (
+                  <div key={item.q}>
+                    <div className="border-t-2 border-foreground/25 mb-4" />
+                    <p className="text-xl font-semibold text-foreground/60">{item.q}</p>
+                    <p className="text-xl font-medium text-foreground">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
         <div className="space-y-12">
           {c.slug === "solace" && (
             <div>
