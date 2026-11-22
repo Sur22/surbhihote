@@ -3154,21 +3154,21 @@ function Solace2SolutionWalkthrough() {
           <p className="eyebrow mb-5">{step.eyebrow}</p>
           <p className="font-serif text-3xl md:text-4xl font-normal leading-snug mb-6">{step.quote}</p>
           <p className="text-lg leading-relaxed text-foreground/80 mb-3">{step.body}</p>
-          <p className="text-sm text-foreground/50 mb-8">{step.caption}</p>
-          <div className="space-y-6">
-            {step.points.map((point, i) => (
-              <div key={point.title} className="flex gap-4">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#ffa348] text-sm font-medium text-[#ffa348]">
-                  {i + 1}
-                </span>
-                <div>
-                  <p className="font-semibold text-foreground">{point.title}</p>
-                  <p className="text-foreground/70 leading-relaxed">{point.detail}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-sm text-foreground/50">{step.caption}</p>
         </div>
+      </div>
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        {step.points.map((point, i) => (
+          <div key={point.title} className="flex gap-4">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#ffa348] text-sm font-medium text-[#ffa348]">
+              {i + 1}
+            </span>
+            <div>
+              <p className="font-semibold text-foreground">{point.title}</p>
+              <p className="text-foreground/70 leading-relaxed">{point.detail}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
