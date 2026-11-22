@@ -2832,11 +2832,11 @@ Users needed an easy way to control and manage the notifications they want and s
             { n: "04", t: "Standardize the factory handoff" },
           ].map((d) => (
             <div key={d.n} className="flex items-start justify-between gap-4 px-6 py-8">
-              <div className="flex gap-4">
-                <span className="text-sm font-semibold text-[#ffa348]">{d.n}</span>
-                <p className="font-serif text-2xl leading-snug">{d.t}</p>
+              <div className="flex items-baseline gap-3">
+                <span className="text-sm font-bold text-[#ffa348]">{d.n}</span>
+                <p className="text-sm font-bold text-foreground">{d.t}</p>
               </div>
-              <span aria-hidden className="text-[#ffa348] text-lg leading-none mt-1">&#8600;</span>
+              <span aria-hidden className="text-[#ffa348] text-sm leading-none mt-0.5">&#8600;</span>
             </div>
           ))}
         </div>
