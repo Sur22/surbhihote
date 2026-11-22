@@ -377,7 +377,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={`study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
+        className={`solace2-page study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
@@ -2900,7 +2900,7 @@ function Solace2SolutionWalkthrough() {
                 : "border-transparent text-foreground/50 hover:text-foreground/80"
             }`}
           >
-            <span className={`text-sm font-bold ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
+            <span className={`text-sm font-bold ${i === active ? "text-copy-orange-text" : "text-foreground/40"}`}>
               {String(i + 1).padStart(2, "0")}
             </span>
             <span className="text-sm font-bold">{s.tab}</span>
@@ -2921,7 +2921,7 @@ function Solace2SolutionWalkthrough() {
       <div className="mt-10 grid gap-8 sm:grid-cols-2">
         {step.points.map((point, i) => (
           <div key={point.title} className="flex gap-4">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#ffa348] text-sm font-bold text-[#ffa348]">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#ffa348] text-sm font-bold text-copy-orange-text">
               {i + 1}
             </span>
             <div>
@@ -2999,7 +2999,7 @@ function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
                 : "border-transparent text-foreground/50 hover:text-foreground/80"
             }`}
           >
-            <span className={`text-sm font-bold ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
+            <span className={`text-sm font-bold ${i === active ? "text-copy-orange-text" : "text-foreground/40"}`}>
               {String(i + 1).padStart(2, "0")}
             </span>
             <span className="text-sm font-bold">{s.tab}</span>

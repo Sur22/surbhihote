@@ -10,3 +10,4 @@
 - A picture whose frame clips its own corners (`overflow-hidden` wrapper sized to the picture) wears its drop shadow on that wrapper, never on the picture itself — the wrapper clips a shadow drawn by its own child, so the drop disappears.
 - Document-based AI case studies keep supplied Markdown in src/content and render it through a dedicated study component within AIProjectPageContent, so source wording and emphasis remain intact while sharing the site's page format.
 - Tech Pack copy decision details live in a copy-only component with images supplied by its route, so the original study remains independent.
+- Copy-page orange text uses a separate text token scoped to its page wrapper, so text color edits never recolor shared borders, fills, or other studies.

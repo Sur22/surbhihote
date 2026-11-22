@@ -57,6 +57,7 @@
      carries its own token instead of a colour written into the component. */
   --color-azure: var(--azure);
   --color-decision-accent: var(--amber);
+  --color-copy-orange-text: var(--copy-orange-text);
   /* The icons sitting on those azure discs likewise stay light in both themes. */
   --color-azure-foreground: var(--azure-foreground);
   /* The grey a table row takes on hover, published so components use bg-* with
@@ -100,6 +101,7 @@
   /* The site's highlight amber — the persona card's outline colour — exposed
      as a token so other surfaces can borrow the same warmth. */
   --amber: #ffa348;
+  --copy-orange-text: #FF7600;
   /* The AI for Research panel's outline blue. Held in :root only, so a theme
      flip can never shift it. */
   --azure: #0068ff;
@@ -181,6 +183,11 @@
   --border: var(--rule);
   --input: var(--rule);
   --ring: var(--ink);
+}
+
+/* Copy-page text is independent of the shared amber borders and fills. */
+.solace2-page .text-decision-accent {
+  color: var(--copy-orange-text);
 }
 
 @layer base {
