@@ -2995,6 +2995,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {/* Reflection */}
       <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-[80px]" : "pt-24")}>
+        {c.slug !== "solace" && (<>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
           Reflection
         </h2>
@@ -3015,7 +3016,40 @@ Users needed an easy way to control and manage the notifications they want and s
               </>
             : "This was a big project and turned out to be a good selling point for the company. Apart from that,\u00a0it was a great workflow improvement, which eliminated accounting errors that happen due to manual workflow. Thanks to the libraries built,\u00a0it sped up the workflow through reuse and repurposing. Because of the editor tool, users didn't have to go outside the platform to do all the editing for the manufacturing phase. Overall, the project was a great success."}
         </p>
+        </>)}
       </section>
+
+      {c.slug === "solace" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-0">
+          <p className="eyebrow mb-6">06 / Looking Back</p>
+          <h3 className="h2 mb-14 max-w-[640px]">Connecting the work mattered as much as designing the tool.</h3>
+          <div className="grid gap-10 md:grid-cols-3 md:gap-8 mb-20">
+            {[
+              {
+                n: "01",
+                title: "The sequence was part of the design.",
+                body: "Starting with reusable libraries made later automation possible. The delivery plan followed the data dependencies, while design stayed ahead of development.",
+              },
+              {
+                n: "02",
+                title: "Completion wasn't the only useful state.",
+                body: "The request to save progress exposed a gap in the initial flow. Testing the pauses and exits mattered alongside testing the path to a finished document.",
+              },
+              {
+                n: "03",
+                title: "The next check is the revised experience.",
+                body: "I would re-test saving, labeling, and drawer discovery, then follow a revised document through the factory handoff to see where uncertainty remains.",
+              },
+            ].map((card) => (
+              <div key={card.n}>
+                <p className="text-sm font-medium text-accent mb-4">{card.n}</p>
+                <h4 className="font-serif text-2xl font-normal leading-snug mb-4">{card.title}</h4>
+                <p className="text-[15px] leading-relaxed text-foreground/70">{card.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {c.slug === "solace" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10 mt-[50px] mb-[80px]">
