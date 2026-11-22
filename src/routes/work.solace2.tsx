@@ -1045,7 +1045,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="h2 mb-3">Personas across the product lifecycle</h3>
+            <h3 className="h3 mb-3">Personas across the product lifecycle</h3>
             <p className="text-lg leading-relaxed text-foreground/70 mb-10">Four role-based profiles, with different responsibilities in the same workflow</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12 mb-10">
               {[
