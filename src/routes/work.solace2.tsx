@@ -1332,18 +1332,26 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               </div>
             </div>
             <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Plan</h4>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-              <strong>1. Centralize</strong>{"\n"}
-              Bring CAD and tech pack files already attached to products into shared libraries. Add a materials and trims library so teams can reuse information without repeated data entry.{"\n"}
-              {"\u00a0"}{"\n"}
-              <strong>2. Connect</strong>{"\n"}
-              Link material and trim details to the bill of materials and cost sheet. Bring pre-production information into the editor so teams can prepare for production in one workflow.{"\n"}
-              {"\u00a0"}{"\n"}
-              <strong>3. Collaborate</strong>{"\n"}
-              Create a standardized document with designs, materials, and production instructions. Version revisions and use existing platform comments to support communication with clients and factories.{"\u00a0"}
-              {"\n\n"}
-              Design ran ahead of engineering. Each work stream was researched, designed, and reviewed to sign-off, then handed to development{"\u00a0"} and while it was being built, I designed the next one. The eight weeks below are a single pipeline, not sequential phases; design and build overlap throughout.Following is the Build & release sequence.
-            </p>
+            <div className="grid gap-10 md:grid-cols-3">
+              <div>
+                <p className="font-serif text-2xl md:text-3xl font-normal mb-4">Centralize</p>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  Bring CAD and tech pack files already attached to products into shared libraries. Add a materials and trims library so teams can reuse information without repeated data entry.
+                </p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-3xl font-normal mb-4">Connect</p>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  Link material and trim details to the bill of materials and cost sheet. Bring pre-production information into the editor so teams can prepare for production in one workflow.
+                </p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-3xl font-normal mb-4">Collaborate</p>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  Create a standardized document with designs, materials, and production instructions. Version revisions and use existing platform comments to support communication with clients and factories.
+                </p>
+              </div>
+            </div>
             <div className="mt-12">
               <Accordion type="single" collapsible className="w-full">
                 {[
