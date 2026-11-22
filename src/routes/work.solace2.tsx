@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, ArrowDown, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowDown, ArrowUpRight, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -1903,6 +1903,19 @@ Users needed an easy way to control and manage the notifications they want and s
         )}
       </section>
 
+      {/* Design exploration tabs (solace2 copy only): paper sketches → clickable
+          wireframes → detailed interface. Tab UI matches the "solution, in use"
+          walkthrough below; amber #ffa348 underline on the active tab. */}
+      <section id="design-exploration" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 pb-0 scroll-mt-24">
+        <h3 className="h3">The first version didn’t answer every question.</h3>
+        <p className="mt-6 text-lg leading-relaxed text-foreground/70">
+          I moved from sketches to clickable wireframes, reviewed them with users and the team, then refined the interface through testing.
+        </p>
+        <div className="mt-12">
+          <Solace2DesignTabs onZoom={setZoomImg} />
+        </div>
+      </section>
+
       {(c.slug === "atlas" || c.slug === "atlas2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-20">
           <h3 className="font-serif text-3xl mb-6 font-medium">Review with Product & Engineering Team</h3>
@@ -3182,6 +3195,110 @@ function Solace2SolutionWalkthrough() {
             </div>
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+/* Design exploration tabs — solace2 copy only. Same tab treatment as the
+   "solution, in use" walkthrough: numbered 14px bold labels, amber #ffa348
+   underline on the active tab. Tabs 2 and 3 carry placeholder copy until
+   Surbhi supplies their wording. */
+const solace2DesignTabs = [
+  {
+    tab: "Paper sketches",
+    eyebrow: "Explore the workflow",
+    heading: "Start with the documents people actually use.",
+    body: "I gathered the CAD files, tech packs, cost sheets, and catalogs users sent to clients and factories. Sketching from those materials helped me explore how the pieces could fit together.",
+    caption: "Original project artifacts · Click an image to inspect",
+    layout: "grid" as const,
+    images: [
+      { src: sketchImg1.url, alt: "Hand-drawn workspace exploration sketch", label: "Workspace exploration" },
+      { src: sketchImg2.url, alt: "Hand-drawn dashboard sketch with entry point action cards", label: "Entry points" },
+      { src: sketchImg3.url, alt: "Hand-drawn design and material details sketch", label: "Design & material details" },
+      { src: sketchImg4.url, alt: "Hand-drawn sketch selection gallery", label: "Sketch selection" },
+    ],
+  },
+  {
+    tab: "Clickable wireframes",
+    eyebrow: "Click through the flow",
+    heading: "The sketches became screens you could click through.",
+    body: "Wireframes put the sketches in sequence so the team and I could walk the same path a designer would take, from a design idea to a finished document.",
+    caption: "Placeholder copy — tell me what to write here",
+    layout: "stack" as const,
+    images: [
+      { src: wireframeImg1, alt: "Wireframe contact sheet showing entry, sketch, detail and specification screens", label: "Entry and sketch screens" },
+      { src: wireframeImg2, alt: "Wireframe contact sheet showing material details, bill of materials, export and library screens", label: "Material, costing and export screens" },
+    ],
+  },
+  {
+    tab: "Detailed interface",
+    eyebrow: "The interface takes shape",
+    heading: "The screens the tool was built from.",
+    body: "The wireframes tightened into the interface handed to engineering, with the material, costing and export screens in place.",
+    caption: "Placeholder copy — tell me what to write here",
+    layout: "grid" as const,
+    images: [
+      { src: finalSketchSel.url, alt: "Sketch selection screen in the tech pack tool", label: "Sketch selection" },
+      { src: finalColorMaterialDrawer.url, alt: "Colors and materials drawer in the tech pack tool", label: "Colors and materials" },
+      { src: finalBom.url, alt: "Bill of materials screen in the tech pack tool", label: "Bill of materials" },
+      { src: finalPdf.url, alt: "Exported tech pack PDF screen", label: "Exported PDF" },
+    ],
+  },
+];
+
+function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
+  const [active, setActive] = useState(0);
+  const step = solace2DesignTabs[active] ?? solace2DesignTabs[0]!;
+  return (
+    <div className="mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-3 border-b border-foreground/15 mb-12">
+        {solace2DesignTabs.map((s, i) => (
+          <button
+            key={s.tab}
+            type="button"
+            onClick={() => setActive(i)}
+            className={`flex items-baseline gap-3 pb-4 pr-4 text-left border-b-2 -mb-px transition-colors ${
+              i === active
+                ? "border-[#ffa348] text-foreground"
+                : "border-transparent text-foreground/50 hover:text-foreground/80"
+            }`}
+          >
+            <span className={`text-sm font-bold ${i === active ? "text-[#ffa348]" : "text-foreground/40"}`}>
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span className="text-sm font-bold">{s.tab}</span>
+          </button>
+        ))}
+      </div>
+      <div className="grid gap-10 lg:grid-cols-[1fr_1.35fr] lg:items-start">
+        <div>
+          <p className="eyebrow mb-5">{step.eyebrow}</p>
+          <h3 className="h2 mb-6">{step.heading}</h3>
+          <p className="text-lg leading-relaxed text-foreground/80">{step.body}</p>
+          <p className="mt-6 text-sm text-foreground/60">{step.caption}</p>
+        </div>
+        <div className={step.layout === "grid" ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : "grid gap-4"}>
+          {step.images.map((img) => (
+            <button
+              key={img.label}
+              type="button"
+              onClick={() => onZoom(img.src)}
+              className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                loading="lazy"
+              />
+              <span className="mt-2 flex items-center gap-1.5 text-sm text-foreground/70">
+                {img.label}
+                <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
