@@ -3160,7 +3160,7 @@ function Solace2SolutionWalkthrough() {
       <div className="mt-10 grid gap-8 sm:grid-cols-2">
         {step.points.map((point, i) => (
           <div key={point.title} className="flex gap-4">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#ffa348] text-sm font-medium text-[#ffa348]">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-[#ffa348] text-sm font-bold text-[#ffa348]">
               {i + 1}
             </span>
             <div>
