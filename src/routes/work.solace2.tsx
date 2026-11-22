@@ -1059,6 +1059,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ],
                 },
                 {
+                  role: "Create",
                   name: "Technical / Fashion Designer\u200b",
                   goals: [
                     "Create detailed sketches and CAD designs efficiently",
@@ -1067,6 +1068,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   ],
                 },
                 {
+                  role: "Review",
                   name: "Client\u00a0",
                   goals: [
                     "Review and approve designs and techpacks in real time",
