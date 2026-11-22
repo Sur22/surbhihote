@@ -747,10 +747,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
               </div>
             </div>
-            <div className="flex justify-center py-6">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-foreground/50"><path d="M12 5v14" /><path d="m19 12-7 7-7-7" /></svg>
-            </div>
-            <div className="rounded-2xl border border-foreground/15 p-8 md:p-10">
+            <div className="rounded-2xl border border-foreground/15 p-8 md:p-10 mt-6">
               <p className="text-sm tracking-wide text-foreground/60 mb-8">Questions targeted at the functionality we planned to build</p>
               <div className="grid gap-8 md:grid-cols-3">
                 {[
