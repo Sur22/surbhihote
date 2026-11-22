@@ -3119,11 +3119,11 @@ function Solace2SolutionWalkthrough() {
   return (
     <div className="mb-16">
       <p className="eyebrow mb-6">02 / The solution, in use</p>
-      <div className="grid gap-8 md:grid-cols-2 md:items-end mb-14">
-        <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight">
+      <div className="mb-14">
+        <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight md:whitespace-nowrap">
           From a design idea to a shared production document.
         </h3>
-        <p className="text-lg leading-relaxed text-foreground/70 md:pl-10">
+        <p className="mt-6 text-lg leading-relaxed text-foreground/70">
           Follow a designer preparing a garment for manufacturing. Each step connects information that previously lived in separate files.
         </p>
       </div>
