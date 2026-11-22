@@ -1352,6 +1352,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </p>
               </div>
             </div>
+            <div className="mt-14">
+              <h4 className="font-serif text-2xl md:text-3xl mb-6 font-normal">A release plan shaped by dependencies</h4>
+              <p className="text-lg leading-relaxed text-foreground/85">
+                Design ran ahead of engineering. Each workstream was researched, designed, and reviewed to sign-off, then handed to development. While Engineering built one workstream, I designed the next. The eight weeks below are one pipeline, with design and build overlapping throughout.
+              </p>
+            </div>
             <div className="mt-12">
               <Accordion type="single" collapsible className="w-full">
                 {[
