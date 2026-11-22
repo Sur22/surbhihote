@@ -14,7 +14,7 @@ const slugsWithWorkshop = new Set(["affiliate-platform-redesign"]);
 const slugsWithQualitativeResearch = new Set(["affiliate-platform-redesign"]);
 const slugsWithAiImpact = new Set(["affiliate-platform-redesign"]);
 const affiliateSlugs = new Set(["fjord", "affiliate-platform-redesign"]);
-const slugsWithTopImpact = new Set(["fjord", "affiliate-platform-redesign", "solace", "atlas", "atlas2"]);
+const slugsWithTopImpact = new Set(["fjord", "affiliate-platform-redesign", "solace", "solace2", "atlas", "atlas2"]);
 
 
 type Section = { id: string; label: string; anchor?: string };
@@ -31,10 +31,17 @@ function getSections(slug?: string): Section[] {
     }
   }
 
-  if (slug === "solace" || slug === "atlas") {
+  if (slug === "solace" || slug === "solace2" || slug === "atlas") {
     const testingIdx = sections.findIndex((s) => s.id === "testing");
     if (testingIdx !== -1) {
       sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });
+    }
+  }
+
+  if (slug === "solace2") {
+    const overviewIdx = sections.findIndex((s) => s.id === "overview");
+    if (overviewIdx !== -1) {
+      sections.splice(overviewIdx + 1, 0, { id: "the-problem", label: "The Problem" });
     }
   }
 

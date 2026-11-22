@@ -391,7 +391,7 @@ function CaseStudyPage() {
         }}
       >
         <ScrollProgress />
-        <CaseStudySideNav slug={c.slug} />
+        <CaseStudySideNav slug="solace2" />
 
 
       {/* Hero — title block on the left (back arrow + tagline row, title, then
@@ -613,7 +613,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           {/* This route only serves the solace2 copy; the loader forces
               c.slug to "solace", so this section renders unconditionally. */}
           {true && (
-            <div>
+            <div id="the-problem" className="scroll-mt-24">
               <p className="eyebrow mb-6">01 / The Challenge</p>
               <h2 className="h2 max-w-2xl mb-12">
                 A small change could create a lot of expensive rework.
