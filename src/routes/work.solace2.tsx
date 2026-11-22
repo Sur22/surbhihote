@@ -756,8 +756,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 ].map((item) => (
                   <div key={item.q}>
                     <div className="border-t-2 border-foreground/25 mb-4" />
-                    <p className="text-xl font-semibold text-foreground/60">{item.q}</p>
-                    <p className="text-xl font-medium text-foreground">{item.a}</p>
+                    <p className="text-lg leading-relaxed font-semibold text-foreground/60">{item.q}</p>
+                    <p className="text-lg leading-relaxed font-semibold text-foreground">{item.a}</p>
                   </div>
                 ))}
               </div>
