@@ -788,7 +788,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           )}
           <div>
             <h3 className={`font-serif text-3xl font-medium text-foreground/85 ${c.slug === "solace" ? "mb-[30px]" : "mb-4"}`}>
-              {(c.slug === "affiliate-platform-redesign") ? "Survey" : "User Interview"}
+              {(c.slug === "affiliate-platform-redesign") ? "Survey" : "Stakeholder Interview"}
             </h3>
             <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
               {c.slug === "fjord" ? (
