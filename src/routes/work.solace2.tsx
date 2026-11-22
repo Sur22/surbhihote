@@ -689,6 +689,32 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </div>
             </div>
           )}
+          {/* Before/After workflow band (solace2 copy only): sits below the
+              Challenge section; the After row wears the cell-highlight wash. */}
+          <div className="mt-16 border-t border-foreground/15">
+            <div className="flex flex-col gap-3 py-8 md:flex-row md:items-center md:gap-6">
+              <span className="eyebrow w-20 shrink-0">Before</span>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg">
+                <span>Find scattered files</span>
+                <span className="text-foreground/40" aria-hidden="true">&rarr;</span>
+                <span>Re-enter &amp; calculate</span>
+                <span className="text-foreground/40" aria-hidden="true">&rarr;</span>
+                <span>Email &amp; repeat</span>
+              </div>
+              <span className="text-foreground/60 md:ml-auto">Repeated work at every change</span>
+            </div>
+            <div className="flex flex-col gap-3 rounded-sm bg-cell-highlight px-6 py-8 md:flex-row md:items-center md:gap-6">
+              <span className="eyebrow w-20 shrink-0 text-accent">After</span>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg text-accent">
+                <span>Reuse library data</span>
+                <span className="text-accent/50" aria-hidden="true">&rarr;</span>
+                <span>Connect design &amp; costs</span>
+                <span className="text-accent/50" aria-hidden="true">&rarr;</span>
+                <span>Share a version</span>
+              </div>
+              <span className="text-accent md:ml-auto">One coordinated workflow</span>
+            </div>
+          </div>
           {c.slug === "fjord" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">Goal</h2>
