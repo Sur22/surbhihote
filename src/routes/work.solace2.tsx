@@ -510,7 +510,7 @@ function CaseStudyPage() {
 
         <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
-            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
+            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{c.slug === "solace2" ? "The Problem" : (c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
             {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
