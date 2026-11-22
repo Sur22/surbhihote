@@ -1941,12 +1941,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {c.slug === "affiliate-platform-redesign" && (
           <AiPanelTestingInitialCopy />
         )}
-        {c.slug === "solace" && (
-          <>
-            <h3 className="font-serif text-3xl mt-[100px] mb-6 font-medium">Low Fidelity Wireframes</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-[50px]">Creating low fidelity wireframes helps me focus on the visual consistency and hierarchy before applying styles. In these wireframes, I tried to incorporate common design patterns that have been tested on our competitors' product, or included elements that directly address users' goals, needs, and frustrations. Once I had a visual direction of the layout, I started to add more details and precisions to the sketches by turning them into mid-fidelity wireframes.</p>
-          </>
-        )}
+
       </section>
 
       {c.slug === "fjord" && (
@@ -2168,41 +2163,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && c.slug !== "solace" && c.slug !== "fjord") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
-      {/* Challenges */}
-      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && c.slug !== "fjord") && (
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-0 pb-0" : "py-24"}`}>
-        {c.slug !== "solace" && (
-          <>
-            <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{"\n"}</h2>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-              {"\n"}
-            </p>
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal mt-16">{"\n"}</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              {"\n"}
-            </p>
-          </>
-        )}
-        <div className="flex flex-row gap-4 overflow-x-auto pb-2">
-          {[wireframeImg1, wireframeImg2].map((img, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setZoomImg(img)}
-              className={"group flex-shrink-0 " + (c.slug === "solace" ? "w-[51.75%] min-w-[207px]" : "w-[45%] min-w-[180px]") + " overflow-hidden rounded-sm border-border bg-secondary p-3 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-300 border-0"}
-            >
-              <img
-                src={img}
-                alt={`Mid fidelity wireframe ${i + 1}`}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-            </button>
-          ))}
-        </div>
-      </section>
       )}
 
       {(c.slug !== "affiliate-platform-redesign") && (
