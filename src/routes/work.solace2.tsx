@@ -2597,7 +2597,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <p className="display text-4xl md:text-5xl text-accent mb-6 whitespace-nowrap">
                     {item.stat}%<span className="text-[70%] ml-1">&#8595;</span>
                   </p>
-                  <h3 className="font-serif text-2xl md:text-3xl font-normal mb-4">{item.label}</h3>
+                  <h3 className="text-lg leading-relaxed font-bold mb-4">{item.label}</h3>
                   <p className="text-lg leading-relaxed text-foreground/70">{item.detail}</p>
                 </div>
               ))}
