@@ -6,3 +6,6 @@
 - [x] Verify navigation, content, and mobile layout.
 - [x] Add Affiliate copy Key Decision section with three reference tabs and its side-nav entry, without original-image links.
 - [x] Verify all three tabs, side navigation, and phone layout.
+- [x] Move Affiliate copy Solution below Key Decision in the page and side navigation.
+- [x] Replace its Solution carousel with the supplied sections in upload order, matching existing blue highlights.
+- [x] Verify the new sections, image, links, and phone layout.

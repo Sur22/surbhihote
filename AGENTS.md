@@ -12,3 +12,4 @@
 - Tech Pack copy decision details live in a copy-only component with images supplied by its route, so the original study remains independent.
 - Copy-page orange text uses a separate text token scoped to its page wrapper, so text color edits never recolor shared borders, fills, or other studies.
 - Affiliate copy decision tabs live in a copy-only component and its route supplies explicit side-nav sections, so new content and navigation never affect the original study.
+- Affiliate copy Solution stories live in a copy-only component using existing blue highlight tokens and artwork, so their content and placement stay independent of the original study.
