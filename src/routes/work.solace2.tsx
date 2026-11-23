@@ -2048,15 +2048,11 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "User flow"}</h2>
         {c.slug === "solace" && (
           <>
-            <div className="grid gap-8 md:grid-cols-2 md:gap-16 mb-20">
-              <div>
-                <p className="eyebrow mb-4">Craft within an existing platform</p>
-                <h3 className="h3">A familiar structure, with room for complex detail.</h3>
-              </div>
-              <div>
-                <p className="text-lg leading-relaxed text-foreground/70 mb-6">The materials library reused the CAD library's UI structure. Across the editor, the same stage navigation connects sketches, detailed design, the bill of materials, and output.</p>
-                <p className="text-lg leading-relaxed text-foreground/70">The side panel keeps dense material information next to the garment. I reviewed new components with developers to confirm feasibility and implementation effort.</p>
-              </div>
+            <div className="mb-20">
+              <p className="eyebrow mb-4">Craft within an existing platform</p>
+              <h3 className="h3 mb-6">A familiar structure, with room for complex detail.</h3>
+              <p className="text-lg leading-relaxed text-foreground/70 mb-6">The materials library reused the CAD library's UI structure. Across the editor, the same stage navigation connects sketches, detailed design, the bill of materials, and output.</p>
+              <p className="text-lg leading-relaxed text-foreground/70">The side panel keeps dense material information next to the garment. I reviewed new components with developers to confirm feasibility and implementation effort.</p>
             </div>
             <h3 className="h3 mb-3">The workflow across roles and entry points</h3>
             <p className="text-lg leading-relaxed text-foreground/60 mb-6">Original workflow and user-flow diagrams</p>
