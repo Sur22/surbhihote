@@ -519,7 +519,7 @@ function CaseStudyPage() {
         <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
             <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
-            {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
+            {(c.slug === "fjord" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
             {c.slug !== "affiliate-platform-redesign" && (
@@ -532,18 +532,39 @@ function CaseStudyPage() {
             )}
           </div>
           {c.slug === "affiliate-platform-redesign" && (
-            <div className="space-y-8">
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-8">
-                {`Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale.Ampersand is jointly owned by the largest cable operators in the US which are Comcast, COX, Charter.The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying and measurement. There are three lines of business National, Markets and Addressable.`}
-              </p>
-              <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Introduction</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-0">
-                {`The portal was `}<strong className="font-bold italic">25</strong>{` years old, used by\u00a0`}
-                <strong className="font-bold italic">1000+</strong>{` affiliates who depend on it daily which gets the annual revenue is `}
-                <strong className="font-bold italic">$550 Million</strong>{` and\u00a0`}
-                <strong className="font-bold italic">1 Billion Dollars</strong>{` During political years.The codebase was frozen, no fix could ship without a full rebuild.Over the years, workarounds had hardened into the way affiliates worked.The goal is to\u00a0rebuild a business-critical tool without disrupting a single day of their work in the transition.
-Affiliates - the partner networks who buy and transact against that inventory run their daily business through Ampersand's online portal: pulling rate cards, placing orders, and tracking yield.\u00a0`}
-              </p>
+            <div>
+              <p className="eyebrow mb-4">The Challenge</p>
+              <h3 className="font-serif text-4xl md:text-5xl font-normal mb-10">A full rebuild. A working day that couldn’t stop.</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div className="space-y-6">
+                  <p className="text-lg leading-relaxed text-foreground/85">
+                    Affiliates use Ampersand’s portal to pull rate cards, place and accept orders, track revisions, and manage advertising business. Its codebase was so old that even a fix required a rebuild.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground/85">
+                    But technical age was only part of the problem. Over time, affiliates had learned to work around broken functionality. Those workarounds had become part of their daily routine.
+                  </p>
+                </div>
+                <div className="space-y-6">
+                  <p className="text-lg leading-relaxed text-foreground/85 font-bold">
+                    During focus groups, affiliates described roughly $2.5 million in business lost over recent years to orders that slipped through unnoticed. At the same time, many survey respondents said they were satisfied with the portal.
+                  </p>
+                  <p className="text-lg leading-relaxed text-foreground/85 font-bold">
+                    My challenge was to improve order visibility and restore broken workflows while protecting the cues people already trusted.
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-14">
+                {[
+                  { n: "1,000+", l: "Affiliates using the portal" },
+                  { n: "128", l: "Survey responses" },
+                  { n: "5", l: "Affiliate organizations in focus groups" },
+                ].map((s) => (
+                  <div key={s.l}>
+                    <p className="display text-4xl md:text-5xl text-accent mb-2">{s.n}</p>
+                    <p className="text-base text-foreground/85">{s.l}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {c.slug === "atlas" && (
