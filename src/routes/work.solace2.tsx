@@ -641,7 +641,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       <CarouselItem>
                         <div className="space-y-12">
                           <figure>
-                            <span className="font-serif text-5xl leading-none" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
+                            <span className="font-serif text-5xl leading-none font-bold" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               If there is any change in the style details or material we have to make the change in all the documents/files related to it.
                             </blockquote>
@@ -662,7 +662,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       <CarouselItem>
                         <div className="space-y-12">
                           <figure>
-                            <span className="font-serif text-5xl leading-none" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
+                            <span className="font-serif text-5xl leading-none font-bold" style={{ color: "#ffa348" }} aria-hidden="true">&ldquo;</span>
                             <blockquote className="font-serif text-2xl md:text-3xl leading-snug mt-4">
                               Every time there are changes we have to keep factories updated with that and provide them the updated project related files.
                             </blockquote>

@@ -186,9 +186,15 @@
   --ring: var(--ink);
 }
 
-/* Copy-page text is independent of the shared amber borders and fills. */
+/* Copy-page text is independent of the shared amber borders and fills. Every
+   orange text on the page is bold. */
 .solace2-page .text-decision-accent {
   color: var(--copy-orange-text);
+  font-weight: 700;
+}
+
+.solace2-page .text-copy-orange-text {
+  font-weight: 700;
 }
 
 @layer base {
