@@ -777,6 +777,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           </div>
 
       {(c.slug === "affiliate-platform-redesign") && (
+        <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research – Focus Groups</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
@@ -951,6 +952,126 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 After the focus groups, I reprioritized the rollout. Phase 1 restored core order workflows and introduced auto-refresh. Phase 2 deferred larger changes such as messaging and in-platform notifications
               </p>
         </section>
+        <div>
+              <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
+                  {[
+                    {
+                      name: "Political Sales Manager / Sales Planner\n",
+                      usage: 2,
+                      dependency: 3,
+                      goals: [
+                        "Goal:\u00a0 Identify new business\u00a0\nFrustration:\u00a0Back to back order revisions, hard to track revision history \u0026 speed\u00a0\u00a0\nTasks:\n1. Track new orders\n2. Track revenue\n3. View order for oversight\n4. Quick identification of unaccepted orders",
+                      ],
+                    },
+                    {
+                      name: "Political Campaign Manager\n/ Support Specialist\u200b",
+                      usage: 3,
+                      dependency: 3,
+                      goals: [
+                        "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
+                      ],
+                    },
+                    {
+                      name: "Political & Markets Yield Team (ERC)",
+                      usage: 4,
+                      dependency: 4,
+                      goals: [
+                        "Goal: Maintaining Electronic Rate cards\nFrustration: Time consuming workarounds due to broken functionalities\nTasks:\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
+                      ],
+
+                    },
+                    {
+                      name: "Admin / Super User",
+                      usage: 4,
+                      dependency: 3,
+                      goals: [
+                        "Goal: Validate the affiliate site is running successfully\nFrustration: Manual account setup & updating\nTasks:\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
+                      ],
+
+                    },
+                    {
+                      name: "Markets Campaign Manager",
+                      usage: 4,
+                      dependency: 4,
+                      goals: [
+                        "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\n",
+                        "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
+                      ],
+                    },
+                  ].map((persona, idx) => (
+                    <div
+                      key={`${persona.name}-${idx}`}
+                      className="relative rounded-xl border border-azure shadow overflow-hidden"
+                    >
+                      <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                      <div className="relative p-6 text-foreground dark:text-primary">
+                        <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
+                          {persona.name}
+                        </h4>
+                        <div className="space-y-2 mb-5">
+                          {[
+                            { label: "Platform Usage", value: persona.usage },
+                            { label: "Platform Dependency", value: persona.dependency },
+                          ].map((bar) => (
+                            <div key={bar.label}>
+                              <div className="text-sm font-bold mb-2">{bar.label}</div>
+                              <div className="w-[70%]">
+                                <div className="grid grid-cols-4 gap-px">
+                                  {Array.from({ length: 4 }).map((_, i) => (
+                                    <div
+                                      key={i}
+                                      className={`h-2 border border-[#0068FF] dark:border-primary/70 ${
+                                        i === 0
+                                          ? "rounded-l-full rounded-r-none"
+                                          : i === 3
+                                            ? "rounded-r-full rounded-l-none"
+                                            : "rounded-none"
+                                      } ${
+                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary" : "bg-transparent"
+                                      }`}
+                                    />
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
+                          {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
+                            return (
+                              <li key={idx} className="whitespace-pre-line">
+                                {goal.split('\n').map((line, lIdx) => {
+                                  const labelMatch = line.match(/^(Goal:|Frustration:|Tasks:|Platform Usage|Platform Dependency)\s*/);
+                                  if (labelMatch) {
+                                    const label = labelMatch[1];
+                                    const rest = line.slice(labelMatch[0].length);
+                                    return (
+                                      <span key={lIdx} className="block mt-1">
+                                        <span className="font-bold">{label}</span>
+                                        {rest}
+                                        {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
+                                      </span>
+                                    );
+                                  }
+                                  return (
+                                    <span key={lIdx} className="block mt-1">
+                                      {line}
+                                      {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
+                                    </span>
+                                  );
+                                })}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+        </div>
+        </>
       )}
 
           {(c.slug === "fjord") && (
@@ -1714,123 +1835,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <AffiliateProblemsOpportunityCardsCopy />
                 </div>
               </div>
-
-              <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
-                  {[
-                    {
-                      name: "Political Sales Manager / Sales Planner\n",
-                      usage: 2,
-                      dependency: 3,
-                      goals: [
-                        "Goal:\u00a0 Identify new business\u00a0\nFrustration:\u00a0Back to back order revisions, hard to track revision history \u0026 speed\u00a0\u00a0\nTasks:\n1. Track new orders\n2. Track revenue\n3. View order for oversight\n4. Quick identification of unaccepted orders",
-                      ],
-                    },
-                    {
-                      name: "Political Campaign Manager\n/ Support Specialist\u200b",
-                      usage: 3,
-                      dependency: 3,
-                      goals: [
-                        "Goal: Maintain makegoods business\u00a0\nFrustration:\u00a0Makegood Processing and Synchronization issue\nTasks:\n1. Review and Confirm\n2. orders in timely manner\n3. Create Makegoods\u200b\n4 .Accept orders",
-                      ],
-                    },
-                    {
-                      name: "Political & Markets Yield Team (ERC)",
-                      usage: 4,
-                      dependency: 4,
-                      goals: [
-                        "Goal: Maintaining Electronic Rate cards\nFrustration: Time consuming workarounds due to broken functionalities\nTasks:\n1. Upload, View, Download rates\n2. Keep rate cards up-to-date\n3. Report on gaps in rate cards\n4. Ensure downloaded exports and the upload template match",
-                      ],
-
-                    },
-                    {
-                      name: "Admin / Super User",
-                      usage: 4,
-                      dependency: 3,
-                      goals: [
-                        "Goal: Validate the affiliate site is running successfully\nFrustration: Manual account setup & updating\nTasks:\n1. Replicate all capabilities of an affiliate user\n2. Troubleshoot for affiliate user\n3. Identify discrepancies between Platform and affiliate site orders\n4. Test deployment of affiliate site changes",
-                      ],
-
-                    },
-                    {
-                      name: "Markets Campaign Manager",
-                      usage: 4,
-                      dependency: 4,
-                      goals: [
-                        "Goal:\u00a0Gather intel across both Linear and Digital orders\nFrustration: Version comparison broken, Exports format\n",
-                        "Tasks:\n1.\u00a0 New & historical linear & digital orders\u200b\n2. Calculate Total investment/total impressions\u200b\n3.\u00a0Coordinate with AMP Account Executives\u00a0on orders/markets\u200b orders\u00a0\n4. \u200bOrder admin reference\u00a0\u00a0\n\n",
-                      ],
-                    },
-                  ].map((persona, idx) => (
-                    <div
-                      key={`${persona.name}-${idx}`}
-                      className="relative rounded-xl border border-azure shadow overflow-hidden"
-                    >
-                      <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                      <div className="relative p-6 text-foreground dark:text-primary">
-                        <h4 className="font-semibold leading-none tracking-tight text-lg mb-4 whitespace-pre-line">
-                          {persona.name}
-                        </h4>
-                        <div className="space-y-2 mb-5">
-                          {[
-                            { label: "Platform Usage", value: persona.usage },
-                            { label: "Platform Dependency", value: persona.dependency },
-                          ].map((bar) => (
-                            <div key={bar.label}>
-                              <div className="text-sm font-bold mb-2">{bar.label}</div>
-                              <div className="w-[70%]">
-                                <div className="grid grid-cols-4 gap-px">
-                                  {Array.from({ length: 4 }).map((_, i) => (
-                                    <div
-                                      key={i}
-                                      className={`h-2 border border-[#0068FF] dark:border-primary/70 ${
-                                        i === 0
-                                          ? "rounded-l-full rounded-r-none"
-                                          : i === 3
-                                            ? "rounded-r-full rounded-l-none"
-                                            : "rounded-none"
-                                      } ${
-                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary" : "bg-transparent"
-                                      }`}
-                                    />
-                                  ))}
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                        <ul className="text-sm text-foreground/85 dark:text-primary/85 space-y-2">
-                          {persona.goals.filter((g) => g.trim()).map((goal, idx) => {
-                            return (
-                              <li key={idx} className="whitespace-pre-line">
-                                {goal.split('\n').map((line, lIdx) => {
-                                  const labelMatch = line.match(/^(Goal:|Frustration:|Tasks:|Platform Usage|Platform Dependency)\s*/);
-                                  if (labelMatch) {
-                                    const label = labelMatch[1];
-                                    const rest = line.slice(labelMatch[0].length);
-                                    return (
-                                      <span key={lIdx} className="block mt-1">
-                                        <span className="font-bold">{label}</span>
-                                        {rest}
-                                        {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
-                                      </span>
-                                    );
-                                  }
-                                  return (
-                                    <span key={lIdx} className="block mt-1">
-                                      {line}
-                                      {lIdx < goal.split('\n').length - 1 ? '\n' : ''}
-                                    </span>
-                                  );
-                                })}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
 
               <AiPanelSurveyCopy />
 
