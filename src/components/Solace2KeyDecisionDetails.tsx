@@ -71,7 +71,7 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
           <AccordionTrigger className="text-sm font-medium">How I aligned Product and Engineering</AccordionTrigger>
           <AccordionContent>
             <p className="text-base leading-relaxed text-foreground/70 mb-5">I reviewed early sketches with Product, iterated with users, and confirmed requirements with the VP of Product. Reviews with the CTO and developers covered architecture, feasibility, new UI components, and development effort before handoff. This kept the next design workstream moving while Engineering built the previous one.</p>
-            <div className="max-w-[510px]"><Artifact src={brainstorming} label="Product brainstorming session" onZoom={onZoom} /></div>
+            <div className="max-w-[510px]"><Artifact src={brainstorming} label="Product brainstorming session" showLink={false} onZoom={onZoom} /></div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
@@ -86,7 +86,7 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
           <p className="text-sm leading-relaxed text-foreground/70"><strong className="text-foreground">What this required:</strong> the material library had to be ready before the cost sheet. That dependency shaped the rollout.</p>
           <p className="mt-5 text-sm text-decision-accent flex gap-2"><ArrowDownRight className="w-4 h-4 shrink-0 mt-1" aria-hidden="true" />Calculation mistakes fell 64% in the reported post-release comparison.</p>
         </div>
-        <Artifact src={materials} label="Explore the bill of materials" caption="Material details and costs share the same workflow, reducing the need to rebuild a separate spreadsheet." onZoom={onZoom} />
+        <Artifact src={materials} label="Explore the bill of materials" showLink={false} caption="Material details and costs share the same workflow, reducing the need to rebuild a separate spreadsheet." onZoom={onZoom} />
       </div>
     </Decision>
 

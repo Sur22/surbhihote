@@ -2889,8 +2889,8 @@ const solace2DesignTabs = [
     caption: "Placeholder copy — tell me what to write here",
     layout: "stack" as const,
     images: [
-      { src: wireframeImg1, alt: "Wireframe contact sheet showing entry, sketch, detail and specification screens", label: "Entry and sketch screens" },
-      { src: wireframeImg2, alt: "Wireframe contact sheet showing material details, bill of materials, export and library screens", label: "Material, costing and export screens" },
+      { src: wireframeImg1, alt: "Wireframe contact sheet showing entry, sketch, detail and specification screens", label: "" },
+      { src: wireframeImg2, alt: "Wireframe contact sheet showing material details, bill of materials, export and library screens", label: "" },
     ],
   },
   {
@@ -2954,10 +2954,12 @@ function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
                 className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
                 loading="lazy"
               />
-              <span className="mt-2 flex items-center gap-1.5 text-sm text-foreground/70">
-                {img.label}
-                <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-              </span>
+              {img.label && (
+                <span className="mt-2 flex items-center gap-1.5 text-sm text-foreground/70">
+                  {img.label}
+                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                </span>
+              )}
             </button>
           ))}
         </div>
