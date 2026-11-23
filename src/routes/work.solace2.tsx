@@ -8,7 +8,6 @@ import { CaseStudySideNav } from "@/components/CaseStudySideNav";
 import { AiPanelSurvey } from "@/components/AiPanelSurvey";
 import { AiPanelFocusGroup } from "@/components/AiPanelFocusGroup";
 import { AiPanelTesting } from "@/components/AiPanelTesting";
-import { AiPanelTestingInitialCopy } from "@/components/AiPanelTestingInitialCopy";
 import { AffiliateProblemsOpportunityCards } from "@/components/AffiliateProblemsOpportunityCards";
 import { AffiliateRealProblemCards } from "@/components/AffiliateRealProblemCards";
 import { AiPanelIdeation } from "@/components/AiPanelIdeation";
@@ -89,7 +88,6 @@ import affSurveyQ4 from "@/assets/affiliate-survey-q4.png.asset.json";
 import affSurveyQ5 from "@/assets/affiliate-survey-q5.png.asset.json";
 import affSurveyQ6 from "@/assets/affiliate-survey-q6.png.asset.json";
 import affiliateBeforeAfter from "@/assets/Affiliate_website_before_after.png.asset.json";
-import brainstormingAudienceBuilder from "@/assets/brainstorming-audience-builder-v2.png.asset.json";
 import affiliateFinalScreens from "@/assets/Affiliate_website_final_screens.png.asset.json";
 import affiliateOrderDetails from "@/assets/Affiliate_website_Order_details_page.png.asset.json";
 import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.asset.json";
@@ -1790,154 +1788,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         </section>
       )}
 
-      {/* Brainstorming */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "affiliate-platform-redesign" ? "pt-[50px] pb-24" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
-        <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "affiliate-platform-redesign" ? "font-serif text-3xl mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "affiliate-platform-redesign") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
-        {(c.slug === "atlas" || c.slug === "atlas2") && (
-          <>
-            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">Three levels of control</h3>
-            {/* Three levels as persona-style cards, matching the Design Principle
-                cards: the flat peach surface and the site's amber drop. */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
-              {[
-                {
-                  title: "Company",
-                  body: "Control notifications across an organization.",
-                },
-                {
-                  title: "Product",
-                  body: "Subscribe to notifications for specific products.",
-                },
-                {
-                  title: "Lifecycle",
-                  body: "Control notifications by phase/stage.",
-                },
-              ].map((level) => (
-                <div
-                  key={level.title}
-                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
-                >
-                  <div className="relative z-10">
-                    <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
-                      {level.title}
-                    </h4>
-                    <p className="text-sm text-card-foreground">{level.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* The flow band wears the flat peach sampled from the swatch, so the
-                surface reads as one colour: no frosted backdrop or veil under the
-                ink, just the amber rim the sample carries. */}
-            <div className="mt-[10px] mb-[30px]">
-              <div className="flow-band relative max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
-                <div className="statement-line relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-card-foreground">
-                  {[
-                    "Role",
-                    "Notification Template",
-                    "User Preferences",
-                    "Delivery Channel",
-                  ].map((step, i) => (
-                    <span key={step} className="flex items-center gap-x-3">
-                      {i > 0 && (
-                        <span aria-hidden className="text-muted-foreground">
-                          →
-                        </span>
-                      )}
-                      <span>{step}</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </>
-        )}
-
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
-          {(c.slug === "atlas" || c.slug === "atlas2") 
-            ? "Following are the three different user flows for managing notifications for different levels Company,Product and Stage.\u00a0\u00a0" 
-
-
-            : (c.slug === "affiliate-platform-redesign") 
-              ? "I presented wireframes to Stakeholders, Engineering, and the PM. We discussed the assumptions the stakeholders had. I had multiple questions about the workflow of the users regarding what is crucial for them to perform their day-to-day jobs on the website.\u00a0" 
-              : (c.slug === "fjord")
-                ? "The reference point of the design was the tool which we are trying to replace. Some parts felt complicated specifically for the first-time users, as observed during the research phase. The process of building a segment and grouping felt complex for them. I wanted to simplify that part for both new and experienced users, so they could understand and adopt it quickly. I took the drag-and-drop approach, which was best suited for this tool."
-                : "I presented my sketches to the product team using a whiteboard, as the possible solution for the feature we were building. After the feedback and discussion about the design requirements from an engineering standpoint, the concept design was good enough to kickstart the mid-fidelity wireframes and gather some user feedback."
-          }
-        </p>
-        {c.slug === "affiliate-platform-redesign" && (
-          <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-50"
-              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-            />
-            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-            <div className="relative z-10">
-              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Making the case for affiliate focus groups</h3>
-              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"The stakeholders did not have answers to many of my questions as well as they had some of their own question, so I pushed for a session with all the main affiliates to understand their workflow, which would provide insights and avoid any assumption-based decisions that might affect their workflow negatively or create obstacles for them."}
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        )}
-        {(c.slug === "affiliate-platform-redesign") ? (
-          <button
-            type="button"
-            onClick={() => setZoomImg(fjord2InitialDesign.url)}
-            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0"
-          >
-            <img src={fjord2InitialDesign.url} alt="Initial design" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-          </button>
-        ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
-          <>
-            <button
-              type="button"
-              onClick={() => setZoomImg(atlasTaskFlow.url)}
-              className="group block w-full overflow-hidden rounded-sm p-2 cursor-zoom-in border-0"
-            >
-              <img src={atlasTaskFlow.url} alt="User task flow for notification subscription and management" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-            </button>
-          </>
-        ) : (
-          <>
-            {c.slug !== "fjord" && (
-              <button
-                type="button"
-                onClick={() => setZoomImg(brainstormingImg)}
-                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-orange-200 border-0"
-              >
-                <img
-                  src={brainstormingImg}
-                  alt="Whiteboard from brainstorming session with the product team"
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                  loading="lazy"
-                />
-              </button>
-            )}
-            {c.slug === "fjord" && (
-              <button
-                type="button"
-                onClick={() => setZoomImg(brainstormingAudienceBuilder.url)}
-                className="group block w-full overflow-hidden rounded-sm border-border bg-secondary p-4 transition-colors hover:border-foreground/40 cursor-zoom-in border-0"
-              >
-                <img
-                  src={brainstormingAudienceBuilder.url}
-                  alt="Audience builder brainstorming screens"
-                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                  loading="lazy"
-                />
-              </button>
-            )}
-          </>
-        )}
-        {c.slug === "affiliate-platform-redesign" && (
-          <AiPanelTestingInitialCopy />
-        )}
-
-      </section>
 
       {c.slug === "fjord" && (
         <>
