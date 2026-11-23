@@ -2082,33 +2082,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       {(c.slug !== "atlas" && c.slug !== "atlas2") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
-      {c.slug === "solace" && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-          <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">Review with Users, Product &amp; Engineering Team</h2>
-          <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>Reviewed the initial low-fidelity clickable wireframes with users to gather feedback on functionality and usability. After observing how they interacted with the wireframes and noting what could be added, I created a second iteration and shared it with them again.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>After the second iteration, I reviewed the wireframes with the VP of Product to confirm they met all requirements. I communicated user needs and observations from interviews including items I had added that were not in the product requirements document and updated the team to keep Engineering in the loop.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>To confirm technical feasibility and software architecture, and to understand the development effort and time required, I reviewed the designs with the CTO and received engineering feedback and inputs for improvement.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>I reviewed designs with the developers and confirmed the new UI components I would need for this feature, whether they could build them, and the effort and time required.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>After taking inputs from users, Product, and Engineering, I started putting together high-fidelity wireframes to improve the design in a third iteration.</span>
-            </li>
-          </ul>
-        </section>
-      )}
 
         </>
       )}
