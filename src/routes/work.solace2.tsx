@@ -76,6 +76,8 @@ import userFlow2 from "@/assets/techpack-userflow-2.png.asset.json";
 import userFlow3 from "@/assets/techpack-userflow-3.png.asset.json";
 import userFlowSolace2 from "@/assets/techpack-user-flow-2-v2.png.asset.json";
 import userFlowSolace3 from "@/assets/techpack-user-flow-3-v2.png.asset.json";
+import techpackScreensCollage from "@/assets/techpack_tool_screens.png.asset.json";
+import techpackPrototypeOverview from "@/assets/tech_pack_prototype.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import atlasStrategyDiagram from "@/assets/atlas-strategy-diagram.png.asset.json";
 import atlasTaskFlow from "@/assets/atlas-task-flow.png.asset.json";
@@ -2162,6 +2164,63 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           </Carousel>
         )}
       </section>
+
+      {c.slug === "solace" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Additional interface artifacts</h2>
+          <p className="text-lg leading-relaxed text-foreground/60 mb-10">Original screen collection and prototype overview</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <figure>
+              <button
+                type="button"
+                onClick={() => setZoomImg(techpackScreensCollage.url)}
+                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+              >
+                <img
+                  src={techpackScreensCollage.url}
+                  alt="Original Tech Pack screens covering creation, editing, materials, and output"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </button>
+              <div className="mt-3 text-right">
+                <button
+                  type="button"
+                  onClick={() => setZoomImg(techpackScreensCollage.url)}
+                  className="text-base text-foreground/70 underline underline-offset-4 hover:text-foreground transition-colors"
+                >
+                  View full image
+                </button>
+              </div>
+              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
+            </figure>
+            <figure>
+              <button
+                type="button"
+                onClick={() => setZoomImg(techpackPrototypeOverview.url)}
+                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+              >
+                <img
+                  src={techpackPrototypeOverview.url}
+                  alt="Original prototype overview"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </button>
+              <div className="mt-3 text-right">
+                <button
+                  type="button"
+                  onClick={() => setZoomImg(techpackPrototypeOverview.url)}
+                  className="text-base text-foreground/70 underline underline-offset-4 hover:text-foreground transition-colors"
+                >
+                  View full image
+                </button>
+              </div>
+              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
       {(c.slug !== "atlas" && c.slug !== "atlas2") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
