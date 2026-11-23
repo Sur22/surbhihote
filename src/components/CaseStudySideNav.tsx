@@ -55,6 +55,11 @@ function getSections(slug?: string): Section[] {
     if (problemIdx !== -1 && solution && keyDecisions) {
       sections.splice(problemIdx + 1, 0, solution, keyDecisions);
     }
+    // On this page only, Testing is folded into the Design & Test entry.
+    sections = sections.map((s) =>
+      s.id === "design-process" ? { ...s, label: "Design & Test" } : s,
+    );
+    sections = sections.filter((s) => s.id !== "testing");
   }
 
   if (slug && slugsWithQualitativeResearch.has(slug)) {
