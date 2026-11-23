@@ -2791,6 +2791,7 @@ const solace2DesignTabs = [
     tab: "Paper sketches",
     eyebrow: "Explore the workflow",
     heading: "Start with the documents people actually use.",
+    headingSize: "h3" as const,
     body: "I gathered the CAD files, tech packs, cost sheets, and catalogs users sent to clients and factories. Sketching from those materials helped me explore how the pieces could fit together.",
     caption: "Original project artifacts · Click an image to inspect",
     layout: "grid" as const,
@@ -2856,7 +2857,7 @@ function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
       <div className="grid gap-10 lg:grid-cols-[1fr_1.35fr] lg:items-start">
         <div>
           <p className="eyebrow mb-5">{step.eyebrow}</p>
-          <h3 className="h2 mb-6">{step.heading}</h3>
+          <h3 className={`${"headingSize" in step ? step.headingSize : "h2"} mb-6`}>{step.heading}</h3>
           <p className="text-lg leading-relaxed text-foreground/80">{step.body}</p>
           <p className="mt-6 text-sm text-foreground/60">{step.caption}</p>
         </div>
