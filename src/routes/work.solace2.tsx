@@ -2089,281 +2089,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       )}
 
       {(c.slug !== "affiliate-platform-redesign") && (
-        <>
-      {/* Workflow */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
-        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
-          {c.slug === "solace" ? "Workflow" : "User Groups"}
-        </h2>
-        {c.slug === "solace" && (
-          <div className="mb-20">
-            <p className="eyebrow mb-4">Craft within an existing platform</p>
-            <h3 className="h3 mb-6">A familiar structure, with room for complex detail.</h3>
-            <p className="text-lg leading-relaxed text-foreground/70">The materials library reused the CAD library's UI structure. Across the editor, the same stage navigation connects sketches, detailed design, the bill of materials, and output.</p>
-          </div>
-        )}
-        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <button
-            type="button"
-            onClick={() => setZoomImg(userGroupsImg)}
-            className={`group block w-[60%] mx-auto overflow-hidden rounded-sm border-border ${c.slug === "solace" ? "dark:bg-white" : "bg-secondary"} p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0`}
-          >
-            <img
-              src={userGroupsImg}
-              alt="Diagram showing user groups connected to the Techpack Editor feature"
-              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-              loading="lazy"
-            />
-          </button>
-        )}
-        <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-          {c.slug === "solace"
-            ? "Alignment of user goals and business goals to benefit both is important. Helping users achieve their goals helps in user retention and hence profitable for business."
-            : ((c.slug === "atlas" || c.slug === "atlas2") 
-                ? "\n\n\n"
-                : "Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
-          }
-        </div>
-      </section>
-
-      {/* User Flow */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[100px] pb-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
-        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "User flow"}</h2>
-        {c.slug === "solace" && (
-          <>
-            <h3 className="h3 mb-3">The workflow across roles and entry points</h3>
-            <p className="text-lg leading-relaxed text-foreground/60 mb-6">Original workflow and user-flow diagrams</p>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-2">{"The editor connects reusable libraries, designers, product development managers, client review, and the factory handoff.The user flows show the different places users can start a Tech Pack and how each path reaches the output.\n\n"}</p>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10">{"\n"}</p>
-          </>
-        )}
-        {c.slug !== "solace" && (
-        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          {(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks."}
-        </p>
-        )}
-
-        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-          <Carousel opts={{ loop: true }} className="relative">
-            <CarouselContent>
-              {(c.slug === "fjord" ? [audienceSegmentFlow] : c.slug === "solace" ? [userFlow1, userFlowSolace2, userFlowSolace3] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
-                <CarouselItem key={i}>
-                  <button
-                    type="button"
-                    onClick={() => setZoomImg(img.url)}
-                    className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
-                  >
-                    <img
-                      src={img.url}
-                      alt={`User flow ${i + 1}`}
-                      className="w-full h-auto object-contain"
-                      loading="lazy"
-                    />
-                  </button>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {c.slug === "solace" && (
-              <>
-                <CarouselPrevious />
-                <CarouselNext />
-              </>
-            )}
-          </Carousel>
-        )}
-      </section>
-
-      {c.slug === "solace" && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-          <h2 className="h3 mb-8">Additional interface artifacts</h2>
-          <p className="text-lg leading-relaxed text-foreground/60 mb-10">Original screen collection and prototype overview</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <figure>
-              <button
-                type="button"
-                onClick={() => setZoomImg(techpackScreensCollage.url)}
-                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
-              >
-                <img
-                  src={techpackScreensCollage.url}
-                  alt="Original Tech Pack screens covering creation, editing, materials, and output"
-                  className="w-full h-auto object-contain"
-                  loading="lazy"
-                />
-              </button>
-              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
-            </figure>
-            <figure>
-              <button
-                type="button"
-                onClick={() => setZoomImg(techpackPrototypeOverview.url)}
-                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
-              >
-                <img
-                  src={techpackPrototypeOverview.url}
-                  alt="Original prototype overview"
-                  className="w-full h-auto object-contain"
-                  loading="lazy"
-                />
-              </button>
-              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
-            </figure>
-          </div>
-        </section>
-      )}
-      {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
-        </>
-      )}
-
-      {(c.slug !== "atlas" && c.slug !== "atlas2") && (
-      <>
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-
-      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      </>
-      )}
-
-      {(c.slug === "atlas" || c.slug === "atlas2") && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
-      {(c.slug === "affiliate-platform-redesign") && (
-        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 pb-0 scroll-mt-24">
-          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
-          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
-          <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-50"
-              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-            />
-            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-            <div className="relative z-10">
-              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
-              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n"}
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <ul className="mb-10 space-y-6 text-lg leading-relaxed text-foreground/85">
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>
-                <strong>Why this approach:</strong> It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>
-                <p>
-                  <strong>Outcome:</strong> Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.
-                </p>
-              </span>
-            </li>
-          </ul>
-          <AiPanelTesting />
-          <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
-          <p className="text-lg leading-relaxed text-foreground/85">
-            As for this redesign I and the product manager made the 'Help &amp; Documentation' before the release with the help of AI. We made sure to have the help resources ready such as short how to videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
-          </p>
-          <div className="rule mt-16" />
-        </section>
-      )}
-      {(c.slug === "affiliate-platform-redesign") && (
-        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
-          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
-          <h4 className="h4 mb-6">{"\n"}</h4>
-          <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-            As the only designer on the product, I had to move between research, synthesis, ideation, UX writing, prototyping, testing, and stakeholder collaboration. AI helped reduce the repetitive parts of that workload so I could maintain depth across the process without adding another layer of overhead.
-            <br /><br />
-            AI reduced repetitive work and accelerated exploration, allowing me to spend more time on validation, design judgment, and higher-value product decisions.
-            <br /><br /><strong>AI assists → Human validates → Evidence informs → Designer decides</strong>
-          </p>
-          <div className="overflow-hidden rounded-sm border border-foreground/20">
-            <Table className="min-w-[820px]">
-              <TableHeader>
-                <TableRow className="border-b border-foreground/20 hover:bg-transparent">
-                  <TableHead className="text-foreground font-semibold" />
-                  {["Research", "Ideation", "UX Writing", "Testing"].map((h) => (
-                    <TableHead key={h} className="text-foreground font-semibold">
-                      {h}
-                    </TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {[
-                  {
-                    label: "AI contribution",
-                    cells: [
-                      "Synthesize & identify patterns",
-                      "Explore possibilities",
-                      "Generate variations",
-                      "Surface behavioral patterns",
-                    ],
-                  },
-                  {
-                    label: "Human contribution",
-                    cells: [
-                      "Validate & prioritize",
-                      "Evaluate & refine",
-                      "Select & refine",
-                      "Verify against evidence",
-                    ],
-                  },
-                  {
-                    label: "Impact",
-                    cells: [
-                      "Faster synthesis",
-                      "More concepts explored",
-                      "Faster iteration",
-                      "More focused analysis",
-                    ],
-                  },
-                  {
-                    label: "Capacity unlocked",
-                    cells: [
-                      "More time for research interpretation",
-                      "More iterations before converging",
-                      "More time for content refinement",
-                      "More time for deeper validation",
-                    ],
-                  },
-                  {
-                    label: "Time saved*",
-                    cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
-                  },
-                ].map((row) => (
-                  <TableRow
-                    key={row.label}
-                    className="border-b border-foreground/10 hover:bg-table-hover"
-                  >
-                    <TableCell className="font-semibold text-foreground">
-                      {row.label}
-                    </TableCell>
-                    {row.cells.map((cell, i) => (
-                      <TableCell key={i} className="text-foreground/90">
-                        {cell}
-                      </TableCell>
-                    ))}
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </section>
-      )}
-
-
-      {(c.slug !== "affiliate-platform-redesign") && (
         <section id="testing" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-[80px]" : "py-24"}`}>
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
 
@@ -2595,6 +2320,281 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           )}
         </section>
       )}
+
+      {(c.slug !== "affiliate-platform-redesign") && (
+        <>
+      {/* Workflow */}
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : "pt-24 pb-0"}`} style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+        <h2 className="font-serif text-4xl mb-8 font-medium md:text-3xl">
+          {c.slug === "solace" ? "Workflow" : "User Groups"}
+        </h2>
+        {c.slug === "solace" && (
+          <div className="mb-20">
+            <p className="eyebrow mb-4">Craft within an existing platform</p>
+            <h3 className="h3 mb-6">A familiar structure, with room for complex detail.</h3>
+            <p className="text-lg leading-relaxed text-foreground/70">The materials library reused the CAD library's UI structure. Across the editor, the same stage navigation connects sketches, detailed design, the bill of materials, and output.</p>
+          </div>
+        )}
+        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+          <button
+            type="button"
+            onClick={() => setZoomImg(userGroupsImg)}
+            className={`group block w-[60%] mx-auto overflow-hidden rounded-sm border-border ${c.slug === "solace" ? "dark:bg-white" : "bg-secondary"} p-4 transition-colors hover:border-foreground/40 cursor-zoom-in mb-10 border-orange-300 border-0`}
+          >
+            <img
+              src={userGroupsImg}
+              alt="Diagram showing user groups connected to the Techpack Editor feature"
+              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
+        )}
+        <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+          {c.slug === "solace"
+            ? "Alignment of user goals and business goals to benefit both is important. Helping users achieve their goals helps in user retention and hence profitable for business."
+            : ((c.slug === "atlas" || c.slug === "atlas2") 
+                ? "\n\n\n"
+                : "Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications\n\nBroad notification categories for users are as follows \n1.     Comments posted by different user types (Client, Factory, Staff, Finance )\n2.    Files - Uploads ,Approval, Rejection\n3.    PLM Stage Activities\n4.    Timeline/ETA Changes\n5.    Chat messages ,Tagged Comment in the product or in the chat\n6.    Finance - Costing, invoicing, PO updates  \n7.    Product level notifications \n8.    Company level notifications \n\n")
+          }
+        </div>
+      </section>
+
+      {/* User Flow */}
+      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[100px] pb-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+        <h2 className="font-serif text-4xl mb-8 md:text-3xl font-normal">{(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "User flow"}</h2>
+        {c.slug === "solace" && (
+          <>
+            <h3 className="h3 mb-3">The workflow across roles and entry points</h3>
+            <p className="text-lg leading-relaxed text-foreground/60 mb-6">Original workflow and user-flow diagrams</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-2">{"The editor connects reusable libraries, designers, product development managers, client review, and the factory handoff.The user flows show the different places users can start a Tech Pack and how each path reaches the output.\n\n"}</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10">{"\n"}</p>
+          </>
+        )}
+        {c.slug !== "solace" && (
+        <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+          {(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks."}
+        </p>
+        )}
+
+        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+          <Carousel opts={{ loop: true }} className="relative">
+            <CarouselContent>
+              {(c.slug === "fjord" ? [audienceSegmentFlow] : c.slug === "solace" ? [userFlow1, userFlowSolace2, userFlowSolace3] : [userFlow1, userFlow2, userFlow3]).map((img, i) => (
+                <CarouselItem key={i}>
+                  <button
+                    type="button"
+                    onClick={() => setZoomImg(img.url)}
+                    className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+                  >
+                    <img
+                      src={img.url}
+                      alt={`User flow ${i + 1}`}
+                      className="w-full h-auto object-contain"
+                      loading="lazy"
+                    />
+                  </button>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {c.slug === "solace" && (
+              <>
+                <CarouselPrevious />
+                <CarouselNext />
+              </>
+            )}
+          </Carousel>
+        )}
+      </section>
+
+      {c.slug === "solace" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+          <h2 className="h3 mb-8">Additional interface artifacts</h2>
+          <p className="text-lg leading-relaxed text-foreground/60 mb-10">Original screen collection and prototype overview</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <figure>
+              <button
+                type="button"
+                onClick={() => setZoomImg(techpackScreensCollage.url)}
+                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+              >
+                <img
+                  src={techpackScreensCollage.url}
+                  alt="Original Tech Pack screens covering creation, editing, materials, and output"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
+            </figure>
+            <figure>
+              <button
+                type="button"
+                onClick={() => setZoomImg(techpackPrototypeOverview.url)}
+                className="block w-full overflow-hidden rounded-sm border border-border bg-secondary cursor-zoom-in"
+              >
+                <img
+                  src={techpackPrototypeOverview.url}
+                  alt="Original prototype overview"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
+      {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
+        </>
+      )}
+
+      {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace") && (
+      <>
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      </>
+      )}
+
+      {(c.slug === "atlas" || c.slug === "atlas2") && (
+        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+      )}
+
+      {(c.slug === "affiliate-platform-redesign") && (
+        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 pb-0 scroll-mt-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
+          <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-50"
+              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+            />
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+            <div className="relative z-10">
+              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
+              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
+                  {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n"}
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <ul className="mb-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>I validated adoption behaviorally with Microsoft Clarity session analysis and an in-product feedback survey after the first 3 months of live use.</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>
+                <strong>Why this approach:</strong> It allowed me to validate the experience with real user behavior without adding research fatigue or disrupting affiliates' work.
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
+              <span>
+                <p>
+                  <strong>Outcome:</strong> Positive user feedback and observed behavior indicated that the redesigned workflows were being adopted and used as intended.
+                </p>
+              </span>
+            </li>
+          </ul>
+          <AiPanelTesting />
+          <h3 className="font-serif text-2xl md:text-3xl mb-6 mt-16 font-normal">Adoption</h3>
+          <p className="text-lg leading-relaxed text-foreground/85">
+            As for this redesign I and the product manager made the 'Help &amp; Documentation' before the release with the help of AI. We made sure to have the help resources ready such as short how to videos/tutorials showing how to perform all the tasks, a list of possible FAQs, and a place where users can send feedback and report any bugs or errors they encounter.&nbsp;&nbsp;
+          </p>
+          <div className="rule mt-16" />
+        </section>
+      )}
+      {(c.slug === "affiliate-platform-redesign") && (
+        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
+          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
+          <h4 className="h4 mb-6">{"\n"}</h4>
+          <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+            As the only designer on the product, I had to move between research, synthesis, ideation, UX writing, prototyping, testing, and stakeholder collaboration. AI helped reduce the repetitive parts of that workload so I could maintain depth across the process without adding another layer of overhead.
+            <br /><br />
+            AI reduced repetitive work and accelerated exploration, allowing me to spend more time on validation, design judgment, and higher-value product decisions.
+            <br /><br /><strong>AI assists → Human validates → Evidence informs → Designer decides</strong>
+          </p>
+          <div className="overflow-hidden rounded-sm border border-foreground/20">
+            <Table className="min-w-[820px]">
+              <TableHeader>
+                <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                  <TableHead className="text-foreground font-semibold" />
+                  {["Research", "Ideation", "UX Writing", "Testing"].map((h) => (
+                    <TableHead key={h} className="text-foreground font-semibold">
+                      {h}
+                    </TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {[
+                  {
+                    label: "AI contribution",
+                    cells: [
+                      "Synthesize & identify patterns",
+                      "Explore possibilities",
+                      "Generate variations",
+                      "Surface behavioral patterns",
+                    ],
+                  },
+                  {
+                    label: "Human contribution",
+                    cells: [
+                      "Validate & prioritize",
+                      "Evaluate & refine",
+                      "Select & refine",
+                      "Verify against evidence",
+                    ],
+                  },
+                  {
+                    label: "Impact",
+                    cells: [
+                      "Faster synthesis",
+                      "More concepts explored",
+                      "Faster iteration",
+                      "More focused analysis",
+                    ],
+                  },
+                  {
+                    label: "Capacity unlocked",
+                    cells: [
+                      "More time for research interpretation",
+                      "More iterations before converging",
+                      "More time for content refinement",
+                      "More time for deeper validation",
+                    ],
+                  },
+                  {
+                    label: "Time saved*",
+                    cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
+                  },
+                ].map((row) => (
+                  <TableRow
+                    key={row.label}
+                    className="border-b border-foreground/10 hover:bg-table-hover"
+                  >
+                    <TableCell className="font-semibold text-foreground">
+                      {row.label}
+                    </TableCell>
+                    {row.cells.map((cell, i) => (
+                      <TableCell key={i} className="text-foreground/90">
+                        {cell}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        </section>
+      )}
+
 
       {(c.slug === "atlas" || c.slug === "atlas2") && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
