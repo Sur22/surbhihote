@@ -2057,8 +2057,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           <>
             <h3 className="h3 mb-3">The workflow across roles and entry points</h3>
             <p className="text-lg leading-relaxed text-foreground/60 mb-6">Original workflow and user-flow diagrams</p>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-2">The editor connects reusable libraries, designers, product development managers, client review, and the factory handoff.</p>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10">The user flows show the different places users can start a Tech Pack and how each path reaches the output.</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-2">{"The editor connects reusable libraries, designers, product development managers, client review, and the factory handoff.The user flows show the different places users can start a Tech Pack and how each path reaches the output.\n\n"}</p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10">{"\n"}</p>
           </>
         )}
         {c.slug !== "solace" && (
