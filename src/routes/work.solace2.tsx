@@ -1156,7 +1156,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               ].map((persona) => (
                 <div key={persona.name} className="border-t border-foreground/15 pt-6">
                   <p className="eyebrow mb-3">{persona.role}</p>
-                  <h4 className="font-serif text-2xl md:text-3xl font-normal mb-5 whitespace-pre-line">
+                  <h4 className="statement-line mb-5 whitespace-pre-line">
                     {persona.name}
                   </h4>
                   <ul className="list-disc list-inside text-[15px] leading-relaxed text-foreground/80 space-y-2.5">
