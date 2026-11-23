@@ -2465,6 +2465,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
       {/* Key Decisions */}
       <section id="key-decisions" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Key Decisions</h2>
         <p className="eyebrow mb-6">03 / The decisions behind the screens</p>
         <h2 className="h3 mb-6">Four choices that shaped the experience.</h2>
         <p className="text-lg leading-relaxed text-foreground/70 max-w-[560px] mb-14">
