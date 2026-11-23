@@ -789,6 +789,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
 
       {/* Research */}
       <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
         <p className="eyebrow mb-4">Research &amp; Artifacts</p>
         <h2 className="h3 mb-6">The people and workflows behind the decisions.</h2>
         <p className="text-lg leading-relaxed text-foreground/70 mb-10 max-w-3xl">The interviews, survey, role-based personas, and journey map grounded the workflow in how product development teams already worked.</p>
