@@ -2884,6 +2884,7 @@ const solace2DesignTabs = [
     tab: "Clickable wireframes",
     eyebrow: "Click through the flow",
     heading: "The sketches became screens you could click through.",
+    headingSize: "h3" as const,
     body: "Wireframes put the sketches in sequence so the team and I could walk the same path a designer would take, from a design idea to a finished document.",
     caption: "Placeholder copy — tell me what to write here",
     layout: "stack" as const,
