@@ -770,9 +770,11 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
 }
 .journey-table .journey-row-outline th:first-child {
   border-left: 1px solid var(--copy-orange-text);
+  border-radius: 12px 0 0 12px;
 }
 .journey-table .journey-row-outline td:last-child {
   border-right: 1px solid var(--copy-orange-text);
+  border-radius: 0 12px 12px 0;
 }
 
 /* The Opportunity row's peach band curves at 8px, the same corner as the
