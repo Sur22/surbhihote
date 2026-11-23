@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, ArrowDown, ArrowUpRight, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowDown, ArrowUp, ArrowUpRight, Check, TrendingUp, Play, FileText, BrainCircuit, CheckCheck, KeyRound } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Solace2KeyDecisionDetails } from "@/components/Solace2KeyDecisionDetails";
@@ -828,7 +828,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   }}
                 >
                   View interview insights
-                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
                 </a>
               </div>
             </div>
