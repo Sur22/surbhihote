@@ -2119,35 +2119,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
             </a>
           </div>
-          <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "For usability testing, I recruited 5 participants to test the prototype. The objective of the test was to identify how easily users are able to subscribe and unsubscribe from a particular product, company, stage, or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
-            </li>
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>
-                {c.slug === "fjord" 
-                  ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks."
-                  : <>I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
-              </span>
-            </li>
-            {c.slug === "fjord" && (
-              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-2 whitespace-pre-line">
-                {"\u00a01.\u00a0 Search an audience segment.\n\u00a02. Drag and Drop it to the build area.\u00a0\n\u00a03. Create a group of segments.\u00a0\n\u00a04. Switch between OR & AND, Include and exclude.\u00a0\n\u00a05. Name and save a segment.\u00a0\n\u00a06. Use the created segment in either of the 4 workflows.\n\n"}
-              </p>
-            )}
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
-            </li>
-            {c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace" && (
-            <li className="flex gap-4">
-              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "Based on the test result data, not all users had knowledge of AND/OR logic, so I added a help section to help them understand how it works, so they can create segments with a clear understanding and more precisely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
-            </li>
-            )}
-          </ul>
+          {/* Solace2: the three intro bullets that used to sit above the
+              findings table were removed; the table follows the header. */}
 
           {/* Tech Pack Tool: the usability findings now read as a Usability
               finding / Evidence / Design decision / Intended impact table,
