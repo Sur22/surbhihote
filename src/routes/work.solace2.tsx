@@ -813,6 +813,15 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Who:</strong> Textile Product Designers and Product Development Managers, who create styles from client requirements</p>
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Method:</strong> guerrilla, in-context desk interviews</p>
                 <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
+                {/* Solace2: bottom-of-card link to the interview write-up. The
+                    href is a stand-in until Surbhi supplies the document link. */}
+                <a
+                  href="#research"
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm text-decision-accent hover:underline"
+                >
+                  View interview insights
+                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                </a>
               </div>
             </div>
             <div className="rounded-2xl border border-[#ffa348] dark:border-foreground/25 p-8 md:p-10 mt-6">
