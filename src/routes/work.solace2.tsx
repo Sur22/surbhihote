@@ -2882,11 +2882,11 @@ const solace2DesignTabs = [
   },
   {
     tab: "Clickable wireframes",
-    eyebrow: "Click through the flow",
-    heading: "The sketches became screens you could click through.",
+    eyebrow: "Review before adding detail",
+    heading: "Make the flow clickable, then bring people into it.",
     headingSize: "h3" as const,
-    body: "Wireframes put the sketches in sequence so the team and I could walk the same path a designer would take, from a design idea to a finished document.",
-    caption: "Placeholder copy — tell me what to write here",
+    body: "I reviewed early wireframes with users, iterated, then checked requirements with the VP of Product and feasibility with the CTO and developers. Feedback shaped the next iteration before high-fidelity design.",
+    caption: "Original project artifacts · Click an image to inspect",
     layout: "carousel" as const,
     images: [
       { src: wireframeImg1, alt: "Wireframe contact sheet showing entry, sketch, detail and specification screens", label: "" },
@@ -2895,10 +2895,10 @@ const solace2DesignTabs = [
   },
   {
     tab: "Detailed interface",
-    eyebrow: "The interface takes shape",
-    heading: "The screens the tool was built from.",
-    body: "The wireframes tightened into the interface handed to engineering, with the material, costing and export screens in place.",
-    caption: "Placeholder copy — tell me what to write here",
+    eyebrow: "Refine the interactions",
+    heading: "Keep the direction. Resolve the friction.",
+    body: "Five participants tested the prototype across six tasks. Their feedback pointed to clearer labels, a Save option, and a more discoverable BOM details drawer. Those findings guided targeted changes.",
+    caption: "Original project artifacts · Click an image to inspect",
     layout: "grid" as const,
     images: [
       { src: finalSketchSel.url, alt: "Sketch selection screen in the tech pack tool", label: "Sketch selection" },
