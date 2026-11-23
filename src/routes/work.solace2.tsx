@@ -2062,9 +2062,11 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">The user flows show the different places users can start a Tech Pack and how each path reaches the output.</p>
           </>
         )}
+        {c.slug !== "solace" && (
         <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-          {c.slug === "solace" ? "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on key functions of the Design studio , I was able to think through the necessary steps and examine the user experience in detail. Below is the flow showing the various places from which you can start and access the design studio and edit the Tech Pack." : (c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks."}
+          {(c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "To decide what I am designing, identifying the main flow of users when completing a task helps me to direct my focus on designing specific pages. By creating task flows that center on the key functions of the Techpack tool — to generate a techpack, export it to a PDF, and share it — I was able to think through the necessary steps and examine the user experience in detail. Below is the flow for 2 tasks."}
         </p>
+        )}
 
         {(c.slug !== "atlas" && c.slug !== "atlas2") && (
           <Carousel opts={{ loop: true }} className="relative">
