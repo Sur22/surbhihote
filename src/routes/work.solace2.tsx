@@ -821,7 +821,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 {[
                   { q: "What", a: "problems are users facing?" },
                   { q: "Why", a: "do those problems happen?" },
-                  { q: "How", a: "can the tool solve them?" },
+                  { q: "How", a: "do those problems happen?" },
                 ].map((item) => (
                   <div key={item.q}>
                     <div className="border-t-2 border-foreground/25 mb-4" />
