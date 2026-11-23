@@ -2847,13 +2847,40 @@ Users needed an easy way to control and manage the notifications they want and s
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
           Reflection
         </h2>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-20">
-          {c.slug === "affiliate-platform-redesign" 
+        <div className="mb-20">
+          {c.slug === "affiliate-platform-redesign"
             ? <>
-                This project was more than a redesign. We tackled the pain points that had shaped how affiliates worked for years; speed, stability, broken functionality, redundancy, and the constant manual refreshing{"\u00A0"} and rebuilt the platform on a foundation that can finally evolve.{"\u00A0"}
-                The results I'm proudest of: a <strong>92%</strong> task success rate, the near-elimination of manual refreshing, and zero business lost since launch against the <strong>~$2.5 Million</strong> the old system had been quietly bleeding.Designing that visibility into the new platform is precisely what the "<strong>$0</strong> lost since launch" result protects.The biggest lesson wasn't about the interface; it was about restraint. For an entrenched user base that had normalized every workaround, the real risk wasn't building a worse tool; it was building a better one they'd reject. Designing for gradual adoption meant deliberately deferring improvements I'd have liked to ship on day one.{"\u00A0"}
-                <strong>The redesign taught me to preserve the cues people relied on and phase in changes that required them to learn new ways of working.</strong>{"\u00A0"}
-                Phase two, now in development, including a major shift in how affiliates communicate on the platform.
+                <p className="eyebrow mb-4">Reflection and Future Scope</p>
+                <h3 className="h2 mb-8">The most important design decision was knowing what to leave familiar.</h3>
+                <p className="font-serif text-2xl md:text-3xl leading-snug border-l-2 border-azure pl-6 mb-10">
+                  Satisfaction didn’t mean the old portal worked well. It meant people had learned how to make it work.
+                </p>
+                <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+                  That was the lesson behind the survey and focus-group contradiction. The affiliates who wanted the portal to stay the same were also the people losing time to refreshing, revisions, and broken functionality.
+                </p>
+                <p className="text-lg leading-relaxed text-foreground/85 mb-12">
+                  I’m proud of the 92% task success rate, fewer manual refreshes, and the workflows we restored. But the decision I would carry into another legacy rebuild is the same: understand what a habit is helping someone accomplish before replacing it.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                  <div>
+                    <h4 className="h3 mb-4">What I would do earlier</h4>
+                    <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+                      Bring affiliates into the conversation before the first wireframe review. Direct access exposed dependencies the team couldn’t explain internally, including why the status symbols mattered.
+                    </p>
+                    <p className="text-lg leading-relaxed text-foreground/85">
+                      I would also make that distinction explicit earlier: a workflow can be familiar and still be costly.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="h3 mb-4">What comes next</h4>
+                    <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+                      The next phase includes larger communication changes such as messaging and in-platform notifications. Those changes need the same care: preserve order awareness while testing how affiliates adapt to a new way of communicating.
+                    </p>
+                    <p className="text-lg leading-relaxed text-foreground/85">
+                      The opportunity is to build on the first release’s familiarity, then introduce the next change with evidence about actual use.
+                    </p>
+                  </div>
+                </div>
               </>
 
             : c.slug === "fjord"
@@ -2863,7 +2890,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 <strong>The design did what it set out to do:</strong> users could finally control notifications at the level that matched their work{"\u00A0"} company, product, and lifecycle stage and the critical alerts stopped drowning in the noise. That fed directly into fewer missed deadlines and a better client experience, which mattered for retention. But the harder lesson was that giving users control is not the same as reducing their burden. Preferences across that many levels can quietly become their own kind of overwhelm a settings screen as noisy as the feed it was meant to fix. So rather than hand users a blank grid of toggles, I leaned on role-based<br /><strong>Notification Templates:</strong> each user group starts with a default set mapped to their job and validated against my research. Template creation lives on web; on mobile, users inherit their role's template and fine-tune it if they want. Most people get the right notifications without ever opening settings{"\u00A0"} control is there for the ones who need it.
               </>
             : "This was a big project and turned out to be a good selling point for the company. Apart from that,\u00a0it was a great workflow improvement, which eliminated accounting errors that happen due to manual workflow. Thanks to the libraries built,\u00a0it sped up the workflow through reuse and repurposing. Because of the editor tool, users didn't have to go outside the platform to do all the editing for the manufacturing phase. Overall, the project was a great success."}
-        </p>
+        </div>
       </section>
 
       {c.slug === "solace" && (
