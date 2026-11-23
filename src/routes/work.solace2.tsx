@@ -79,7 +79,7 @@ import userFlowSolace3 from "@/assets/techpack-user-flow-3-v2.png.asset.json";
 import uxStrategyImg from "@/assets/ux-strategy-techpack.png.asset.json";
 import atlasStrategyDiagram from "@/assets/atlas-strategy-diagram.png.asset.json";
 import atlasTaskFlow from "@/assets/atlas-task-flow.png.asset.json";
-import techpackOutcomeImgUrl from "@/assets/techpack-outcome-solace2.png";
+import techpackOutcomeImg from "@/assets/Techpack_outcome.png.asset.json";
 import affSurveyQ1 from "@/assets/affiliate-survey-q1.png.asset.json";
 import fjord2InitialDesign from "@/assets/fjord2-initial-design.png.asset.json";
 import affSurveyQ2 from "@/assets/affiliate-survey-q2.png.asset.json";
@@ -2650,7 +2650,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <div className="mx-auto max-w-[1080px] px-6 md:px-10 mt-[50px] mb-[80px]">
           <div className="rounded-sm dark:bg-white p-6 md:p-10 flex justify-center">
             <img
-              src={techpackOutcomeImgUrl}
+              src={techpackOutcomeImg.url}
               alt="Techpack outcome UX strategy diagram showing Centralize, Connect, and Collaborate pillars"
               className="w-[63.375%] h-auto"
             />
