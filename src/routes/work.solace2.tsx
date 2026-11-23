@@ -615,7 +615,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               c.slug to "solace", so this section renders unconditionally. */}
           {true && (
             <div id="the-problem" className="scroll-mt-24">
-              <p className="eyebrow mb-6">01 / The Challenge</p>
+              <p className="eyebrow mb-6">THE CHALLENGE</p>
               <h3 className="h3 max-w-2xl mb-12">
                 A small change could create a lot of expensive rework.
               </h3>
@@ -761,7 +761,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
       {/* Key Decisions */}
       <section id="key-decisions" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Key Decisions</h2>
-        <p className="eyebrow mb-6">03 / The decisions behind the screens</p>
+        <p className="eyebrow mb-6">THE DECISIONS BEHIND THE SCREENS</p>
         <h2 className="h3 mb-6">Four choices that shaped the experience.</h2>
         <p className="text-lg leading-relaxed text-foreground/70 max-w-[560px] mb-14">
           The work was as much about sequencing dependencies and protecting users&rsquo; effort as it was about designing an editor.
@@ -2610,7 +2610,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
       {c.slug === "solace" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-          <p className="eyebrow mb-6">05 / The Outcome</p>
+          <p className="eyebrow mb-6">THE OUTCOME</p>
           <div className="grid gap-8 md:grid-cols-2 md:gap-16 mb-16">
             <h2 className="h3">Fewer places for work to go wrong.</h2>
             <p className="text-lg leading-relaxed text-foreground/70 md:pt-4">Libraries supported reuse. Connected data reduced manual calculations. Standardized, versioned documents made the handoff clearer.</p>
@@ -2656,7 +2656,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
       {c.slug === "solace" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-0">
-          <p className="eyebrow mb-6">06 / Looking Back</p>
+          <p className="eyebrow mb-6">LOOKING BACK</p>
           <h3 className="h3 mb-14 max-w-[640px]">Connecting the work mattered as much as designing the tool.</h3>
           <div className="grid gap-10 md:grid-cols-3 md:gap-8 mb-20">
             {[
@@ -2804,7 +2804,7 @@ function Solace2SolutionWalkthrough() {
   const step = solace2WalkthroughSteps[active] ?? solace2WalkthroughSteps[0]!;
   return (
     <div className="mb-16">
-      <p className="eyebrow mb-6">02 / The solution, in use</p>
+      <p className="eyebrow mb-6">THE SOLUTION, IN USE</p>
       <div className="mb-14">
         <h3 className="h3">
           From a design idea to a shared production document.
