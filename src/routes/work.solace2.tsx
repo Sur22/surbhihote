@@ -1424,19 +1424,19 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="grid gap-10 md:grid-cols-3">
               <div>
                 <p className="statement-line mb-4">Centralize</p>
-                <p className="text-lg leading-relaxed text-foreground/85">
+                <p className="text-lg leading-relaxed text-foreground/85 border-l-2 border-decision-accent pl-5 py-2">
                   Bring CAD and tech pack files already attached to products into shared libraries. Add a materials and trims library so teams can reuse information without repeated data entry.
                 </p>
               </div>
               <div>
                 <p className="statement-line mb-4">Connect</p>
-                <p className="text-lg leading-relaxed text-foreground/85">
+                <p className="text-lg leading-relaxed text-foreground/85 border-l-2 border-decision-accent pl-5 py-2">
                   Link material and trim details to the bill of materials and cost sheet. Bring pre-production information into the editor so teams can prepare for production in one workflow.
                 </p>
               </div>
               <div>
                 <p className="statement-line mb-4">Collaborate</p>
-                <p className="text-lg leading-relaxed text-foreground/85">
+                <p className="text-lg leading-relaxed text-foreground/85 border-l-2 border-decision-accent pl-5 py-2">
                   Create a standardized document with designs, materials, and production instructions. Version revisions and use existing platform comments to support communication with clients and factories.
                 </p>
               </div>
