@@ -903,54 +903,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <div className="mt-8 flex items-baseline gap-4">
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
-              <div className="mt-8">
-                <Table className="table-fixed">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Phase 1</TableHead>
-                      <TableHead>Phase 2</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell>Orders and Event log</TableCell>
-                      <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
-                      <TableCell className="bg-cell-highlight">Order Revision</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
-                      <TableCell>Platform Notifications</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Internal & External Rate Cards</TableCell>
-                      <TableCell>Super User Profile</TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                      <TableCell>Speed & Efficiency</TableCell>
-                      <TableCell>Messaging</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="bg-cell-highlight">Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
-                      <TableCell>Collaterals{"\u00a0"}</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
-                      <TableCell>Exports</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities\u00a0" : "\u00a0"}</TableCell>
-                      <TableCell>Automation{"\u00a0"}</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </div>
-              <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-                After the focus groups, I reprioritized the rollout. Phase 1 restored core order workflows and introduced auto-refresh. Phase 2 deferred larger changes such as messaging and in-platform notifications
-              </p>
         </section>
         <div>
               <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
@@ -1942,6 +1894,58 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
                 We wrapped up the one and a half day workshop with clear next steps and were ready to initiate the design phase.
               </p>
+              <div className="mt-16">
+                <h3 className="h3 mb-6">A deliberate boundary for the first release.</h3>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  After the focus groups, I prioritized core order workflows, live updates, search, and speed. Larger changes such as messaging and in-platform notifications moved into the next phase.
+                </p>
+              </div>
+              <div className="mt-8">
+                <Table className="table-fixed">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Phase 1</TableHead>
+                      <TableHead>Phase 2</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Orders and Event log</TableCell>
+                      <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
+                      <TableCell className="bg-cell-highlight">Order Revision</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
+                      <TableCell>Platform Notifications</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Internal & External Rate Cards</TableCell>
+                      <TableCell>Super User Profile</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                      <TableCell>Speed & Efficiency</TableCell>
+                      <TableCell>Messaging</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="bg-cell-highlight">Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
+                      <TableCell>Collaterals{"\u00a0"}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
+                      <TableCell>Exports</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities\u00a0" : "\u00a0"}</TableCell>
+                      <TableCell>Automation{"\u00a0"}</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
+
             </div>
           </div>
         )}
