@@ -2550,6 +2550,47 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       </section>
 
       {c.slug === "solace" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
+          <p className="eyebrow mb-6">05 / The Outcome</p>
+          <div className="grid gap-8 md:grid-cols-2 md:gap-16 mb-16">
+            <h2 className="h2">Fewer places for work to go wrong.</h2>
+            <p className="text-lg leading-relaxed text-foreground/70 md:pt-4">Libraries supported reuse. Connected data reduced manual calculations. Standardized, versioned documents made the handoff clearer.</p>
+          </div>
+          <div className="border-t border-foreground/15">
+            <div className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-foreground/15 py-14">
+              {[
+                {
+                  stat: "64",
+                  label: "Calculation mistakes",
+                  detail: "Automation replaced repeated manual entry and calculations.",
+                },
+                {
+                  stat: "34",
+                  label: "Time on task",
+                  detail: "Teams reused existing designs and material information.",
+                },
+                {
+                  stat: "27",
+                  label: "Workflow errors",
+                  detail: "Standardization and versioning supported coordinated updates.",
+                },
+              ].map((item) => (
+                <div key={item.label} className="md:px-10 md:first:pl-0 md:last:pr-0">
+                  <p className="font-serif text-6xl md:text-7xl leading-none text-copy-orange-text mb-6">
+                    {item.stat}
+                    <span className="text-3xl md:text-4xl align-baseline">%&#8595;</span>
+                  </p>
+                  <h3 className="font-serif text-2xl md:text-3xl font-normal mb-4">{item.label}</h3>
+                  <p className="text-lg leading-relaxed text-foreground/70">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="border-t border-foreground/15" />
+        </section>
+      )}
+
+      {c.slug === "solace" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-0">
           <p className="eyebrow mb-6">06 / Looking Back</p>
           <h3 className="h2 mb-14 max-w-[640px]">Connecting the work mattered as much as designing the tool.</h3>
