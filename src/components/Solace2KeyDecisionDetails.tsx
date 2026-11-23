@@ -26,13 +26,13 @@ function Reason({ label, children }: { label: string; children: ReactNode }) {
   return <div className="border-l-2 border-decision-accent pl-5 py-2 my-7"><p className="eyebrow text-decision-accent mb-3">{label}</p><p className="text-lg leading-relaxed">{children}</p></div>;
 }
 
-function Artifact({ src, label, caption, onZoom }: { src: string; label: string; caption?: string; onZoom: Props["onZoom"] }) {
+function Artifact({ src, label, caption, onZoom, showLink = true }: { src: string; label: string; caption?: string; onZoom: Props["onZoom"]; showLink?: boolean }) {
   return <figure>
     <div className="border border-foreground/15 bg-background p-4">
       <Button variant="ghost" onClick={() => onZoom(src)} aria-label={label} className="h-auto w-full p-0 rounded-none overflow-hidden hover:bg-transparent dark:border-0">
         <img src={src} alt={label} className="w-full h-auto object-contain" loading="lazy" />
       </Button>
-      <Button variant="link" onClick={() => onZoom(src)} className="mt-3 h-auto w-full p-0 justify-end whitespace-normal text-right text-decision-accent dark:border-0">{label}<ArrowUpRight aria-hidden="true" /></Button>
+      {showLink && <Button variant="link" onClick={() => onZoom(src)} className="mt-3 h-auto w-full p-0 justify-end whitespace-normal text-right text-decision-accent dark:border-0">{label}<ArrowUpRight aria-hidden="true" /></Button>}
     </div>
     {caption && <figcaption className="mt-4 flex items-start gap-3 text-sm leading-relaxed text-foreground/70"><span className="mt-2 w-6 shrink-0 border-t border-decision-accent" />{caption}</figcaption>}
   </figure>;
@@ -118,9 +118,8 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
           <p className="text-lg leading-relaxed text-foreground/70 mt-5"><strong className="text-foreground">I brought those details into one standardized output, with new versions for revisions.</strong> I also enabled the platform’s existing comments around the document.</p>
           <Reason label="Why this direction">The editor solved the authoring problem. A versioned document carried that work into the factory handoff and made changes easier to communicate.</Reason>
           <p className="text-sm leading-relaxed text-foreground/70"><strong className="text-foreground">The boundary:</strong> standardized output still needed to be shared with the factory. Versioning made that handoff traceable; it did not remove the need to communicate changes.</p>
-          <Button variant="link" onClick={() => onZoom(document)} className="h-auto p-0 mt-3 text-decision-accent dark:border-0 whitespace-normal">View the original PDF output<ArrowUpRight aria-hidden="true" /></Button>
         </div>
-        <Artifact src={document} label="Explore the production document" caption="A shared output brings design instructions together. Comments keep the conversation close to the document." onZoom={onZoom} />
+        <Artifact src={document} label="Explore the production document" caption="A shared output brings design instructions together. Comments keep the conversation close to the document." onZoom={onZoom} showLink={false} />
       </div>
     </Decision>
   </div>;
