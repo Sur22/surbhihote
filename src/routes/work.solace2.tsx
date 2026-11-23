@@ -2887,7 +2887,7 @@ const solace2DesignTabs = [
     headingSize: "h3" as const,
     body: "Wireframes put the sketches in sequence so the team and I could walk the same path a designer would take, from a design idea to a finished document.",
     caption: "Placeholder copy — tell me what to write here",
-    layout: "stack" as const,
+    layout: "carousel" as const,
     images: [
       { src: wireframeImg1, alt: "Wireframe contact sheet showing entry, sketch, detail and specification screens", label: "" },
       { src: wireframeImg2, alt: "Wireframe contact sheet showing material details, bill of materials, export and library screens", label: "" },
@@ -2940,29 +2940,55 @@ function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
           <p className="text-lg leading-relaxed text-foreground/80">{step.body}</p>
           <p className="mt-6 text-sm text-foreground/60">{step.caption}</p>
         </div>
-        <div className={step.layout === "grid" ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : "grid gap-4"}>
-          {step.images.map((img) => (
-            <button
-              key={img.label}
-              type="button"
-              onClick={() => onZoom(img.src)}
-              className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
-              {img.label && (
-                <span className="mt-2 flex items-center gap-1.5 text-sm text-foreground/70">
-                  {img.label}
-                  <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-                </span>
-              )}
-            </button>
-          ))}
-        </div>
+        {step.layout === "carousel" ? (
+          <Carousel opts={{ loop: true }} className="relative group/carousel">
+            <CarouselContent>
+              {step.images.map((img) => (
+                <CarouselItem key={img.alt}>
+                  <button
+                    type="button"
+                    onClick={() => onZoom(img.src)}
+                    className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                      loading="lazy"
+                    />
+                  </button>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-3 opacity-0 group-hover/carousel:opacity-100 transition-opacity" />
+            <CarouselNext className="right-3 opacity-0 group-hover/carousel:opacity-100 transition-opacity" />
+            <CarouselDots />
+          </Carousel>
+        ) : (
+          <div className={step.layout === "grid" ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : "grid gap-4"}>
+            {step.images.map((img) => (
+              <button
+                key={img.label}
+                type="button"
+                onClick={() => onZoom(img.src)}
+                className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+                {img.label && (
+                  <span className="mt-2 flex items-center gap-1.5 text-sm text-foreground/70">
+                    {img.label}
+                    <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
