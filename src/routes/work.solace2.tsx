@@ -1171,7 +1171,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         )}
         {c.slug === "solace" && (
           <div className="mt-16">
-            <h3 className="h3 mb-3">User journey - Preparing a production-ready Tech Pack</h3>
+            <h4 className="h4 mb-3">User journey - Preparing a production-ready Tech Pack</h4>
             <p className="text-lg leading-relaxed text-foreground/70 mb-6">Current journey for a Product Development Manager or Technical / Fashion Designer</p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-2">The journey exposed repeated effort from gathering information through sharing and updating the production documents.The opportunity was to centralize information and connect each stage.</p>
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">{"\n"}</p>
