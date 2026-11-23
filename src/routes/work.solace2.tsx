@@ -636,7 +636,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                     </p>
                   </div>
                 </div>
-                <div className="relative overflow-hidden rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 py-10 md:px-12 md:py-12">
+                <div id="interview-insights" className="relative scroll-mt-24 overflow-hidden rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 py-10 md:px-12 md:py-12">
                   <div className="study-band-glass" />
                   <Carousel opts={{ align: "start" }} className="relative z-10 w-full">
                     <CarouselContent>
@@ -813,11 +813,19 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Who:</strong> Textile Product Designers and Product Development Managers, who create styles from client requirements</p>
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Method:</strong> guerrilla, in-context desk interviews</p>
                 <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
-                {/* Solace2: bottom-of-card link to the interview write-up. The
-                    href is a stand-in until Surbhi supplies the document link. */}
+                {/* Solace2: the interview card's link jumps to the quote
+                    carousel in the Challenge section. */}
                 <a
-                  href="#research"
+                  href="#interview-insights"
                   className="mt-6 inline-flex items-center gap-1.5 text-sm text-decision-accent hover:underline"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById("interview-insights");
+                    if (el) {
+                      history.replaceState(null, "", "#interview-insights");
+                      el.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
                 >
                   View interview insights
                   <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
