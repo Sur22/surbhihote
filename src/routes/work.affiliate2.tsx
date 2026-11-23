@@ -775,6 +775,184 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </div>
           </div>
           </div>
+
+      {(c.slug === "affiliate-platform-redesign") && (
+        <section id="qualitative-research" className="scroll-mt-24 mt-16">
+              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research – Focus Groups</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
+                I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
+                <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
+                to see the list of questions for the focus group.{"\u00A0"}
+
+                {"\n\n"}Watching the work overturned assumptions we'd carried into the project.
+              </p>
+              <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
+                <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
+                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly <strong>around $2.5M in business to orders that slipped through unnoticed</strong>{"\u00A0"}there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
+                <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
+              </ul>
+              <div className="relative overflow-hidden rounded-sm px-6 md:px-16 py-16 text-foreground dark:text-primary mx-auto my-[50px]">
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-50"
+                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                />
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                <blockquote className="relative z-10 max-w-3xl mx-auto text-[18px] leading-relaxed text-left whitespace-pre-line">
+                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12">
+                    {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
+                  </div>
+                  <AffiliateRealProblemCardsCopy />
+                  <strong className="block pl-8 md:pl-12">So, I designed for a gradual adoption rather than dramatic change.</strong>
+                </blockquote>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+                </div>
+                <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
+                  <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
+                </div>
+              </div>
+              <div className="mt-10 mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-50"
+                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
+                />
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+                <div className="relative z-10">
+                  <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Prioritize familiarity during the transition</h3>
+                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+                    <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
+                      {"Focus groups revealed that users depended on familiar conventions, even when the underlying workflows were inefficient. I preserved cues such as D/V/P/C indicators and 24-hour time while prioritizing broken workflows and order visibility. This balanced meaningful improvements with the effort required to adopt the rebuilt portal."}
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-[30px] text-lg leading-relaxed text-foreground/85 mb-8">Research directly drove these decisions.</p>
+              <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
+                <Table className="min-w-[820px]">
+                  <TableHeader>
+                    <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                      <TableHead className="text-foreground font-semibold">What we learned</TableHead>
+                      <TableHead className="text-foreground font-semibold">Design implication</TableHead>
+                      <TableHead className="text-foreground font-semibold">Why this mattered</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      {
+                        learned: "Dollars lost due to missed orders\u00a0",
+                        implication: "Visually indicate the last touched date\u00a0\u00a0",
+                        why: "Help affiliates identify orders needing attention",
+                      },
+                      {
+                        learned: "D/V/P/C indicators were important",
+                        implication: "Preserve familiar status cues",
+                        why: "Retain signals affiliates used to understand order activity",
+                      },
+                      {
+                        learned: "Users were resistant to major change",
+                        implication: "Design for gradual adoption",
+                        why: "Reduce relearning during business-critical work",
+                      },
+                      {
+                        learned: "Affiliates preferred the 24-hour clock",
+                        implication: "Keep the military time as it is\u00a0",
+                        why: "Respect an established workflow preference",
+                      },
+                      {
+                        learned: "Filters are not holding after they go to search results\u00a0",
+                        implication: "Create views, search results needs to hold",
+                        why: "Avoid repeatedly rebuilding the same working context",
+                      },
+                      {
+                        learned: "Users had normalized workarounds",
+                        implication: "Fix the highest-impact broken workflows first",
+                        why: "Address critical pain points without disrupting established workflows.",
+                      },
+                      {
+                        learned: "Affiliates manually refreshed constantly",
+                        implication: "Introduce live updates",
+                        why: "Reduce repetitive effort and ensure timely visibility into order changes.",
+                      },
+                      {
+                        learned: "Order revisions were difficult to track",
+                        implication: "Improve revision visibility",
+                        why: "Help affiliates identify changes quickly and avoid missed or incorrect updates.",
+                      },
+                      {
+                        learned: "Language and naming is confusing\u00a0",
+                        implication: "Clear naming for CTA's, Pages,Sections etc.\u00a0",
+                        why: "Reduce ambiguity and help users navigate and complete tasks confidently.",
+                      },
+                    ].map((row, i) => (
+                      <TableRow
+                        key={`${row.learned}-${i}`}
+                        className="border-b border-foreground/10 hover:bg-table-hover"
+                      >
+                        <TableCell className="text-foreground/90">{row.learned}</TableCell>
+                        <TableCell className="text-foreground/90">{row.implication}</TableCell>
+                        <TableCell className="text-foreground/90">{row.why ? row.why : <span className="text-foreground/40">—</span>}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <AiPanelFocusGroupCopy />
+              <div className="mt-8 flex items-baseline gap-4">
+                <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
+              </div>
+              <div className="mt-8">
+                <Table className="table-fixed">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Phase 1</TableHead>
+                      <TableHead>Phase 2</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Orders and Event log</TableCell>
+                      <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
+                      <TableCell className="bg-cell-highlight">Order Revision</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
+                      <TableCell>Platform Notifications</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Internal & External Rate Cards</TableCell>
+                      <TableCell>Super User Profile</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                      <TableCell>Speed & Efficiency</TableCell>
+                      <TableCell>Messaging</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="bg-cell-highlight">Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
+                      <TableCell>Collaterals{"\u00a0"}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
+                      <TableCell>Exports</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities\u00a0" : "\u00a0"}</TableCell>
+                      <TableCell>Automation{"\u00a0"}</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </div>
+              <p className="mt-8 text-lg leading-relaxed text-foreground/85">
+                After the focus groups, I reprioritized the rollout. Phase 1 restored core order workflows and introduced auto-refresh. Phase 2 deferred larger changes such as messaging and in-platform notifications
+              </p>
+        </section>
+      )}
+
           {(c.slug === "fjord") && (
             <div className="mt-16">
               <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Groups</h3>
@@ -2149,182 +2327,6 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
 
-      {(c.slug === "affiliate-platform-redesign") && (
-        <section id="qualitative-research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research – Focus Groups</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
-                I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
-                <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
-                to see the list of questions for the focus group.{"\u00A0"}
-
-                {"\n\n"}Watching the work overturned assumptions we'd carried into the project.
-              </p>
-              <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
-                <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
-                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly <strong>around $2.5M in business to orders that slipped through unnoticed</strong>{"\u00A0"}there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
-                <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
-              </ul>
-              <div className="relative overflow-hidden rounded-sm px-6 md:px-16 py-16 text-foreground dark:text-primary mx-auto my-[50px]">
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50"
-                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-                />
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                <blockquote className="relative z-10 max-w-3xl mx-auto text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12">
-                    {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
-                  </div>
-                  <AffiliateRealProblemCardsCopy />
-                  <strong className="block pl-8 md:pl-12">So, I designed for a gradual adoption rather than dramatic change.</strong>
-                </blockquote>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
-                </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
-                  <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
-                </div>
-              </div>
-              <div className="mt-10 mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50"
-                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-                />
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                <div className="relative z-10">
-                  <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Prioritize familiarity during the transition</h3>
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                    <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                      {"Focus groups revealed that users depended on familiar conventions, even when the underlying workflows were inefficient. I preserved cues such as D/V/P/C indicators and 24-hour time while prioritizing broken workflows and order visibility. This balanced meaningful improvements with the effort required to adopt the rebuilt portal."}
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <p className="mt-[30px] text-lg leading-relaxed text-foreground/85 mb-8">Research directly drove these decisions.</p>
-              <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
-                <Table className="min-w-[820px]">
-                  <TableHeader>
-                    <TableRow className="border-b border-foreground/20 hover:bg-transparent">
-                      <TableHead className="text-foreground font-semibold">What we learned</TableHead>
-                      <TableHead className="text-foreground font-semibold">Design implication</TableHead>
-                      <TableHead className="text-foreground font-semibold">Why this mattered</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {[
-                      {
-                        learned: "Dollars lost due to missed orders\u00a0",
-                        implication: "Visually indicate the last touched date\u00a0\u00a0",
-                        why: "Help affiliates identify orders needing attention",
-                      },
-                      {
-                        learned: "D/V/P/C indicators were important",
-                        implication: "Preserve familiar status cues",
-                        why: "Retain signals affiliates used to understand order activity",
-                      },
-                      {
-                        learned: "Users were resistant to major change",
-                        implication: "Design for gradual adoption",
-                        why: "Reduce relearning during business-critical work",
-                      },
-                      {
-                        learned: "Affiliates preferred the 24-hour clock",
-                        implication: "Keep the military time as it is\u00a0",
-                        why: "Respect an established workflow preference",
-                      },
-                      {
-                        learned: "Filters are not holding after they go to search results\u00a0",
-                        implication: "Create views, search results needs to hold",
-                        why: "Avoid repeatedly rebuilding the same working context",
-                      },
-                      {
-                        learned: "Users had normalized workarounds",
-                        implication: "Fix the highest-impact broken workflows first",
-                        why: "Address critical pain points without disrupting established workflows.",
-                      },
-                      {
-                        learned: "Affiliates manually refreshed constantly",
-                        implication: "Introduce live updates",
-                        why: "Reduce repetitive effort and ensure timely visibility into order changes.",
-                      },
-                      {
-                        learned: "Order revisions were difficult to track",
-                        implication: "Improve revision visibility",
-                        why: "Help affiliates identify changes quickly and avoid missed or incorrect updates.",
-                      },
-                      {
-                        learned: "Language and naming is confusing\u00a0",
-                        implication: "Clear naming for CTA's, Pages,Sections etc.\u00a0",
-                        why: "Reduce ambiguity and help users navigate and complete tasks confidently.",
-                      },
-                    ].map((row, i) => (
-                      <TableRow
-                        key={`${row.learned}-${i}`}
-                        className="border-b border-foreground/10 hover:bg-table-hover"
-                      >
-                        <TableCell className="text-foreground/90">{row.learned}</TableCell>
-                        <TableCell className="text-foreground/90">{row.implication}</TableCell>
-                        <TableCell className="text-foreground/90">{row.why ? row.why : <span className="text-foreground/40">—</span>}</TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </div>
-              <AiPanelFocusGroupCopy />
-              <div className="mt-8 flex items-baseline gap-4">
-                <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
-              </div>
-              <div className="mt-8">
-                <Table className="table-fixed">
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Phase 1</TableHead>
-                      <TableHead>Phase 2</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell>Orders and Event log</TableCell>
-                      <TableCell>{"\u00a0"}Makegood{"\u00a0"}</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Views, Search, Filters" : "Views and  Search "}</TableCell>
-                      <TableCell className="bg-cell-highlight">Order Revision</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="bg-cell-highlight">Compare Order Version</TableCell>
-                      <TableCell>Platform Notifications</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>Internal & External Rate Cards</TableCell>
-                      <TableCell>Super User Profile</TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                      <TableCell>Speed & Efficiency</TableCell>
-                      <TableCell>Messaging</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="bg-cell-highlight">Contacts & Resources,Email Notifications{"\u00a0"}</TableCell>
-                      <TableCell>Collaterals{"\u00a0"}</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Auto Refresh\u00a0" : "Search , Auto refresh"}</TableCell>
-                      <TableCell>Exports</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>{c.slug === "affiliate-platform-redesign" ? "Fix Broken Functionalities\u00a0" : "\u00a0"}</TableCell>
-                      <TableCell>Automation{"\u00a0"}</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </div>
-              <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-                After the focus groups, I reprioritized the rollout. Phase 1 restored core order workflows and introduced auto-refresh. Phase 2 deferred larger changes such as messaging and in-platform notifications
-              </p>
-        </section>
-      )}
 
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign" && c.slug !== "solace" && c.slug !== "fjord") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
