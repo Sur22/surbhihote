@@ -2871,10 +2871,10 @@ const solace2DesignTabs = [
     caption: "Original project artifacts · Click an image to inspect",
     layout: "grid" as const,
     images: [
-      { src: sketchImg1.url, alt: "Hand-drawn workspace exploration sketch", label: "Workspace exploration" },
-      { src: sketchImg2.url, alt: "Hand-drawn dashboard sketch with entry point action cards", label: "Entry points" },
-      { src: sketchImg3.url, alt: "Hand-drawn design and material details sketch", label: "Design & material details" },
-      { src: sketchImg4.url, alt: "Hand-drawn sketch selection gallery", label: "Sketch selection" },
+      { src: sketchImg1.url, alt: "Hand-drawn workspace exploration sketch", label: "" },
+      { src: sketchImg2.url, alt: "Hand-drawn dashboard sketch with entry point action cards", label: "" },
+      { src: sketchImg3.url, alt: "Hand-drawn design and material details sketch", label: "" },
+      { src: sketchImg4.url, alt: "Hand-drawn sketch selection gallery", label: "" },
     ],
   },
   {
@@ -2898,10 +2898,10 @@ const solace2DesignTabs = [
     caption: "Original project artifacts · Click an image to inspect",
     layout: "grid" as const,
     images: [
-      { src: finalSketchSel.url, alt: "Sketch selection screen in the tech pack tool", label: "Sketch selection" },
-      { src: finalColorMaterialDrawer.url, alt: "Colors and materials drawer in the tech pack tool", label: "Colors and materials" },
-      { src: finalBom.url, alt: "Bill of materials screen in the tech pack tool", label: "Bill of materials" },
-      { src: finalPdf.url, alt: "Exported tech pack PDF screen", label: "Exported PDF" },
+      { src: finalSketchSel.url, alt: "Sketch selection screen in the tech pack tool", label: "" },
+      { src: finalColorMaterialDrawer.url, alt: "Colors and materials drawer in the tech pack tool", label: "" },
+      { src: finalBom.url, alt: "Bill of materials screen in the tech pack tool", label: "" },
+      { src: finalPdf.url, alt: "Exported tech pack PDF screen", label: "" },
     ],
   },
 ];
@@ -2965,7 +2965,7 @@ function Solace2DesignTabs({ onZoom }: { onZoom: (src: string) => void }) {
           <div className={step.layout === "grid" ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : "grid gap-4"}>
             {step.images.map((img) => (
               <button
-                key={img.label}
+                key={img.alt}
                 type="button"
                 onClick={() => onZoom(img.src)}
                 className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in"
