@@ -218,7 +218,7 @@ const _caseStudies: CaseStudy[] = [
     goal: "\n",
     research: {
       ...defaultMeta.research,
-      userInterview: "To get an idea of the users a survey was sent to all affiliates. It included questions about the old application they currently use, to understand how critical it is for different job profiles, how they rate the current website, and to identify their pain points and areas for improvement.\nWe got 128 responses  for the survey.\n\nThe major issues that emerged from the 3 open-ended question responses are as follows:",
+      userInterview: "The survey asked affiliates how they used the existing application, how critical it was to their job, and where it got in the way. Three open-ended questions surfaced the following themes.",
     },
     role: "Lead Product Designer",
     tags: ["AMPERSAND · AD-TECH · ADVERTISING · ENTERPRISE · SOLE DESIGNER · AI WORKFLOW\u00a0"],

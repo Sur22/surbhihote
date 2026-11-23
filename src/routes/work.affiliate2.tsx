@@ -696,6 +696,18 @@ If AE's want to build a custom audience to for the clients would require to send
       {/* Research */}
       <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
+        <p className="eyebrow mb-4">Research &amp; Artifacts</p>
+        <h3 className="h2 mb-6">The people and workflows behind the decisions.</h3>
+        <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+          The survey revealed recurring friction. Direct conversations with affiliates explained the habits behind it. Together, they shaped what changed and what stayed familiar.
+        </p>
+        <div className="flex flex-wrap gap-x-8 gap-y-2 text-lg text-foreground/85 mb-10">
+          <a href="#research" className="hover:text-foreground transition-colors">Survey</a>
+          <a href="#qualitative-research" className="hover:text-foreground transition-colors">Focus groups</a>
+          <span>User groups</span>
+          <span>Research to design</span>
+        </div>
+        <div className="rule mb-12" />
         <div className="space-y-12">
           {c.slug === "solace" && (
             <div>
@@ -747,6 +759,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </>
               ) : (c.slug === "affiliate-platform-redesign") ? (
                 <>
+                  <p className="h3 mb-6">128 responses gave the workshop a concrete starting point.</p>
                   <p>{c.research.userInterview}</p>
                   <AffiliateSurveyIssuesCardsCopy />
                 </>
