@@ -2167,7 +2167,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
       {c.slug === "solace" && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 py-24">
-          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Additional interface artifacts</h2>
+          <h2 className="h3 mb-8">Additional interface artifacts</h2>
           <p className="text-lg leading-relaxed text-foreground/60 mb-10">Original screen collection and prototype overview</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <figure>
@@ -2183,15 +2183,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   loading="lazy"
                 />
               </button>
-              <div className="mt-3 text-right">
-                <button
-                  type="button"
-                  onClick={() => setZoomImg(techpackScreensCollage.url)}
-                  className="text-base text-foreground/70 underline underline-offset-4 hover:text-foreground transition-colors"
-                >
-                  View full image
-                </button>
-              </div>
               <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
             </figure>
             <figure>
@@ -2207,15 +2198,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   loading="lazy"
                 />
               </button>
-              <div className="mt-3 text-right">
-                <button
-                  type="button"
-                  onClick={() => setZoomImg(techpackPrototypeOverview.url)}
-                  className="text-base text-foreground/70 underline underline-offset-4 hover:text-foreground transition-colors"
-                >
-                  View full image
-                </button>
-              </div>
               <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
             </figure>
           </div>
