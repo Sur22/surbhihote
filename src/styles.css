@@ -761,6 +761,20 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border: 0;
 }
 
+/* On the Tech Pack copy page the highlighted Opportunity row drops the peach
+   fill and wears an orange outline instead, drawn on the cells because the
+   table's own borders are zeroed above. */
+.journey-table .journey-row-outline :is(th, td) {
+  border-top: 1px solid var(--copy-orange-text);
+  border-bottom: 1px solid var(--copy-orange-text);
+}
+.journey-table .journey-row-outline th:first-child {
+  border-left: 1px solid var(--copy-orange-text);
+}
+.journey-table .journey-row-outline td:last-child {
+  border-right: 1px solid var(--copy-orange-text);
+}
+
 /* The Opportunity row's peach band curves at 8px, the same corner as the
    table's frame. A table row's own corners can't be rounded, so the journey
    tables lay their cells out separately (no spacing, and every border is

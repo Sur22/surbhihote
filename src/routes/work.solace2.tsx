@@ -1109,8 +1109,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <p className="text-lg leading-relaxed text-foreground/85 mb-8">{"\n"}</p>
             <div className="mb-8">
               <h4 className="h4">{"Current workflow"}</h4>
-              <div className="study-peach relative mt-3 max-w-full overflow-hidden rounded-xl text-card-foreground shadow-amber-band px-6 py-5">
-                <p className="statement-line relative z-10 text-center text-card-foreground">
+              <div className="relative mt-3 max-w-full overflow-hidden rounded-xl border border-copy-orange-text px-6 py-5">
+                <p className="statement-line relative z-10 text-center">
                   {"Scattered information → Manual work → Repeated updates → Version confusion Product"}
                 </p>
               </div>
@@ -1185,21 +1185,20 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                       },
                     ] as { label: string; cells: string[]; strong?: boolean; tones?: string[] }[]
                   ).map((row) => {
-                    // The highlighted row wears the same flat peach as the cards
-                    // and banners, with the site's amber drop and no outline.
+                    // The highlighted row drops the peach fill and wears an
+                    // orange outline drawn on its cells (see .journey-row-outline).
                     return (
                       <TableRow
                         key={row.label}
                         className={
                           row.strong
-                            ? "study-peach"
+                            ? "journey-row-outline hover:bg-transparent"
                             : "hover:bg-table-hover"
                         }
                       >
                         <TableHead
                           className={cn(
                             "text-foreground font-semibold whitespace-pre-line",
-                            row.strong && "shadow-amber-band",
                           )}
                         >
                           {row.label}
@@ -1209,7 +1208,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                             key={i}
                             className={cn(
                               "text-foreground/90",
-                              row.strong && "font-semibold shadow-amber-band",
+                              row.strong && "font-semibold",
                             )}
 
                           >
