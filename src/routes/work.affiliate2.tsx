@@ -4,6 +4,7 @@ import { useState, type CSSProperties } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { CaseStudySideNav } from "@/components/CaseStudySideNav";
+import { Affiliate2KeyDecision } from "@/components/Affiliate2KeyDecision";
 import { AiPanelSurveyCopy } from "@/components/AiPanelSurveyCopy";
 import { AiPanelFocusGroupCopy } from "@/components/AiPanelFocusGroupCopy";
 import { AiPanelTestingCopy } from "@/components/AiPanelTestingCopy";
@@ -387,7 +388,18 @@ function CaseStudyPage() {
         }}
       >
         <ScrollProgress />
-        <CaseStudySideNav slug={c.slug} />
+        <CaseStudySideNav sections={[
+          { id: "overview", label: "Overview", anchor: "impact" },
+          { id: "key-decision", label: "Key Decision" },
+          { id: "research", label: "Survey" },
+          { id: "workshop", label: "Workshop" },
+          { id: "design-process", label: "Design" },
+          { id: "qualitative-research", label: "Focus Group" },
+          { id: "testing", label: "Testing" },
+          { id: "ai-impact", label: "AI Impact" },
+          { id: "final-designs", label: "Solution" },
+          { id: "impact", label: "REFLECTION", anchor: "reflection" },
+        ]} />
 
 
       {/* Hero — title block on the left (back arrow + tagline row, title, then
@@ -673,6 +685,9 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       </section>
 
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
+      <Affiliate2KeyDecision />
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
