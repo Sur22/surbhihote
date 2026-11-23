@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ArrowDown, ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -84,7 +84,6 @@ export function Solace2KeyDecisionDetails({ onZoom, brainstorming, materials, do
           <p className="text-lg leading-relaxed text-foreground/70 mt-5"><strong className="text-foreground">I linked the materials and trims library to the bill of materials.</strong> The workflow could use the data already available in GRID to build the product’s cost sheet.</p>
           <Reason label="The turning point">Centralizing files alone would still leave manual calculations in place. Connecting the data addressed the source of those mistakes.</Reason>
           <p className="text-sm leading-relaxed text-foreground/70"><strong className="text-foreground">What this required:</strong> the material library had to be ready before the cost sheet. That dependency shaped the rollout.</p>
-          <p className="mt-5 text-sm text-decision-accent flex gap-2"><ArrowDownRight className="w-4 h-4 shrink-0 mt-1" aria-hidden="true" />Calculation mistakes fell 64% in the reported post-release comparison.</p>
         </div>
         <Artifact src={materials} label="Explore the bill of materials" showLink={false} caption="Material details and costs share the same workflow, reducing the need to rebuild a separate spreadsheet." onZoom={onZoom} />
       </div>
