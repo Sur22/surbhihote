@@ -2101,25 +2101,24 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </>
           )}
 
-          {c.slug === "solace2" ? (
-            <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
-              <div>
-                <p className="eyebrow mb-4">5 participants · 6 tasks</p>
-                <h3 className="font-serif text-2xl md:text-3xl font-normal">What testing changed.</h3>
-              </div>
-              <a
-                href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-accent hover:underline"
-              >
-                Original test questions
-                <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-              </a>
+          {/* Solace2-only copy: the testing header wears the participant/task
+              eyebrow, the "What testing changed." line and the link to the
+              original test questions. */}
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow mb-4">5 participants · 6 tasks</p>
+              <h3 className="font-serif text-2xl md:text-3xl font-normal">What testing changed.</h3>
             </div>
-          ) : (
-            <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
-          )}
+            <a
+              href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm text-accent hover:underline"
+            >
+              Original test questions
+              <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+            </a>
+          </div>
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
