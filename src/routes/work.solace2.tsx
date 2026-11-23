@@ -2594,9 +2594,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 },
               ].map((item) => (
                 <div key={item.label} className="md:px-10 md:first:pl-0 md:last:pr-0">
-                  <p className="font-serif text-6xl md:text-7xl leading-none text-copy-orange-text mb-6">
-                    {item.stat}
-                    <span className="text-3xl md:text-4xl align-baseline">%&#8595;</span>
+                  <p className="display text-4xl md:text-5xl text-accent mb-6 whitespace-nowrap">
+                    {item.stat}%<span className="text-[70%] ml-1">&#8595;</span>
                   </p>
                   <h3 className="font-serif text-2xl md:text-3xl font-normal mb-4">{item.label}</h3>
                   <p className="text-lg leading-relaxed text-foreground/70">{item.detail}</p>
