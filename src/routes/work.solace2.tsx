@@ -2575,7 +2575,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <p className="text-lg leading-relaxed text-foreground/70 md:pt-4">Libraries supported reuse. Connected data reduced manual calculations. Standardized, versioned documents made the handoff clearer.</p>
           </div>
           <div className="border-t border-foreground/15">
-            <div className="grid gap-10 md:grid-cols-4 md:gap-0 md:divide-x md:divide-foreground/15 py-14">
+            <div className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-foreground/15 py-14">
               {[
                 {
                   stat: "64",
@@ -2602,12 +2602,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <p className="text-lg leading-relaxed text-foreground/70">{item.detail}</p>
                 </div>
               ))}
-              <div className="md:px-10 md:last:pr-0">
-                <h3 className="font-serif text-2xl md:text-3xl font-normal mb-4">How the outcomes were measured</h3>
-                <p className="text-lg leading-relaxed text-foreground/70 mb-4">These directional before-and-after improvements were informed by stakeholder reports and workflow observation over the months following release.</p>
-                <p className="text-lg leading-relaxed text-foreground/70 mb-4">Tasks covered creating tech packs, entering specifications, updating materials and trims, calculating costs and quantities, reviewing and approving, and sharing with factories. Calculation mistakes and workflow errors were tracked as separate categories.</p>
-                <p className="text-lg leading-relaxed text-foreground/70">The five-person prototype study informed usability changes. The post-release comparisons describe the broader workflow after launch.</p>
-              </div>
+            </div>
+            <div className="pb-14">
+              <h3 className="text-sm font-medium mb-3">How the outcomes were measured</h3>
+              <p className="text-sm leading-relaxed text-foreground/60 mb-3">These directional before-and-after improvements were informed by stakeholder reports and workflow observation over the months following release.</p>
+              <p className="text-sm leading-relaxed text-foreground/60 mb-3">Tasks covered creating tech packs, entering specifications, updating materials and trims, calculating costs and quantities, reviewing and approving, and sharing with factories. Calculation mistakes and workflow errors were tracked as separate categories.</p>
+              <p className="text-sm leading-relaxed text-foreground/60">The five-person prototype study informed usability changes. The post-release comparisons describe the broader workflow after launch.</p>
             </div>
           </div>
           <div className="border-t border-foreground/15" />
