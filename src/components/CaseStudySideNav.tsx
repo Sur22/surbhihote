@@ -47,6 +47,14 @@ function getSections(slug?: string): Section[] {
     if (testingIdx !== -1) {
       sections.splice(testingIdx + 1, 0, { id: "key-decisions", label: "Key Decisions" });
     }
+    // Page order: Overview → Solution → Key Decisions → Research …
+    const problemIdx = sections.findIndex((s) => s.id === "the-problem");
+    const solution = sections.find((s) => s.id === "final-designs");
+    const keyDecisions = sections.find((s) => s.id === "key-decisions");
+    sections = sections.filter((s) => s.id !== "final-designs" && s.id !== "key-decisions");
+    if (problemIdx !== -1 && solution && keyDecisions) {
+      sections.splice(problemIdx + 1, 0, solution, keyDecisions);
+    }
   }
 
   if (slug && slugsWithQualitativeResearch.has(slug)) {

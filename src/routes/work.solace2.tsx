@@ -722,6 +722,71 @@ Affiliates - the partner networks who buy and transact against that inventory ru
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
+      {/* Final Designs */}
+      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
+
+        {c.slug === "solace" && <Solace2SolutionWalkthrough />}
+
+
+
+        <p className={cn("text-lg leading-relaxed text-foreground/85", c.slug === "affiliate-platform-redesign" ? "mt-0" : "mt-10")}>
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
+            <a
+              href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Click here to watch a short video{" "}
+            </a>
+          )}
+          {c.slug === "solace" && (
+            <a
+              href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Click here to see PDF output
+            </a>
+          )}
+        </p>
+      </section>
+
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
+      {/* Key Decisions */}
+      <section id="key-decisions" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Key Decisions</h2>
+        <p className="eyebrow mb-6">03 / The decisions behind the screens</p>
+        <h2 className="h3 mb-6">Four choices that shaped the experience.</h2>
+        <p className="text-lg leading-relaxed text-foreground/70 max-w-[560px] mb-14">
+          The work was as much about sequencing dependencies and protecting users&rsquo; effort as it was about designing an editor.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-4 border-y border-foreground/20 divide-y md:divide-y-0 md:divide-x divide-foreground/20">
+          {[
+            { n: "01", t: "Libraries before the editor" },
+            { n: "02", t: "Connect costs to material data" },
+            { n: "03", t: "Let users save unfinished work" },
+            { n: "04", t: "Standardize the factory handoff" },
+          ].map((d) => (
+            <Button key={d.n} asChild variant="ghost" className="h-auto rounded-none p-0 whitespace-normal font-normal dark:border-0 hover:bg-decision-accent/5">
+            <a href={`#decision-${d.n}`} className="flex items-start justify-between gap-4 px-6 py-8">
+              <div className="flex items-baseline gap-3">
+                <span className="text-sm font-bold text-decision-accent">{d.n}</span>
+                <p className="text-sm font-bold text-foreground">{d.t}</p>
+              </div>
+              <span aria-hidden className="text-decision-accent text-sm leading-none mt-0.5">&#8600;</span>
+            </a>
+            </Button>
+          ))}
+        </div>
+        <Solace2KeyDecisionDetails onZoom={setZoomImg} brainstorming={brainstormingImg} materials={finalBom.url} document={finalPdf.url} />
+      </section>
+
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
+
       {/* Research */}
       <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <p className="eyebrow mb-4">Research &amp; Artifacts</p>
@@ -2463,35 +2528,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         </section>
       )}
 
-      {/* Key Decisions */}
-      <section id="key-decisions" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
-        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Key Decisions</h2>
-        <p className="eyebrow mb-6">03 / The decisions behind the screens</p>
-        <h2 className="h3 mb-6">Four choices that shaped the experience.</h2>
-        <p className="text-lg leading-relaxed text-foreground/70 max-w-[560px] mb-14">
-          The work was as much about sequencing dependencies and protecting users&rsquo; effort as it was about designing an editor.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 border-y border-foreground/20 divide-y md:divide-y-0 md:divide-x divide-foreground/20">
-          {[
-            { n: "01", t: "Libraries before the editor" },
-            { n: "02", t: "Connect costs to material data" },
-            { n: "03", t: "Let users save unfinished work" },
-            { n: "04", t: "Standardize the factory handoff" },
-          ].map((d) => (
-            <Button key={d.n} asChild variant="ghost" className="h-auto rounded-none p-0 whitespace-normal font-normal dark:border-0 hover:bg-decision-accent/5">
-            <a href={`#decision-${d.n}`} className="flex items-start justify-between gap-4 px-6 py-8">
-              <div className="flex items-baseline gap-3">
-                <span className="text-sm font-bold text-decision-accent">{d.n}</span>
-                <p className="text-sm font-bold text-foreground">{d.t}</p>
-              </div>
-              <span aria-hidden className="text-decision-accent text-sm leading-none mt-0.5">&#8600;</span>
-            </a>
-            </Button>
-          ))}
-        </div>
-        <Solace2KeyDecisionDetails onZoom={setZoomImg} brainstorming={brainstormingImg} materials={finalBom.url} document={finalPdf.url} />
-      </section>
-
       {(c.slug === "atlas" || c.slug === "atlas2") && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
@@ -2499,43 +2535,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace") && (
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
-
-      {c.slug === "solace" && (
-        <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
-      )}
-
-      {/* Final Designs */}
-      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
-        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
-
-        {c.slug === "solace" && <Solace2SolutionWalkthrough />}
-
-
-
-        <p className={cn("text-lg leading-relaxed text-foreground/85", c.slug === "affiliate-platform-redesign" ? "mt-0" : "mt-10")}>
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
-            <a
-              href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-bold"
-            >
-              Click here to watch a short video{" "}
-            </a>
-          )}
-          {c.slug === "solace" && (
-            <a
-              href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-bold"
-            >
-              Click here to see PDF output
-            </a>
-          )}
-        </p>
-      </section>
-
 
       {c.slug !== "affiliate-platform-redesign" && (
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
