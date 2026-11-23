@@ -826,7 +826,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   <div key={item.q}>
                     <div className="border-t-2 border-foreground/25 mb-4" />
                     <p className="text-lg leading-relaxed font-semibold text-foreground/60">{item.q}</p>
-                    <p className="text-lg leading-relaxed font-semibold text-foreground">{item.a}</p>
+                    <p className="font-serif text-lg leading-relaxed font-semibold text-foreground">{item.a}</p>
                   </div>
                 ))}
               </div>
