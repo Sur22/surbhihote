@@ -697,7 +697,7 @@ If AE's want to build a custom audience to for the clients would require to send
       <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
         <p className="eyebrow mb-4">Research &amp; Artifacts</p>
-        <h3 className="h2 mb-6">The people and workflows behind the decisions.</h3>
+        <h3 className="h3 mb-6">The people and workflows behind the decisions.</h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
           The survey revealed recurring friction. Direct conversations with affiliates explained the habits behind it. Together, they shaped what changed and what stayed familiar.
         </p>
@@ -1776,7 +1776,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {(c.slug === "affiliate-platform-redesign") && (
           <div className="contents">
             <div id="workshop-define" className="mt-[50px] scroll-mt-24">
-              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
+              <h3 className="h3 mb-8">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
               </p>
@@ -1811,7 +1811,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Ideate</h3>
+              <h3 className="h3 mb-8">Ideate</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
               </p>
@@ -1829,7 +1829,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             </div>
 
             <div className="mt-16">
-              <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Prioritize</h3>
+              <h3 className="h3 mb-8">Prioritize</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 All the attendees were given an opportunity to vote , limited to 5 votes each to get to the actually important themes. After everyone voted, I took all the sticky notes with votes and arranged them in descending order.{"\u00a0\u00a0"}
               </p>
@@ -2027,7 +2027,7 @@ Users needed an easy way to control and manage the notifications they want and s
         {(c.slug === "affiliate-platform-redesign") ? (
           <>
             <p className="eyebrow mb-4 mt-12">Iteration Archive</p>
-            <h2 className="h2 mb-6">The early direction changed when the real workflow came into focus.</h2>
+            <h2 className="h3 mb-6">The early direction changed when the real workflow came into focus.</h2>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl">
               The initial designs were a way to expose unanswered questions. Focus groups then gave me the evidence to preserve familiar cues, strengthen order visibility, and change the release sequence.
             </p>
@@ -2855,7 +2855,7 @@ Users needed an easy way to control and manage the notifications they want and s
           {c.slug === "affiliate-platform-redesign"
             ? <>
                 <p className="eyebrow mb-4">Reflection and Future Scope</p>
-                <h3 className="h2 mb-8">The most important design decision was knowing what to leave familiar.</h3>
+                <h3 className="h3 mb-8">The most important design decision was knowing what to leave familiar.</h3>
                 <p className="font-serif text-2xl md:text-3xl leading-snug border-l-2 border-azure pl-6 mb-10">
                   Satisfaction didn’t mean the old portal worked well. It meant people had learned how to make it work.
                 </p>
