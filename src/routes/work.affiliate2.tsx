@@ -1560,8 +1560,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 ["Support gradual adoption", "Ship the core experience first, then introduce changes that require new working habits."],
               ].map(([title, text]) => (
                 <div key={title} className="border-t border-border pt-6">
-                  <p className="text-lg font-bold mb-4">{title}</p>
-                  <p className="text-lg leading-relaxed text-muted-foreground">{text}</p>
+                  <p className="h4-strong mb-4">{title}</p>
+                  <p className="h4-strong">{text}</p>
                 </div>
               ))}
             </div>
