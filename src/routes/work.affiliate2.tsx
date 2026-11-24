@@ -701,11 +701,25 @@ If AE's want to build a custom audience to for the clients would require to send
         <p className="text-lg leading-relaxed text-foreground/85 mb-8">
           The survey revealed recurring friction. Direct conversations with affiliates explained the habits behind it. Together, they shaped what changed and what stayed familiar.
         </p>
-        <div className="flex flex-wrap gap-x-8 gap-y-2 text-lg text-foreground/85 mb-10">
-          <a href="#research" className="hover:text-foreground hover:underline transition-colors">Survey</a>
-          <a href="#qualitative-research" className="hover:text-foreground hover:underline transition-colors">Focus groups</a>
-          <a href="#user-groups" className="hover:text-foreground hover:underline transition-colors">User groups</a>
-          <a href="#research-to-design" className="hover:text-foreground hover:underline transition-colors">Research to design</a>
+        <div className="mb-12 flex flex-wrap gap-x-8 gap-y-3">
+          {[
+            ["Survey", "research"],
+            ["Focus groups", "qualitative-research"],
+            ["User groups", "user-groups"],
+            ["Research to design", "research-to-design"],
+          ].map(([label, target]) => (
+            <a
+              key={label}
+              href={`#${target}`}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById(target as string)?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="font-medium underline underline-offset-4"
+            >
+              {label}
+            </a>
+          ))}
         </div>
         <div className="rule mb-12" />
         <div className="space-y-12">
