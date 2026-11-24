@@ -779,7 +779,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       {(c.slug === "affiliate-platform-redesign") && (
         <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
-              <h3 className="font-serif text-3xl mb-6 font-medium">Qualitative Research – Focus Groups</h3>
+              <h3 className="font-serif text-3xl mb-6 font-medium">Focus Groups</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
                 I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
                 <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
