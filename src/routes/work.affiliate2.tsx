@@ -1531,16 +1531,47 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       {/* Strategy / Workshop */}
       <section id={c.slug === "affiliate-platform-redesign" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
-        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+        {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign") && (
           <h3 className="font-serif text-3xl mb-6 font-medium">{c.slug === "solace" ? "Vision" : (c.strategySectionSubtitle || "Product + Design Strategy")}</h3>
         )}
 
-        {(c.slug !== "atlas" && c.slug !== "atlas2") && (
+        {c.slug === "affiliate-platform-redesign" ? (
+          <div className="mb-8">
+            <p className="eyebrow mb-4">Strategy & Release Plan</p>
+            <h3 className="h3 mb-6 max-w-4xl">Restore the work. Preserve recognition. Phase in change.</h3>
+            <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-8">I used the workshop to turn evidence into shared priorities, then revised the release sequence when focus groups revealed the adoption risk.</p>
+            <div className="mb-12 flex flex-wrap gap-x-8 gap-y-3">
+              {[
+                ["Goals", "strategy-goals"],
+                ["Workshop", "workshop-define"],
+                ["Release plan", "release-plan"],
+              ].map(([label, target]) => (
+                <button
+                  key={label}
+                  type="button"
+                  onClick={() => document.getElementById(target as string)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                  className="font-medium underline underline-offset-4"
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <div id="strategy-goals" className="grid gap-x-12 gap-y-8 md:grid-cols-3 scroll-mt-24">
+              {[
+                ["Restore the essentials", "Fix broken workflows and improve speed so affiliates can complete business-critical tasks."],
+                ["Protect familiarity", "Retain established order signals and conventions while improving visibility and search context."],
+                ["Support gradual adoption", "Ship the core experience first, then introduce changes that require new working habits."],
+              ].map(([title, text]) => (
+                <div key={title} className="border-t border-border pt-6">
+                  <h4 className="h3 mb-4">{title}</h4>
+                  <p className="text-lg leading-relaxed text-muted-foreground">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (c.slug !== "atlas" && c.slug !== "atlas2") && (
           <p className="text-lg leading-relaxed text-foreground/85 mb-8 whitespace-pre-line">
-            {c.slug === "affiliate-platform-redesign" 
-              ? "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had.\nI designed and facilitated a 1.5-day workshop with 2 stakeholders and leadership, product, and engineering. Deliberately front-loading the survey data so we prioritized from evidence, not opinion.\u00a0"
-              : (c.slug === "solace" ? "Building an efficient and automated PLM ecosystem that reduces operational expenses, builds standardized workflows, and improves margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop.")
-            }
+            {c.slug === "solace" ? "Building an efficient and automated PLM ecosystem that reduces operational expenses, builds standardized workflows, and improves margins.\n" : "This workshop was not a typical design thinking workshop. It was customized based on the project and the available information to make the most of the one and a half days we had. I made sure to schedule the survey beforehand so we had the survey data before we conducted the workshop, and also made sure we had all the supplies needed for the workshop."}
           </p>
         )}
 
@@ -1744,7 +1775,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
         {(c.slug === "affiliate-platform-redesign") && (
           <div className="contents">
-            <div className="mt-[50px]">
+            <div id="workshop-define" className="mt-[50px] scroll-mt-24">
               <h3 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Empathize &{"\u00a0"}Define</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
@@ -1875,7 +1906,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
                 We wrapped up the one and a half day workshop with clear next steps and were ready to initiate the design phase.
               </p>
-              <div className="mt-16">
+              <div id="release-plan" className="mt-16 scroll-mt-24">
                 <h3 className="h3 mb-6">A deliberate boundary for the first release.</h3>
                 <p className="text-lg leading-relaxed text-foreground/85">
                   After the focus groups, I prioritized core order workflows, live updates, search, and speed. Larger changes such as messaging and in-platform notifications moved into the next phase.
