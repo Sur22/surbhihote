@@ -2591,7 +2591,7 @@ Users needed an easy way to control and manage the notifications they want and s
               </TableBody>
             </Table>
           </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-12">
             {[
               ["AI assists", "Synthesis, variations, and pattern exploration."],
               ["Human validates", "Review the output against the underlying evidence."],
@@ -2603,6 +2603,78 @@ Users needed an easy way to control and manage the notifications they want and s
                 <p className="text-sm leading-relaxed text-foreground/85">{text}</p>
               </div>
             ))}
+          </div>
+          <div className="overflow-hidden rounded-sm border border-foreground/20">
+            <Table className="min-w-[820px]">
+              <TableHeader>
+                <TableRow className="border-b border-foreground/20 hover:bg-transparent">
+                  <TableHead className="text-foreground font-semibold" />
+                  {["Research", "Ideation", "UX Writing", "Testing"].map((h) => (
+                    <TableHead key={h} className="text-foreground font-semibold">
+                      {h}
+                    </TableHead>
+                  ))}
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {[
+                  {
+                    label: "AI contribution",
+                    cells: [
+                      "Synthesize & identify patterns",
+                      "Explore possibilities",
+                      "Generate variations",
+                      "Surface behavioral patterns",
+                    ],
+                  },
+                  {
+                    label: "Human contribution",
+                    cells: [
+                      "Validate & prioritize",
+                      "Evaluate & refine",
+                      "Select & refine",
+                      "Verify against evidence",
+                    ],
+                  },
+                  {
+                    label: "Impact",
+                    cells: [
+                      "Faster synthesis",
+                      "More concepts explored",
+                      "Faster iteration",
+                      "More focused analysis",
+                    ],
+                  },
+                  {
+                    label: "Capacity unlocked",
+                    cells: [
+                      "More time for research interpretation",
+                      "More iterations before converging",
+                      "More time for content refinement",
+                      "More time for deeper validation",
+                    ],
+                  },
+                  {
+                    label: "Time saved*",
+                    cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
+                  },
+                ].map((row) => (
+                  <TableRow
+                    key={row.label}
+                    className="border-b border-foreground/10 hover:bg-table-hover"
+                  >
+                    <TableCell className="font-semibold text-foreground">
+                      {row.label}
+                    </TableCell>
+                    {row.cells.map((cell, i) => (
+                      <TableCell key={i} className="text-foreground/90">
+                        {cell}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         </section>
       )}
