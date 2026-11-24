@@ -41,7 +41,7 @@ function getSections(slug?: string): Section[] {
   if (slug === "solace2") {
     const overviewIdx = sections.findIndex((s) => s.id === "overview");
     if (overviewIdx !== -1) {
-      sections.splice(overviewIdx + 1, 0, { id: "the-problem", label: "The Problem" });
+      sections.splice(overviewIdx + 1, 0, { id: "the-problem", label: "The Problem", anchor: "the-problem-heading" });
     }
     const testingIdx = sections.findIndex((s) => s.id === "testing");
     if (testingIdx !== -1) {
