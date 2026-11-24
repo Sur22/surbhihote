@@ -1761,21 +1761,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <p>{c.goal}</p>
                 </div>
               </div>
-              <div className="mt-[15px] rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50"
-                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-                />
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                <div className="relative z-10">
-                  <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Problems to Opportunity</h3>
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                    <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                      {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
-                    </blockquote>
-                  </div>
-                  <AffiliateProblemsOpportunityCardsCopy />
-                </div>
+              <div className="mt-[15px] rounded-sm px-6 md:px-16 py-16">
+                <h3 className="font-serif text-3xl mb-6 font-normal">Problems to Opportunity</h3>
+                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line max-w-3xl mx-auto">
+                  {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.\n\nThe rebuild tackled 6 things at once:"}
+                </blockquote>
+                <AffiliateProblemsOpportunityCardsCopy />
               </div>
 
               <AiPanelSurveyCopy />
