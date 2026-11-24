@@ -759,7 +759,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </>
               ) : (c.slug === "affiliate-platform-redesign") ? (
                 <>
-                  <p className="h3 mb-6">128 responses gave the workshop a concrete starting point.</p>
+                  <strong className="block pl-8 md:pl-12 text-foreground mb-6">128 responses gave the workshop a concrete starting point.</strong>
                   <p>{c.research.userInterview}</p>
                   <AffiliateSurveyIssuesCardsCopy />
                 </>
