@@ -1,5 +1,6 @@
 import dashboardChanges from "@/assets/affiliate_dashboar_changes-2.png.asset.json";
-import type { ReactNode } from "react";
+import { ChevronDown } from "lucide-react";
+import { useState, type ReactNode } from "react";
 
 function TurningPoint({ title, children, choices, tradeoff }: {
   title: string;
@@ -154,6 +155,75 @@ export function Affiliate2Solution() {
         </p>
         <Result>The first release restored <strong>eight broken or limited workflows.</strong> The phased plan gave the team a clear boundary for the release while keeping larger workflow changes visible as follow-on work.</Result>
       </article>
+
+      <ValidationStory />
     </section>
+  );
+}
+
+function ValidationStory() {
+  const [loopOpen, setLoopOpen] = useState(false);
+  return (
+    <article className="space-y-8 border-t border-border pt-16">
+      <header>
+        <p className="eyebrow mb-4">Decision story · Validation</p>
+        <h3 className="h3 mb-6 max-w-4xl">I validated the redesign through real use without asking affiliates for another research round.</h3>
+        <p className="max-w-3xl text-lg leading-relaxed">The people we needed feedback from were external partners. We had already asked them for survey responses and focus-group time.</p>
+      </header>
+      <div className="max-w-3xl">
+        <p className="eyebrow mb-3">Before the decision</p>
+        <p className="text-lg leading-relaxed">Another round of formal moderated testing wasn’t viable within that relationship. But adoption was the central risk, so a stakeholder sign-off alone would not tell me whether the redesigned workflows were working in practice.</p>
+      </div>
+      <TurningPoint
+        title="Use the work already happening in the product."
+        choices={[
+          { title: "Ask for more moderated sessions", text: "Gain direct observation and follow-up questions, while asking external affiliates to spend more time away from their work." },
+          { title: "Combine behavioral evidence with lightweight feedback", text: "I chose Microsoft Clarity session analysis and an in-product feedback survey after the first three months of use, supported by App Insights and Power BI." },
+        ]}
+        tradeoff="I could observe real work with less research fatigue, but had fewer opportunities to ask why in the moment. Session review and feedback had to be interpreted together."
+      />
+      <div>
+        <p className="eyebrow mb-6">What I did next</p>
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            { title: "Observe real tasks", text: "Review sessions and task-completion signals to understand how the new workflows were being used." },
+            { title: "Check the interpretation", text: "Validate patterns against recordings, event definitions, user feedback, and stakeholder context." },
+            { title: "Support adoption", text: "Partner with the PM on help documentation, how-to videos, FAQs, and a place to report bugs or share feedback." },
+          ].map((item) => (
+            <div key={item.title}>
+              <h4 className="h4 mb-3">{item.title}</h4>
+              <p className="leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Result>Positive feedback and observed behavior indicated that affiliates were adopting the redesigned workflows. The project recorded a <strong>92% task success rate</strong>, alongside faster loading and fewer manual refreshes.</Result>
+      <div className="border-t border-border pt-6">
+        <button
+          type="button"
+          onClick={() => setLoopOpen((open) => !open)}
+          aria-expanded={loopOpen}
+          className="flex w-full items-center justify-between gap-4 text-left font-bold"
+        >
+          <span>The validation loop from events to iteration</span>
+          <ChevronDown className={`size-5 shrink-0 text-azure transition-transform duration-200 ${loopOpen ? "rotate-180" : ""}`} />
+        </button>
+        {loopOpen && (
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { title: "Behavioral evidence", text: "Custom events, task completion, and task success data from Clarity, App Insights, and Power BI." },
+              { title: "Pattern analysis", text: "AI-assisted exploration of friction, anomalies, and usability hypotheses." },
+              { title: "Human validation", text: "Recordings, event definitions, feedback, and stakeholder context." },
+              { title: "Design response", text: "Prioritize the insight, iterate on the design, and retest." },
+            ].map((item) => (
+              <div key={item.title} className="border-t-2 border-azure pt-4">
+                <p className="font-bold mb-2">{item.title}</p>
+                <p className="leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </article>
   );
 }
