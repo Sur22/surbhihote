@@ -1780,9 +1780,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The workshop started with a walkthrough of the Affiliate website and{"\u00a0"}the problems with the site.{"\u00a0"}We defined the personas and went through survey responses.
               </p>
-              <div className="overflow-hidden rounded-sm bg-secondary p-2 mb-[72px]">
+              <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-[72px]">
+                The workshop began with a walkthrough of the existing portal, user groups, and survey findings.
+              </p>
               <div>
                 <h2 className="font-serif text-3xl mb-6 font-medium">Why redesign?</h2>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
@@ -1805,6 +1808,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
               </div>
+              <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                The team reviewed the AI-assisted survey clusters, corrected and merged themes, then separated must-haves from nice-to-haves.
+              </p>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
                 AI helped in creating clusters based on the survey data it was evaluated by the team we made sure it was covering everything and added and merged few of them together. At the end we made sure we have all the important clusters for the redesigning of the website and divided them into 2 parts 'Must have' and 'Nice to have'.
               </p>
@@ -1816,11 +1822,21 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 The second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
+                <div>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
+                  </div>
+                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                    Participants sketched their expectations for the redesigned portal.
+                  </p>
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
+                <div>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
+                  </div>
+                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                    The original sketches made different ideas visible before we converged.
+                  </p>
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
@@ -1834,8 +1850,13 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 All the attendees were given an opportunity to vote , limited to 5 votes each to get to the actually important themes. After everyone voted, I took all the sticky notes with votes and arranged them in descending order.{"\u00a0\u00a0"}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
+                <div>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
+                  </div>
+                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                    Voting narrowed the set of themes the group considered most important.
+                  </p>
                 </div>
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={prioritizeImg2.url} alt="Affiliate workshop voting and prioritization matrix on glass wall" className="w-full h-auto object-contain" />
