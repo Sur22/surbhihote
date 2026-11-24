@@ -857,3 +857,9 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --azure: #3d7da1;
   --cell-highlight: #eef5f8;
 }
+
+/* On ink the pale wash would blind the page, so the Affiliate2 highlight
+   surface becomes the same steel blue at low opacity instead. */
+.dark .affiliate2-blue {
+  --cell-highlight: color-mix(in srgb, #3d7da1 16%, transparent);
+}
