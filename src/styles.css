@@ -649,18 +649,6 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   line-height: 1.15;
 }
 
-/* The h4 look set bold. Tailwind's font-weight utilities live in a cascade
-   layer, so they cannot lift a heading class's own weight — bold text that
-   wears the h4 look takes this class instead. Line height opens up to 1.4 so
-   the look still reads when the text runs over several lines. */
-.h4-strong {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  font-size: 24px;
-  line-height: 1.4;
-}
-
 /* A statement line: one sentence carrying the point, set in the site's Crimson
    Text serif at the banner size. Shared so every line wearing it reads alike
    (the Notifications strategy banner and the Design opportunity flow). */
