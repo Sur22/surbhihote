@@ -2412,7 +2412,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   loading="lazy"
                 />
               </button>
-              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
+              <figcaption className="mt-4 text-[10px] leading-relaxed text-foreground/85">Original Tech Pack screens covering creation, editing, materials, and output.</figcaption>
             </figure>
             <figure>
               <button
@@ -2427,7 +2427,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   loading="lazy"
                 />
               </button>
-              <figcaption className="mt-4 text-lg leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
+              <figcaption className="mt-4 text-[10px] leading-relaxed text-foreground/85">Original prototype overview.</figcaption>
             </figure>
           </div>
         </section>
