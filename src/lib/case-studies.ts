@@ -241,6 +241,7 @@ const _caseStudies: CaseStudy[] = [
       { label: "lost in business since launch", value: "$0" },
       { label: "Broken or limited workflows restored", value: "8" },
       { label: "Faster page loading", value: "2x ↑" },
+      { label: "Adoption rate", value: "71%" },
     ],
     sections: [
       {
