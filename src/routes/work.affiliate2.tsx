@@ -1793,7 +1793,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 The second day of the workshop started with sketching. To know what ideas stakeholders have in their mind for the redesign, how do they envision the website I asked them to turn their ideas into sketches and explain their sketches to get a sense of what they consider important for redesign and also to understand the design expectations.
               </p>
-              <div className="grid grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
                 </div>
