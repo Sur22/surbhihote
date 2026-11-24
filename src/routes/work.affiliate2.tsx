@@ -896,6 +896,10 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         </section>
         <div id="user-groups" className="scroll-mt-24">
               <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
+                <h4 className="h4 mb-4">The people and tasks the rebuild had to support</h4>
+                <p className="mb-8 max-w-3xl">
+                  We defined five user groups in the workshop. Their responsibilities showed why preserving access to existing workflows mattered as much as improving the landing experience.
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
                   {[
                     {
