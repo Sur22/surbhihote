@@ -2938,7 +2938,7 @@ Users needed an easy way to control and manage the notifications they want and s
           </p>
           <a
             href="#story-validation"
-            className="text-accent underline underline-offset-4 hover:no-underline"
+            className="text-foreground underline underline-offset-4 hover:no-underline"
             onClick={(e) => {
               e.preventDefault();
               const el = document.getElementById("story-validation");
