@@ -62,7 +62,7 @@ export function AffiliateProblemsOpportunityCardsCopy() {
           </p>
           <div
             aria-hidden="true"
-            className="my-2 h-px w-full shrink-0 bg-azure/30"
+            className="my-2 h-px w-full shrink-0 bg-foreground/20"
           />
           <p className="text-[13px] font-medium leading-snug text-foreground">
             {pair.opportunity}
