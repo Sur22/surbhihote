@@ -44,7 +44,7 @@ export function AiPanelTestingCopy() {
       {open ? (
         <div
           id="ai-testing-panel"
-          className="relative overflow-hidden rounded-xl border border-azure"
+          className="relative overflow-hidden rounded-xl border border-foreground/20"
         >
           <button
             type="button"
@@ -95,7 +95,7 @@ export function AiPanelTestingCopy() {
       ) : (
         <div
           id="ai-testing-panel"
-          className="overflow-hidden rounded-xl border border-azure"
+          className="overflow-hidden rounded-xl border border-foreground/20"
         >
           <button
             type="button"

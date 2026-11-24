@@ -53,7 +53,7 @@ export function AffiliateProblemsOpportunityCardsCopy() {
         <div
           key={pair.problem}
           role="listitem"
-          className={`flex flex-col rounded-md border border-azure px-3 py-2.5${
+          className={`flex flex-col rounded-md border border-foreground/20 px-3 py-2.5${
             pair.stretch ? " self-stretch" : ""
           }`}
         >
