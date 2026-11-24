@@ -704,8 +704,8 @@ If AE's want to build a custom audience to for the clients would require to send
         <div className="flex flex-wrap gap-x-8 gap-y-2 text-lg text-foreground/85 mb-10">
           <a href="#research" className="hover:text-foreground transition-colors">Survey</a>
           <a href="#qualitative-research" className="hover:text-foreground transition-colors">Focus groups</a>
-          <span>User groups</span>
-          <span>Research to design</span>
+          <a href="#user-groups" className="hover:text-foreground transition-colors">User groups</a>
+          <a href="#research-to-design" className="hover:text-foreground transition-colors">Research to design</a>
         </div>
         <div className="rule mb-12" />
         <div className="space-y-12">
@@ -830,7 +830,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </div>
               </div>
               <p className="mt-[30px] text-lg leading-relaxed text-foreground/85 mb-8">Research directly drove these decisions.</p>
-              <div className="overflow-hidden rounded-sm border border-foreground/20 mb-8">
+              <div id="research-to-design" className="overflow-hidden rounded-sm border border-foreground/20 mb-8 scroll-mt-24">
                 <Table className="min-w-[820px]">
                   <TableHeader>
                     <TableRow className="border-b border-foreground/20 hover:bg-transparent">
@@ -904,7 +904,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
               </div>
         </section>
-        <div>
+        <div id="user-groups" className="scroll-mt-24">
               <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-10">
                   {[
