@@ -391,12 +391,12 @@ function CaseStudyPage() {
         <ScrollProgress />
         <CaseStudySideNav sections={[
           { id: "overview", label: "Overview", anchor: "impact" },
+          { id: "the-problem", label: "The Problem", anchor: "challenge" },
           { id: "key-decision", label: "Key Decision" },
           { id: "final-designs", label: "Solution" },
           { id: "research", label: "Survey" },
           { id: "workshop", label: "Workshop" },
           { id: "design-process", label: "Design" },
-          { id: "qualitative-research", label: "Focus Group" },
           { id: "testing", label: "Testing" },
           { id: "ai-impact", label: "AI Impact" },
           { id: "impact", label: "REFLECTION", anchor: "reflection" },
@@ -545,7 +545,7 @@ function CaseStudyPage() {
             )}
           </div>
           {c.slug === "affiliate-platform-redesign" && (
-            <div>
+            <div id="challenge" className="scroll-mt-24">
               <p className="eyebrow mb-4">The Challenge</p>
               <h3 className="font-serif text-4xl md:text-5xl font-normal mb-10">A full rebuild. A working day that couldn’t stop.</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
