@@ -34,7 +34,7 @@ export function AiResearchQualitativeFlowDiagramCopy() {
       >
         {stages.map((stage, idx) => (
           <Fragment key={stage.title}>
-            <li className="flex min-h-[76px] min-w-[150px] basis-0 flex-1 flex-col items-center justify-center gap-1 rounded-md border border-azure px-2 py-2 text-center">
+            <li className="flex min-h-[76px] min-w-[150px] basis-0 flex-1 flex-col items-center justify-center gap-1 rounded-md border border-foreground/20 px-2 py-2 text-center">
               <span className="text-[12px] font-semibold leading-tight text-foreground">
                 {stage.title}
               </span>
