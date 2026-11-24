@@ -2963,7 +2963,7 @@ Users needed an easy way to control and manage the notifications they want and s
             ? <>
                 <p className="eyebrow mb-4">Reflection and Future Scope</p>
                 <h3 className="h3 mb-8">The most important design decision was knowing what to leave familiar.</h3>
-                <p className="font-serif text-2xl md:text-3xl leading-snug border-l-2 border-azure pl-6 mb-10">
+                <p className="text-lg leading-relaxed font-bold border-l-2 border-azure pl-6 mb-10">
                   Satisfaction didn’t mean the old portal worked well. It meant people had learned how to make it work.
                 </p>
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6">
