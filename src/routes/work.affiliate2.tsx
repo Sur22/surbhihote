@@ -2012,19 +2012,54 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
           </>
         )}
-        <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
-          {(c.slug === "affiliate-platform-redesign") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
-        </h3>
-        <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-          {(c.slug === "affiliate-platform-redesign") 
-            ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild with the limited amount of information I had from the survey data.\u00a0"
-            : (c.slug === "atlas" || c.slug === "atlas2")
-            ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
-            : (c.slug === "fjord")
-            ? "This tool design demanded custom a few component and some were reused for this project . \u00a0 \u00a0"
-            : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
-          }
-        </p>
+        {(c.slug === "affiliate-platform-redesign") ? (
+          <>
+            <p className="eyebrow mb-4 mt-12">Iteration Archive</p>
+            <h2 className="h2 mb-6">The early direction changed when the real workflow came into focus.</h2>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10 max-w-3xl">
+              The initial designs were a way to expose unanswered questions. Focus groups then gave me the evidence to preserve familiar cues, strengthen order visibility, and change the release sequence.
+            </p>
+            <div className="border-t border-foreground/20 mb-10" />
+            <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-10 items-start">
+              <div>
+                <p className="eyebrow mb-4 text-azure">Map the existing work</p>
+                <h3 className="font-serif text-3xl mb-6 font-medium">A new start, without losing access.</h3>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  I mapped every existing screen while introducing a dashboard as the front door. The sitemap helped preserve the workflows the rebuild still needed to support.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setZoomImg(affiliateSitemap.url)}
+                className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+              >
+                <img
+                  src={affiliateSitemap.url}
+                  alt="Affiliate website sitemap"
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+            <p className="mt-4 text-center text-sm text-foreground/70">
+              The original sitemap maps the portal's structure and existing workflows.
+            </p>
+          </>
+        ) : (
+          <>
+            <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
+              {(c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
+            </h3>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+              {(c.slug === "atlas" || c.slug === "atlas2")
+                ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
+                : (c.slug === "fjord")
+                ? "This tool design demanded custom a few component and some were reused for this project . \u00a0 \u00a0"
+                : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
+              }
+            </p>
+          </>
+        )}
         {(c.slug === "fjord") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Segment Pill - was the main component designe apart from few more like logic switches, Include/ Exclude switch , bracket all are shown in the left side image.{"\u00a0"}{"\u00a0"}</li>
@@ -2047,37 +2082,7 @@ Users needed an easy way to control and manage the notifications they want and s
             }
           </p>
         )}
-        {(c.slug === "affiliate-platform-redesign") && (
-          <div className="mt-10 mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-50"
-              style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-            />
-            <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-            <div className="relative z-10">
-              <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Make the starting point useful</h3>
-              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  {"The legacy portal opened on a navigation menu with options and numbers that offered little value. I introduced a dashboard to give affiliates a clearer starting point, while mapping every existing screen to preserve access to their workflows.\u00a0I replaced the legacy navigation menu with a dashboard that surfaced order summaries at a glance. I mapped the existing screens to preserve access to the workflows affiliates relied on.\u00a0"}
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        )}
-        {(c.slug === "affiliate-platform-redesign") ? (
-          <button
-            type="button"
-            onClick={() => setZoomImg(affiliateSitemap.url)}
-            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
-          >
-            <img
-              src={affiliateSitemap.url}
-              alt="Affiliate website sitemap"
-              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
-              loading="lazy"
-            />
-          </button>
-        ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
+        {(c.slug === "affiliate-platform-redesign") ? null : (c.slug === "atlas" || c.slug === "atlas2") ? (
           <button
             type="button"
             onClick={() => setZoomImg(notificationsWireframe.url)}
