@@ -1802,7 +1802,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <p className="text-lg leading-relaxed text-foreground/85 mb-8">
                 All the attendees were given an opportunity to vote , limited to 5 votes each to get to the actually important themes. After everyone voted, I took all the sticky notes with votes and arranged them in descending order.{"\u00a0\u00a0"}
               </p>
-              <div className="grid grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
                 </div>
