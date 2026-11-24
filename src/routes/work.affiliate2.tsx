@@ -2559,7 +2559,7 @@ Users needed an easy way to control and manage the notifications they want and s
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
           <p className="eyebrow mb-4">AI and design judgment</p>
           <h3 className="h3 mb-6 max-w-3xl">AI expanded the options. I stayed accountable for the choices.</h3>
-          <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">
+          <p className="text-lg leading-relaxed text-foreground/85 mb-10">
             As the only designer, I moved between research, synthesis, ideation, UX writing, prototyping, validation, and stakeholder collaboration. AI reduced repetitive work so I could spend more time interpreting evidence and making product decisions.
           </p>
           <div className="overflow-hidden rounded-sm border border-foreground/20 mb-12">
