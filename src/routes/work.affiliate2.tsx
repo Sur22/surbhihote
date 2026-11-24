@@ -2553,17 +2553,16 @@ Users needed an easy way to control and manage the notifications they want and s
       {(c.slug === "affiliate-platform-redesign") && (
         <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
-          <h4 className="h4 mb-6">{"\n"}</h4>
-          <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+          <p className="eyebrow mb-4">AI and design judgment</p>
+          <h3 className="h3 mb-6 max-w-3xl">AI expanded the options. I stayed accountable for the choices.</h3>
+          <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">
             As the only designer, I moved between research, synthesis, ideation, UX writing, prototyping, validation, and stakeholder collaboration. AI reduced repetitive work so I could spend more time interpreting evidence and making product decisions.
-            <br /><br /><strong>AI assists → Human validates → Evidence informs → Designer decides</strong>
           </p>
-          <div className="overflow-hidden rounded-sm border border-foreground/20">
+          <div className="overflow-hidden rounded-sm border border-foreground/20 mb-12">
             <Table className="min-w-[820px]">
               <TableHeader>
                 <TableRow className="border-b border-foreground/20 hover:bg-transparent">
-                  <TableHead className="text-foreground font-semibold" />
-                  {["Research", "Ideation", "UX Writing", "Testing"].map((h) => (
+                  {["Activity", "What AI helped with", "What I owned", "Capacity it created"].map((h) => (
                     <TableHead key={h} className="text-foreground font-semibold">
                       {h}
                     </TableHead>
@@ -2572,63 +2571,38 @@ Users needed an easy way to control and manage the notifications they want and s
               </TableHeader>
               <TableBody>
                 {[
-                  {
-                    label: "AI contribution",
-                    cells: [
-                      "Synthesize & identify patterns",
-                      "Explore possibilities",
-                      "Generate variations",
-                      "Surface behavioral patterns",
-                    ],
-                  },
-                  {
-                    label: "Human contribution",
-                    cells: [
-                      "Validate & prioritize",
-                      "Evaluate & refine",
-                      "Select & refine",
-                      "Verify against evidence",
-                    ],
-                  },
-                  {
-                    label: "Impact",
-                    cells: [
-                      "Faster synthesis",
-                      "More concepts explored",
-                      "Faster iteration",
-                      "More focused analysis",
-                    ],
-                  },
-                  {
-                    label: "Capacity unlocked",
-                    cells: [
-                      "More time for research interpretation",
-                      "More iterations before converging",
-                      "More time for content refinement",
-                      "More time for deeper validation",
-                    ],
-                  },
-                  {
-                    label: "Time saved*",
-                    cells: ["~30–50%", "~40–60%", "~30–50%", "~20–30%"],
-                  },
-                ].map((row) => (
+                  ["Research", "Synthesize responses and identify candidate patterns", "Verify themes, correct or merge clusters, and prioritize with the team", "More time for interpretation"],
+                  ["Ideation", "Explore a wider range of possibilities", "Evaluate and refine ideas against workflow needs and constraints", "More concepts and iterations before converging"],
+                  ["UX writing", "Generate alternative labels and copy", "Select and refine language appropriate for affiliates", "More time for content refinement"],
+                  ["Testing", "Surface behavioral patterns and possible friction", "Verify against recordings, event definitions, and feedback", "More focused, deeper analysis"],
+                ].map(([activity, ai, owned, capacity]) => (
                   <TableRow
-                    key={row.label}
+                    key={activity}
                     className="border-b border-foreground/10 hover:bg-table-hover"
                   >
                     <TableCell className="font-semibold text-foreground">
-                      {row.label}
+                      {activity}
                     </TableCell>
-                    {row.cells.map((cell, i) => (
-                      <TableCell key={i} className="text-foreground/90">
-                        {cell}
-                      </TableCell>
-                    ))}
+                    <TableCell className="text-foreground/90">{ai}</TableCell>
+                    <TableCell className="text-foreground/90">{owned}</TableCell>
+                    <TableCell className="text-foreground/90">{capacity}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["AI assists", "Synthesis, variations, and pattern exploration."],
+              ["Human validates", "Review the output against the underlying evidence."],
+              ["Evidence informs", "Use workflow context and feedback to assess the options."],
+              ["Designer decides", "Choose what to retain, change, prioritize, and ship."],
+            ].map(([title, text]) => (
+              <div key={title} className="border-t-2 border-azure pt-4">
+                <p className="font-bold mb-2">{title}</p>
+                <p className="text-sm leading-relaxed text-foreground/85">{text}</p>
+              </div>
+            ))}
           </div>
         </section>
       )}
