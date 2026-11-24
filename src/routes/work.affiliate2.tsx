@@ -806,7 +806,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </div>
               </div>
               <div className="mt-10 mb-10">
-                <h3 className="text-[22px] font-semibold mb-8">How the research changed specific design choices</h3>
+                <h3 className="h4 mb-4">How the research changed specific design choices</h3>
                 <p className="text-lg leading-relaxed text-foreground/85">
                   The focus groups included questions developed with Product and stakeholders.{" "}
                   <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline">Read the original focus group questions.</a>
