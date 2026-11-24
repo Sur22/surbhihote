@@ -780,18 +780,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Focus Groups</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-4 whitespace-pre-wrap">
-                I was able to get stakeholders to arrange meetings with 5 different affiliates,{"\u00A0"}each with 5–10 people from their organization. We collectively came up with the questions we wanted to ask affiliates.{"\u00A0"}
-                <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-bold underline">Click here</a>{"\u00A0"}
-                to see the list of questions for the focus group.{"\u00A0"}
-
-                {"\n\n"}Watching the work overturned assumptions we'd carried into the project.
-              </p>
-              <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 mb-6 space-y-3">
-                <li>Stakeholders assumed affiliates did not need the D, V, P, and C symbols, but in session after session these proved very important for identifying whether someone was working on an order.</li>
-                <li>The sessions surfaced the real cost of the old system. Over recent years, affiliates had lost roughly <strong>around $2.5M in business to orders that slipped through unnoticed</strong>{"\u00A0"}there was no clear way to see whether someone was already working an order, so orders were dropped.</li>
-                <li>Order revisions from the Ampersand side - staff sending revision after revision before affiliates could open them caused problems for affiliates in understanding what had changed, and needed to be restricted.</li>
-              </ul>
               <div className="relative overflow-hidden rounded-sm px-6 md:px-16 py-16 text-foreground dark:text-primary mx-auto my-[50px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-50"
