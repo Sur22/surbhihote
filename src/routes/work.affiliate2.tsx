@@ -547,7 +547,7 @@ function CaseStudyPage() {
           {c.slug === "affiliate-platform-redesign" && (
             <div id="challenge" className="scroll-mt-24">
               <p className="eyebrow mb-4">The Challenge</p>
-              <h3 className="font-serif text-4xl md:text-5xl font-normal mb-10">A full rebuild. A working day that couldn’t stop.</h3>
+              <h3 className="h3 mb-10">A full rebuild. A working day that couldn’t stop.</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed text-foreground/85">

@@ -61,10 +61,10 @@ export function Affiliate2Solution() {
         <p className="max-w-4xl text-lg leading-relaxed mb-10">The key choices balanced familiar working habits, clearer order activity, release scope, and the limits of external research access.</p>
         <div className="grid gap-x-12 gap-y-8 md:grid-cols-2">
           {[
-            ["I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption.", "story-familiarity"],
-            ["I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders.", "story-visibility"],
-            ["I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout.", "story-release"],
-            ["I validated adoption through real use.", "How I balanced learning with the limits of external research access.", "story-validation"],
+            ["1. I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption.", "story-familiarity"],
+            ["2. I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders.", "story-visibility"],
+            ["3. I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout.", "story-release"],
+            ["4. I validated adoption through real use.", "How I balanced learning with the limits of external research access.", "story-validation"],
           ].map(([title, description, target]) => (
             <button
               key={title}
@@ -72,7 +72,7 @@ export function Affiliate2Solution() {
               onClick={() => document.getElementById(target as string)?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="group block border-t border-border pt-6 text-left"
             >
-              <h4 className="h3 mb-4 underline-offset-4 group-hover:underline">{title}</h4>
+              <p className="text-lg leading-relaxed font-bold mb-4 underline-offset-4 group-hover:underline">{title}</p>
               <p className="text-lg leading-relaxed text-muted-foreground">{description}</p>
             </button>
           ))}
