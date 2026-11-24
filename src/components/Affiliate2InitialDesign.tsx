@@ -14,7 +14,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
       {/* Expose the assumptions — text column left, early-screens collage right. */}
       <div className="border-t border-border pt-14 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
         <div>
-          <p className="eyebrow text-azure mb-4">Expose the assumptions</p>
+          <p className="eyebrow mb-4">Expose the assumptions</p>
           <h3 className="h3 mb-6">Early designs raised questions we couldn’t answer internally.</h3>
           <p className="text-lg leading-relaxed text-foreground/85">
             I reviewed wireframes with stakeholders, Product, and Engineering. Gaps in our understanding of daily affiliate work led me to push for the focus groups.

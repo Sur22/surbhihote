@@ -2066,7 +2066,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="border-t border-foreground/20 mb-10" />
             <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-10 items-start">
               <div>
-                <p className="eyebrow mb-4 text-azure">Map the existing work</p>
+                <p className="eyebrow mb-4">Map the existing work</p>
                 <h3 className="font-serif text-3xl mb-6 font-medium">A new start, without losing access.</h3>
                 <p className="text-lg leading-relaxed text-foreground/85">
                   I mapped every existing screen while introducing a dashboard as the front door. The sitemap helped preserve the workflows the rebuild still needed to support.
