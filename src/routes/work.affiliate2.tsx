@@ -803,13 +803,13 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
                   </div>
-                  <p className="mt-3 text-lg leading-relaxed text-foreground/85">Five affiliate organizations took part, with 5–10 participants from each organization.</p>
+                  <p className="mt-3 text-[10px] leading-relaxed text-foreground/85">Five affiliate organizations took part, with 5–10 participants from each organization.</p>
                 </div>
                 <div>
                   <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
                     <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                   </div>
-                  <p className="mt-3 text-lg leading-relaxed text-foreground/85">Direct conversations exposed dependencies that the stakeholder review and survey had not explained.</p>
+                  <p className="mt-3 text-[10px] leading-relaxed text-foreground/85">Direct conversations exposed dependencies that the stakeholder review and survey had not explained.</p>
                 </div>
               </div>
               <div className="mt-10 mb-10">
@@ -1390,7 +1390,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </p>
               </div>
               <h4 className="h4 mt-[80px]">{"Development Manager / Technical Fashion Designer"}</h4>
-              <p className="mt-3 text-lg leading-relaxed text-foreground/85">
+              <p className="mt-3 text-[10px] leading-relaxed text-foreground/85">
                 {"From scattered product information to a production-ready Tech Pack"}
               </p>
             </div>
@@ -1783,7 +1783,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-4 mb-[72px]">
+              <p className="text-[10px] leading-relaxed text-foreground/85 mt-4 mb-[72px]">
                 The workshop began with a walkthrough of the existing portal, user groups, and survey findings.
               </p>
               <div>
@@ -1808,7 +1808,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <div className="overflow-hidden rounded-sm bg-secondary p-2">
                   <img src={defineImg2.url} alt="Affiliate workshop must have vs nice to have sticky notes" className="w-full h-auto object-contain" />
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+              <p className="text-[10px] leading-relaxed text-foreground/85 mt-4">
                 The team reviewed the AI-assisted survey clusters, corrected and merged themes, then separated must-haves from nice-to-haves.
               </p>
               <p className="text-lg leading-relaxed text-foreground/85 mt-8">
@@ -1826,7 +1826,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img src={ideateImg1.url} alt="Affiliate workshop participants sketching and presenting ideas" className="w-full h-auto" />
                   </div>
-                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                  <p className="text-[10px] leading-relaxed text-foreground/85 mt-4">
                     Participants sketched their expectations for the redesigned portal.
                   </p>
                 </div>
@@ -1834,7 +1834,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img src={ideateImg2.url} alt="Hand-drawn UI sketches from the affiliate workshop" className="w-full h-auto" />
                   </div>
-                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                  <p className="text-[10px] leading-relaxed text-foreground/85 mt-4">
                     The original sketches made different ideas visible before we converged.
                   </p>
                 </div>
@@ -1854,7 +1854,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <div className="overflow-hidden rounded-sm bg-secondary p-2">
                     <img src={prioritizeImg1.url} alt="Affiliate workshop voting session with sticky notes on glass wall" className="w-full h-auto object-contain" />
                   </div>
-                  <p className="text-lg leading-relaxed text-foreground/85 mt-4">
+                  <p className="text-[10px] leading-relaxed text-foreground/85 mt-4">
                     Voting narrowed the set of themes the group considered most important.
                   </p>
                 </div>
@@ -2074,7 +2074,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 />
               </button>
             </div>
-            <p className="mt-4 text-center text-sm text-foreground/70">
+            <p className="mt-4 text-center text-[10px] text-foreground/70">
               The original sitemap maps the portal's structure and existing workflows.
             </p>
           </>
@@ -2168,7 +2168,7 @@ Users needed an easy way to control and manage the notifications they want and s
               </button>
             </div>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
+          <p className="mt-4 text-[10px] text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
         </section>
       )}
 
