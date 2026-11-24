@@ -98,6 +98,7 @@ import affiliateReviseOrders from "@/assets/Affiliate_website_revise_orders.png.
 import teamPhoto from "@/assets/team-photo.jpg.asset.json";
 import focusGroupScreenshot from "@/assets/focus-group-screenshot.png.asset.json";
 import focusGroupScreenshot2 from "@/assets/focus-group-screenshot-2.png.asset.json";
+import affiliateLegacyBefore from "@/assets/affiliate-legacy-before.png.asset.json";
 import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import audienceFlowCreateNew from "@/assets/audience-flow-create-new.png.asset.json";
 import audienceFlowCopyModify from "@/assets/audience-flow-copy-modify.png.asset.json";
@@ -577,6 +578,18 @@ function CaseStudyPage() {
                     <p className="text-base text-foreground/85">{s.l}</p>
                   </div>
                 ))}
+              </div>
+              <div className="mt-14">
+                <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                  <img
+                    src={affiliateLegacyBefore.url}
+                    alt="Before: four screens of the legacy affiliate portal"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <p className="mt-3 text-[10px] leading-relaxed text-foreground/85">
+                  The legacy experience: familiar to affiliates, with fragmented entry points and workarounds that had become routine.
+                </p>
               </div>
             </div>
           )}
