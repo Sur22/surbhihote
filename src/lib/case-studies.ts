@@ -192,7 +192,7 @@ const _caseStudies: CaseStudy[] = [
     slug: "affiliate2",
     index: "01",
     hidden: true,
-    title: "Affiliate Portal Redesign-Rebuilding a 25-year-old ad-tech portal without breaking a single workflow",
+    title: "Rebuilding Ampersand’s affiliate portal without breaking the habits that kept orders moving.",
     cardTitle: "Affiliate Portal Redesign",
     subtitle: "\n",
     cardSubtitle:
