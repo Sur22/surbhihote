@@ -1904,8 +1904,8 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <Table className="table-fixed">
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Phase 1</TableHead>
-                      <TableHead>Phase 2</TableHead>
+                      <TableHead>Phase 1 - Restore the core work</TableHead>
+                      <TableHead>Phase 2 - Extend the experience</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
