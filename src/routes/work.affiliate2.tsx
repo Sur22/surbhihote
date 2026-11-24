@@ -1795,7 +1795,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <p>{c.goal}</p>
                 </div>
               </div>
-              <div className="rounded-sm pt-[60px] pb-16">
+              <div className="rounded-sm pt-[10px] pb-16">
                 <h3 className="font-serif text-3xl mb-6 font-normal">Problems to Opportunity</h3>
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                   {"The codebase was too old, no fix could ship without a full rebuild. That constraint reframed the brief: this wasn't a UI refresh, it was a chance to rethink workflows that had calcified around a broken tool for 25 years.The rebuild tackled 6 things at once."}
