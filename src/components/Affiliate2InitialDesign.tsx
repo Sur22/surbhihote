@@ -76,7 +76,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
       {/* Revise around the evidence — heading left, outcome copy right. */}
       <div className="mt-16 border-t border-border pt-14 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
         <div>
-          <p className="eyebrow text-azure mb-4">Revise around the evidence</p>
+          <p className="eyebrow mb-4">Revise around the evidence</p>
           <h3 className="h3">Keep recognition. Improve visibility.</h3>
         </div>
         <div className="space-y-5 text-lg leading-relaxed">
@@ -103,7 +103,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
 
       {/* Interface craft — three detail columns. */}
       <div className="mt-16 border-t border-border pt-14">
-        <p className="eyebrow text-azure mb-4">Interface craft</p>
+        <p className="eyebrow mb-4">Interface craft</p>
         <h3 className="h3 mb-6 max-w-3xl">The important details were inside a dense working surface.</h3>
         <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">
           The interface had to help experienced affiliates recognize activity, retain their working context, and find the next order to act on. The design work lives in those details as much as in the new dashboard.
