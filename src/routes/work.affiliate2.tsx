@@ -814,20 +814,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
                 </div>
               </div>
-              <div className="mt-10 mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary">
-                <div
-                  className="absolute inset-0 bg-cover bg-center opacity-50"
-                  style={{ backgroundImage: `url(${ampBgPersona.url})` }}
-                />
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-                <div className="relative z-10">
-                  <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Prioritize familiarity during the transition</h3>
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
-                    <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
-                      {"Focus groups revealed that users depended on familiar conventions, even when the underlying workflows were inefficient. I preserved cues such as D/V/P/C indicators and 24-hour time while prioritizing broken workflows and order visibility. This balanced meaningful improvements with the effort required to adopt the rebuilt portal."}
-                    </blockquote>
-                  </div>
-                </div>
+              <div className="mt-10 mb-10">
+                <h3 className="text-[22px] font-semibold mb-8">How the research changed specific design choices</h3>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  The focus groups included questions developed with Product and stakeholders.{" "}
+                  <a href="https://docs.google.com/document/d/1QNgsJY8tiK6sr_Hl4HzbIyaKk_U5N01bvP8huFwtLsI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline">Read the original focus group questions.</a>
+                </p>
               </div>
               <p className="mt-[30px] text-lg leading-relaxed text-foreground/85 mb-8">Research directly drove these decisions.</p>
               <div id="research-to-design" className="overflow-hidden rounded-sm border border-foreground/20 mb-8 scroll-mt-24">
