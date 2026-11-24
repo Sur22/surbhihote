@@ -85,7 +85,7 @@ function getSections(slug?: string): Section[] {
 
   if (slug && slugsWithQualitativeResearch.has(slug)) {
     sections = sections.map((s) =>
-      s.id === "research" ? { ...s, label: "Survey" } : s,
+      s.id === "research" ? { ...s, label: "RESEARCH" } : s,
     );
   }
 
