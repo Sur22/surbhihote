@@ -404,7 +404,7 @@ const _caseStudies: CaseStudy[] = [
   {
     slug: "atlas",
     index: "03",
-    title: "Notifications Management - Less Noise More Signals\u00a0",
+    title: "Notifications Management - Less Noise, More Signals\u00a0",
     cardTitle: "Notifications Management\u00a0",
     subtitle: "\n",
     cardSubtitle: "Organizing and managing notifications to granular level",
