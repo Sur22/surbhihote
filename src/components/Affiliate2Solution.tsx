@@ -53,7 +53,7 @@ function Result({ children }: { children: ReactNode }) {
 
 export function Affiliate2Solution() {
   return (
-    <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+    <section id="key-decision" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
       <h2 className="h2 mb-8">Key Decisions</h2>
       <div className="mb-16">
         <p className="eyebrow mb-5">The decisions behind the screens</p>

@@ -392,8 +392,8 @@ function CaseStudyPage() {
         <CaseStudySideNav sections={[
           { id: "overview", label: "Overview", anchor: "impact" },
           { id: "the-problem", label: "The Problem", anchor: "challenge" },
-          { id: "key-decision", label: "Key Decision" },
           { id: "final-designs", label: "Solution" },
+          { id: "key-decision", label: "Key Decision" },
           { id: "research", label: "Survey" },
           { id: "workshop", label: "Workshop" },
           { id: "design-process", label: "Design" },
