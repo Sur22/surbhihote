@@ -61,20 +61,25 @@ export function Affiliate2Solution() {
         <p className="max-w-4xl text-lg leading-relaxed mb-10">The key choices balanced familiar working habits, clearer order activity, release scope, and the limits of external research access.</p>
         <div className="grid gap-x-12 gap-y-8 md:grid-cols-2">
           {[
-            ["I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption."],
-            ["I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders."],
-            ["I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout."],
-            ["I validated adoption through real use.", "How I balanced learning with the limits of external research access."],
-          ].map(([title, description]) => (
-            <div key={title} className="border-t border-border pt-6">
-              <h4 className="h3 mb-4">{title}</h4>
+            ["I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption.", "story-familiarity"],
+            ["I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders.", "story-visibility"],
+            ["I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout.", "story-release"],
+            ["I validated adoption through real use.", "How I balanced learning with the limits of external research access.", "story-validation"],
+          ].map(([title, description, target]) => (
+            <button
+              key={title}
+              type="button"
+              onClick={() => document.getElementById(target as string)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              className="group block border-t border-border pt-6 text-left"
+            >
+              <h4 className="h3 mb-4 underline-offset-4 group-hover:underline">{title}</h4>
               <p className="text-lg leading-relaxed text-muted-foreground">{description}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>
 
-      <article className="space-y-8 border-t border-border pt-16 pb-16">
+      <article id="story-familiarity" className="space-y-8 border-t border-border pt-16 pb-16 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Familiarity</p>
           <h3 className="h3 mb-6 max-w-4xl">I kept the order cues stakeholders thought we could remove.</h3>
@@ -102,7 +107,7 @@ export function Affiliate2Solution() {
         <Result>The final design preserved the cues the team had considered removing. The focus groups changed both the interface and the rollout plan: meaningful improvements could ship without asking affiliates to relearn every part of their work at once.</Result>
       </article>
 
-      <article className="space-y-8 border-t border-border pt-16 pb-16">
+      <article id="story-visibility" className="space-y-8 border-t border-border pt-16 pb-16 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Order visibility</p>
           <h3 className="h3 mb-6 max-w-4xl">I moved order activity into view instead of leaving affiliates to keep checking.</h3>
@@ -129,7 +134,7 @@ export function Affiliate2Solution() {
         <Result>The project reported a <strong>78% reduction in manual refreshes</strong> and <strong>$0 in business lost since launch.</strong> These were project-level outcomes across the rebuilt workflows; the visibility changes directly addressed the manual checking and unnoticed orders surfaced in research.</Result>
       </article>
 
-      <article className="space-y-8 border-t border-border pt-16">
+      <article id="story-release" className="space-y-8 border-t border-border pt-16 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Release strategy</p>
           <h3 className="h3 mb-6 max-w-4xl">I deferred bigger changes so the first release could restore the work people depended on.</h3>
@@ -164,7 +169,7 @@ export function Affiliate2Solution() {
 function ValidationStory() {
   const [loopOpen, setLoopOpen] = useState(false);
   return (
-    <article className="space-y-8 border-t border-border pt-16">
+    <article id="story-validation" className="space-y-8 border-t border-border pt-16 scroll-mt-24">
       <header>
         <p className="eyebrow mb-4">Decision story · Validation</p>
         <h3 className="h3 mb-6 max-w-4xl">I validated the redesign through real use without asking affiliates for another research round.</h3>
