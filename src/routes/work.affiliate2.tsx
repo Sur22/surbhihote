@@ -780,7 +780,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Focus Groups</h3>
-              <h3 className="font-serif text-3xl mb-6 font-medium">Five affiliate organizations challenged our assumptions.</h3>
+              <h3 className="h4 mb-4">Five affiliate organizations challenged our assumptions.</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8 max-w-3xl">
                 Each focus group brought together 5–10 participants from an affiliate organization. We used the sessions to understand daily workflows, clarify gaps in the internal review, and test assumptions about the legacy experience.
               </p>
