@@ -806,12 +806,22 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   <strong className="block pl-8 md:pl-12">So, I designed for a gradual adoption rather than dramatic change.</strong>
                 </blockquote>
               </div>
+              <h3 className="font-serif text-3xl mb-6 font-medium">Five affiliate organizations challenged our assumptions.</h3>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-8 max-w-3xl">
+                Each focus group brought together 5–10 participants from an affiliate organization. We used the sessions to understand daily workflows, clarify gaps in the internal review, and test assumptions about the legacy experience.
+              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-sm bg-secondary p-2">
-                  <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+                <div>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2">
+                    <img src={focusGroupScreenshot.url} alt="Focus group video call session" className="w-full h-auto object-contain" />
+                  </div>
+                  <p className="mt-3 text-lg leading-relaxed text-foreground/85">Five affiliate organizations took part, with 5–10 participants from each organization.</p>
                 </div>
-                <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
-                  <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
+                <div>
+                  <div className="overflow-hidden rounded-sm bg-secondary p-2 flex items-center">
+                    <img src={focusGroupScreenshot2.url} alt="Affiliate site discussion focus group" className="w-full h-auto object-contain" />
+                  </div>
+                  <p className="mt-3 text-lg leading-relaxed text-foreground/85">Direct conversations exposed dependencies that the stakeholder review and survey had not explained.</p>
                 </div>
               </div>
               <div className="mt-10 mb-10">
