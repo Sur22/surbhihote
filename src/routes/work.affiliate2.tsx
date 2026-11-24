@@ -780,13 +780,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Focus Groups</h3>
-              <div className="relative overflow-hidden border-l-2 border-azure px-6 py-8 md:px-8 text-foreground dark:text-primary mx-auto my-[50px] bg-cell-highlight">
-                <blockquote className="relative z-10 text-[18px] leading-relaxed text-left whitespace-pre-line">
-                    {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong><span className="block mt-[26px]">{"Because the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website"}</span><span className="flex items-center gap-3 font-serif text-3xl mt-[30px] mb-[26px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
-                  <AffiliateRealProblemCardsCopy />
-                  <strong className="block"> So, I decided to designed for a gradual adoption rather than dramatic change.</strong>
-                </blockquote>
-              </div>
               <h3 className="font-serif text-3xl mb-6 font-medium">Five affiliate organizations challenged our assumptions.</h3>
               <p className="text-lg leading-relaxed text-foreground/85 mb-8 max-w-3xl">
                 Each focus group brought together 5–10 participants from an affiliate organization. We used the sessions to understand daily workflows, clarify gaps in the internal review, and test assumptions about the legacy experience.
@@ -804,6 +797,13 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   </div>
                   <p className="mt-3 text-[10px] leading-relaxed text-foreground/85">Direct conversations exposed dependencies that the stakeholder review and survey had not explained.</p>
                 </div>
+              </div>
+              <div className="relative overflow-hidden border-l-2 border-azure px-6 py-8 md:px-8 text-foreground dark:text-primary mx-auto my-[50px] bg-cell-highlight">
+                <blockquote className="relative z-10 text-[18px] leading-relaxed text-left whitespace-pre-line">
+                    {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong><span className="block mt-[26px]">{"Because the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website"}</span><span className="flex items-center gap-3 font-serif text-3xl mt-[30px] mb-[26px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"The hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
+                  <AffiliateRealProblemCardsCopy />
+                  <strong className="block"> So, I decided to designed for a gradual adoption rather than dramatic change.</strong>
+                </blockquote>
               </div>
               <div className="mt-10 mb-10">
                 <h3 className="h4 mb-4">How the research changed specific design choices</h3>
