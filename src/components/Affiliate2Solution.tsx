@@ -72,7 +72,7 @@ export function Affiliate2Solution() {
               onClick={() => document.getElementById(target as string)?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="group block border-t border-border pt-6 text-left"
             >
-              <p className="text-lg leading-relaxed font-bold mb-4 underline-offset-4 group-hover:underline">{title}</p>
+              <p className="text-lg leading-relaxed font-bold mb-4 underline-offset-4 group-hover:underline"><span className="text-azure">{(title as string).slice(0, 2)}</span>{(title as string).slice(2)}</p>
               <p className="text-lg leading-relaxed text-muted-foreground">{description}</p>
             </button>
           ))}
