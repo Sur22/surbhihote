@@ -63,8 +63,8 @@ export function AiPanelSurveyCopy() {
             <div key={step.title} className="relative">
               <div className="flex items-start gap-4 px-6 py-6">
                 <div className="w-9 shrink-0 flex justify-center pt-0.5">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-azure/85">
-                    <step.icon className="h-5 w-5 text-azure-foreground" aria-hidden="true" />
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground/10 dark:bg-foreground">
+                    <step.icon className="h-5 w-5 text-foreground dark:text-background" aria-hidden="true" />
                   </span>
                 </div>
                 <div className="min-w-0">
