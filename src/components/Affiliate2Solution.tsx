@@ -61,10 +61,10 @@ export function Affiliate2Solution() {
         <p className="max-w-4xl text-lg leading-relaxed mb-10">The key choices balanced familiar working habits, clearer order activity, release scope, and the limits of external research access.</p>
         <div className="grid gap-x-12 gap-y-8 md:grid-cols-2">
           {[
-            ["1. I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption.", "story-familiarity"],
-            ["2. I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders.", "story-visibility"],
-            ["3. I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout.", "story-release"],
-            ["4. I validated adoption through real use.", "How I balanced learning with the limits of external research access.", "story-validation"],
+            ["01   I kept the cues stakeholders thought we could remove.", "How direct user access changed a design assumption.", "story-familiarity"],
+            ["02  I made order activity visible before changing how people worked.", "How the dashboard, live updates, and activity cues addressed missed orders.", "story-visibility"],
+            ["03   I deferred bigger changes to protect the first release.", "How evidence, voting, and effort shaped the rollout.", "story-release"],
+            ["04   I validated adoption through real use.", "How I balanced learning with the limits of external research access.", "story-validation"],
           ].map(([title, description, target]) => (
             <button
               key={title}
