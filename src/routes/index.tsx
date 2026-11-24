@@ -301,8 +301,8 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
             <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4">
               {(c.slug === "solace"
                 ? [
-                    ["–64%", "calculation errors"],
-                    ["–34%", "time on task"],
+                    ["↓64%", "calculation errors"],
+                    ["↓34%", "time on task"],
                   ]
                 : [
                     ["68% → 7%", "irrelevant notifications"],
