@@ -615,6 +615,7 @@ function IndexPage() {
           </div>
         </div>
 
+        {/* Copy-page links hidden per Surbhi's request; kept for a restore.
         <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
           <Link
             to="/work/$slug"
@@ -631,6 +632,7 @@ function IndexPage() {
             Affiliate Portal Redesign (copy)
           </Link>
         </div>
+        */}
 
       </section>
 
