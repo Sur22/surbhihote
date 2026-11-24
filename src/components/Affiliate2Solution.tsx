@@ -156,7 +156,7 @@ export function Affiliate2Solution() {
           <p>Workshop prioritization gave us an initial plan. The focus groups then showed how strongly affiliates depended on existing habits. I reprioritized the rollout around the core order workflows and deferred changes requiring more adjustment.</p>
         </TurningPoint>
         <p className="text-lg leading-relaxed">
-          <a href="#workshop" className="underline underline-offset-4 text-azure font-bold">See the full phased release plan and workshop artifacts.</a>
+          <a href="#workshop" className="underline underline-offset-4 text-foreground font-bold">See the full phased release plan and workshop artifacts.</a>
         </p>
         <Result>The first release restored <strong>eight broken or limited workflows.</strong> The phased plan gave the team a clear boundary for the release while keeping larger workflow changes visible as follow-on work.</Result>
       </article>
