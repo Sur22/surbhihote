@@ -780,7 +780,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <>
         <section id="qualitative-research" className="scroll-mt-24 mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">Focus Groups</h3>
-              <div className="relative overflow-hidden rounded-sm px-6 md:px-16 py-16 text-foreground dark:text-primary mx-auto my-[50px] bg-cell-highlight">
+              <div className="relative overflow-hidden border-l-2 border-azure px-6 py-8 md:px-8 text-foreground dark:text-primary mx-auto my-[50px] bg-cell-highlight">
                 <blockquote className="relative z-10 max-w-3xl mx-auto text-[18px] leading-relaxed text-left whitespace-pre-line">
                   <div className="border-l border-[#3d7da1] dark:border-primary/70 pl-8 md:pl-12">
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
@@ -2506,7 +2506,7 @@ Users needed an easy way to control and manage the notifications they want and s
         <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 pb-0 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
-          <div className="mt-[15px] mb-10 rounded-sm relative overflow-hidden px-6 md:px-16 py-16 text-foreground dark:text-primary bg-cell-highlight">
+          <div className="mt-[15px] mb-10 relative overflow-hidden border-l-2 border-azure px-6 py-8 md:px-8 text-foreground dark:text-primary bg-cell-highlight">
             <div className="relative z-10">
               <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
               <div className="border-l border-[#3d7da1] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
