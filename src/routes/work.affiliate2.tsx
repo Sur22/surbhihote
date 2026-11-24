@@ -374,7 +374,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={`study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
+        className={`study-shell affiliate2-blue [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
@@ -787,7 +787,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 />
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
                 <blockquote className="relative z-10 max-w-3xl mx-auto text-[18px] leading-relaxed text-left whitespace-pre-line">
-                  <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12">
+                  <div className="border-l border-[#3d7da1] dark:border-primary/70 pl-8 md:pl-12">
                     {"The survey results surprised us that, the most respondents were satisfied, and some answered as very satisfied. During a session with one of the affiliates, they said,\n\n"}<strong><em>&quot;We like it as it is, we don't want it to change.&quot;</em></strong>{"\n\n\nBecause the site is very old, the users are so used to it ; even with the workarounds. Change is very hard for them after learning to operate with all the workarounds turned into user habits built over years of using the website\n\n\n"}<span className="flex items-center gap-3 font-serif text-3xl mb-[30px] font-medium"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>The Real Problem</span>{"\nThe hardest constraint wasn't technical. Users were satisfied because they'd normalized the workarounds, so the risk wasn't a worse tool ; it was rejection of a better one."}
                   </div>
                   <AffiliateRealProblemCardsCopy />
@@ -2519,7 +2519,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
             <div className="relative z-10">
               <h3 className="font-serif text-3xl mb-6 font-normal flex items-center gap-3"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-azure/85"><KeyRound className="h-5 w-5 text-azure-foreground" aria-hidden="true" /></span>Validate Through Real-World Usage</h3>
-              <div className="border-l border-[#0068FF] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
+              <div className="border-l border-[#3d7da1] dark:border-primary/70 pl-8 md:pl-12 max-w-3xl mx-auto">
                 <blockquote className="text-[18px] leading-relaxed text-left whitespace-pre-line">
                   {"Formal moderated testing wasn't viable as affiliates are external and we'd already spent their goodwill on the survey and sessions.\nRather than asking external affiliates to participate in another round of moderated testing after already completing surveys and focus groups, I chose a low-friction, post-launch validation approach.\n"}
                 </blockquote>

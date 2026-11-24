@@ -848,3 +848,12 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --card-foreground: oklch(0.18 0.02 60);
   --muted-foreground: oklch(0.34 0.02 60);
 }
+
+/* Affiliate2 copy page only: its own blue pair sampled from Surbhi's reference —
+   the deeper steel blue for outlines, accents and icon discs, and its pale wash
+   for highlight surfaces. Scoped to the page wrapper so the original Affiliate
+   study and every other page keep the shared azure. */
+.affiliate2-blue {
+  --azure: #3d7da1;
+  --cell-highlight: #eef5f8;
+}
