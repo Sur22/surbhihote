@@ -963,14 +963,14 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                                   {Array.from({ length: 4 }).map((_, i) => (
                                     <div
                                       key={i}
-                                      className={`h-2 border border-[#0068FF] dark:border-primary/70 ${
+                                      className={`h-1 border border-foreground ${
                                         i === 0
                                           ? "rounded-l-full rounded-r-none"
                                           : i === 3
                                             ? "rounded-r-full rounded-l-none"
                                             : "rounded-none"
                                       } ${
-                                        i < bar.value ? "bg-[#0068FF] dark:bg-primary" : "bg-transparent"
+                                        i < bar.value ? "bg-foreground" : "bg-transparent"
                                       }`}
                                     />
                                   ))}
