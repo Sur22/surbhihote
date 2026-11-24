@@ -45,7 +45,7 @@ export function AiPanelTestingInitialCopyCopy() {
       {open ? (
         <div
           id="ai-ux-writing-panel"
-          className="relative overflow-hidden rounded-xl border border-azure"
+          className="relative overflow-hidden rounded-xl border border-foreground/20"
         >
           <button
             type="button"
@@ -97,7 +97,7 @@ export function AiPanelTestingInitialCopyCopy() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-controls="ai-ux-writing-panel"
-          className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-azure px-6 py-6 text-left"
+          className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-xl border border-foreground/20 px-6 py-6 text-left"
         >
           <span className="block text-[15px] font-bold leading-relaxed">
             {uxWritingValidationLead}
