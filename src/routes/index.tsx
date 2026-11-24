@@ -206,6 +206,13 @@ function CaseStudyArtwork({
   );
 }
 
+/* Homepage cards open the copy of their study where one exists; every other
+   card opens its own study. */
+const CARD_TARGET: Partial<Record<(typeof caseStudies)[number]["slug"], string>> = {
+  solace: "solace2",
+  "affiliate-platform-redesign": "affiliate2",
+};
+
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
   const wide = i === 0;
@@ -219,7 +226,7 @@ function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number })
     >
       <Link
         to="/work/$slug"
-        params={{ slug: c.slug }}
+        params={{ slug: CARD_TARGET[c.slug] ?? c.slug }}
         className={`group relative overflow-hidden rounded-[var(--radius-xl)] border study-card-surface ${
           wide
             ? "block study-card-outline-mobile md:grid md:grid-cols-12 md:gap-12 md:items-center md:p-12"
@@ -613,23 +620,6 @@ function IndexPage() {
               <CaseStudyItem key={c.slug} c={c} i={idx + 1} />
             ))}
           </div>
-        </div>
-
-        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
-          <Link
-            to="/work/$slug"
-            params={{ slug: "solace2" }}
-            className="text-accent underline-offset-4 hover:underline"
-          >
-            Tech Pack Tool (copy)
-          </Link>
-          <Link
-            to="/work/$slug"
-            params={{ slug: "affiliate2" }}
-            className="text-accent underline-offset-4 hover:underline"
-          >
-            Affiliate Portal Redesign (copy)
-          </Link>
         </div>
 
       </section>
