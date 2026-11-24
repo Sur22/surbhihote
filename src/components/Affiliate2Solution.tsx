@@ -125,7 +125,7 @@ export function Affiliate2Solution() {
           ]}
           tradeoff="The starting view changed, but the order-level signals stayed familiar. I focused the new information on the work affiliates needed to notice."
         />
-        <img src={dashboardChanges.url} alt="Orders dashboard annotated with order summaries, automatic refresh, notifications, and onboarding help" className="block w-full h-auto" loading="lazy" />
+        <img id="annotated-dashboard" src={dashboardChanges.url} alt="Orders dashboard annotated with order summaries, automatic refresh, notifications, and onboarding help" className="block w-full h-auto scroll-mt-24" loading="lazy" />
         <NextChanges items={[
           { title: "Surface changes", text: "Live updates reduced the need to reload the page to discover new activity." },
           { title: "Expose attention gaps", text: "Last-touched information helped make unattended orders easier to identify." },

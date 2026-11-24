@@ -100,6 +100,40 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
           </p>
         </div>
       </div>
+
+      {/* Interface craft — three detail columns. */}
+      <div className="mt-16 border-t border-border pt-14">
+        <p className="eyebrow text-azure mb-4">Interface craft</p>
+        <h3 className="h3 mb-6 max-w-3xl">The important details were inside a dense working surface.</h3>
+        <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">
+          The interface had to help experienced affiliates recognize activity, retain their working context, and find the next order to act on. The design work lives in those details as much as in the new dashboard.
+        </p>
+        <div className="grid gap-10 md:grid-cols-3 md:gap-12">
+          {[
+            ["Recognizable signals", "D/V/P/C indicators and 24-hour time carried established knowledge into the rebuilt interface."],
+            ["Consistent context", "Views, search, and filtering supported the way affiliates narrowed a large set of orders into the work relevant to them."],
+            ["Visible activity", "Order summaries, revision views, and last-touched information helped affiliates distinguish an order that needed attention from one already in progress."],
+          ].map(([title, text]) => (
+            <div key={title} className="border-t border-border pt-6">
+              <h4 className="h4 mb-4">{title}</h4>
+              <p className="leading-relaxed text-foreground/85">{text}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-10 text-lg leading-relaxed">
+          <a
+            href="#annotated-dashboard"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo("annotated-dashboard");
+            }}
+            className="underline underline-offset-4 hover:text-azure transition-colors"
+          >
+            See the original annotated dashboard
+          </a>{" "}
+          for the specific interface changes.
+        </p>
+      </div>
     </div>
   );
 }
