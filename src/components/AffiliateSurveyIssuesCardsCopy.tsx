@@ -18,12 +18,12 @@ export function AffiliateSurveyIssuesCardsCopy() {
     <ul
       role="list"
       aria-label="Major issues from the survey's open-ended responses"
-      className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto"
+      className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-2 max-w-5xl mx-auto"
     >
       {issues.map((issue) => (
         <li
           key={issue}
-          className="flex items-center rounded-md border border-foreground/20 px-3 py-2.5 text-[16px] font-bold leading-snug text-foreground"
+          className="flex min-h-[140px] items-center rounded-md border border-foreground/20 px-3 py-2.5 text-[16px] font-bold leading-snug text-foreground"
         >
           <span>{issue}</span>
         </li>
