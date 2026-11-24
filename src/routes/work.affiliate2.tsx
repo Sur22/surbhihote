@@ -2911,6 +2911,48 @@ Users needed an easy way to control and manage the notifications they want and s
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {c.slug === "affiliate-platform-redesign" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24">
+          <p className="eyebrow mb-4">Outcomes</p>
+          <h3 className="font-serif text-4xl md:text-5xl font-normal mb-14">Less checking. More visible work. Restored workflows.</h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-10 mb-16">
+            {[
+              { value: "92%", label: "Task success rate" },
+              { value: "78%", label: "Reduction in manual refreshes" },
+              { value: "$0", label: "Reported business lost since launch" },
+              { value: "8", label: "Broken or limited workflows restored" },
+              { value: "2×", label: "Faster page loading" },
+            ].map((s) => (
+              <div key={s.label}>
+                <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-nowrap">{s.value}</p>
+                <p className="text-foreground/85">{s.label}</p>
+              </div>
+            ))}
+          </div>
+          <h4 className="h3 mb-6">How I checked adoption</h4>
+          <p className="text-lg leading-relaxed text-foreground/85 mb-6">
+            I reviewed Microsoft Clarity sessions and in-product feedback after the first three months of live use, supported by App Insights and Power BI. Positive feedback and observed behavior indicated that the redesigned workflows were being adopted.
+          </p>
+          <p className="text-lg leading-relaxed text-muted-foreground mb-10">
+            These are project-level outcomes. The $0 figure refers to reported business lost during the post-launch period; it is separate from the roughly $2.5 million affiliates described losing over prior years.
+          </p>
+          <a
+            href="#story-validation"
+            className="text-accent underline underline-offset-4 hover:no-underline"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("story-validation");
+              if (el) {
+                history.replaceState(null, "", "#story-validation");
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
+          >
+            Read the validation approach and its trade-off
+          </a>
+        </section>
+      )}
+
       {/* Reflection */}
       <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-[80px]" : "pt-24")}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
