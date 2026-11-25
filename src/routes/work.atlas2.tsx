@@ -387,12 +387,17 @@ const atlas2DiscStyle: CSSProperties = {
 };
 
 const coverWidth = (slug: CaseStudy["slug"]) =>
-  slug === "atlas" || slug === "atlas2"
-    ? /* Phones: 35% of the full column, as before. Desktop: the picture lives
-         in the hero's right column, so 66% of that column keeps the phone the
-         same ~350px it measured at full width. */
-      "w-[35%] md:w-[66%]"
-    : slug === "affiliate-platform-redesign"
+  slug === "atlas2"
+    ? /* Phones: 52.5% — the 35% the copy measured at, grown by half.
+         Desktop: the picture lives in the hero's right column, so 66% of that
+         column keeps the phone the same ~350px it measured at full width. */
+      "w-[52.5%] md:w-[66%]"
+    : slug === "atlas"
+      ? /* Phones: 35% of the full column, as before. Desktop: the picture lives
+           in the hero's right column, so 66% of that column keeps the phone the
+           same ~350px it measured at full width. */
+        "w-[35%] md:w-[66%]"
+      : slug === "affiliate-platform-redesign"
       ? "w-[72%]"
       : slug === "solace"
         ? "w-[78%]"
