@@ -839,7 +839,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 </div>
               </div>
               <p className="mt-8 text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications`}
+                {"\n"}
               </p>
               {/* The three problem points as Design Principle cards: the same
                   peach surface, amber drop and rounded-xl, bold heading over body. */}
