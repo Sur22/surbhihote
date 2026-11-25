@@ -2605,12 +2605,6 @@ Users needed an easy way to control and manage the notifications they want and s
                   </p>
                 </div>
               </div>
-              <div className="why-matters-highlight mt-8">
-                <p className="eyebrow mb-3 font-bold text-copy-orange-text">Why it matters</p>
-                <p className="text-base leading-relaxed text-foreground/85">
-                  A useful default reduces setup effort. Personal control remains available when responsibilities change.
-                </p>
-              </div>
             </div>
             <div className="scope-panel rounded-xl p-6 md:p-8">
               <p className="eyebrow mb-6 text-center">How the settings fit together</p>
@@ -2643,6 +2637,12 @@ Users needed an easy way to control and manage the notifications they want and s
                 Preferences make it personal.
               </p>
             </div>
+          </div>
+          <div className="why-matters-highlight mt-10">
+            <p className="eyebrow mb-3 font-bold text-copy-orange-text">Why it matters</p>
+            <p className="text-base leading-relaxed text-foreground/85">
+              A useful default reduces setup effort. Personal control remains available when responsibilities change.
+            </p>
           </div>
         </section>
       )}
