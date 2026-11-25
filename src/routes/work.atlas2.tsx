@@ -1011,7 +1011,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
             </div>
           )}
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
+          {c.slug === "atlas" && (
             <div className="mb-12">
               <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
                 Product Requirement Document
@@ -1021,6 +1021,81 @@ If AE's want to build a custom audience to for the clients would require to send
 
 As Grid mobile app does not have all the functionalities as the web version; in this feature the ability of entity to create notification template for the user type is excluded for the mobile version. But, users can see and edit the template of the user type they are assigned. The mobile designs will be both for Android and iOS version of the application.
               </p>
+            </div>
+          )}
+          {c.slug === "atlas2" && (
+            <div className="mb-12">
+              <p className="eyebrow">03 / Research that shaped the design</p>
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+                <h3 className="font-serif text-4xl md:text-5xl font-normal leading-[1.1]">
+                  Different responsibilities. Different definitions of
+                  &ldquo;important.&rdquo;
+                </h3>
+                <p className="text-lg leading-relaxed text-foreground/85 md:pl-10">
+                  I used five quick, in-context desk interviews to understand
+                  how people relied on notifications, without slowing down a
+                  fast-moving team.
+                </p>
+              </div>
+              <div className="mt-10 border-t border-foreground/15">
+                {[
+                  {
+                    n: "01",
+                    title: "Relevance depends on the role",
+                    quote:
+                      "\u201cOnly few notifications are really important to me, I should be able to control which notifications I want to see and which one I don't.\u201d",
+                    role: "Client",
+                    response:
+                      "Use role-based templates as a starting point, with room for personal preferences.",
+                  },
+                  {
+                    n: "02",
+                    title: "Finding an alert was becoming a task",
+                    quote:
+                      "\u201cEvery time I have to scroll through notifications to find notifications I need to see, which is very time consuming.\u201d",
+                    role: "Product Development Manager",
+                    response:
+                      "Organize preferences into categories and make notification types searchable.",
+                  },
+                  {
+                    n: "03",
+                    title: "One account can mean 40+ products",
+                    quote:
+                      "\u201cManaging more than 40+ products for a client company is pretty hectic and notifications are a mess.\u201d",
+                    role: "Company Account Manager",
+                    response:
+                      "Provide company-wide control alongside subscriptions for individual products and lifecycle stages.",
+                  },
+                ].map((f) => (
+                  <div
+                    key={f.n}
+                    className="grid grid-cols-[auto_1fr] md:grid-cols-[64px_1fr_1fr] gap-x-6 gap-y-4 py-10 border-b border-foreground/15"
+                  >
+                    <span className="text-sm font-medium text-copy-orange-text pt-2">
+                      {f.n}
+                    </span>
+                    <div>
+                      <h4 className="font-serif text-2xl md:text-3xl font-normal">
+                        {f.title}
+                      </h4>
+                      <p className="mt-4 text-lg leading-relaxed text-foreground/85">
+                        {f.quote}
+                      </p>
+                      <p className="mt-3 text-sm text-foreground/60">
+                        {f.role}
+                      </p>
+                    </div>
+                    <div className="col-start-2 md:col-start-3 md:border-l md:border-foreground/15 md:pl-8">
+                      <p className="eyebrow text-copy-orange-text">
+                        Design response
+                      </p>
+                      <p className="mt-3 text-lg leading-relaxed text-foreground/85">
+                        {f.response}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           <div>
