@@ -2355,11 +2355,14 @@ Users needed an easy way to control and manage the notifications they want and s
             /* Atlas2 only: the reference lays the two paragraphs around the
                phone screens — the serif statement on the left, the review
                note on the right, screens between them. */
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-8 items-center">
-              <p className="font-serif text-xl leading-relaxed">
+            <div>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-4">
                 The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
               </p>
-              <div className="grid grid-cols-2 gap-4 justify-center items-start">
+              <p className="text-lg leading-relaxed text-foreground/85">
+                I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
+              </p>
+              <div className="mt-10 mx-auto w-fit grid grid-cols-2 gap-10 justify-center items-start">
                 <div className="w-[190px]">
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <p className="eyebrow">Before / Initial direction</p>
@@ -2383,9 +2386,6 @@ Users needed an easy way to control and manage the notifications they want and s
                   <p className="mt-1 text-sm text-muted-foreground leading-relaxed">The revised option received developer and CTO approval to proceed to testing.</p>
                 </div>
               </div>
-              <p className="text-base leading-relaxed text-muted-foreground">
-                I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
-              </p>
             </div>
           ) : (
             <>
