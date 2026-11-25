@@ -3702,6 +3702,71 @@ Users needed an easy way to control and manage the notifications they want and s
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
+      {/* Atlas2 only: the outcomes band, sitting above Reflection. Its accent
+          marks read in the copy page's orange instead of the reference's teal,
+          and the four stats stand on their own top rules with no vertical
+          dividers between them. */}
+      {c.slug === "atlas2" && (
+        <section id="outcomes" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
+          <p className="eyebrow mb-5">06 / Outcomes</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-normal mb-6">
+            Less searching.
+            <br />
+            Fewer things slipping through.
+          </h2>
+          <p className="max-w-[620px] text-lg leading-relaxed text-foreground/85 mb-14">
+            The project's reported outcomes connected notification relevance to the work it supported.
+          </p>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4 md:gap-10">
+            {[
+              {
+                value: "84",
+                accent: "% ↓",
+                label: "Fewer missed alerts",
+                note: "Critical updates were less likely to get lost in the noise.",
+              },
+              {
+                value: "38",
+                accent: "% ↓",
+                label: "Fewer missed deadlines",
+                note: "Fewer missed updates supported more timely action in production workflows.",
+              },
+              {
+                value: "68%",
+                accent: "→ 7%",
+                label: "Irrelevant notifications",
+                note: "A smaller share of notifications fell outside what users needed for their work.",
+              },
+              {
+                value: "+6",
+                accent: "",
+                label: "User satisfaction",
+                note: "Improvement in user satisfaction reported in the original case study.",
+              },
+            ].map((o) => (
+              <div key={o.label} className="border-t border-border pt-6">
+                <p className="display mb-3 whitespace-nowrap text-4xl md:text-5xl">
+                  {o.value}
+                  {o.accent && <span className="text-copy-orange-text">{o.accent}</span>}
+                </p>
+                <p className="mb-1 font-bold">{o.label}</p>
+                <p className="text-sm text-muted-foreground">{o.note}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 border-t border-border pt-8">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_2fr] md:gap-12">
+              <p className="eyebrow">Qualitative validation</p>
+              <p className="text-base leading-relaxed text-foreground/85">
+                All five usability participants found the solution useful. The study also exposed
+                interaction issues, which I addressed through another design iteration.
+              </p>
+            </div>
+            <div className="rule mt-8" />
+          </div>
+        </section>
+      )}
+
       {/* Reflection */}
       <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-[80px]" : "pt-24")}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
