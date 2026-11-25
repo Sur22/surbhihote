@@ -3204,7 +3204,7 @@ Users needed an easy way to control and manage the notifications they want and s
           and the next validation on the right. It spans the full page width on
           the plain page background, and every blue from her reference reads in
           the copy page's orange instead. */}
-      <div className="w-full px-6 md:px-10 pt-2 pb-14">
+      <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-14">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
           <div>
             <p className="eyebrow mb-5">07 / Reflection</p>
