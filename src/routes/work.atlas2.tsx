@@ -373,6 +373,16 @@ const coverPad = (slug: CaseStudy["slug"]) =>
 /* The cover picture's own box — the frame both circles are measured off. The
    circle layer wears the same width class as the picture, so the two boxes line
    up exactly and the card's percentages mean the same thing here as there. */
+/* The Notifications copy: the phone is pinned to the column's right edge, so
+   the disc's centre follows it — 82.5% across is the middle of a picture that
+   is 35% of the column wide and flush right. Its diameter is half the stage's
+   height: the circle's previous size, cut in half. */
+const atlas2DiscStyle: CSSProperties = {
+  left: "82.5%",
+  top: "50%",
+  transform: "translate(-50%, -50%) scale(0.5)",
+};
+
 const coverWidth = (slug: CaseStudy["slug"]) =>
   slug === "atlas" || slug === "atlas2"
     ? "w-[35%]"
@@ -493,7 +503,7 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`cover-picture relative z-10 mx-auto overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
+    <div className={`cover-picture relative z-10 ${c.slug === "atlas2" ? "ml-auto" : "mx-auto"} overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
       <img key={c.slug} src={c.cover} alt={c.title} width={1400} height={1000} style={coverImageStyle(c.slug)} className="block h-auto w-full" />
     </div>
   );
@@ -549,7 +559,15 @@ function CaseStudyPage() {
             padding then gives the curve and its shadow room to finish inside the
             stage rather than being sliced off at its edge. A study with no card
             to echo keeps the disc centred on the whole stage, as before. */}
-        {cardDiscSlugs.has(c.slug) ? (
+        {c.slug === "atlas2" ? (
+          <div className="relative overflow-hidden py-[9%]">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div className="study-glass-ring absolute aspect-square h-full" style={atlas2DiscStyle} />
+              <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={atlas2DiscStyle} />
+            </div>
+            {coverPicture}
+          </div>
+        ) : cardDiscSlugs.has(c.slug) ? (
           <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
             <div className="relative">
               <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
@@ -570,9 +588,9 @@ function CaseStudyPage() {
         )}
       </section>
 
-      {/* Subtitle — sits below the banner, centred. */}
+      {/* Subtitle — sits below the banner, left aligned on the copy. */}
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
-        <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
+        <p className={`h3 max-w-4xl text-foreground/85 ${c.slug === "atlas2" ? "text-left" : "mx-auto text-center"}`}>
           {c.subtitle}
         </p>
       </section>
