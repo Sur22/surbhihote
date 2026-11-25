@@ -423,8 +423,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
             <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
             <span className="text-lg text-accent">How this was measured ↗</span>
           </div>
-          <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
-               style={{ gridTemplateColumns: "1fr 1.35fr 1fr" }}>
+          <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-[1fr_1.35fr_1fr] sm:gap-0"
+               >
             {c.outcome.map((o, i) => (
               <div key={o.label} className={i > 0 ? "sm:border-l sm:border-border sm:pl-8" : ""}
                    style={i === 1 ? { paddingRight: "24px" } : undefined}>
