@@ -3170,7 +3170,23 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {(c.slug !== "affiliate-platform-redesign") && (
         <section id="testing" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-[80px]" : "py-24"}`}>
-          <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
+          {c.slug === "atlas2" ? (
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end mb-12">
+              <div>
+                <p className="eyebrow mb-4">05 / Validation &amp; Iteration</p>
+                <h2 className="h2">
+                  The concept worked.
+                  <br />
+                  The details needed another pass.
+                </h2>
+              </div>
+              <p className="text-base leading-relaxed text-foreground/70">
+                Five participants tested six tasks covering subscription and unsubscription at company, product, phase, and stage levels. I tracked task completion and the time required.
+              </p>
+            </div>
+          ) : (
+            <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
+          )}
 
           {(c.slug !== "atlas" && c.slug !== "atlas2") && (
             <>
@@ -3181,11 +3197,12 @@ Users needed an easy way to control and manage the notifications they want and s
             </>
           )}
 
+          {c.slug !== "atlas2" && (<>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
           <ul className="space-y-6 text-lg leading-relaxed text-foreground/85">
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
-              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : (c.slug === "atlas" || c.slug === "atlas2") ? "For usability testing, I recruited 5 participants to test the prototype. The objective of the test was to identify how easily users are able to subscribe and unsubscribe from a particular product, company, stage, or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
+              <span>{c.slug === "fjord" ? "I did remote testing with 6 users 3 of each user group." : c.slug === "atlas" ? "For usability testing, I recruited 5 participants to test the prototype. The objective of the test was to identify how easily users are able to subscribe and unsubscribe from a particular product, company, stage, or phase of the product lifecycle." : "As testing started from the early stage with the initial wireframes, It was quite helpful in finding user needs and expectations and setting up for the right direction for design to fill the gaps in the functionality.\u00a0I recruited 5 participants to test the prototype."}</span>
             </li>
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
@@ -3204,13 +3221,14 @@ Users needed an easy way to control and manage the notifications they want and s
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span className="font-semibold">{c.slug === "fjord" ? "\u00a0The objective of the test was to identify how easily users are able to understand usability and how intuitive it is for users to complete the given task." : "Usability Test Findings\u00a0\u00a0"}</span>
             </li>
-            {c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "solace" && (
+            {c.slug !== "atlas" && c.slug !== "solace" && (
             <li className="flex gap-4">
               <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
               <span>{c.slug === "fjord" ? "Based on the test result data, not all users had knowledge of AND/OR logic, so I added a help section to help them understand how it works, so they can create segments with a clear understanding and more precisely.\u00a0\u00a0" : "Based on the test result data some changes were made to fix issues faced by the users."}</span>
             </li>
             )}
           </ul>
+          </>)}
 
           {/* Tech Pack Tool: the usability findings now read as a Usability
               finding / Evidence / Design decision / Intended impact table,
@@ -3287,6 +3305,24 @@ Users needed an easy way to control and manage the notifications they want and s
           {/* Notifications Management: usability findings as a Finding / Impact /
               Design response table, wearing the shared table treatment. */}
           {(c.slug === "atlas" || c.slug === "atlas2") && (<>
+            {c.slug === "atlas2" && (
+              <div className="mb-12 border-y border-foreground/20 py-8 grid grid-cols-2 md:grid-cols-4 gap-y-8">
+                {[
+                  { value: "5", label: "Participants" },
+                  { value: "6", label: "Tasks" },
+                  { value: "100", suffix: "%", label: "Task completion" },
+                  { value: "85", suffix: "%", label: "Error-free rate" },
+                ].map((s, i) => (
+                  <div key={s.label} className={i > 0 ? "md:border-l md:border-foreground/20 md:pl-8" : ""}>
+                    <p className="font-serif text-5xl leading-none">
+                      {s.value}
+                      {s.suffix && <span className="text-3xl">{s.suffix}</span>}
+                    </p>
+                    <p className="mt-3 text-sm text-muted-foreground">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
               <Table className="min-w-[820px]">
                 <TableHeader>
@@ -3340,12 +3376,18 @@ Users needed an easy way to control and manage the notifications they want and s
               </Table>
             </div>
 
+            {c.slug === "atlas2" ? (
+              <p className="mt-6 text-sm text-muted-foreground">
+                I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>.
+              </p>
+            ) : (
             <ul className="space-y-6 text-lg leading-relaxed text-foreground/85 mt-10">
               <li className="flex gap-4">
                 <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/60" aria-hidden />
                 <span>Based on the test result data some changes were made to fix issues faced by the users.</span>
               </li>
             </ul>
+            )}
           </>)}
 
 
@@ -3356,7 +3398,7 @@ Users needed an easy way to control and manage the notifications they want and s
             </p>
           )}
 
-          {c.slug !== "solace" && c.slug !== "fjord" && (
+          {c.slug !== "solace" && c.slug !== "fjord" && c.slug !== "atlas2" && (
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: "Test Completion Rate", value: "100%" },
