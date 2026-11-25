@@ -3774,56 +3774,50 @@ Users needed an easy way to control and manage the notifications they want and s
         </h2>
       </section>
 
-      {/* Surbhi's reflection block: its own headline on the left, the lesson
-          and the next validation on the right. It spans the full page width on
-          the plain page background, and every blue from her reference reads in
-          the copy page's orange instead. */}
+      {/* Surbhi's reflection block: one column — the headline first, then the
+          lesson and the next validation below it. It spans the full page width
+          on the plain page background, and every blue from her reference reads
+          in the copy page's orange instead. */}
       <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-14">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
-          <div>
-            <p className="eyebrow mb-5">07 / Reflection</p>
-            <h3 className="h3">
-              Control should
-              <br />
-              reduce the burden.
-              <br />
-              <em className="italic text-copy-orange-text">Not become it.</em>
-            </h3>
-          </div>
-          <div>
-            <p className="text-lg leading-relaxed text-foreground/85">
-              The hardest lesson was that giving people more control can also
-              give them more work.
-            </p>
-            <p className="mt-5 text-base leading-relaxed text-foreground/70">
-              Preferences across companies, products, and lifecycle stages
-              could become as overwhelming as the notification feed itself.
-              Role-based defaults gave users a useful starting point, with
-              customization available when they needed it.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-foreground/70">
-              Early engineering conversations mattered just as much. The
-              navigation change happened while the design was still easy to
-              revise, before it became a development problem.{"\n"}Notification
-              Templates: each user group starts with a default set mapped to
-              their job and validated against my research. Template creation
-              lives on web; on mobile, users inherit their role's template and
-              fine-tune it if they want. Most people get the right notifications
-              without ever opening settings control is there for the ones who
-              need it.{"\n\n\n\n"}
-            </p>
-            <div className="rule my-6" />
-            <p className="eyebrow mb-3 text-copy-orange-text">
-              What I would validate next
-            </p>
-            <p className="text-base leading-relaxed text-foreground/70">
-              How well do the role defaults continue to fit as
-              responsibilities change? I would test whether users can
-              understand and update their preferences across a growing set of
-              products.
-            </p>
-          </div>
-        </div>
+        <p className="eyebrow mb-5">07 / Reflection</p>
+        <h3 className="h3 mb-6">
+          Control should
+          <br />
+          reduce the burden.
+          <br />
+          <em className="italic text-copy-orange-text">Not become it.</em>
+        </h3>
+        <p className="text-lg leading-relaxed text-foreground/85">
+          The hardest lesson was that giving people more control can also
+          give them more work.
+        </p>
+        <p className="mt-5 text-base leading-relaxed text-foreground/70">
+          Preferences across companies, products, and lifecycle stages
+          could become as overwhelming as the notification feed itself.
+          Role-based defaults gave users a useful starting point, with
+          customization available when they needed it.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-foreground/70">
+          Early engineering conversations mattered just as much. The
+          navigation change happened while the design was still easy to
+          revise, before it became a development problem.{"\n"}Notification
+          Templates: each user group starts with a default set mapped to
+          their job and validated against my research. Template creation
+          lives on web; on mobile, users inherit their role's template and
+          fine-tune it if they want. Most people get the right notifications
+          without ever opening settings control is there for the ones who
+          need it.{"\n\n\n\n"}
+        </p>
+        <div className="rule my-6" />
+        <p className="eyebrow mb-3 text-copy-orange-text">
+          What I would validate next
+        </p>
+        <p className="text-base leading-relaxed text-foreground/70">
+          How well do the role defaults continue to fit as
+          responsibilities change? I would test whether users can
+          understand and update their preferences across a growing set of
+          products.
+        </p>
       </div>
 
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-0">
