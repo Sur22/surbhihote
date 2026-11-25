@@ -2351,23 +2351,50 @@ Users needed an easy way to control and manage the notifications they want and s
               before it becomes rework.
             </h3>
           </div>
-          <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-            The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
-          </p>
-          <p className="text-lg leading-relaxed text-foreground/85">
-            I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
-          </p>
-          <div className="mt-10 max-w-[510px] mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-[243px_243px] sm:justify-center items-start gap-6">
-              <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
-                <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-              </button>
-              <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
-                <img src={atlasNotificationChanges.url} alt="Mobile notification settings changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
-              </button>
+          {c.slug === "atlas2" ? (
+            /* Atlas2 only: the reference lays the two paragraphs around the
+               phone screens — the serif statement on the left, the review
+               note on the right, screens between them. */
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-8 items-center">
+              <p className="font-serif text-xl leading-relaxed">
+                The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
+              </p>
+              <div>
+                <div className="grid grid-cols-2 gap-4 justify-center">
+                  <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-[190px]">
+                    <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+                  </button>
+                  <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-[190px]">
+                    <img src={atlasNotificationChanges.url} alt="Mobile notification settings changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+                  </button>
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground text-center max-w-[400px]">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
+              </div>
+              <p className="text-base leading-relaxed text-muted-foreground">
+                I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
+              </p>
             </div>
-          </div>
-          <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
+          ) : (
+            <>
+              <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+                The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/85">
+                I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
+              </p>
+              <div className="mt-10 max-w-[510px] mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-[243px_243px] sm:justify-center items-start gap-6">
+                  <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
+                    <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+                  </button>
+                  <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
+                    <img src={atlasNotificationChanges.url} alt="Mobile notification settings changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+                  </button>
+                </div>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground text-center">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
+            </>
+          )}
         </section>
       )}
 
