@@ -18,6 +18,13 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-flow-band: var(--flow-band);
+  /* The Atlas2 "Scope & defaults" panel and its step cards: a cream container
+     holding white cards that must read the same in both themes, so each carries
+     its own token instead of a theme-flipping surface. */
+  --color-scope-panel: var(--scope-panel);
+  --color-scope-panel-border: var(--scope-panel-border);
+  --color-scope-card: var(--scope-card);
+  --color-scope-card-border: var(--scope-card-border);
   --color-ship-band: var(--ship-band);
   --color-ship-ink: var(--ship-ink);
   --color-ship-muted: var(--ship-muted);
@@ -124,6 +131,13 @@
   /* The flow band's peach, sampled from Surbhi's swatch. It stays put in the
      dark theme too, so it is set once here and never overridden below. */
   --flow-band: #f7e6d8;
+  /* The Atlas2 "Scope & defaults" panel's cream container and its white step
+     cards. Held in :root only, so a theme flip never shifts them — the panel
+     pins its own dark ink in the class below. */
+  --scope-panel: #f9f6f0;
+  --scope-panel-border: #e5dfd5;
+  --scope-card: #ffffff;
+  --scope-card-border: #e3e0da;
   /* The Affiliate copy page's "What shipped" band and fact cards keep these
      tones in both themes, so like the flow band they are set once here and
      never overridden in the dark block below. */
@@ -855,6 +869,25 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --foreground: oklch(0.18 0.02 60);
   --card-foreground: oklch(0.18 0.02 60);
   --muted-foreground: oklch(0.34 0.02 60);
+}
+
+/* The Atlas2 "Scope & defaults" panel: the cream container, held identical in
+   both themes like the peach band, so its ink is pinned dark here too. Its step
+   cards sit on it in white; the active card wears the page's orange highlight. */
+.scope-panel {
+  background-color: var(--scope-panel);
+  border: 1px solid var(--scope-panel-border);
+  --foreground: oklch(0.18 0.02 60);
+  --card-foreground: oklch(0.18 0.02 60);
+  --muted-foreground: oklch(0.34 0.02 60);
+}
+.scope-card {
+  background-color: var(--scope-card);
+  border: 1px solid var(--scope-card-border);
+}
+.scope-card-active {
+  background-color: color-mix(in srgb, var(--copy-orange-text) 8%, transparent);
+  border: 1px solid var(--copy-orange-text);
 }
 
 /* Affiliate2 copy page only: its own blue pair sampled from Surbhi's reference —

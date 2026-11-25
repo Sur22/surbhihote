@@ -2530,6 +2530,86 @@ Users needed an easy way to control and manage the notifications they want and s
         )}
       </section>
 
+      {/* Atlas2 only: the "Scope & defaults" decision pair that sits under the
+          task flow. Reference blues are converted to the copy page's orange. */}
+      {c.slug === "atlas2" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            <div>
+              <p className="eyebrow mb-4">Scope &amp; defaults</p>
+              <div className="flex items-baseline gap-4 mb-6">
+                <span className="font-serif text-3xl leading-none text-copy-orange-text">02</span>
+                <h3 className="font-serif text-3xl font-medium leading-tight">
+                  Start with the role.
+                  <br />
+                  Let the person fine-tune.
+                </h3>
+              </div>
+              <p className="font-serif text-xl leading-relaxed mb-8">
+                Giving users every toggle was not enough. Configuring them all could become another job.
+              </p>
+              <div className="space-y-6">
+                <div>
+                  <p className="eyebrow mb-2">The constraint</p>
+                  <p className="text-base leading-relaxed text-foreground/85">
+                    The product requirements included notification templates for different user types. Template creation was part of the web experience and outside the mobile scope.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow mb-2">The decision</p>
+                  <p className="text-base leading-relaxed text-foreground/85">
+                    I designed the mobile experience around the user’s assigned role template. Users could see and adjust those preferences, rather than having to build their notification setup from scratch.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow mb-2">The trade-off</p>
+                  <p className="text-base leading-relaxed text-foreground/85">
+                    Mobile would not have full administrative parity with web. It focused on the day-to-day need: receiving relevant notifications and changing personal preferences.
+                  </p>
+                </div>
+              </div>
+              <div className="why-matters-highlight mt-8">
+                <p className="eyebrow mb-3 text-copy-orange-text">Why it matters</p>
+                <p className="text-base leading-relaxed text-foreground/85">
+                  A useful default reduces setup effort. Personal control remains available when responsibilities change.
+                </p>
+              </div>
+            </div>
+            <div className="scope-panel rounded-xl p-6 md:p-8">
+              <p className="eyebrow mb-6 text-center">How the settings fit together</p>
+              <div>
+                {[
+                  { n: "01", title: "Role template", body: "A starting set for each user type.", tag: "Created on web", active: false },
+                  { n: "02", title: "Personal preferences", body: "View and adjust the assigned settings.", tag: "Available on mobile", active: true },
+                  { n: "03", title: "Delivery channel", body: "Choose email or text for relevant alerts.", tag: "Available on mobile", active: false },
+                ].map((step, i) => (
+                  <div key={step.n}>
+                    <div className={`rounded-lg p-5 ${step.active ? "scope-card-active" : "scope-card"}`}>
+                      <div className="flex items-baseline gap-3">
+                        <span className="font-serif text-lg leading-none text-copy-orange-text">{step.n}</span>
+                        <h4 className="font-serif text-lg font-medium">{step.title}</h4>
+                      </div>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
+                      <p className="eyebrow mt-3">{step.tag}</p>
+                    </div>
+                    {i < 2 && (
+                      <div className="flex justify-center py-2 text-copy-orange-text" aria-hidden>
+                        <span className="text-xl leading-none">↓</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <p className="mt-8 text-center font-serif text-xl leading-relaxed">
+                Defaults establish relevance.
+                <br />
+                Preferences make it personal.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {c.slug === "fjord" && (
         <>
           {/* User Flow */}
