@@ -2342,13 +2342,21 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {(c.slug === "atlas" || c.slug === "atlas2") && (
         <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-20">
-          <h3 className="font-serif text-3xl mb-6 font-medium">Review with Product & Engineering Team</h3>
-          <ul className="list-disc list-outside pl-6 text-lg leading-relaxed text-foreground/85 space-y-4">
-            <li>Reviewing the initial low fidelity clickable wireframes I presented them to the users to get their feedback on functionalities and the usability aspect of the design. After observing how they interact with the wireframe and getting feedback on the things which can be added I went for the second Iteration and again showed it to the users.</li>
-            <li>Reviewing designs with developers and CTO early stage is makes it easy and save the time and efforts in case if something is not feasible you might need to make many changes reviewed these with mobile developers to confirm feasibility of the designs also it makes them feel involved. Developers showed concern about the design, according to them nested pages inside the tabs.</li>
-            <li>To solve that problem I went back and changed few things. I converted tabs into 2 buttons and then again reached out to developers for their opinion the new option.</li>
-            <li>Developers and CTO gave me a green flag and I went ahead for the usability testing with users.</li>
-          </ul>
+          <p className="eyebrow mb-4">Engineering collaboration</p>
+          <div className="flex items-baseline gap-4 mb-6">
+            <span className="font-serif text-3xl leading-none text-copy-orange-text">03</span>
+            <h3 className="font-serif text-3xl font-medium leading-tight">
+              Change the navigation
+              <br />
+              before it becomes rework.
+            </h3>
+          </div>
+          <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+            The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
+          </p>
+          <p className="text-lg leading-relaxed text-foreground/85">
+            I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
+          </p>
           <div className="mt-10 max-w-[510px] mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-[243px_243px] sm:justify-center items-start gap-6">
               <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0">
