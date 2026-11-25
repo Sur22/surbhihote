@@ -100,6 +100,9 @@ import audienceSegmentFlow from "@/assets/audience-segment-flow.png.asset.json";
 import audienceFlowCreateNew from "@/assets/audience-flow-create-new.png.asset.json";
 import audienceFlowCopyModify from "@/assets/audience-flow-copy-modify.png.asset.json";
 import notificationsFinalScreens from "@/assets/notifications-final-screens-mockup.png.asset.json";
+import atlas2SolutionSettings from "@/assets/atlas2-solution-notifications-settings.png.asset.json";
+import atlas2SolutionProductList from "@/assets/atlas2-solution-product-list.png.asset.json";
+import atlas2SolutionEditCompany from "@/assets/atlas2-solution-edit-company.png.asset.json";
 import gridBg from "@/assets/grid-mockup-bg.png.asset.json";
 import audienceBuilderMockup2 from "@/assets/audience-builder-mockup-2.png.asset.json";
 import ampBgPersona from "@/assets/persona_cards_bg.png.asset.json";
@@ -3131,6 +3134,69 @@ Users needed an easy way to control and manage the notifications they want and s
       {/* Final Designs */}
       <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
+
+        {c.slug === "atlas2" && (
+          <div className="mb-16">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
+              <div>
+                <p className="eyebrow mb-4">02 / The Solution</p>
+                <h2 className="h2">
+                  The right alerts.
+                  <br />
+                  At the right level.
+                </h2>
+              </div>
+              <p className="text-base leading-relaxed text-foreground/70 md:text-right">
+                Follow a production manager narrowing notifications to the work
+                they need to track. Defaults provide a starting point; granular
+                controls let them fine-tune it.
+              </p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+              {[
+                {
+                  n: "01",
+                  title: "Start with a useful default",
+                  img: atlas2SolutionSettings.url,
+                  alt: "Notifications settings screen with grouped categories",
+                  body: "Review the notification types included in the settings, then adjust the ones that matter to the role.",
+                  note: "Grouped categories make a long list easier to navigate.",
+                },
+                {
+                  n: "02",
+                  title: "Focus on relevant products",
+                  img: atlas2SolutionProductList.url,
+                  alt: "Product list screen with subscription status and swipe action",
+                  body: "Choose which products to follow within a company, with subscription status visible in the list.",
+                  note: "Product-level control supports people managing many products.",
+                },
+                {
+                  n: "03",
+                  title: "Choose the event and channel",
+                  img: atlas2SolutionEditCompany.url,
+                  alt: "Edit company notifications screen with event and channel toggles",
+                  body: "Fine-tune event types and choose how notifications arrive, through email or text.",
+                  note: "Relevance is both what reaches you and where it reaches you.",
+                },
+              ].map((step) => (
+                <div key={step.n} className="flex flex-col">
+                  <p className="text-sm font-bold text-copy-orange-text">{step.n}</p>
+                  <h3 className="font-serif text-xl leading-snug mt-1 mb-5">{step.title}</h3>
+                  <img
+                    src={step.img}
+                    alt={step.alt}
+                    loading="lazy"
+                    className="mx-auto w-[72%] max-w-[260px] h-auto rounded-[8px] shadow-[0_18px_40px_-16px_rgba(0,0,0,0.45)]"
+                  />
+                  <p className="mt-5 text-sm leading-relaxed text-foreground/80">{step.body}</p>
+                  <div className="mt-4 border-l-2 border-copy-orange-text pl-3">
+                    <p className="text-sm font-bold leading-snug text-copy-orange-text">{step.note}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {c.slug === "fjord" ? (
           <>
