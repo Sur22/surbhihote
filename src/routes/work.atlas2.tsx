@@ -3205,7 +3205,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
               All seven original screens, from company and product subscriptions to profile settings, notification categories, and delivery preferences.
             </p>
-            <div className="overflow-hidden rounded-[8px] border border-foreground/20 bg-secondary p-4 md:p-8">
+            <div className="overflow-hidden rounded-[8px] border border-foreground/20 p-4 md:p-8">
               <div className="overflow-x-auto">
                 <img
                   src={notificationsFinalScreens.url}
