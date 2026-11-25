@@ -2228,7 +2228,7 @@ Users needed an easy way to control and manage the notifications they want and s
                       <div>
                         <p className="eyebrow mb-3">Why it matters</p>
                         <p className="text-base leading-relaxed text-foreground/85">
-                          Matching controls to the scope of the work meant each role saw only what it could act on—so the important alerts stopped competing with everything else.
+                          Control follows the user’s responsibility, from an organization down to a specific stage.
                         </p>
                       </div>
                     </div>
