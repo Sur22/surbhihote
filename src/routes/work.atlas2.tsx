@@ -420,18 +420,17 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
   if (c.slug === "atlas2") {
     return (
       <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
-        <div className="flex flex-col gap-10 md:flex-row md:gap-8">
-          <div className="md:w-[25%] md:shrink-0">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-6">
+          <div className="lg:w-[22%] lg:shrink-0">
             <p className="eyebrow mb-4">THE OUTCOME</p>
             <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
             <span className="text-lg text-accent">How this was measured ↗</span>
           </div>
-          <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-[1fr_1.35fr_1fr] sm:gap-0"
+          <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
                >
             {c.outcome.map((o, i) => (
-              <div key={o.label} className={i > 0 ? "sm:border-l sm:border-border sm:pl-8" : ""}
-                   style={i === 1 ? { paddingRight: "24px" } : undefined}>
-                <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line sm:whitespace-nowrap">
+              <div key={o.label} className={`min-w-0 sm:px-3 ${i > 0 ? "sm:border-l sm:border-border" : ""}`}>
+                <p className="display text-3xl lg:text-5xl text-accent mb-3 whitespace-pre-line sm:whitespace-nowrap">
                   {o.value}
                   <span className="text-[70%] ml-1">↓</span>
                 </p>
