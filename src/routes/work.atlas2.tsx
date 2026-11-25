@@ -3390,7 +3390,13 @@ Users needed an easy way to control and manage the notifications they want and s
             <p className="mt-4 text-base leading-relaxed text-foreground/70">
               Early engineering conversations mattered just as much. The
               navigation change happened while the design was still easy to
-              revise, before it became a development problem.
+              revise, before it became a development problem.{"\n"}Notification
+              Templates: each user group starts with a default set mapped to
+              their job and validated against my research. Template creation
+              lives on web; on mobile, users inherit their role's template and
+              fine-tune it if they want. Most people get the right notifications
+              without ever opening settings control is there for the ones who
+              need it.{"\n\n\n\n"}
             </p>
             <div className="rule my-6" />
             <p className="eyebrow mb-3 text-copy-orange-text">
@@ -3418,7 +3424,9 @@ Users needed an easy way to control and manage the notifications they want and s
 
             : c.slug === "fjord"
             ? "We successfully deployed the tool, and it significantly reduced the time for creating a custom audience, as users no longer had to wait for the Data team to make it for them — including those who did not have access to the paid tool. We saved a good amount for the company and were also able to provide a few more features than the existing tool by making it more intuitive. I learned to make sure all possible resources are available for users, for learning and smoother adoption."
-            : (c.slug === "atlas" || c.slug === "atlas2")
+            : c.slug === "atlas2"
+            ? "\n"
+            : c.slug === "atlas"
             ? <>
                 <strong>The design did what it set out to do:</strong> users could finally control notifications at the level that matched their work{"\u00A0"} company, product, and lifecycle stage and the critical alerts stopped drowning in the noise. That fed directly into fewer missed deadlines and a better client experience, which mattered for retention. But the harder lesson was that giving users control is not the same as reducing their burden. Preferences across that many levels can quietly become their own kind of overwhelm a settings screen as noisy as the feed it was meant to fix. So rather than hand users a blank grid of toggles, I leaned on role-based<br /><strong>Notification Templates:</strong> each user group starts with a default set mapped to their job and validated against my research. Template creation lives on web; on mobile, users inherit their role's template and fine-tune it if they want. Most people get the right notifications without ever opening settings{"\u00A0"} control is there for the ones who need it.
               </>
