@@ -411,6 +411,31 @@ const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
       { boxShadow: "0 18px 20px -18px color-mix(in srgb, var(--foreground) 30%, transparent)", border: "0.5px solid color-mix(in srgb, var(--foreground) 12%, transparent)" }
     : {};
 
+/* The Solution section's screens load lazily and expand the page as they enter
+   view, so a single smooth scroll can stop short of its target. Scroll there,
+   then re-aim while the page is still settling. */
+function smoothScrollToId(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const margin = parseFloat(getComputedStyle(el).scrollMarginTop) || 0;
+  const aim = (attempts: number) => {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    let lastY = -1;
+    const tick = () => {
+      const y = window.scrollY;
+      if (Math.abs(el.getBoundingClientRect().top - margin) <= 4) return;
+      if (Math.abs(y - lastY) < 1) {
+        if (attempts < 3) aim(attempts + 1);
+        return;
+      }
+      lastY = y;
+      window.setTimeout(tick, 150);
+    };
+    window.setTimeout(tick, 200);
+  };
+  aim(0);
+}
+
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const showImpactHeader = topOutcomeSlugs.has(c.slug);
   /* atlas2 copy only: outcome row (eyebrow + headline + measurement link on the
@@ -424,7 +449,16 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           <div className="lg:w-[22%] lg:shrink-0">
             <p className="eyebrow mb-4">THE OUTCOME</p>
             <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
-            <span className="text-lg text-accent">Explore The Decisions</span>
+            <a
+              href="#key-decision-heading"
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScrollToId("key-decision-heading");
+              }}
+              className="inline-block cursor-pointer text-lg text-accent hover:underline"
+            >
+              Explore The Decisions
+            </a>
           </div>
           <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
                >
