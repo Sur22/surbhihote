@@ -809,7 +809,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </div>
               <div className="rounded-2xl border border-foreground/15 p-8 md:p-10">
                 <p className="text-sm tracking-wide text-foreground/60 mb-4">User interviews</p>
-                <p className="h3 mb-6"><span className="text-5xl md:text-6xl text-foreground/60 align-middle">5</span> users interviewed</p>
+                <p className="h3 mb-6"><span className="text-5xl md:text-6xl text-foreground align-middle">5</span> users interviewed</p>
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Who:</strong> Textile Product Designers and Product Development Managers, who create styles from client requirements</p>
                 <p className="text-lg leading-relaxed text-foreground/70 mb-4"><strong className="text-foreground">Method:</strong> guerrilla, in-context desk interviews</p>
                 <p className="text-lg leading-relaxed text-foreground/70"><strong className="text-foreground">Why this method:</strong> the team was moving fast. Five users gave enough signal to direct design without stalling the sprint.</p>
