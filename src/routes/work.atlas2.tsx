@@ -433,7 +433,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                   <span className="text-[70%] ml-1">↓</span>
                 </p>
                 <p className="font-bold mb-1 whitespace-pre-line">{o.label}</p>
-                <p className="text-muted-foreground">—</p>
+                <p className="text-muted-foreground">{"\n"}</p>
               </div>
             ))}
           </div>
