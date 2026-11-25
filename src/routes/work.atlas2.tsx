@@ -373,19 +373,22 @@ const coverPad = (slug: CaseStudy["slug"]) =>
 /* The cover picture's own box — the frame both circles are measured off. The
    circle layer wears the same width class as the picture, so the two boxes line
    up exactly and the card's percentages mean the same thing here as there. */
-/* The Notifications copy: the phone is pinned to the column's right edge, so
-   the disc's centre follows it — 82.5% across is the middle of a picture that
-   is 35% of the column wide and flush right. Its diameter is half the stage's
-   height: the circle's previous size, cut in half. */
+/* The Notifications copy: the disc sits behind the phone, centred on the
+   picture's own box. The layer that carries it is the picture's box, so the
+   disc's diameter is that box's height times the scale below — 0.671 of it,
+   which is the 353px the disc measured at before the hero went two-column. */
 const atlas2DiscStyle: CSSProperties = {
-  left: "82.5%",
+  left: "50%",
   top: "50%",
-  transform: "translate(-50%, -50%) scale(0.5)",
+  transform: "translate(-50%, -50%) scale(0.671)",
 };
 
 const coverWidth = (slug: CaseStudy["slug"]) =>
   slug === "atlas" || slug === "atlas2"
-    ? "w-[35%]"
+    ? /* Phones: 35% of the full column, as before. Desktop: the picture lives
+         in the hero's right column, so 66% of that column keeps the phone the
+         same ~350px it measured at full width. */
+      "w-[35%] md:w-[66%]"
     : slug === "affiliate-platform-redesign"
       ? "w-[72%]"
       : slug === "solace"
@@ -534,7 +537,11 @@ function CaseStudyPage() {
           tagline, at its left. 30px of air sits above the row. The block's
           bottom padding is kept tight so the title sits closer to the cover
           picture. */}
-      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-[10px]">
+      {/* Hero — title block on the left (back arrow + tagline row, then the
+          title), cover mockup on the right, both in the same row on desktop;
+          they stack title-first on narrow screens. The same two-column product
+          hero the Affiliate copy wears. 30px of air sits above the row. */}
+      <section className="relative mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="flex items-center gap-4 mt-[30px] mb-8">
           <Link
             to="/"
@@ -546,28 +553,26 @@ function CaseStudyPage() {
           </Link>
           <span className="eyebrow">{c.tags.join(" · ")}</span>
         </div>
-        <h1 className="font-serif text-4xl mb-8 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
-      </section>
-
-      {/* Cover */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
-        {/* The same frosted disc and hollow ring that sit behind each mockup on
-            the homepage case-study cards, worn in the same place: for the three
-            studies the homepage links, both circles are measured off the cover
-            picture's own box — the frame the card measures off — so the disc
-            keeps the card's anchor and diameter at every width. The stage's
-            padding then gives the curve and its shadow room to finish inside the
-            stage rather than being sliced off at its edge. A study with no card
-            to echo keeps the disc centred on the whole stage, as before. */}
-        {c.slug === "atlas2" ? (
-          <div className="relative overflow-hidden py-[9%]">
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-              <div className="study-glass-ring absolute aspect-square h-full" style={atlas2DiscStyle} />
-              <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={atlas2DiscStyle} />
-            </div>
-            {coverPicture}
+        <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
+          <div className="md:w-[42%] md:shrink-0">
+            <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
           </div>
-        ) : cardDiscSlugs.has(c.slug) ? (
+          <div className="md:flex-1 md:min-w-0">
+            {/* The same frosted disc and hollow ring that sit behind each mockup
+                on the homepage case-study cards. On the copy the disc is
+                measured off the picture's own box, so it keeps that anchor and
+                diameter at every width. */}
+            {c.slug === "atlas2" ? (
+              <div className="relative overflow-hidden py-[9%]">
+                <div className="relative">
+                  <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ml-auto ${coverWidth(c.slug)}`}>
+                    <div className="study-glass-ring absolute aspect-square h-full" style={atlas2DiscStyle} />
+                    <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={atlas2DiscStyle} />
+                  </div>
+                  {coverPicture}
+                </div>
+              </div>
+            ) : cardDiscSlugs.has(c.slug) ? (
           <div className={`relative overflow-hidden ${coverPad(c.slug)}`}>
             <div className="relative">
               <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto ${coverWidth(c.slug)}`}>
@@ -586,6 +591,8 @@ function CaseStudyPage() {
             {coverPicture}
           </div>
         )}
+          </div>
+        </div>
       </section>
 
       {/* Subtitle — sits below the banner, left aligned on the copy. */}
