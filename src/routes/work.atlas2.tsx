@@ -587,7 +587,7 @@ function CaseStudyPage() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
               <div>
                 <p className="eyebrow mb-4">02 / The Solution</p>
-                <h2 className="h2">
+                 <h2 className="h3">
                   The right alerts.
                   <br />
                   At the right level.
@@ -648,7 +648,7 @@ function CaseStudyPage() {
         {c.slug === "atlas2" ? (
           <>
             <p className="eyebrow mb-4">Final Designs</p>
-            <h3 className="h2 mb-6">The complete mobile experience</h3>
+            <h3 className="h3 mb-6">The complete mobile experience</h3>
             <p className="text-lg leading-relaxed text-foreground/85 mb-10">
               All seven original screens, from company and product subscriptions to profile settings, notification categories, and delivery preferences.
             </p>
@@ -1000,9 +1000,8 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           )}
           {c.slug === "atlas2" && (
             <div>
-              <h2 id="the-problem-heading" className="scroll-mt-24 font-serif text-3xl mb-6 font-medium">The Problem</h2>
-              <p className="eyebrow mb-4">01 / The Challenge</p>
-              <h2 className="h2 mb-8">
+              <p id="the-problem-heading" className="eyebrow mb-4 scroll-mt-24">01 / The Challenge</p>
+              <h2 className="h3 mb-8">
                 When everything is urgent,
                 <br />
                 the important things disappear.
@@ -1249,7 +1248,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             <div className="mb-12">
               <p className="eyebrow">03 / Research that shaped the design</p>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
-                <h3 className="font-serif text-4xl md:text-5xl font-normal leading-[1.1]">
+                <h3 className="h3 leading-[1.1]">
                   Different responsibilities. Different definitions of
                   &ldquo;important.&rdquo;
                 </h3>
@@ -3411,7 +3410,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end mb-12">
               <div>
                 <p className="eyebrow mb-4">05 / Validation &amp; Iteration</p>
-                <h2 className="h2">
+                <h2 className="h3">
                   The concept worked.
                   <br />
                   The details needed another pass.
