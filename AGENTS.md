@@ -13,3 +13,4 @@
 - Copy-page orange text uses a separate text token scoped to its page wrapper, so text color edits never recolor shared borders, fills, or other studies.
 - Affiliate copy decision tabs live in a copy-only component and its route supplies explicit side-nav sections, so new content and navigation never affect the original study.
 - Affiliate copy Solution stories live in a copy-only component using existing blue highlight tokens and artwork, so their content and placement stay independent of the original study.
+- Notifications copy page /work/atlas2 is an independent copy of the Notifications study with its own route file and data entry, so edits to one never affect the other.

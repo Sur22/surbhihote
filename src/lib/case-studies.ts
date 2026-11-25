@@ -1,6 +1,5 @@
 import affiliateDashboard from "@/assets/affiliate-dashboard-orders.png.asset.json";
 import solace from "@/assets/techpack-monitor-mockup.png.asset.json";
-import atlas from "@/assets/case-atlas.png.asset.json";
 import notificationBanner from "@/assets/notification-banner.png.asset.json";
 import notificationBannerTilted from "@/assets/notification-banner-tilted.png";
 import audienceBuilderMockup from "@/assets/audience-builder-mockup.png.asset.json";
@@ -527,23 +526,28 @@ const _caseStudies: CaseStudy[] = [
     ],
   },
   {
+    /* Independent copy of the Notifications Management study (atlas), rendered
+       by src/routes/work.atlas2.tsx. Edits here never touch the original. */
     slug: "atlas2",
     index: "05",
     hidden: true,
-    title: "Redesign Product Page\u00a0",
-    subtitle: "Organizing and managing notifications to granular level",
+    title: "Notifications Management - Less Noise, More Signals\u00a0",
+    cardTitle: "Notifications Management\u00a0",
+    subtitle: "\n",
+    cardSubtitle: "Organizing and managing notifications to granular level",
     client: "Atlas, NYC",
     year: "2024",
     ...defaultMeta,
     overview:
-      "Ampersand is a multiscreen advanced TV advertising company empowering brands to reach audiences with precision at scale. Ampersand is jointly owned by the largest cable operators in the US — Comcast, COX, and Charter. The cross-screen, data-driven solutions, powered by America’s largest TV inventory and largest set of data viewership insights, are revolutionizing TV planning, buying, and measurement. There are three lines of business: National, Local, and Addressable.",
+      "The GRID is end-to-end supply chain visibility from product conception to distribution with real-time updates and analytics on sourcing, product development, production, and shipping. For companies running their supply chain on Excel sheets and point solutions, the GRID functions as the ERP and as an intuitive supply chain productivity layer. For companies that have legacy PIMs and ERPs, the GRID integrates to connect people, data, and workflows. In either role, the GRID delivers quick time to value by eliminating errors and digitizing manual processes thereby reducing OpEx and COGS and improving margins.",
     goal:
-      "As a solution to this problem, we wanted to build a tool where\u00a0\n1. Account Executives and Account Directors could build the custom audience without depending on the Data Team.\n2.\u00a0 Cut the waiting time for Account Executives & Account Directors\n\u00a0 \u00a0 \u00a0-The Data team took on average a week of turnaround time to fulfill a custom audience creation.\n3. Take this responsibility off the Data team shoulders.\n4. Cut down the cost of the external tool used to build custom audiences.\u00a0",
+      "As a solution to the problem, we are providing an easy way to manage notification preferences at all levels from Product, Company, Files, Comments, Product Development phases and stages, Vendors, Billing, etc. so users can avoid unwanted notifications while still receiving those crucial to their day-to-day responsibilities of handling the product lifecycle efficiently. The goal is to give users  flexibility and control on subscribing to the notifications which are useful and important for their job.\n1. Provide different user types ability to pick and choose the notifications that they would like to receive\n2. Serve users ability to choose the notifications that they would like to receive per module and per product\n3. Allow users ability to switch on/off notifications at any point of time\n\n",
+    timeframe: "2 Weeks",
     research: {
       ...defaultMeta.research,
       userInterviewInsights: [
         {
-          quote: '"Only few notifications are really important to me, I should be able to control which notifications I want to see and which one I don\'t."',
+          quote: '"Only few notifications are really important to me ,I should be able to control which notifications I want to see and which one I don\'t."',
           author: "Client",
         },
         {
@@ -555,44 +559,43 @@ const _caseStudies: CaseStudy[] = [
           author: "Product Development Manager",
         },
         {
-          quote: '"Managing more than 40+ products for a client company is pretty hectic and notifications are a mess"',
+          quote: '"Managing more than 40 + products for a client company is pretty hectic and notifications are a mess "',
           author: "Company Account Manager",
         },
       ],
     },
-    role: "Founding UI UX Designer (Sole)",
-    tags: ["mobile", "iOS", "Android", "PLM", "ERP"],
-    cover: atlas.url,
+    role: "Founding UI UX Designer (Sole)\n\n\n\n",
+    tags: ["SUUCHI", "PLM", "MOBILE", "IOS", "ANDROID\u00a0", "FOUNDING & SOLE DESIGNER"],
+    cover: notificationBannerTilted,
     summary:
-      "Product page redesign for a supply-chain PLM web app — restructuring layout and information density to reduce clutter and speed up findability.",
+      "Mobile notifications redesign for a supply-chain PLM on iOS and Android \u2014 granular preferences that cut spam from 64% to 7% and missed alerts by 84%.",
     keywords:
-      "product page redesign UX, supply chain PLM design, enterprise product page UI, PLM web app design, information density UX, B2B product page design", 
+      "enterprise notification system design, notification UX, mobile notification preferences, PLM notification design, iOS Android notification UX, supply chain alerts UX",
     problem:
       "Atlas had a beautiful map and a separate, ugly itinerary. Users were copying place names between the two all day. Conversion to paid was stuck at 1.8% because the free product never felt finished.",
     approach: [
       "Killed the two-panel layout. Map and list now share one scroll surface that responds to zoom.",
-      "Designed 'pinch-to-day' — a gesture that collapses the map to a calendar strip and back.",
-      "Built a kit of 9 itinerary blocks (meal, transit, stay, note…) that snap to the map.",
-      "Shipped a public beta to the existing power-user community in week 7 — their feedback shaped v1.",
+      "Designed 'pinch-to-day' \u2014 a gesture that collapses the map to a calendar strip and back.",
+      "Built a kit of 9 itinerary blocks (meal, transit, stay, note\u2026) that snap to the map.",
+      "Shipped a public beta to the existing power-user community in week 7 \u2014 their feedback shaped v1.",
     ],
     outcome: [
-      { label: "Reduction in Missed Deadlines", value: "-48%" },
-      { label: "Client Satisfaction Rate Increased ", value: "43 → 52" },
-      { label: "Reduced Missed Notifications", value: "87%" },
-      { label: "User Satisfaction\u00a0\u00a0", value: "+9" },
+      { label: "Missed deadlines", value: "38%" },
+      { label: "Irrelevant\u00a0Notifications Reduced\u00a0", value: "68% \u2192 7%" },
+      { label: "Reduction in missed alerts", value: "84%" },
     ],
     sections: [
       {
         heading: "One surface",
-        body: "The single biggest fix was geometric. Map and itinerary had been two panels arguing for attention. We collapsed them into one continuous canvas — the map IS the document, the pins ARE the list. Suddenly planning felt like sketching on a napkin again.",
+        body: "The single biggest fix was geometric. Map and itinerary had been two panels arguing for attention. We collapsed them into one continuous canvas \u2014 the map IS the document, the pins ARE the list. Suddenly planning felt like sketching on a napkin again.",
       },
       {
         heading: "Pinch-to-day",
-        body: "A single gesture switches the canvas between geographic and chronological views. Pinch in: you see the trip on a map. Pinch out: you see it on a calendar. Same content, two lenses. We prototyped this in Origami before committing — gesture work doesn't survive being mocked up in Figma.",
+        body: "A single gesture switches the canvas between geographic and chronological views. Pinch in: you see the trip on a map. Pinch out: you see it on a calendar. Same content, two lenses. We prototyped this in Origami before committing \u2014 gesture work doesn't survive being mocked up in Figma.",
       },
       {
         heading: "Snap blocks",
-        body: "9 itinerary block types — meal, stay, transit, note, photo, link, ticket, day-header, free-time. Each snaps to a pin and inherits its color. The constraint kept the surface clean and let us avoid building a form-builder.",
+        body: "9 itinerary block types \u2014 meal, stay, transit, note, photo, link, ticket, day-header, free-time. Each snaps to a pin and inherits its color. The constraint kept the surface clean and let us avoid building a form-builder.",
       },
     ],
   },

@@ -622,6 +622,15 @@ function IndexPage() {
           </div>
         </div>
 
+        <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <Link
+            to="/work/atlas2"
+            className="text-sm text-muted-foreground underline underline-offset-4 decoration-foreground/30 hover:text-foreground hover:decoration-foreground transition-colors"
+          >
+            Notifications Management (copy)
+          </Link>
+        </div>
+
       </section>
 
       {/* Closing contact band — left-aligned, with the two ways in, wearing the

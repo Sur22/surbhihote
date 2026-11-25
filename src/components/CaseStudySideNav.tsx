@@ -31,7 +31,7 @@ function getSections(slug?: string): Section[] {
     }
   }
 
-  if (slug === "solace" || slug === "solace2" || slug === "atlas") {
+  if (slug === "solace" || slug === "solace2" || slug === "atlas" || slug === "atlas2") {
     const testingIdx = sections.findIndex((s) => s.id === "testing");
     if (testingIdx !== -1) {
       sections.splice(testingIdx, 0, { id: "design-process", label: "Design" });

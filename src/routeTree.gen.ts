@@ -24,6 +24,7 @@ import { Route as AiIndexRouteImport } from './routes/ai.index'
 import { Route as AiSlugRouteImport } from './routes/ai.$slug'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as WorkAffiliate2RouteImport } from './routes/work.affiliate2'
+import { Route as WorkAtlas2RouteImport } from './routes/work.atlas2'
 import { Route as WorkFjord2RouteImport } from './routes/work.fjord2'
 import { Route as WorkSolace2RouteImport } from './routes/work.solace2'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
@@ -107,6 +108,11 @@ const WorkAffiliate2Route = WorkAffiliate2RouteImport.update({
   path: '/work/affiliate2',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorkAtlas2Route = WorkAtlas2RouteImport.update({
+  id: '/work/atlas2',
+  path: '/work/atlas2',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkFjord2Route = WorkFjord2RouteImport.update({
   id: '/work/fjord2',
   path: '/work/fjord2',
@@ -139,6 +145,7 @@ export interface FileRoutesByFullPath {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/affiliate2': typeof WorkAffiliate2Route
+  '/work/atlas2': typeof WorkAtlas2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
@@ -159,6 +166,7 @@ export interface FileRoutesByTo {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/affiliate2': typeof WorkAffiliate2Route
+  '/work/atlas2': typeof WorkAtlas2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai': typeof AiIndexRoute
@@ -180,6 +188,7 @@ export interface FileRoutesById {
   '/ai/$slug': typeof AiSlugRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/affiliate2': typeof WorkAffiliate2Route
+  '/work/atlas2': typeof WorkAtlas2Route
   '/work/fjord2': typeof WorkFjord2Route
   '/work/solace2': typeof WorkSolace2Route
   '/ai/': typeof AiIndexRoute
@@ -202,6 +211,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/affiliate2'
+    | '/work/atlas2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai/'
@@ -222,6 +232,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/affiliate2'
+    | '/work/atlas2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai'
@@ -242,6 +253,7 @@ export interface FileRouteTypes {
     | '/ai/$slug'
     | '/work/$slug'
     | '/work/affiliate2'
+    | '/work/atlas2'
     | '/work/fjord2'
     | '/work/solace2'
     | '/ai/'
@@ -263,6 +275,7 @@ export interface RootRouteChildren {
   AiSlugRoute: typeof AiSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
   WorkAffiliate2Route: typeof WorkAffiliate2Route
+  WorkAtlas2Route: typeof WorkAtlas2Route
   WorkFjord2Route: typeof WorkFjord2Route
   WorkSolace2Route: typeof WorkSolace2Route
   AiIndexRoute: typeof AiIndexRoute
@@ -376,6 +389,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkAffiliate2RouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/work/atlas2': {
+      id: '/work/atlas2'
+      path: '/work/atlas2'
+      fullPath: '/work/atlas2'
+      preLoaderRoute: typeof WorkAtlas2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/fjord2': {
       id: '/work/fjord2'
       path: '/work/fjord2'
@@ -417,6 +437,7 @@ const rootRouteChildren: RootRouteChildren = {
   AiSlugRoute: AiSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
   WorkAffiliate2Route: WorkAffiliate2Route,
+  WorkAtlas2Route: WorkAtlas2Route,
   WorkFjord2Route: WorkFjord2Route,
   WorkSolace2Route: WorkSolace2Route,
   AiIndexRoute: AiIndexRoute,
