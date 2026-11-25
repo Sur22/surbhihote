@@ -7,7 +7,7 @@ import { AiTestingFlowDiagramCopy } from "@/components/AiTestingFlowDiagramCopy"
 // Belongs to AI for Testing only. Never share or reuse this string in another
 // AI panel: each panel keeps its own validation line.
 const testingValidationLead =
-  "Behavioral evidence → AI-assisted pattern analysis → your validation against event definitions and user feedback.";
+  "\u00a0AI for Testing - Behavioral evidence → AI-assisted pattern analysis → your validation against event definitions and user feedback.";
 
 
 const steps = [

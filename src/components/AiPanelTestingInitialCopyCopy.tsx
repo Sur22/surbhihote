@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 // Belongs to AI for UX Writing only. Never share or reuse this string in
 // another AI panel: each panel keeps its own validation line.
 const uxWritingValidationLead =
-  "AI generated the options. I defined what was appropriate for the user.";
+  "AI for UX Writing\u00a0 - AI generated the options. I defined what was appropriate for the user.";
 
 const steps = [
   {

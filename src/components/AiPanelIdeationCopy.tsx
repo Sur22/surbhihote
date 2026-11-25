@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 // Belongs to AI for Ideation only. Never share or reuse this string in
 // another AI panel: each panel keeps its own validation line.
 const ideationValidationLead =
-  "AI explored the possibilities. I made the design decisions.";
+  "AI for Ideation - AI explored the possibilities. I made the design decisions.";
 
 const steps = [
   {

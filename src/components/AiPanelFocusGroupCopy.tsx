@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 // Belongs to AI for Research - Qualitative only. Never share or reuse this
 // string in another AI panel: each panel keeps its own validation line.
 const focusGroupValidationLead =
-  "AI expanded the range of possibilities; I evaluated, refined, and shaped the ideas into the final design.";
+  "AI for Qualitative\u00a0 Research - AI expanded the range of possibilities; I evaluated, refined, and shaped the ideas into the final design.";
 
 const steps = [
   {
