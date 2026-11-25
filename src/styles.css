@@ -131,10 +131,10 @@
   /* The flow band's peach, sampled from Surbhi's swatch. It stays put in the
      dark theme too, so it is set once here and never overridden below. */
   --flow-band: #f7e6d8;
-  /* The Atlas2 "Scope & defaults" panel's cream container and its white step
+  /* The Atlas2 "Scope & defaults" panel's white container and its white step
      cards. Held in :root only, so a theme flip never shifts them — the panel
      pins its own dark ink in the class below. */
-  --scope-panel: #f9f6f0;
+  --scope-panel: #ffffff;
   --scope-panel-border: #e5dfd5;
   --scope-card: #ffffff;
   --scope-card-border: #e3e0da;
@@ -871,7 +871,7 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --muted-foreground: oklch(0.34 0.02 60);
 }
 
-/* The Atlas2 "Scope & defaults" panel: the cream container, held identical in
+/* The Atlas2 "Scope & defaults" panel: the white container, held identical in
    both themes like the peach band, so its ink is pinned dark here too. Its step
    cards sit on it in white; the active card wears the page's orange highlight. */
 .scope-panel {
