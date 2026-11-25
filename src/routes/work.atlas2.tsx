@@ -2184,6 +2184,57 @@ Users needed an easy way to control and manage the notifications they want and s
                   {"Give Control to User = Make User Feel Empowered = Better User Experience"}
                 </p>
               </div>
+              {c.slug === "atlas2" && (
+                <div className="mt-14 mb-4">
+                  <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight mb-6">
+                    The choices that made control practical.
+                  </h3>
+                  <p className="text-lg leading-relaxed text-foreground/85 max-w-2xl">
+                    From the structure of the settings to a navigation change prompted by engineering, these decisions shaped what users could do on mobile.
+                  </p>
+                  <hr className="border-foreground/15 my-10" />
+                  <p className="eyebrow mb-4">Information Architecture</p>
+                  <div className="flex items-baseline gap-4 mb-8">
+                    <span className="font-serif text-3xl leading-none text-copy-orange-text">01</span>
+                    <h4 className="font-serif text-3xl font-medium leading-tight">
+                      Match the controls to the scope of the work.
+                    </h4>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                    <div className="space-y-8">
+                      <p className="font-serif text-2xl leading-relaxed">
+                        A company-wide setting alone could not cover someone following a few products—or one specific production stage.
+                      </p>
+                      <div>
+                        <p className="eyebrow mb-3">The starting point</p>
+                        <p className="text-base leading-relaxed text-foreground/85">
+                          Users received updates across the product lifecycle without a way to choose the ones relevant to their responsibilities.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="eyebrow mb-3">The decision</p>
+                        <p className="text-base leading-relaxed text-foreground/85">
+                          I organized notification control at three levels: company, product, and lifecycle phase or stage. Users could manage a broad subscription, then narrow it to the work they needed to track.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="space-y-8">
+                      <div>
+                        <p className="eyebrow mb-3">The trade-off</p>
+                        <p className="text-base leading-relaxed text-foreground/85">
+                          Granularity created more choices. Grouping notification types and reusing the same control pattern helped keep the structure understandable.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="eyebrow mb-3">Why it matters</p>
+                        <p className="text-base leading-relaxed text-foreground/85">
+                          Matching controls to the scope of the work meant each role saw only what it could act on—so the important alerts stopped competing with everything else.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
               <div className="rounded-[8px] p-4 flex items-center justify-center">
                 <img
                   src={atlasStrategyDiagram.url}
