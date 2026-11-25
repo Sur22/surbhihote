@@ -3552,6 +3552,11 @@ Users needed an easy way to control and manage the notifications they want and s
                 ))}
               </div>
             )}
+            {c.slug === "atlas2" && (
+              <p className="mb-6 text-sm text-muted-foreground">
+                I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>.
+              </p>
+            )}
             <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
               <Table className="min-w-[820px]">
                 <TableHeader>
@@ -3607,7 +3612,7 @@ Users needed an easy way to control and manage the notifications they want and s
 
             {c.slug === "atlas2" ? (
               <p className="mt-6 text-sm text-muted-foreground">
-                I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>.
+                Task completion did not mean an issue-free experience. The observed confusion shaped the next iteration.
               </p>
             ) : (
             <ul className="space-y-6 text-lg leading-relaxed text-foreground/85 mt-10">
