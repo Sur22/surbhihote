@@ -2356,12 +2356,14 @@ Users needed an easy way to control and manage the notifications they want and s
                phone screens — the serif statement on the left, the review
                note on the right, screens between them. */
             <div>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-4">
-                The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
-              </p>
-              <p className="text-lg leading-relaxed text-foreground/85">
-                I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
-              </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-start">
+                <p className="font-serif text-xl leading-relaxed">
+                  The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
+                </p>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
+                </p>
+              </div>
               <div className="mt-10 mx-auto w-fit grid grid-cols-2 gap-10 justify-center items-start">
                 <div className="w-[190px]">
                   <div className="flex items-center justify-between gap-2 mb-2">
