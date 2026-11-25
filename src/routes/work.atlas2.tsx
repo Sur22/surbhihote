@@ -441,7 +441,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
             ))}
           </div>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-10 border-t border-border pt-10 sm:grid-cols-2 md:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-10 border-t border-border pt-10 sm:grid-cols-2 md:grid-cols-4">
           <div>
             <p className="eyebrow mb-3">MY ROLE</p>
             <p className="text-foreground/90">{c.role}</p>
