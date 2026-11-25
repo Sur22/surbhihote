@@ -575,7 +575,7 @@ function CaseStudyPage() {
   return (
     <SiteLayout>
       <div
-        className={`study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas") ? "study-neutral-img-bg" : ""}`}
+        className={`study-shell [&_img]:cursor-zoom-in ${(c.slug === "fjord" || c.slug === "affiliate-platform-redesign") ? "study-fjord-bg" : ""} ${(c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "study-neutral-img-bg" : ""}`}
         onClick={(e) => {
           const target = e.target as HTMLElement;
           const img = target.closest("img") as HTMLImageElement | null;
@@ -839,11 +839,29 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 </div>
               </div>
               <p className="mt-8 text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
-                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
-\u00a01.Users getting so many spam notifications
-\u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
-\u00a03.Users need only selective set of notifications which are important for their job responsibilities\u00a0`}
+                {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications`}
               </p>
+              {/* The three problem points as Design Principle cards: the same
+                  peach surface, amber drop and rounded-xl, bold heading over body. */}
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
+                {[
+                  "Users getting so many spam notifications",
+                  "Important notifications for their job getting lost resulting into delays and missed deadlines",
+                  "Users need only selective set of notifications which are important for their job responsibilities",
+                ].map((point, idx) => (
+                  <div
+                    key={point}
+                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  >
+                    <div className="relative z-10 flex items-baseline gap-3">
+                      <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
+                        {idx + 1}
+                      </h4>
+                      <p className="text-sm text-card-foreground">{point}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {c.slug === "solace" && (
@@ -854,7 +872,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </p>
             </div>
           )}
-          {c.slug === "atlas" && (
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
             <div>
               <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -884,7 +902,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </div>
             </div>
           )}
-          {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && (
+          {c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas" && c.slug !== "atlas2" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">{(c.slug === "fjord") ? "The Problem" : "Goal"}</h2>
               <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -926,7 +944,7 @@ If AE's want to build a custom audience to for the clients would require to send
               </p>
             </div>
           )}
-          {c.slug === "atlas" && (
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
             <div className="mb-12">
               <h3 className="font-serif text-3xl mb-4 font-medium text-foreground/85">
                 Product Requirement Document
@@ -1087,7 +1105,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {/* User Journey — Notifications Management only, mirroring the Tech Pack
             Tool journey table: same shared-Table structure,
             the flat peach highlight on the Opportunity row. */}
-        {c.slug === "atlas" && (
+        {(c.slug === "atlas" || c.slug === "atlas2") && (
           <div className="mt-16">
             <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">User Journey</h3>
             <div className="journey-table">
@@ -3131,7 +3149,7 @@ Users needed an easy way to control and manage the notifications they want and s
                         src={img.src}
                         alt={img.label}
                         className="relative mx-auto h-auto shrink-0"
-                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
+                        style={(c.slug === "atlas" || c.slug === "atlas2") ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
                         loading="lazy"
                       />
                     </div>
@@ -3147,8 +3165,8 @@ Users needed an easy way to control and manage the notifications they want and s
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
-            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {c.slug !== "atlas" && c.slug !== "atlas2" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {c.slug !== "atlas" && c.slug !== "atlas2" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
             {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
           </Carousel>
         )}
