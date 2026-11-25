@@ -2203,7 +2203,7 @@ Users needed an easy way to control and manage the notifications they want and s
                   <p className="font-serif text-2xl leading-relaxed mb-8">
                     A company-wide setting alone could not cover someone following a few products—or one specific production stage.
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                     <div>
                       <p className="eyebrow mb-3">The starting point</p>
                       <p className="text-base leading-relaxed text-foreground/85">
