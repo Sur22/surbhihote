@@ -424,7 +424,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           <div className="lg:w-[22%] lg:shrink-0">
             <p className="eyebrow mb-4">THE OUTCOME</p>
             <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
-            <span className="text-lg text-accent">How this was measured ↗</span>
+            <span className="text-lg text-accent">Explore The Decisions</span>
           </div>
           <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
                >
