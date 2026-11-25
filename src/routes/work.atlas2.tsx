@@ -825,8 +825,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                         2
                       </h4>
                       <p className="text-sm text-card-foreground">
-                        Important notifications for their job getting lost
-                        resulting into delays and missed deadlines
+                        {"HOW MIGHT WE\nShow the notifications which are important to their job and avoid them from getting lost in the spam."}
                       </p>
                     </div>
                   </div>
