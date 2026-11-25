@@ -9,3 +9,6 @@
 - [x] Move Affiliate copy Solution below Key Decision in the page and side navigation.
 - [x] Replace its Solution carousel with the supplied sections in upload order, matching existing blue highlights.
 - [x] Verify the new sections, image, links, and phone layout.
+- [x] Add the supplied tagline, paragraph and See the solution button to the Notifications copy "At a glance" section.
+- [x] Add the same tagline, paragraph and See the solution button under the Notifications copy page title.
+- [x] Verify both placements and the button's jump to the solution.

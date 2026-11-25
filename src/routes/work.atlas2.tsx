@@ -556,6 +556,30 @@ function CaseStudyPage() {
         <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
           <div className="md:w-[42%] md:shrink-0">
             <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">{c.title}</h1>
+            <p className="h3 mb-6 text-foreground/85">
+              Notification management for the people keeping production moving.
+            </p>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-8">
+              Important alerts were getting buried. I designed role-aware
+              controls that let supply-chain teams choose what reaches them -
+              by company, product, lifecycle stage, and channel.
+            </p>
+            <Button variant="outline" size="lg" asChild>
+              <Link
+                to="."
+                hash="final-designs"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById("final-designs");
+                  if (el) {
+                    history.replaceState(null, "", "#final-designs");
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+              >
+                See the solution
+              </Link>
+            </Button>
           </div>
           <div className="md:flex-1 md:min-w-0">
             {/* The same frosted disc and hollow ring that sit behind each mockup
