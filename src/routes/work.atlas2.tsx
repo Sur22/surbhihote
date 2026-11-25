@@ -688,7 +688,9 @@ function CaseStudyPage() {
       {/* Outcome for case studies 02-04 */}
       {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
 
-      {/* Meta grid */}
+      {/* Meta grid — hidden on the atlas2 copy, whose new Impact grid already
+          carries role / scope / timeframe / partners / tools / tasks. */}
+      {c.slug !== "atlas2" && (
       <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8">
           {[
@@ -704,6 +706,7 @@ function CaseStudyPage() {
           ))}
         </div>
       </section>
+      )}
 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
