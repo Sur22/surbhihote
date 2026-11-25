@@ -3781,11 +3781,7 @@ Users needed an easy way to control and manage the notifications they want and s
       <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-14">
         <p className="eyebrow mb-5">07 / Reflection</p>
         <h3 className="h3 mb-6">
-          Control should
-          <br />
-          reduce the burden.
-          <br />
-          <em className="italic text-copy-orange-text">Not become it.</em>
+          Control should reduce the burden. Not become it.
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85">
           The hardest lesson was that giving people more control can also
