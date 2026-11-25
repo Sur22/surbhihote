@@ -871,6 +871,14 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   --muted-foreground: oklch(0.34 0.02 60);
 }
 
+/* Atlas2 copy page only: the brief, principle and level cards drop the peach
+   fill and wear the copy page's orange outline instead — #FF7600 on paper,
+   #ffa348 on ink. With no fill under them, their ink follows the theme rather
+   than the dark ink the peach surface pins. */
+.card-outline-orange {
+  border: 1px solid var(--copy-orange-text);
+}
+
 /* The Atlas2 "Scope & defaults" panel: the white container, held identical in
    both themes like the peach band, so its ink is pinned dark here too. Its step
    cards sit on it in white; the active card wears the page's orange highlight. */

@@ -1145,7 +1145,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                    className="card-outline-orange relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                   >
                     <div className="relative z-10">
                       <p className="font-bold mb-2">{item.title}</p>
@@ -1178,7 +1178,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                    className="card-outline-orange relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
                   >
                     <div className="relative z-10">
                       <p className="font-bold mb-2">{item.title}</p>
@@ -2387,7 +2387,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((principle) => (
                 <div
                   key={principle.title}
-                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  className={`${c.slug === "atlas2" ? "card-outline-orange" : "study-peach"} relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden`}
                 >
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
@@ -2761,7 +2761,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ].map((level) => (
                 <div
                   key={level.title}
-                  className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  className={`${c.slug === "atlas2" ? "card-outline-orange" : "study-peach"} relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden`}
                 >
                   <div className="relative z-10">
                     <h4 className="font-semibold leading-none tracking-tight text-lg mb-4">
