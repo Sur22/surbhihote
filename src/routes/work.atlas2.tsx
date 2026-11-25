@@ -817,15 +817,16 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   <p className="mt-4 text-xs text-muted-foreground">
                     Production Manager · User interview
                   </p>
-                  {/* Problem point 2 lives under the interview quote; points 1
-                      and 3 stay in the row below the ownership card. */}
+                  {/* The how-might-we statement sits under the interview quote:
+                      bold label, question on its own line, no number. */}
                   <div className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden mt-6">
-                    <div className="relative z-10 flex items-baseline gap-3">
-                      <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
-                        2
+                    <div className="relative z-10">
+                      <h4 className="font-bold leading-none tracking-tight text-lg">
+                        HOW MIGHT WE
                       </h4>
-                      <p className="text-sm text-card-foreground">
-                        {"HOW MIGHT WE\nShow the notifications which are important to their job and avoid them from getting lost in the spam."}
+                      <p className="mt-3 text-sm text-card-foreground">
+                        Show the notifications which are important to their job
+                        and avoid them from getting lost in the spam.
                       </p>
                     </div>
                   </div>
@@ -853,26 +854,6 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               <p className="mt-8 text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {"\n"}
               </p>
-              {/* The three problem points as Design Principle cards: the same
-                  peach surface, amber drop and rounded-xl, bold heading over body. */}
-              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 mb-[10px]">
-                {[
-                  "Users getting so many spam notifications",
-                  "Users need only selective set of notifications which are important for their job responsibilities",
-                ].map((point, idx) => (
-                  <div
-                    key={point}
-                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
-                  >
-                    <div className="relative z-10 flex items-baseline gap-3">
-                      <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
-                        {idx === 0 ? 1 : 3}
-                      </h4>
-                      <p className="text-sm text-card-foreground">{point}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           )}
           {c.slug === "solace" && (
