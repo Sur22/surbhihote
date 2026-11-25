@@ -575,6 +575,227 @@ function CaseStudyPage() {
     </div>
   );
 
+  /* The Solution section is hoisted into a variable so the atlas2 copy
+     can render it right after the Goal, while every other study keeps
+     it in its original place on the page. */
+  const finalDesignsSection = (
+      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
+        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
+
+        {c.slug === "atlas2" && (
+          <div className="mb-16">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
+              <div>
+                <p className="eyebrow mb-4">02 / The Solution</p>
+                <h2 className="h2">
+                  The right alerts.
+                  <br />
+                  At the right level.
+                </h2>
+              </div>
+              <p className="text-base leading-relaxed text-foreground/70 md:text-right">
+                Follow a production manager narrowing notifications to the work
+                they need to track. Defaults provide a starting point; granular
+                controls let them fine-tune it.
+              </p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+              {[
+                {
+                  n: "01",
+                  title: "Start with a useful default",
+                  img: atlas2SolutionSettings.url,
+                  alt: "Notifications settings screen with grouped categories",
+                  body: "Review the notification types included in the settings, then adjust the ones that matter to the role.",
+                  note: "Grouped categories make a long list easier to navigate.",
+                },
+                {
+                  n: "02",
+                  title: "Focus on relevant products",
+                  img: atlas2SolutionProductList.url,
+                  alt: "Product list screen with subscription status and swipe action",
+                  body: "Choose which products to follow within a company, with subscription status visible in the list.",
+                  note: "Product-level control supports people managing many products.",
+                },
+                {
+                  n: "03",
+                  title: "Choose the event and channel",
+                  img: atlas2SolutionEditCompany.url,
+                  alt: "Edit company notifications screen with event and channel toggles",
+                  body: "Fine-tune event types and choose how notifications arrive, through email or text.",
+                  note: "Relevance is both what reaches you and where it reaches you.",
+                },
+              ].map((step) => (
+                <div key={step.n} className="flex flex-col">
+                  <p className="text-sm font-bold text-copy-orange-text">{step.n}</p>
+                  <h3 className="font-serif text-xl leading-snug mt-1 mb-5">{step.title}</h3>
+                  <img
+                    src={step.img}
+                    alt={step.alt}
+                    loading="lazy"
+                    className="mx-auto w-[72%] max-w-[260px] h-auto rounded-[8px] shadow-[0_18px_40px_-16px_rgba(0,0,0,0.45)]"
+                  />
+                  <p className="mt-5 text-sm leading-relaxed text-foreground/80">{step.body}</p>
+                  <div className="mt-4 border-l-2 border-copy-orange-text pl-3">
+                    <p className="text-sm font-bold leading-snug text-copy-orange-text">{step.note}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {c.slug === "atlas2" ? (
+          <>
+            <p className="eyebrow mb-4">Final Designs</p>
+            <h3 className="h2 mb-6">The complete mobile experience</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+              All seven original screens, from company and product subscriptions to profile settings, notification categories, and delivery preferences.
+            </p>
+            <div className="overflow-hidden">
+              <div className="overflow-x-auto">
+                <img
+                  src={notificationsFinalScreens.url}
+                  alt="Final screens mockup — all seven notification management screens"
+                  loading="lazy"
+                  onClick={() => setZoomImg(notificationsFinalScreens.url)}
+                  className="h-auto w-[220%] max-w-none md:w-full md:max-w-full"
+                />
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Select the image to enlarge it. On smaller screens, scroll horizontally to see the full set.
+            </p>
+          </>
+        ) : c.slug === "fjord" ? (
+          <>
+            <div
+              className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+              style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg3.url})` }}
+            >
+              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
+              <div className="relative w-[85%] mx-auto">
+                <img
+                  src={audienceBuilderMockup2.url}
+                  alt="Audience Builder final screen"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                <a
+                  href="https://drive.google.com/file/d/1BqBCepSDL7VSyxSFTBBNYRDKje2RHUip/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
+                    <Play className="h-7 w-7 fill-current" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p className="mt-4 text-center text-sm text-muted-foreground">Click to watch a short video</p>
+          </>
+        ) : (
+          <Carousel
+            opts={{ loop: true }}
+            className={cn(
+              "relative group",
+              (c.slug === "affiliate-platform-redesign" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat pt-28 pb-12"
+            )}
+            style={
+              c.slug === "affiliate-platform-redesign"
+                ? { borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }
+                : c.slug === "solace"
+                  ? { borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }
+                  : undefined
+            }
+          >
+            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && (
+              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
+            )}
+            <CarouselContent className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
+              {(c.slug === "atlas"
+                ? [
+                    { src: notificationsFinalScreens.url, label: "Final screens mockup" },
+                  ]
+                : (c.slug === "affiliate-platform-redesign")
+                ? [
+                    { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
+                    { src: affiliateDashboard4.url, label: "After – orders dashboard" },
+                    { src: affiliateDashboardChanges2.url, label: "Dashboard – annotated changes" },
+                    { src: affiliateRevisedTab3.url, label: "Revised orders tab with filters and pagination" },
+                    { src: affiliateOrderPage3.url, label: "Revamped order details page" },
+                  ]
+                : [
+                    { src: finalToolScreens.url, label: "Tool screens" },
+                    { src: finalSketchSel.url, label: "Sketch selection" },
+                    { src: finalDetailedSketch.url, label: "Detailed sketch" },
+                    { src: finalColorMaterialDrawer.url, label: "Color and material drawer" },
+                    { src: finalBom.url, label: "Bill of Materials" },
+                    { src: finalPdf.url, label: "Exported PDF" },
+                    { src: finalProto.url, label: "Prototype overview" },
+                  ]
+              ).map((img, i) => (
+                <CarouselItem key={img.label} className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
+
+                  {c.slug === "atlas" ? (
+                    <div
+                      className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
+                      style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
+                    >
+                      <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
+                      <img
+                        src={img.src}
+                        alt={img.label}
+                        className="relative mx-auto h-auto shrink-0"
+                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
+                        loading="lazy"
+                      />
+                    </div>
+                  ) : (c.slug === "affiliate-platform-redesign") ? (
+                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none", borderRadius: i === 3 ? 8 : undefined }} loading="lazy" />
+                  ) : (c.slug === "solace") ? (
+                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%", borderRadius: i > 0 ? 8 : undefined }} loading="lazy" />
+                  ) : (
+                    <div className="overflow-hidden rounded-sm border border-border bg-secondary">
+                      <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
+                    </div>
+                  )}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
+          </Carousel>
+        )}
+
+
+        <p className={cn("text-lg leading-relaxed text-foreground/85", c.slug === "affiliate-platform-redesign" ? "mt-0" : "mt-10")}>
+          {(c.slug === "atlas" || c.slug === "atlas2") && (
+            <a
+              href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Click here to watch a short video{" "}
+            </a>
+          )}
+          {c.slug === "solace" && (
+            <a
+              href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold"
+            >
+              Click here to see PDF output
+            </a>
+          )}
+        </p>
+      </section>
+  );
+
   return (
     <SiteLayout>
       <div
@@ -997,6 +1218,7 @@ If AE's want to build a custom audience to for the clients would require to send
         </div>
       </section>
 
+      {c.slug === "atlas2" && finalDesignsSection}
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
@@ -3452,222 +3674,7 @@ Users needed an easy way to control and manage the notifications they want and s
         <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
       )}
 
-      {/* Final Designs */}
-      <section id="final-designs" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pb-24 pt-[80px]" : c.slug === "affiliate-platform-redesign" ? "pt-24 pb-0" : "py-24"}`}>
-        <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Solution</h2>
-
-        {c.slug === "atlas2" && (
-          <div className="mb-16">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
-              <div>
-                <p className="eyebrow mb-4">02 / The Solution</p>
-                <h2 className="h2">
-                  The right alerts.
-                  <br />
-                  At the right level.
-                </h2>
-              </div>
-              <p className="text-base leading-relaxed text-foreground/70 md:text-right">
-                Follow a production manager narrowing notifications to the work
-                they need to track. Defaults provide a starting point; granular
-                controls let them fine-tune it.
-              </p>
-            </div>
-            <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
-              {[
-                {
-                  n: "01",
-                  title: "Start with a useful default",
-                  img: atlas2SolutionSettings.url,
-                  alt: "Notifications settings screen with grouped categories",
-                  body: "Review the notification types included in the settings, then adjust the ones that matter to the role.",
-                  note: "Grouped categories make a long list easier to navigate.",
-                },
-                {
-                  n: "02",
-                  title: "Focus on relevant products",
-                  img: atlas2SolutionProductList.url,
-                  alt: "Product list screen with subscription status and swipe action",
-                  body: "Choose which products to follow within a company, with subscription status visible in the list.",
-                  note: "Product-level control supports people managing many products.",
-                },
-                {
-                  n: "03",
-                  title: "Choose the event and channel",
-                  img: atlas2SolutionEditCompany.url,
-                  alt: "Edit company notifications screen with event and channel toggles",
-                  body: "Fine-tune event types and choose how notifications arrive, through email or text.",
-                  note: "Relevance is both what reaches you and where it reaches you.",
-                },
-              ].map((step) => (
-                <div key={step.n} className="flex flex-col">
-                  <p className="text-sm font-bold text-copy-orange-text">{step.n}</p>
-                  <h3 className="font-serif text-xl leading-snug mt-1 mb-5">{step.title}</h3>
-                  <img
-                    src={step.img}
-                    alt={step.alt}
-                    loading="lazy"
-                    className="mx-auto w-[72%] max-w-[260px] h-auto rounded-[8px] shadow-[0_18px_40px_-16px_rgba(0,0,0,0.45)]"
-                  />
-                  <p className="mt-5 text-sm leading-relaxed text-foreground/80">{step.body}</p>
-                  <div className="mt-4 border-l-2 border-copy-orange-text pl-3">
-                    <p className="text-sm font-bold leading-snug text-copy-orange-text">{step.note}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {c.slug === "atlas2" ? (
-          <>
-            <p className="eyebrow mb-4">Final Designs</p>
-            <h3 className="h2 mb-6">The complete mobile experience</h3>
-            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
-              All seven original screens, from company and product subscriptions to profile settings, notification categories, and delivery preferences.
-            </p>
-            <div className="overflow-hidden">
-              <div className="overflow-x-auto">
-                <img
-                  src={notificationsFinalScreens.url}
-                  alt="Final screens mockup — all seven notification management screens"
-                  loading="lazy"
-                  onClick={() => setZoomImg(notificationsFinalScreens.url)}
-                  className="h-auto w-[220%] max-w-none md:w-full md:max-w-full"
-                />
-              </div>
-            </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Select the image to enlarge it. On smaller screens, scroll horizontally to see the full set.
-            </p>
-          </>
-        ) : c.slug === "fjord" ? (
-          <>
-            <div
-              className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
-              style={{ borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg3.url})` }}
-            >
-              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-              <div className="relative w-[85%] mx-auto">
-                <img
-                  src={audienceBuilderMockup2.url}
-                  alt="Audience Builder final screen"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1BqBCepSDL7VSyxSFTBBNYRDKje2RHUip/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 flex items-center justify-center"
-                >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/80 text-background backdrop-blur-sm">
-                    <Play className="h-7 w-7 fill-current" />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <p className="mt-4 text-center text-sm text-muted-foreground">Click to watch a short video</p>
-          </>
-        ) : (
-          <Carousel
-            opts={{ loop: true }}
-            className={cn(
-              "relative group",
-              (c.slug === "affiliate-platform-redesign" || c.slug === "solace") && "overflow-hidden bg-cover bg-center bg-no-repeat pt-28 pb-12"
-            )}
-            style={
-              c.slug === "affiliate-platform-redesign"
-                ? { borderRadius: "2.4%", backgroundImage: `url(${ampMockupBg2.url})` }
-                : c.slug === "solace"
-                  ? { borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }
-                  : undefined
-            }
-          >
-            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && (
-              <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
-            )}
-            <CarouselContent className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
-              {(c.slug === "atlas"
-                ? [
-                    { src: notificationsFinalScreens.url, label: "Final screens mockup" },
-                  ]
-                : (c.slug === "affiliate-platform-redesign")
-                ? [
-                    { src: affiliateSiteOldBefore.url, label: "Before – legacy affiliate site screens" },
-                    { src: affiliateDashboard4.url, label: "After – orders dashboard" },
-                    { src: affiliateDashboardChanges2.url, label: "Dashboard – annotated changes" },
-                    { src: affiliateRevisedTab3.url, label: "Revised orders tab with filters and pagination" },
-                    { src: affiliateOrderPage3.url, label: "Revamped order details page" },
-                  ]
-                : [
-                    { src: finalToolScreens.url, label: "Tool screens" },
-                    { src: finalSketchSel.url, label: "Sketch selection" },
-                    { src: finalDetailedSketch.url, label: "Detailed sketch" },
-                    { src: finalColorMaterialDrawer.url, label: "Color and material drawer" },
-                    { src: finalBom.url, label: "Bill of Materials" },
-                    { src: finalPdf.url, label: "Exported PDF" },
-                    { src: finalProto.url, label: "Prototype overview" },
-                  ]
-              ).map((img, i) => (
-                <CarouselItem key={img.label} className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
-
-                  {c.slug === "atlas" ? (
-                    <div
-                      className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
-                      style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
-                    >
-                      <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20" style={{ borderRadius: "2.4%" }} />
-                      <img
-                        src={img.src}
-                        alt={img.label}
-                        className="relative mx-auto h-auto shrink-0"
-                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
-                        loading="lazy"
-                      />
-                    </div>
-                  ) : (c.slug === "affiliate-platform-redesign") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "95.1%", maxWidth: "none", borderRadius: i === 3 ? 8 : undefined }} loading="lazy" />
-                  ) : (c.slug === "solace") ? (
-                    <img src={img.src} alt={img.label} className="relative mx-auto h-auto shrink-0" style={{ width: "85%", borderRadius: i > 0 ? 8 : undefined }} loading="lazy" />
-                  ) : (
-                    <div className="overflow-hidden rounded-sm border border-border bg-secondary">
-                      <img src={img.src} alt={img.label} className="w-full h-auto" loading="lazy" />
-                    </div>
-                  )}
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
-            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
-            {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
-          </Carousel>
-        )}
-
-
-        <p className={cn("text-lg leading-relaxed text-foreground/85", c.slug === "affiliate-platform-redesign" ? "mt-0" : "mt-10")}>
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
-            <a
-              href="https://drive.google.com/file/d/12F-QAC4Yt9fivd6rpBnIYHk5PuJeaLID/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-bold"
-            >
-              Click here to watch a short video{" "}
-            </a>
-          )}
-          {c.slug === "solace" && (
-            <a
-              href="https://drive.google.com/file/d/1s40aTeRAkNrIAgzvlOFE_5VQaNWTeA6s/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-bold"
-            >
-              Click here to see PDF output
-            </a>
-          )}
-        </p>
-      </section>
+      {c.slug !== "atlas2" && finalDesignsSection}
 
 
       {c.slug !== "affiliate-platform-redesign" && (

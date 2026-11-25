@@ -47,6 +47,13 @@ function getSections(slug?: string): Section[] {
         anchor: "the-problem-heading",
       });
     }
+    // Page order on this copy: … The Problem → Solution → Research …
+    const solution = sections.find((s) => s.id === "final-designs");
+    sections = sections.filter((s) => s.id !== "final-designs");
+    const problemIdx = sections.findIndex((s) => s.id === "the-problem");
+    if (solution && problemIdx !== -1) {
+      sections.splice(problemIdx + 1, 0, solution);
+    }
   }
 
   if (slug === "solace2") {
