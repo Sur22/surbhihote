@@ -1319,6 +1319,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               </div>
             </div>
           )}
+          {c.slug !== "atlas2" && (
           <div>
             <h3 className={`font-serif text-3xl font-medium text-foreground/85 ${c.slug === "solace" ? "mb-[30px]" : "mb-4"}`}>
               {(c.slug === "affiliate-platform-redesign") ? "Survey" : "User Interview"}
@@ -1363,6 +1364,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               )}
             </div>
           </div>
+          )}
           </div>
           {(c.slug === "fjord") && (
             <div className="mt-16">
@@ -1427,7 +1429,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
 
 
-        {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign") && (
+        {(c.slug !== "fjord" && c.slug !== "affiliate-platform-redesign" && c.slug !== "atlas2") && (
           <div className="mt-16 rounded-sm bg-band text-band-foreground border border-band-foreground/12 px-6 md:px-16 py-16 relative overflow-hidden">
             <div className="study-band-glass" />
             <div className="relative z-10">
