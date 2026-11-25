@@ -19,9 +19,16 @@ const nav = [
 /* Nav items hover in the accent colour: a soft blue tint behind the word and
    the accent colour on the text, instead of the text thickening. The padding
    that makes the tint room to breathe is offset by an equal negative margin,
-   so the words themselves never shift. */
+   so the words themselves never shift. The hover colour itself comes from
+   navHoverClass, so a single page can lift to orange instead. */
 const navItemClass =
-  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-link-hover hover:bg-accent/10 transition-colors";
+  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:bg-accent/10 transition-colors";
+
+/* Only the Notifications copy page hovers its links orange; every other page
+   keeps the blue accent hover. */
+const ORANGE_HOVER_PATH = "/work/atlas2";
+const navHoverClass = (pathname: string) =>
+  pathname.startsWith(ORANGE_HOVER_PATH) ? "hover:text-link-hover" : "hover:text-accent";
 
 /* The selected page's nav item wears a soft blue tint (the site's clay
    accent at low strength) plus a 1px accent line down its left edge, so it
@@ -51,7 +58,7 @@ function navIsActive(to: string, pathname: string): boolean {
   return pathname === to || pathname.startsWith(`${to}/`);
 }
 
-function ThemeToggle() {
+function ThemeToggle({ hoverClass }: { hoverClass: string }) {
   const { resolved, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
@@ -59,7 +66,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground hover:text-link-hover hover:bg-accent/10 transition-colors"
+      className={`group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground ${hoverClass} hover:bg-accent/10 transition-colors`}
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (
@@ -73,8 +80,9 @@ function ThemeToggle() {
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const hoverClass = navHoverClass(pathname);
   const itemClass = (to: string) =>
-    `${navItemClass}${navIsActive(to, pathname) ? ` ${navActiveProps.className}` : ""}`;
+    `${navItemClass} ${hoverClass}${navIsActive(to, pathname) ? ` ${navActiveProps.className}` : ""}`;
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
@@ -102,8 +110,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link to="/gallery" className={itemClass("/gallery")}>Gallery</Link>
             <Link to="/about" className={itemClass("/about")}>About</Link>
-            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={navItemClass}>Resume</a>
-            <ThemeToggle />
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={`${navItemClass} ${hoverClass}`}>Resume</a>
+            <ThemeToggle hoverClass={hoverClass} />
           </nav>
 
           {/* Mobile hamburger menu */}
@@ -134,13 +142,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                     </SheetClose>
                   ))}
                   <SheetClose asChild>
-                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1.5 ${navItemClass}`}>
+                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1.5 ${navItemClass} ${hoverClass}`}>
                       Resume
                     </a>
                   </SheetClose>
                 </div>
                 <div className="flex items-center gap-5 pt-6 border-t border-border">
-                  <ThemeToggle />
+                  <ThemeToggle hoverClass={hoverClass} />
                 </div>
               </div>
             </SheetContent>

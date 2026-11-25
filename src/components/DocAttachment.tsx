@@ -36,7 +36,7 @@ export function DocAttachments({ items }: { items: DocAttachmentItem[] }) {
               <FileText size={22} className="text-muted-foreground" />
             </span>
             <span className="min-w-0">
-              <span className="block text-base text-foreground group-hover:text-link-hover transition-colors">
+              <span className="block text-base text-foreground group-hover:text-accent transition-colors">
                 {item.label}
               </span>
               <span className="mt-1 block text-xs text-muted-foreground">

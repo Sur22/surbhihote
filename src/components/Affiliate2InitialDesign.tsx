@@ -64,7 +64,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
                   e.preventDefault();
                   scrollTo("key-decision");
                 }}
-                className="underline underline-offset-4 hover:text-link-hover transition-colors"
+                className="underline underline-offset-4 hover:text-azure transition-colors"
               >
                 Read the decision and supporting evidence
               </a>
@@ -93,7 +93,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
                 e.preventDefault();
                 scrollTo("final-designs");
               }}
-              className="underline underline-offset-4 hover:text-link-hover transition-colors"
+              className="underline underline-offset-4 hover:text-azure transition-colors"
             >
               Explore the rebuilt workflow
             </a>
@@ -127,7 +127,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
               e.preventDefault();
               scrollTo("annotated-dashboard");
             }}
-            className="underline underline-offset-4 hover:text-link-hover transition-colors"
+            className="underline underline-offset-4 hover:text-azure transition-colors"
           >
             See the original annotated dashboard
           </a>{" "}
