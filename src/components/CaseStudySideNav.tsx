@@ -54,6 +54,17 @@ function getSections(slug?: string): Section[] {
     if (solution && problemIdx !== -1) {
       sections.splice(problemIdx + 1, 0, solution);
     }
+
+    // Key Decisions lives inside the Design section on this page, so the nav
+    // carries its own entry directly below Design.
+    const designIdx = sections.findIndex((s) => s.id === "design-process");
+    if (designIdx !== -1) {
+      sections.splice(designIdx + 1, 0, {
+        id: "key-decision",
+        label: "Key Decision",
+        anchor: "key-decision-heading",
+      });
+    }
   }
 
   if (slug === "solace2") {
