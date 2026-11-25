@@ -864,7 +864,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </p>
             </div>
           )}
-          {(c.slug === "atlas" || c.slug === "atlas2") && (
+          {c.slug === "atlas" && (
             <div>
               <h2 className="font-serif text-3xl mb-4 font-medium">Goal</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
@@ -877,7 +877,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   .split("\n")
                   .slice(1)
                   .map((line) => line.replace(/^\s*\u00a0*\d+\.\s*/, "").trim())
-                  .filter(Boolean)
+                   .filter(Boolean)
                   .map((point, idx) => (
                     <div
                       key={point}
@@ -891,6 +891,78 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                       </div>
                     </div>
                   ))}
+              </div>
+            </div>
+          )}
+          {/* Surbhi's design brief replaces the Goal paragraph on this copy
+              page only: the problem and the goal each read as three cards on
+              the site's peach surface. */}
+          {c.slug === "atlas2" && (
+            <div>
+              <p className="eyebrow mb-4">The Design Brief</p>
+              <h3 className="font-serif text-3xl md:text-4xl font-normal mb-10">
+                From notification overload to useful control
+              </h3>
+
+              <h4 className="h4 mb-5">The problem</h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[
+                  {
+                    title: "Too much noise",
+                    body: "Users received too many unwanted notifications.",
+                  },
+                  {
+                    title: "Important alerts got lost",
+                    body: "Missed notifications led to delays and missed deadlines.",
+                  },
+                  {
+                    title: "Different responsibilities",
+                    body: "Each user needed a selective set of notifications relevant to their job.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  >
+                    <div className="relative z-10">
+                      <p className="font-bold mb-2">{item.title}</p>
+                      <p className="text-sm text-card-foreground">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <h4 className="h4 mt-12 mb-5">The goal</h4>
+              <p className="text-lg leading-relaxed text-foreground/85">
+                Give users flexibility to manage notifications across companies,
+                products, files, comments, development phases and stages,
+                vendors, and billing.
+              </p>
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[
+                  {
+                    title: "Choose what to receive",
+                    body: "Give different user types the ability to select the notifications they need.",
+                  },
+                  {
+                    title: "Choose the level",
+                    body: "Let users set preferences by module and by product.",
+                  },
+                  {
+                    title: "Change preferences anytime",
+                    body: "Allow users to switch notifications on or off as their needs change.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden"
+                  >
+                    <div className="relative z-10">
+                      <p className="font-bold mb-2">{item.title}</p>
+                      <p className="text-sm text-card-foreground">{item.body}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           )}
