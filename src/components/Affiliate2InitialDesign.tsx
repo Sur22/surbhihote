@@ -12,7 +12,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
   return (
     <div>
       {/* Expose the assumptions — text column left, early-screens collage right. */}
-      <div className="border-t border-border pt-14 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
+      <div className="border-t border-border pt-12 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
         <div>
           <p className="eyebrow mb-4">Expose the assumptions</p>
           <h3 className="h3 mb-6">Early designs raised questions we couldn’t answer internally.</h3>
@@ -38,7 +38,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
       </p>
 
       {/* Review panel — the site's blue highlight surface. */}
-      <div className="mt-16 border-l-2 border-azure bg-cell-highlight px-6 py-8 md:px-8">
+      <div className="mt-12 border-l-2 border-azure bg-cell-highlight px-6 py-8 md:px-8">
         <p className="eyebrow mb-4">Review with users, product &amp; engineering team</p>
         <h3 className="h3 mb-6">Internal review exposed the questions only affiliates could answer.</h3>
         <div className="grid gap-8 md:grid-cols-2">
@@ -74,7 +74,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
       </div>
 
       {/* Revise around the evidence — heading left, outcome copy right. */}
-      <div className="mt-16 border-t border-border pt-14 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
+      <div className="mt-12 border-t border-border pt-12 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] md:gap-12">
         <div>
           <p className="eyebrow mb-4">Revise around the evidence</p>
           <h3 className="h3">Keep recognition. Improve visibility.</h3>
@@ -102,7 +102,7 @@ export function Affiliate2InitialDesign({ onZoom }: { onZoom: (src: string) => v
       </div>
 
       {/* Interface craft — three detail columns. */}
-      <div className="mt-16 border-t border-border pt-14">
+      <div className="mt-12 border-t border-border pt-12">
         <p className="eyebrow mb-4">Interface craft</p>
         <h3 className="h3 mb-6 max-w-3xl">The important details were inside a dense working surface.</h3>
         <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">

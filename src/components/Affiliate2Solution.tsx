@@ -53,9 +53,9 @@ function Result({ children }: { children: ReactNode }) {
 
 export function Affiliate2Solution() {
   return (
-    <section id="key-decision" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+    <section id="key-decision" className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24">
       <h2 className="h2 mb-8">Key Decisions</h2>
-      <div className="mb-16">
+      <div className="mb-12">
         <p className="eyebrow mb-5">The decisions behind the screens</p>
         <h3 className="h3 mb-6">Four choices that shaped the rebuilt portal.</h3>
         <p className="max-w-4xl text-lg leading-relaxed mb-10">The key choices balanced familiar working habits, clearer order activity, release scope, and the limits of external research access.</p>
@@ -79,7 +79,7 @@ export function Affiliate2Solution() {
         </div>
       </div>
 
-      <article id="story-familiarity" className="space-y-8 border-t border-border pt-16 pb-16 scroll-mt-24">
+      <article id="story-familiarity" className="space-y-8 border-t border-border py-12 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Familiarity</p>
           <h3 className="h3 mb-6 max-w-4xl">I kept the order cues stakeholders thought we could remove.</h3>
@@ -107,7 +107,7 @@ export function Affiliate2Solution() {
         <Result>The final design preserved the cues the team had considered removing. The focus groups changed both the interface and the rollout plan: meaningful improvements could ship without asking affiliates to relearn every part of their work at once.</Result>
       </article>
 
-      <article id="story-visibility" className="space-y-8 border-t border-border pt-16 pb-16 scroll-mt-24">
+      <article id="story-visibility" className="space-y-8 border-t border-border py-12 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Order visibility</p>
           <h3 className="h3 mb-6 max-w-4xl">I moved order activity into view instead of leaving affiliates to keep checking.</h3>
@@ -134,7 +134,7 @@ export function Affiliate2Solution() {
         <Result>The project reported a <strong>78% reduction in manual refreshes</strong> and <strong>$0 in business lost since launch.</strong> These were project-level outcomes across the rebuilt workflows; the visibility changes directly addressed the manual checking and unnoticed orders surfaced in research.</Result>
       </article>
 
-      <article id="story-release" className="space-y-8 border-t border-border pt-16 scroll-mt-24">
+      <article id="story-release" className="space-y-8 border-t border-border py-12 scroll-mt-24">
         <header>
           <p className="eyebrow mb-4">Decision story · Release strategy</p>
           <h3 className="h3 mb-6 max-w-4xl">I deferred bigger changes so the first release could restore the work people depended on.</h3>
@@ -169,7 +169,7 @@ export function Affiliate2Solution() {
 function ValidationStory() {
   const [loopOpen, setLoopOpen] = useState(false);
   return (
-    <article id="story-validation" className="space-y-8 border-t border-border pt-16 scroll-mt-24">
+    <article id="story-validation" className="space-y-8 border-t border-border pt-12 scroll-mt-24">
       <header>
         <p className="eyebrow mb-4">Decision story · Validation</p>
         <h3 className="h3 mb-6 max-w-4xl">I validated the redesign through real use without asking affiliates for another research round.</h3>

@@ -32,7 +32,7 @@ const decisions = [
 
 export function Affiliate2KeyDecision() {
   return (
-    <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+    <section id="final-designs" className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24">
       <h2 className="h2 mb-8">Solution</h2>
       <h3 className="h3 mb-6">Know what needs attention. Keep the context. Review the order.</h3>
       <p className="max-w-3xl text-lg leading-relaxed text-foreground/85 mb-10">

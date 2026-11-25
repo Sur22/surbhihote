@@ -307,7 +307,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
     { value: "2×", label: "Faster page loading", down: false },
   ];
   return (
-    <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
+    <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-16 scroll-mt-24">
       <div className="grid gap-10 md:grid-cols-[1.35fr_3fr] md:gap-0">
         <div className="md:pr-10">
           <p className="eyebrow mb-4">The outcome</p>
@@ -474,11 +474,11 @@ function CaseStudyPage() {
       </section>
 
       {/* Subtitle — sits below the banner, centred. */}
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
+      {c.subtitle.trim() && <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
         <p className="h3 max-w-4xl mx-auto text-center text-foreground/85">
           {c.subtitle}
         </p>
-      </section>
+      </section>}
 
       {/* Outcome for case studies 02-04 */}
       {topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
@@ -527,7 +527,7 @@ function CaseStudyPage() {
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Overview + Goal */}
-      <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${c.slug === "affiliate-platform-redesign" ? "pb-20" : (c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
+      <section id="overview" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-16 scroll-mt-24 ${c.slug === "affiliate-platform-redesign" ? "pb-16" : (c.slug === "atlas" || c.slug === "atlas2") ? "pb-0" : "pb-24"}`}>
 
         <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
@@ -706,7 +706,7 @@ If AE's want to build a custom audience to for the clients would require to send
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Research */}
-      <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24">
+      <section id="research" className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24">
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Research</h2>
         <p className="eyebrow mb-4">Research &amp; Artifacts</p>
         <h3 className="h3 mb-6">The people and workflows behind the decisions.</h3>
@@ -1549,7 +1549,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       )}
 
       {/* Strategy / Workshop */}
-      <section id={c.slug === "affiliate-platform-redesign" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
+      <section id={c.slug === "affiliate-platform-redesign" ? "workshop" : "strategy"} className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24" style={{ display: (c.slug === "atlas" || c.slug === "atlas2" || c.slug === "fjord") ? "none" : undefined }}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">{c.strategySectionTitle || ((c.slug === "atlas" || c.slug === "atlas2") ? "\n" : "Strategy")}</h2>
         {(c.slug !== "atlas" && c.slug !== "atlas2" && c.slug !== "affiliate-platform-redesign") && (
           <h3 className="font-serif text-3xl mb-6 font-medium">{c.slug === "solace" ? "Vision" : (c.strategySectionSubtitle || "Product + Design Strategy")}</h3>
@@ -1760,14 +1760,12 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         {c.strategy.productGoals.workshopAttendees?.trim() && c.strategy.productGoals.workshopSchedule?.trim() ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
               <p
                 className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
                 dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopAttendees }}
               />
             </div>
             <div>
-              <h4 className="font-serif text-2xl mb-4 font-medium">{"\n"}</h4>
               <p
                 className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-foreground"
                 dangerouslySetInnerHTML={{ __html: c.strategy.productGoals.workshopSchedule }}
@@ -1803,7 +1801,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={defineImg1.url} alt="Affiliate workshop define session reviewing survey results" className="w-full h-auto object-contain" />
               </div>
-              <p className="text-[10px] leading-relaxed text-foreground/85 mt-4 mb-[72px]">
+              <p className="text-[10px] leading-relaxed text-foreground/85 mt-4 mb-12">
                 The workshop began with a walkthrough of the existing portal, user groups, and survey findings.
               </p>
               <div>
@@ -1811,9 +1809,9 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 <p className="text-lg leading-relaxed text-foreground/85 mb-6 whitespace-pre-line">
                   {"My first step before starting any project is to understand: why are we doing this project?\nSo I asked the same question to the Product Manager and the Stakeholders. The reasons the affiliate website needs to be redesigned are as follows.\n"}
                 </p>
-                <div className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line mb-0">
-                  <p>{c.goal}</p>
-                </div>
+                {c.goal.trim() && (
+                  <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">{c.goal.trim()}</p>
+                )}
               </div>
               <div className="rounded-sm pt-[10px] pb-16">
                 <h3 className="font-serif text-3xl mb-6 font-normal">Problems to Opportunity</h3>
@@ -1859,9 +1857,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                   </p>
                 </div>
               </div>
-              <p className="text-lg leading-relaxed text-foreground/85 mt-8">
-                {"\n"}
-              </p>
             </div>
 
             <div className="mt-16">
@@ -1938,9 +1933,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
 
             <div className="mt-16">
               <h3 className="font-serif text-3xl mb-6 font-medium">The Team</h3>
-              <p className="text-lg leading-relaxed text-foreground/85 mb-8">
-                {"\n"}
-              </p>
               <div className="overflow-hidden rounded-sm bg-secondary p-2">
                 <img src={teamPhoto.url} alt="The project team" className="w-full h-auto object-contain" />
               </div>
@@ -2008,7 +2000,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
       <div className="mx-auto max-w-[1080px] px-6 md:px-10"><div className="rule" /></div>
 
       {/* Initial Sketches */}
-      <section id="design-process" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-0" : "py-24"}`}>
+      <section id="design-process" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-0" : "py-16"}`}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Design</h2>
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
@@ -2200,7 +2192,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {/* Brainstorming */}
-      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "affiliate-platform-redesign" ? "pt-[50px] pb-24" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
+      <section className={`mx-auto max-w-[1080px] px-6 md:px-10 ${c.slug === "solace" ? "pt-[100px] pb-0" : c.slug === "affiliate-platform-redesign" ? "pt-12 pb-16" : c.slug === "atlas" || c.slug === "atlas2" ? "pt-0 pb-24" : "py-24"}`}>
         <h2 className={`font-serif mb-8 ${c.slug === "solace" ? "text-3xl font-medium" : c.slug === "affiliate-platform-redesign" ? "font-serif text-3xl mb-6 font-medium" : c.slug === "fjord" ? "font-serif text-3xl mt-12 mb-6 font-medium" : c.slug === "atlas" || c.slug === "atlas2" ? "font-serif text-3xl mb-6 font-medium" : "text-4xl md:text-5xl font-normal"}`}>{(c.slug === "affiliate-platform-redesign") ? "Initial Design" : (c.slug === "atlas" || c.slug === "atlas2") ? "User Flow" : (c.slug === "fjord") ? "Wire-framing & Feedback" : "Brainstorming Session With Product Team"}</h2>
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <>
@@ -2524,7 +2516,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {(c.slug === "affiliate-platform-redesign") && (
-        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 py-24 pb-0 scroll-mt-24">
+        <section id="testing" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16 pb-0 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">Usability Testing&nbsp;</h3>
           <div className="mt-[15px] mb-10 relative overflow-hidden border-l-2 border-azure px-6 py-8 md:px-8 text-foreground dark:text-primary bg-cell-highlight">
@@ -2564,7 +2556,7 @@ Users needed an easy way to control and manage the notifications they want and s
         </section>
       )}
       {(c.slug === "affiliate-platform-redesign") && (
-        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-[80px] pb-24 scroll-mt-24">
+        <section id="ai-impact" className="mx-auto max-w-[1080px] px-6 md:px-10 py-16 scroll-mt-24">
           <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">AI Impact</h2>
           <p className="eyebrow mb-4">AI and design judgment</p>
           <h3 className="h3 mb-6 max-w-3xl">AI expanded the options. I stayed accountable for the choices.</h3>
@@ -2925,7 +2917,7 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {c.slug === "affiliate-platform-redesign" && (
-        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24">
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-16">
           <p className="eyebrow mb-4">Outcomes</p>
           <h3 className="font-serif text-4xl md:text-5xl font-normal mb-14">Less checking. More visible work. Restored workflows.</h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-10 mb-16">
@@ -2967,11 +2959,11 @@ Users needed an easy way to control and manage the notifications they want and s
       )}
 
       {/* Reflection */}
-      <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-[80px]" : "pt-24")}>
+      <section id={topOutcomeSlugs.has(c.slug) ? "reflection" : "impact"} className={cn("mx-auto max-w-[1080px] px-6 md:px-10 pb-0 scroll-mt-24", c.slug === "affiliate-platform-redesign" ? "pt-16" : "pt-24")}>
         <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">
           Reflection
         </h2>
-        <div className="mb-20">
+        <div className="mb-16">
           {c.slug === "affiliate-platform-redesign"
             ? <>
                 <p className="eyebrow mb-4">Reflection and Future Scope</p>
@@ -3031,17 +3023,6 @@ Users needed an easy way to control and manage the notifications they want and s
 
       {/* Outcomes for case studies without top metrics */}
       {!topOutcomeSlugs.has(c.slug) && <OutcomeMetrics c={c} />}
-
-      <section className="mx-auto max-w-[1080px] px-6 md:px-10 pb-10">
-        <p className="text-lg leading-relaxed text-foreground/85">
-          {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "atlas" || c.slug === "atlas2" || c.slug === "solace") ? "\n" : (
-            <>
-              <strong className="font-semibold">With the final prototype created, I believe I met the goals that were outlined in the beginning of the design process.</strong> I successfully designed Techpack editor tool along with Material, CAD, Techpack Libraries.
-            </>
-          )}
-        </p>
-      </section>
-
 
       <div id="case-study-end" aria-hidden />
 

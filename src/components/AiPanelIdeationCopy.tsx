@@ -28,7 +28,7 @@ const steps = [
     title: "Designer-Led Synthesis\u00a0",
     subtitle: "",
     lead: ideationValidationLead,
-    body: "AI-generated concepts were treated as design inputs, not solutions. I evaluated them against user needs, product constraints, and the existing design system before incorporating and refining relevant ideas into the final experience.I validated the findings against accessibility guidelines and the actual interface before making design decisions.\n\n\n\n",
+    body: "AI-generated concepts were treated as design inputs, not solutions. I evaluated them against user needs, product constraints, and the existing design system before incorporating and refining relevant ideas into the final experience.I validated the findings against accessibility guidelines and the actual interface before making design decisions.",
   },
 ];
 
