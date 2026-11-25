@@ -2222,12 +2222,12 @@ Users needed an easy way to control and manage the notifications they want and s
                         Granularity created more choices. Grouping notification types and reusing the same control pattern helped keep the structure understandable.
                       </p>
                     </div>
-                    <div>
-                      <p className="eyebrow mb-3">Why it matters</p>
-                      <p className="text-base leading-relaxed text-foreground/85">
-                        Control follows the user’s responsibility, from an organization down to a specific stage.
-                      </p>
-                    </div>
+                  </div>
+                  <div className="why-matters-highlight mt-8">
+                    <p className="eyebrow mb-3 text-copy-orange-text">Why it matters</p>
+                    <p className="text-base leading-relaxed text-foreground/85">
+                      Control follows the user’s responsibility, from an organization down to a specific stage.
+                    </p>
                   </div>
                 </div>
               )}

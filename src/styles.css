@@ -767,6 +767,14 @@ html:not(.dark) :is(.study-neutral-img-bg .bg-secondary, .ai-card.bg-secondary, 
   border: 0;
 }
 
+/* Atlas2 Information Architecture: the "Why it matters" panel wears a soft
+   orange wash with an orange left bar, the copy page's highlight treatment. */
+.why-matters-highlight {
+  background-color: color-mix(in srgb, var(--copy-orange-text) 8%, transparent);
+  border-left: 2px solid var(--copy-orange-text);
+  padding: 1.5rem 2rem;
+}
+
 /* On the Tech Pack copy page the highlighted Opportunity row drops the peach
    fill and wears an orange outline instead, drawn on the cells because the
    table's own borders are zeroed above. */
