@@ -2241,13 +2241,18 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
           </>
         )}
-        <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
+        {c.slug === "atlas2" && (
+          <p className="eyebrow mt-12 mb-4">Iteration archive</p>
+        )}
+        <h3 className={`font-serif text-3xl mb-6 font-medium ${c.slug === "atlas2" ? "" : "mt-12"}`}>
           {(c.slug === "affiliate-platform-redesign") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "affiliate-platform-redesign") 
             ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild with the limited amount of information I had from the survey data.\u00a0"
-            : (c.slug === "atlas" || c.slug === "atlas2")
+            : c.slug === "atlas2"
+            ? "I used mid-fidelity wireframes to gather early user feedback, then reviewed the mobile interactions with developers before usability testing."
+            : c.slug === "atlas"
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
             ? "This tool design demanded custom a few component and some were reused for this project . \u00a0 \u00a0"
@@ -2337,6 +2342,16 @@ Users needed an easy way to control and manage the notifications they want and s
               </button>
             ))}
           </div>
+        )}
+        {c.slug === "atlas2" && (
+          <a
+            href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex items-center gap-2 text-lg font-medium underline underline-offset-4 hover:text-accent"
+          >
+            View the original usability test questions <span aria-hidden>↗</span>
+          </a>
         )}
       </section>
 
