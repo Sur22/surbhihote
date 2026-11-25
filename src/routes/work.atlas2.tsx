@@ -3407,6 +3407,7 @@ Users needed an easy way to control and manage the notifications they want and s
       {(c.slug !== "affiliate-platform-redesign") && (
         <section id="testing" className={`mx-auto max-w-[1080px] px-6 md:px-10 scroll-mt-24 ${c.slug === "solace" ? "pt-24 pb-[80px]" : "py-24"}`}>
           {c.slug === "atlas2" ? (
+            <>
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end mb-12">
               <div>
@@ -3421,6 +3422,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 Five participants tested six tasks covering subscription and unsubscription at company, product, phase, and stage levels. I tracked task completion and the time required.
               </p>
             </div>
+            </>
           ) : (
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
           )}
