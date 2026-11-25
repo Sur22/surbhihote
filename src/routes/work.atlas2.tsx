@@ -600,7 +600,7 @@ function CaseStudyPage() {
      circles are measured off, the same frame the homepage card measures its
      circle off. */
   const coverPicture = (
-    <div className={`cover-picture relative z-10 ${c.slug === "atlas2" ? "ml-auto" : "mx-auto"} overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
+    <div className={`cover-picture relative z-10 ${c.slug === "atlas2" ? "mx-auto md:ml-auto" : "mx-auto"} overflow-hidden ${c.slug === "affiliate-platform-redesign" ? "rounded-[8px]" : "rounded-sm"} ${coverWidth(c.slug)}`} style={coverPictureStyle(c.slug)}>
       <img key={c.slug} src={c.cover} alt={c.title} width={1400} height={1000} style={coverImageStyle(c.slug)} className="block h-auto w-full" />
     </div>
   );
@@ -902,7 +902,7 @@ function CaseStudyPage() {
             {c.slug === "atlas2" ? (
               <div className="relative overflow-hidden py-[9%]">
                 <div className="relative">
-                  <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 ml-auto ${coverWidth(c.slug)}`}>
+                  <div aria-hidden="true" className={`pointer-events-none absolute inset-0 z-0 mx-auto md:ml-auto ${coverWidth(c.slug)}`}>
                     <div className="study-glass-ring absolute aspect-square h-full" style={atlas2DiscStyle} />
                     <div className="study-glass-disc absolute aspect-square h-full overflow-hidden" style={atlas2DiscStyle} />
                   </div>
