@@ -426,10 +426,10 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
             <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
             <span className="text-lg text-accent">How this was measured ↗</span>
           </div>
-          <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-[max-content_1fr_1fr] sm:gap-0"
+          <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
                >
             {c.outcome.map((o, i) => (
-              <div key={o.label} className={`relative flex min-w-0 flex-col justify-center ${i === 0 ? "sm:pl-3 sm:pr-[15px]" : "sm:px-3 sm:before:absolute sm:before:left-0 sm:before:top-[32%] sm:before:h-[36%] sm:before:border-l sm:before:border-border sm:before:content-['']"}`}>
+              <div key={o.label} className={`relative flex min-w-0 flex-col justify-center sm:px-3 sm:text-center ${i === 0 ? "" : "sm:before:absolute sm:before:left-0 sm:before:top-[32%] sm:before:h-[36%] sm:before:border-l sm:before:border-border sm:before:content-['']"}`}>
                 <p className="display text-3xl lg:text-5xl text-accent mb-3 whitespace-pre-line sm:whitespace-nowrap">
                   {o.value}
                   <span className="text-[70%] ml-1">↓</span>
