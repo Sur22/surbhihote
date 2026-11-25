@@ -37,10 +37,7 @@ export function AiPanelTestingCopy() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-[100px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">
-        <span>AI for Testing </span>
-      </h3>
+    <div>
       {open ? (
         <div
           id="ai-testing-panel"

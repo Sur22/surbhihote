@@ -33,10 +33,7 @@ export function AiPanelSurveyCopy() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-[100px] mb-[30px]">
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">
-        <span>AI for Research - Quantitative </span>
-      </h3>
+    <div>
       {open ? (
         <div
           id="ai-research-quantitative-panel"

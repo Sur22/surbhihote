@@ -37,9 +37,6 @@ export function AiPanelIdeationCopy() {
 
   return (
     <div>
-      <h3 className="font-serif text-2xl md:text-3xl mb-6 font-normal">
-        <span>AI for Ideation </span>
-      </h3>
       {open ? (
         <div
           id="ai-ideation-panel"

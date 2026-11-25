@@ -909,9 +909,6 @@ As Grid mobile app does not have all the functionalities as the web version; in 
                 </Table>
               </div>
               <AiPanelFocusGroupCopy />
-              <div className="mt-8 flex items-baseline gap-4">
-                <p className="text-3xl md:text-4xl font-normal mb-1">{"\n"}</p>
-              </div>
         </section>
         <div id="user-groups" className="scroll-mt-24">
               <h3 className="font-serif text-2xl md:text-3xl mt-[100px] mb-6 font-normal">Understanding User Groups</h3>
