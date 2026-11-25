@@ -605,3 +605,13 @@ export const caseStudies = _caseStudies;
 
 export const getCaseStudy = (slug: string) =>
   caseStudies.find((c) => c.slug === slug);
+
+/** Original study slug -> its independent copy page, for "More case studies" links. */
+export const copyStudyPaths: Record<
+  string,
+  "/work/affiliate2" | "/work/solace2" | "/work/atlas2"
+> = {
+  "affiliate-platform-redesign": "/work/affiliate2",
+  solace: "/work/solace2",
+  atlas: "/work/atlas2",
+};

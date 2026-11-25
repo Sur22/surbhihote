@@ -36,7 +36,7 @@ import {
   TableRow,
   TableCell,
 } from "@/components/ui/table";
-import { caseStudies, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
+import { caseStudies, copyStudyPaths, getCaseStudy, type CaseStudy } from "@/lib/case-studies";
 import surveyImg1 from "@/assets/techpack-survey-1.png";
 import surveyImg3 from "@/assets/techpack-survey-3.png";
 import brainstormingImg from "@/assets/brainstorming-session.jpg";
@@ -2739,21 +2739,29 @@ As Grid mobile app does not have all the functionalities as the web version; in 
         <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-20 pb-10">
           <p className="eyebrow mb-10">More case studies</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            {others.map((o, i) => (
-              <Link
-                key={o.slug}
-                to="/work/$slug"
-                params={{ slug: o.slug }}
-                className={`group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`}
-              >
-                <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
-                  {o.cardTitle ?? o.title}
-                </h3>
-                <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
-                  Read the case study →
-                </span>
-              </Link>
-            ))}
+            {others.map((o, i) => {
+              const copyPath = copyStudyPaths[o.slug];
+              const className = `group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`;
+              const content = (
+                <>
+                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
+                    {o.cardTitle ?? o.title}
+                  </h3>
+                  <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
+                    Read the case study →
+                  </span>
+                </>
+              );
+              return copyPath ? (
+                <Link key={o.slug} to={copyPath} className={className}>
+                  {content}
+                </Link>
+              ) : (
+                <Link key={o.slug} to="/work/$slug" params={{ slug: o.slug }} className={className}>
+                  {content}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
