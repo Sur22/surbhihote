@@ -777,7 +777,68 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           {c.slug === "atlas2" && (
             <div>
               <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
-              <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
+              <p className="eyebrow mb-4">01 / The Challenge</p>
+              <h2 className="h2 mb-8">
+                When everything is urgent,
+                <br />
+                the important things disappear.
+              </h2>
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+                <div className="space-y-6">
+                  <p className="text-lg leading-relaxed text-foreground/85">
+                    On the GRID, notifications connect people to the next step
+                    in production. Missing one can hold up the work that
+                    follows.
+                  </p>
+                  <p className="text-base leading-relaxed text-foreground/70">
+                    The GRID is a supply-chain platform spanning sourcing,
+                    product development, manufacturing, and shipping. Clients
+                    and internal teams received notifications across these
+                    workflows, but had no way to manage which ones they
+                    received.
+                  </p>
+                  <p className="text-base leading-relaxed text-foreground/70">
+                    A production manager and a company account manager needed
+                    different information. Sending everything to everyone
+                    created more searching, missed alerts, and delayed action.
+                  </p>
+                </div>
+                <div className="md:border-l md:border-border md:pl-10">
+                  <span
+                    aria-hidden="true"
+                    className="font-serif text-5xl leading-none text-clay"
+                  >
+                    “
+                  </span>
+                  <blockquote className="font-serif text-2xl leading-snug text-foreground">
+                    Once I missed out on an important notification and as a
+                    result the product got delayed.
+                  </blockquote>
+                  <p className="mt-4 text-xs text-muted-foreground">
+                    Production Manager · User interview
+                  </p>
+                </div>
+              </div>
+              {/* The ownership card carries no tinted fill — its outline is the
+                  copy page's orange, #FF7600 on paper and #ffa348 on ink. */}
+              <div className="mt-10 rounded-xl border border-copy-orange-text p-6">
+                <p className="eyebrow mb-3 font-bold">What I owned</p>
+                <div className="space-y-4">
+                  <p className="text-base leading-relaxed text-foreground/85">
+                    I translated the product requirements and user feedback
+                    into the mobile information architecture, interaction
+                    patterns, wireframes, and prototype. I reviewed feasibility
+                    with the mobile developers and CTO, then tested the
+                    experience with users.
+                  </p>
+                  <p className="text-base leading-relaxed text-foreground/85">
+                    Designed for both iOS and Android. Role-template creation
+                    remained on web; mobile users could view and adjust the
+                    template assigned to their role.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-8 text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project — via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications
 \u00a01.Users getting so many spam notifications
 \u00a02.Important notifications for there job getting lost resulting into delays and missed deadlines
