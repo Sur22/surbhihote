@@ -16,3 +16,5 @@
 - [x] Reposition that block so it sits between the "The Problem" heading and its existing paragraph.
 - [x] Verify the new order, the outline colour in both themes, and that the original Notifications page is unchanged.
 - [x] Recolour the blue parts of the new block (the quote mark) in the Tech Pack copy's orange.
+- [x] Add the supplied reflection band under the Notifications copy "Reflection" heading, with the original paragraph kept below it.
+- [x] Verify the band's layout, fill and dark theme, and that the original Notifications page is unchanged.
