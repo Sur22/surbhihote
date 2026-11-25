@@ -840,7 +840,7 @@ function CaseStudyPage() {
         </div>
         <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
           <div className="md:w-[42%] md:shrink-0">
-            <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">Notification management for the people keeping production moving {'\n\n\n'}<div>{'\n'}</div></h1>
+            <h1 className="font-serif text-4xl mb-6 md:text-5xl font-normal whitespace-pre-line">Notification management for the people keeping production moving {'\n'}</h1>
             <p className="h3 mb-6 text-foreground/85">
               Less Noise, More Signal
             </p>
