@@ -482,9 +482,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               size="lg"
               asChild
             >
-              <Link
-                to="."
-                hash="final-designs"
+              <a
+                href="#final-designs"
                 onClick={(e) => {
                   e.preventDefault();
                   const el = document.getElementById("final-designs");
@@ -495,7 +494,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                 }}
               >
                 See the solution
-              </Link>
+              </a>
             </Button>
           </div>
           <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10 whitespace-pre-line">
@@ -848,9 +847,8 @@ function CaseStudyPage() {
               by company, product, lifecycle stage, and channel.
             </p>
             <Button variant="outline" size="lg" asChild>
-              <Link
-                to="."
-                hash="final-designs"
+              <a
+                href="#final-designs"
                 onClick={(e) => {
                   e.preventDefault();
                   const el = document.getElementById("final-designs");
@@ -861,7 +859,7 @@ function CaseStudyPage() {
                 }}
               >
                 See the solution
-              </Link>
+              </a>
             </Button>
           </div>
           <div className="md:flex-1 md:min-w-0">
