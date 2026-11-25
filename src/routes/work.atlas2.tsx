@@ -779,7 +779,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           )}
           {c.slug === "atlas2" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
+              <h2 id="the-problem-heading" className="scroll-mt-24 font-serif text-3xl mb-6 font-medium">The Problem</h2>
               <p className="eyebrow mb-4">01 / The Challenge</p>
               <h2 className="h2 mb-8">
                 When everything is urgent,
