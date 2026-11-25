@@ -3198,7 +3198,29 @@ Users needed an easy way to control and manage the notifications they want and s
           </div>
         )}
 
-        {c.slug === "fjord" ? (
+        {c.slug === "atlas2" ? (
+          <>
+            <p className="eyebrow mb-4">Final Designs</p>
+            <h3 className="h2 mb-6">The complete mobile experience</h3>
+            <p className="text-lg leading-relaxed text-foreground/85 mb-10">
+              All seven original screens, from company and product subscriptions to profile settings, notification categories, and delivery preferences.
+            </p>
+            <div className="overflow-hidden rounded-[8px] border border-foreground/20 bg-secondary p-4 md:p-8">
+              <div className="overflow-x-auto">
+                <img
+                  src={notificationsFinalScreens.url}
+                  alt="Final screens mockup — all seven notification management screens"
+                  loading="lazy"
+                  onClick={() => setZoomImg(notificationsFinalScreens.url)}
+                  className="h-auto w-[220%] max-w-none md:w-full md:max-w-full"
+                />
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Select the image to enlarge it. On smaller screens, scroll horizontally to see the full set.
+            </p>
+          </>
+        ) : c.slug === "fjord" ? (
           <>
             <div
               className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
@@ -3245,7 +3267,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <div className="absolute inset-0 backdrop-blur-2xl bg-white/15 border border-white/20 pointer-events-none" style={{ borderRadius: "2.4%" }} />
             )}
             <CarouselContent className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "relative z-10 !ml-0" : undefined}>
-              {((c.slug === "atlas" || c.slug === "atlas2")
+              {(c.slug === "atlas"
                 ? [
                     { src: notificationsFinalScreens.url, label: "Final screens mockup" },
                   ]
@@ -3269,7 +3291,7 @@ Users needed an easy way to control and manage the notifications they want and s
               ).map((img, i) => (
                 <CarouselItem key={img.label} className={(c.slug === "affiliate-platform-redesign" || c.slug === "solace") ? "flex items-center justify-center !pl-0" : undefined}>
 
-                  {(c.slug === "atlas" || c.slug === "atlas2") ? (
+                  {c.slug === "atlas" ? (
                     <div
                       className="relative overflow-hidden bg-cover bg-center bg-no-repeat py-28 flex items-center justify-center"
                       style={{ borderRadius: "2.4%", backgroundImage: `url(${gridBg.url})` }}
@@ -3279,7 +3301,7 @@ Users needed an easy way to control and manage the notifications they want and s
                         src={img.src}
                         alt={img.label}
                         className="relative mx-auto h-auto shrink-0"
-                        style={(c.slug === "atlas" || c.slug === "atlas2") ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
+                        style={c.slug === "atlas" ? { width: "97.75%", maxWidth: "none" } : { width: "85%" }}
                         loading="lazy"
                       />
                     </div>
@@ -3295,8 +3317,8 @@ Users needed an easy way to control and manage the notifications they want and s
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {c.slug !== "atlas" && c.slug !== "atlas2" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
-            {c.slug !== "atlas" && c.slug !== "atlas2" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {c.slug !== "atlas" && <CarouselPrevious className="left-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
+            {c.slug !== "atlas" && <CarouselNext className="right-4 top-1/2 z-30 -translate-y-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />}
             {(c.slug === "affiliate-platform-redesign" || c.slug === "solace") && <CarouselDots className="relative z-20 mt-6" />}
           </Carousel>
         )}
