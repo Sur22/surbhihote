@@ -2200,37 +2200,33 @@ Users needed an easy way to control and manage the notifications they want and s
                       Match the controls to the scope of the work.
                     </h4>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-                    <div className="space-y-8">
-                      <p className="font-serif text-2xl leading-relaxed">
-                        A company-wide setting alone could not cover someone following a few products—or one specific production stage.
+                  <p className="font-serif text-2xl leading-relaxed mb-8">
+                    A company-wide setting alone could not cover someone following a few products—or one specific production stage.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-8">
+                    <div>
+                      <p className="eyebrow mb-3">The starting point</p>
+                      <p className="text-base leading-relaxed text-foreground/85">
+                        Users received updates across the product lifecycle without a way to choose the ones relevant to their responsibilities.
                       </p>
-                      <div>
-                        <p className="eyebrow mb-3">The starting point</p>
-                        <p className="text-base leading-relaxed text-foreground/85">
-                          Users received updates across the product lifecycle without a way to choose the ones relevant to their responsibilities.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="eyebrow mb-3">The decision</p>
-                        <p className="text-base leading-relaxed text-foreground/85">
-                          I organized notification control at three levels: company, product, and lifecycle phase or stage. Users could manage a broad subscription, then narrow it to the work they needed to track.
-                        </p>
-                      </div>
                     </div>
-                    <div className="space-y-8">
-                      <div>
-                        <p className="eyebrow mb-3">The trade-off</p>
-                        <p className="text-base leading-relaxed text-foreground/85">
-                          Granularity created more choices. Grouping notification types and reusing the same control pattern helped keep the structure understandable.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="eyebrow mb-3">Why it matters</p>
-                        <p className="text-base leading-relaxed text-foreground/85">
-                          Control follows the user’s responsibility, from an organization down to a specific stage.
-                        </p>
-                      </div>
+                    <div>
+                      <p className="eyebrow mb-3">The decision</p>
+                      <p className="text-base leading-relaxed text-foreground/85">
+                        I organized notification control at three levels: company, product, and lifecycle phase or stage. Users could manage a broad subscription, then narrow it to the work they needed to track.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="eyebrow mb-3">The trade-off</p>
+                      <p className="text-base leading-relaxed text-foreground/85">
+                        Granularity created more choices. Grouping notification types and reusing the same control pattern helped keep the structure understandable.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="eyebrow mb-3">Why it matters</p>
+                      <p className="text-base leading-relaxed text-foreground/85">
+                        Control follows the user’s responsibility, from an organization down to a specific stage.
+                      </p>
                     </div>
                   </div>
                 </div>
