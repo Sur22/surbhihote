@@ -65,6 +65,9 @@
   --color-azure: var(--azure);
   --color-decision-accent: var(--amber);
   --color-copy-orange-text: var(--copy-orange-text);
+  /* The colour a text link lifts to on hover: the site's orange in both themes,
+     published so components use text-link-hover instead of the theme accent. */
+  --color-link-hover: var(--link-hover);
   /* The icons sitting on those azure discs likewise stay light in both themes. */
   --color-azure-foreground: var(--azure-foreground);
   /* The grey a table row takes on hover, published so components use bg-* with
@@ -109,6 +112,8 @@
      as a token so other surfaces can borrow the same warmth. */
   --amber: #ffa348;
   --copy-orange-text: #FF7600;
+  /* Text links hover to this orange on paper instead of the theme's blue accent. */
+  --link-hover: #FF7600;
   /* The AI for Research panel's outline blue. Held in :root only, so a theme
      flip can never shift it. */
   --azure: #0068ff;
@@ -166,6 +171,8 @@
 
 .dark {
   --copy-orange-text: var(--amber);
+  /* On ink the link hover takes the site's lighter amber so it stays legible. */
+  --link-hover: var(--amber);
   --paper: oklch(0.12 0.02 60);
   --ink: oklch(0.93 0.018 80);
   --clay: #2f9cc4;

@@ -182,7 +182,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   <a
                     href={url ?? "#"}
                     download={url ? true : undefined}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors self-end"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-link-hover transition-colors self-end"
                   >
                     <Download size={18} />
                     {url ? "Download" : "Download — coming soon"}
@@ -291,7 +291,7 @@ export function AIProjectPageContent({ project }: { project: AIProject }) {
                   params={p.path ? undefined : { slug: p.slug }}
                   className="group block"
                 >
-                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition-colors break-words">
+                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-link-hover transition-colors break-words">
                     {p.title}
                   </h3>
                   <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">

@@ -21,7 +21,7 @@ const nav = [
    that makes the tint room to breathe is offset by an equal negative margin,
    so the words themselves never shift. */
 const navItemClass =
-  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors";
+  "-mx-2 rounded-md px-2 py-1 text-muted-foreground hover:text-link-hover hover:bg-accent/10 transition-colors";
 
 /* The selected page's nav item wears a soft blue tint (the site's clay
    accent at low strength) plus a 1px accent line down its left edge, so it
@@ -59,7 +59,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"
+      className="group inline-flex h-8 w-8 -mx-[7px] items-center justify-center rounded-md text-muted-foreground hover:text-link-hover hover:bg-accent/10 transition-colors"
       aria-label="Toggle theme"
     >
       {mounted && resolved === "dark" ? (

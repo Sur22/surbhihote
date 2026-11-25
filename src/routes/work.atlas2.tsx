@@ -3438,7 +3438,7 @@ Users needed an easy way to control and manage the notifications they want and s
               <span>
                 {c.slug === "fjord" 
                   ? "I divided functionality in 6\u00a0tasks to check the task completion rate and time required to complete those tasks."
-                  : <>I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
+                  : <>I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-link-hover"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>&nbsp;.</>}
               </span>
             </li>
             {c.slug === "fjord" && (
@@ -3554,7 +3554,7 @@ Users needed an easy way to control and manage the notifications they want and s
             )}
             {c.slug === "atlas2" && (
               <p className="mb-6 text-lg leading-relaxed text-foreground/85">
-                I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-accent"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>.
+                I divided functionality into <strong className="font-semibold">6 different tasks</strong> to check the task completion rate and time required to complete those tasks <span className="underline hover:text-link-hover"><a href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold">Usability test questions</a></span>.
               </p>
             )}
             <div className="mt-10 overflow-hidden rounded-sm border border-foreground/20">
@@ -3876,7 +3876,7 @@ Users needed an easy way to control and manage the notifications they want and s
               const className = `group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`;
               const content = (
                 <>
-                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
+                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-link-hover transition-colors whitespace-nowrap">
                     {o.cardTitle ?? o.title}
                   </h3>
                   <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
