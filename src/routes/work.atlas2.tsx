@@ -2359,16 +2359,29 @@ Users needed an easy way to control and manage the notifications they want and s
               <p className="font-serif text-xl leading-relaxed">
                 The first version used tabs. An early review with the <strong><em>mobile developers</em></strong> exposed a problem with the nested pages inside them.
               </p>
-              <div>
-                <div className="grid grid-cols-2 gap-4 justify-center">
-                  <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-[190px]">
+              <div className="grid grid-cols-2 gap-4 justify-center items-start">
+                <div className="w-[190px]">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <p className="eyebrow">Before / Initial direction</p>
+                    <span className="eyebrow rounded-sm border border-foreground/30 px-1.5 py-0.5">V1</span>
+                  </div>
+                  <button type="button" onClick={() => setZoomImg(atlasTabsChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-full">
                     <img src={atlasTabsChanges.url} alt="Mobile notifications tab changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
                   </button>
-                  <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-[190px]">
+                  <p className="mt-3 font-serif text-lg font-medium leading-snug">Tabs with nested pages</p>
+                  <p className="mt-1 text-sm text-muted-foreground leading-relaxed">The mobile developers flagged the navigation structure as a feasibility concern.</p>
+                </div>
+                <div className="w-[190px]">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <p className="eyebrow">After / Revised direction</p>
+                    <span className="eyebrow rounded-sm border border-foreground/30 px-1.5 py-0.5">V2 ✓</span>
+                  </div>
+                  <button type="button" onClick={() => setZoomImg(atlasNotificationChanges.url)} className="group block overflow-hidden rounded-sm bg-secondary p-2 cursor-zoom-in border-0 w-full">
                     <img src={atlasNotificationChanges.url} alt="Mobile notification settings changes" className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
                   </button>
+                  <p className="mt-3 font-serif text-lg font-medium leading-snug">Two entry points on the profile</p>
+                  <p className="mt-1 text-sm text-muted-foreground leading-relaxed">The revised option received developer and CTO approval to proceed to testing.</p>
                 </div>
-                <p className="mt-4 text-sm text-muted-foreground text-center max-w-[400px]">Iterated tab structure and profile-level notification controls based on mobile developer feedback.</p>
               </div>
               <p className="text-base leading-relaxed text-muted-foreground">
                 I reviewed the design with the developers and CTO, replaced the tabs with two entry buttons on the profile, and returned for a feasibility review before moving into usability testing.
