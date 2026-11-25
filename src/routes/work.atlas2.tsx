@@ -2410,7 +2410,7 @@ Users needed an easy way to control and manage the notifications they want and s
               {c.slug === "atlas2" && (
                 <div className="mt-14 mb-4">
                   <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Key Decisions</h2>
-                  <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight mb-6">
+                  <h3 className="h3 mb-6">
                     The choices that made control practical.
                   </h3>
                   <p className="text-lg leading-relaxed text-foreground/85 max-w-2xl">
