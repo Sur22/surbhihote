@@ -66,6 +66,8 @@
   /* The light blue a table cell wears when it must read as highlighted — the
      same wash the Real Problem band paints behind its copy. */
   --color-cell-highlight: var(--cell-highlight);
+  /* The Reflection band's own cool wash, published so it reads as bg-* / text-*. */
+  --color-reflection-band: var(--reflection-band);
   /* The emotion row's discs keep their sentiment colours through a theme flip —
      a red disc must stay red on ink too — so every step of the scale carries its
      own token instead of a colour written into the markup. */
@@ -95,6 +97,9 @@
   /* The Real Problem band's pale icy blue on paper, sampled off the rendered
      band so a highlighted cell matches it exactly. */
   --cell-highlight: #e4eeff;
+  /* The Notifications copy page's Reflection band: a cool pale wash on paper,
+     sampled off Surbhi's reference (#eff5f7). */
+  --reflection-band: #eff5f7;
   /* The User Interview band: black in light and dark alike, cream text on it. */
   --band: #000000;
   --band-foreground: #ffffff;
@@ -164,6 +169,9 @@
   /* On ink the highlight takes the band's own dark blue-slate instead of the
      pale wash, so light cell text keeps its contrast. */
   --cell-highlight: #222734;
+  /* On ink the Reflection band takes the deep cool counterpart of its pale
+     paper wash, so the band still reads as a band. */
+  --reflection-band: #151f28;
 
   --background: var(--paper);
   --foreground: var(--ink);
