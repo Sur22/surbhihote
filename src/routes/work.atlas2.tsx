@@ -426,7 +426,8 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0"
                style={{ gridTemplateColumns: "1fr 1.35fr 1fr" }}>
             {c.outcome.map((o, i) => (
-              <div key={o.label} className={i > 0 ? "sm:border-l sm:border-border sm:pl-8" : ""}>
+              <div key={o.label} className={i > 0 ? "sm:border-l sm:border-border sm:pl-8" : ""}
+                   style={i === 1 ? { paddingRight: "24px" } : undefined}>
                 <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line sm:whitespace-nowrap">
                   {o.value}
                   <span className="text-[70%] ml-1">↓</span>
