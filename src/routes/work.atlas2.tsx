@@ -1472,7 +1472,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
             the flat peach highlight on the Opportunity row. */}
         {(c.slug === "atlas" || c.slug === "atlas2") && (
           <div className="mt-16">
-            <h2 className="h2 mb-4">User journey: where the experience broke down</h2>
+            <h3 className="h3 mb-4">User journey: where the experience broke down</h3>
             <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
               The opportunity was to reduce the work between receiving an alert and acting on it.
             </p>
