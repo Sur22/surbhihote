@@ -2445,7 +2445,7 @@ Users needed an easy way to control and manage the notifications they want and s
                     </div>
                   </div>
                   <div className="why-matters-highlight mt-8">
-                    <p className="eyebrow mb-3 text-copy-orange-text">Why it matters</p>
+                    <p className="eyebrow mb-3 font-bold text-copy-orange-text">Why it matters</p>
                     <p className="text-base leading-relaxed text-foreground/85">
                       Control follows the user’s responsibility, from an organization down to a specific stage.
                     </p>
@@ -2603,7 +2603,7 @@ Users needed an easy way to control and manage the notifications they want and s
                 </div>
               </div>
               <div className="why-matters-highlight mt-8">
-                <p className="eyebrow mb-3 text-copy-orange-text">Why it matters</p>
+                <p className="eyebrow mb-3 font-bold text-copy-orange-text">Why it matters</p>
                 <p className="text-base leading-relaxed text-foreground/85">
                   A useful default reduces setup effort. Personal control remains available when responsibilities change.
                 </p>
