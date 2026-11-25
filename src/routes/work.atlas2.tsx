@@ -2388,6 +2388,12 @@ Users needed an easy way to control and manage the notifications they want and s
                   <p className="mt-1 text-sm text-muted-foreground leading-relaxed">The revised option received developer and CTO approval to proceed to testing.</p>
                 </div>
               </div>
+              <div className="mt-14 border-y border-foreground/20 py-6 flex flex-col md:flex-row md:items-baseline gap-3 md:gap-10">
+                <p className="eyebrow shrink-0 md:w-[180px]">The trade-off</p>
+                <p className="text-lg leading-relaxed text-foreground/85">
+                  I moved away from the original tab structure to an approach the mobile team confirmed was feasible, while keeping both notification functions accessible.
+                </p>
+              </div>
             </div>
           ) : (
             <>
