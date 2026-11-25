@@ -817,6 +817,19 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   <p className="mt-4 text-xs text-muted-foreground">
                     Production Manager · User interview
                   </p>
+                  {/* Problem point 2 lives under the interview quote; points 1
+                      and 3 stay in the row below the ownership card. */}
+                  <div className="study-peach relative rounded-xl text-card-foreground shadow-amber-band p-6 overflow-hidden mt-6">
+                    <div className="relative z-10 flex items-baseline gap-3">
+                      <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
+                        2
+                      </h4>
+                      <p className="text-sm text-card-foreground">
+                        Important notifications for their job getting lost
+                        resulting into delays and missed deadlines
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* The ownership card carries no tinted fill — its outline is the
@@ -843,10 +856,9 @@ Affiliates - the partner networks who buy and transact against that inventory ru
               </p>
               {/* The three problem points as Design Principle cards: the same
                   peach surface, amber drop and rounded-xl, bold heading over body. */}
-              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 mb-[10px]">
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 mb-[10px]">
                 {[
                   "Users getting so many spam notifications",
-                  "Important notifications for their job getting lost resulting into delays and missed deadlines",
                   "Users need only selective set of notifications which are important for their job responsibilities",
                 ].map((point, idx) => (
                   <div
@@ -855,7 +867,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                   >
                     <div className="relative z-10 flex items-baseline gap-3">
                       <h4 className="font-bold leading-none tracking-tight text-lg shrink-0">
-                        {idx + 1}
+                        {idx === 0 ? 1 : 3}
                       </h4>
                       <p className="text-sm text-card-foreground">{point}</p>
                     </div>
