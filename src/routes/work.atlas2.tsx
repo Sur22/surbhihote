@@ -429,13 +429,12 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           <div className="grid min-w-0 flex-1 grid-cols-1 gap-10 sm:grid-cols-[max-content_1fr_1fr] sm:gap-0"
                >
             {c.outcome.map((o, i) => (
-              <div key={o.label} className={`min-w-0 ${i === 0 ? "sm:pl-3 sm:pr-[15px]" : "sm:px-3 sm:border-l sm:border-border"}`}>
+              <div key={o.label} className={`relative flex min-w-0 flex-col justify-center ${i === 0 ? "sm:pl-3 sm:pr-[15px]" : "sm:px-3 sm:before:absolute sm:before:left-0 sm:before:top-[20%] sm:before:h-[60%] sm:before:border-l sm:before:border-border sm:before:content-['']"}`}>
                 <p className="display text-3xl lg:text-5xl text-accent mb-3 whitespace-pre-line sm:whitespace-nowrap">
                   {o.value}
                   <span className="text-[70%] ml-1">↓</span>
                 </p>
                 <p className="font-bold mb-1 whitespace-pre-line">{o.label}</p>
-                <p className="text-muted-foreground">{"\n"}</p>
               </div>
             ))}
           </div>
