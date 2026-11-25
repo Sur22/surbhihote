@@ -447,6 +447,33 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
               ? "Rebuilding a 25-year-old enterprise platform used by 1000+ affiliates. The challenge wasn't simply making it better; it was improving it without disrupting the workflows users had built around years of workarounds"
               : "Notification management for the people\nkeeping production moving.Organizing and managing notifications to granular level.When every event fires a notification, the important ones disappear. On the Grid PLM, that meant missed alerts turning into missed production deadlines. By giving users precise, role-aware control over what reaches them on mobile, we cut the noise without cutting the signal and the downstream deadline and satisfaction gains followed.\u00a0"}
           </p>
+          {c.slug === "atlas2" && (
+            <>
+              <p className="text-center text-lg leading-relaxed text-foreground/85 mb-10">
+                Important alerts were getting buried. I designed role-aware
+                controls that let supply-chain teams choose what reaches them -
+                by company, product, lifecycle stage, and channel.
+              </p>
+              <div className="flex justify-center mb-10">
+                <Button variant="outline" size="lg" asChild>
+                  <Link
+                    to="."
+                    hash="final-designs"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const el = document.getElementById("final-designs");
+                      if (el) {
+                        history.replaceState(null, "", "#final-designs");
+                        el.scrollIntoView({ behavior: "smooth", block: "start" });
+                      }
+                    }}
+                  >
+                    See the solution
+                  </Link>
+                </Button>
+              </div>
+            </>
+          )}
         </>
       )}
       <div className={`grid grid-cols-2 gap-8 md:gap-12 ${c.slug === "atlas" ? "md:grid-cols-3" : c.outcome.length >= 5 ? "md:grid-cols-5" : "md:grid-cols-4"}`}>
