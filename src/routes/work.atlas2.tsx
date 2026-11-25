@@ -720,7 +720,7 @@ function CaseStudyPage() {
 
         <div className={c.slug === "affiliate-platform-redesign" ? "" : "space-y-16"}>
           <div>
-            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") ? "Overview" : "Context"}</h2>
+            <h2 className={`font-serif text-4xl md:text-5xl font-normal ${c.slug === "affiliate-platform-redesign" ? "mb-[35px]" : "mb-8"}`}>{c.slug === "atlas2" ? "The Problem " : (c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas") ? "Overview" : "Context"}</h2>
             {(c.slug === "fjord" || c.slug === "affiliate-platform-redesign" || c.slug === "solace" || c.slug === "atlas" || c.slug === "atlas2") && (
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-6">Context</h3>
             )}
@@ -750,7 +750,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           )}
           {c.slug === "atlas" && (
             <div>
-              <h2 className="font-serif text-3xl mb-6 font-medium">The Problem</h2>
+              <h2 className="font-serif text-3xl mb-6 font-medium">{"\n"}</h2>
               <p className="text-lg leading-relaxed text-foreground/85 whitespace-pre-line">
                 {`Throughout the product lifecycle process there are different types of notifications received by clients and the staff handling the project\u00a0 via email, push notification, or text message. Currently there is no way to manage the different types of notifications clients and staff receive, as users may or may not want to receive certain notifications`}
               </p>
