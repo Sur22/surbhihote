@@ -410,6 +410,63 @@ const coverPictureStyle = (slug: CaseStudy["slug"]): CSSProperties =>
 
 function OutcomeMetrics({ c }: { c: CaseStudy }) {
   const showImpactHeader = topOutcomeSlugs.has(c.slug);
+  /* atlas2 copy only: outcome row (eyebrow + headline + measurement link on the
+     left, three divided stat columns on the right) above a ruled meta grid
+     (role / scope / timeframe / partners, then tools / tasks). Fields with no
+     data yet keep a "—" placeholder. */
+  if (c.slug === "atlas2") {
+    return (
+      <section id="impact" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-[100px] scroll-mt-24">
+        <div className="flex flex-col gap-10 md:flex-row md:gap-16">
+          <div className="md:w-[30%] md:shrink-0">
+            <p className="eyebrow mb-4">THE OUTCOME</p>
+            <h3 className="font-serif text-4xl md:text-5xl font-normal mb-6 whitespace-pre-line">{"Less noise.\nMore signals."}</h3>
+            <span className="text-lg text-accent">How this was measured ↗</span>
+          </div>
+          <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-0">
+            {c.outcome.map((o, i) => (
+              <div key={o.label} className={i > 0 ? "sm:border-l sm:border-border sm:pl-8" : ""}>
+                <p className="display text-4xl md:text-5xl text-accent mb-3 whitespace-pre-line">
+                  {o.value}
+                  <span className="text-[70%] ml-1">↓</span>
+                </p>
+                <p className="font-bold mb-1 whitespace-pre-line">{o.label}</p>
+                <p className="text-muted-foreground">—</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-16 grid grid-cols-1 gap-10 border-t border-border pt-10 sm:grid-cols-2 md:grid-cols-4">
+          <div>
+            <p className="eyebrow mb-3">MY ROLE</p>
+            <p className="text-foreground/90">{c.role}</p>
+          </div>
+          <div>
+            <p className="eyebrow mb-3">SCOPE</p>
+            <p className="text-foreground/90">—</p>
+          </div>
+          <div>
+            <p className="eyebrow mb-3">TIMEFRAME</p>
+            <p className="text-foreground/90">{c.timeframe}</p>
+          </div>
+          <div>
+            <p className="eyebrow mb-3">PARTNERS</p>
+            <p className="text-foreground/90">—</p>
+          </div>
+        </div>
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+          <div>
+            <p className="eyebrow mb-3">TOOLS</p>
+            <p className="text-foreground/90">{c.tools}</p>
+          </div>
+          <div>
+            <p className="eyebrow mb-3">TASKS PERFORMED</p>
+            <p className="text-foreground/90">{c.tasksPerformed}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section id="impact" className={`mx-auto max-w-[1080px] px-6 md:px-10 pt-0 ${showImpactHeader ? "pb-[100px]" : "pb-6"} scroll-mt-24`}>
       <p className={`eyebrow mb-4 ${showImpactHeader ? "text-center" : ""}`}>{showImpactHeader ? "IMPACT" : "Outcome"}</p>
