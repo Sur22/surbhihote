@@ -2205,15 +2205,15 @@ Users needed an easy way to control and manage the notifications they want and s
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                     <div>
-                      <p className="eyebrow mb-3">The starting point</p>
-                      <p className="text-base leading-relaxed text-foreground/85">
-                        Users received updates across the product lifecycle without a way to choose the ones relevant to their responsibilities.
-                      </p>
-                    </div>
-                    <div>
                       <p className="eyebrow mb-3">The decision</p>
                       <p className="text-base leading-relaxed text-foreground/85">
                         I organized notification control at three levels: company, product, and lifecycle phase or stage. Users could manage a broad subscription, then narrow it to the work they needed to track.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="eyebrow mb-3">The starting point</p>
+                      <p className="text-base leading-relaxed text-foreground/85">
+                        Users received updates across the product lifecycle without a way to choose the ones relevant to their responsibilities.
                       </p>
                     </div>
                     <div>
