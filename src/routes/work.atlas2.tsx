@@ -3680,14 +3680,6 @@ Users needed an easy way to control and manage the notifications they want and s
               loading="lazy"
             />
           </button>
-          <a
-            href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 text-lg font-medium underline underline-offset-4 hover:text-accent"
-          >
-            View the original usability test questions <span aria-hidden>↗</span>
-          </a>
         </section>
       )}
 
