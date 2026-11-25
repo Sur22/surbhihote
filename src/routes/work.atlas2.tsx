@@ -586,7 +586,7 @@ function CaseStudyPage() {
           <div className="mb-16">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
               <div>
-                <p className="eyebrow mb-4">02 / The Solution</p>
+                <p className="eyebrow mb-4">FINAL SCREENS</p>
                  <h2 className="h3">
                   The right alerts.
                   <br />
@@ -1000,7 +1000,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
           )}
           {c.slug === "atlas2" && (
             <div>
-              <p id="the-problem-heading" className="eyebrow mb-4 scroll-mt-24">01 / The Challenge</p>
+              <p id="the-problem-heading" className="eyebrow mb-4 scroll-mt-24">THE CHALLENGE</p>
               <h2 className="h3 mb-8">
                 When everything is urgent,
                 <br />
@@ -1246,7 +1246,7 @@ As Grid mobile app does not have all the functionalities as the web version; in 
           )}
           {c.slug === "atlas2" && (
             <div className="mb-12">
-              <p className="eyebrow">03 / Research that shaped the design</p>
+              <p className="eyebrow">WHAT SHAPED THE DESIGN</p>
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
                 <h3 className="h3 leading-[1.1]">
                   Different responsibilities. Different definitions of
@@ -3404,7 +3404,7 @@ Users needed an easy way to control and manage the notifications they want and s
             <h2 className="font-serif text-4xl md:text-5xl mb-8 font-normal">Testing</h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end mb-12">
               <div>
-                <p className="eyebrow mb-4">05 / Validation &amp; Iteration</p>
+                <p className="eyebrow mb-4">VALIDATION &amp; ITERATION</p>
                 <h2 className="h3">
                   The concept worked.
                   <br />
@@ -3711,7 +3711,7 @@ Users needed an easy way to control and manage the notifications they want and s
           dividers between them. */}
       {c.slug === "atlas2" && (
         <section id="outcomes" className="mx-auto max-w-[1080px] px-6 md:px-10 pt-24 pb-0 scroll-mt-24">
-          <p className="eyebrow mb-5">06 / Outcomes</p>
+          <p className="eyebrow mb-5">OUTCOMES</p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal mb-6">
             Less searching.
             <br />
@@ -3782,7 +3782,7 @@ Users needed an easy way to control and manage the notifications they want and s
           on the plain page background, and every blue from her reference reads
           in the copy page's orange instead. */}
       <div className="mx-auto max-w-[1080px] px-6 md:px-10 pt-2 pb-14">
-        <p className="eyebrow mb-5">07 / Reflection</p>
+        <p className="eyebrow mb-5">{"\n"}</p>
         <h3 className="h3 mb-6">
           Control should reduce the burden. Not become it.
         </h3>
