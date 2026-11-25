@@ -15,3 +15,4 @@
 - [x] Add the supplied "01 / The Challenge" block to the Notifications copy page, with the "What I owned" card outlined in the Tech Pack copy's orange instead of a tinted fill.
 - [x] Reposition that block so it sits between the "The Problem" heading and its existing paragraph.
 - [x] Verify the new order, the outline colour in both themes, and that the original Notifications page is unchanged.
+- [x] Recolour the blue parts of the new block (the quote mark) in the Tech Pack copy's orange.

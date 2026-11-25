@@ -806,7 +806,7 @@ Affiliates - the partner networks who buy and transact against that inventory ru
                 <div className="md:border-l md:border-border md:pl-10">
                   <span
                     aria-hidden="true"
-                    className="font-serif text-5xl leading-none text-clay"
+                    className="font-serif text-5xl leading-none text-copy-orange-text"
                   >
                     “
                   </span>
