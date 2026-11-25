@@ -3879,7 +3879,7 @@ Users needed an easy way to control and manage the notifications they want and s
               const className = `group block ${i > 0 ? 'md:border-l md:border-transparent md:pl-12' : ''} ${i < others.length - 1 ? 'pb-12 md:pb-0' : ''}`;
               const content = (
                 <>
-                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-link-hover transition-colors whitespace-nowrap">
+                  <h3 className="font-serif text-3xl md:text-4xl group-hover:text-accent transition-colors whitespace-nowrap">
                     {o.cardTitle ?? o.title}
                   </h3>
                   <span className="inline-block mt-4 text-sm border-b border-foreground/40 group-hover:border-foreground group-hover:font-bold transition-colors">
