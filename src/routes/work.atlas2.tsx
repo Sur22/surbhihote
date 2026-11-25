@@ -3746,9 +3746,9 @@ Users needed an easy way to control and manage the notifications they want and s
               },
             ].map((o) => (
               <div key={o.label} className="border-t border-border pt-6">
-                <p className="display mb-3 whitespace-nowrap text-4xl md:text-5xl">
+                <p className="display mb-3 whitespace-nowrap text-4xl md:text-5xl text-accent">
                   {o.value}
-                  {o.accent && <span className="text-copy-orange-text">{o.accent}</span>}
+                  {o.accent && <span>{o.accent}</span>}
                 </p>
                 <p className="mb-1 font-bold">{o.label}</p>
                 <p className="text-sm text-muted-foreground">{o.note}</p>
