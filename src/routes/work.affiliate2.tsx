@@ -394,7 +394,7 @@ function CaseStudyPage() {
           { id: "the-problem", label: "The Problem", anchor: "challenge" },
           { id: "final-designs", label: "Solution" },
           { id: "key-decision", label: "Key Decision" },
-          { id: "research", label: "Survey" },
+          { id: "research", label: "RESEARCH" },
           { id: "workshop", label: "Workshop" },
           { id: "design-process", label: "Design" },
           { id: "testing", label: "Testing" },
