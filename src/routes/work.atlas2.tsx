@@ -488,7 +488,6 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
                   e.preventDefault();
                   const el = document.getElementById("final-designs");
                   if (el) {
-                    history.replaceState(null, "", "#final-designs");
                     el.scrollIntoView({ behavior: "smooth", block: "start" });
                   }
                 }}
@@ -853,7 +852,6 @@ function CaseStudyPage() {
                   e.preventDefault();
                   const el = document.getElementById("final-designs");
                   if (el) {
-                    history.replaceState(null, "", "#final-designs");
                     el.scrollIntoView({ behavior: "smooth", block: "start" });
                   }
                 }}
