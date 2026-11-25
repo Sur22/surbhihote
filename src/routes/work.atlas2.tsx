@@ -443,7 +443,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           </div>
           <div>
             <p className="eyebrow mb-3">SCOPE</p>
-            <p className="text-foreground/90">—</p>
+            <p className="text-foreground/90">0 to 1 feature</p>
           </div>
           <div>
             <p className="eyebrow mb-3">TIMEFRAME</p>
@@ -451,7 +451,7 @@ function OutcomeMetrics({ c }: { c: CaseStudy }) {
           </div>
           <div>
             <p className="eyebrow mb-3">PARTNERS</p>
-            <p className="text-foreground/90">—</p>
+            <p className="text-foreground/90">Product Manager,Stakeholder, Engineering , QA</p>
           </div>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
