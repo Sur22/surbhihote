@@ -2462,17 +2462,13 @@ Users needed an easy way to control and manage the notifications they want and s
             </div>
           </>
         )}
-        {c.slug === "atlas2" && (
-          <p className="eyebrow mt-12 mb-4">Iteration archive</p>
-        )}
-        <h3 className={`font-serif text-3xl mb-6 font-medium ${c.slug === "atlas2" ? "" : "mt-12"}`}>
-          {(c.slug === "affiliate-platform-redesign") ? "Sitemap" : (c.slug === "atlas" || c.slug === "atlas2") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
+        {c.slug !== "atlas2" && (<>
+        <h3 className="font-serif text-3xl mt-12 mb-6 font-medium">
+          {(c.slug === "affiliate-platform-redesign") ? "Sitemap" : (c.slug === "atlas") ? "Mid-Fidelity Wireframes" : (c.slug === "fjord" ? "Component Design\u00a0" : "Initial sketch")}
         </h3>
         <p className="text-lg leading-relaxed text-foreground/85 mb-4">
           {(c.slug === "affiliate-platform-redesign") 
             ? "The legacy site dropped users onto a bare navigation menu with too many options and numbers that were not useful. I introduced a dashboard as the new front door and mapped every screen to be sure nothing was lost in the rebuild with the limited amount of information I had from the survey data.\u00a0"
-            : c.slug === "atlas2"
-            ? "I used mid-fidelity wireframes to gather early user feedback, then reviewed the mobile interactions with developers before usability testing."
             : c.slug === "atlas"
             ? "To validate whether the design meets user needs, solves their pain points, and is usable, I made mid-fidelity wireframes."
             : (c.slug === "fjord")
@@ -2480,6 +2476,7 @@ Users needed an easy way to control and manage the notifications they want and s
             : "I procured the different files that the Fashion Designer/PDM used to send to the clients and the factory."
           }
         </p>
+        </>)}
         {(c.slug === "fjord") && (
           <ul className="list-disc list-inside text-lg leading-relaxed text-foreground/85 mb-4 ml-1">
             <li>Segment Pill - was the main component designe apart from few more like logic switches, Include/ Exclude switch , bracket all are shown in the left side image.{"\u00a0"}{"\u00a0"}</li>
@@ -2532,7 +2529,7 @@ Users needed an easy way to control and manage the notifications they want and s
               loading="lazy"
             />
           </button>
-        ) : (c.slug === "atlas" || c.slug === "atlas2") ? (
+        ) : c.slug === "atlas" ? (
           <button
             type="button"
             onClick={() => setZoomImg(notificationsWireframe.url)}
@@ -2545,7 +2542,7 @@ Users needed an easy way to control and manage the notifications they want and s
               loading="lazy"
             />
           </button>
-        ) : (
+        ) : c.slug === "atlas2" ? null : (
           <div className="flex flex-row gap-4 overflow-x-auto pb-2">
             {(c.slug === "fjord" ? [fjordComponentLeft, fjordComponent2] : [sketchImg1, sketchImg2, sketchImg3, sketchImg4]).map((s, i) => (
               <button
@@ -2563,16 +2560,6 @@ Users needed an easy way to control and manage the notifications they want and s
               </button>
             ))}
           </div>
-        )}
-        {c.slug === "atlas2" && (
-          <a
-            href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 text-lg font-medium underline underline-offset-4 hover:text-accent"
-          >
-            View the original usability test questions <span aria-hidden>↗</span>
-          </a>
         )}
       </section>
 
@@ -3661,6 +3648,38 @@ Users needed an easy way to control and manage the notifications they want and s
               ))}
             </div>
           )}
+        </section>
+      )}
+
+      {/* Atlas2 only: the mid-fidelity wireframe archive, placed below the
+          05 / Validation & Iteration section. */}
+      {c.slug === "atlas2" && (
+        <section className="mx-auto max-w-[1080px] px-6 md:px-10 pt-0 pb-24 scroll-mt-24">
+          <p className="eyebrow mt-12 mb-4">Iteration archive</p>
+          <h3 className="font-serif text-3xl mb-6 font-medium">Mid-Fidelity Wireframes</h3>
+          <p className="text-lg leading-relaxed text-foreground/85 mb-4">
+            I used mid-fidelity wireframes to gather early user feedback, then reviewed the mobile interactions with developers before usability testing.
+          </p>
+          <button
+            type="button"
+            onClick={() => setZoomImg(notificationsWireframe.url)}
+            className="group block w-full overflow-hidden rounded-sm bg-secondary p-2 transition-colors cursor-zoom-in"
+          >
+            <img
+              src={notificationsWireframe.url}
+              alt="Notifications wireframe"
+              className="w-[127.5%] mx-auto h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+              loading="lazy"
+            />
+          </button>
+          <a
+            href="https://drive.google.com/file/d/1m5iAAkk5dO8wLx-q7ffIzm1X_uVUhUe3/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex items-center gap-2 text-lg font-medium underline underline-offset-4 hover:text-accent"
+          >
+            View the original usability test questions <span aria-hidden>↗</span>
+          </a>
         </section>
       )}
 
