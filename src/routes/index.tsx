@@ -211,6 +211,7 @@ function CaseStudyArtwork({
 const CARD_TARGET: Partial<Record<(typeof caseStudies)[number]["slug"], string>> = {
   solace: "solace2",
   "affiliate-platform-redesign": "affiliate2",
+  atlas: "atlas2",
 };
 
 function CaseStudyItem({ c, i }: { c: (typeof caseStudies)[number]; i: number }) {
