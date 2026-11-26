@@ -248,7 +248,7 @@ function AboutPage() {
         <p className="eyebrow mb-6 text-accent">Let's connect</p>
         <h2 className="display text-[clamp(2.25rem,6vw,5rem)] mb-6">Get in Touch</h2>
         <p className="text-base md:text-lg text-foreground/70 max-w-xl mb-12">
-          Whether you have a role in mind, a collaboration idea, or just want to talk design — I'd love to hear from you.
+          Whether you have a role in mind, a collaboration idea, or just want to talk design. I'd love to hear from you.
         </p>
         <div className="rule mb-12" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 contact-discs">
